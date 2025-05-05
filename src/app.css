@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+/* Fonts */
+/* @import '@fontsource/source-sans-pro';  */
+@import '@fontsource/source-sans-pro/900.css';
+@import '@fontsource/source-sans-pro/700.css';
+@import '@fontsource/source-sans-pro/600.css';
+@import '@fontsource/source-sans-pro/400.css';
+@import '@fontsource/source-sans-pro/300.css';
+@import '@fontsource/source-sans-pro/200.css';
+
+@import '@fontsource/tiny5';
+@import '@fontsource-variable/fira-code'; /* Supports weights 300-700 */
+
+@plugin "daisyui" {
+	themes:
+		futurewise --default,
+		futurewise-dark --prefersdark;
+}
+
+@theme {
+	/* Override the default sans-family token */
+	--font-sans: 'Source Sans Pro', sans-serif;
+	--font-pixel: 'Tiny5', sans-serif;
+	--font-mono: 'Fira Code Variable', monospace;
+	/* Project max-width */
+	--max-width-futurewise: 1200px;
+}
+
+/* ——— Dark Theme ——— */
+@plugin "daisyui/theme" {
+	name: 'futurewise-dark';
+	default: false;
+	prefersdark: true;
+	color-scheme: dark;
+
+	/* Neutral colors (inverted) */
+	--color-base-100: #000000;
+	--color-base-200: #222222;
+	--color-base-300: #3a3a3a;
+	--color-base-content: #f9f9f9;
+
+	/* Primary stays the same for brand consistency */
+	--color-primary: #ff4016;
+	--color-primary-content: #ffffff;
+
+	/* Secondary and accent swapped for contrast */
+	--color-secondary: #8a8a8a;
+	--color-secondary-content: #ffffff;
+	--color-accent: #71767b;
+	--color-accent-content: #ffffff;
+
+	/* Neutral semantic */
+	--color-neutral: #8a8a8a;
+	--color-neutral-content: #ffffff;
+
+	/* Status colors (lighter variants) */
+	--color-info: #3abff8;
+	--color-success: #36d399;
+	--color-warning: #fbbd23;
+	--color-error: #f87272;
+
+	/* Radii */
+	--radius-selector: 1rem;
+	--radius-field: 0.25rem;
+	--radius-box: 0.5rem;
+
+	/* Sizes */
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+
+	/* Border */
+	--border: 1px;
+
+	/* Effects */
+	--depth: 1;
+	--noise: 0;
+}
+
+@layer utilities {
+	.fw-header-fs {
+		@apply text-[17px] font-light;
+	}
+}
+
+@layer base {
+	* {
+		@apply transition-opacity duration-200 ease-in-out;
+	}
+	button {
+		@apply cursor-pointer hover:opacity-50;
+	}
+	header a {
+		@apply hover:opacity-50;
+	}
+}
+
+/* ——— Light Theme ——— */
+/* @plugin "daisyui/theme" {
+	name: 'futurewise';
+	default: true;
+	prefersdark: false;
+	color-scheme: light;
+
+	--color-base-100: #f9f9f9;
+	--color-base-200: #e7e9ea;
+	--color-base-300: #8a8a8a;
+	--color-base-content: #222222;
+
+	--color-primary: #ff4016;
+	--color-primary-content: #ffffff;
+
+	--color-secondary: #71767b;
+	--color-secondary-content: #ffffff;
+	--color-accent: #8a8a8a;
+	--color-accent-content: #ffffff;
+
+	--color-neutral: #71767b;
+	--color-neutral-content: #ffffff;
+
+	--color-info: #3abff8;
+	--color-success: #36d399;
+	--color-warning: #fbbd23;
+	--color-error: #f87272;
+
+	--radius-selector: 1rem;
+	--radius-field: 0.25rem;
+	--radius-box: 0.5rem;
+
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+
+	--border: 1px;
+
+	--depth: 1;
+	--noise: 0;
+} */
