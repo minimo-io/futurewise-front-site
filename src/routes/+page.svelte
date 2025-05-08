@@ -1,9 +1,6 @@
-<script>
-	import Header from '$lib/components/Header/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+<script lang="ts">
+	import Products from '$lib/components/Home/Products.svelte';
 </script>
-
-<Header />
 
 <!-- Products Slider Section -->
 <section class="relative -top-[20px] px-6 md:px-12 lg:px-16">
@@ -15,157 +12,7 @@
 			>
 		</div>
 
-		<div class="relative hidden">
-			<!-- Slider navigation -->
-			<button
-				aria-label="button"
-				class="bg-opacity-50 absolute top-1/2 left-0 z-10 -translate-y-1/2 transform rounded-full bg-black p-2"
-			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="h-6 w-6"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M15 19l-7-7 7-7"
-					/>
-				</svg>
-			</button>
-
-			<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-				<!-- Product Card 1 -->
-				<div class="bg-fw-dark border-fw-red rounded-sm border-t-2 p-6">
-					<div class="mb-4 flex items-center justify-between">
-						<div class="flex items-center">
-							<div class="mr-2 text-gray-400">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-5 w-5"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M4 7h16M4 11h16M4 15h8"
-									/>
-								</svg>
-							</div>
-							<span class="font-bold text-white">CoreSync</span>
-						</div>
-					</div>
-					<span class="bg-fw-red mb-2 inline-block px-2 py-1 text-xs text-white"
-						>E-COMMERCE PLATFORM</span
-					>
-					<p class="mb-4 text-sm text-gray-400">API DE PROCESSAMENTO DE PAGAMENTOS GLOBAL</p>
-				</div>
-
-				<!-- Product Card 2 -->
-				<div class="bg-fw-dark border-fw-red rounded-sm border-t-2 p-6">
-					<div class="mb-4 flex items-center justify-between">
-						<div class="flex items-center">
-							<div class="mr-2 text-gray-400">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-5 w-5"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M13 10V3L4 14h7v7l9-11h-7z"
-									/>
-								</svg>
-							</div>
-							<span class="font-bold text-white">Bagity</span>
-						</div>
-					</div>
-					<span class="bg-fw-red mb-2 inline-block px-2 py-1 text-xs text-white"
-						>E-COMMERCE PLATFORM</span
-					>
-					<p class="mb-4 text-sm text-gray-400">API DE AUTORIZAÇÃO DE PAGAMENTOS</p>
-				</div>
-
-				<!-- Product Card 3 -->
-				<div class="bg-fw-dark border-fw-red rounded-sm border-t-2 p-6">
-					<div class="mb-4 flex items-center justify-between">
-						<div class="flex items-center">
-							<div class="mr-2 text-gray-400">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-5 w-5"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M9 8l3 5m0 0l3-5m-3 5v4m-3-5h6m-6 3h6m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-									/>
-								</svg>
-							</div>
-							<span class="font-bold text-white">ViiVPay</span>
-						</div>
-					</div>
-					<span class="bg-fw-red mb-2 inline-block px-2 py-1 text-xs text-white">PAGAMENTOS</span>
-					<p class="mb-4 text-sm text-gray-400">PROCESSAMENTO DE CARTÕES E BOLETOS</p>
-				</div>
-
-				<!-- Product Card 4 -->
-				<div class="bg-fw-dark border-fw-red rounded-sm border-t-2 p-6">
-					<div class="mb-4 flex items-center justify-between">
-						<div class="flex items-center">
-							<div class="mr-2 text-gray-400">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-5 w-5"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
-									/>
-								</svg>
-							</div>
-							<span class="font-bold text-white">DropOn</span>
-						</div>
-					</div>
-					<span class="bg-fw-red mb-2 inline-block px-2 py-1 text-xs text-white">LOGÍSTICA</span>
-					<p class="mb-4 text-sm text-gray-400">SMART DELIVERY SUITE</p>
-				</div>
-			</div>
-
-			<button
-				aria-label="button"
-				class="bg-opacity-50 absolute top-1/2 right-0 z-10 -translate-y-1/2 transform rounded-full bg-black p-2"
-			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="h-6 w-6"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-				>
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-				</svg>
-			</button>
-		</div>
+		<Products />
 	</div>
 </section>
 
@@ -414,5 +261,3 @@
 		</p>
 	</div>
 </section>
-
-<Footer />

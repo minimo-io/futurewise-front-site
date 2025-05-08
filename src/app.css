@@ -83,6 +83,9 @@
 	.fw-header-fs {
 		@apply text-[17px] font-light;
 	}
+	.fw-button-product-light {
+		@apply text-primary w-full rounded-full bg-white px-2 py-1 text-xs uppercase;
+	}
 }
 
 @layer base {

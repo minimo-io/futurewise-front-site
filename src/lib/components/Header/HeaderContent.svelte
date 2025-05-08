@@ -14,17 +14,20 @@
 					>
 						Ao Futuro
 					</span>
-					<span class="bg-primary absolute top-5 right-0 left-0 -z-10 h-[40%] translate-y-1"></span>
+					<span class="bg-primary absolute -top-[2px] right-0 left-0 -z-10 h-[90%] translate-y-1"
+					></span>
 				</div>
 			</h1>
 		</div>
 	</div>
 
 	<p
-		class="text-secondary font-regular my-7 font-sans text-[25px] leading-[110%] font-normal tracking-wide"
+		class="text-secondary font-regular my-7 font-sans text-[25px] leading-[118%] font-normal tracking-wide"
 	>
-		Somos uma Plataforma de produtos digitais e um Laboratório de Desenvolvimento focado na Inovação
-		nas áreas de e-Commerce, Pagamentos, IA e Máquinas (IoT), para LATAM.
+		Somos uma <span class="text-base-content opacity-80">Plataforma de Produtos Digitais</span> e um
+		Laboratório de Desenvolvimento focados na Inovação nas áreas de
+		<span class="text-base-content opacity-80">e-Commerce, Pagamentos, IA e Máquinas (IoT)</span>,
+		para LATAM.
 
 		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>
