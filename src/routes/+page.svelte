@@ -1,15 +1,14 @@
 <script lang="ts">
+	import Clients from '$lib/components/Home/Clients.svelte';
 	import Products from '$lib/components/Home/Products.svelte';
+	import PillFlower from '$lib/components/PillFlower.svelte';
 </script>
 
 <!-- Products Slider Section -->
-<section class="relative -top-[20px] px-6 md:px-12 lg:px-16">
-	<div class="container mx-auto">
-		<div class="mb-8 text-center">
-			<button
-				class="rounded-tl-3xl rounded-br-3xl bg-white px-10 py-2 text-[18px] font-bold text-black hover:bg-gray-200"
-				>Produtos</button
-			>
+<section class="fw-border-b-divider relative -top-[23px] px-6 pb-5 md:px-12 lg:px-16">
+	<div>
+		<div class="text-center">
+			<PillFlower title="Produtos" />
 		</div>
 
 		<Products />
@@ -17,36 +16,21 @@
 </section>
 
 <!-- Joint Ventures Section -->
-<section class="hidden px-6 py-12 md:px-12 lg:px-16">
-	<div class="container mx-auto">
-		<div class="mb-8 inline-block bg-white px-4 py-2">
-			<span class="font-bold text-black">JOINT VENTURES</span>
-		</div>
-
-		<p class="mb-8 max-w-3xl text-white">
-			Projetos onde a Futurewise participa como fornecedor de tecnologia, alavancados por +10 anos
-			de experiência desenvolvendo produtos digitais
-		</p>
-
-		<div class="grid max-w-3xl grid-cols-1 gap-6 md:grid-cols-2">
-			<!-- Venture 1 -->
-			<div class="bg-fw-dark rounded-sm p-6">
-				<div class="mb-4">
-					<img src="/" alt="ViIV Logo" class="h-8" />
-				</div>
-				<span class="bg-fw-red mb-2 inline-block px-2 py-1 text-xs text-white">PAGAMENTOS</span>
-				<p class="text-sm text-gray-400">FINTAB</p>
+<section class="fw-border-b-divider mx-auto mt-8 pb-8">
+	<div class="max-w-futurewise mx-auto">
+		<div class="mb-3 flex items-center gap-10">
+			<div class="">
+				<PillFlower title="Clientes" />
 			</div>
 
-			<!-- Venture 2 -->
-			<div class="bg-fw-dark rounded-sm p-6">
-				<div class="mb-4">
-					<img src="/" alt="BRADAY Logo" class="h-8" />
-				</div>
-				<span class="bg-fw-red mb-2 inline-block px-2 py-1 text-xs text-white">PAGAMENTOS</span>
-				<p class="text-sm text-gray-400">DIGITAL</p>
-			</div>
+			<p class="text-secondary max-w-3xl font-sans text-[22px] leading-6">
+				Projetos onde a Futurewise participa como fornecedor de tecnologia, alavancados por +10 anos
+				de experiência desenvolvendo produtos digitais
+			</p>
 		</div>
+
+		<!-- Clients -->
+		<Clients />
 	</div>
 </section>
 

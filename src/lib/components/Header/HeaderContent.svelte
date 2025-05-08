@@ -36,8 +36,8 @@
 		<button
 			class="hover:bg-opacity-10 border-base-content text-base-content rounded-full border px-6 py-2 font-medium"
 		>
-			<span class="mr-1 font-bold">Lançamento !</span>
-			<span class="font-light tracking-wide"> Scorp, proteção contra fraudes </span>
+			<!-- <span class="mr-1 font-bold">Lançamento !</span> -->
+			<span class="font-light tracking-wide"> Agende uma reunião </span>
 		</button>
 	</div>
 </div>

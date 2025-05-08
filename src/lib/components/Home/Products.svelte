@@ -1,17 +1,43 @@
+<!-- src/lib/components/Home/Products.svelte -->
 <script lang="ts">
 	import ProductSingle from '$lib/components/Home/ProductSingle.svelte';
+	import type { Brand } from '$lib/types/brands.types';
+
+	let products: Brand[] = [
+		{
+			name: 'Caresync',
+			slogan: 'Manutenção TI preditiva',
+			sloganDetails: 'e preventiva potenciada por IA',
+			underDevelopment: false
+		},
+		{
+			name: 'Bagity',
+			slogan: 'e-Commerce & Menus',
+			sloganDetails: 'Inteligentes & Na medida',
+			underDevelopment: false
+		},
+		{
+			name: 'ViiVPay',
+			slogan: 'Pagamentos x-border',
+			sloganDetails: 'Transparentes via USD/USDT <br /> & BITCOIN',
+			underDevelopment: false
+		},
+		{
+			name: 'Growify',
+			slogan: 'Gestão de porfolio',
+			sloganDetails: 'De investimentos Bitcoin/Crypto <br /> Forex, FIIs',
+			underDevelopment: true
+		}
+	];
 </script>
 
-<div class="max-w-futurewise relative mx-auto mt-14 flex justify-evenly border">
-	<!-- Product Card 1 -->
-	<ProductSingle brand={{ name: 'CareSync' }} />
+<div class="max-w-futurewise relative mx-auto mt-8 flex">
+	{#each products as product, i}
+		{@const align = i === 0 ? 'start' : i === products.length - 1 ? 'end' : 'center'}
+		<ProductSingle brand={product} {align} />
+	{/each}
 
-	<!-- Product Card 2 -->
-	<ProductSingle brand={{ name: 'Bagity' }} />
-
-	<!-- Product Card 3 -->
-	<ProductSingle brand={{ name: 'ViiVPay' }} />
-
-	<!-- Product Card 4 -->
-	<ProductSingle brand={{ name: 'Growify' }} />
+	<div class="absolute -top-[65%] left-[60%] scale-40 opacity-70">
+		<img src="/bgs/cross.svg" alt="cross" />
+	</div>
 </div>

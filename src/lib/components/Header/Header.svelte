@@ -6,7 +6,7 @@
 	import HeaderLogo from './HeaderLogo.svelte';
 </script>
 
-<header class="header relative">
+<header class="header border-primary-content fw-border-b-divider fw-border-b-divider-dot relative">
 	<!-- Bg image -->
 	<div
 		class="absolute inset-0 z-0 h-full bg-[url('/bgs/ngc-2899.jpg')] bg-cover bg-center opacity-40"

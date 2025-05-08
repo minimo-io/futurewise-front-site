@@ -1,26 +1,63 @@
+<!-- src/lib/components/Home/ProductSingle.svelte -->
 <script lang="ts">
 	import type { Brand } from '$lib/types/brands.types';
-	import Button from '../Button.svelte';
+	import Pill from '../Pill.svelte';
 
 	interface Props {
 		brand: Brand;
+		align: 'start' | 'center' | 'end';
+		isClient?: boolean;
 	}
 
-	let { brand }: Props = $props();
+	let { brand, align, isClient = false }: Props = $props();
 </script>
 
-<div class="flex-1 justify-center rounded-sm border">
-	<div class="mb-4 flex flex-col items-center justify-center">
-		<div class="flex items-center">
-			<div class="mr-2 text-gray-400">
-				<img src="/products/caresync/caresync-logo.svg" alt="CareSync" class="mr-2 h-7" />
+<a href={brand.link} class="relative min-w-[275px] rounded-sm hover:opacity-45">
+	<div class="mb-4 flex flex-col">
+		<div
+			class={[
+				'flex items-center',
+				align == 'start' && 'justify-start',
+				align == 'end' && 'justify-end',
+				align != 'start' && align != 'end' && 'justify-center'
+			]}
+		>
+			<div class="flex flex-col">
+				<div class="flex items-center justify-center">
+					{#if isClient}
+						<div class="flex h-[60px] items-center">
+							<img src={brand.logo} alt={`${brand.name} logo`} class="¡ w-[145px] min-w-[150px]" />
+						</div>
+					{:else}
+						<div class="mr-2">
+							<img src="/products/caresync/caresync-logo.svg" alt="CareSync" class="mr-2 h-7" />
+						</div>
+						<span class="font-pixel text-[38px] font-bold tracking-wider text-white opacity-60">
+							{brand.name}
+						</span>
+					{/if}
+				</div>
+				<div
+					class={[
+						'flex flex-col items-center justify-self-center',
+						align == 'start' && 'justify-start',
+						align == 'end' && 'justify-end',
+						align != 'start' && align != 'end' && 'justify-center'
+					]}
+				>
+					<Pill color="light" text={brand.slogan} />
+					<div
+						class="text-primary mt-[10px] text-center text-[12px] tracking-wider uppercase opacity-70"
+					>
+						{@html brand.sloganDetails}
+					</div>
+				</div>
 			</div>
-			<span class="font-pixel text-[38px] font-bold tracking-wider text-white opacity-60">
-				{brand.name}
-			</span>
+			{#if brand.underDevelopment}
+				<div class="absolute -top-7 -right-15 scale-80">
+					<Pill color="primary" text="Em desenvolvimento" customCss="!px-3" />
+				</div>
+			{/if}
 		</div>
-		<Button type="light" />
 	</div>
-
-	<!-- <p class="mb-4 text-sm text-gray-400">API DE PROCESSAMENTO DE PAGAMENTOS GLOBAL</p> -->
-</div>
+</a>

@@ -96,7 +96,7 @@
 
 	// Global keyboard shortcut handler
 	function globalKeyHandler(event: KeyboardEvent) {
-		console.log('Global keydown:', event.key, 'Meta:', event.metaKey, 'Ctrl:', event.ctrlKey);
+		// console.log('Global keydown:', event.key, 'Meta:', event.metaKey, 'Ctrl:', event.ctrlKey);
 
 		// Command+K (Mac) or Ctrl+K (Windows/Linux)
 		if ((event.metaKey || event.ctrlKey) && event.key === 'k') {
