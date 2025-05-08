@@ -111,6 +111,9 @@
 		width: 15px;
 		height: 15px;
 	}
+	.fw-border-b-divider-dot-center::after {
+		right: 50%;
+	}
 }
 
 @layer base {

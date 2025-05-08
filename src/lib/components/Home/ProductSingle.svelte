@@ -7,12 +7,17 @@
 		brand: Brand;
 		align: 'start' | 'center' | 'end';
 		isClient?: boolean;
+		minWidth?: string;
+		primary?: boolean;
 	}
 
-	let { brand, align, isClient = false }: Props = $props();
+	let { brand, align, isClient = false, minWidth = '', primary = false }: Props = $props();
 </script>
 
-<a href={brand.link} class="relative min-w-[275px] rounded-sm hover:opacity-45">
+<a
+	href={brand.link}
+	class={['relative rounded-sm hover:opacity-45', minWidth ? minWidth : 'min-w-[275px]']}
+>
 	<div class="mb-4 flex flex-col">
 		<div
 			class={[
@@ -45,7 +50,7 @@
 						align != 'start' && align != 'end' && 'justify-center'
 					]}
 				>
-					<Pill color="light" text={brand.slogan} />
+					<Pill color={primary ? 'primary' : 'light'} text={brand.slogan} />
 					<div
 						class="text-primary mt-[10px] text-center text-[12px] tracking-wider uppercase opacity-70"
 					>

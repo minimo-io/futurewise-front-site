@@ -16,7 +16,9 @@
 </section>
 
 <!-- Joint Ventures Section -->
-<section class="fw-border-b-divider mx-auto mt-8 pb-8">
+<section
+	class="fw-border-b-divider fw-border-b-divider-dot fw-border-b-divider-dot-center mx-auto mt-7 pb-6"
+>
 	<div class="max-w-futurewise mx-auto">
 		<div class="mb-3 flex items-center gap-10">
 			<div class="">

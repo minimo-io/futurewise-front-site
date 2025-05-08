@@ -31,13 +31,19 @@
 	];
 </script>
 
-<div class="max-w-futurewise relative mx-auto mt-8 flex">
+<div class="max-w-futurewise relative mx-auto mt-10 mb-1 flex">
 	{#each products as product, i}
 		{@const align = i === 0 ? 'start' : i === products.length - 1 ? 'end' : 'center'}
+		<!-- {@const align = 'center'} -->
+
 		<ProductSingle brand={product} {align} />
 	{/each}
 
 	<div class="absolute -top-[65%] left-[60%] scale-40 opacity-70">
+		<img src="/bgs/cross.svg" alt="cross" />
+	</div>
+
+	<div class="absolute -right-[20%] -bottom-[10%] scale-50 opacity-50">
 		<img src="/bgs/cross.svg" alt="cross" />
 	</div>
 </div>
