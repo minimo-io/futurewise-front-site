@@ -40,7 +40,7 @@
 	<ProductSingle
 		brand={{
 			name: 'ViiVPay',
-			slogan: 'PAGAMENTOS LATAM',
+			slogan: 'PAGAMENTOS',
 			sloganDetails: 'Visitar',
 			underDevelopment: false,
 			link: 'https://viivpay.com',
@@ -87,7 +87,7 @@
 		href="https://agentefaz.net"
 		rel="nofollow noopener"
 		target="_blank"
-		class="relative min-w-[366px] rounded-sm hover:opacity-45"
+		class="relative min-w-[366px] rounded-sm opacity-90 hover:opacity-50"
 	>
 		<div class="mb-4 flex flex-col justify-center">
 			<div class="flex items-center justify-center">
@@ -96,7 +96,7 @@
 				</div>
 			</div>
 			<div class="justify-center">
-				<div class="mx-auto max-w-[50%]">
+				<div class="mx-auto max-w-[38%]">
 					<Pill color="primary" text="Terceirização" />
 				</div>
 				<div

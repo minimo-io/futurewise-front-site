@@ -1,25 +1,11 @@
+<script lang="ts">
+	import TitleSection from '../TitleSection.svelte';
+</script>
+
 <!-- Hero Section -->
 <div class="relative my-20 max-w-4xl">
-	<div class="relative -left-10 flex items-center">
-		<div class="mr-5">
-			<img src="/bgs/square.svg" alt="square-decorator" class="h-4" />
-		</div>
-		<div>
-			<h1 class="text-3xl font-extralight md:text-4xl">
-				Bem-vindo
-
-				<div class="text-primary-content relative z-10 inline-block">
-					<span
-						class="font-pixel text-primary-content relative ml-2 bg-bottom text-[40px] tracking-widest"
-					>
-						Ao Futuro
-					</span>
-					<span class="bg-primary absolute -top-[2px] right-0 left-0 -z-10 h-[90%] translate-y-1"
-					></span>
-				</div>
-			</h1>
-		</div>
-	</div>
+	<!-- Section title -->
+	<TitleSection titleLeft="Bem-vindo" titleRight="Ao Futuro" />
 
 	<p
 		class="text-secondary font-regular my-7 font-sans text-[25px] leading-[118%] font-normal tracking-wide"
