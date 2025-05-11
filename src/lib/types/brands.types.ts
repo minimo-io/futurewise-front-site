@@ -1,3 +1,5 @@
+import { type Icon as IconType } from '@lucide/svelte';
+
 export interface Brand {
 	name: string;
 	logo?: string;
@@ -5,4 +7,5 @@ export interface Brand {
 	sloganDetails: string;
 	underDevelopment: boolean;
 	link?: string;
+	icon?: typeof IconType;
 }

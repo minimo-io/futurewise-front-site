@@ -2,16 +2,20 @@
 <script lang="ts">
 	import type { Brand } from '$lib/types/brands.types';
 	import Pill from '../Pill.svelte';
+	import { type Icon as IconType } from '@lucide/svelte';
 
 	interface Props {
 		brand: Brand;
 		align: 'start' | 'center' | 'end';
+		icon?: typeof IconType;
 		isClient?: boolean;
 		minWidth?: string;
 		primary?: boolean;
 	}
 
-	let { brand, align, isClient = false, minWidth = '', primary = false }: Props = $props();
+	let { brand, align, isClient = false, minWidth = '', primary = false, icon }: Props = $props();
+
+	console.log(icon);
 </script>
 
 <a
@@ -35,7 +39,10 @@
 						</div>
 					{:else}
 						<div class="mr-2">
-							<img src="/products/caresync/caresync-logo.svg" alt="CareSync" class="mr-2 h-7" />
+							{#if icon}
+								{@const Icon = icon}
+								<Icon strokeWidth="3" class="mr-1 opacity-60" />
+							{/if}
 						</div>
 						<span class="font-pixel text-[38px] font-bold tracking-wider text-white opacity-60">
 							{brand.name}
