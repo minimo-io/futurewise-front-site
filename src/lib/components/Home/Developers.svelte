@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Key, KeySquare } from '@lucide/svelte';
+	// import { Key, KeySquare } from '@lucide/svelte';
 	import TitleSection from '../TitleSection.svelte';
 </script>
 
-<section class="max-w-futurewise relative mx-auto my-16">
+<section class="max-w-futurewise relative mx-auto my-10">
 	<div class="container mx-auto">
 		<!-- Subtitle -->
 		<TitleSection titleLeft="Developers" titleRight="Ready" />
@@ -52,7 +52,7 @@
 		</div>
 	</div>
 
-	<div class="absolute -top-[30%] -left-[12%] scale-75 opacity-30">
+	<div class="absolute -top-[15%] -left-[12%] scale-75 opacity-30">
 		<img src="/bgs/cross.svg" alt="cross" />
 	</div>
 </section>

@@ -8,4 +8,5 @@ export interface Brand {
 	underDevelopment: boolean;
 	link?: string;
 	icon?: typeof IconType;
+	primary?: boolean;
 }

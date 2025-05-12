@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Clients from '$lib/components/Home/Clients.svelte';
+	// import Clients from '$lib/components/Home/Clients.svelte';
 	import Developers from '$lib/components/Home/Developers.svelte';
 	import Products from '$lib/components/Home/Products.svelte';
 	import PillFlower from '$lib/components/PillFlower.svelte';
@@ -17,7 +17,7 @@
 </section>
 
 <!-- Joint Ventures Section -->
-<section
+<!-- <section
 	class="fw-border-b-divider fw-border-b-divider-dot fw-border-b-divider-dot-center relative mx-auto mt-3 pb-6"
 >
 	<div class="max-w-futurewise mx-auto">
@@ -32,17 +32,16 @@
 			</p>
 		</div>
 
-		<!-- Clients -->
 		<Clients />
 	</div>
-</section>
+</section> -->
 
 <!-- Developers Section -->
 <Developers />
 
 <!-- Lab Section -->
 <section
-	class="fw-border-b-divider relative px-6 pb-5 md:px-12 lg:px-16"
+	class="fw-border-b-divider relative my-24 px-6 pb-5 md:px-12 lg:px-16"
 	style="background-image:url('/lab.png')"
 >
 	<div class="bg-primary absolute top-0 right-0 h-full w-full opacity-45"></div>
@@ -51,7 +50,7 @@
 	</div>
 	<div class="relative z-10">
 		<div class=" py-8 text-center">
-			<h2 class="mb-2 text-2xl font-bold">
+			<h2 class="mb-2 text-5xl font-bold">
 				HAS NOTHING TO DO<br />WITH <span class="text-fw-red">THE MOON</span>
 			</h2>
 		</div>

@@ -8,19 +8,18 @@
 		brand: Brand;
 		align: 'start' | 'center' | 'end';
 		icon?: typeof IconType;
-		isClient?: boolean;
 		minWidth?: string;
 		primary?: boolean;
 	}
 
-	let { brand, align, isClient = false, minWidth = '', primary = false, icon }: Props = $props();
+	let { brand, align, minWidth = '', primary = false, icon }: Props = $props();
 
 	console.log(icon);
 </script>
 
 <a
 	href={brand.link}
-	class={['relative rounded-sm opacity-90 hover:opacity-50', minWidth ? minWidth : 'min-w-[275px]']}
+	class={['relative rounded-sm opacity-90 hover:opacity-50', minWidth ? minWidth : 'min-w-[260px]']}
 >
 	<div class="mb-4 flex flex-col">
 		<div
@@ -33,7 +32,7 @@
 		>
 			<div class="flex flex-col">
 				<div class="flex items-center justify-center">
-					{#if isClient}
+					{#if brand.logo}
 						<div class="flex h-[60px] items-center">
 							<img src={brand.logo} alt={`${brand.name} logo`} class="¡ w-[145px] min-w-[150px]" />
 						</div>

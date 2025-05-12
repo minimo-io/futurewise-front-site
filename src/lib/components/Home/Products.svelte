@@ -2,7 +2,7 @@
 <script lang="ts">
 	import ProductSingle from '$lib/components/Home/ProductSingle.svelte';
 	import type { Brand } from '$lib/types/brands.types';
-	import { Activity, ShoppingBag, Scale3D, Shrub } from '@lucide/svelte';
+	import { Activity, Scale3D, Shrub, ShoppingBag } from '@lucide/svelte';
 
 	let products: Brand[] = [
 		{
@@ -12,36 +12,47 @@
 			underDevelopment: false,
 			icon: Activity
 		},
+
 		{
-			name: 'Bagity',
-			slogan: 'e-Commerce & Menus',
-			sloganDetails: 'Inteligentes & Na medida',
-			underDevelopment: false,
-			icon: ShoppingBag
-		},
-		{
-			name: 'FinXB',
+			name: 'FinX',
 			slogan: 'Pagamentos x-border',
 			sloganDetails: 'Transparentes via USD/USDT <br /> & BITCOIN',
 			underDevelopment: false,
 			icon: Scale3D
 		},
 		{
+			name: 'Braaay',
+			slogan: 'Vinhos boutique / clube',
+			sloganDetails: 'E cervejas especiais <br /> Vinhos Boutique',
+			underDevelopment: false,
+			link: 'https://braaay.com/',
+			logo: '/clients/braaay-logo.png',
+			primary: true
+		},
+		{
 			name: 'Growify',
-			slogan: 'Gestão de porfolio',
-			sloganDetails: 'De investimentos Bitcoin/Crypto <br /> Forex, FIIs',
-			underDevelopment: true,
+			slogan: 'Gestão de portfolio',
+			sloganDetails: 'De investimentos Crypto <br /> Forex, FIIs',
+			underDevelopment: false,
 			icon: Shrub
+		},
+		{
+			name: 'Bagity',
+			slogan: 'e-Commerce & Menus',
+			sloganDetails: 'Inteligentes & Na medida',
+			underDevelopment: false,
+			icon: ShoppingBag
 		}
 	];
 </script>
 
-<div class="max-w-futurewise relative mx-auto mt-10 mb-1 flex">
+<div class="relative mx-auto mt-10 mb-1 flex items-center justify-center">
 	{#each products as product, i (product.name)}
 		{@const align = i === 0 ? 'start' : i === products.length - 1 ? 'end' : 'center'}
-		<!-- {@const align = 'center'} -->
 
-		<ProductSingle brand={product} {align} icon={product.icon} />
+		<!-- {@const align = 'center'} -->
+		<!-- 	minWidth={product.name == 'Braaay' ? 'min-w-[366px]' : ''} -->
+		<ProductSingle brand={product} {align} icon={product.icon} primary={product.primary} />
 	{/each}
 
 	<div class="absolute -top-[65%] left-[60%] scale-40 opacity-70">
