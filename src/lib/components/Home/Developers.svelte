@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Key, KeySquare } from '@lucide/svelte';
 	import TitleSection from '../TitleSection.svelte';
 </script>
 
@@ -10,50 +11,25 @@
 		<div class="grid grid-cols-3 gap-12">
 			<div class="col-span-1 mt-7">
 				<h3 class="mb-2 text-xl font-bold">Plataforma unificada,<br />APIs modernas.</h3>
-				<p class="text-secondary mb-4 text-lg">
+				<p class="text-secondary mb-4 text-xl leading-6">
 					Além de nossos dashboards, a Futurewise fornece uma interface única e elegante que abstrai
 					toda a complexidade das integrações empresariais.
 				</p>
-				<p class="text-secondary mb-4 text-lg">
+				<p class="text-secondary mb-4 text-xl leading-6">
 					Com APIs prontas para integrar cada um de nossos produtos no seu próprio sistema.
 				</p>
-				<div class="flex space-x-4">
-					<button
-						class="hover:bg-opacity-10 rounded-full border border-white px-4 py-2 text-sm font-medium text-white hover:bg-white"
-					>
-						Documentação
-					</button>
-					<button
-						class="hover:bg-opacity-10 rounded-full border border-white px-4 py-2 text-sm font-medium text-white hover:bg-white"
-					>
-						<span class="flex items-center">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="mr-2 h-4 w-4"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-								/>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-								/>
-							</svg>
-							Obtenha sua API key
-						</span>
-					</button>
+				<div class="flex flex-row items-center">
+					<button class="fw-button !my-1 mr-4"> Documentação </button>
+					<!-- <button class="text-primary border-base-content !my-1 flex flex-row items-center">
+						<div>
+							<KeySquare class="h-4" />
+						</div>
+						<div>Obtenha sua API key</div>
+					</button> -->
 				</div>
 			</div>
 
-			<div class="relative col-span-2 rounded-md bg-gray-900 p-4">
+			<div class="relative col-span-2 rounded-md border bg-black p-4">
 				<div class="mb-4 flex space-x-2">
 					<span class="h-3 w-3 rounded-full bg-red-500"></span>
 					<span class="h-3 w-3 rounded-full bg-yellow-500"></span>

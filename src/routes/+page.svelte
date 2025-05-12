@@ -41,22 +41,25 @@
 <Developers />
 
 <!-- Lab Section -->
-<section class="py-12">
-	<div class="mb-8 text-center">
-		<button class="bg-white px-8 py-2 font-medium text-black hover:bg-gray-200"
-			>O LABORATÓRIO</button
-		>
+<section
+	class="fw-border-b-divider relative px-6 pb-5 md:px-12 lg:px-16"
+	style="background-image:url('/lab.png')"
+>
+	<div class="bg-primary absolute top-0 right-0 h-full w-full opacity-45"></div>
+	<div class="relative -top-[23px] z-10 text-center">
+		<PillFlower title="O LABORATÓRIO" />
 	</div>
-
-	<div class="bg-black py-8 text-center">
-		<h2 class="mb-2 text-2xl font-bold">
-			HAS NOTHING TO DO<br />WITH <span class="text-fw-red">THE MOON</span>
-		</h2>
+	<div class="relative z-10">
+		<div class=" py-8 text-center">
+			<h2 class="mb-2 text-2xl font-bold">
+				HAS NOTHING TO DO<br />WITH <span class="text-fw-red">THE MOON</span>
+			</h2>
+		</div>
 	</div>
 </section>
 
 <!-- Quote Section -->
-<section class="hidden px-6 py-12 md:px-12 lg:px-16">
+<section class=" px-6 py-12 md:px-12 lg:px-16">
 	<div class="container mx-auto">
 		<div class="mx-auto max-w-4xl">
 			<blockquote class="mb-4">

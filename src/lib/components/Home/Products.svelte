@@ -6,7 +6,7 @@
 
 	let products: Brand[] = [
 		{
-			name: 'Caresync',
+			name: 'CareSync',
 			slogan: 'Manutenção TI preditiva',
 			sloganDetails: 'e preventiva potenciada por IA',
 			underDevelopment: false,

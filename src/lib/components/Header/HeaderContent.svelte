@@ -18,7 +18,7 @@
 		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>
 	<div class="mt-8 flex flex-wrap gap-4">
-		<button class="text-base-200 bg-base-content rounded-full px-6 py-2">Saiba mais</button>
+		<button class="fw-button">Saiba mais</button>
 		<button
 			class="hover:bg-opacity-10 border-base-content text-base-content rounded-full border px-6 py-2 font-medium"
 		>
