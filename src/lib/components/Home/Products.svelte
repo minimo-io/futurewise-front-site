@@ -7,8 +7,8 @@
 	let products: Brand[] = [
 		{
 			name: 'CareSync',
-			slogan: 'Manutenção TI preditiva',
-			sloganDetails: 'e preventiva potenciada por IA',
+			slogan: 'Manutenção preditiva',
+			sloganDetails: 'e preventiva potenciada por IA<br />E gestão de ativos TI',
 			underDevelopment: false,
 			icon: Activity
 		},
@@ -22,8 +22,8 @@
 		},
 		{
 			name: 'Braaay',
-			slogan: 'Vinhos boutique / clube',
-			sloganDetails: 'E cervejas especiais <br /> Vinhos Boutique',
+			slogan: 'Clube de vinhos boutique',
+			sloganDetails: 'E cervejas especiais <br /> MCP Server para IA',
 			underDevelopment: false,
 			link: 'https://braaay.com/',
 			logo: '/clients/braaay-logo.png',

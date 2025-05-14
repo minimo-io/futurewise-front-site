@@ -3,10 +3,14 @@
 	import Developers from '$lib/components/Home/Developers.svelte';
 	import Products from '$lib/components/Home/Products.svelte';
 	import PillFlower from '$lib/components/PillFlower.svelte';
+	import TitleFullWidth from '$lib/components/TitleFullWidth.svelte';
+	import Quote from '$lib/components/Home/Quote.svelte';
 </script>
 
 <!-- Products Slider Section -->
-<section class="fw-border-b-divider relative -top-[23px] px-6 pb-5 md:px-12 lg:px-16">
+<section
+	class="fw-border-b-divider fw-border-b-divider-dot fw-border-b-divider-dot-center relative -top-[23px] px-6 pb-5 md:px-12 lg:px-16"
+>
 	<div>
 		<div class="text-center">
 			<PillFlower title="Produtos" />
@@ -16,66 +20,18 @@
 	</div>
 </section>
 
-<!-- Joint Ventures Section -->
-<!-- <section
-	class="fw-border-b-divider fw-border-b-divider-dot fw-border-b-divider-dot-center relative mx-auto mt-3 pb-6"
->
-	<div class="max-w-futurewise mx-auto">
-		<div class="mb-10 flex items-center gap-10">
-			<div class="">
-				<PillFlower title="Clientes" />
-			</div>
-
-			<p class="text-secondary max-w-3xl font-sans text-[22px] leading-6">
-				Projetos onde a Futurewise participa como fornecedor de tecnologia, alavancados por +10 anos
-				de experiência desenvolvendo produtos digitais
-			</p>
-		</div>
-
-		<Clients />
-	</div>
-</section> -->
-
 <!-- Developers Section -->
 <Developers />
 
-<!-- Lab Section -->
-<section
-	class="fw-border-b-divider relative my-24 px-6 pb-5 md:px-12 lg:px-16"
-	style="background-image:url('/lab.png')"
->
-	<div class="bg-primary absolute top-0 right-0 h-full w-full opacity-45"></div>
-	<div class="relative -top-[23px] z-10 text-center">
-		<PillFlower title="O LABORATÓRIO" />
-	</div>
-	<div class="relative z-10">
-		<div class=" py-8 text-center">
-			<h2 class="mb-2 text-5xl font-bold">
-				HAS NOTHING TO DO<br />WITH <span class="text-fw-red">THE MOON</span>
-			</h2>
-		</div>
-	</div>
-</section>
+<!-- Lab Section Title -->
+<TitleFullWidth
+	breadcrumb="O LABORATÓRIO"
+	titleLeft="HAS NOTHING TO DO<br/>WITH"
+	titleRight="THE MOON"
+/>
 
 <!-- Quote Section -->
-<section class=" px-6 py-12 md:px-12 lg:px-16">
-	<div class="container mx-auto">
-		<div class="mx-auto max-w-4xl">
-			<blockquote class="mb-4">
-				<div class="flex">
-					<span class="text-fw-red font-serif text-6xl">"</span>
-					<p class="text-lg text-white">
-						<span class="text-fw-red font-bold">F</span>uturewise não é uma palavra padrão de
-						dicionário, mas é usada geralmente como adjetivo ou advérbio significando "<span
-							class="text-fw-red">com relação ao futuro</span
-						>" ou "<span class="text-fw-red">em termos de futuro</span>".
-					</p>
-				</div>
-			</blockquote>
-			<p class="text-right text-sm text-gray-400">Fonte: Dicionário</p>
-		</div>
-	</div>
-</section>
+<Quote />
 
 <!-- About Section -->
 <section class="hidden px-6 py-12 text-gray-300 md:px-12 lg:px-16">
