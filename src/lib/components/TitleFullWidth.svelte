@@ -36,8 +36,8 @@
 				</div>
 			</h2>
 		</div>
-	</div>
-	<div class="absolute -top-[15%] -left-[0%] scale-75 opacity-100">
-		<img src="/bgs/cross.svg" alt="cross" />
+		<div class="absolute -top-[40%] -left-[8%] z-20 scale-75 opacity-90">
+			<img src="/bgs/cross.svg" alt="cross" />
+		</div>
 	</div>
 </section>
