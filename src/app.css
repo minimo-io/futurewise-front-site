@@ -96,9 +96,10 @@
 	}
 
 	.fw-border-b-divider {
-		/* @apply relative; */
-
 		border-bottom: 0.5px solid var(--color-base-300);
+	}
+	.fw-border-t-divider {
+		border-top: 0.5px solid var(--color-base-300);
 	}
 	.fw-border-b-divider-dot::after {
 		--right-position: 15%;
@@ -110,7 +111,18 @@
 		width: 15px;
 		height: 15px;
 	}
-	.fw-border-b-divider-dot-center::after {
+	.fw-border-t-divider-dot::after {
+		--right-position: 15%;
+		content: '';
+		background-image: url('/bgs/square.svg');
+		position: absolute;
+		right: calc((100vw - var(--max-width-futurewise)) / 2);
+		top: -7px;
+		width: 15px;
+		height: 15px;
+	}
+	.fw-border-b-divider-dot-center::after,
+	.fw-border-t-divider-dot-center::after {
 		right: 50%;
 	}
 	.fw-button {

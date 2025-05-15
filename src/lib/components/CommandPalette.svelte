@@ -41,13 +41,13 @@
 	}
 
 	function close() {
-		console.log('Closing modal');
+		// console.log('Closing modal');
 		closeCommandPalette(); // Call the global close function
 	}
 
 	// Key handler for the search input
 	function handleKeydown(event: KeyboardEvent) {
-		console.log('Keydown event in input:', event.key);
+		// console.log('Keydown event in input:', event.key);
 
 		if (!commandPaletteState.open) return; // Access the reactive property
 

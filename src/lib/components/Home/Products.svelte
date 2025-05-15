@@ -55,11 +55,11 @@
 		<ProductSingle brand={product} {align} icon={product.icon} primary={product.primary} />
 	{/each}
 
-	<div class="absolute -top-[65%] left-[60%] scale-40 opacity-70">
+	<div class="absolute -bottom-[40%] left-[55%] scale-80 opacity-20">
 		<img src="/bgs/cross.svg" alt="cross" />
 	</div>
 
-	<div class="absolute -right-[20%] -bottom-[10%] scale-50 opacity-50">
+	<!-- <div class="absolute -top-[55%] right-[55%] scale-50 opacity-50">
 		<img src="/bgs/cross.svg" alt="cross" />
-	</div>
+	</div> -->
 </div>

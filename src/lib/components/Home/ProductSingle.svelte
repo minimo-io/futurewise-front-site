@@ -14,7 +14,7 @@
 
 	let { brand, align, minWidth = '', primary = false, icon }: Props = $props();
 
-	console.log(icon);
+	// console.log(icon);
 </script>
 
 <a
