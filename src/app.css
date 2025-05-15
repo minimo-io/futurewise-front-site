@@ -116,6 +116,18 @@
 	.fw-button {
 		@apply text-base-200 bg-base-content rounded-full px-6 py-2;
 	}
+	.fw-home-about {
+		@apply text-secondary text-[22px];
+	}
+	.fw-home-about span {
+		@apply text-primary font-pixel mx-2 text-2xl;
+	}
+	.fw-home-about p {
+		@apply mb-6;
+	}
+	.fw-text-pixel {
+		@apply mb-6 !text-5xl font-bold;
+	}
 }
 
 @layer base {
