@@ -26,7 +26,7 @@
 
 <!-- Lab Section Title -->
 <TitleFullWidth
-	breadcrumb="O LABORATÓRIO"
+	breadcrumb="SOBRE NÓS"
 	titleLeft="HAS NOTHING TO DO<br/>WITH"
 	titleRight="THE MOON"
 />

@@ -1,6 +1,14 @@
 <!-- Footer -->
 <script lang="ts">
 	import { Circle } from '@lucide/svelte';
+	import { getCurrentYear } from '$utils';
+	import { AppConfig } from '$lib';
+
+	// Footer year
+	let currentYear = getCurrentYear();
+	const date = new Date(AppConfig.fw.founded);
+	const foundationYear = date.getFullYear();
+	const finalYear = `${currentYear != foundationYear ? `${foundationYear} - ${currentYear}` : currentYear}`;
 </script>
 
 <footer
@@ -11,40 +19,70 @@
 			<!-- Items -->
 			<div class="mb-5 grid grid-cols-2 gap-16 text-[18px] md:grid-cols-4">
 				<div>
-					<h3 class="mb-4 text-xl font-bold text-black">Produtos</h3>
+					<h3 class="mb-4 font-sans text-xl font-bold text-black">Produtos</h3>
 					<ul class="space-y-2">
-						<li><a href="/" class="text-gray-400 hover:text-white">CareSync</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">Braaay</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">Scorp</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">DropOn</a></li>
+						<li><a href="/" class="text-secondary">CareSync</a></li>
+						<li><a href="/" class="text-secondary">FinX</a></li>
+						<li><a href="/" class="text-secondary">Growify</a></li>
+						<li><a href="/" class="text-secondary">APIs</a></li>
 					</ul>
 				</div>
 
 				<div>
-					<h3 class="mb-4 text-xl font-bold text-black">Ventures</h3>
+					<h3 class="mb-4 font-sans text-xl font-bold text-black">Libraries</h3>
 					<ul class="space-y-2">
-						<li><a href="/" class="text-gray-400 hover:text-white">ViiVPay</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">Braday</a></li>
+						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
+						<li><a href="/" class="text-secondary">js-codex</a></li>
 					</ul>
 				</div>
 
 				<div>
-					<h3 class="mb-4 text-xl font-bold text-black">Social</h3>
+					<h3 class="mb-4 flex items-center font-sans text-xl font-bold text-black">Lab</h3>
 					<ul class="space-y-2">
-						<li><a href="/" class="text-gray-400 hover:text-white">Github</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">LinkedIn</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">Contato</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">Nostr</a></li>
+						<li><a href="/" class="text-secondary">Sobre Nós</a></li>
+						<li><a href="/" class="text-secondary">Experimentos</a></li>
+						<li><a href="/" class="text-secondary">Ferramentas</a></li>
+						<li><a href="/" class="text-secondary">Contato</a></li>
 					</ul>
 				</div>
 
 				<div>
-					<h3 class="mb-4 flex items-center text-xl font-bold text-black">Lab</h3>
+					<h3 class="mb-4 font-sans text-xl font-bold text-black">Social</h3>
 					<ul class="space-y-2">
-						<li><a href="/" class="text-gray-400 hover:text-white">Sobre Nós</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">Experimentos</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">Ferramentas</a></li>
-						<li><a href="/" class="text-gray-400 hover:text-white">Open Source</a></li>
+						<li>
+							<a
+								href={AppConfig.fw.socials.github}
+								rel="nofollow noopener"
+								target="_blank"
+								class="text-secondary"
+							>
+								Github
+							</a>
+						</li>
+						<li>
+							<a
+								href={AppConfig.fw.socials.huggingface}
+								rel="nofollow noopener"
+								target="_blank"
+								class="text-secondary">HuggingFace</a
+							>
+						</li>
+						<li>
+							<a
+								rel="nofollow noopener"
+								target="_blank"
+								href={AppConfig.fw.socials.nostr}
+								class="text-secondary">Nostr</a
+							>
+						</li>
+						<li>
+							<a
+								href={AppConfig.fw.socials.linkedin}
+								rel="nofollow noopener"
+								target="_blank"
+								class="text-secondary">LinkedIn</a
+							>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -64,7 +102,10 @@
 
 		<!-- Copyright/Left -->
 		<div class="mt-5 flex flex-col items-center justify-between md:flex-row">
-			<p class="mb-4 text-sm text-gray-500 md:mb-0">© 2025, Futurewise Inc.</p>
+			<p class="text-secondary mb-4 text-sm md:mb-0">
+				<!-- ©  -->
+				{finalYear}, Futurewise Inc.
+			</p>
 		</div>
 	</div>
 </footer>

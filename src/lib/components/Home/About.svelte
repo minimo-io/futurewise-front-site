@@ -1,5 +1,9 @@
+<script>
+	import { AppConfig } from '$lib/configs';
+</script>
+
 <div class="relative">
-	<section class="fw-home-about z-10 mx-auto mb-12 max-w-[70%] pt-10">
+	<section class="fw-home-about z-10 mx-auto mb-12 max-w-[51%] pt-10">
 		<p>
 			<span class="fw-text-pixel">W</span>e are an innovation & development lab experimenting in the
 			intersection of e-Commerce, Payments, AI and Machines, with a focus in LATAM.
@@ -12,18 +16,15 @@
 
 		<p>
 			We are minimalists & efficient. We aim at building performant systems with little. We use what
-			it's best, we do not reinvent wheels. No charge for it. We are <span
-				class="text-primary text-lg font-bold"
-				><a
-					target="_blank"
-					rel="nofollow noopener"
-					href="https://a16z.com/the-techno-optimist-manifesto/"
-					class="underline hover:opacity-50">techno-optimists</a
-				></span
+			it's best, we do not reinvent wheels. No charge for it. We are <a
+				target="_blank"
+				rel="nofollow noopener"
+				href="https://a16z.com/the-techno-optimist-manifesto/"
+				class="underline hover:opacity-50">techno-optimists</a
 			>.
 		</p>
 
-		<p class="font-bold"><span>//</span> We design, we experiment, we ship!</p>
+		<p class="text-base-content font-bold"><span>//</span> We design, we experiment, we ship!</p>
 
 		<p>
 			<span class="fw-text-pixel">W</span>e are also a platform for developing Digital Products. We
@@ -32,7 +33,8 @@
 
 		<p>
 			Some experiments fail, do not reach the level of products, so they remain as acquired
-			knowledge in the form of libraries, designs, and articles.
+			knowledge in the form of <a href={AppConfig.fw.socials.npm}>libraries</a>, designs, and
+			<a href="/blog">articles</a>.
 		</p>
 
 		<p>
@@ -42,24 +44,27 @@
 			>.
 		</p>
 
-		<p>
+		<p class="relative">
 			<span class="fw-text-pixel">F</span>ortunately our base tech stack is very simple yet
 			powerful:
-			<span class="font-bold">Svelte</span>
+			<a href="/">Svelte</a>
 			&
-			<span class="font-bold">Figma</span>
-			for the front-end, <span class="font-bold">NestJS</span> for our APIs,
-			<span class="font-bold">Python</span> for AI & <span class="font-bold">MicroPython</span> for
-			embedded systems, and <span class="font-bold">Docker</span> for containerization,
-			<span class="font-bold">Bitcoin</span> & <span class="font-bold">USDT</span> for value
-			preservation & money transmission,
-			<span class="font-bold">Vercel</span>, <span class="font-bold">Render</span> &
-			<span class="font-bold">AWS</span> for cloud infrastructure.
+			<a href="/">Figma</a>
+			for the front-end, <a href="/">NestJS</a> for our APIs,
+			<a href="/">Python</a> for AI & <a href="/">MicroPython</a> for embedded systems, and
+			<a href="/">Docker</a>
+			for containerization,
+			<a href="/">Bitcoin</a> & <a href="/">USDT</a> for value preservation & money transmission,
+			<a href="/">Vercel</a>,<a href="/">Render</a> &
+			<a href="/">AWS</a> for cloud infrastructure.
+			<!-- <div class="absolute top-[16px] -left-[260px] hidden md:block">
+				<img src="/arrow.svg" alt="arrow-decor" />
+			</div> -->
 		</p>
 
 		<p>
-			<span class="fw-text-pixel">W</span>e believe in open-protocols, so we are also experimenting
-			on building for <span class="font-bold">Nostr</span>.
+			<span class="fw-text-pixel">W</span>e believe in permission-less, global, open protocols
+			(TCP/IP, HTTP, Bitcoin, Nostr, WebRTC, etc) and technologies.
 		</p>
 
 		<p>
@@ -79,15 +84,19 @@
 
 		<p>
 			We nurse from open-source, so we contribute to open-source. Many of the libraries we create
-			for our products can be found in our <span class="text-primary text-lg font-bold"
-				><a href="/" class="underline hover:opacity-50">GitHub profile</a></span
-			>. Sometimes even complete projects!
+			for our products can be found in our <a
+				href={AppConfig.fw.socials.github}
+				class="underline hover:opacity-50">GitHub</a
+			>
+			or
+			<a href={AppConfig.fw.socials.npm} class="underline hover:opacity-50">NPM</a> profiles. Sometimes
+			even complete projects!
 		</p>
 
 		<p>
-			Have a crazy idea? Let's chat about it, we will love it, <span
-				class="text-primary text-lg font-bold"
-				><a href="/" class="underline hover:opacity-50">get in touch</a></span
+			Have a crazy idea? Let's chat about it, we will love it, <a
+				href="/"
+				class="underline hover:opacity-50">get in touch</a
 			>.
 		</p>
 
@@ -105,7 +114,7 @@
 			<i class="font-bold text-white">~The Futurewise Team</i>
 		</p>
 	</section>
-	<div class="absolute -right-[18%] bottom-[25%] z-0 scale-80 opacity-80">
+	<div class="absolute -right-[18%] bottom-[25%] z-0 scale-80 opacity-80 md:-right-[5%]">
 		<img src="/bgs/circles.svg" alt="circles" />
 	</div>
 </div>

@@ -131,6 +131,9 @@
 	.fw-home-about {
 		@apply text-secondary text-[22px];
 	}
+	.fw-home-about a {
+		@apply text-base-content font-pixel no-underline;
+	}
 	.fw-home-about span {
 		@apply text-primary font-pixel mx-2 text-2xl;
 	}
@@ -160,6 +163,18 @@
 	}
 	header a {
 		@apply hover:opacity-50;
+	}
+	header {
+		@apply font-pixel;
+	}
+	main {
+		@apply font-pixel;
+	}
+	footer {
+		@apply font-pixel;
+	}
+	footer a {
+		@apply hover:!text-black;
 	}
 }
 
