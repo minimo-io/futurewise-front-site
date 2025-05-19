@@ -51,7 +51,7 @@
 		</p>
 
 		<p class="relative">
-			<span class="fw-text-pixel">F</span>uturewise's stack is quite simple yet powerful:
+			<span class="fw-text-pixel">F</span>uturewise's stack is simple yet powerful:
 			<span class="!text-primary !mx-0 !font-sans font-bold">Svelte</span>
 			&
 			<span class="!text-primary !mx-0 !font-sans font-bold">Figma</span>

@@ -40,7 +40,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 
 		<!-- Code -->
 		<div
-			class="relative mt-5 rounded-md border md:-top-7 md:col-span-2 md:mt-0 md:ml-12"
+			class="relative mt-8 rounded-md border md:-top-7 md:col-span-2 md:mt-0 md:ml-12"
 			style="border-width:0.5px"
 		>
 			<div class=" mb-4 flex border-b px-3 py-[8px]">

@@ -13,24 +13,24 @@
 </script>
 
 <footer
-	class="fw-border-t-divider md:fw-border-t-divider-dot fw-border-t-divider-dot-center relative bg-white px-(--fw-app-margin) pt-12 pb-12 pl-12 md:pt-18 md:pl-0"
+	class="fw-border-t-divider md:fw-border-t-divider-dot fw-border-t-divider-dot-center relative bg-white px-(--fw-app-margin) pt-5 pb-10 pl-12 md:pt-18 md:pl-0"
 >
 	<div class="max-w-fw container mx-auto flex flex-col">
 		<div class="flex flex-col justify-between md:flex-row">
 			<!-- Items -->
-			<div class="mb-5 grid grid-cols-2 gap-16 text-[18px] md:grid-cols-4">
+			<div class="mb-5 grid grid-cols-2 gap-20 text-[18px] md:grid-cols-4">
 				<div>
-					<h3 class="mb-4 font-sans text-xl font-bold text-black">Produtos</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Produtos</h3>
 					<ul class="space-y-2">
 						<li><a href="/" class="text-secondary">CareSync</a></li>
 						<li><a href="/" class="text-secondary">FinX</a></li>
 						<li><a href="/" class="text-secondary">Growify</a></li>
-						<li><a href="/" class="text-secondary">APIs</a></li>
+						<li><a href="https://braaay.com" class="text-secondary">Braaay</a></li>
 					</ul>
 				</div>
 
 				<div class="order-last md:order-none">
-					<h3 class="mb-4 font-sans text-xl font-bold text-black">Libraries</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Libraries</h3>
 					<ul class="space-y-2">
 						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
 						<li><a href="/" class="text-secondary">js-codex</a></li>
@@ -38,7 +38,7 @@
 				</div>
 
 				<div>
-					<h3 class="mb-4 flex items-center font-sans text-xl font-bold text-black">Lab</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Lab</h3>
 					<ul class="space-y-2">
 						<li><a href="/" class="text-secondary">Sobre Nós</a></li>
 						<li><a href="/" class="text-secondary">Experimentos</a></li>
@@ -48,7 +48,7 @@
 				</div>
 
 				<div>
-					<h3 class="mb-4 font-sans text-xl font-bold text-black">Social</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Social</h3>
 					<ul class="space-y-2">
 						<li>
 							<a
@@ -89,26 +89,15 @@
 			</div>
 			<!-- Logo / Status -->
 			<div
-				class="order-first mb-10 flex flex-col items-start justify-start md:order-none md:mb-0 md:items-end"
+				class="order-first mb-10 flex flex-col items-start justify-center md:order-none md:mb-0 md:items-end"
 			>
-				<div class="">
+				<div class="hidden md:block">
 					<img
 						src="/logos/futurewise-logo-footer.svg"
-						class="w-[150px] md:w-[180px]"
+						class="w-[250px]"
 						width="180"
 						alt="footer-logo"
 					/>
-				</div>
-				<!-- <div class="block md:hidden">
-					<img
-						src="/logos/futurewise-logo-footer.svg"
-						class="w-[150px]"
-						width="150"
-						alt="footer-logo"
-					/>
-				</div> -->
-				<div class="hidden md:block">
-					<!-- <SystemStatus /> -->
 				</div>
 			</div>
 		</div>
@@ -117,6 +106,14 @@
 		<div
 			class="mt-5 flex flex-col items-start border-black md:flex-col md:items-start md:justify-start"
 		>
+			<div class="block md:hidden">
+				<img
+					src="/logos/futurewise-logo-footer.svg"
+					class="w-[130px] md:w-[180px]"
+					width="180"
+					alt="footer-logo"
+				/>
+			</div>
 			<div class="relative -left-2">
 				<SystemStatus />
 			</div>

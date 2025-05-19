@@ -1,15 +1,14 @@
 import {
 	Wine,
 	Globe,
-	Grape,
-	Gift,
 	PackageOpen,
-	Beer,
 	Droplets,
 	Store,
 	Factory,
-	CalendarDays,
-	Hop
+	Hop,
+	Code,
+	Layers,
+	FlaskConical
 } from '@lucide/svelte';
 import type { DrawerData } from '$lib/types/drawer.types';
 
@@ -17,31 +16,32 @@ import type { DrawerData } from '$lib/types/drawer.types';
 export const drawerData = {
 	en: [
 		{
-			id: 'wines',
-			name: 'Wines',
+			id: 'products',
+			name: 'Products',
 			icon: Wine,
 			subMenu: true
 		} as DrawerData
 	],
 	pt: [
 		{
-			id: 'wines',
-			name: 'Vinhos',
-			icon: Wine,
+			id: 'products',
+			name: 'Produtos',
+			icon: Layers,
 			subMenu: true
 		} as DrawerData,
 		{
-			id: 'countries',
-			name: 'Paises',
+			id: 'developers',
+			name: 'Desenvolvedores',
+			icon: Code,
+			subMenu: true
+		} as DrawerData,
+		{
+			id: 'languages',
+			name: 'Idiomas',
 			icon: Globe,
 			subMenu: true
 		} as DrawerData,
-		{
-			id: 'grapes',
-			name: 'Uvas',
-			icon: Grape,
-			subMenu: true
-		} as DrawerData,
+
 		// {
 		// 	id: 'organic',
 		// 	name: 'Orgânicos',
@@ -49,31 +49,20 @@ export const drawerData = {
 		// 	url: '/tag/vinhos-organicos/',
 		// 	color: 'green'
 		// } as DrawerData,
+
 		{
-			id: 'gifts',
-			name: 'Presentes & Kits',
-			icon: Gift,
-			url: '/kits/'
-		} as DrawerData,
-		{
-			id: 'beers',
-			name: 'Cervejas',
-			icon: Beer,
-			url: '/cervejas/'
-		} as DrawerData,
-		{
-			id: 'experiences',
-			name: 'Experiências',
-			url: '/experiencias/',
-			icon: CalendarDays
+			id: 'lab',
+			name: 'Laboratório',
+			url: '/lab/',
+			icon: FlaskConical
 		} as DrawerData
 	],
 	es: [
 		{
-			id: 'beers',
-			name: 'Cervezas',
-			icon: Beer,
-			url: '/uy/cervezas/'
+			id: 'products',
+			name: 'Productos',
+			icon: Wine,
+			subMenu: true
 		} as DrawerData,
 		{
 			id: 'beerstyles',

@@ -2,7 +2,7 @@
 	import { ChevronRight, CircleUser, Headset, Truck, Heart, Sparkle } from '@lucide/svelte';
 	import { openSubmenu } from '$stores/DrawerState.state.svelte';
 	import { drawerData } from '$lib/data/drawer.data';
-	import { localizeHref, getLocale } from '../../../paraglide/runtime';
+	import { localizeHref, getLocale } from '$paraglide/runtime';
 	// import { getLocale, localizeHref } from '$lib/paraglide/runtime';
 	// import WhatsappButton from '../buttons/WhatsappButton.svelte';
 	// import { isAuthenticated } from '$lib/graphql/auth';
@@ -20,7 +20,8 @@
 				class={[
 					'border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm',
 					drawer?.color == 'green' && '!text-bra',
-					drawer?.color == 'red' && '!text-[red]'
+					drawer?.color == 'red' && '!text-[red]',
+					i == 0 ? 'border-t' : ''
 				]}
 			>
 				<div class="flex justify-center self-center text-left align-middle">

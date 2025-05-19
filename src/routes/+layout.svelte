@@ -14,13 +14,13 @@
 		// Close drawer if active
 		closeDrawer();
 		// reset horizontal scroll on menu if exsits
-		const secondaryMenus = document.querySelectorAll('.bry-secondary-menu');
+		// const secondaryMenus = document.querySelectorAll('.bry-secondary-menu');
 
-		secondaryMenus.forEach((menu) => {
-			if (menu instanceof HTMLElement) {
-				menu.scrollLeft = 0;
-			}
-		});
+		// secondaryMenus.forEach((menu) => {
+		// 	if (menu instanceof HTMLElement) {
+		// 		menu.scrollLeft = 0;
+		// 	}
+		// });
 	});
 </script>
 

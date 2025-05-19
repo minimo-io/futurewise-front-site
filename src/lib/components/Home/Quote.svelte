@@ -1,5 +1,5 @@
 <div class="fw-border-b-divider py-5">
-	<section class="mx-auto max-w-full px-6 md:max-w-[60%] md:px-12 lg:px-16">
+	<section class="mx-auto max-w-full px-6 md:max-w-[65%] md:px-12 lg:px-16">
 		<blockquote class="my-10">
 			<div class="relative mb-2">
 				<!-- Quote start -->

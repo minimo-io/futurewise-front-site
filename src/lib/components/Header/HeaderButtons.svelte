@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { Command, Globe, Hammer, Menu } from '@lucide/svelte';
+	import { Command, Globe, Hammer, Menu, X } from '@lucide/svelte';
 	import HeaderMenu from './HeaderMenu.svelte';
 	import { onMount } from 'svelte';
 	import { openCommandPalette } from '$lib/stores/CommandPallete.state.svelte'; // Import the open function
 	import { m } from '$paraglide/messages';
+	import { toggleDrawer, drawerState } from '$stores/DrawerState.state.svelte';
 
 	let isMac = $state<boolean | null>(null);
 
@@ -48,10 +49,19 @@
 
 		<!-- Mobile -->
 		<button
+			onclick={() => {
+				// alert('Open drawer...');
+				toggleDrawer();
+			}}
 			class="bg-base-200 hover:bg-base-100 fw-header-fs relative items-center rounded-full p-3 md:hidden"
 		>
 			<img src="/flags/brazil.png" alt="flag" class="absolute -top-2 -right-1 h-[20px] w-[20px]" />
-			<Menu class="h-5" strokeWidth="1" />
+
+			{#if drawerState.active}
+				<X class="!mr-0 h-[22px]" />
+			{:else}
+				<Menu class="h-5" />
+			{/if}
 		</button>
 
 		<!-- Desktop & Mobile -->
