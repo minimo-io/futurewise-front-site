@@ -20,7 +20,7 @@
 		<PillFlower title={breadcrumb} />
 	</div>
 	<!-- Content -->
-	<div class="relative z-10 min-w-[500px]">
+	<div class="relative z-10 md:min-w-[500px]">
 		<div class=" mx-auto w-full bg-black px-12 py-4 text-center">
 			<h2 class=" text-4xl font-bold tracking-wider">
 				{@html titleLeft}

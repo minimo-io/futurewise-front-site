@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { Command, Globe, Hammer } from '@lucide/svelte';
+	import { Command, Globe, Hammer, Menu } from '@lucide/svelte';
 	import HeaderMenu from './HeaderMenu.svelte';
 	import { onMount } from 'svelte';
 	import { openCommandPalette } from '$lib/stores/CommandPallete.state.svelte'; // Import the open function
+	import { m } from '$paraglide/messages';
 
 	let isMac = $state<boolean | null>(null);
 
@@ -15,12 +16,13 @@
 	}
 </script>
 
-<div class="flex items-center gap-16">
+<div class="flex items-center gap-10 md:gap-16">
 	<HeaderMenu />
-	<div class="flex items-center gap-4">
-		<div class="relative">
+	<div class="flex items-center gap-[10px] md:gap-4">
+		<!-- Desktop -->
+		<div class="relative hidden md:block">
 			<button
-				class="bg-base-200 hover:bg-base-100 fw-header-fs rounded-full px-3 py-3"
+				class="bg-base-200 hover:bg-base-100 fw-header-fs rounded-full p-3"
 				onclick={handleHammerClick}
 			>
 				<Hammer class="h-5" strokeWidth="1" />
@@ -37,14 +39,26 @@
 			</div>
 		</div>
 
-		<button class="bg-base-200 hover:bg-base-100 fw-header-fs relative rounded-full px-3 py-3">
+		<button
+			class="bg-base-200 hover:bg-base-100 fw-header-fs relative hidden rounded-full px-3 py-3 md:block"
+		>
 			<img src="/flags/brazil.png" alt="flag" class="absolute -top-2 -right-1 h-[22px] w-[22px]" />
 			<Globe class="h-5" strokeWidth="1" />
 		</button>
+
+		<!-- Mobile -->
 		<button
-			class="bg-base-200 hover:bg-base-100 rounded-full px-8 py-3 text-[15px] font-light uppercase"
+			class="bg-base-200 hover:bg-base-100 fw-header-fs relative items-center rounded-full p-3 md:hidden"
 		>
-			Entrar
+			<img src="/flags/brazil.png" alt="flag" class="absolute -top-2 -right-1 h-[20px] w-[20px]" />
+			<Menu class="h-5" strokeWidth="1" />
+		</button>
+
+		<!-- Desktop & Mobile -->
+		<button
+			class="bg-base-200 hover:bg-base-100 flex items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:px-8 md:text-[15px]"
+		>
+			{m.login()}
 		</button>
 	</div>
 </div>

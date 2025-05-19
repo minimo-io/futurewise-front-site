@@ -2,7 +2,7 @@
 <script lang="ts">
 	import ProductSingle from '$lib/components/Home/ProductSingle.svelte';
 	import type { Brand } from '$lib/types/brands.types';
-	import { Activity, Scale3D, Shrub, ShoppingBag } from '@lucide/svelte';
+	import { Activity, Shrub, ShoppingBag, Bird } from '@lucide/svelte';
 
 	let products: Brand[] = [
 		{
@@ -16,9 +16,9 @@
 		{
 			name: 'FinX',
 			slogan: 'Pagamentos x-border',
-			sloganDetails: 'Transparentes via USD/USDT <br /> & BITCOIN',
+			sloganDetails: 'Globais, em tempo real <br />via Fiat, USDT & BITCOIN',
 			underDevelopment: false,
-			icon: Scale3D
+			icon: Bird
 		},
 		{
 			name: 'Braaay',
@@ -30,23 +30,23 @@
 			primary: true
 		},
 		{
-			name: 'Growify',
-			slogan: 'Gestão de portfolio',
-			sloganDetails: 'De investimentos Crypto <br /> Forex, FIIs',
-			underDevelopment: false,
-			icon: Shrub
-		},
-		{
 			name: 'Bagity',
 			slogan: 'e-Commerce & Menus',
 			sloganDetails: 'Inteligentes & Na medida',
 			underDevelopment: false,
 			icon: ShoppingBag
+		},
+		{
+			name: 'Growify',
+			slogan: 'Gestão de portfolio',
+			sloganDetails: 'De investimentos Crypto <br /> Forex, FIIs',
+			underDevelopment: false,
+			icon: Shrub
 		}
 	];
 </script>
 
-<div class="relative mx-auto mt-10 mb-1 flex items-center justify-center">
+<div class="relative mx-auto mt-10 mb-1 flex flex-col items-center justify-center md:flex-row">
 	{#each products as product, i (product.name)}
 		{@const align = i === 0 ? 'start' : i === products.length - 1 ? 'end' : 'center'}
 

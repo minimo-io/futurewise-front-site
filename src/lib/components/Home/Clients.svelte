@@ -32,7 +32,7 @@
 	];
 </script>
 
-<div class="max-w-futurewise relative mx-auto mt-8 flex">
+<div class="max-w-fw relative mx-auto mt-8 flex">
 	<!-- {#each products as product, i} -->
 	<!-- {@const align = i === 0 ? 'start' : i === products.length - 1 ? 'end' : 'center'} -->
 
@@ -47,7 +47,6 @@
 			logo: '/clients/viivpay-logo.png'
 		}}
 		align={'center'}
-		isClient={true}
 		primary={true}
 		minWidth="min-w-[366px]"
 	/>
@@ -66,7 +65,6 @@
 		align={'center'}
 		minWidth="min-w-[366px]"
 		primary={true}
-		isClient={true}
 	/>
 
 	<!-- AGF -->

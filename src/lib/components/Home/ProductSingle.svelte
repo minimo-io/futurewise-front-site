@@ -21,7 +21,7 @@
 	href={brand.link}
 	class={[
 		'relative scale-90 rounded-sm opacity-90 hover:opacity-50',
-		minWidth ? minWidth : 'min-w-[260px]'
+		minWidth ? minWidth : 'md:min-w-[260px]'
 	]}
 >
 	<div class="mb-4 flex flex-col">
@@ -43,10 +43,10 @@
 						<div class="mr-2">
 							{#if icon}
 								{@const Icon = icon}
-								<Icon strokeWidth="3" class="mr-1 opacity-60" />
+								<Icon strokeWidth="3" class="text-base-content mr-1" />
 							{/if}
 						</div>
-						<span class="font-pixel text-[38px] font-bold tracking-wider text-white opacity-60">
+						<span class="font-pixel text-base-content text-4xl font-bold tracking-wider opacity-90">
 							{brand.name}
 						</span>
 					{/if}

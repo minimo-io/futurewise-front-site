@@ -14,6 +14,13 @@
 @import '@fontsource/tiny5';
 @import '@fontsource-variable/fira-code'; /* Supports weights 300-700 */
 
+*,
+*::after,
+*::before {
+	transition: opacity 0.2s linear;
+	/* outline: 2px solid lime; */
+}
+
 @plugin "daisyui" {
 	themes:
 		futurewise --default,
@@ -26,9 +33,10 @@
 	--font-pixel: 'Tiny5', sans-serif;
 	--font-mono: 'Fira Code Variable', monospace;
 	/* Project max-width */
-	--max-width-futurewise: 1100px; /*  e 275px at ProductSingle.svelte */
+	--max-width-fw: 1100px; /*  e 275px at ProductSingle.svelte */
+	/* --max-width-fw: 1024px; */
 
-	/* --max-width-futurewise: 1024px; */
+	--fw-app-margin: 25px;
 }
 
 /* ——— Dark Theme ——— */
@@ -81,6 +89,31 @@
 	--noise: 0;
 }
 
+@utility fw-border-b-divider-dot {
+	&::after {
+		--right-position: 15%;
+		content: '';
+		background-image: url('/bgs/square.svg');
+		position: absolute;
+		right: calc((100vw - var(--max-width-fw)) / 2);
+		bottom: -7px;
+		width: 15px;
+		height: 15px;
+	}
+}
+@utility fw-border-t-divider-dot {
+	&::after {
+		--right-position: 15%;
+		content: '';
+		background-image: url('/bgs/square.svg');
+		position: absolute;
+		right: calc((100vw - var(--max-width-fw)) / 2);
+		top: -7px;
+		width: 15px;
+		height: 15px;
+	}
+}
+
 @layer utilities {
 	.fw-header-fs {
 		@apply text-[17px] font-light;
@@ -101,32 +134,13 @@
 	.fw-border-t-divider {
 		border-top: 0.5px solid var(--color-base-300);
 	}
-	.fw-border-b-divider-dot::after {
-		--right-position: 15%;
-		content: '';
-		background-image: url('/bgs/square.svg');
-		position: absolute;
-		right: calc((100vw - var(--max-width-futurewise)) / 2);
-		bottom: -7px;
-		width: 15px;
-		height: 15px;
-	}
-	.fw-border-t-divider-dot::after {
-		--right-position: 15%;
-		content: '';
-		background-image: url('/bgs/square.svg');
-		position: absolute;
-		right: calc((100vw - var(--max-width-futurewise)) / 2);
-		top: -7px;
-		width: 15px;
-		height: 15px;
-	}
+
 	.fw-border-b-divider-dot-center::after,
 	.fw-border-t-divider-dot-center::after {
 		right: 50%;
 	}
 	.fw-button {
-		@apply text-base-200 bg-base-content rounded-full px-6 py-2;
+		@apply text-base-200 bg-base-content rounded-full px-6 py-2 text-sm md:text-base;
 	}
 	.fw-home-about {
 		@apply text-secondary text-[22px];
@@ -161,12 +175,13 @@
 	button {
 		@apply cursor-pointer hover:opacity-50;
 	}
+	header {
+		@apply font-pixel w-full;
+	}
 	header a {
 		@apply hover:opacity-50;
 	}
-	header {
-		@apply font-pixel;
-	}
+
 	main {
 		@apply font-pixel;
 	}

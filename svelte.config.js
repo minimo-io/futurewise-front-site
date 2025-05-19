@@ -14,7 +14,10 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter(),
 		alias: {
-			$utils: path.resolve('src/lib/utils')
+			$utils: path.resolve('src/lib/utils'),
+			$stores: path.resolve('src/lib/stores'),
+			$paraglide: path.resolve('src/paraglide')
+
 			// $stores: path.resolve('src/lib/stores'),
 			// $data: path.resolve('src/lib/data'),
 			// $config: path.resolve('src/lib/config')

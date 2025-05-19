@@ -1,5 +1,7 @@
 <!-- Decoration 1 -->
-<div class="absolute top-[30%] right-[25%] opacity-70">
+<div
+	class="absolute top-[15%] right-[5%] scale-60 opacity-70 md:top-[30%] md:right-[25%] md:scale-100"
+>
 	<img src="/bgs/cross.svg" alt="cross" />
 </div>
 

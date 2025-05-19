@@ -24,7 +24,9 @@
 			>.
 		</p>
 
-		<p class="text-base-content font-bold"><span>//</span> We design, we experiment, we ship!</p>
+		<p class="text-base-content font-sans font-bold italic">
+			<span>//</span> We design, we experiment, we ship!
+		</p>
 
 		<p>
 			<span class="fw-text-pixel">W</span>e are also a platform for developing Digital Products. We
@@ -44,19 +46,30 @@
 			>.
 		</p>
 
+		<p class="text-base-content font-sans font-bold italic">
+			<span>//</span> The stack.
+		</p>
+
 		<p class="relative">
-			<span class="fw-text-pixel">F</span>ortunately our base tech stack is very simple yet
-			powerful:
-			<a href="/">Svelte</a>
+			<span class="fw-text-pixel">F</span>uturewise's stack is quite simple yet powerful:
+			<span class="!text-primary !mx-0 !font-sans font-bold">Svelte</span>
 			&
-			<a href="/">Figma</a>
-			for the front-end, <a href="/">NestJS</a> for our APIs,
-			<a href="/">Python</a> for AI & <a href="/">MicroPython</a> for embedded systems, and
-			<a href="/">Docker</a>
+			<span class="!text-primary !mx-0 !font-sans font-bold">Figma</span>
+			for the front-end, <span class="!text-primary !mx-0 !font-sans font-bold">NestJS</span> for
+			our APIs,
+			<span class="!text-primary !mx-0 !font-sans font-bold">Python</span> for AI &
+			<span class="!text-primary !mx-0 !font-sans font-bold">MicroPython</span>
+			for embedded systems, and
+			<span class="!text-primary !mx-0 !font-sans font-bold">Docker</span>
 			for containerization,
-			<a href="/">Bitcoin</a> & <a href="/">USDT</a> for value preservation & money transmission,
-			<a href="/">Vercel</a>,<a href="/">Render</a> &
-			<a href="/">AWS</a> for cloud infrastructure.
+			<span class="!text-primary !mx-0 !font-sans font-bold">Bitcoin</span> &
+			<span class="!text-primary !mx-0 !font-sans font-bold">USDT</span> via a
+			<span class="!text-primary !mx-0 !font-sans font-bold">Lightning</span>
+			for value preservation & money transmission,
+			<span class="!text-primary !mx-0 !font-sans font-bold">Vercel</span>,
+			<span class="!text-primary !mx-0 !font-sans font-bold"> Render </span>
+			&
+			<span class="!text-primary !mx-0 !font-sans font-bold">AWS</span> for cloud infrastructure.
 			<!-- <div class="absolute top-[16px] -left-[260px] hidden md:block">
 				<img src="/arrow.svg" alt="arrow-decor" />
 			</div> -->
@@ -78,16 +91,18 @@
 		</p>
 
 		<p>
-			We also curate a list of third party Tools that we ourselves use on a daily basis, aiming to
-			share with others not only our own stuff, but what it's best out there.
+			We also curate a list of third party <a href="/" class="">Tools</a> that we ourselves use on a
+			daily basis, aiming to share with others not only our own stuff, but what it's best out there.
+		</p>
+
+		<p class="text-base-content font-sans font-bold italic">
+			<span>//</span> OS.
 		</p>
 
 		<p>
-			We nurse from open-source, so we contribute to open-source. Many of the libraries we create
-			for our products can be found in our <a
-				href={AppConfig.fw.socials.github}
-				class="underline hover:opacity-50">GitHub</a
-			>
+			<span class="fw-text-pixel">W</span>e nurse from open-source, so we contribute to open-source.
+			Many of the libraries we create for our products can be found in our
+			<a href={AppConfig.fw.socials.github} class="underline hover:opacity-50">GitHub</a>
 			or
 			<a href={AppConfig.fw.socials.npm} class="underline hover:opacity-50">NPM</a> profiles. Sometimes
 			even complete projects!
@@ -100,11 +115,14 @@
 			>.
 		</p>
 
-		<ul class="mb-8 list-inside list-disc space-y-2 pl-6">
+		<ul
+			class="marker:text-primary mb-8 list-inside list-(--arrow-marker) space-y-2 pl-4 marker:font-bold"
+			style="--arrow-marker: '>  ';"
+		>
 			<li>Check our products and our simple pricing.</li>
 			<li>
 				Check out all of our archived experiments
-				<a href="/" class="underline">here</a>.
+				<a href="/" class="underline hover:opacity-50">here</a>.
 			</li>
 			<li>Check out our open-source libraries & projects.</li>
 		</ul>
@@ -114,7 +132,9 @@
 			<i class="font-bold text-white">~The Futurewise Team</i>
 		</p>
 	</section>
-	<div class="absolute -right-[18%] bottom-[25%] z-0 scale-80 opacity-80 md:-right-[5%]">
+	<div
+		class="absolute -right-[18%] bottom-[25%] z-0 hidden scale-80 opacity-80 md:-right-[5%] md:block"
+	>
 		<img src="/bgs/circles.svg" alt="circles" />
 	</div>
 </div>
