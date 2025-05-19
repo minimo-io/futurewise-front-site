@@ -16,6 +16,6 @@
 </div>
 
 <!-- Decoration 4 -->
-<div class="absolute right-[40%] bottom-[10%] scale-60 opacity-60">
+<div class="absolute right-[40%] bottom-[0%] z-10 scale-60 opacity-60 md:bottom-[10%]">
 	<img src="/bgs/cross.svg" alt="cross" />
 </div>

@@ -143,7 +143,7 @@
 		@apply text-base-200 bg-base-content rounded-full px-6 py-2 text-sm md:text-base;
 	}
 	.fw-home-about {
-		@apply text-secondary text-[22px];
+		@apply text-secondary text-[20px] md:text-[22px];
 	}
 	.fw-home-about a {
 		@apply text-base-content font-pixel no-underline;

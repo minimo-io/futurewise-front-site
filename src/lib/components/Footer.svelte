@@ -3,6 +3,7 @@
 	import { Bot, Circle } from '@lucide/svelte';
 	import { getCurrentYear } from '$utils';
 	import { AppConfig } from '$lib';
+	import SystemStatus from './SystemStatus.svelte';
 
 	// Footer year
 	let currentYear = getCurrentYear();
@@ -12,10 +13,10 @@
 </script>
 
 <footer
-	class="fw-border-t-divider fw-border-t-divider-dot fw-border-t-divider-dot-center relative bg-white pt-20 pb-10"
+	class="fw-border-t-divider md:fw-border-t-divider-dot fw-border-t-divider-dot-center relative bg-white px-(--fw-app-margin) pt-12 pb-12 pl-12 md:pt-18 md:pl-0"
 >
 	<div class="max-w-fw container mx-auto flex flex-col">
-		<div class="flex justify-between">
+		<div class="flex flex-col justify-between md:flex-row">
 			<!-- Items -->
 			<div class="mb-5 grid grid-cols-2 gap-16 text-[18px] md:grid-cols-4">
 				<div>
@@ -28,7 +29,7 @@
 					</ul>
 				</div>
 
-				<div>
+				<div class="order-last md:order-none">
 					<h3 class="mb-4 font-sans text-xl font-bold text-black">Libraries</h3>
 					<ul class="space-y-2">
 						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
@@ -87,24 +88,41 @@
 				</div>
 			</div>
 			<!-- Logo / Status -->
-			<div class="flex flex-col items-end justify-start">
-				<div>
-					<img src="/logos/futurewise-logo-footer.svg" width="180" alt="footer-logo" />
+			<div
+				class="order-first mb-10 flex flex-col items-start justify-start md:order-none md:mb-0 md:items-end"
+			>
+				<div class="">
+					<img
+						src="/logos/futurewise-logo-footer.svg"
+						class="w-[150px] md:w-[180px]"
+						width="180"
+						alt="footer-logo"
+					/>
 				</div>
-				<div class="text-primary mt-2 flex items-center text-sm text-[16px]">
-					<div>
-						<Circle class="h-3" fill="#ff4016" />
-					</div>
-					<div class="font-sans">Todos os sistemas funcionando</div>
+				<!-- <div class="block md:hidden">
+					<img
+						src="/logos/futurewise-logo-footer.svg"
+						class="w-[150px]"
+						width="150"
+						alt="footer-logo"
+					/>
+				</div> -->
+				<div class="hidden md:block">
+					<!-- <SystemStatus /> -->
 				</div>
 			</div>
 		</div>
 
 		<!-- Copyright/Left -->
-		<div class="mt-5 flex flex-col items-center justify-between md:flex-row">
-			<div class="mb-4 flex items-center text-sm text-black md:mb-0">
+		<div
+			class="mt-5 flex flex-col items-start border-black md:flex-col md:items-start md:justify-start"
+		>
+			<div class="relative -left-2">
+				<SystemStatus />
+			</div>
+			<div class="text-secondary mt-0 mb-4 flex items-center text-sm md:mb-0">
 				<!-- ©  -->
-				<Bot class="mr-1 mb-[1px] h-[15px]" />
+				<span class="font-pixel text-primary mr-2">//</span>
 				<div>
 					{finalYear}, Futurewise Inc.
 				</div>

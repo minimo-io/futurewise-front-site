@@ -10,7 +10,7 @@
 </script>
 
 <section
-	class="relative mt-10 flex min-h-[230px] flex-col items-center justify-center px-6 pb-5 md:px-12 lg:px-16"
+	class="relative mt-20 flex min-h-[230px] flex-col items-center justify-center px-6 pb-5 md:mt-10 md:px-12 lg:px-16"
 	style="background-image:url('/bgs/lab.png')"
 >
 	<!-- Background -->

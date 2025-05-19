@@ -40,7 +40,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 
 		<!-- Code -->
 		<div
-			class="relative rounded-md border md:-top-7 md:col-span-2 md:ml-12"
+			class="relative mt-5 rounded-md border md:-top-7 md:col-span-2 md:mt-0 md:ml-12"
 			style="border-width:0.5px"
 		>
 			<div class=" mb-4 flex border-b px-3 py-[8px]">
@@ -89,7 +89,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 		</div>
 		<!-- Editors -->
 		<div class="relative col-span-3 mt-5 pr-5 text-right font-sans text-base text-white md:-top-8">
-			<span class="text-primary mr-2 text-lg font-bold">></span>
+			<span class="text-primary mr-2 text-base font-bold md:text-lg">></span>
 			Confira também nossos temas de editor para
 			<a href="/" class="text-primary font-pixel ml-1 underline hover:opacity-50">VSCode</a>
 			e
@@ -97,7 +97,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 		</div>
 	</div>
 
-	<div class="absolute -top-[15%] -left-[12%] scale-75 opacity-30">
+	<div class="absolute -top-[10%] -left-[12%] scale-75 opacity-30 md:-top-[15%]">
 		<img src="/bgs/cross.svg" alt="cross" />
 	</div>
 

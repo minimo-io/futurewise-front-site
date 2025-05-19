@@ -18,12 +18,12 @@
 		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>
 	<div class="mt-8 flex flex-wrap gap-4">
-		<a href="/" class="fw-button flex items-center">Saiba mais</a>
+		<a href="/" class="fw-button z-20 flex items-center">Saiba mais</a>
 		<a
 			href="https://calendar.app.google/oDbeDazTLXApijoR8"
 			target="_blank"
 			rel="nofollow noopener	"
-			class="hover:bg-opacity-10 border-base-content text-base-content rounded-full border px-6 py-2 text-sm font-medium md:text-base"
+			class="hover:bg-opacity-10 border-base-content text-base-content z-20 rounded-full border px-6 py-2 text-sm font-medium md:text-base"
 		>
 			<!-- <span class="mr-1 font-bold">Lançamento !</span> -->
 			<span class="font-light tracking-wide"> Agende uma reunião </span>
