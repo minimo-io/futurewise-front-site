@@ -73,7 +73,7 @@
 	<!-- Fixed Extra Menu -->
 	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wide uppercase">Desenvolvedores</h2>
 	<a
-		href={localizeHref('/')}
+		href={localizeHref('/docs')}
 		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
@@ -86,7 +86,7 @@
 	</a>
 
 	<a
-		href={localizeHref('/')}
+		href={localizeHref('/status')}
 		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">

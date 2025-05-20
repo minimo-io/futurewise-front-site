@@ -10,10 +10,10 @@
 
 <!-- Products Slider Section -->
 <section
-	class="fw-border-b-divider fw-border-b-divider-dot fw-border-b-divider-dot-center relative -top-[23px] px-6 pb-5 md:px-12 lg:px-16"
+	class="fw-border-b-divider fw-border-b-divider-dot fw-border-b-divider-dot-center relative mt-8 px-6 pb-5 md:-top-[23px] md:mt-0 md:px-12 lg:px-16"
 >
 	<div>
-		<div class="text-center">
+		<div class="hidden text-center md:block">
 			<PillFlower title="Produtos" />
 		</div>
 

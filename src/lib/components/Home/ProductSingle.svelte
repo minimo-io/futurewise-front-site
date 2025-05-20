@@ -10,9 +10,10 @@
 		icon?: typeof IconType;
 		minWidth?: string;
 		primary?: boolean;
+		count?: number;
 	}
 
-	let { brand, align, minWidth = '', primary = false, icon }: Props = $props();
+	let { brand, align, minWidth = '', primary = false, icon, count = 0 }: Props = $props();
 
 	// console.log(icon);
 </script>
@@ -20,16 +21,17 @@
 <a
 	href={brand.link}
 	class={[
-		'relative scale-90 rounded-sm opacity-90 hover:opacity-50',
-		minWidth ? minWidth : 'md:min-w-[260px]'
+		'relative rounded-sm  opacity-90 hover:opacity-50 md:scale-90',
+		minWidth ? minWidth : 'min-w-full md:min-w-[260px]'
 	]}
 >
 	<div class="mb-4 flex flex-col">
 		<div
 			class={[
-				'flex items-center',
-				align == 'start' && 'justify-start',
-				align == 'end' && 'justify-end',
+				'flex items-center border-t md:border-none md:pt-0 ',
+				count == 0 ? 'fw-border-t-none pt-2' : 'fw-border-t pt-8',
+				align == 'start' && 'justify-center md:justify-start',
+				align == 'end' && 'justify-center md:justify-end',
 				align != 'start' && align != 'end' && 'justify-center'
 			]}
 		>

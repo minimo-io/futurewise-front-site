@@ -38,10 +38,12 @@
 				</div>
 
 				<div class="order-last md:order-none">
-					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Libraries</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Desenvolvedores</h3>
 					<ul class="space-y-2">
 						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
-						<li><a href="/" class="text-secondary">js-codex</a></li>
+						<li><a href="/" class="text-secondary">Documentação</a></li>
+						<li><a href="/" class="text-secondary">Status</a></li>
+						<li><a href="/" class="text-secondary">Changelog</a></li>
 					</ul>
 				</div>
 

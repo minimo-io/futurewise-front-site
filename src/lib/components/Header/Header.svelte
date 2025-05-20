@@ -26,7 +26,7 @@
 
 		<HeaderContent />
 	</div>
-	<!-- Dots navigation -->
+	<!-- Navigation Dots -->
 	<HeaderDots />
 	<!-- Decorations -->
 	<HeaderDecorations />

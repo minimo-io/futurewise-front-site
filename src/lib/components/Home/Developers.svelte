@@ -14,7 +14,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 
 <section class="max-w-fw relative mx-auto my-18">
 	<!-- Subtitle -->
-	<TitleSection titleLeft="Developers" titleRight="Ready" />
+	<TitleSection titleLeft="Developers" titleRight="First" forceFlexRow={true} />
 
 	<div class="flex flex-col md:grid md:grid-cols-3">
 		<!-- Right text -->

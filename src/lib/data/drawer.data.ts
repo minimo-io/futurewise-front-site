@@ -8,7 +8,7 @@ import {
 	Activity,
 	Bird,
 	ShoppingBag,
-	TruckElectric
+	Box
 } from '@lucide/svelte';
 import type { DrawerData } from '$lib/types/drawer.types';
 
@@ -54,7 +54,7 @@ export const drawerData = {
 			id: 'delibra',
 			name: 'Delibra',
 			slogan: 'Fluxo integrado de envios',
-			icon: TruckElectric,
+			icon: Box,
 			subMenu: false,
 			isBold: true
 		} as DrawerData,
