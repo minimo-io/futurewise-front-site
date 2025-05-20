@@ -3,10 +3,11 @@ import { type Icon as IconType } from '@lucide/svelte';
 export interface DrawerData {
 	id: string;
 	name: string;
+	slogan?: string;
 	icon: typeof IconType;
 	subMenu: boolean;
 	url?: string;
-	color?: 'green' | 'red';
+	isBold?: boolean;
 }
 
 export interface Grapes {

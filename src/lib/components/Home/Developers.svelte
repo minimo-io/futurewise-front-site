@@ -12,7 +12,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 });`;
 </script>
 
-<section class="max-w-fw relative mx-auto my-10">
+<section class="max-w-fw relative mx-auto my-18">
 	<!-- Subtitle -->
 	<TitleSection titleLeft="Developers" titleRight="Ready" />
 

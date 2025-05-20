@@ -8,7 +8,7 @@
 	<TitleSection titleLeft="Bem-vindo" titleRight="Ao Futuro" />
 
 	<p
-		class="text-secondary font-regular my-7 font-sans text-[20px] leading-[130%] font-normal tracking-wide md:text-[25px] md:leading-[118%]"
+		class="text-secondary font-regular my-7 font-sans text-[20px] leading-[120%] font-normal tracking-wide md:text-[25px] md:leading-[118%]"
 	>
 		Somos uma <span class="text-base-content opacity-80">Plataforma de Produtos Digitais</span> e um
 		Laboratório de Desenvolvimento focados na Inovação nas áreas de

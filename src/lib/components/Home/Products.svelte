@@ -2,7 +2,7 @@
 <script lang="ts">
 	import ProductSingle from '$lib/components/Home/ProductSingle.svelte';
 	import type { Brand } from '$lib/types/brands.types';
-	import { Activity, Shrub, ShoppingBag, Bird } from '@lucide/svelte';
+	import { Activity, Shrub, ShoppingBag, Bird, PackageOpen } from '@lucide/svelte';
 
 	let products: Brand[] = [
 		{
@@ -36,13 +36,22 @@
 			underDevelopment: false,
 			icon: ShoppingBag
 		},
+
 		{
-			name: 'Growify',
-			slogan: 'Gestão de portfolio',
-			sloganDetails: 'De investimentos Crypto <br /> Forex, FIIs',
+			name: 'Delibra',
+			slogan: 'Fluxo integrado de envios.',
+			sloganDetails: 'API. Dashboard. Plugins.',
 			underDevelopment: false,
-			icon: Shrub
+			icon: PackageOpen
 		}
+
+		// {
+		// 	name: 'Growify',
+		// 	slogan: 'Gestão de portfolio',
+		// 	sloganDetails: 'De investimentos Crypto <br /> Forex, FIIs',
+		// 	underDevelopment: false,
+		// 	icon: Shrub
+		// }
 	];
 </script>
 

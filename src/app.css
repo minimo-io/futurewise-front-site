@@ -20,6 +20,11 @@
 	transition: opacity 0.2s linear;
 	/* outline: 2px solid lime; */
 }
+html {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+}
 
 @plugin "daisyui" {
 	themes:
@@ -112,6 +117,12 @@
 		width: 15px;
 		height: 15px;
 	}
+}
+
+@utility no-scroll {
+	overflow: hidden !important;
+	touch-action: none; /* prevent touch scrolling */
+	height: 100vh; /* guard against iOS bounce */
 }
 
 @layer utilities {

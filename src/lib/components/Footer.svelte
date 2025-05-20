@@ -24,8 +24,16 @@
 					<ul class="space-y-2">
 						<li><a href="/" class="text-secondary">CareSync</a></li>
 						<li><a href="/" class="text-secondary">FinX</a></li>
-						<li><a href="/" class="text-secondary">Growify</a></li>
-						<li><a href="https://braaay.com" class="text-secondary">Braaay</a></li>
+						<li><a href="/" class="text-secondary">Delibra</a></li>
+						<li><a href="/" class="text-secondary">Bagity</a></li>
+						<li>
+							<a
+								href="https://braaay.com"
+								target="_blank"
+								rel="nofollow noopener"
+								class="text-secondary">Braaay</a
+							>
+						</li>
 					</ul>
 				</div>
 

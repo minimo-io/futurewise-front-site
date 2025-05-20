@@ -1,14 +1,14 @@
 import {
 	Wine,
-	Globe,
 	PackageOpen,
 	Droplets,
 	Store,
 	Factory,
 	Hop,
-	Code,
-	Layers,
-	FlaskConical
+	Activity,
+	Bird,
+	ShoppingBag,
+	TruckElectric
 } from '@lucide/svelte';
 import type { DrawerData } from '$lib/types/drawer.types';
 
@@ -24,38 +24,56 @@ export const drawerData = {
 	],
 	pt: [
 		{
-			id: 'products',
-			name: 'Produtos',
-			icon: Layers,
-			subMenu: true
+			id: 'caresync',
+			name: 'CareSync',
+			slogan: 'Manutenção preditiva',
+			icon: Activity,
+			subMenu: false,
+			isBold: true
 		} as DrawerData,
+
 		{
-			id: 'developers',
-			name: 'Desenvolvedores',
-			icon: Code,
-			subMenu: true
+			id: 'finx',
+			name: 'Finx',
+			slogan: 'Pagamentos x-border em tempo real',
+			icon: Bird,
+			subMenu: false,
+			isBold: true
 		} as DrawerData,
+
 		{
-			id: 'languages',
-			name: 'Idiomas',
-			icon: Globe,
-			subMenu: true
+			id: 'baity',
+			name: 'Bagity',
+			slogan: 'E-commerce & menus inteligentes',
+			icon: ShoppingBag,
+			subMenu: false,
+			isBold: true
 		} as DrawerData,
+
+		{
+			id: 'delibra',
+			name: 'Delibra',
+			slogan: 'Fluxo integrado de envios',
+			icon: TruckElectric,
+			subMenu: false,
+			isBold: true
+		} as DrawerData,
+
+		{
+			id: 'braaay',
+			name: 'Braaay',
+			slogan: 'Clube vinhos boutique & MCP server',
+			icon: Wine,
+			isBold: true,
+			subMenu: false
+		} as DrawerData
 
 		// {
 		// 	id: 'organic',
 		// 	name: 'Orgânicos',
 		// 	icon: Leaf,
 		// 	url: '/tag/vinhos-organicos/',
-		// 	color: 'green'
 		// } as DrawerData,
-
-		{
-			id: 'lab',
-			name: 'Laboratório',
-			url: '/lab/',
-			icon: FlaskConical
-		} as DrawerData
 	],
 	es: [
 		{

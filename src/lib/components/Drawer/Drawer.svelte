@@ -9,6 +9,25 @@
 	import DrawerMain from './DrawerMain.svelte';
 	import DrawerAccount from './DrawerAccount.svelte';
 	import DrawerAccountLoggedIn from './DrawerAccountLoggedIn.svelte';
+
+	// Effect to add/remove no-scroll class when drawer state changes
+	$effect(() => {
+		if (drawerState.active) {
+			// Add no-scroll class to body and html when drawer is active
+			document.body.classList.add('no-scroll');
+			document.documentElement.classList.add('no-scroll');
+		} else {
+			// Remove no-scroll class when drawer is inactive
+			document.body.classList.remove('no-scroll');
+			document.documentElement.classList.remove('no-scroll');
+		}
+
+		// Clean up effect when component is destroyed
+		return () => {
+			document.body.classList.remove('no-scroll');
+			document.documentElement.classList.remove('no-scroll');
+		};
+	});
 </script>
 
 {#if drawerState.active}
