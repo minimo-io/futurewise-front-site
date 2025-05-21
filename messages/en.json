@@ -1,5 +1,8 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"exit": "Exit",
-	"login": "Login"
+	"login": "Login",
+
+	"welcome": "Welcome to",
+	"theFuture": "The Future"
 }

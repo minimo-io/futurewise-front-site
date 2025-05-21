@@ -1,11 +1,12 @@
 <script lang="ts">
+	import { m } from '$paraglide/messages';
 	import TitleSection from '../TitleSection.svelte';
 </script>
 
 <!-- Hero Section -->
 <div class="relative my-15 max-w-4xl md:my-20">
 	<!-- Section title -->
-	<TitleSection titleLeft="Bem-vindo" titleRight="Ao Futuro" />
+	<TitleSection titleLeft={m.welcome()} titleRight={m.theFuture()} />
 
 	<p
 		class="text-secondary font-regular my-7 font-sans text-[20px] leading-[120%] font-normal tracking-wide md:text-[25px] md:leading-[118%]"

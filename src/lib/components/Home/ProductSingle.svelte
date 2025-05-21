@@ -21,8 +21,8 @@
 <a
 	href={brand.link}
 	class={[
-		'relative rounded-sm  opacity-90 hover:opacity-50 md:scale-90',
-		minWidth ? minWidth : 'min-w-full md:min-w-[260px]'
+		'relative rounded-sm opacity-90 hover:opacity-50 md:scale-90',
+		minWidth ? minWidth : 'min-w-full md:min-w-[230px]'
 	]}
 >
 	<div class="mb-4 flex flex-col">
