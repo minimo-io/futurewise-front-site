@@ -16,7 +16,7 @@
 
 	<!-- Actual hero -->
 	<div class="max-w-fw container mx-auto py-5">
-		<nav class="relative z-10 flex items-center justify-between">
+		<nav class="relative z-20 flex items-center justify-between">
 			<!-- Logos -->
 			<HeaderLogo />
 

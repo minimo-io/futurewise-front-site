@@ -5,7 +5,8 @@
 	import { openCommandPalette } from '$lib/stores/CommandPallete.state.svelte';
 	import { m } from '$paraglide/messages';
 	import { toggleDrawer, drawerState } from '$stores/DrawerState.state.svelte';
-	import { getLocale } from '$paraglide/runtime';
+	import { getLocale, locales } from '$paraglide/runtime';
+	import { getLocaleName, redirectLocale } from '$utils';
 
 	let isMac = $state<boolean | null>(null);
 	let locale = $state(getLocale());
@@ -42,16 +43,31 @@
 			</div>
 		</div>
 
-		<button
-			class="bg-base-200 hover:bg-base-100 fw-header-fs relative hidden rounded-full px-3 py-3 md:block"
-		>
-			<img
-				src="/flags/{locale}.png"
-				alt="flag"
-				class="absolute -top-2 -right-1 h-[22px] w-[22px]"
-			/>
-			<Globe class="h-5" strokeWidth="1" />
-		</button>
+		<div class="dropdown dropdown-end">
+			<button
+				class="bg-base-200 hover:bg-base-100 fw-header-fs relative hidden rounded-full px-3 py-3 md:block"
+			>
+				<img
+					src="/flags/{locale}.png"
+					alt="flag"
+					class="absolute -top-2 -right-1 h-[22px] w-[22px]"
+				/>
+				<Globe class="h-5" strokeWidth="1" />
+			</button>
+
+			<ul class="menu dropdown-content bg-base-200 rounded-box z-1 mt-4 w-52 p-2 shadow-sm">
+				{#each locales as locale, i}
+					<li>
+						<button class="capitalize" onclick={() => redirectLocale(locale)}>
+							<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[17px]" />
+							<span class="self-center font-semibold tracking-wider capitalize"
+								>{getLocaleName(locale)}</span
+							>
+						</button>
+					</li>
+				{/each}
+			</ul>
+		</div>
 
 		<!-- Mobile -->
 		<button
@@ -59,7 +75,7 @@
 				// alert('Open drawer...');
 				toggleDrawer();
 			}}
-			class="bg-base-200 hover:bg-base-100 fw-header-fs relative items-center rounded-full p-3 md:hidden"
+			class="dropdown dropdown-end bg-base-200 hover:bg-base-100 fw-header-fs relative items-center rounded-full p-3 md:hidden"
 		>
 			<img
 				src="/flags/{locale}.png"

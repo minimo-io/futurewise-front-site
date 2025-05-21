@@ -25,11 +25,11 @@
 				class={['text-primary-content relative z-10 inline-block', forceFlexRow ? '-top-1' : '']}
 			>
 				<span
-					class="font-pixel text-primary-content relative ml-2 bg-bottom text-[35px] tracking-widest md:text-[40px]"
+					class="font-pixel text-primary-content relative z-10 ml-2 bg-bottom text-[35px] tracking-widest md:text-[40px]"
 				>
 					{titleRight}
 				</span>
-				<span class="bg-primary absolute -top-[2px] right-0 left-0 -z-10 h-[90%] translate-y-1"
+				<span class="bg-primary absolute -top-[2px] right-0 left-0 z-0 h-[90%] translate-y-1"
 				></span>
 			</div>
 		</h1>

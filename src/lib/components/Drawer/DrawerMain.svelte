@@ -151,7 +151,7 @@
 			<div class="self-center font-semibold">Idiomas</div>
 			<div class="text-secondary ml-1 flex items-center gap-1">
 				<span>—</span>
-				<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[16px] opacity-60" />
+				<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[16px]" />
 				<span class="capitalize">{getLocaleName(locale)}</span>
 			</div>
 		</div>
