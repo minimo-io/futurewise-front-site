@@ -1,3 +1,4 @@
+// src/hooks.server.ts
 import type { Handle } from '@sveltejs/kit';
 import { paraglideMiddleware } from './paraglide/server';
 

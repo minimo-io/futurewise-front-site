@@ -12,14 +12,16 @@ const profile = await futurewise.caresync.getProfileAndToken({
 });`;
 </script>
 
-<section class="max-w-fw relative mx-auto my-18">
+<section class="max-w-fw relative mx-auto my-15 md:my-18">
 	<!-- Subtitle -->
 	<TitleSection titleLeft="Developers" titleRight="First" forceFlexRow={true} />
 
 	<div class="flex flex-col md:grid md:grid-cols-3">
 		<!-- Right text -->
 		<div class="mt-7 mr-9 md:col-span-1">
-			<h3 class="mb-2 text-xl font-bold">Plataforma unificada,<br />APIs modernas.</h3>
+			<h3 class="mb-2 text-xl font-bold tracking-wider">
+				Plataforma unificada,<br />APIs modernas.
+			</h3>
 			<p class="text-secondary mb-4 font-sans text-xl leading-6">
 				Além de nossos dashboards, a Futurewise fornece uma interface única e elegante que abstrai
 				toda a complexidade das integrações empresariais.
@@ -27,7 +29,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 			<p class="text-secondary mb-4 font-sans text-xl leading-6">
 				Com APIs prontas para integrar cada um de nossos produtos no seu próprio sistema.
 			</p>
-			<div class="flex flex-row items-center">
+			<div class="mt-8 flex flex-row items-center md:mt-0">
 				<button class="fw-button !my-1 mr-4"> Documentação </button>
 				<button class="text-primary border-base-content !my-1 flex flex-row items-center font-sans">
 					<div>
@@ -44,11 +46,13 @@ const profile = await futurewise.caresync.getProfileAndToken({
 			style="border-width:0.5px"
 		>
 			<div class=" mb-4 flex border-b px-3 py-[8px]">
-				<button class="lang-selected text-primary mr-2 px-3 py-1 text-[16px] font-bold"
-					>Node.js</button
+				<button
+					class="lang-selected text-primary mr-2 px-3 py-1 text-[18px] font-bold tracking-wider"
 				>
-				<button class="mr-2 px-3 py-1 text-[16px] text-white">Python</button>
-				<button class="rounded-t-md px-3 py-1 text-[16px] text-white">Curl</button>
+					Node.js
+				</button>
+				<button class="mr-2 px-3 py-1 text-[18px] tracking-wider text-white">Python</button>
+				<button class="rounded-t-md px-3 py-1 text-[18px] tracking-wider text-white">Curl</button>
 			</div>
 
 			<code class="block overflow-x-auto rounded-lg p-4 font-mono text-sm whitespace-pre">

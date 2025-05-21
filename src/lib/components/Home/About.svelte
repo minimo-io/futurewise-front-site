@@ -3,7 +3,7 @@
 </script>
 
 <div class="relative">
-	<section class="fw-home-about z-10 mx-auto mb-12 max-w-full pt-10 md:max-w-[51%]">
+	<section class="fw-home-about z-10 mx-auto mb-12 max-w-full pt-10 md:max-w-[60%]">
 		<p>
 			<span class="fw-text-pixel">W</span>e are an innovation & development lab experimenting in the
 			intersection of e-Commerce, Payments, AI and Machines, with a focus in LATAM.

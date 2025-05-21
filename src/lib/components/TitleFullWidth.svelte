@@ -10,13 +10,13 @@
 </script>
 
 <section
-	class="relative mt-20 flex min-h-[230px] flex-col items-center justify-center px-6 pb-5 md:mt-10 md:px-12 lg:px-16"
+	class="relative mt-22 flex min-h-[230px] flex-col items-center justify-center px-6 pb-5 md:mt-10 md:px-12 lg:px-16"
 	style="background-image:url('/bgs/lab.png')"
 >
 	<!-- Background -->
 	<div class="bg-primary absolute top-0 right-0 h-full w-full opacity-50"></div>
 	<!-- Title -->
-	<div class="relative -top-[50px] z-10 text-center">
+	<div class="relative -top-[18px] z-10 text-center md:-top-[50px]">
 		<PillFlower title={breadcrumb} />
 	</div>
 	<!-- Content -->

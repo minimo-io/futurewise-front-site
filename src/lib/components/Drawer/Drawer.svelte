@@ -4,11 +4,11 @@
 	import { quintOut } from 'svelte/easing';
 
 	import { drawerState, goBackToMainMenu } from '$stores/DrawerState.state.svelte';
-	import { ArrowLeft } from '@lucide/svelte';
+	import { CircleArrowLeft } from '@lucide/svelte';
 
 	import DrawerMain from './DrawerMain.svelte';
 	import DrawerAccount from './DrawerAccount.svelte';
-	import DrawerAccountLoggedIn from './DrawerAccountLoggedIn.svelte';
+	import DrawerLanguages from './DrawerLanguages.svelte';
 
 	// Effect to add/remove no-scroll class when drawer state changes
 	$effect(() => {
@@ -38,9 +38,9 @@
 		<div class="flex h-full flex-col justify-start overflow-hidden">
 			{#if drawerState.currentSubmenu}
 				<div class="flex flex-col px-0 text-xs">
-					<div class="border-grey-lighter flex items-center border-b px-[30px]">
-						<button onclick={goBackToMainMenu} class="text-blue mr-3 flex items-center">
-							<ArrowLeft class="h-4 w-4" />
+					<div class="border-grey-lighter flex items-center border-t border-b px-[30px]">
+						<button onclick={goBackToMainMenu} class="text-blue mr-3 flex items-center gap-2">
+							<CircleArrowLeft class="h-4 w-4 pt-[1px]" />
 							<h2 class="my-5 text-base font-extrabold uppercase">{drawerState.currentName}</h2>
 						</button>
 					</div>
@@ -57,13 +57,9 @@
 				>
 					<DrawerAccount />
 				</div>
-			{:else if drawerState.currentSubmenu === 'account_loggedin'}
-				<div
-					in:fly={{ x: 300, duration: 300, easing: quintOut }}
-					out:fly={{ x: -300, duration: 300, easing: quintOut }}
-					class="overflow-y-auto"
-				>
-					<DrawerAccountLoggedIn />
+			{:else if drawerState.currentSubmenu === 'fw_menu_languages'}
+				<div in:fly={{ x: 300, duration: 300, easing: quintOut }} class="overflow-y-auto">
+					<DrawerLanguages />
 				</div>
 			{/if}
 		</div>

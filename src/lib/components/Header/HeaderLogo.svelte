@@ -1,5 +1,9 @@
+<script lang="ts">
+	import { localizeHref } from '$paraglide/runtime';
+</script>
+
 <div class="flex items-start">
-	<a href="/">
+	<a href={localizeHref('/')}>
 		<div class="flex flex-row">
 			<img
 				src="/logos/futurewise-logo-header.svg"

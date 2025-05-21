@@ -25,7 +25,10 @@ html {
 	-webkit-font-smoothing: antialiased;
 	display: block;
 }
-
+html,
+body {
+	@apply overflow-x-hidden md:overflow-auto;
+}
 @plugin "daisyui" {
 	themes:
 		futurewise --default,
@@ -159,6 +162,17 @@ html {
 	}
 	.fw-button {
 		@apply text-base-200 bg-base-content rounded-full px-6 py-2 text-sm md:text-base;
+		@apply z-20;
+		@apply flex items-center;
+	}
+	.fw-button > span {
+		@apply tracking-wide;
+	}
+	.fw-button-lg {
+		@apply !text-[16px];
+	}
+	.fw-button-outline {
+		@apply text-base-content border-base-content border bg-transparent;
 	}
 	.fw-home-about {
 		@apply text-secondary text-[20px] md:text-[22px];

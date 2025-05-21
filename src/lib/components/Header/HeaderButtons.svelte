@@ -2,11 +2,13 @@
 	import { Command, Globe, Hammer, Menu, X } from '@lucide/svelte';
 	import HeaderMenu from './HeaderMenu.svelte';
 	import { onMount } from 'svelte';
-	import { openCommandPalette } from '$lib/stores/CommandPallete.state.svelte'; // Import the open function
+	import { openCommandPalette } from '$lib/stores/CommandPallete.state.svelte';
 	import { m } from '$paraglide/messages';
 	import { toggleDrawer, drawerState } from '$stores/DrawerState.state.svelte';
+	import { getLocale } from '$paraglide/runtime';
 
 	let isMac = $state<boolean | null>(null);
+	let locale = $state(getLocale());
 
 	onMount(() => {
 		isMac = /Mac/i.test(navigator.userAgent);
@@ -43,7 +45,11 @@
 		<button
 			class="bg-base-200 hover:bg-base-100 fw-header-fs relative hidden rounded-full px-3 py-3 md:block"
 		>
-			<img src="/flags/brazil.png" alt="flag" class="absolute -top-2 -right-1 h-[22px] w-[22px]" />
+			<img
+				src="/flags/{locale}.png"
+				alt="flag"
+				class="absolute -top-2 -right-1 h-[22px] w-[22px]"
+			/>
 			<Globe class="h-5" strokeWidth="1" />
 		</button>
 
@@ -55,7 +61,11 @@
 			}}
 			class="bg-base-200 hover:bg-base-100 fw-header-fs relative items-center rounded-full p-3 md:hidden"
 		>
-			<img src="/flags/brazil.png" alt="flag" class="absolute -top-2 -right-1 h-[20px] w-[20px]" />
+			<img
+				src="/flags/{locale}.png"
+				alt="flag-{locale}"
+				class="absolute -top-2 -right-1 h-[20px] w-[20px]"
+			/>
 
 			{#if drawerState.active}
 				<X class="!mr-0 h-[22px]" />
@@ -65,10 +75,13 @@
 		</button>
 
 		<!-- Desktop & Mobile -->
-		<button
+		<a
+			href="https://dashboard.futurewise.lat/login"
 			class="bg-base-200 hover:bg-base-100 flex items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:px-8 md:text-[15px]"
 		>
-			{m.login()}
-		</button>
+			<span class="relative top-[1px]">
+				{m.login()}
+			</span>
+		</a>
 	</div>
 </div>

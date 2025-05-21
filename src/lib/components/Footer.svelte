@@ -18,7 +18,7 @@
 	<div class="max-w-fw container mx-auto flex flex-col">
 		<div class="flex flex-col justify-between md:flex-row">
 			<!-- Items -->
-			<div class="mb-5 grid grid-cols-2 gap-20 text-[18px] md:grid-cols-4">
+			<div class="mb-5 grid grid-cols-2 gap-10 text-[18px] md:grid-cols-4 md:gap-20">
 				<div>
 					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Produtos</h3>
 					<ul class="space-y-2">
@@ -38,7 +38,7 @@
 				</div>
 
 				<div class="order-last md:order-none">
-					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Desenvolvedores</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Developers</h3>
 					<ul class="space-y-2">
 						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
 						<li><a href="/" class="text-secondary">Documentação</a></li>
@@ -60,6 +60,14 @@
 				<div>
 					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Social</h3>
 					<ul class="space-y-2">
+						<li>
+							<a
+								href={AppConfig.fw.socials.linkedin}
+								rel="nofollow noopener"
+								target="_blank"
+								class="text-secondary">LinkedIn</a
+							>
+						</li>
 						<li>
 							<a
 								href={AppConfig.fw.socials.github}
@@ -84,14 +92,6 @@
 								target="_blank"
 								href={AppConfig.fw.socials.nostr}
 								class="text-secondary">Nostr</a
-							>
-						</li>
-						<li>
-							<a
-								href={AppConfig.fw.socials.linkedin}
-								rel="nofollow noopener"
-								target="_blank"
-								class="text-secondary">LinkedIn</a
 							>
 						</li>
 					</ul>

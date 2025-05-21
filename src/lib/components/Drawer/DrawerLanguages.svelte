@@ -1,16 +1,9 @@
 <script lang="ts">
-	import { page } from '$app/state';
-	import {
-		ChevronRight,
-		Truck,
-		Heart,
-		House,
-		Mail,
-		LogOut,
-		UsersRound,
-		Coins,
-		Sparkle
-	} from '@lucide/svelte';
+	import { locales } from '$paraglide/runtime';
+	import { redirectLocale, getLocaleName } from '$utils';
+
+	// import { page } from '$app/state';
+
 	import { openSubmenu } from '$stores/DrawerState.state.svelte';
 	// import { redirectHref } from '$lib/utils';
 	// import { logout } from '$lib/graphql/auth';
@@ -29,21 +22,21 @@
 </script>
 
 <div class="flex flex-1 flex-col px-0 text-xs">
+	{#each locales as locale, i}
+		<button
+			type="button"
+			onclick={() => redirectLocale(locale)}
+			class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
+		>
+			<div class="flex items-center justify-center gap-2 self-center text-left align-middle">
+				<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[17px]" />
+				<span class="self-center font-semibold capitalize">{getLocaleName(locale)}</span>
+			</div>
+		</button>
+	{/each}
+
 	<!-- Item with submenu -->
-	<button
-		onclick={() => alert('Em breve')}
-		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
-	>
-		<div class="flex justify-center self-center text-left align-middle">
-			<Heart class="mr-2 h-4 w-4 self-center" fill="red" color="red" />
-			<span class="self-center font-semibold">Minha lista</span>
-		</div>
-		<div class="text-grey-medium flex flex-row self-center align-middle">
-			<ChevronRight class="aspect-1 text-grey-dark w-4" />
-		</div>
-	</button>
-	<!-- Item with submenu -->
-	<button
+	<!-- <button
 		onclick={() => openSubmenu('account_loggedin', 'Meus pedidos')}
 		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
@@ -54,10 +47,10 @@
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<ChevronRight class="aspect-1 text-grey-dark w-4" />
 		</div>
-	</button>
+	</button> -->
 
 	<!-- Item with submenu -->
-	<button
+	<!-- <button
 		onclick={() => openSubmenu('account_myaddresses', 'Meus endereços')}
 		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
@@ -68,9 +61,9 @@
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<ChevronRight class="aspect-1 text-grey-dark w-4" />
 		</div>
-	</button>
+	</button> -->
 	<!-- Item with submenu -->
-	<button
+	<!-- <button
 		onclick={() => openSubmenu('account_emailpreferences', 'Preferências de e-mail')}
 		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
@@ -94,10 +87,10 @@
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<ChevronRight class="aspect-1 text-grey-dark w-4" />
 		</div>
-	</button>
+	</button> -->
 
 	<!-- Assinaturas -->
-	<div class="flex flex-col px-0 text-xs">
+	<!-- <div class="flex flex-col px-0 text-xs">
 		<div class="border-grey-lighter flex items-center border-b px-[30px]">
 			<h2 class="my-5 text-base font-extrabold uppercase">Benefícios</h2>
 		</div>
@@ -113,8 +106,8 @@
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<ChevronRight class="aspect-1 text-grey-dark w-4" />
 		</div>
-	</button>
-	<button
+	</button> -->
+	<!-- <button
 		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 		onclick={() => alert('Soon')}
 	>
@@ -138,5 +131,5 @@
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<ChevronRight class="aspect-1 text-grey-dark w-4" />
 		</div>
-	</button>
+	</button> -->
 </div>
