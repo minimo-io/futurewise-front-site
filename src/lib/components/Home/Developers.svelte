@@ -27,8 +27,10 @@ const profile = await futurewise.caresync.getProfileAndToken({
 			{@html m.devText()}
 			<div class="mt-8 flex flex-row items-center md:mt-0">
 				<a href={localizeHref('/docs')} class="fw-button !my-1 mr-4">{m.documentation()}</a>
-				<button class="text-primary border-base-content !my-1 flex flex-row items-center font-sans">
-					<div>
+				<button
+					class="text-primary border-base-content !my-1 flex flex-row items-center font-sans text-sm md:text-base"
+				>
+					<div class="hidden md:block">
 						<KeySquare class="h-4" />
 					</div>
 					<div>{m.getYourAPIKey()}</div>

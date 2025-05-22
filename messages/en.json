@@ -28,7 +28,7 @@
 	"devConfira": "Also check out our editor themes for",
 
 	"aboutUs": "About us",
-	"aboutUsTitleLeft": "AN IDEALAB<br/>TO",
+	"aboutUsTitleLeft": "AN DEV_LAB<br/>TO",
 	"aboutUsTitleRight": "THE MOON",
 
 	"quote": "<span class='text-primary font-pixel text-5xl font-bold'>F</span>uturewise is not a standard dictionary word, but it is generally used as an adjective or adverb meaning \"<span class='font-bold'>with regard to the future</span>\" or \"<span class='font-bold'>in terms of the future</span>\"",
@@ -37,5 +37,8 @@
 
 	"social": "Social",
 	"developers": "Developers",
-	"resources": "Resources"
+	"resources": "Resources",
+
+	"metaHomeTitle": "Innovation DevLab & Digital Platform",
+	"metaHomeDescription": "We are a Digital Products Platform and a Development Lab focused on Innovation in e-Commerce, Payments, AI, and Machines, for LATAM."
 }

@@ -28,7 +28,7 @@
 	"devConfira": "Confira também nossos temas de editor para",
 
 	"aboutUs": "Sobre nós",
-	"aboutUsTitleLeft": "UM IDEALAB<br/>ATÉ",
+	"aboutUsTitleLeft": "UM DEV_LAB<br/>ATÉ",
 	"aboutUsTitleRight": "A LUA",
 
 	"quote": "<span class='text-primary font-pixel text-5xl font-bold'>F</span>uturewise não é uma palavra padrão de dicionário, mas é usada geralmente como adjetivo ou advérbio significando \"<span class='font-bold'>com relação ao futuro</span>\" ou \"<span class='font-bold'>em termos de futuro</span>\"",
@@ -37,5 +37,8 @@
 
 	"social": "Redes",
 	"developers": "Desenvolvedores",
-	"resources": "Recursos"
+	"resources": "Recursos",
+
+	"metaHomeTitle": "DevLab de Inovação & Plataforma digital",
+	"metaHomeDescription": "Somos uma Plataforma de Produtos Digitais e um Laboratório de Desenvolvimento focados na Inovação em  e-Commerce, Pagamentos, IA e Máquinas, para LATAM."
 }

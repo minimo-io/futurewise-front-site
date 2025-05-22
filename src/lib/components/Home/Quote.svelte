@@ -4,7 +4,7 @@
 
 <div id="know-more" class="fw-border-b-divider py-5">
 	<section class="mx-auto max-w-full px-6 md:max-w-[65%] md:px-12 lg:px-16">
-		<blockquote class="mt-15 mb-8 md:mt-10 md:mb-5">
+		<blockquote class="mt-14 mb-8 md:mt-10 md:mb-5">
 			<div class="relative mb-2">
 				<!-- Quote start -->
 				<span class="absolute -top-5 -left-6 md:-top-1 md:-left-12">
