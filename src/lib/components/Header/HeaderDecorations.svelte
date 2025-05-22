@@ -11,7 +11,7 @@
 </div>
 
 <!-- Decoration 3 -->
-<div class="absolute -bottom-[10%] left-[25%] scale-35 opacity-70">
+<div class="absolute -bottom-[10%] left-[10%] scale-35 opacity-70 md:left-[25%]">
 	<img src="/bgs/cross.svg" alt="cross" />
 </div>
 
