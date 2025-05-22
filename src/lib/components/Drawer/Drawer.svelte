@@ -32,7 +32,7 @@
 
 {#if drawerState.active}
 	<div
-		class="fixed inset-y-0 left-0 z-100 mt-[95px] h-full w-screen bg-black md:w-64"
+		class="fixed inset-y-0 left-0 z-100 mt-[95px] w-screen bg-black md:w-64"
 		transition:slide={{ duration: 300, easing: quintOut }}
 	>
 		<div class="flex h-full flex-col justify-start overflow-hidden">

@@ -169,7 +169,7 @@ body {
 		@apply tracking-wide;
 	}
 	.fw-button-lg {
-		@apply !text-[16px];
+		@apply !text-[14px];
 	}
 	.fw-button-outline {
 		@apply text-base-content border-base-content border bg-transparent;

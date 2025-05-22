@@ -22,7 +22,7 @@
 
 		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>
-	<div class="mt-8 flex flex-wrap gap-3">
+	<div class="mt-8 flex flex-wrap gap-2 md:gap-3">
 		<a href="#know-more" use:conditionalSmoothScroll class="fw-button fw-button-lg">
 			<span>{m.learnMore()}</span>
 		</a>
