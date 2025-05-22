@@ -146,8 +146,8 @@ export const drawerData = {
 		{
 			id: 'finx',
 			name: 'FinX',
-			slogan: 'Pagos transfronterizos en tiempo real',
-			sloganSimple: 'Pagos transfronterizos',
+			slogan: 'Pagos X-Border en tiempo real',
+			sloganSimple: 'Pagos X-Border',
 			details: 'Globales y transparentes<br />Fiat, Stablecoins y Bitcoin',
 			icon: Bird,
 			subMenu: false,
