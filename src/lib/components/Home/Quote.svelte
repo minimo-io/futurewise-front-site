@@ -1,6 +1,10 @@
+<script>
+	import { m } from '$paraglide/messages';
+</script>
+
 <div class="fw-border-b-divider py-5">
 	<section class="mx-auto max-w-full px-6 md:max-w-[65%] md:px-12 lg:px-16">
-		<blockquote class="my-10">
+		<blockquote class="mt-15 mb-8 md:mt-10 md:mb-5">
 			<div class="relative mb-2">
 				<!-- Quote start -->
 				<span class="absolute -top-5 -left-6 md:-top-1 md:-left-12">
@@ -8,11 +12,7 @@
 				</span>
 				<!-- Content -->
 				<p class="font-sans text-[20px] font-light tracking-wide text-white md:text-[22px]">
-					<span class="text-primary font-pixel text-5xl font-bold">F</span>uturewise não é uma
-					palavra padrão de dicionário, mas é usada geralmente como adjetivo ou advérbio
-					significando "<span class="font-bold">com relação ao futuro</span>" ou "<span
-						class="font-bold">em termos de futuro</span
-					>"
+					{@html m.quote()}
 				</p>
 				<!-- Quote end
 				<span class="absolute -right-5 -bottom-1"><img src="/quote-end.svg" alt="Quote end" /></span

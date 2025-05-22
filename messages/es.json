@@ -2,6 +2,9 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"exit": "Salir",
 	"login": "Entrar",
+	"soon": "En breve",
+	"getInTouch": "Entrar en contacto",
+	"and": "y",
 
 	"welcome": "Bienvenido",
 	"theFuture": "Al Futuro",
@@ -14,5 +17,24 @@
 	"menuProducts": "Productos",
 	"menuClients": "Clientes",
 	"menuLab": "Lab",
-	"menuPrices": "Precios"
+	"menuPrices": "Precios",
+
+	"devSlogan": "Plataforma unificada,<br />APIs modernas.",
+	"devText": "<p class='text-secondary mb-4 font-sans text-xl leading-6'>Además de nuestros paneles de control, Futurewise ofrece una interfaz única y elegante que simplifica la integración empresarial.</p><p class='text-secondary mb-4 font-sans text-xl leading-6'>Con API listas para usar para integrar cada uno de nuestros productos en su sistema.</p>",
+
+	"documentation": "Documentación",
+	"getYourAPIKey": "Obtenga su API key",
+
+	"devConfira": "Consulta también nuestros temas de editor para",
+
+	"aboutUs": "Sobre nosotros",
+	"aboutUsTitleLeft": "HAS NOTHING TO DO<br/>WITH",
+	"aboutUsTitleRight": "the moon",
+
+	"quote": "<span class='text-primary font-pixel text-5xl font-bold'>F</span>uturewise no es una palabra estándar de diccionario, pero generalmente se utiliza como adjetivo o adverbio con el significado de \"<span class='font-bold'>en relación con el futuro</span>\" o \"<span class='font-bold'>en términos de futuro</span>\"",
+
+	"aboutText": "<p><span class='fw-text-pixel'>S</span>omos un laboratorio de innovación y desarrollo; experimentamos en la intersección de e-Commerce, Pagos, IA y Máquinas, con foco en LATAM.</p><p><span class='fw-text-pixel'>C</span>reamos aplicaciones y máquinas para el mundo real.</p><p>Somos minimalistas y eficientes. Buscamos construir sistemas de alto rendimiento con pocos recursos. Usamos lo que mejor funciona, no reinventamos la rueda. Ni cobramos por ello. Somos <a target='_blank' rel='nofollow noopener' href='https://a16z.com/the-techno-optimist-manifesto/' class='underline hover:opacity-50'>tecno-optimistas</a>.</p><p class='text-base-content font-sans font-bold italic'><span>//</span> Diseñamos, experimentamos, entregamos.</p><p><span class='fw-text-pixel'>T</span>ambién somos una plataforma para desarrollar Productos Digitales. Ofrecemos nuestra infraestructura, APIs y bibliotecas a proyectos experimentales.</p><p>Algunos experimentos fallan o no llegan a convertirse en productos, así que permanecen como conocimiento adquirido en forma de <a href='/'>bibliotecas</a>, diseños y <a href='/blog'>artículos</a>.</p><p>A veces las ideas no salen de su forma inicial, así que las dejamos madurar en el <a href='/' class='underline'>Idea Lab</a>.</p><p class='text-base-content font-sans font-bold italic'><span>//</span> El stack.</p><p class='relative'><span class='fw-text-pixel'>E</span>l stack de Futurewise es simple pero poderoso: <span class='!text-primary !mx-0 !font-sans font-bold'>Svelte</span> y <span class='!text-primary !mx-0 !font-sans font-bold'>Figma</span> para el front-end, <span class='!text-primary !mx-0 !font-sans font-bold'>NestJS</span> para nuestras APIs, <span class='!text-primary !mx-0 !font-sans font-bold'>Python</span> para IA y <span class='!text-primary !mx-0 !font-sans font-bold'>MicroPython</span> para sistemas embebidos, y <span class='!text-primary !mx-0 !font-sans font-bold'>Docker</span> para contenerización, <span class='!text-primary !mx-0 !font-sans font-bold'>Bitcoin</span> y <span class='!text-primary !mx-0 !font-sans font-bold'>USDT</span> a través de <span class='!text-primary !mx-0 !font-sans font-bold'>Lightning</span> para preservación de valor y transmisión de dinero, <span class='!text-primary !mx-0 !font-sans font-bold'>Vercel</span>, <span class='!text-primary !mx-0 !font-sans font-bold'>Render</span> y <span class='!text-primary !mx-0 !font-sans font-bold'>AWS</span> para infraestructura en la nube.</p><p><span class='fw-text-pixel'>C</span>reemos en protocolos abiertos, globales y sin permisos (TCP/IP, HTTP, Bitcoin, Nostr, WebRTC, etc) y tecnologías.</p><p>A veces usamos nuestra experiencia para contribuir a otros proyectos. En estos Joint Ventures participamos como socios tecnológicos, aportando nuestra infraestructura, APIs y nuestro equipo.</p><p><span class='fw-text-pixel'>P</span>rimero resolvemos nuestros propios problemas con tecnología, y luego convertimos eso en productos valiosos.</p><p>También curamos una lista de <a href='/' class=''>herramientas</a> de terceros que usamos a diario, con el objetivo de compartir no solo lo nuestro, sino lo mejor que hay allá afuera.</p><p class='text-base-content font-sans font-bold italic'><span>//</span> OS.</p><p><span class='fw-text-pixel'>N</span>os nutrimos del open-source, así que contribuimos al open-source. Muchas de las bibliotecas que creamos para nuestros productos se pueden encontrar en nuestros perfiles de <a href='/' class='underline hover:opacity-50'>GitHub</a> o <a href='/' class='underline hover:opacity-50'>NPM</a>. ¡A veces incluso proyectos completos!</p><p>¿Tienes una idea loca? Hablemos de ella, nos encantará, <a href='/' class='underline hover:opacity-50'>contáctanos</a>.</p><ul class='marker:text-primary mb-8 list-inside list-(--arrow-marker) space-y-2 pl-4 marker:font-bold' style='--arrow-marker: '>  ';'><li>Conoce nuestros productos y nuestra estructura de precios simple.</li><li>Explora todos nuestros experimentos archivados <a href='/' class='underline hover:opacity-50'>aquí</a>.</li><li>Explora nuestras bibliotecas y proyectos open-source.</li></ul><p>Construyamos cosas,<br /><i class='font-bold text-white'>~El equipo de Futurewise</i></p>",
+
+	"social": "Redes",
+	"developers": "Desarrolladores"
 }

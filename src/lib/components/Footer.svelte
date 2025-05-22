@@ -5,6 +5,7 @@
 	import { AppConfig } from '$lib';
 	import SystemStatus from './SystemStatus.svelte';
 	import { localizeHref } from '$paraglide/runtime';
+	import { m } from '$paraglide/messages';
 
 	// Footer year
 	let currentYear = getCurrentYear();
@@ -21,7 +22,7 @@
 			<!-- Items -->
 			<div class="mb-5 grid grid-cols-2 gap-10 text-[18px] md:grid-cols-4 md:gap-20">
 				<div>
-					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Produtos</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">{m.menuProducts()}</h3>
 					<ul class="space-y-2">
 						<li><a href={localizeHref('/caresync')} class="text-secondary">CareSync</a></li>
 						<li><a href={localizeHref('/finx')} class="text-secondary">FinX</a></li>
@@ -42,7 +43,7 @@
 					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Developers</h3>
 					<ul class="space-y-2">
 						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
-						<li><a href={localizeHref('/docs')} class="text-secondary">Documentação</a></li>
+						<li><a href={localizeHref('/docs')} class="text-secondary">{m.documentation()}</a></li>
 						<li><a href={localizeHref('/status')} class="text-secondary">Status</a></li>
 						<li>
 							<a href={localizeHref('/status#changelog')} class="text-secondary">Changelog</a>
@@ -53,7 +54,7 @@
 				<div>
 					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Lab</h3>
 					<ul class="space-y-2">
-						<li><a href="/" class="text-secondary">Sobre Nós</a></li>
+						<li><a href="/" class="text-secondary">{m.aboutUs()}</a></li>
 						<li><a href="/" class="text-secondary">Experimentos</a></li>
 						<li><a href="/" class="text-secondary">Ferramentas</a></li>
 						<li><a href="/" class="text-secondary">Contato</a></li>
@@ -61,7 +62,7 @@
 				</div>
 
 				<div>
-					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Social</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">{m.social()}</h3>
 					<ul class="space-y-2">
 						<li>
 							<a

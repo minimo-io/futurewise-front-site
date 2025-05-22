@@ -1,5 +1,6 @@
 export * from './date.utils';
 export * from './redirect.utils';
+export * from './smoothScroll.utils';
 
 export function getLocaleName(uiLocale: string) {
 	// create a DisplayNames instance for language‐type codes

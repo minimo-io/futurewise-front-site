@@ -14,12 +14,15 @@
 	import { localizeHref, getLocale } from '$paraglide/runtime';
 	import WhatsappButton from '../WhatsappButton.svelte';
 	import { getLocaleName } from '$utils';
+	import { m } from '$paraglide/messages';
 	const locale = $state(getLocale());
 	let drawerDataForLang = $state(drawerData[locale]);
 </script>
 
 <div class="flex flex-1 flex-col overflow-y-auto border-t px-0 text-xs">
-	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">PRODUTOS</h2>
+	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">
+		{m.menuProducts()}
+	</h2>
 	<!-- Item with submenu -->
 	<!-- <h2 class="my-5 px-[30px] text-base font-extrabold uppercase">PRODUTOS</h2> -->
 	{#each drawerDataForLang as drawer, i}
@@ -70,14 +73,14 @@
 	{/each}
 
 	<!-- Fixed Extra Menu -->
-	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">Desenvolvedores</h2>
+	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">{m.developers()}</h2>
 	<a
 		href={localizeHref('/docs')}
 		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<FileCode class="mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">Documentação</span>
+			<span class="self-center font-semibold">{m.documentation()}</span>
 		</div>
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<!-- <ChevronRight class="aspect-1 text-grey-dark w-4" /> -->
@@ -106,7 +109,7 @@
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<Tag class="text-sun mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">Preços</span>
+			<span class="self-center font-semibold">{m.menuPrices()}</span>
 		</div>
 		<!-- <div class="text-grey-medium flex flex-row self-center align-middle">
 			<ChevronRight class="aspect-1 text-grey-dark w-4" />
@@ -120,7 +123,7 @@
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<FlaskConical class="mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">Sobre nós</span>
+			<span class="self-center font-semibold">{m.aboutUs()}</span>
 		</div>
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<!-- <ChevronRight class="aspect-1 text-grey-dark w-4" /> -->

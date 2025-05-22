@@ -2,6 +2,7 @@
 	import { KeySquare } from '@lucide/svelte';
 	import TitleSection from '../TitleSection.svelte';
 	import { localizeHref } from '$paraglide/runtime';
+	import { m } from '$paraglide/messages';
 
 	// backticks preserve newlines and braces
 	const snippet = `// Get a user’s access token and profile data
@@ -21,22 +22,16 @@ const profile = await futurewise.caresync.getProfileAndToken({
 		<!-- Right text -->
 		<div class="mt-7 mr-9 md:col-span-1">
 			<h3 class="mb-2 text-xl font-bold tracking-wider">
-				Plataforma unificada,<br />APIs modernas.
+				{@html m.devSlogan()}
 			</h3>
-			<p class="text-secondary mb-4 font-sans text-xl leading-6">
-				Além de nossos dashboards, a Futurewise fornece uma interface única e elegante que abstrai
-				toda a complexidade das integrações empresariais.
-			</p>
-			<p class="text-secondary mb-4 font-sans text-xl leading-6">
-				Com APIs prontas para integrar cada um de nossos produtos no seu próprio sistema.
-			</p>
+			{@html m.devText()}
 			<div class="mt-8 flex flex-row items-center md:mt-0">
-				<a href={localizeHref('/docs')} class="fw-button !my-1 mr-4"> Documentação </a>
+				<a href={localizeHref('/docs')} class="fw-button !my-1 mr-4">{m.documentation()}</a>
 				<button class="text-primary border-base-content !my-1 flex flex-row items-center font-sans">
 					<div>
 						<KeySquare class="h-4" />
 					</div>
-					<div>Obtenha sua API key</div>
+					<div>{m.getYourAPIKey()}</div>
 				</button>
 			</div>
 		</div>
@@ -95,9 +90,9 @@ const profile = await futurewise.caresync.getProfileAndToken({
 		<!-- Editors -->
 		<div class="relative col-span-3 mt-5 pr-5 text-right font-sans text-base text-white md:-top-8">
 			<span class="text-primary mr-2 text-base font-bold md:text-lg">></span>
-			Confira também nossos temas de editor para
+			{m.devConfira()}
 			<a href="/" class="text-primary font-pixel ml-1 underline hover:opacity-50">VSCode</a>
-			e
+			{m.and()}
 			<a href="/" class="text-primary font-pixel ml-1 underline hover:opacity-50">Zed</a>
 		</div>
 	</div>

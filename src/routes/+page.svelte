@@ -28,9 +28,9 @@
 <!-- Lab Section Title -->
 
 <TitleFullWidth
-	breadcrumb="SOBRE NÓS"
-	titleLeft="HAS NOTHING TO DO<br/>WITH"
-	titleRight="THE MOON"
+	breadcrumb={m.aboutUs()}
+	titleLeft={m.aboutUsTitleLeft()}
+	titleRight={m.aboutUsTitleRight()}
 />
 
 <!-- Quote Section -->

@@ -1,6 +1,13 @@
 <script lang="ts">
 	import { m } from '$paraglide/messages';
 	import TitleSection from '../TitleSection.svelte';
+	import { smoothScroll } from '$utils';
+
+	function conditionalSmoothScroll(node: HTMLElement) {
+		// if (url === '#know-more') {
+		return smoothScroll(node);
+		// }
+	}
 </script>
 
 <!-- Hero Section -->
@@ -16,7 +23,7 @@
 		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>
 	<div class="mt-8 flex flex-wrap gap-3">
-		<a href="/" class="fw-button fw-button-lg">
+		<a href="#know-more" use:conditionalSmoothScroll class="fw-button fw-button-lg">
 			<span>{m.learnMore()}</span>
 		</a>
 		<a
