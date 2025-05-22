@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { ChevronDown, FlaskConical } from '@lucide/svelte';
-	import { getLocale } from '$paraglide/runtime';
+	import { ChevronDown, FlaskConical, Headset } from '@lucide/svelte';
+	import { getLocale, localizeHref } from '$paraglide/runtime';
 	import { drawerData } from '$lib/data/drawer.data';
+	import { m } from '$paraglide/messages';
 
 	const locale = $state(getLocale());
 	let drawerDataForLang = $state(drawerData[locale]);
@@ -9,15 +10,11 @@
 
 <div class="fw-header-fs z-50 hidden items-center justify-center gap-12 md:flex">
 	<div class="dropdown relative">
-		<a href="/" class="flex items-center" tabindex="0" role="button">
-			PRODUTOS
+		<div class="cursor-fw flex items-center uppercase" tabindex="0" role="button">
+			{m.menuProducts()}
 			<span><ChevronDown class="ml-1 h-5" /></span>
-		</a>
-		<!-- <div class="dropdown-content card card-sm bg-base-200 mt-1 w-64 shadow-md">
-			<div class="px-10 py-5">
-				<p>This is a card. You can use any element as a dropdown.</p>
-			</div>
-		</div> -->
+		</div>
+		<!-- Main menu -->
 		<ul
 			class="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[410px] px-5 py-3 shadow-md"
 		>
@@ -47,11 +44,14 @@
 			{/each}
 		</ul>
 	</div>
+	<a class="uppercase" href={localizeHref('/precos')}>{m.menuPrices()}</a>
 
-	<a href="/">CLIENTES</a>
-	<a href="/" class="flex items-center">
-		<FlaskConical class="h-4" />
-		LAB
+	<a href={localizeHref('/lab')} class="flex items-center uppercase">
+		<!-- <FlaskConical class="h-4" /> -->
+		{m.menuLab()}
 	</a>
-	<a href="/">PREÇOS</a>
+	<a href={localizeHref('/clientes')} class="flex items-center gap-1 uppercase">
+		<Headset class="h-4" />
+		{m.menuClients()}
+	</a>
 </div>

@@ -1,5 +1,6 @@
 <script>
 	import { AppConfig } from '$lib/configs';
+	import { localizeHref } from '$paraglide/runtime';
 </script>
 
 <div class="relative">
@@ -122,7 +123,7 @@
 			<li>Check our products and our simple pricing.</li>
 			<li>
 				Check out all of our archived experiments
-				<a href="/" class="underline hover:opacity-50">here</a>.
+				<a href={localizeHref('/lab')} class="underline hover:opacity-50">here</a>.
 			</li>
 			<li>Check out our open-source libraries & projects.</li>
 		</ul>

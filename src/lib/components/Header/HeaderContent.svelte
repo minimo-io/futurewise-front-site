@@ -15,7 +15,7 @@
 
 		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>
-	<div class="mt-8 flex flex-wrap gap-4">
+	<div class="mt-8 flex flex-wrap gap-3">
 		<a href="/" class="fw-button fw-button-lg">
 			<span>{m.learnMore()}</span>
 		</a>

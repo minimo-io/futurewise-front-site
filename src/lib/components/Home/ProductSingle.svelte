@@ -1,11 +1,13 @@
 <!-- src/lib/components/Home/ProductSingle.svelte -->
 <script lang="ts">
 	import type { Brand } from '$lib/types/brands.types';
+	import type { DrawerData } from '$lib/types/drawer.types';
 	import Pill from '../Pill.svelte';
 	import { type Icon as IconType } from '@lucide/svelte';
 
 	interface Props {
-		brand: Brand;
+		// brand: Brand;
+		brand: DrawerData;
 		align: 'start' | 'center' | 'end';
 		icon?: typeof IconType;
 		minWidth?: string;
@@ -19,7 +21,7 @@
 </script>
 
 <a
-	href={brand.link}
+	href={brand.url}
 	class={[
 		'relative rounded-sm opacity-90 hover:opacity-50 md:scale-90',
 		minWidth ? minWidth : 'min-w-full md:min-w-[230px]'
@@ -61,11 +63,14 @@
 						align != 'start' && align != 'end' && 'justify-center'
 					]}
 				>
-					<Pill color={primary ? 'primary' : 'light'} text={brand.slogan} />
+					<Pill
+						color={primary ? 'primary' : 'light'}
+						text={brand.sloganSimple || brand.slogan || ''}
+					/>
 					<div
 						class="text-primary mt-[10px] text-center text-[12px] tracking-wider uppercase opacity-70"
 					>
-						{@html brand.sloganDetails}
+						{@html brand.details}
 					</div>
 				</div>
 			</div>

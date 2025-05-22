@@ -4,10 +4,15 @@ export interface DrawerData {
 	id: string;
 	name: string;
 	slogan?: string;
+	sloganSimple?: string;
 	icon: typeof IconType;
+	details: string;
 	subMenu: boolean;
 	url?: string;
 	isBold?: boolean;
+	primary?: boolean;
+	logo?: string;
+	underDevelopment?: boolean;
 }
 
 export interface Grapes {

@@ -4,6 +4,7 @@
 	import { getCurrentYear } from '$utils';
 	import { AppConfig } from '$lib';
 	import SystemStatus from './SystemStatus.svelte';
+	import { localizeHref } from '$paraglide/runtime';
 
 	// Footer year
 	let currentYear = getCurrentYear();
@@ -22,10 +23,10 @@
 				<div>
 					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Produtos</h3>
 					<ul class="space-y-2">
-						<li><a href="/" class="text-secondary">CareSync</a></li>
-						<li><a href="/" class="text-secondary">FinX</a></li>
-						<li><a href="/" class="text-secondary">Delibra</a></li>
-						<li><a href="/" class="text-secondary">Bagity</a></li>
+						<li><a href={localizeHref('/caresync')} class="text-secondary">CareSync</a></li>
+						<li><a href={localizeHref('/finx')} class="text-secondary">FinX</a></li>
+						<li><a href={localizeHref('/delibra')} class="text-secondary">Delibra</a></li>
+						<li><a href={localizeHref('/bagity')} class="text-secondary">Bagity</a></li>
 						<li>
 							<a
 								href="https://braaay.com"
@@ -41,9 +42,11 @@
 					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Developers</h3>
 					<ul class="space-y-2">
 						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
-						<li><a href="/" class="text-secondary">Documentação</a></li>
-						<li><a href="/" class="text-secondary">Status</a></li>
-						<li><a href="/" class="text-secondary">Changelog</a></li>
+						<li><a href={localizeHref('/docs')} class="text-secondary">Documentação</a></li>
+						<li><a href={localizeHref('/status')} class="text-secondary">Status</a></li>
+						<li>
+							<a href={localizeHref('/status#changelog')} class="text-secondary">Changelog</a>
+						</li>
 					</ul>
 				</div>
 

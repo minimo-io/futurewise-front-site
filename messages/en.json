@@ -9,5 +9,10 @@
 	"homeHero": "We are a <span class='text-base-content opacity-80'>Digital Products Platform</span> and a Development Lab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, X-Border Payments, AI, and Machines (IoT)</span> for LATAM.",
 
 	"learnMore": "Learn more",
-	"scheduleMeeting": "Schedule a meeting"
+	"scheduleMeeting": "Schedule a meeting",
+
+	"menuProducts": "Products",
+	"menuClients": "Clients",
+	"menuLab": "Lab",
+	"menuPrices": "Prices"
 }

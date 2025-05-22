@@ -6,6 +6,7 @@
 	import TitleFullWidth from '$lib/components/TitleFullWidth.svelte';
 	import Quote from '$lib/components/Home/Quote.svelte';
 	import About from '$lib/components/Home/About.svelte';
+	import { m } from '$paraglide/messages';
 </script>
 
 <!-- Products Slider Section -->
@@ -14,7 +15,7 @@
 >
 	<div>
 		<div class="hidden text-center md:block">
-			<PillFlower title="Produtos" />
+			<PillFlower title={m.menuProducts()} />
 		</div>
 
 		<Products />

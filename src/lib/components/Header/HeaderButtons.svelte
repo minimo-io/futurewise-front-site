@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { Command, Globe, Hammer, Menu, X } from '@lucide/svelte';
+	import { Command, Globe, Hammer, Menu, Search, X } from '@lucide/svelte';
 	import HeaderMenu from './HeaderMenu.svelte';
 	import { onMount } from 'svelte';
 	import { openCommandPalette } from '$lib/stores/CommandPallete.state.svelte';
 	import { m } from '$paraglide/messages';
 	import { toggleDrawer, drawerState } from '$stores/DrawerState.state.svelte';
-	import { getLocale, locales } from '$paraglide/runtime';
+	import { getLocale, locales, localizeHref } from '$paraglide/runtime';
 	import { getLocaleName, redirectLocale } from '$utils';
 
 	let isMac = $state<boolean | null>(null);
@@ -29,7 +29,8 @@
 				class="bg-base-200 hover:bg-base-100 fw-header-fs rounded-full p-3"
 				onclick={handleHammerClick}
 			>
-				<Hammer class="h-5" strokeWidth="1" />
+				<!-- <Hammer class="h-5" strokeWidth="1" /> -->
+				<Search class="h-5" strokeWidth="1" />
 			</button>
 			<div
 				class="absolute left-1/2 mt-1 flex -translate-x-1/2 scale-90 items-center justify-center pr-2 opacity-70"
@@ -92,7 +93,7 @@
 
 		<!-- Desktop & Mobile -->
 		<a
-			href="https://dashboard.futurewise.lat/login"
+			href={localizeHref('/soon')}
 			class="bg-base-200 hover:bg-base-100 flex items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:px-8 md:text-[15px]"
 		>
 			<span class="relative top-[1px]">

@@ -3,11 +3,16 @@
 	"exit": "Salir",
 	"login": "Entrar",
 
-	"welcome": "Bienvenido al",
-	"theFuture": "Futuro",
+	"welcome": "Bienvenido",
+	"theFuture": "Al Futuro",
 
 	"homeHero": "Somos una <span class='text-base-content opacity-80'>Plataforma de Productos Digitales</span> y un Laboratorio de Desarrollo enfocados en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border, IA y Máquinas (IoT)</span> para LATAM.",
 
-	"learnMore": "Más información",
-	"scheduleMeeting": "Programar reunión"
+	"learnMore": "Más info",
+	"scheduleMeeting": "Programar reunión",
+
+	"menuProducts": "Productos",
+	"menuClients": "Clientes",
+	"menuLab": "Lab",
+	"menuPrices": "Precios"
 }

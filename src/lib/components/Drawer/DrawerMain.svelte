@@ -90,7 +90,7 @@
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<Rss class="mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">Changelog / API Status</span>
+			<span class="self-center font-semibold">API Status / Changelog</span>
 		</div>
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<!-- <ChevronRight class="aspect-1 text-grey-dark w-4" /> -->

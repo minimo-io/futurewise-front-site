@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { KeySquare } from '@lucide/svelte';
 	import TitleSection from '../TitleSection.svelte';
+	import { localizeHref } from '$paraglide/runtime';
 
 	// backticks preserve newlines and braces
 	const snippet = `// Get a user’s access token and profile data
@@ -30,7 +31,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 				Com APIs prontas para integrar cada um de nossos produtos no seu próprio sistema.
 			</p>
 			<div class="mt-8 flex flex-row items-center md:mt-0">
-				<button class="fw-button !my-1 mr-4"> Documentação </button>
+				<a href={localizeHref('/docs')} class="fw-button !my-1 mr-4"> Documentação </a>
 				<button class="text-primary border-base-content !my-1 flex flex-row items-center font-sans">
 					<div>
 						<KeySquare class="h-4" />
