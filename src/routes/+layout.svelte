@@ -28,7 +28,7 @@
 
 <Header />
 
-<main class="font-sans-pro bg-base-100 text-base-content mx-(--fw-app-margin) min-h-screen">
+<main class="font-sans-pro bg-base-100 text-base-content mx-(--fw-app-margin)">
 	{@render children()}
 </main>
 

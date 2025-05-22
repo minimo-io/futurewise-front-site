@@ -52,6 +52,6 @@
 	</a>
 	<a href={localizeHref('/clientes')} class="flex items-center gap-1 uppercase">
 		<Headset class="h-4" />
-		{m.menuClients()}
+		{m.menuHelp()}
 	</a>
 </div>

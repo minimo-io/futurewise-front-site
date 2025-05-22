@@ -101,10 +101,10 @@
 	</a>
 
 	<!-- Fixed Extra Menu -->
-	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">Recursos</h2>
+	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">{m.resources()}</h2>
 
 	<a
-		href="/precios/"
+		href={localizeHref('/precios/')}
 		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
