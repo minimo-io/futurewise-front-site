@@ -2,7 +2,7 @@
 	import { m } from '$paraglide/messages';
 </script>
 
-<div class="fw-border-b-divider py-5">
+<div id="know-more" class="fw-border-b-divider py-5">
 	<section class="mx-auto max-w-full px-6 md:max-w-[65%] md:px-12 lg:px-16">
 		<blockquote class="mt-15 mb-8 md:mt-10 md:mb-5">
 			<div class="relative mb-2">

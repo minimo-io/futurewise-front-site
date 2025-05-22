@@ -36,7 +36,7 @@
 				</div>
 			</h2>
 		</div>
-		<div class="absolute -top-[40%] -left-[8%] z-20 scale-75 opacity-90">
+		<div class="absolute -top-[30%] -left-[8%] z-20 scale-75 opacity-90 md:-top-[40%]">
 			<img src="/bgs/cross.svg" alt="cross" />
 		</div>
 	</div>
