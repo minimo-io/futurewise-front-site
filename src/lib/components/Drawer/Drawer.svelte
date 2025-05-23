@@ -38,7 +38,7 @@
 		<div class="flex h-full flex-col justify-start overflow-hidden">
 			{#if drawerState.currentSubmenu}
 				<div class="flex flex-col px-0 text-xs">
-					<div class="border-grey-lighter flex items-center border-t border-b px-[30px]">
+					<div class="border-base-300 flex items-center border-t border-b px-[30px]">
 						<button onclick={goBackToMainMenu} class="text-blue mr-3 flex items-center gap-2">
 							<CircleArrowLeft class="h-4 w-4 pt-[1px]" />
 							<h2 class="my-5 text-base font-extrabold uppercase">{drawerState.currentName}</h2>

@@ -13,7 +13,9 @@ export const reroute: Reroute = ({ url }) => {
 		'/soon', // The target route itself
 		'/', // Home route
 		'/es', // Spanish locale route
-		'/en' // English locale route
+		'/en', // English locale route
+		'/finx',
+		'/caresync'
 	];
 
 	// Temporarily redirect all routes to "/soon" except allowed routes

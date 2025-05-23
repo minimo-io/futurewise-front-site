@@ -19,7 +19,7 @@
 	let drawerDataForLang = $state(drawerData[locale]);
 </script>
 
-<div class="flex flex-1 flex-col overflow-y-auto border-t px-0 text-xs">
+<div class="border-base-300 flex flex-1 flex-col overflow-y-auto border-t px-0 text-xs">
 	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">
 		{m.menuProducts()}
 	</h2>
@@ -31,7 +31,7 @@
 			<button
 				onclick={() => openSubmenu(drawer.id, drawer.name)}
 				class={[
-					'border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm',
+					'border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm',
 					i == 0 ? 'border-t' : ''
 				]}
 			>
@@ -55,7 +55,7 @@
 			<a
 				href={drawer.url}
 				class={[
-					'border-grey-lighter font-roboto text-grey-dark shine-effect flex justify-between border-b px-[30px] py-3 text-left align-middle text-sm',
+					'border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-b px-[30px] py-3 text-left align-middle text-sm',
 					i == 0 ? 'border-t' : ''
 				]}
 			>
@@ -76,7 +76,7 @@
 	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">{m.developers()}</h2>
 	<a
 		href={localizeHref('/docs')}
-		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<FileCode class="mr-2 h-4 w-4 self-center" />
@@ -89,7 +89,7 @@
 
 	<a
 		href={localizeHref('/status')}
-		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<Rss class="mr-2 h-4 w-4 self-center" />
@@ -105,7 +105,7 @@
 
 	<a
 		href={localizeHref('/precios/')}
-		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<Tag class="text-sun mr-2 h-4 w-4 self-center" />
@@ -119,7 +119,7 @@
 	<!-- Item with submenu -->
 	<a
 		href={localizeHref('/login')}
-		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<FlaskConical class="mr-2 h-4 w-4 self-center" />
@@ -133,7 +133,7 @@
 	<!-- Item with submenu -->
 	<button
 		onclick={() => openSubmenu('account_loggedin', 'Minha conta')}
-		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<PencilLine class="mr-2 h-4 w-4 self-center" />
@@ -147,7 +147,7 @@
 	<!-- Item with submenu -->
 	<button
 		onclick={() => openSubmenu('fw_menu_languages', 'Idiomas')}
-		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<Globe class="mr-2 h-4 w-4 self-center" />
@@ -165,7 +165,7 @@
 
 	<!-- Item with submenu -->
 	<div
-		class="border-grey-lighter font-roboto text-grey-dark shine-effect flex justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<!-- <img class="w-4 h-4 self-center mr-2" src="/images/flags/uruguay.png" alt="uruguay-flag" /> -->
