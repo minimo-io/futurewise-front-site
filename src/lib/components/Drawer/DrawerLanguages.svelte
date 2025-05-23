@@ -26,7 +26,7 @@
 		<button
 			type="button"
 			onclick={() => redirectLocale(locale)}
-			class="border-grey-lighter font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
+			class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 		>
 			<div class="flex items-center justify-center gap-2 self-center text-left align-middle">
 				<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[17px]" />
