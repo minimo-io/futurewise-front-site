@@ -1,9 +1,12 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import HeaderButtons from './HeaderButtons.svelte';
 	import HeaderContent from './HeaderContent.svelte';
 	import HeaderDecorations from './HeaderDecorations.svelte';
 	import HeaderDots from './HeaderDots.svelte';
 	import HeaderLogo from './HeaderLogo.svelte';
+
+	let currentPath = $derived(page.url.pathname);
 </script>
 
 <header
@@ -24,7 +27,9 @@
 			<HeaderButtons />
 		</nav>
 
-		<HeaderContent />
+		{#if currentPath == '/' || currentPath == '/en' || currentPath == '/es'}
+			<HeaderContent />
+		{/if}
 	</div>
 	<!-- Navigation Dots -->
 	<HeaderDots />

@@ -2,11 +2,14 @@
 	import { m } from '$paraglide/messages';
 	import TitleSection from '../TitleSection.svelte';
 	import { smoothScroll } from '$utils';
+	import { localizeHref } from '$paraglide/runtime';
+
+	let url = $state('#know-more');
 
 	function conditionalSmoothScroll(node: HTMLElement) {
-		// if (url === '#know-more') {
-		return smoothScroll(node);
-		// }
+		if (url === '#know-more') {
+			return smoothScroll(node);
+		}
 	}
 </script>
 
@@ -23,7 +26,7 @@
 		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>
 	<div class="mt-8 flex flex-wrap gap-2 md:gap-3">
-		<a href="#know-more" use:conditionalSmoothScroll class="fw-button fw-button-lg">
+		<a href={url} use:conditionalSmoothScroll class="fw-button fw-button-lg">
 			<span>{m.learnMore()}</span>
 		</a>
 		<a
