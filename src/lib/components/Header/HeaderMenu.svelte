@@ -21,7 +21,7 @@
 			{#each drawerDataForLang as drawer, i}
 				<li>
 					<a
-						href={drawer.url}
+						href={localizeHref(drawer.url || '/')}
 						class={[
 							'flex justify-between py-3 text-left align-middle text-sm',
 							i + 1 == drawerDataForLang.length ? '' : 'border-b border-b-gray-700'

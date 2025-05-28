@@ -9,7 +9,8 @@
 	"welcome": "Bienvenido",
 	"theFuture": "Al Futuro",
 
-	"homeHero": "Somos una <span class='text-base-content opacity-80'>Plataforma de Productos Digitales</span> y un Laboratorio de Desarrollo enfocados en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border en Tiempo Real, IA y Máquinas (IoT)</span> para LATAM.",
+	"heroContentHome": "Somos una <span class='text-base-content opacity-80'>Plataforma de Productos Digitales</span> y un Laboratorio de Desarrollo enfocados en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border en Tiempo Real, IA y Máquinas (IoT)</span> para LATAM.",
+	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagos en tiempo real con liquidaciones globales instantáneas en Moneda Local, Stablecoins o Bitcoin, vía Lightning. Ej.: <span class='text-base-content'>Recibí por transferencia CBU/CVU en Argentina y liquidá en el exterior</span>, al instante, con 100% de compliance.</div>",
 
 	"learnMore": "Más info",
 	"scheduleMeeting": "Programar reunión",

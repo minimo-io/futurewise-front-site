@@ -26,11 +26,7 @@
 
 <Meta />
 
-<Header />
-
-<main class="font-sans-pro bg-base-100 text-base-content mx-(--fw-app-margin)">
-	{@render children()}
-</main>
+{@render children()}
 
 <!-- CMD + K -->
 <CommandPalette />

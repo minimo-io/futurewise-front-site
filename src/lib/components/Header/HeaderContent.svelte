@@ -11,17 +11,23 @@
 			return smoothScroll(node);
 		}
 	}
+	interface Props {
+		titleRight: string;
+		titleLeft: string;
+		heroContent: string;
+	}
+	let { titleRight, titleLeft, heroContent }: Props = $props();
 </script>
 
 <!-- Hero Section -->
 <div class="relative my-15 max-w-4xl md:my-20">
 	<!-- Section title -->
-	<TitleSection titleLeft={m.welcome()} titleRight={m.theFuture()} />
+	<TitleSection {titleLeft} {titleRight} />
 
 	<p
 		class="text-secondary font-regular my-6 font-sans text-[20px] leading-[120%] font-normal tracking-wide md:text-[25px] md:leading-[118%]"
 	>
-		{@html m.homeHero()}
+		{@html heroContent}
 
 		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>

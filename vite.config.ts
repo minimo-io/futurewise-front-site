@@ -18,6 +18,14 @@ export default defineConfig({
 						['en', '/en'],
 						['es', '/es']
 					]
+				},
+				{
+					pattern: '/finx',
+					localized: [
+						['pt', '/finx'],
+						['es', '/es/finx'],
+						['en', '/en/finx']
+					]
 				}
 			]
 		}),

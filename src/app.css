@@ -175,7 +175,7 @@ body {
 		@apply text-base-content border-base-content border bg-transparent;
 	}
 	.fw-home-about {
-		@apply text-secondary text-[20px] md:text-[22px];
+		@apply font-pixel text-secondary text-[20px] md:text-[22px];
 	}
 	.fw-home-about a {
 		@apply text-base-content font-pixel no-underline;
@@ -188,6 +188,14 @@ body {
 	}
 	.fw-text-pixel {
 		@apply mb-6 !text-5xl font-bold;
+	}
+
+	/* Pre-compiled backgrounds */
+	.fw-bg-space {
+		@apply bg-[url('/bgs/ngc-2899.jpg')];
+	}
+	.fw-bg-rocket {
+		@apply bg-[url('/bgs/header-finx.png')];
 	}
 }
 
@@ -216,7 +224,7 @@ body {
 	}
 
 	main {
-		@apply font-pixel;
+		@apply font-pixel bg-base-100 text-base-content mx-(--fw-app-margin);
 	}
 	footer {
 		@apply font-pixel;

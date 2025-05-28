@@ -10,22 +10,15 @@
 	import { m } from '$paraglide/messages';
 </script>
 
-<Header titleLeft={m.welcome()} titleRight={m.theFuture()} heroContent={m.heroContentHome()} />
-
-<main class="font-sans-pro bg-base-100 text-base-content mx-(--fw-app-margin)">
-	<Products />
-	<Developers />
-</main>
-
-<!-- Lab Section Title -->
-<TitleFullWidth
-	breadcrumb={m.aboutUs()}
-	titleLeft={m.aboutUsTitleLeft()}
-	titleRight={m.aboutUsTitleRight()}
+<Header
+	background="rocket"
+	opacity="0"
+	titleLeft="Projeto"
+	titleRight="FinXPay"
+	heroContent={m.heroContentFinX()}
 />
 
-<!-- Quote Section -->
-<Quote />
-
-<!-- About Section -->
-<About />
+<main>
+	<!-- <Products /> -->
+	<!-- <Developers /> -->
+</main>
