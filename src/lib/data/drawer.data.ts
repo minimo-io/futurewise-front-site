@@ -170,8 +170,8 @@ export const drawerData = {
 		{
 			id: 'autocrm',
 			name: 'AutoCRM',
-			slogan: 'Automatização de Atendimentos com IA',
-			sloganSimple: 'Automatização de Atendimentos',
+			slogan: 'Automatização de atendimentos',
+			sloganSimple: 'Automatização de atendimentos',
 			details: 'Chatbot de IA <br />Que sincroniza com seu CRM',
 			icon: Activity,
 			subMenu: false,

@@ -44,7 +44,7 @@
 						{drawer.name}
 					</div>
 					{#if drawer.slogan}
-						<div class="text-secondary ml-1">— {drawer.slogan}</div>
+						<div class="text-secondary ml-1">— {drawer.sloganSimple}</div>
 					{/if}
 				</div>
 				<div class="text-grey-medium flex flex-row self-center align-middle">

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { locales } from '$paraglide/runtime';
+	import { page } from '$app/state';
 	import { redirectLocale, getLocaleName } from '$utils';
 
 	// import { page } from '$app/state';
@@ -25,7 +26,7 @@
 	{#each locales as locale, i}
 		<button
 			type="button"
-			onclick={() => redirectLocale(locale)}
+			onclick={() => redirectLocale(locale, page.url.href)}
 			class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 		>
 			<div class="flex items-center justify-center gap-2 self-center text-left align-middle">
