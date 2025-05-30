@@ -4,17 +4,23 @@
 	"login": "Login",
 	"soon": "Soon",
 	"getInTouch": "Get in touch!",
+	"project": "Project",
+
 	"and": "and",
 
 	"welcome": "Welcome to",
 	"theFuture": "The Future",
 
 	"heroContentHome": "We are a <span class='text-base-content opacity-80'>Digital Products Platform</span> and a Development Lab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, X-Border Real-Time Payments, AI, and Machines (IoT)</span> for LATAM.",
+
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Real-time payments with instant global settlements in Local Currency, Stablecoins, or Bitcoin via Lightning. Eg. <span class='text-base-content'>Receive via PIX in Brazil and settle abroad</span>, instantly, with 100% compliance.</div>",
+
+	"heroContentCareSync": "Predictive <span class='text-base-content opacity-80'>Maintenance System</span>, real-time monitoring and management of physical IT assets, powered by Artificial Intelligence + <span class='text-base-content opacity-80'>On-demand IT Service</span>, all in one <span class='text-base-content opacity-80'>Unified Dashboard</span>.",
 
 	"learnMore": "Learn more",
 	"scheduleMeeting": "Schedule a meeting",
 
+	"menuClients": "Partners / Clients",
 	"menuProducts": "Products",
 	"menuHelp": "Help",
 	"menuLab": "Lab",

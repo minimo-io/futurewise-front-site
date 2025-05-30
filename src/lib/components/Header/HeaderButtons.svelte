@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Command, Globe, Hammer, Menu, Search, X } from '@lucide/svelte';
+	import { Command, Globe, Menu, Search, X } from '@lucide/svelte';
+	import { page } from '$app/state';
 	import HeaderMenu from './HeaderMenu.svelte';
 	import { onMount } from 'svelte';
 	import { openCommandPalette } from '$lib/stores/CommandPallete.state.svelte';
@@ -59,7 +60,7 @@
 			<ul class="menu dropdown-content bg-base-200 rounded-box z-1 mt-4 w-52 p-2 shadow-sm">
 				{#each locales as locale, i}
 					<li>
-						<button class="capitalize" onclick={() => redirectLocale(locale)}>
+						<button class="capitalize" onclick={() => redirectLocale(locale, page.url.href)}>
 							<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[17px]" />
 							<span class="self-center font-semibold tracking-wider capitalize"
 								>{getLocaleName(locale)}</span
@@ -93,11 +94,12 @@
 
 		<!-- Desktop & Mobile -->
 		<a
-			href={localizeHref('/soon')}
-			class="bg-base-200 hover:bg-base-100 flex items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:px-8 md:text-[15px]"
+			href={localizeHref('/login')}
+			class="bg-base-200 hover:bg-base-100 flex items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:px-6 md:text-[15px]"
 		>
-			<span class="relative top-[1px]">
-				{m.login()}
+			<span class="relative top-[1px] flex items-center">
+				<span class="mr-0 md:mr-[5px]">{m.login()}</span>
+				<kbd class="kbd kbd-sm relative -top-[2px] hidden md:inline-block">L</kbd>
 			</span>
 		</a>
 	</div>

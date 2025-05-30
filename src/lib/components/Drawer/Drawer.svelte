@@ -41,7 +41,9 @@
 					<div class="border-base-300 flex items-center border-t border-b px-[30px]">
 						<button onclick={goBackToMainMenu} class="text-blue mr-3 flex items-center gap-2">
 							<CircleArrowLeft class="h-4 w-4 pt-[1px]" />
-							<h2 class="my-5 text-base font-extrabold uppercase">{drawerState.currentName}</h2>
+							<h2 class="font-pixel my-5 text-base font-extrabold uppercase">
+								{drawerState.currentName}
+							</h2>
 						</button>
 					</div>
 				</div>

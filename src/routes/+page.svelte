@@ -3,7 +3,7 @@
 	import Header from '$lib/components/Header/Header.svelte';
 	import Developers from '$lib/components/Home/Developers.svelte';
 	import Products from '$lib/components/Home/Products.svelte';
-	import PillFlower from '$lib/components/PillFlower.svelte';
+	import Clients from '$lib/components/Home/Clients.svelte';
 	import TitleFullWidth from '$lib/components/TitleFullWidth.svelte';
 	import Quote from '$lib/components/Home/Quote.svelte';
 	import About from '$lib/components/Home/About.svelte';
@@ -14,6 +14,7 @@
 
 <main class="font-sans-pro bg-base-100 text-base-content mx-(--fw-app-margin)">
 	<Products />
+	<Clients />
 	<Developers />
 </main>
 

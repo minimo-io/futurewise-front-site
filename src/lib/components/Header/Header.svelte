@@ -5,11 +5,12 @@
 	import HeaderDecorations from './HeaderDecorations.svelte';
 	import HeaderDots from './HeaderDots.svelte';
 	import HeaderLogo from './HeaderLogo.svelte';
+	import { fade } from 'svelte/transition';
 
 	let currentPath = $derived(page.url.pathname);
 
 	interface Props {
-		background?: 'space' | 'rocket';
+		background?: 'space' | 'rocket' | 'astronaut';
 		opacity?: '0' | '40';
 
 		titleRight: string;
@@ -27,6 +28,7 @@
 </script>
 
 <header
+	in:fade={{ duration: 150 }}
 	class="header border-primary-content md:fw-border-b-divider-dot relative px-(--fw-app-margin) md:px-0"
 >
 	<!-- Bg image -->
@@ -36,7 +38,8 @@
 			opacity == '0' && 'opacity-none',
 			opacity == '40' && 'opacity-40',
 			background == 'space' && 'fw-bg-space',
-			background == 'rocket' && 'fw-bg-rocket'
+			background == 'astronaut' && 'fw-bg-astronaut',
+			background == 'rocket' && 'fw-bg-rocket scale-x-[-1] bg-right md:scale-x-100 md:bg-center'
 		]}
 	></div>
 

@@ -3,7 +3,9 @@
 </script>
 
 <div class="relative">
-	<section class="fw-home-about z-10 mx-auto mb-12 max-w-full pt-10 md:max-w-[60%]">
+	<section
+		class="fw-home-about z-10 mx-(--fw-app-margin) mb-12 max-w-full pt-10 md:mx-auto md:max-w-[60%]"
+	>
 		{@html m.aboutText()}
 	</section>
 	<div

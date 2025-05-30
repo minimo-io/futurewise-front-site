@@ -20,7 +20,7 @@
 </script>
 
 <div class="border-base-300 flex flex-1 flex-col overflow-y-auto border-t px-0 text-xs">
-	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">
+	<h2 class="font-pixel my-4 px-[30px] text-base font-extrabold tracking-wider uppercase">
 		{m.menuProducts()}
 	</h2>
 	<!-- Item with submenu -->
@@ -73,7 +73,9 @@
 	{/each}
 
 	<!-- Fixed Extra Menu -->
-	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">{m.developers()}</h2>
+	<h2 class="font-pixel my-4 px-[30px] text-base font-extrabold tracking-wider uppercase">
+		{m.developers()}
+	</h2>
 	<a
 		href={localizeHref('/docs')}
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
@@ -101,7 +103,9 @@
 	</a>
 
 	<!-- Fixed Extra Menu -->
-	<h2 class="my-5 px-[30px] text-base font-extrabold tracking-wider uppercase">{m.resources()}</h2>
+	<h2 class="font-pixel my-4 px-[30px] text-base font-extrabold tracking-wider uppercase">
+		{m.resources()}
+	</h2>
 
 	<a
 		href={localizeHref('/precios/')}

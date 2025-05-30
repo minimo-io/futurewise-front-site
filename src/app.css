@@ -197,6 +197,9 @@ body {
 	.fw-bg-rocket {
 		@apply bg-[url('/bgs/header-finx.png')];
 	}
+	.fw-bg-astronaut {
+		@apply bg-[url('/bgs/header-caresync.png')];
+	}
 }
 
 @layer base {

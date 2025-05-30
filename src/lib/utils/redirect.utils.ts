@@ -1,7 +1,7 @@
 import { localizeHref } from '$paraglide/runtime';
 
-export function redirectLocale(newLocale: string) {
-	window.location.href = localizeHref('/', { locale: newLocale });
+export function redirectLocale(newLocale: string, path: string = '/') {
+	window.location.href = localizeHref(path, { locale: newLocale });
 }
 
 export function redirectHref(href: string) {

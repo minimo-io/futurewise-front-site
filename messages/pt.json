@@ -4,6 +4,8 @@
 	"login": "Entrar",
 	"soon": "Em breve",
 	"getInTouch": "Entre em contato",
+	"project": "Projeto",
+
 	"and": "e",
 
 	"welcome": "Bem-vindo",
@@ -13,9 +15,12 @@
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagamentos em tempo real com settlements globais instantâneos em Moeda Local, Stablecoins ou Bitcoin, via Lightning. Ex.: <span class='text-base-content'>Receba via PIX no Brasil e liquide no exterior</span>, no instante, com 100% de compliance.</div>",
 
+	"heroContentCareSync": "Sistema de <span class='text-base-content opacity-80'>Manutenção Preditiva</span>, monitoramento em tempo real e gestão de ativos físicos de TI, potencializado por Inteligência Artificial + <span class='text-base-content opacity-80'>Serviço TI sob demanda</span>, tudo em um  <span class='text-base-content opacity-80'>Dashboard Unificado</span>.",
+
 	"learnMore": "Saiba mais",
 	"scheduleMeeting": "Agende uma reunião",
 
+	"menuClients": "Parceiros / Clientes",
 	"menuProducts": "Produtos",
 	"menuHelp": "Atendimento",
 	"menuLab": "Lab",

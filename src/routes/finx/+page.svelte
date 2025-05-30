@@ -13,7 +13,7 @@
 <Header
 	background="rocket"
 	opacity="0"
-	titleLeft="Projeto"
+	titleLeft={m.project()}
 	titleRight="FinXPay"
 	heroContent={m.heroContentFinX()}
 />

@@ -20,11 +20,28 @@ export default defineConfig({
 					]
 				},
 				{
+					pattern: '/login',
+					localized: [
+						['pt', '/entrar'],
+						['es', '/es/entrar'],
+						['en', '/en/login']
+					]
+				},
+				// Products
+				{
 					pattern: '/finx',
 					localized: [
 						['pt', '/finx'],
 						['es', '/es/finx'],
 						['en', '/en/finx']
+					]
+				},
+				{
+					pattern: '/caresync',
+					localized: [
+						['pt', '/caresync'],
+						['es', '/es/caresync'],
+						['en', '/en/caresync']
 					]
 				}
 			]

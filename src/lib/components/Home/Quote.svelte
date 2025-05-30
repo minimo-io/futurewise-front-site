@@ -7,7 +7,7 @@
 		<blockquote class="mt-14 mb-8 md:mt-10 md:mb-5">
 			<div class="relative mb-2">
 				<!-- Quote start -->
-				<span class="absolute -top-5 -left-6 md:-top-1 md:-left-12">
+				<span class="absolute -top-7 -left-3 md:-top-1 md:-left-12">
 					<img src="/quote-start.svg" alt="Quote start" />
 				</span>
 				<!-- Content -->
