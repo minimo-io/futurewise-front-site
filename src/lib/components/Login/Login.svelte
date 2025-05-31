@@ -2,7 +2,7 @@
 	import { localizeHref } from '$paraglide/runtime';
 </script>
 
-<div class="max-w-fw border-x-base-200 relative container my-0 border-x text-center md:mx-auto">
+<div class="max-w-fw border-x-base-200 relative container my-0 text-center md:mx-auto md:border-x">
 	<div class="mx-(--fw-app-margin) flex h-[calc(100vh-90px)] flex-1 items-center justify-center">
 		<div class="relative -top-8 w-[400px]">
 			<h2 class="text-base-content font-sans text-3xl font-black">Entrar</h2>

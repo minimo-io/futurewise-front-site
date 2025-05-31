@@ -7,7 +7,7 @@
 
 <header
 	in:fade={{ duration: 150 }}
-	class="border-primary-content border-b-base-200 relative border-b px-(--fw-app-margin) pb-4 md:px-0"
+	class="border-primary-content border-b-base-200 relative px-(--fw-app-margin) pb-4 md:border-b md:px-0"
 >
 	<!-- Actual hero -->
 	<div class="max-w-fw container mx-auto pt-5 pb-1">
