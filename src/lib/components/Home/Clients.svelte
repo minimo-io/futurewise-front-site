@@ -26,91 +26,85 @@
 </script>
 
 <section
-	class="fw-border-b-divider fw-border-b-divider-dot fw-border-b-divider-dot-center relative mt-8 px-6 pb-5 md:-top-[45px] md:mt-0 md:px-12 lg:px-16"
+	class="fw-border-b-divider fw-border-b-divider-dot fw-border-b-divider-dot-center relative -top-12 mt-8 px-6 pb-5 md:-top-[45px] md:mt-0 md:px-12 lg:px-16"
 >
-	<div>
-		<div class="hidden text-center md:block">
-			<PillFlower title={m.menuClients()} />
-		</div>
+	<div class="relative text-center">
+		<PillFlower title={m.menuClients()} />
+	</div>
 
-		<div
-			class="relative mx-auto mt-10 mb-1 flex flex-col items-center justify-center gap-5 md:flex-row md:gap-12"
+	<div
+		class="relative mx-auto mt-10 mb-1 flex flex-col items-center justify-center gap-5 md:flex-row md:gap-12"
+	>
+		<!-- Clients -->
+		<!-- National -->
+		<a
+			href="https://media.toxtren.com/redirect.aspx?pid=101348&bid=2036&redirectURL=https://natregs.com"
+			rel="nofollow noopener"
+			target="_blank"
+			class="relative rounded-sm opacity-90 hover:opacity-50"
 		>
-			<!-- Clients -->
-
-			<!-- A Gente Faz -->
-			<a
-				href="https://agentefaz.net"
-				rel="nofollow noopener"
-				target="_blank"
-				class="relative rounded-sm opacity-90 hover:opacity-50"
-			>
-				<div class="mb-4 flex flex-col justify-center">
-					<img src="/clients/agf-logo.png" class="h-[55px]" alt="AGF" />
-				</div>
-			</a>
-			<!-- Braaay -->
-			<a
-				href="https://braaay.com"
-				rel="nofollow noopener"
-				target="_blank"
-				class="relative rounded-sm opacity-90 hover:opacity-50"
-			>
-				<div class="mb-4 flex flex-col justify-center">
-					<img src="/clients/braaay-logo.png" class="relative top-[1px] h-[32px]" alt="Braaay" />
-				</div>
-			</a>
-			<!-- National -->
-			<a
-				href="https://media.toxtren.com/redirect.aspx?pid=101348&bid=2036&redirectURL=https://natregs.com"
-				rel="nofollow noopener"
-				target="_blank"
-				class="relative rounded-sm opacity-90 hover:opacity-50"
-			>
-				<div class="mb-4 flex flex-col justify-center">
-					<img
-						src="/clients/national-logo.svg"
-						class="relative h-[55px] opacity-50"
-						alt="National Casino"
-					/>
-				</div>
-			</a>
-			<!-- Hops -->
-			<a
-				href="https://dribbble.com/shots/19431388-Hops-v2-Craft-Beer-Marketplace"
-				rel="nofollow noopener"
-				target="_blank"
-				class="relative rounded-sm opacity-90 hover:opacity-50"
-			>
-				<div class="mb-4 flex flex-col justify-center">
-					<img
-						src="/clients/hops-logo.svg"
-						class="relative -top-1 h-[35px] opacity-50"
-						alt="Hops"
-					/>
-				</div>
-			</a>
-			<!-- Betizen -->
-			<a
-				href="https://betizen.org"
-				rel="nofollow noopener"
-				target="_blank"
-				class="relative rounded-sm opacity-90 hover:opacity-50"
-			>
-				<div class="mb-4 flex flex-col justify-center">
-					<img
-						src="/clients/betizen-logo.svg"
-						class="relative -top-1 h-[50px] opacity-50"
-						alt="Betizen"
-					/>
-				</div>
-			</a>
-
-			<!-- End Clients -->
-
-			<div class="absolute -top-[50%] right-[10%] scale-40 opacity-70">
-				<img src="/bgs/cross.svg" alt="cross" />
+			<div class="mb-4 flex flex-col justify-center">
+				<img
+					src="/clients/national-logo.svg"
+					class="relative h-[53px] opacity-50"
+					alt="National Casino"
+				/>
 			</div>
+		</a>
+		<!-- A Gente Faz -->
+		<a
+			href="https://agentefaz.net"
+			rel="nofollow noopener"
+			target="_blank"
+			class="relative rounded-sm opacity-90 hover:opacity-50"
+		>
+			<div class="mb-4 flex flex-col justify-center">
+				<img src="/clients/agf-logo.png" class="h-[50px]" alt="AGF" />
+			</div>
+		</a>
+		<!-- Braaay -->
+		<a
+			href="https://braaay.com"
+			rel="nofollow noopener"
+			target="_blank"
+			class="relative rounded-sm opacity-90 hover:opacity-50"
+		>
+			<div class="mb-4 flex flex-col justify-center">
+				<img src="/clients/braaay-logo.png" class="relative top-[1px] h-[32px]" alt="Braaay" />
+			</div>
+		</a>
+
+		<!-- Hops -->
+		<a
+			href="https://dribbble.com/shots/19431388-Hops-v2-Craft-Beer-Marketplace"
+			rel="nofollow noopener"
+			target="_blank"
+			class="relative rounded-sm opacity-90 hover:opacity-50"
+		>
+			<div class="mb-4 flex flex-col justify-center">
+				<img src="/clients/hops-logo.svg" class="relative -top-1 h-[32px] opacity-50" alt="Hops" />
+			</div>
+		</a>
+		<!-- Betizen -->
+		<a
+			href="https://betizen.org"
+			rel="nofollow noopener"
+			target="_blank"
+			class="relative rounded-sm opacity-90 hover:opacity-50"
+		>
+			<div class="mb-4 flex flex-col justify-center">
+				<img
+					src="/clients/betizen-logo.svg"
+					class="relative -top-1 h-[45px] opacity-50"
+					alt="Betizen"
+				/>
+			</div>
+		</a>
+
+		<!-- End Clients -->
+
+		<div class="absolute -top-[50%] right-[10%] scale-40 opacity-70">
+			<img src="/bgs/cross.svg" alt="cross" />
 		</div>
 	</div>
 </section>

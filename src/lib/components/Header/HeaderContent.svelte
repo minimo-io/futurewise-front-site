@@ -20,7 +20,7 @@
 </script>
 
 <!-- Hero Section -->
-<div class="relative my-15 max-w-4xl md:my-20">
+<div class="relative mt-15 mb-10 max-w-4xl md:my-20">
 	<!-- Section title -->
 	<TitleSection {titleLeft} {titleRight} />
 

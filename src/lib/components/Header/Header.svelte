@@ -29,7 +29,7 @@
 
 <header
 	in:fade={{ duration: 150 }}
-	class="header border-primary-content md:fw-border-b-divider-dot relative px-(--fw-app-margin) md:px-0"
+	class="border-primary-content md:fw-border-b-divider-dot relative px-(--fw-app-margin) md:px-0"
 >
 	<!-- Bg image -->
 	<div
@@ -44,7 +44,7 @@
 	></div>
 
 	<!-- Actual hero -->
-	<div class="max-w-fw container mx-auto py-5">
+	<div class="max-w-fw container mx-auto pt-5 pb-1">
 		<nav class="relative z-20 flex items-center justify-between">
 			<!-- Logos -->
 			<HeaderLogo />

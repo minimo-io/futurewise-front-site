@@ -20,6 +20,25 @@
 </script>
 
 <div class="border-base-300 flex flex-1 flex-col overflow-y-auto border-t px-0 text-xs">
+	<!-- Item with submenu -->
+	<button
+		onclick={() => openSubmenu('fw_menu_languages', 'Idiomas')}
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
+	>
+		<div class="flex justify-center self-center text-left align-middle">
+			<Globe class="mr-2 h-4 w-4 self-center" />
+			<div class="self-center font-semibold">Idiomas</div>
+			<div class="text-secondary ml-1 flex items-center gap-1">
+				<span>—</span>
+				<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[16px]" />
+				<span class="capitalize">{getLocaleName(locale)}</span>
+			</div>
+		</div>
+		<div class="text-grey-medium flex flex-row self-center align-middle">
+			<ChevronRight class="aspect-1 text-grey-dark w-4" />
+		</div>
+	</button>
+
 	<h2 class="font-pixel my-4 px-[30px] text-base font-extrabold tracking-wider uppercase">
 		{m.menuProducts()}
 	</h2>
@@ -145,25 +164,6 @@
 		</div>
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<!-- <ChevronRight class="aspect-1 text-grey-dark w-4" /> -->
-		</div>
-	</button>
-
-	<!-- Item with submenu -->
-	<button
-		onclick={() => openSubmenu('fw_menu_languages', 'Idiomas')}
-		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
-	>
-		<div class="flex justify-center self-center text-left align-middle">
-			<Globe class="mr-2 h-4 w-4 self-center" />
-			<div class="self-center font-semibold">Idiomas</div>
-			<div class="text-secondary ml-1 flex items-center gap-1">
-				<span>—</span>
-				<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[16px]" />
-				<span class="capitalize">{getLocaleName(locale)}</span>
-			</div>
-		</div>
-		<div class="text-grey-medium flex flex-row self-center align-middle">
-			<ChevronRight class="aspect-1 text-grey-dark w-4" />
 		</div>
 	</button>
 

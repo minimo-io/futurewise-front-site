@@ -14,7 +14,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 });`;
 </script>
 
-<section class="max-w-fw relative mx-auto my-15 md:my-18">
+<section class="max-w-fw relative -top-8 mx-auto my-10 md:-top-1 md:my-16">
 	<!-- Subtitle -->
 	<TitleSection titleLeft="Developers" titleRight="First" forceFlexRow={true} />
 
