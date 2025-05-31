@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ChevronDown, FlaskConical, Headset } from '@lucide/svelte';
+	import { ChevronDown, Headset } from '@lucide/svelte';
 	import { getLocale, localizeHref } from '$paraglide/runtime';
 	import { drawerData } from '$lib/data/drawer.data';
 	import { m } from '$paraglide/messages';
@@ -16,7 +16,7 @@
 		</div>
 		<!-- Main menu -->
 		<ul
-			class="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[410px] px-5 py-3 shadow-md"
+			class="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[440px] px-5 py-3 shadow-md"
 		>
 			{#each drawerDataForLang as drawer, i}
 				<li>
