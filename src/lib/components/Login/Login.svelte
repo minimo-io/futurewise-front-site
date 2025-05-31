@@ -21,7 +21,7 @@
 
 					<!-- Continue button -->
 					<button
-						class="mb-5 w-full rounded-md bg-red-600 py-2 font-semibold text-white transition hover:bg-red-700"
+						class="bg-primary mb-5 w-full rounded-md py-2 font-semibold text-white transition hover:opacity-50"
 					>
 						Continuar
 					</button>
