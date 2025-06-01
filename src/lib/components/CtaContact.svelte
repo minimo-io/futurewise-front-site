@@ -6,10 +6,10 @@
 <section
 	class="border-base-200 fw-border-t-divider fw-border-t-divider-dot !relative mx-(--fw-app-margin) border-t px-0 py-16 text-center"
 >
-	<h2 class="font-pixel mb-4 text-3xl font-bold tracking-wider uppercase">
+	<h2 class="font-pixel mb-4 text-2xl font-bold tracking-wider uppercase md:text-3xl">
 		{m.ctaStillHaveQuestions()}
 	</h2>
-	<p class="text-secondary mx-auto mb-6 max-w-3xl text-xl md:text-2xl">
+	<p class="text-secondary mx-auto mb-6 max-w-3xl text-lg md:text-2xl">
 		{m.ctaText()}
 	</p>
 	<a

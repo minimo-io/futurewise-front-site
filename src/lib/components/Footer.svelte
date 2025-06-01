@@ -108,7 +108,7 @@
 				<div class="hidden md:block">
 					<img
 						src="/logos/futurewise-logo-footer.svg"
-						class="w-[250px]"
+						class="w-[200px]"
 						width="180"
 						alt="footer-logo"
 					/>
