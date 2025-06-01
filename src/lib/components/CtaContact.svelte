@@ -4,9 +4,11 @@
 </script>
 
 <section
-	class="border-base-200 fw-border-t-divider fw-border-t-divider-dot relative mx-(--fw-app-margin) border-t bg-black px-0 py-16 text-center text-white"
+	class="border-base-200 fw-border-t-divider fw-border-t-divider-dot !relative mx-(--fw-app-margin) border-t px-0 py-16 text-center"
 >
-	<h2 class="font-pixel mb-4 text-3xl font-bold uppercase">{m.ctaStillHaveQuestions()}</h2>
+	<h2 class="font-pixel mb-4 text-3xl font-bold tracking-wider uppercase">
+		{m.ctaStillHaveQuestions()}
+	</h2>
 	<p class="text-secondary mx-auto mb-6 max-w-3xl text-xl md:text-2xl">
 		{m.ctaText()}
 	</p>
@@ -20,7 +22,9 @@
 	</a>
 
 	<!-- Decoration -->
-	<div class="absolute -top-[5%] -left-[10%] z-10 scale-40 opacity-80">
+	<div
+		class="absolute -top-[5%] -left-[10%] z-50 scale-35 opacity-50 md:top-[5%] md:left-[20%] md:scale-90"
+	>
 		<img src="/bgs/cross.svg" alt="cross" />
 	</div>
 </section>

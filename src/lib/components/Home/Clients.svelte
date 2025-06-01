@@ -13,7 +13,7 @@
 	</div>
 
 	<div
-		class="relative mx-auto mt-10 mb-1 flex scale-90 flex-col items-center justify-center gap-5 md:flex-row md:gap-12"
+		class="relative mx-auto mt-10 mb-1 flex scale-90 flex-row flex-wrap items-center justify-center md:flex-row md:gap-12"
 	>
 		<!-- Clients -->
 		<!-- National -->
@@ -21,7 +21,7 @@
 			href="https://media.toxtren.com/redirect.aspx?pid=101348&bid=2036&redirectURL=https://natregs.com"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative rounded-sm opacity-90 hover:opacity-50"
+			class="relative w-1/2 rounded-sm opacity-90 hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
 				<img
@@ -36,10 +36,10 @@
 			href="https://agentefaz.net"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative rounded-sm opacity-90 hover:opacity-50"
+			class="relative w-1/2 rounded-sm opacity-90 hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
-				<img src="/clients/agf-logo.png" class="h-[50px]" alt="AGF" />
+				<img src="/clients/agf-logo.png" class="md:h-[50px]" alt="AGF" />
 			</div>
 		</a>
 		<!-- Braaay -->
@@ -47,10 +47,14 @@
 			href="https://braaay.com"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative rounded-sm opacity-90 hover:opacity-50"
+			class="relative w-1/2 rounded-sm opacity-90 hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
-				<img src="/clients/braaay-logo.png" class="relative top-[1px] h-[32px]" alt="Braaay" />
+				<img
+					src="/clients/braaay-logo.png"
+					class="relative top-[1px] w-[130px] md:h-[32px] md:w-auto"
+					alt="Braaay"
+				/>
 			</div>
 		</a>
 
@@ -59,7 +63,7 @@
 			href="https://dribbble.com/shots/19431388-Hops-v2-Craft-Beer-Marketplace"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative rounded-sm opacity-90 hover:opacity-50"
+			class="relative w-1/2 rounded-sm opacity-90 hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
 				<img src="/clients/hops-logo.svg" class="relative -top-1 h-[32px] opacity-50" alt="Hops" />
@@ -70,7 +74,7 @@
 			href="https://betizen.org"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative rounded-sm opacity-90 hover:opacity-50"
+			class="relative w-1/2 rounded-sm opacity-90 hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
 				<img
