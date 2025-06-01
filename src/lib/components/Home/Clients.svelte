@@ -1,28 +1,8 @@
 <!-- src/lib/components/Home/Products.svelte -->
 <script lang="ts">
-	import ProductSingle from '$lib/components/Home/ProductSingle.svelte';
 	import type { Brand } from '$lib/types/brands.types';
 	import PillFlower from '../PillFlower.svelte';
 	import { m } from '$paraglide/messages';
-
-	let products: Brand[] = [
-		{
-			name: 'ViiVPay',
-			slogan: 'LATAM PAYMENTS',
-			sloganDetails: '',
-			underDevelopment: false,
-			link: 'https://viivpay.com',
-			logo: '/clients/viivpay-logo.png'
-		},
-		{
-			name: 'Braaay',
-			slogan: 'BOUTIQUE WINES CLUB',
-			sloganDetails: '',
-			link: 'https://braaay.com/',
-			underDevelopment: false,
-			logo: '/clients/braaay-logo.png'
-		}
-	];
 </script>
 
 <section
@@ -33,7 +13,7 @@
 	</div>
 
 	<div
-		class="relative mx-auto mt-10 mb-1 flex flex-col items-center justify-center gap-5 md:flex-row md:gap-12"
+		class="relative mx-auto mt-10 mb-1 flex scale-90 flex-col items-center justify-center gap-5 md:flex-row md:gap-12"
 	>
 		<!-- Clients -->
 		<!-- National -->

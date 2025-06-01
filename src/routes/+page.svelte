@@ -8,6 +8,7 @@
 	import Quote from '$lib/components/Home/Quote.svelte';
 	import About from '$lib/components/Home/About.svelte';
 	import { m } from '$paraglide/messages';
+	import CtaContact from '$lib/components/CtaContact.svelte';
 </script>
 
 <Header titleLeft={m.welcome()} titleRight={m.theFuture()} heroContent={m.heroContentHome()} />
@@ -30,3 +31,6 @@
 
 <!-- About Section -->
 <About />
+
+<!-- Cta -->
+<CtaContact />

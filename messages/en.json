@@ -2,6 +2,8 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"exit": "Exit",
 	"login": "Login",
+	"continue": "Continue",
+	"or": "or",
 	"soon": "Soon",
 	"getInTouch": "Get in touch!",
 	"project": "Project",
@@ -47,5 +49,14 @@
 	"resources": "Resources",
 
 	"metaHomeTitle": "Innovation DevLab & Digital Platform",
-	"metaHomeDescription": "We are a Digital Products Platform and a Development Lab focused on Innovation in e-Commerce, Payments, AI, and Machines, for LATAM."
+	"metaHomeDescription": "We are a Digital Products Platform and a Development Lab focused on Innovation in e-Commerce, Payments, AI, and Machines, for LATAM.",
+
+	"loginYourEmail": "Your email...",
+	"loginContinueWithGoogle": "Continue with Google",
+	"loginDontHaveAccount": "Don't have an account yet?",
+	"loginStartNow": "Start now",
+
+	"ctaStillHaveQuestions": "STILL HAVE QUESTIONS?",
+	"ctaText": "Tell us your challenges, at Futurewise we love tackling them, we offer Products, APIs, and Services in E-Commerce, Payments, AI & Machines",
+	"ctaScheduleACall": "Schedule a call"
 }

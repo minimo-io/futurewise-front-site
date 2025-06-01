@@ -3,6 +3,7 @@
 	import TitleSection from '../TitleSection.svelte';
 	import { smoothScroll } from '$utils';
 	import { localizeHref } from '$paraglide/runtime';
+	import { AppConfig } from '$lib/configs';
 
 	let url = $state('#know-more');
 
@@ -36,7 +37,7 @@
 			<span>{m.learnMore()}</span>
 		</a>
 		<a
-			href="https://calendar.app.google/oDbeDazTLXApijoR8"
+			href={AppConfig.calendar}
 			target="_blank"
 			rel="nofollow noopener	"
 			class="fw-button fw-button-lg fw-button-outline"

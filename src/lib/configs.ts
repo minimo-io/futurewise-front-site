@@ -1,6 +1,8 @@
 export const AppConfig = {
+	calendar: 'https://calendar.app.google/oDbeDazTLXApijoR8',
 	fw: {
 		founded: '2025-05-02',
+
 		socials: {
 			github: 'https://github.com/futurewise-lat',
 			huggingface: 'https://huggingface.co/futurewise',
