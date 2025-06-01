@@ -16,6 +16,7 @@
 		titleRight: string;
 		titleLeft: string;
 		heroContent: string;
+		buttons?: boolean;
 	}
 
 	let {
@@ -23,7 +24,8 @@
 		opacity = '40',
 		titleLeft,
 		titleRight,
-		heroContent
+		heroContent,
+		buttons = true
 	}: Props = $props();
 </script>
 
@@ -50,10 +52,11 @@
 			<HeaderLogo />
 
 			<!-- Menus -->
+
 			<HeaderButtons />
 		</nav>
 
-		<HeaderContent {titleLeft} {titleRight} {heroContent} />
+		<HeaderContent {titleLeft} {titleRight} {heroContent} {buttons} />
 	</div>
 	<!-- Navigation Dots -->
 	<HeaderDots />

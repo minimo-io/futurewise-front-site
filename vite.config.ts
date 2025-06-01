@@ -27,6 +27,14 @@ export default defineConfig({
 						['en', '/en/login']
 					]
 				},
+				{
+					pattern: '/lab',
+					localized: [
+						['pt', '/lab'],
+						['es', '/es/lab'],
+						['en', '/en/lab']
+					]
+				},
 				// Products
 				{
 					pattern: '/finx',

@@ -1,4 +1,4 @@
-import { Activity, Bird, ShoppingBag, Box } from '@lucide/svelte';
+import { Activity, Bird, ShoppingBag } from '@lucide/svelte';
 import type { DrawerData } from '$lib/types/drawer.types';
 import { localizeHref } from '$paraglide/runtime';
 
@@ -32,20 +32,8 @@ export const drawerData = {
 		// } as DrawerData,
 
 		{
-			id: 'bagity',
-			name: 'Bagity',
-			slogan: 'Headless E-commerce with Superpowers',
-			sloganSimple: 'E-commerce with Superpowers',
-			details: 'Headless Backends<br />Modern UX + MCP Servers',
-			icon: ShoppingBag,
-			subMenu: false,
-			isBold: true,
-			url: localizeHref('/bagity')
-		} as DrawerData,
-
-		{
 			id: 'finx',
-			name: 'FinX',
+			name: 'FinXPay',
 			slogan: 'Real-time Cross-Border Payments',
 			sloganSimple: 'X-Border Instant Payments',
 			details: 'Global and transparent<br />Fiat, Stablecoins & Bitcoin',
@@ -57,16 +45,28 @@ export const drawerData = {
 		} as DrawerData,
 
 		{
-			id: 'delibra',
-			name: 'Delibra',
-			slogan: 'Integrated Shipping Workflow',
-			sloganSimple: 'Integrated shipping workflow',
-			details: 'Automation, tracking<br />and price',
-			icon: Box,
+			id: 'bagity',
+			name: 'Bagity',
+			slogan: 'Headless E-commerce with Superpowers',
+			sloganSimple: 'E-commerce with Superpowers',
+			details: 'Headless Backends<br />Modern UX + MCP Servers',
+			icon: ShoppingBag,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/delibra')
+			url: localizeHref('/bagity')
 		} as DrawerData,
+
+		// {
+		// 	id: 'delibra',
+		// 	name: 'Delibra',
+		// 	slogan: 'Integrated Shipping Workflow',
+		// 	sloganSimple: 'Integrated shipping workflow',
+		// 	details: 'Automation, tracking<br />and price',
+		// 	icon: Box,
+		// 	subMenu: false,
+		// 	isBold: true,
+		// 	url: localizeHref('/delibra')
+		// } as DrawerData,
 
 		{
 			id: 'autocrm',
@@ -120,20 +120,8 @@ export const drawerData = {
 		// } as DrawerData,
 
 		{
-			id: 'bagity',
-			name: 'Bagity',
-			slogan: 'Headless E-commerce com Superpoderes',
-			sloganSimple: 'E-commerce com Superpoderes',
-			details: 'Headless Backends<br />UX moderno + MCP Servers',
-			icon: ShoppingBag,
-			subMenu: false,
-			isBold: true,
-			url: localizeHref('/bagity')
-		} as DrawerData,
-
-		{
 			id: 'finx',
-			name: 'FinX',
+			name: 'FinXPay',
 			slogan: 'Pagamentos X-Border em Tempo Real',
 			sloganSimple: 'Pagamentos Globais Instantâneos',
 			details: 'Transparentes & Real-Time<br />Fiat, Stablecins & Bitcoin',
@@ -145,16 +133,28 @@ export const drawerData = {
 		} as DrawerData,
 
 		{
-			id: 'delibra',
-			name: 'Delibra',
-			slogan: 'Fluxo Integrado de Envios',
-			sloganSimple: 'Fluxo integrado de envios',
-			details: 'Automação, rastreio<br />e melhor preço',
-			icon: Box,
+			id: 'bagity',
+			name: 'Bagity',
+			slogan: 'Headless E-commerce com Superpoderes',
+			sloganSimple: 'E-commerce com Superpoderes',
+			details: 'Headless Backends<br />UX moderno + MCP Servers',
+			icon: ShoppingBag,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/delibra')
+			url: localizeHref('/bagity')
 		} as DrawerData,
+
+		// {
+		// 	id: 'delibra',
+		// 	name: 'Delibra',
+		// 	slogan: 'Fluxo Integrado de Envios',
+		// 	sloganSimple: 'Fluxo integrado de envios',
+		// 	details: 'Automação, rastreio<br />e melhor preço',
+		// 	icon: Box,
+		// 	subMenu: false,
+		// 	isBold: true,
+		// 	url: localizeHref('/delibra')
+		// } as DrawerData,
 
 		// {
 		// 	id: 'nostradamus',
@@ -207,20 +207,8 @@ export const drawerData = {
 		// } as DrawerData,
 
 		{
-			id: 'bagity',
-			name: 'Bagity',
-			slogan: 'E-commerce Headless con Superpoderes',
-			sloganSimple: 'E-commerce con Superpoderes',
-			details: 'Backends Headless<br />UX moderno + Servidores MCP',
-			icon: ShoppingBag,
-			subMenu: false,
-			isBold: true,
-			url: localizeHref('/bagity')
-		} as DrawerData,
-
-		{
 			id: 'finx',
-			name: 'FinX',
+			name: 'FinXPay',
 			slogan: 'Pagos X-Border en Tiempo Real',
 			sloganSimple: 'Pagos Globales Instantáneos',
 			details: 'Transparentes & Real-Time<br />Fiat, Stablecoins y Bitcoin',
@@ -232,16 +220,28 @@ export const drawerData = {
 		} as DrawerData,
 
 		{
-			id: 'delibra',
-			name: 'Delibra',
-			slogan: 'Flujo Integrado de Envíos',
-			sloganSimple: 'Flujo integrado de envíos',
-			details: 'Automatización, seguimiento<br />y mejor precio',
-			icon: Box,
+			id: 'bagity',
+			name: 'Bagity',
+			slogan: 'E-commerce Headless con Superpoderes',
+			sloganSimple: 'E-commerce con Superpoderes',
+			details: 'Backends Headless<br />UX moderno + Servidores MCP',
+			icon: ShoppingBag,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/delibra')
+			url: localizeHref('/bagity')
 		} as DrawerData,
+
+		// {
+		// 	id: 'delibra',
+		// 	name: 'Delibra',
+		// 	slogan: 'Flujo Integrado de Envíos',
+		// 	sloganSimple: 'Flujo integrado de envíos',
+		// 	details: 'Automatización, seguimiento<br />y mejor precio',
+		// 	icon: Box,
+		// 	subMenu: false,
+		// 	isBold: true,
+		// 	url: localizeHref('/delibra')
+		// } as DrawerData,
 
 		// {
 		// 	id: 'nostradamus',

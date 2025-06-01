@@ -13,7 +13,7 @@
 	</div>
 
 	<div
-		class="relative mx-auto mt-10 mb-1 flex scale-90 flex-row flex-wrap items-center justify-center md:flex-row md:gap-12"
+		class="relative mx-auto mt-10 mb-1 flex scale-90 flex-row flex-wrap items-center justify-center grayscale md:flex-row md:gap-12"
 	>
 		<!-- Clients -->
 		<!-- National -->

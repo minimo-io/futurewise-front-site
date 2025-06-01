@@ -16,7 +16,8 @@ export const reroute: Reroute = ({ url }) => {
 		'/en', // English locale route
 		'/finx',
 		'/caresync',
-		'/login'
+		'/login',
+		'/lab'
 	];
 
 	// Temporarily redirect all routes to "/soon" except allowed routes

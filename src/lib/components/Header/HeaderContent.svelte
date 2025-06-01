@@ -16,8 +16,9 @@
 		titleRight: string;
 		titleLeft: string;
 		heroContent: string;
+		buttons: boolean;
 	}
-	let { titleRight, titleLeft, heroContent }: Props = $props();
+	let { titleRight, titleLeft, heroContent, buttons = true }: Props = $props();
 </script>
 
 <!-- Hero Section -->
@@ -32,17 +33,19 @@
 
 		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>
-	<div class="mt-8 flex flex-wrap gap-2 md:gap-3">
-		<a href={url} use:conditionalSmoothScroll class="fw-button fw-button-lg">
-			<span>{m.learnMore()}</span>
-		</a>
-		<a
-			href={AppConfig.calendar}
-			target="_blank"
-			rel="nofollow noopener	"
-			class="fw-button fw-button-lg fw-button-outline"
-		>
-			<span>{m.scheduleMeeting()}</span>
-		</a>
-	</div>
+	{#if buttons}
+		<div class="mt-8 flex flex-wrap gap-2 md:gap-3">
+			<a href={url} use:conditionalSmoothScroll class="fw-button fw-button-lg">
+				<span>{m.learnMore()}</span>
+			</a>
+			<a
+				href={AppConfig.calendar}
+				target="_blank"
+				rel="nofollow noopener	"
+				class="fw-button fw-button-lg fw-button-outline"
+			>
+				<span>{m.scheduleMeeting()}</span>
+			</a>
+		</div>
+	{/if}
 </div>
