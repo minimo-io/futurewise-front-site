@@ -123,7 +123,7 @@ export const drawerData = {
 			id: 'finx',
 			name: 'FinXPay',
 			slogan: 'Pagamentos X-Border em Tempo Real',
-			sloganSimple: 'Pagamentos Globais Instantâneos',
+			sloganSimple: 'Pagamentos X-Border Instantâneos',
 			details: 'Transparentes & Real-Time<br />Fiat, Stablecins & Bitcoin',
 			icon: Bird,
 			subMenu: false,

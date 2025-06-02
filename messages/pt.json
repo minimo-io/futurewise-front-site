@@ -31,7 +31,7 @@
 	"menuPrices": "Preços",
 
 	"devSlogan": "Plataforma unificada,<br />APIs modernas.",
-	"devText": "<p class='text-secondary mb-4 font-sans text-xl leading-6'>Além de nossos dashboards, a Futurewise fornece uma interface única e elegante que abstrai toda a complexidade das integrações empresariais.</p><p class='text-secondary mb-4 font-sans text-xl leading-6'>Com APIs prontas para integrar cada um de nossos produtos no seu próprio sistema.</p>",
+	"devText": "<p class='text-secondary mb-4 font-sans text-xl leading-6'>Além de nossos dashboards, Futurewise fornece uma interface única e elegante que abstrai toda a complexidade das integrações empresariais.</p><p class='text-secondary mb-4 font-sans text-xl leading-6'>Com APIs prontas para integrar cada um de nossos produtos no seu próprio sistema.</p>",
 
 	"documentation": "Documentação",
 	"getYourAPIKey": "Obtenha sua API key",
