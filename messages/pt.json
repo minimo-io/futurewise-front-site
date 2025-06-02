@@ -3,6 +3,8 @@
 	"exit": "Saír",
 	"login": "Entrar",
 	"continue": "Continuar",
+	"readMore": "Ler tudo",
+	"readLess": "Ler menos",
 	"or": "ou",
 	"soon": "Em breve",
 	"getInTouch": "Entre em contato",
@@ -13,7 +15,7 @@
 	"welcome": "Bem-vindo",
 	"theFuture": "Ao Futuro",
 
-	"heroContentHome": "Somos uma <span class='text-base-content opacity-80'>Plataforma Unificada de Produtos Digitais</span> e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos X-Border em Tempo Real, e IA Aplicada ao Monitoramento de Ativos de TI</span>",
+	"heroContentHome": "Somos uma <span class='text-base-content opacity-80'>Plataforma Unificada de Produtos Digitais</span> e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos X-Border em Tempo Real, e IA Aplicada ao Monitoramento de Ativos de TI</span>.",
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagamentos em tempo real com settlements globais instantâneos em Moeda Local, Stablecoins ou Bitcoin, via Lightning. Ex.: <span class='text-base-content'>Receba via PIX no Brasil e liquide no exterior</span>, no instante, com 100% de compliance.</div>",
 

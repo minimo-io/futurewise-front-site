@@ -12,17 +12,17 @@
 
 <!-- Products Slider Section -->
 <section
-	class="fw-border-b-divider relative mt-7 px-6 pb-5 md:-top-[23px] md:mt-0 md:px-12 lg:px-16"
+	class="fw-border-b-divider relative mt-7 px-0 pb-5 md:-top-[23px] md:mt-0 md:px-12 lg:px-16"
 >
-	<div class="pb-5">
-		<div class="hidden text-center md:block">
+	<div class="md:pb-5">
+		<div class="relative -top-1 hidden text-center md:block">
 			<PillFlower title={m.menuProducts()} />
 		</div>
 		<!-- <div class="z-50 pt-6 text-center font-serif text-sm tracking-wider">
 			(Dois mais em desenvolvimento no <a href={localizeHref('/lab')}>laboratório</a>)
 		</div> -->
 		<div
-			class="relative mx-auto mt-8 mb-1 flex flex-col items-center justify-center gap-5 md:flex-row md:gap-0"
+			class="relative -top-8 mx-auto mt-8 mb-1 flex flex-col items-center justify-center gap-0 md:top-0 md:flex-row"
 		>
 			{#each drawerDataForLang as product, i (product.name)}
 				{@const align = i === 0 ? 'start' : i === drawerDataForLang.length - 1 ? 'end' : 'center'}

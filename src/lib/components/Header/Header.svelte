@@ -6,8 +6,10 @@
 	import HeaderDots from './HeaderDots.svelte';
 	import HeaderLogo from './HeaderLogo.svelte';
 	import { fade } from 'svelte/transition';
+	import { deLocalizeUrl } from '$paraglide/runtime';
 
 	let currentPath = $derived(page.url.pathname);
+	const delocalizedPath = deLocalizeUrl(page.url).pathname;
 
 	interface Props {
 		background?: 'space' | 'rocket' | 'astronaut';
@@ -31,7 +33,7 @@
 
 <header
 	in:fade={{ duration: 150 }}
-	class="border-primary-content md:fw-border-b-divider-dot relative px-(--fw-app-margin) md:px-0"
+	class="border-primary-content relative px-(--fw-app-margin) md:px-0"
 >
 	<!-- Bg image -->
 	<div
@@ -62,4 +64,10 @@
 	<HeaderDots />
 	<!-- Decorations -->
 	<HeaderDecorations />
+
+	{#if delocalizedPath == '/'}
+		<div
+			class="pointer-events-none absolute right-0 bottom-0 left-0 block h-20 bg-gradient-to-t from-black via-black/70 to-transparent md:block"
+		></div>
+	{/if}
 </header>

@@ -14,7 +14,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 });`;
 </script>
 
-<section class="max-w-fw relative -top-8 mx-auto my-10 md:-top-1 md:my-16">
+<section class="max-w-fw relative -top-8 mx-auto my-10 md:-top-1 md:my-10">
 	<!-- Subtitle -->
 	<TitleSection titleLeft="Developers" titleRight="First" forceFlexRow={true} />
 
@@ -28,7 +28,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 			<div class="mt-8 flex flex-row items-center md:mt-0">
 				<a href={localizeHref('/docs')} class="fw-button !my-1 mr-4">{m.documentation()}</a>
 				<button
-					class="text-primary border-base-content !my-1 flex flex-row items-center font-sans text-sm md:text-base"
+					class="text-primary border-base-content !my-1 flex flex-row items-center font-sans text-sm hover:!opacity-50 md:text-base"
 				>
 					<div class="hidden md:block">
 						<KeySquare class="h-4" />
@@ -53,7 +53,9 @@ const profile = await futurewise.caresync.getProfileAndToken({
 				<button class="rounded-t-md px-3 py-1 text-[18px] tracking-wider text-white">Curl</button>
 			</div>
 
-			<code class="block overflow-x-auto rounded-lg p-4 font-mono text-sm whitespace-pre">
+			<code
+				class="block overflow-x-auto rounded-lg p-4 font-mono text-sm whitespace-pre md:text-base"
+			>
 				<span class="text-[#717AA8]">
 					// Get a user’s access token and
 					<br />// profile data from an Identity Provider
@@ -63,7 +65,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 				<span class="text-[#6B84FF]"> Futurewise </span>
 				<span class="text-[#D272FF]">from</span>
 				<span class="text-[#37F0C3]">'@futurewise-lat/node'</span>;
-				<br /><br />
+				<br />
 				<span class="text-[#D272FF]">const</span>
 				<span class="text-[#6B84FF]"> futurewise </span> =
 				<span class="text-[#D272FF]">new</span>

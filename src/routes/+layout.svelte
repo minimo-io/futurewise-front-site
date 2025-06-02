@@ -10,33 +10,26 @@
 	import { onMount } from 'svelte';
 	import { localizeHref } from '$paraglide/runtime';
 	import { browser } from '$app/environment';
+	import BackToTop from '$lib/components/BackToTop.svelte';
 
 	let { children } = $props();
 
 	afterNavigate(() => {
 		// Close drawer if active
 		closeDrawer();
-		// reset horizontal scroll on menu if exsits
-		// const secondaryMenus = document.querySelectorAll('.bry-secondary-menu');
-
-		// secondaryMenus.forEach((menu) => {
-		// 	if (menu instanceof HTMLElement) {
-		// 		menu.scrollLeft = 0;
-		// 	}
-		// });
 	});
 
 	function globalKeyHandler(event: KeyboardEvent) {
-		// Command+K (Mac) or Ctrl+K (Windows/Linux)
-		if (event.key === 'l' || event.key === 'L') {
+		// Only fire “L” when neither ⌘ (meta) nor Ctrl is held down
+		if ((event.key === 'l' || event.key === 'L') && !event.metaKey && !event.ctrlKey) {
 			event.preventDefault();
 			goto(localizeHref('/login'));
 		}
 
-		if (event.key === 'b' || event.key === 'B') {
+		// “B” always goes back one page
+		if ((event.key === 'b' || event.key === 'B') && !event.metaKey && !event.ctrlKey) {
 			event.preventDefault();
 			if (browser) {
-				// Remove current page and go to previous
 				window.history.back();
 			}
 		}
@@ -61,4 +54,8 @@
 <!-- Used as a mobile menu -->
 <Drawer />
 
+<!-- Footer -->
 <Footer />
+
+<!-- Back To Top -->
+<BackToTop />

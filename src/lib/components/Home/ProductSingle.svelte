@@ -23,7 +23,7 @@
 <a
 	href={brand.url}
 	class={[
-		'relative rounded-sm opacity-90 hover:opacity-50 md:scale-90',
+		'relative scale-90 rounded-sm opacity-90 hover:opacity-80 md:scale-90',
 		minWidth ? minWidth : 'min-w-full md:min-w-[230px]'
 	]}
 >

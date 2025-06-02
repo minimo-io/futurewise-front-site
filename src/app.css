@@ -27,7 +27,8 @@ html {
 }
 html,
 body {
-	@apply overflow-x-hidden md:overflow-auto;
+	@apply overflow-x-hidden;
+	/* @apply md:overflow-auto; */
 }
 @plugin "daisyui" {
 	themes:

@@ -13,7 +13,7 @@
 
 <Header titleLeft={m.welcome()} titleRight={m.theFuture()} heroContent={m.heroContentHome()} />
 
-<main class="font-sans-pro bg-base-100 text-base-content mx-(--fw-app-margin)">
+<main class="font-sans-pro bg-base-100 text-base-content relative mx-(--fw-app-margin)">
 	<Products />
 	<Clients />
 	<Developers />

@@ -3,6 +3,8 @@
 	"exit": "Exit",
 	"login": "Login",
 	"continue": "Continue",
+	"readMore": "Read All",
+	"readLess": "Read Less",
 	"or": "or",
 	"soon": "Soon",
 	"getInTouch": "Get in touch!",
@@ -13,7 +15,7 @@
 	"welcome": "Welcome to",
 	"theFuture": "The Future",
 
-	"heroContentHome": "We are a <span class='text-base-content opacity-80'>Unified Digital Products Platform</span> and a Development Lab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, Real-Time Cross-Border Payments, and AI Applied to IT Assets Monitoring</span> for LATAM",
+	"heroContentHome": "We are a <span class='text-base-content opacity-80'>Unified Digital Products Platform</span> and a Development Lab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, Real-Time Cross-Border Payments, and AI Applied to IT Assets Monitoring</span> for LATAM.",
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Real-time payments with instant global settlements in Local Currency, Stablecoins, or Bitcoin via Lightning. Eg. <span class='text-base-content'>Receive via PIX in Brazil and settle abroad</span>, instantly, with 100% compliance.</div>",
 
