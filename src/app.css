@@ -136,6 +136,7 @@ body {
 @utility fw-border-t-none {
 	border-top: 0 !important;
 }
+
 @layer utilities {
 	.fw-header-fs {
 		@apply text-[19px] font-light;
