@@ -208,7 +208,6 @@ body {
 	* {
 		@apply transition-opacity duration-200 ease-in-out;
 	}
-
 	a:hover,
 	.cursor-fw,
 	button:hover {
