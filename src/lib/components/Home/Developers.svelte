@@ -6,9 +6,9 @@
 
 	// backticks preserve newlines and braces
 	const snippet = `// Get a user’s access token and profile data
-import Futurewise from '@futurewise-lat/node';
+import Futurewise from '@futurewise-lat/finx';
 const futurewise = new Futurewise('sk_example_123456789');
-const profile = await futurewise.caresync.getProfileAndToken({
+const profile = await futurewise.getProfileAndToken({
   code: '01E2RJ4C05B52KKZ8FSRDAP23J',
   clientID: 'client_123456789',
 });`;
@@ -30,9 +30,9 @@ const profile = await futurewise.caresync.getProfileAndToken({
 				<button
 					class="text-primary border-base-content !my-1 flex flex-row items-center font-sans text-sm hover:!opacity-50 md:text-base"
 				>
-					<div class="hidden md:block">
+					<!-- <div class="hidden md:block">
 						<KeySquare class="h-4" />
-					</div>
+					</div> -->
 					<div>{m.getYourAPIKey()}</div>
 				</button>
 			</div>
@@ -64,7 +64,7 @@ const profile = await futurewise.caresync.getProfileAndToken({
 				<span class="text-[#D272FF]">import</span>
 				<span class="text-[#6B84FF]"> Futurewise </span>
 				<span class="text-[#D272FF]">from</span>
-				<span class="text-[#37F0C3]">'@futurewise-lat/node'</span>;
+				<span class="text-[#37F0C3]">'@futurewise-lat/finx'</span>;
 				<br />
 				<span class="text-[#D272FF]">const</span>
 				<span class="text-[#6B84FF]"> futurewise </span> =

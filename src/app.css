@@ -123,6 +123,13 @@ body {
 	}
 }
 
+@utility fw-cmp-box-with-dot {
+	&::after {
+		right: calc((var(--max-width-fw) / 3) - 8px);
+		@apply !top-12;
+	}
+}
+
 @utility no-scroll {
 	overflow: hidden !important;
 	touch-action: none; /* prevent touch scrolling */
@@ -202,6 +209,12 @@ body {
 	.fw-bg-astronaut {
 		@apply bg-[url('/bgs/header-caresync.png')];
 	}
+	.fw-cmp-box-content {
+		@apply text-secondary px-14 py-10 text-left font-sans text-lg leading-6 tracking-wide md:py-12;
+	}
+	.fw-cmp-box-button {
+		@apply bg-primary text-base-200 mt-6 flex w-full items-center justify-center gap-2 self-center rounded-2xl border px-5 py-2 transition-all duration-300 hover:opacity-50 md:w-[90%];
+	}
 }
 
 @layer base {
@@ -242,7 +255,7 @@ body {
 		@apply border-base-200 flex flex-1 flex-col border-r;
 	}
 	.fw-cmp-box-title {
-		@apply border-base-200 border-b p-2 text-center font-sans text-lg font-semibold uppercase;
+		@apply border-base-200 border-t border-b p-3 text-center text-2xl tracking-wider md:border-t-0;
 	}
 	.fw-cmp-box-content {
 		@apply flex-1 py-30 text-center;
