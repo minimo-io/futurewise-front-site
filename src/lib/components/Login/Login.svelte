@@ -87,7 +87,7 @@
 					<p class="text-center text-sm">
 						{m.loginDontHaveAccount()}
 						<a
-							href={localizeHref('/')}
+							href={localizeHref('/sign-up')}
 							class="text-primary ml-1 font-bold uppercase hover:underline">{m.loginStartNow()}</a
 						>
 					</p>

@@ -9,7 +9,7 @@
 	<h2 class="font-pixel mb-4 text-2xl font-bold tracking-wider uppercase md:text-3xl">
 		{m.ctaStillHaveQuestions()}
 	</h2>
-	<p class="text-secondary mx-auto mb-6 max-w-3xl text-lg md:text-2xl">
+	<p class="text-secondary mx-auto mb-6 max-w-3xl font-sans text-lg md:text-2xl">
 		{m.ctaText()}
 	</p>
 	<a

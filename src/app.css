@@ -197,7 +197,7 @@ body {
 		@apply bg-[url('/bgs/ngc-2899.jpg')];
 	}
 	.fw-bg-rocket {
-		@apply bg-[url('/bgs/header-finx.png')];
+		@apply bg-[url('/bgs/header-finx.jpeg')];
 	}
 	.fw-bg-astronaut {
 		@apply bg-[url('/bgs/header-caresync.png')];
@@ -235,6 +235,17 @@ body {
 	}
 	footer a {
 		@apply hover:!text-black;
+	}
+
+	/* CMP BOX */
+	.fw-cmp-box {
+		@apply border-base-200 flex flex-1 flex-col border-r;
+	}
+	.fw-cmp-box-title {
+		@apply border-base-200 border-b p-2 text-center font-sans text-lg font-semibold uppercase;
+	}
+	.fw-cmp-box-content {
+		@apply flex-1 py-30 text-center;
 	}
 }
 

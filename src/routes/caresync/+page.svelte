@@ -4,9 +4,12 @@
 
 	// import Clients from '$lib/components/Home/Clients.svelte';
 	import Header from '$lib/components/Header/Header.svelte';
+	import Meta from '$lib/components/Meta.svelte';
 	import { m } from '$paraglide/messages';
 	import { localizeHref } from '$paraglide/runtime';
 </script>
+
+<Meta />
 
 <Header
 	background="astronaut"
@@ -20,7 +23,7 @@
 	<div
 		class="max-w-fw border-x-base-200 relative container my-0 text-center md:mx-auto md:border-x"
 	>
-		<div class="flex flex-1 items-center justify-center">
+		<div id="know-more" class="flex flex-1 items-center justify-center">
 			<div
 				class="border-base-200 fw-border-b-divider md:fw-border-t-divider-dot flex w-full flex-col border-b after:absolute after:right-[48%] md:flex-row md:after:top-12 md:after:right-[49.4%] md:after:content-['']"
 			>
@@ -37,7 +40,7 @@
 						>
 					</div>
 					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-base">
-						<span class="font-bold">R$10</span>/mês <span class="text-secondary">x</span> EQUIPAMENTO
+						<span class="font-bold">R$20</span>/mês <span class="text-secondary">x</span> EQUIPAMENTO
 					</div>
 				</div>
 			</div>
@@ -48,18 +51,17 @@
 			>
 				<ul class="">
 					<li>Dashboard de gestão de ativos físicos de TI</li>
-					<li>Criação de ordens de serviço sob demanda</li>
-					<li>Ações sugeridas, controle de custos</li>
-					<li>Acompanhamento de ordens de serviço</li>
-					<li>Tendências históricas de custos de TI</li>
-					<li>Automatização de tarefas recorrentes de manutenção</li>
-					<li>Agendamento e Configuração de Manutenções Preventivas sob demanda</li>
+					<li>Criação e acompanhamento de ordens de serviço sob demanda</li>
+					<li>Ações sugeridas e Controle de custos</li>
+					<li>Tendências históricas de uso e custos de TI</li>
+					<li>Automatização de tarefas recorrentes</li>
+					<li>Agendamento e Configuração de Manutenções Preventivas</li>
 					<li>Compras de equipmanento certificados com descontos</li>
 				</ul>
 
 				<a
 					href={localizeHref('/sign-up')}
-					class="bg-primary text-base-200 mt-3 mb-2 flex w-[90%] items-center justify-center gap-2 self-center rounded-2xl border px-5 py-2 transition-all duration-300 md:mb-0"
+					class="bg-primary text-base-200 mt-3 mb-2 flex w-[90%] items-center justify-center gap-2 self-center rounded-2xl border px-5 py-2 transition-all duration-300 hover:opacity-50 md:mb-0"
 				>
 					<span
 						class=" text-center !font-sans !text-base font-bold tracking-wider uppercase md:!text-base"
@@ -86,12 +88,12 @@
 						algumas cidades)
 					</li>
 					<li>Snapshots para resets automático</li>
-					<li>Assistência técnica online 24/7</li>
-					<li>Baixa programada de equipamento antigos e compras certificadas, con 10% OFF</li>
+					<li>Assistência técnica online</li>
+					<li>Baixa programada de equipamento antigos</li>
 				</ul>
 				<a
 					href={localizeHref('/sign-up')}
-					class="bg-primary text-base-200 mt-4 flex w-[90%] items-center justify-center gap-2 self-center rounded-2xl border px-5 py-2 transition-all duration-300"
+					class="bg-primary text-base-200 mt-4 flex w-[90%] items-center justify-center gap-2 self-center rounded-2xl border px-5 py-2 transition-all duration-300 hover:opacity-50"
 				>
 					<span
 						class=" text-center !font-sans !text-base font-bold tracking-wider uppercase md:!text-base"
