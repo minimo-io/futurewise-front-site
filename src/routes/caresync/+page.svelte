@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
 
 	// import Clients from '$lib/components/Home/Clients.svelte';
@@ -24,14 +25,16 @@
 				class="border-base-200 fw-border-b-divider md:fw-border-t-divider-dot flex w-full flex-col border-b after:absolute after:right-[48%] md:flex-row md:after:top-10 md:after:right-[49.4%] md:after:content-['']"
 			>
 				<div class="border-r-base-200 w-full py-3 text-xl md:w-1/2 md:border-r">
-					<div class="mb-3">CareSync Básico</div>
+					<div class="mb-3 text-2xl">CareSync Básico</div>
 					<div class="border-base-200 text-primary border-t pt-2 font-sans text-base font-bold">
 						GRATUITO
 					</div>
 				</div>
 				<div class="hidden w-full py-3 text-xl md:inline-block md:w-1/2">
-					<div class="mb-3">
-						CareSync <span class="bg-primary ml-1 rounded-lg px-3 py-[2px]">PRO+</span>
+					<div class="mb-3 text-2xl">
+						CareSync <span class="bg-primary -top-1 ml-1 rounded-lg px-3 py-[2px] text-lg"
+							>PRO+</span
+						>
 					</div>
 					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-base">
 						<span class="font-bold">R$10</span>/mês <span class="text-secondary">x</span> EQUIPAMENTO
@@ -98,6 +101,9 @@
 			</div>
 		</div>
 	</div>
+
+	<ServiceOrders />
+
 	<CtaContact />
 </main>
 
