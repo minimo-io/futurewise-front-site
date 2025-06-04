@@ -22,7 +22,7 @@
 	>
 		<div class="flex flex-1 items-center justify-center">
 			<div
-				class="border-base-200 fw-border-b-divider md:fw-border-t-divider-dot flex w-full flex-col border-b after:absolute after:right-[48%] md:flex-row md:after:top-10 md:after:right-[49.4%] md:after:content-['']"
+				class="border-base-200 fw-border-b-divider md:fw-border-t-divider-dot flex w-full flex-col border-b after:absolute after:right-[48%] md:flex-row md:after:top-12 md:after:right-[49.4%] md:after:content-['']"
 			>
 				<div class="border-r-base-200 w-full py-3 text-xl md:w-1/2 md:border-r">
 					<div class="mb-3 text-2xl">CareSync Básico</div>

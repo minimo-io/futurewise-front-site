@@ -86,8 +86,9 @@
 					<!-- Register prompt -->
 					<p class="text-center text-sm">
 						{m.loginDontHaveAccount()}
-						<a href={localizeHref('/')} class="text-primary ml-1 font-bold hover:underline"
-							>{m.loginStartNow()}</a
+						<a
+							href={localizeHref('/')}
+							class="text-primary ml-1 font-bold uppercase hover:underline">{m.loginStartNow()}</a
 						>
 					</p>
 				</form>
