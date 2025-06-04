@@ -5,7 +5,7 @@
 
 	// Create the Tween instance with initial value and default options
 	const rotation = new Tween(0, {
-		duration: 1000,
+		duration: 800,
 		easing: cubicOut
 	});
 
@@ -25,7 +25,7 @@
 
 		// Phase 2: Deceleration
 		const decelerationDegrees = accelerationDegrees + 360 * 1.5; // Add 1.5 more spins
-		const decelerationDuration = 1000;
+		const decelerationDuration = 800;
 		await rotation.set(decelerationDegrees, { duration: decelerationDuration, easing: cubicOut });
 
 		spinning = false;
@@ -53,16 +53,25 @@
 </div>
 
 <!-- Decoration 2 -->
-<div class="absolute bottom-[20%] left-[10%] scale-40 opacity-40">
+<!-- <div
+	style="transform: rotate({rotation.current}deg);"
+	class="absolute bottom-[20%] left-[10%] scale-40 opacity-40"
+>
 	<img src="/bgs/cross.svg" alt="cross" class="origin-center" />
-</div>
+</div> -->
 
 <!-- Decoration 3 -->
-<div class="absolute -bottom-[10%] left-[10%] scale-35 opacity-70 md:left-[25%]">
+<!-- <div
+	style="transform: rotate({rotation.current}deg);"
+	class="absolute -bottom-[10%] left-[10%] scale-35 opacity-70 md:left-[25%]"
+>
 	<img src="/bgs/cross.svg" alt="cross" class="origin-center" />
-</div>
+</div> -->
 
 <!-- Decoration 4 -->
-<div class="absolute right-[40%] bottom-[0%] z-10 scale-60 opacity-60 md:bottom-[10%]">
+<div
+	style="transform: rotate({rotation.current}deg);"
+	class="absolute right-[40%] bottom-[0%] z-10 scale-60 opacity-60 md:bottom-[10%]"
+>
 	<img src="/bgs/cross.svg" alt="cross" class="origin-center" />
 </div>

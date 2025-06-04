@@ -60,5 +60,7 @@
 
 	"ctaStillHaveQuestions": "STILL HAVE QUESTIONS?",
 	"ctaText": "Tell us about your challenges — at Futurewise, we love overcoming them. We can help with everything from technical best practices to plans and pricing.",
-	"ctaScheduleACall": "Schedule a call"
+	"ctaScheduleACall": "Schedule a call",
+
+	"startNow": "Start now"
 }

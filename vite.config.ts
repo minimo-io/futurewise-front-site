@@ -28,6 +28,14 @@ export default defineConfig({
 					]
 				},
 				{
+					pattern: '/sign-up',
+					localized: [
+						['pt', '/cadastro'],
+						['es', '/es/registro'],
+						['en', '/en/sign-up']
+					]
+				},
+				{
 					pattern: '/lab',
 					localized: [
 						['pt', '/lab'],
