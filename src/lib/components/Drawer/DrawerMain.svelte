@@ -85,7 +85,11 @@
 			>
 				<div class="flex justify-center self-center text-left align-middle">
 					{#if drawer.logo}
-						<img src={drawer.logo} alt={`${drawer.name} logo`} class="mr-1 w-6 max-w-5" />
+						<img
+							src={drawer.logo}
+							alt={`${drawer.name} logo`}
+							class="relative -left-[1px] mr-1 w-6 max-w-5"
+						/>
 					{:else if drawer.icon}
 						<drawer.icon class="mr-2 h-4 w-4 self-center" />
 					{/if}
