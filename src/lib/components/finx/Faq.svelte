@@ -17,7 +17,7 @@
 	<div class="mt-7">
 		<div class="faq-item border-base-300 my-4 rounded-xl border bg-[#121212]">
 			<button
-				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-2xl"
+				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-[22px]"
 				on:click={() => toggleAccordion(0)}
 			>
 				<span>Does the number of end users affect pricing?</span>
@@ -40,7 +40,7 @@
 
 		<div class="faq-item border-base-300 my-4 rounded-xl border bg-[#121212]">
 			<button
-				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-2xl"
+				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-[22px]"
 				on:click={() => toggleAccordion(1)}
 			>
 				<span>I forgot my password. What should I do?</span>
@@ -64,7 +64,7 @@
 
 		<div class="faq-item border-base-300 my-4 rounded-xl border bg-[#121212]">
 			<button
-				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-2xl"
+				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-[22px]"
 				on:click={() => toggleAccordion(2)}
 			>
 				<span>How do I update my profile information?</span>
@@ -87,7 +87,7 @@
 
 		<div class="faq-item border-base-300 my-4 rounded-xl border bg-[#121212]">
 			<button
-				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-2xl"
+				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-[22px]"
 				on:click={() => toggleAccordion(3)}
 			>
 				<span>What's the difference between Staging and Production?</span>
@@ -117,6 +117,6 @@
 		@apply my-4 bg-[#121212] md:rounded-xl;
 	}
 	.faq-item div {
-		@apply text-base opacity-100 md:text-xl;
+		@apply text-base opacity-100 md:text-lg;
 	}
 </style>

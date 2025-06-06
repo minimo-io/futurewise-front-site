@@ -21,9 +21,9 @@
 
 	"heroContentHome1": "Somos una <span class='text-base-content opacity-80'>Plataforma de Productos Digitales</span> y un Laboratorio de Desarrollo enfocados en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border en Tiempo Real, IA y Máquinas (IoT)</span> para LATAM.",
 
-	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagos en tiempo real con liquidaciones globales instantáneas en Moneda Local, Stablecoins o Bitcoin, vía Lightning. Ej.: <span class='text-base-content'>Recibí por transferencia CBU/CVU en Argentina y liquidá en el exterior</span>, al instante, con 100% de compliance.</div>",
+	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagos en tiempo real con <span class='text-base-content opacity-80'>Settlements Globales Instantáneas</span> en Moneda Local, Stablecoins o Bitcoin, vía Lightning. Ej.: <span class='text-base-content'>Recibí por transferencia CBU/CVU en Argentina y liquidá en el exterior</span>, al instante, con 100% de compliance.</div>",
 
-	"heroContentCareSync": "Ayudamos a empresas operar sin que TI interfiera, con nuestro <span class='text-base-content opacity-80'>Sistema de Mantenimiento Predictivo</span>, Monitoreo en Tiempo Real y Gestión de Activos Físicos de TI potenciado por IA + <span class='text-base-content opacity-80'>Servicio TI bajo demanda</span>.",
+	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Mantenimiento Predictivo</span> y Gestión Inteligente de Activos de TI — con IA, Automatizaciones, Monitoreo en Tiempo Real, Compra y Alquiler de Equipos, y <span class='text-base-content opacity-80'>Soporte Técnico a Demanda</span>.",
 
 	"learnMore": "Más info",
 	"scheduleMeeting": "Programar reunión",

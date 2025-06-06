@@ -18,9 +18,9 @@
 
 	"heroContentHome": "Somos uma <span class='text-base-content opacity-80'>Plataforma Unificada de Produtos Digitais</span> e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos X-Border em Tempo Real, e IA Aplicada ao Monitoramento de Ativos de TI</span>.",
 
-	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagamentos em tempo real com settlements globais instantâneos em Moeda Local, Stablecoins ou Bitcoin, via Lightning. Ex.: <span class='text-base-content'>Receba via PIX no Brasil e liquide no exterior</span>, no instante, com 100% de compliance.</div>",
+	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagamentos em tempo real com <span class='text-base-content opacity-80'>Settlements Globais Instantâneos</span> em Moeda Local, Stablecoins ou Bitcoin, via Lightning. Ex.: <span class='text-base-content'>Receba via PIX no Brasil e liquide no exterior</span>, no instante, com 100% de compliance.</div>",
 
-	"heroContentCareSync": "Ajudamos empresas rodar seus negócios sem que TI atrapalhe, com nosso sistema de <span class='text-base-content opacity-80'>Manutenção Preditiva</span>, Monitoramento em Tempo Real e Gestão de Ativos Físicos de TI Potencializado por IA + <span class='text-base-content opacity-80'>Serviço TI sob demanda</span></span>.",
+	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Manutenção Preditiva</span> e Gestão Inteligente de Ativos de TI — com IA, Automações, Monitoramento em Tempo Real, Compra e Aluguel de Equipamentos e <span class='text-base-content opacity-80'>Assistência Técnica sob Demanda</span>.",
 
 	"learnMore": "Saiba mais",
 	"scheduleMeeting": "Agende uma reunião",
