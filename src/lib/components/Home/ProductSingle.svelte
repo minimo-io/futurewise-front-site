@@ -1,6 +1,6 @@
 <!-- src/lib/components/Home/ProductSingle.svelte -->
 <script lang="ts">
-	import type { Brand } from '$lib/types/brands.types';
+	// import type { Brand } from '$lib/types/brands.types';
 	import type { DrawerData } from '$lib/types/drawer.types';
 	import { m } from '$paraglide/messages';
 	import Pill from '../Pill.svelte';
@@ -40,21 +40,27 @@
 		>
 			<div class="flex flex-col">
 				<div class="flex items-center justify-center">
-					{#if brand.logo}
-						<div class="flex h-[60px] items-center">
+					<!-- {#if brand.logo} -->
+					<!-- <div class="flex h-[60px] items-center">
 							<img src={brand.logo} alt={`${brand.name} logo`} class="¡ w-[145px] min-w-[150px]" />
-						</div>
-					{:else}
-						<div class="mr-2">
-							{#if icon}
-								{@const Icon = icon}
-								<Icon strokeWidth="3" class="text-base-content mr-1" />
-							{/if}
-						</div>
-						<span class="font-pixel text-base-content text-4xl font-bold tracking-wider opacity-90">
-							{brand.name}
-						</span>
-					{/if}
+						</div> -->
+					<!-- {:else} -->
+					<div class={[!brand.logo && 'mr-2']}>
+						{#if brand.logo}
+							<img
+								src={brand.logo}
+								alt={`${brand.name} logo`}
+								class="mr-[9px] w-[30px] max-w-[30px]"
+							/>
+						{:else if icon}
+							{@const Icon = icon}
+							<Icon strokeWidth="3" class="text-base-content mr-1" />
+						{/if}
+					</div>
+					<span class="font-pixel text-base-content text-4xl font-bold tracking-wider opacity-90">
+						{brand.name}
+					</span>
+					<!-- {/if} -->
 				</div>
 				<div
 					class={[

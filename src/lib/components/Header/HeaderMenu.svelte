@@ -29,7 +29,16 @@
 					>
 						<!-- {i} - {drawerDataForLang.length} -->
 						<div class="flex justify-center self-center text-left align-middle">
-							<drawer.icon class="mr-2 h-4 w-4 self-center" />
+							{#if drawer.logo}
+								<img
+									src={drawer.logo}
+									alt={`${drawer.name} logo`}
+									class="relative -left-[1px] mr-1 w-5 max-w-5 antialiased"
+								/>
+							{:else if drawer.icon}
+								<drawer.icon class="mr-2 h-4 w-4 self-center" />
+							{/if}
+
 							<div
 								class={['self-center text-[16px]', drawer.isBold ? 'font-bold' : 'font-semibold']}
 							>

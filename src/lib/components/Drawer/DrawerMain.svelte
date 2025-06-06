@@ -56,9 +56,14 @@
 			>
 				<div class="flex justify-center self-center text-left align-middle">
 					<!-- <Wine class="w-4 h-4 self-center mr-2" /> -->
-					{#if drawer.icon}
+					{#if drawer.logo}
+						<img src={drawer.logo} alt={`${drawer.name} logo`} class="mr-0 w-12 max-w-12" />
+					{:else if drawer.icon}
 						<drawer.icon class="mr-2 h-4 w-4 self-center" />
 					{/if}
+					<!-- {#if drawer.icon}
+						
+					{/if} -->
 					<div class={['self-center', drawer.isBold ? 'font-bold' : 'font-semibold']}>
 						{drawer.name}
 					</div>
@@ -79,7 +84,11 @@
 				]}
 			>
 				<div class="flex justify-center self-center text-left align-middle">
-					<drawer.icon class="mr-2 h-4 w-4 self-center" />
+					{#if drawer.logo}
+						<img src={drawer.logo} alt={`${drawer.name} logo`} class="mr-1 w-6 max-w-5" />
+					{:else if drawer.icon}
+						<drawer.icon class="mr-2 h-4 w-4 self-center" />
+					{/if}
 					<div class={['self-center', drawer.isBold ? 'font-bold' : 'font-semibold']}>
 						{drawer.name}
 					</div>
