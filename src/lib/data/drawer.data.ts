@@ -176,6 +176,7 @@ export const drawerData = {
 			icon: Activity,
 			subMenu: false,
 			isBold: true,
+			underDevelopment: true,
 			url: localizeHref('/autocrm')
 		} as DrawerData
 	],

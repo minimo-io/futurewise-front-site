@@ -5,6 +5,7 @@
 	import Promo from '$lib/components/finx/Promo.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
 	import Developers from '$lib/components/Home/Developers.svelte';
+	import Faq from '$lib/components/finx/Faq.svelte';
 </script>
 
 <Header
@@ -83,6 +84,9 @@
 <div class="mx-(--fw-app-margin)">
 	<Developers />
 </div>
+
+<Faq />
+
 <CtaContact />
 
 <style>

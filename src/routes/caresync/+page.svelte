@@ -35,7 +35,8 @@
 				</div>
 				<div class="hidden w-full py-3 text-xl md:inline-block md:w-1/2">
 					<div class="mb-3 text-2xl">
-						CareSync <span class="bg-primary -top-1 ml-1 rounded-lg px-3 py-[2px] text-lg"
+						CareSync <span
+							class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-lg"
 							>PRO+</span
 						>
 					</div>
@@ -71,8 +72,11 @@
 			</div>
 			<div class="mb-7 flex w-full flex-col items-start md:w-1/2 md:px-20 md:py-10">
 				<div class="border-base-200 mb-5 w-full border-t border-b py-3 text-xl md:hidden md:w-1/2">
-					<div class="mb-3">
-						CareSync <span class="bg-primary ml-1 rounded-lg px-3 py-1">PRO+</span>
+					<div class="mb-3 text-2xl">
+						CareSync <span
+							class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-lg"
+							>PRO+</span
+						>
 					</div>
 					<div class="border-base-200 text-primary mt-1 border-t pt-3 font-sans text-base italic">
 						R$10/mês <span class="text-secondary">x</span> EQUIPAMENTO

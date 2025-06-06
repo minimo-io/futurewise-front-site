@@ -2,6 +2,7 @@
 <script lang="ts">
 	import type { Brand } from '$lib/types/brands.types';
 	import type { DrawerData } from '$lib/types/drawer.types';
+	import { m } from '$paraglide/messages';
 	import Pill from '../Pill.svelte';
 	import { type Icon as IconType } from '@lucide/svelte';
 
@@ -75,8 +76,8 @@
 				</div>
 			</div>
 			{#if brand.underDevelopment}
-				<div class="absolute -top-7 -right-15 scale-80">
-					<Pill color="primary" text="Em desenvolvimento" customCss="!px-3" />
+				<div class="absolute top-3 -right-0 scale-80 md:-top-10 md:-right-10">
+					<Pill color="primary" text={m.prototyping()} customCss="!px-3" />
 				</div>
 			{/if}
 		</div>

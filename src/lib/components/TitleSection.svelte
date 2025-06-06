@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { Tween } from 'svelte/motion';
+	import { cubicOut } from 'svelte/easing';
+
 	interface Props {
 		titleRight: string;
 		titleLeft: string;
@@ -6,6 +9,23 @@
 	}
 
 	let { titleRight, titleLeft, forceFlexRow = false }: Props = $props();
+
+	// Create a Tween instance for the width animation
+	const backgroundWidth = new Tween(0, {
+		duration: 500,
+		easing: cubicOut
+	});
+
+	// Trigger animation whenever the component loads or titleRight changes
+	$effect(() => {
+		// Reset to 0
+		backgroundWidth.set(0);
+
+		// Animate to 100% after a brief delay
+		setTimeout(() => {
+			backgroundWidth.set(100);
+		}, 50);
+	});
 </script>
 
 <div class="relative flex items-center md:-left-10">
@@ -29,7 +49,10 @@
 				>
 					{titleRight}
 				</span>
-				<span class="bg-primary absolute -top-[2px] right-0 left-0 z-0 h-[90%] translate-y-1"
+				<!-- Text Right Colored Background with Animation -->
+				<span
+					class="bg-primary absolute -top-[2px] -left-[2px] z-0 h-[90%] translate-y-1"
+					style="width: {backgroundWidth.current}%;"
 				></span>
 			</div>
 		</h1>

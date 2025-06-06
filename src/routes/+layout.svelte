@@ -33,6 +33,14 @@
 				window.history.back();
 			}
 		}
+
+		// “H” goes to homepage
+		if ((event.key === 'h' || event.key === 'H') && !event.metaKey && !event.ctrlKey) {
+			event.preventDefault();
+			if (browser) {
+				goto(localizeHref('/'));
+			}
+		}
 	}
 
 	onMount(() => {
