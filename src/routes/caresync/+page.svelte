@@ -57,7 +57,7 @@
 					<li>Tendências históricas de uso e custos de TI</li>
 					<li>Automatização de tarefas recorrentes</li>
 					<li>Agendamento e Configuração de Manutenções Preventivas</li>
-					<li>Compras de equipmanento certificados com descontos</li>
+					<li>Compra e aluguel de equipmanentos certificados com descontos</li>
 				</ul>
 
 				<a
