@@ -58,7 +58,7 @@
 					</div>
 
 					<!-- Google button -->
-					<button
+					<!-- <button
 						class="mb-3 flex w-full items-center justify-center gap-2 rounded-md bg-white py-2 font-medium text-black shadow-sm transition hover:shadow-md"
 					>
 						<img
@@ -67,7 +67,7 @@
 							class="h-5 w-5"
 						/>
 						{m.loginContinueWithGoogle()}
-					</button>
+					</button> -->
 
 					<!-- Nostr button -->
 					<button

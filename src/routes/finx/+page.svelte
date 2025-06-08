@@ -6,7 +6,10 @@
 	import CtaContact from '$lib/components/CtaContact.svelte';
 	import Developers from '$lib/components/Home/Developers.svelte';
 	import Faq from '$lib/components/finx/Faq.svelte';
+	import Meta from '$lib/components/Meta.svelte';
 </script>
+
+<Meta title={m.metaFinxTitle()} description={m.metaFinxDescription()} />
 
 <Header
 	background="rocket"

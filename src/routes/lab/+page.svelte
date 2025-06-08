@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Header from '$lib/components/Header/Header.svelte';
-	// import { m } from '$paraglide/messages';
 	import Meta from '$lib/components/Meta.svelte';
+	import { m } from '$paraglide/messages';
 </script>
 
-<Meta title="" description="" />
+<Meta title={m.metaLabTitle()} description={m.metaLabDescription()} />
 
 <Header titleLeft={'O'} titleRight={'LABORATÓRIO'} heroContent={''} buttons={false} />
 

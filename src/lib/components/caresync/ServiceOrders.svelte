@@ -5,7 +5,7 @@
 		class="border-base-200 flex w-full flex-col justify-center text-center after:absolute after:right-[48%] md:after:top-10 md:after:right-[49.4%] md:after:content-['']"
 	>
 		<div class="max-w-fw mx-auto w-full pt-10 pb-1">
-			<h2 class="font-sans text-3xl font-semibold">Ordens de serviço</h2>
+			<h2 class="font-sans text-2xl font-bold uppercase md:text-3xl">Ordens de serviço</h2>
 			<p class="text-secondary mx-auto mt-3 w-full font-sans text-xl md:w-[70%]">
 				Monitore seus ativos físicos de TI em tempo real, detecte problemas preditivamente com nossa
 				IA, acompanhe tendências de custos, e <span class="text-base-content"

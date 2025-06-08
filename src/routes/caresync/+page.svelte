@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
+	import Slogan from '$lib/components/caresync/Slogan.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
 
 	// import Clients from '$lib/components/Home/Clients.svelte';
@@ -9,7 +10,7 @@
 	import { localizeHref } from '$paraglide/runtime';
 </script>
 
-<Meta />
+<Meta title={m.metaCareSyncTitle()} description={m.metaCareSyncDescription()} />
 
 <Header
 	background="astronaut"
@@ -107,6 +108,8 @@
 			</div>
 		</div>
 	</div>
+
+	<Slogan />
 
 	<ServiceOrders />
 

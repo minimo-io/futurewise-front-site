@@ -30,7 +30,7 @@
 	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Mantenimiento Predictivo</span> y Gestión Inteligente de Activos de TI — con IA, Automatizaciones, Monitoreo en Tiempo Real, Compra y Alquiler de Equipos, y <span class='text-base-content opacity-80'>Soporte Técnico a Demanda</span>.",
 
 	"learnMore": "Más info",
-	"scheduleMeeting": "Programar reunión",
+	"scheduleMeeting": "Solicita una demo",
 
 	"menuClients": "Socios / Clientes",
 	"menuProducts": "Productos",
@@ -69,6 +69,20 @@
 
 	"metaSignUpTitle": "Registro",
 	"metaSignUpDescription": "Da el primer paso hacia el futuro digital de LATAM. Conecta, innova y crece con Futurewise.",
+
+	"metaLoginTitle": "Entrar",
+	"metaLoginDescription": "Accede a Futurewise: Tu próximo paso hacia el futuro comienza aquí.",
+
+	"metaLabTitle": "Lab",
+	"metaLabDescription": "Un espacio para prototipar, explorar y llevar al límite lo posible con la tecnología",
+
+	"metaFinxTitle": "FinXPay",
+	"metaFinxDescription": "Pagos en tiempo real con Settlements Globales Instantáneas en Moneda Local, Stablecoins o Bitcoin, vía Lightning. Ej.: Recibí por transferencia CBU/CVU en Argentina y liquidá en el exterior, al instante, con 100% de compliance.",
+
+	"metaCareSyncTitle": "CareSync",
+	"metaCareSyncDescription": "Plataforma de Mantenimiento Predictivo y Gestión Inteligente de Activos de TI — con IA, Automatizaciones, Monitoreo en Tiempo Real, Compra y Alquiler de Equipos, y Soporte Técnico a Demanda.",
+
+	"careSyncSlogan": "Cuide de su empresa, \nnosotros cuidamos de su TI",
 
 	"loginYourEmail": "Su email...",
 	"loginContinueWithGoogle": "Continuar con Google",
