@@ -25,7 +25,7 @@
 	href={brand.url}
 	class={[
 		'relative scale-90 rounded-sm opacity-80 hover:opacity-100 md:scale-90',
-		minWidth ? minWidth : 'min-w-full md:min-w-[230px]'
+		minWidth ? minWidth : 'min-w-full md:min-w-[250px]'
 	]}
 >
 	<div class="mb-4 flex flex-col">
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 			{#if brand.underDevelopment}
-				<div class="absolute top-3 -right-0 scale-80 md:-top-10 md:-right-10">
+				<div class="absolute top-3 -right-0 scale-80 md:-top-8 md:-right-10">
 					<Pill color="primary" text={m.prototyping()} customCss="!px-3" />
 				</div>
 			{/if}

@@ -17,6 +17,10 @@
 	"welcome": "Bienvenido",
 	"theFuture": "Al Futuro",
 
+	"under": "En",
+	"construction": "construcción",
+	"constructionContent": "Estamos construyendo una plataforma unificada de <span class='text-base-content opacity-80'>Comercio Electrónico</span>, <span class='text-base-content opacity-80'>Pagos Transfronterizos</span> y <span class='text-base-content opacity-80'>Monitoreo de Activos de TI</span>. Contáctanos mientras finalizamos esta página.",
+
 	"heroContentHome": "Somos una <span class='text-base-content opacity-80'>Plataforma Unificada de Productos Digitales</span> y un Laboratorio de Desarrollo enfocado en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border en Tiempo Real, e IA Aplicada al Monitoreo de Activos de TI</span>.",
 
 	"heroContentHome1": "Somos una <span class='text-base-content opacity-80'>Plataforma de Productos Digitales</span> y un Laboratorio de Desarrollo enfocados en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border en Tiempo Real, IA y Máquinas (IoT)</span> para LATAM.",
@@ -55,8 +59,16 @@
 
 	"resources": "Recursos",
 
-	"metaHomeTitle": "DevLab de Innovación y Plataforma digital",
-	"metaHomeDescription": "Somos una Plataforma de Productos Digitales y un Laboratorio de Desarrollo enfocados en la Innovación en e-Commerce, Pagos, IA y Máquinas, para LATAM.",
+	"metaBaseTitle": "Futurewise",
+
+	"metaHomeTitle": "Plataforma Digital y Laboratorio de Innovación en Desarrollo",
+	"metaHomeDescription": "Somos una Plataforma de Productos Digitales y DevLab enfocados en E-Commerce, Pagos X-Border y Monitoreo de Activos de TI para LATAM.",
+
+	"metaUnderDevelopmentTitle": "En desarrollo",
+	"metaUnderDevelopmentDescription": "Estamos construyendo una plataforma unificada de Comercio Electrónico, Pagos X-Border y Monitoreo de Activos de TI ¡Contáctanos!",
+
+	"metaSignUpTitle": "Registro",
+	"metaSignUpDescription": "Da el primer paso hacia el futuro digital de LATAM. Conecta, innova y crece con Futurewise.",
 
 	"loginYourEmail": "Su email...",
 	"loginContinueWithGoogle": "Continuar con Google",

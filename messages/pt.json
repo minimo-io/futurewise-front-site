@@ -16,6 +16,10 @@
 	"welcome": "Bem-vindo",
 	"theFuture": "Ao Futuro",
 
+	"under": "Em",
+	"construction": "construção",
+	"constructionContent": "Estamos construindo uma plataforma unificada de <span class='text-base-content opacity-80'>E-Commerce</span>, <span class='text-base-content opacity-80'>Pagamentos X-Border</span> e <span class='text-base-content opacity-80'>Monitoramento de Ativos de TI</span>. Entre em contato em quanto finalizamos esta página.",
+
 	"heroContentHome": "Somos uma <span class='text-base-content opacity-80'>Plataforma Unificada de Produtos Digitais</span> e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos X-Border em Tempo Real, e IA Aplicada ao Monitoramento de Ativos de TI</span>.",
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagamentos em tempo real com <span class='text-base-content opacity-80'>Settlements Globais Instantâneos</span> em Moeda Local, Stablecoins ou Bitcoin, via Lightning. Ex.: <span class='text-base-content'>Receba via PIX no Brasil e liquide no exterior</span>, no instante, com 100% de compliance.</div>",
@@ -51,8 +55,16 @@
 	"developers": "Desenvolvedores",
 	"resources": "Recursos",
 
-	"metaHomeTitle": "DevLab de Inovação & Plataforma digital",
-	"metaHomeDescription": "Somos uma Plataforma de Produtos Digitais e um Laboratório de Desenvolvimento focados na Inovação em  e-Commerce, Pagamentos, IA e Máquinas, para LATAM.",
+	"metaBaseTitle": "Futurewise",
+
+	"metaHomeTitle": "Plataforma digital & Development Lab de Inovação",
+	"metaHomeDescription": "Somos uma Plataforma de Produtos Digitais e um DevLab  focado na Inovação em E-Commerce, Pagamentos X-Border, e Monitoramento de Ativos de TI, para LATAM.",
+
+	"metaUnderDevelopmentTitle": "Em desenvolvimento",
+	"metaUnderDevelopmentDescription": "Estamos construindo uma plataforma unificada de Comércio Eletrônico, Pagamentos Transfronteiriços e Monitoramento de Ativos de TI. Contate-nos!",
+
+	"metaSignUpTitle": "Cadastre-se",
+	"metaSignUpDescription": "Dê o primeiro passo para o futuro digital da LATAM. Conecte, inove e cresça com a Futurewise.",
 
 	"loginYourEmail": "Seu email...",
 	"loginContinueWithGoogle": "Continuar com Google",

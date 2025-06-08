@@ -52,8 +52,6 @@
 	});
 </script>
 
-<Meta />
-
 {@render children()}
 
 <!-- CMD + K -->

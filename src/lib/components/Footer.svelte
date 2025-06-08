@@ -28,14 +28,14 @@
 						<li><a href={localizeHref('/finx')} class="text-secondary">FinX</a></li>
 						<li><a href={localizeHref('/delibra')} class="text-secondary">Delibra</a></li>
 						<li><a href={localizeHref('/bagity')} class="text-secondary">Bagity</a></li>
-						<li>
+						<!-- <li>
 							<a
 								href="https://braaay.com"
 								target="_blank"
 								rel="nofollow noopener"
 								class="text-secondary">Braaay</a
 							>
-						</li>
+						</li> -->
 					</ul>
 				</div>
 

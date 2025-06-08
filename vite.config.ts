@@ -20,6 +20,14 @@ export default defineConfig({
 					]
 				},
 				{
+					pattern: '/soon',
+					localized: [
+						['pt', '/em-breve'],
+						['es', '/es/proximamente'],
+						['en', '/en/soon']
+					]
+				},
+				{
 					pattern: '/login',
 					localized: [
 						['pt', '/entrar'],

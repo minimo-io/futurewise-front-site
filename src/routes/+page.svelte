@@ -9,7 +9,10 @@
 	import About from '$lib/components/Home/About.svelte';
 	import { m } from '$paraglide/messages';
 	import CtaContact from '$lib/components/CtaContact.svelte';
+	import Meta from '$lib/components/Meta.svelte';
 </script>
+
+<Meta title={m.metaHomeTitle()} description={m.metaHomeDescription()} />
 
 <Header titleLeft={m.welcome()} titleRight={m.theFuture()} heroContent={m.heroContentHome()} />
 

@@ -16,6 +16,10 @@
 	"welcome": "Welcome to",
 	"theFuture": "The Future",
 
+	"under": "Under",
+	"construction": "construction",
+	"constructionContent": "We are building a unified platform for <span class='text-base-content opacity-80'>E-Commerce</span>, <span class='text-base-content opacity-80'>Cross-Border Payments</span>, and <span class='text-base-content opacity-80'>IT Asset Monitoring</span>. Contact us while we finish this page.",
+
 	"heroContentHome": "We are a <span class='text-base-content opacity-80'>Unified Digital Products Platform</span> and a Development Lab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, Real-Time Cross-Border Payments, and AI Applied to IT Assets Monitoring</span> for LATAM.",
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Real-time payments with <span class='text-base-content opacity-80'>Instant Global Settlements</span> in Local Currency, Stablecoins, or Bitcoin via Lightning. Eg. <span class='text-base-content'>Receive via PIX in Brazil and settle abroad</span>, instantly, with 100% compliance.</div>",
@@ -51,8 +55,16 @@
 	"developers": "Developers",
 	"resources": "Resources",
 
-	"metaHomeTitle": "Innovation DevLab & Digital Platform",
-	"metaHomeDescription": "We are a Digital Products Platform and a Development Lab focused on Innovation in e-Commerce, Payments, AI, and Machines, for LATAM.",
+	"metaBaseTitle": "Futurewise",
+
+	"metaHomeTitle": "Digital Platform & Innovation DevLab",
+	"metaHomeDescription": "We’re a Digital Products Platform and DevLab focused on E-Commerce, X-Border Payments, and IT Asset Monitoring for LATAM.",
+
+	"metaUnderDevelopmentTitle": "Under Development",
+	"metaUnderDevelopmentDescription": "We're building a unified platform for E-Commerce, X-Border Payments, and IT Asset Monitoring. Get in touch!",
+
+	"metaSignUpTitle": "Sign-Up",
+	"metaSignUpDescription": "Step into LATAM’s digital future. Connect, innovate, and grow with Futurewise.",
 
 	"loginYourEmail": "Your email...",
 	"loginContinueWithGoogle": "Continue with Google",

@@ -1,4 +1,4 @@
-import { Activity, Bird, ShoppingBag } from '@lucide/svelte';
+import { Activity, Bird, BotMessageSquare, ShoppingBag } from '@lucide/svelte';
 import type { DrawerData } from '$lib/types/drawer.types';
 import { localizeHref } from '$paraglide/runtime';
 
@@ -8,7 +8,7 @@ export const drawerData = {
 		{
 			id: 'caresync',
 			name: 'CareSync',
-			slogan: 'Predictive IT Maintenance + Services',
+			slogan: 'Predictive IT Maintenance + ITMS',
 			sloganSimple: '',
 			details: 'IT Asset Management + Services <br />AI-Powered',
 			icon: Activity,
@@ -35,7 +35,7 @@ export const drawerData = {
 			id: 'finx',
 			name: 'FinXPay',
 			slogan: 'Real-time Cross-Border Payments',
-			sloganSimple: 'X-Border Instant Payments',
+			sloganSimple: 'X-Border Real-Time Payments',
 			details: 'Global and transparent<br />Fiat, Stablecoins & Bitcoin',
 			icon: Bird,
 			logo: '/products/finx/finx-logo-2.svg',
@@ -54,7 +54,8 @@ export const drawerData = {
 			icon: ShoppingBag,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/bagity')
+			underDevelopment: true,
+			url: localizeHref('/soon')
 		} as DrawerData,
 
 		// {
@@ -75,10 +76,11 @@ export const drawerData = {
 			slogan: 'HelpDesk Automation with AI',
 			sloganSimple: 'HelpDesk Automation',
 			details: 'IA ChatBot <br />That Syncs with your CRM',
-			icon: Activity,
+			icon: BotMessageSquare,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/autocrm')
+			underDevelopment: true,
+			url: localizeHref('/soon')
 		} as DrawerData
 
 		// {
@@ -97,7 +99,7 @@ export const drawerData = {
 		{
 			id: 'caresync',
 			name: 'CareSync',
-			slogan: 'Manutenção TI Preditiva + Serviços',
+			slogan: 'Manutenção TI Preditiva + ITMS',
 			sloganSimple: '',
 			details: 'Gestão de ativos TI + Serviços <br />Potenciados por IA',
 			icon: Activity,
@@ -141,9 +143,10 @@ export const drawerData = {
 			sloganSimple: 'E-commerce com Superpoderes',
 			details: 'Headless Backends<br />UX moderno + MCP Servers',
 			icon: ShoppingBag,
+			underDevelopment: true,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/bagity')
+			url: localizeHref('/soon')
 		} as DrawerData,
 
 		// {
@@ -175,18 +178,18 @@ export const drawerData = {
 			slogan: 'Automatização de Atendimentos',
 			sloganSimple: 'Automatização de Atendimentos',
 			details: 'Chatbot de IA <br />Que sincroniza com seu CRM',
-			icon: Activity,
+			icon: BotMessageSquare,
 			subMenu: false,
 			isBold: true,
 			underDevelopment: true,
-			url: localizeHref('/autocrm')
+			url: localizeHref('/soon')
 		} as DrawerData
 	],
 	es: [
 		{
 			id: 'caresync',
 			name: 'CareSync',
-			slogan: 'Mantenimiento TI Predictivo + Servic...',
+			slogan: 'Mantenimiento TI Predictivo + ITMS',
 			sloganSimple: '',
 			details: 'Gestión de activos TI + Servicios <br />Potenciados por IA',
 			icon: Activity,
@@ -230,9 +233,10 @@ export const drawerData = {
 			sloganSimple: 'E-commerce con Superpoderes',
 			details: 'Backends Headless<br />UX moderno + Servidores MCP',
 			icon: ShoppingBag,
+			underDevelopment: true,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/bagity')
+			url: localizeHref('/soon')
 		} as DrawerData,
 
 		// {
@@ -265,10 +269,11 @@ export const drawerData = {
 			slogan: 'Automatización de Asistencia con IA',
 			sloganSimple: 'Automatización de Asistencia',
 			details: 'Chatbot de IA <br />Que se sincroniza con tu CRM',
-			icon: Activity,
+			icon: BotMessageSquare,
+			underDevelopment: true,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/autocrm')
+			url: localizeHref('/soon')
 		} as DrawerData
 	]
 };
