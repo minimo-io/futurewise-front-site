@@ -15,7 +15,7 @@
 	}
 </script>
 
-<div class="relative">
+<div id="know-more" class="relative">
 	<section
 		bind:this={sectionElement}
 		class="fw-home-about z-10 mx-(--fw-app-margin) mb-12 max-w-full pt-10 md:mx-auto md:max-w-[60%]"
