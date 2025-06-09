@@ -2,6 +2,7 @@
 import type { Actions, PageServerLoad } from './$types';
 import { fail, redirect } from '@sveltejs/kit';
 import { verifyEmailLogin, createSession } from '$lib/auth';
+import { localizeHref } from '$paraglide/runtime';
 // import bcrypt from 'bcrypt';
 
 export const load: PageServerLoad = async ({ cookies }) => {
@@ -47,7 +48,7 @@ export const actions = {
 			maxAge: 60 * 60 * 24 * 7 // 7 days
 		});
 
-		redirect(303, '/dashboard');
+		redirect(303, localizeHref('/dashboard'));
 	}
 
 	// Nostr login action
