@@ -60,7 +60,11 @@
 			<ul class="menu dropdown-content bg-base-200 rounded-box z-1 mt-4 w-52 p-2 shadow-sm">
 				{#each locales as locale, i (locale)}
 					<li>
-						<button class="capitalize" onclick={() => redirectLocale(locale, page.url.href)}>
+						<button
+							id="locale-{i}"
+							class="capitalize"
+							onclick={() => redirectLocale(locale, page.url.href)}
+						>
 							<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[17px]" />
 							<span class="self-center font-semibold tracking-wider capitalize"
 								>{getLocaleName(locale)}</span

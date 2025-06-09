@@ -62,10 +62,6 @@
 		font-weight: 900;
 	}
 
-	.cursor.blink {
-		animation: blink 1s infinite;
-	}
-
 	@keyframes blink {
 		0%,
 		50% {
