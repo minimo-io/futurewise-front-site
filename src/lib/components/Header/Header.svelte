@@ -8,7 +8,7 @@
 	import { fade } from 'svelte/transition';
 	import { deLocalizeUrl } from '$paraglide/runtime';
 
-	let currentPath = $derived(page.url.pathname);
+	// let currentPath = $derived(page.url.pathname);
 	const delocalizedPath = deLocalizeUrl(page.url).pathname;
 
 	interface Props {

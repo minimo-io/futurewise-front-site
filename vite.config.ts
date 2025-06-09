@@ -44,6 +44,15 @@ export default defineConfig({
 					]
 				},
 				{
+					pattern: '/dashboard',
+					localized: [
+						['pt', '/dashboard'],
+						['es', '/es/dashboard'],
+						['en', '/en/dashboard']
+					]
+				},
+
+				{
 					pattern: '/lab',
 					localized: [
 						['pt', '/lab'],

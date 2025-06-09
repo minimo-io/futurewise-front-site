@@ -1,7 +1,7 @@
 <!-- src/lib/components/Home/ProductSingle.svelte -->
 <script lang="ts">
 	// import type { Brand } from '$lib/types/brands.types';
-	import type { DrawerData } from '$lib/types/drawer.types';
+	import type { DrawerData } from '$lib/type/drawer.types';
 	import { m } from '$paraglide/messages';
 	import Pill from '../Pill.svelte';
 	import { type Icon as IconType } from '@lucide/svelte';

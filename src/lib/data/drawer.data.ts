@@ -1,5 +1,5 @@
 import { Activity, Bird, BotMessageSquare, ShoppingBag } from '@lucide/svelte';
-import type { DrawerData } from '$lib/types/drawer.types';
+import type { DrawerData } from '$lib/type/drawer.types';
 import { localizeHref } from '$paraglide/runtime';
 
 // pre-fetched data

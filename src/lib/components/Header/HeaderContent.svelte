@@ -2,7 +2,7 @@
 	import { m } from '$paraglide/messages';
 	import TitleSection from '../TitleSection.svelte';
 	import { smoothScroll } from '$utils';
-	import { localizeHref } from '$paraglide/runtime';
+	// import { localizeHref } from '$paraglide/runtime';
 	import { AppConfig } from '$lib/configs';
 
 	let url = $state('#know-more');

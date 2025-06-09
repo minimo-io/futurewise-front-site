@@ -1,6 +1,6 @@
 <script lang="ts">
-	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
-	import Slogan from '$lib/components/caresync/Slogan.svelte';
+	import ServiceOrders from '$lib/components/Caresync/ServiceOrders.svelte';
+	import Slogan from '$lib/components/Caresync/Slogan.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
 
 	// import Clients from '$lib/components/Home/Clients.svelte';

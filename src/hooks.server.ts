@@ -14,7 +14,8 @@ const allowedRoutes = [
 	'/finx',
 	'/caresync',
 	'/login',
-	'/lab'
+	'/lab',
+	'/dashboard'
 ];
 
 // Auth middleware

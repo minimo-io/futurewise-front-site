@@ -21,13 +21,13 @@
 
 	function globalKeyHandler(event: KeyboardEvent) {
 		// Only fire “L” when neither ⌘ (meta) nor Ctrl is held down
-		if ((event.key === 'l' || event.key === 'L') && !event.metaKey && !event.ctrlKey) {
+		if ((event.key === 'l' || event.key === 'L') && (event.metaKey || event.ctrlKey)) {
 			event.preventDefault();
 			goto(localizeHref('/login'));
 		}
 
 		// “B” always goes back one page
-		if ((event.key === 'b' || event.key === 'B') && !event.metaKey && !event.ctrlKey) {
+		if ((event.key === 'b' || event.key === 'B') && (event.metaKey || event.ctrlKey)) {
 			event.preventDefault();
 			if (browser) {
 				window.history.back();
@@ -35,7 +35,7 @@
 		}
 
 		// “H” goes to homepage
-		if ((event.key === 'h' || event.key === 'H') && !event.metaKey && !event.ctrlKey) {
+		if ((event.key === 'h' || event.key === 'H') && (event.metaKey || event.ctrlKey)) {
 			event.preventDefault();
 			if (browser) {
 				goto(localizeHref('/'));

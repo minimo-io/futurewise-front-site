@@ -200,6 +200,10 @@ body {
 		@apply mb-6 !text-5xl font-bold;
 	}
 
+	.fw-login-error {
+		@apply rounded-2xl pt-2 pb-4 text-red-700;
+	}
+
 	/* Pre-compiled backgrounds */
 	.fw-bg-space {
 		/* @apply bg-[url('/bgs/ngc-2899.jpg')]; */

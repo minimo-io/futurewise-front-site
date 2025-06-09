@@ -58,7 +58,7 @@
 			</button>
 
 			<ul class="menu dropdown-content bg-base-200 rounded-box z-1 mt-4 w-52 p-2 shadow-sm">
-				{#each locales as locale, i}
+				{#each locales as locale, i (locale)}
 					<li>
 						<button class="capitalize" onclick={() => redirectLocale(locale, page.url.href)}>
 							<img src="/flags/{locale}.png" alt="flag-{locale}" class="aspect-1 h-[17px]" />
@@ -99,7 +99,14 @@
 		>
 			<span class="relative top-[1px] flex items-center">
 				<span class="mr-0 md:mr-[5px]">{m.login()}</span>
-				<kbd class="kbd kbd-sm relative -top-[2px] hidden md:inline-block">L</kbd>
+				<kbd class="kbd kbd-sm relative -top-[2px] hidden md:inline-block">
+					<!-- {#if isMac}
+						<Command class="h-3 opacity-60" />
+					{:else}
+						<span>CTRL+</span>
+					{/if} -->
+					<span>L</span>
+				</kbd>
 			</span>
 		</a>
 	</div>

@@ -3,6 +3,11 @@
 	"exit": "Salir",
 	"login": "Entrar",
 	"continue": "Continuar",
+	"loggingIn": "Entrando...",
+	"loginEmailRequired": "Se requiere un email",
+	"loginPasswordRequired": "Se requiere la contraseña",
+	"loginInvalidCredentials": "Credenciales inválidas",
+
 	"prototyping": "Prototipado",
 
 	"readMore": "Leer todo",
@@ -85,6 +90,10 @@
 	"careSyncSlogan": "Cuide de su empresa, \nnosotros cuidamos de su TI",
 
 	"loginYourEmail": "Su email...",
+	"loginYourPassword": "Su contraseña...",
+
+	"loginPassword": "Contraseña",
+
 	"loginContinueWithGoogle": "Continuar con Google",
 	"loginDontHaveAccount": "¿No tienes una cuenta?",
 	"loginStartNow": "Comenzar ahora",

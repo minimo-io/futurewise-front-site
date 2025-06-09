@@ -1,7 +1,16 @@
-<script>
+<script lang="ts">
 	import { m } from '$paraglide/messages';
 	import { localizeHref } from '$paraglide/runtime';
 	import CtaContact from '../CtaContact.svelte';
+	import { enhance } from '$app/forms';
+
+	import type { ActionData } from '../../../routes/login/$types';
+	interface Props {
+		form: ActionData;
+	}
+	let { form }: Props = $props();
+
+	let isSubmitting = $state(false);
 
 	// Nostr login handler
 	// async function handleNostrLogin() {
@@ -24,6 +33,8 @@
 	// 		alert('Nostr login failed. Please try again.');
 	// 	}
 	// }
+
+	async function createUser() {}
 </script>
 
 <div class="max-w-fw border-x-base-200 relative container my-0 text-center md:mx-auto md:border-x">
@@ -31,24 +42,72 @@
 		<div class="relative -top-8 w-[400px]">
 			<h2 class="text-base-content font-sans text-3xl font-black">{m.login()}</h2>
 			<div class="mx-auto">
-				<form>
+				<form
+					action="?/email"
+					method="POST"
+					use:enhance={() => {
+						isSubmitting = true;
+						return async ({ update }) => {
+							isSubmitting = false;
+							update();
+						};
+					}}
+				>
 					<!-- Email input -->
 					<div class="mt-5 mb-3">
 						<label for="email" class="mb-2 ml-2 block text-left text-sm font-medium">Email</label>
 						<input
 							type="email"
+							name="email"
+							value={form?.email ?? ''}
 							id="email"
+							required={true}
+							disabled={isSubmitting}
 							placeholder={m.loginYourEmail()}
+							class="focus:ring-primary w-full rounded-md border border-white bg-transparent px-4 py-2 text-white focus:ring-2 focus:outline-none"
+						/>
+					</div>
+
+					<!-- Password input -->
+					<div class="mb-4">
+						<label for="password" class="mb-2 ml-2 block text-left text-sm font-medium"
+							>{m.loginPassword()}</label
+						>
+						<input
+							id="password"
+							name="password"
+							placeholder={m.loginYourPassword()}
+							type="password"
+							required
+							disabled={isSubmitting}
 							class="focus:ring-primary w-full rounded-md border border-white bg-transparent px-4 py-2 text-white focus:ring-2 focus:outline-none"
 						/>
 					</div>
 
 					<!-- Continue button -->
 					<button
+						type="submit"
+						disabled={isSubmitting}
 						class="bg-primary mb-5 w-full rounded-md py-2 font-semibold text-white transition hover:opacity-50"
 					>
-						{m.continue()}
+						{isSubmitting ? m.loggingIn() : m.continue()}
 					</button>
+
+					{#if form?.missing === 'email'}
+						<p class="fw-login-error">{m.loginEmailRequired()}</p>
+					{/if}
+					{#if form?.missing === 'password'}
+						<p class="fw-login-error">{m.loginPasswordRequired()}</p>
+					{/if}
+					{#if form?.incorrect}
+						<p class="fw-login-error">{m.loginInvalidCredentials()}</p>
+					{/if}
+					<!-- {#if form?.exists}
+						<p class="fw-login-error">User already exists</p>
+					{/if}
+					{#if form?.weak}
+						<p class="fw-login-error">Password must be at least 8 characters</p>
+					{/if} -->
 
 					<!-- Divider -->
 					<div class="mb-5 flex items-center gap-2 text-sm text-gray-400">
@@ -71,6 +130,10 @@
 
 					<!-- Nostr button -->
 					<button
+						onclick={() => {
+							createUser();
+							alert(`${m.soon()}`);
+						}}
 						type="button"
 						class="mb-3 flex w-full items-center justify-center gap-2 rounded-md bg-white py-2 font-medium text-black shadow-sm transition hover:shadow-md"
 					>
