@@ -2,10 +2,10 @@
 	import Header from '$lib/components/Header/Header.svelte';
 	import { localizeHref } from '$paraglide/runtime';
 	import { m } from '$paraglide/messages';
-	import Promo from '$lib/components/Finx/Promo.svelte';
+	import Promo from '$lib/components/finx/Promo.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
 	import Developers from '$lib/components/Home/Developers.svelte';
-	import Faq from '$lib/components/Finx/Faq.svelte';
+	import Faq from '$lib/components/finx/Faq.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 </script>
 
