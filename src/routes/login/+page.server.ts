@@ -10,7 +10,7 @@ export const load: PageServerLoad = async ({ cookies }) => {
 	const sessionToken = cookies.get('session');
 	if (sessionToken) {
 		// You could verify the session here
-		redirect(302, '/dashboard');
+		redirect(302, localizeHref('/dashboard'));
 	}
 
 	return {};
