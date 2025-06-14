@@ -5,15 +5,16 @@
 	import { drawerData } from '$lib/data/drawer.data';
 	import PillFlower from '../PillFlower.svelte';
 	import { m } from '$paraglide/messages';
+	import Hr from '../Hr.svelte';
 
 	const locale = $state(getLocale());
 	let drawerDataForLang = $state(drawerData[locale]);
 </script>
 
 <!-- Products Slider Section -->
-<section
-	class="fw-border-b-divider relative mt-7 px-0 pb-5 md:-top-[23px] md:mt-0 md:px-12 lg:px-16"
->
+<section class="relative mt-7 px-0 pb-5 md:-top-[23px] md:mt-0 md:px-12 lg:px-16">
+	<Hr />
+
 	<div class="md:pb-5">
 		<div class="relative -top-1 hidden text-center md:block">
 			<PillFlower title={m.menuProducts()} />

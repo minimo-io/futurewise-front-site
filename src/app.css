@@ -206,8 +206,8 @@ body {
 
 	/* Pre-compiled backgrounds */
 	.fw-bg-space {
-		/* @apply bg-[url('/bgs/ngc-2899.jpg')]; */
-		@apply bg-[url('/bgs/header-underconstruction.jpeg')];
+		@apply bg-[url('/bgs/ngc-2899.jpg')];
+		/* @apply bg-[url('/bgs/header-underconstruction.jpeg')]; */
 	}
 	.fw-bg-rocket {
 		@apply bg-[url('/bgs/header-finx.jpeg')];
@@ -216,8 +216,8 @@ body {
 		@apply bg-[url('/bgs/header-caresync.png')];
 	}
 	.fw-bg-construction {
-		/* @apply bg-[url('/bgs/header-underconstruction.jpeg')]; */
-		@apply bg-[url('/bgs/ngc-2899.jpg')];
+		@apply bg-[url('/bgs/header-underconstruction.jpeg')];
+		/* @apply bg-[url('/bgs/ngc-2899.jpg')]; */
 	}
 	.fw-cmp-box-content {
 		@apply text-secondary px-14 py-10 text-left font-sans text-lg leading-6 tracking-wide md:py-12;

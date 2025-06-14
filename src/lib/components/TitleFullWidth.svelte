@@ -14,14 +14,14 @@
 	style="background-image:url('/bgs/lab.png')"
 >
 	<!-- Background -->
-	<div class="bg-primary absolute top-0 right-0 h-full w-full opacity-50"></div>
+	<div class="bg-primary glass absolute top-0 right-0 h-full w-full opacity-10"></div>
 	<!-- Title -->
 	<div class="relative -top-[18px] z-10 text-center md:-top-[50px]">
 		<PillFlower title={breadcrumb} />
 	</div>
 	<!-- Content -->
 	<div class="relative z-10 md:min-w-[500px]">
-		<div class=" mx-auto w-full bg-black px-12 py-4 text-center">
+		<div class=" mx-auto w-full bg-black px-1 py-4 text-center">
 			<h2 class=" text-4xl font-bold tracking-wider">
 				{@html titleLeft}
 				<!-- <span class="text-fw-red">THE MOON</span> -->

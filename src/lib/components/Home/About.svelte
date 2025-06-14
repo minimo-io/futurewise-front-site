@@ -9,6 +9,7 @@
 			sectionElement?.scrollIntoView({
 				behavior: 'smooth',
 				block: 'start'
+				// block: 'nearest'
 			});
 		}
 		isExpanded = !isExpanded;
@@ -43,7 +44,7 @@
 		>
 			<button
 				onclick={toggleExpanded}
-				class="bg-primary/10 hover:bg-primary/20 border-primary/30 text-primary flex items-center gap-2 rounded-full border px-5 py-3 transition-all duration-300"
+				class="bg-primary/10 hover:bg-primary/20 border-primary/30 text-primary flex items-center gap-2 rounded-full border px-5 py-2 transition-all duration-300"
 			>
 				<span class="!font-sans !text-base tracking-wider uppercase md:!text-lg"
 					>{isExpanded ? m.readLess() : m.readMore()}</span

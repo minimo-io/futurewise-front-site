@@ -66,9 +66,9 @@
 	<!-- Decorations -->
 	<HeaderDecorations />
 
-	{#if delocalizedPath == '/'}
-		<div
-			class="pointer-events-none absolute right-0 bottom-0 left-0 block h-20 bg-gradient-to-t from-black via-black/70 to-transparent md:block"
-		></div>
-	{/if}
+	<!-- {#if delocalizedPath == '/'} -->
+	<!-- <div
+		class="pointer-events-none absolute right-0 bottom-0 left-0 block h-20 bg-gradient-to-t from-black via-black/20 to-transparent md:block"
+	></div> -->
+	<!-- {/if} -->
 </header>

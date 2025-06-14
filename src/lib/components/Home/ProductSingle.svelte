@@ -3,6 +3,7 @@
 	// import type { Brand } from '$lib/types/brands.types';
 	import type { DrawerData } from '$lib/type/drawer.types';
 	import { m } from '$paraglide/messages';
+	import Hr from '../Hr.svelte';
 	import Pill from '../Pill.svelte';
 	import { type Icon as IconType } from '@lucide/svelte';
 
@@ -24,20 +25,24 @@
 <a
 	href={brand.url}
 	class={[
-		'relative scale-90 rounded-sm opacity-80 hover:opacity-100 md:scale-90',
+		'relative scale-90 rounded-sm opacity-90 hover:opacity-100 md:scale-90',
 		minWidth ? minWidth : 'min-w-full md:min-w-[250px]'
 	]}
 >
 	<div class="mb-4 flex flex-col">
 		<div
 			class={[
-				'flex items-center border-t md:border-none md:pt-0 ',
-				count == 0 ? 'fw-border-t-none pt-2' : 'fw-border-t pt-8',
+				'Xborder-t flex items-center md:border-none md:pt-0 ',
+				count == 0 ? 'fw-border-t-none pt-2' : 'fw-border-tX pt-8',
 				align == 'start' && 'justify-center md:justify-start',
 				align == 'end' && 'justify-center md:justify-end',
 				align != 'start' && align != 'end' && 'justify-center'
 			]}
 		>
+			{#if count != 0}
+				<Hr bottom={false} class="block md:hidden" />
+			{/if}
+
 			<div class="flex flex-col">
 				<div class="flex items-center justify-center">
 					<!-- {#if brand.logo} -->

@@ -1,3 +1,7 @@
+<script>
+	import Hr from '../Hr.svelte';
+</script>
+
 <div
 	class="border-base-200 relative mx-(--fw-app-margin) flex flex-1 items-center justify-center border-t"
 >
@@ -19,7 +23,8 @@
 			<img src="/bgs/square-divider.svg" alt="divider" class="mt-3 w-[70%]" />
 		</div>
 
-		<div class="max-w-fw border-b-base-200 mx-auto w-full pt-5 pb-1 md:border-b">
+		<div class="max-w-fw relative mx-auto w-full pt-5 pb-1">
+			<Hr />
 			<h2 class="mx-auto w-[90%] font-sans text-2xl font-semibold">
 				Um exemplo de cómo FinXPay pode ajudar seu negócio
 				<!-- Exemplo -->
@@ -37,6 +42,7 @@
 		<div
 			class="fw-promo-li max-w-fw mx-auto mt-5 mb-5 flex flex-col justify-start gap-5 md:mb-10 md:flex-row md:justify-around md:gap-20"
 		>
+			<Hr />
 			<!-- Container: dark background with white text -->
 			<div
 				class="border-base-200 max-w-fw flex flex-1 items-center justify-center border-t md:border-t-0"

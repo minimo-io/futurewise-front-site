@@ -3,11 +3,18 @@
 	// import type { Brand } from '$lib/types/brands.types';
 	import PillFlower from '../PillFlower.svelte';
 	import { m } from '$paraglide/messages';
+	import Hr from '../Hr.svelte';
+	import Dot from '../Dot.svelte';
 </script>
 
-<section
+<!-- <section
 	class="fw-border-b-divider fw-border-b-divider-dot fw-border-b-divider-dot-center relative -top-12 mt-7 px-6 pb-5 md:-top-[45px] md:mt-0 md:px-12 lg:px-16"
->
+> -->
+<section class="relative -top-12 mt-7 px-6 pb-5 md:-top-[45px] md:mt-0 md:px-12 lg:px-16">
+	<!-- Decorative dot -->
+	<Hr />
+	<Dot />
+
 	<div class="relative text-center">
 		<PillFlower title={m.menuClients()} />
 	</div>

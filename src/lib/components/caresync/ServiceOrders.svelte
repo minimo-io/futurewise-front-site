@@ -1,6 +1,9 @@
-<div
-	class="border-base-200 relative mx-(--fw-app-margin) flex flex-1 items-center justify-center border-t"
->
+<script>
+	import Hr from '../Hr.svelte';
+</script>
+
+<div class="border-base-200 relative mx-(--fw-app-margin) flex flex-1 items-center justify-center">
+	<Hr bottom={false} />
 	<div
 		class="border-base-200 flex w-full flex-col justify-center text-center after:absolute after:right-[48%] md:after:top-10 md:after:right-[49.4%] md:after:content-['']"
 	>

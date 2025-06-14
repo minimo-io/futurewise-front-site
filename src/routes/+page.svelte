@@ -28,12 +28,13 @@
 	titleLeft={m.aboutUsTitleLeft()}
 	titleRight={m.aboutUsTitleRight()}
 />
+<div class="2xl:px-[10%]">
+	<!-- Quote Section -->
+	<Quote />
 
-<!-- Quote Section -->
-<Quote />
-
-<!-- About Section -->
-<About />
+	<!-- About Section -->
+	<About />
+</div>
 
 <!-- Cta -->
 <CtaContact />
