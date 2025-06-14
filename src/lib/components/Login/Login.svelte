@@ -3,8 +3,10 @@
 	import { localizeHref } from '$paraglide/runtime';
 	import CtaContact from '../CtaContact.svelte';
 	import { enhance } from '$app/forms';
+	// import { enhance } from '$utils/enhance.utils';
 
 	import type { ActionData } from '../../../routes/login/$types';
+	import { toggleLoader } from '$stores/Loader.state.svelte';
 	interface Props {
 		form: ActionData;
 	}
@@ -47,7 +49,9 @@
 					method="POST"
 					use:enhance={() => {
 						isSubmitting = true;
+						toggleLoader();
 						return async ({ update }) => {
+							toggleLoader();
 							isSubmitting = false;
 							update();
 						};
