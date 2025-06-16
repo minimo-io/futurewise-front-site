@@ -22,7 +22,7 @@
 			<!-- Items -->
 			<div class="mb-5 grid grid-cols-2 gap-10 text-[18px] md:grid-cols-4 md:gap-20">
 				<div>
-					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">{m.menuProducts()}</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl">{m.menuProducts()}</h3>
 					<ul class="space-y-2">
 						<li><a href={localizeHref('/caresync')} class="text-secondary">CareSync</a></li>
 						<li><a href={localizeHref('/finx')} class="text-secondary">FinX</a></li>
@@ -40,7 +40,7 @@
 				</div>
 
 				<div class="order-last md:order-none">
-					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Developers</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl">Developers</h3>
 					<ul class="space-y-2">
 						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
 						<li><a href={localizeHref('/docs')} class="text-secondary">{m.documentation()}</a></li>
@@ -52,7 +52,7 @@
 				</div>
 
 				<div>
-					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">Futurewise</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl">Futurewise</h3>
 					<ul class="space-y-2">
 						<li><a href="/" class="text-secondary">{m.aboutUs()}</a></li>
 						<li><a href="/" class="text-secondary">Experimentos</a></li>
@@ -62,7 +62,7 @@
 				</div>
 
 				<div>
-					<h3 class="font-pixel text-base-100 mb-4 text-xl font-bold">{m.social()}</h3>
+					<h3 class="font-pixel text-base-100 mb-4 text-xl">{m.social()}</h3>
 					<ul class="space-y-2">
 						<li>
 							<a
