@@ -28,7 +28,7 @@
 			href="https://media.toxtren.com/redirect.aspx?pid=101348&bid=2036&redirectURL=https://natregs.com"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative flex items-center justify-center rounded-sm opacity-90 hover:opacity-50 md:w-auto"
+			class="relative flex items-center justify-center rounded-sm hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
 				<img
@@ -43,7 +43,7 @@
 			href="https://agentefaz.net"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative flex items-center justify-center rounded-sm opacity-90 hover:opacity-50 md:w-auto"
+			class="relative flex items-center justify-center rounded-sm hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
 				<img src="/clients/agf-logo.png" class="md:h-[50px]" alt="AGF" />
@@ -54,7 +54,7 @@
 			href="https://braaay.com"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative flex items-center justify-center rounded-sm opacity-90 hover:opacity-50 md:w-auto"
+			class="relative flex items-center justify-center rounded-sm hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
 				<img
@@ -70,10 +70,10 @@
 			href="https://dribbble.com/shots/19431388-Hops-v2-Craft-Beer-Marketplace"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative flex items-center justify-center rounded-sm opacity-90 hover:opacity-50 md:w-auto"
+			class="relative flex items-center justify-center rounded-sm hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
-				<img src="/clients/hops-logo.svg" class="relative -top-1 h-[32px] opacity-50" alt="Hops" />
+				<img src="/clients/hops-logo.svg" class="relative -top-1 h-[32px] opacity-45" alt="Hops" />
 			</div>
 		</a>
 		<!-- Betizen -->
@@ -81,12 +81,12 @@
 			href="https://betizen.org"
 			rel="nofollow noopener"
 			target="_blank"
-			class="relative flex items-center justify-center rounded-sm opacity-90 hover:opacity-50 md:w-auto"
+			class="relative flex items-center justify-center rounded-sm hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
 				<img
 					src="/clients/betizen-logo.svg"
-					class="relative -top-1 h-[45px] opacity-50"
+					class="relative -top-1 h-[45px] opacity-40"
 					alt="Betizen"
 				/>
 			</div>
