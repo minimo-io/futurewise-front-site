@@ -70,8 +70,7 @@
 
 <!-- Decoration 4 -->
 <div
-	style="transform: rotate({rotation.current}deg);"
-	class="absolute right-[40%] bottom-[0%] z-10 scale-60 opacity-60 md:bottom-[10%]"
+	class="absolute right-[40%] bottom-[0%] z-10 hidden scale-60 opacity-60 md:bottom-[10%] md:block"
 >
 	<img src="/bgs/cross.svg" alt="cross" class="origin-center" />
 </div>
