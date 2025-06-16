@@ -113,10 +113,10 @@ const profile = await futurewise.getProfileAndToken({
 		<div class="relative -top-2 z-20 mx-auto">
 			<PillFlower title="Dashboards" />
 		</div>
-		<div class="mt-5">
+		<div class="relative mt-5">
+			<div class="absolute bottom-0 left-0" id="know-more">&nbsp;</div>
 			<a href={localizeHref('/login')} class="dashboard-link">
 				<img
-					id="know-more"
 					src="/pulse-dashboard-2.png"
 					alt="pulse-dashboard"
 					class="dashboard-img relative -top-[40px] z-10 mx-auto w-full scale-105 md:w-[85%] md:scale-110"
