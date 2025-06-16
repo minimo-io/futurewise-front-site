@@ -1,10 +1,11 @@
 <script lang="ts">
+	import { AppConfig } from '$lib/configs';
 	import { m } from '$paraglide/messages';
 	import { Circle } from '@lucide/svelte';
 </script>
 
 <a
-	href="https://stats.uptimerobot.com/pPaLEt4eBM"
+	href={AppConfig.status}
 	target="_blank"
 	rel="nofollow noreferrer"
 	class="text-primary mt-2 flex items-center text-sm text-[15px] leading-5"

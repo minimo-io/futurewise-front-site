@@ -44,7 +44,14 @@
 					<ul class="space-y-2">
 						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
 						<li><a href={localizeHref('/docs')} class="text-secondary">{m.documentation()}</a></li>
-						<li><a href={localizeHref('/status')} class="text-secondary">Status</a></li>
+						<li>
+							<a
+								href={AppConfig.status}
+								class="text-secondary"
+								target="_blank"
+								rel="nofollow noopener">Status</a
+							>
+						</li>
 						<li>
 							<a href={localizeHref('/status#changelog')} class="text-secondary">Changelog</a>
 						</li>
