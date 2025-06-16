@@ -3,6 +3,7 @@
 	import TitleSection from '../TitleSection.svelte';
 	import { localizeHref } from '$paraglide/runtime';
 	import { m } from '$paraglide/messages';
+	import PillFlower from '../PillFlower.svelte';
 
 	// backticks preserve newlines and braces
 	const snippet = `// Get a user’s access token and profile data
@@ -99,6 +100,19 @@ const profile = await futurewise.getProfileAndToken({
 			{m.and()}
 			<a href="/" class="text-primary font-pixel ml-1 underline hover:opacity-50">Zed</a>
 		</div>
+	</div>
+
+	<div class="mt-12 mb-0 flex flex-col justify-center md:mt-10 md:mb-20">
+		<div class="z-20 mx-auto mb-5 scale-80 md:scale-100">
+			<PillFlower title="Dashboards" />
+		</div>
+		<a href="/pulse-dashboard.png"
+			><img
+				src="/pulse-dashboard.png"
+				alt="pulse-dashboard"
+				class="relative -top-6 z-10 md:-top-8"
+			/></a
+		>
 	</div>
 
 	<div class="absolute -top-[10%] -left-[12%] scale-75 opacity-30 md:-top-[15%]">
