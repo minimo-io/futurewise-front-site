@@ -22,10 +22,12 @@ const profile = await futurewise.getProfileAndToken({
 	<div class="flex flex-col md:grid md:grid-cols-3">
 		<!-- Right text -->
 		<div class="mt-7 mr-9 md:col-span-1">
-			<h3 class="mb-2 text-xl font-bold tracking-wider">
+			<h3 class="mb-2 text-xl font-bold tracking-wider md:text-2xl">
 				{@html m.devSlogan()}
 			</h3>
-			{@html m.devText()}
+			<div class="text-secondary mb-4 font-sans text-base leading-6 md:text-lg">
+				{@html m.devText()}
+			</div>
 			<div class="mt-8 flex flex-row items-center md:mt-0">
 				<a href={localizeHref('/docs')} class="fw-button !my-1 mr-4">{m.documentation()}</a>
 				<button
@@ -41,21 +43,25 @@ const profile = await futurewise.getProfileAndToken({
 
 		<!-- Code -->
 		<div
-			class="relative mt-8 rounded-md border md:-top-7 md:col-span-2 md:mt-0 md:ml-12"
+			class="relative mt-8 rounded-md border md:-top-10 md:col-span-2 md:mt-0 md:ml-12"
 			style="border-width:0.5px"
 		>
 			<div class=" mb-4 flex border-b px-3 py-[8px]">
 				<button
-					class="lang-selected text-primary mr-2 px-3 py-1 text-[18px] font-bold tracking-wider"
+					class="lang-selected text-primary mr-2 px-3 py-1 text-base font-bold tracking-wider md:text-[18px]"
 				>
 					Node.js
 				</button>
-				<button class="mr-2 px-3 py-1 text-[18px] tracking-wider text-white">Python</button>
-				<button class="rounded-t-md px-3 py-1 text-[18px] tracking-wider text-white">Curl</button>
+				<button class="mr-2 px-3 py-1 text-base tracking-wider text-white md:text-[18px]"
+					>Python</button
+				>
+				<button class="rounded-t-md px-3 py-1 text-base tracking-wider text-white md:text-[18px]"
+					>Curl</button
+				>
 			</div>
 
 			<code
-				class="block overflow-x-auto rounded-lg p-4 font-mono text-sm whitespace-pre md:text-base"
+				class="block overflow-x-auto rounded-lg p-4 font-mono text-xs whitespace-pre md:text-base"
 			>
 				<span class="text-[#717AA8]">
 					// Get a user’s access token and
@@ -94,25 +100,29 @@ const profile = await futurewise.getProfileAndToken({
 		</div>
 		<!-- Editors -->
 		<div class="relative col-span-3 mt-5 pr-5 text-right font-sans text-base text-white md:-top-8">
-			<span class="text-primary mr-2 text-base font-bold md:text-lg">></span>
-			{m.devConfira()}
+			<span class="text-primary mr-2 text-sm font-bold md:text-lg">></span>
+			<span class="text-sm md:text-base">{m.devConfira()}</span>
 			<a href="/" class="text-primary font-pixel ml-1 underline hover:opacity-50">VSCode</a>
 			{m.and()}
 			<a href="/" class="text-primary font-pixel ml-1 underline hover:opacity-50">Zed</a>
 		</div>
 	</div>
 
-	<div class="mt-12 mb-0 flex flex-col justify-center md:mt-10 md:mb-20">
-		<div class="z-20 mx-auto mb-5 scale-80 md:scale-100">
+	<!-- Dashboard images -->
+	<div class="mt-16 mb-10 flex flex-col justify-center md:mt-10 md:mb-20">
+		<div class="relative -top-2 z-20 mx-auto">
 			<PillFlower title="Dashboards" />
 		</div>
-		<a href="/pulse-dashboard.png"
-			><img
-				src="/pulse-dashboard.png"
-				alt="pulse-dashboard"
-				class="relative -top-6 z-10 md:-top-8"
-			/></a
-		>
+		<div class="mt-5">
+			<a href={localizeHref('/login')} class="dashboard-link">
+				<img
+					id="know-more"
+					src="/pulse-dashboard-2.png"
+					alt="pulse-dashboard"
+					class="dashboard-img relative -top-[40px] z-10 mx-auto w-full scale-105 md:w-[85%] md:scale-110"
+				/>
+			</a>
+		</div>
 	</div>
 
 	<div class="absolute -top-[10%] -left-[12%] scale-75 opacity-30 md:-top-[15%]">
@@ -123,3 +133,29 @@ const profile = await futurewise.getProfileAndToken({
 		<img src="/bgs/cross.svg" alt="cross" />
 	</div>
 </section>
+
+<style>
+	.dashboard-link {
+		display: block;
+		perspective: 1000px;
+	}
+
+	.dashboard-link .dashboard-img {
+		transform: rotateY(15deg);
+		transition: transform 0.7s ease-out;
+	}
+
+	.dashboard-link:hover .dashboard-img {
+		transform: rotateY(0deg) scale(1);
+	}
+
+	@media (min-width: 768px) {
+		.dashboard-link .dashboard-img {
+			transform: rotateY(15deg) scale(1);
+		}
+
+		.dashboard-link:hover .dashboard-img {
+			transform: rotateY(0deg) scale(1);
+		}
+	}
+</style>
