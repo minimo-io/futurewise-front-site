@@ -26,6 +26,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	display: block;
 }
+
 html,
 body {
 	@apply overflow-x-hidden;
@@ -45,6 +46,7 @@ body {
 	/* Project max-width */
 	--max-width-fw: 1100px; /*  e 275px at ProductSingle.svelte */
 	/* --max-width-fw: 1024px; */
+	--color-grey-light: #161616;
 
 	--fw-app-margin: 25px;
 }
@@ -60,6 +62,7 @@ body {
 	--color-base-100: #000000;
 	--color-base-200: #222222;
 	--color-base-300: #3a3a3a;
+
 	--color-base-content: #f9f9f9;
 
 	/* Primary stays the same for brand consistency */
