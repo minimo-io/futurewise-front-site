@@ -15,12 +15,12 @@
 	<Hr />
 	<Dot />
 
-	<div class="relative text-center">
+	<div class="relative scale-110 text-center md:scale-100">
 		<PillFlower title={m.menuClients()} />
 	</div>
 
 	<div
-		class="fw-clients relative mt-10 mb-1 grid scale-90 grid-cols-2 gap-x-10 gap-y-5 grayscale md:mx-auto md:flex md:flex-row md:flex-wrap md:items-center md:justify-center md:gap-12 md:gap-x-15 md:gap-y-0"
+		class="fw-clients relative mt-8 mb-1 grid scale-90 grid-cols-2 gap-x-10 gap-y-5 grayscale md:mx-auto md:flex md:flex-row md:flex-wrap md:items-center md:justify-center md:gap-12 md:gap-x-15 md:gap-y-0"
 	>
 		<!-- Clients -->
 		<!-- National -->
@@ -46,7 +46,7 @@
 			class="relative flex items-center justify-center rounded-sm hover:opacity-50 md:w-auto"
 		>
 			<div class="mb-4 flex flex-col justify-center">
-				<img src="/clients/agf-logo.png" class="md:h-[50px]" alt="AGF" />
+				<img src="/clients/agf-logo.png" class="scale-125 md:h-[50px] md:scale-100" alt="AGF" />
 			</div>
 		</a>
 		<!-- Braaay -->

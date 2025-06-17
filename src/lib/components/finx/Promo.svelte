@@ -20,7 +20,7 @@
 
 		<!-- Divider -->
 		<div class="mx-auto w-fit">
-			<img src="/bgs/square-divider.svg" alt="divider" class="mt-3 w-[70%]" />
+			<img src="/bgs/square-divider.svg" alt="divider" class="relative left-5 mt-3 w-[70%]" />
 		</div>
 
 		<div class="max-w-fw relative mx-auto w-full pt-5 pb-1">
@@ -44,9 +44,7 @@
 		>
 			<Hr />
 			<!-- Container: dark background with white text -->
-			<div
-				class="border-base-200 max-w-fw flex flex-1 items-center justify-center border-t md:border-t-0"
-			>
+			<div class="border-base-200 max-w-fw flex flex-1 items-center justify-center md:border-t-0">
 				<!-- Price line: R$, “50” large, and “/hora” -->
 				<!-- <div
 					class="mt-3 mb-5 flex items-baseline justify-center space-x-2 md:my-5 md:justify-start"
@@ -71,9 +69,7 @@
 				</ul>
 			</div>
 			<!-- Container -->
-			<div
-				class="border-base-200 max-w-fw flex-1 items-center justify-center border-t md:flex md:border-t-0"
-			>
+			<div class="border-base-200 max-w-fw flex-1 items-center justify-center md:flex">
 				<!-- List of features underneath -->
 				<ul
 					class="text-secondary hidden space-y-[10px] pt-5 text-left font-sans text-lg md:mt-6 md:block md:pt-0"

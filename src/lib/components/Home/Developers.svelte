@@ -17,6 +17,7 @@ const profile = await futurewise.getProfileAndToken({
 
 <section class="max-w-fw relative -top-8 mx-auto my-10 md:-top-1 md:my-10">
 	<!-- Subtitle -->
+
 	<TitleSection titleLeft="Developers" titleRight="First" forceFlexRow={true} />
 
 	<div class="flex flex-col md:grid md:grid-cols-3">

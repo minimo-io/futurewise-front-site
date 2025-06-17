@@ -85,7 +85,7 @@
 
 	<Promo />
 </main>
-<div class="mx-(--fw-app-margin)">
+<div class="mx-(--fw-app-margin) mt-18">
 	<Developers />
 </div>
 

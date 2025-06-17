@@ -40,9 +40,7 @@
 				</ul>
 			</div>
 			<!-- Container -->
-			<div
-				class="border-base-200 flex max-w-xs flex-1 items-center justify-center border-t md:border-t-0"
-			>
+			<div class="border-base-200 flex max-w-xs flex-1 items-center justify-center md:border-t-0">
 				<!-- List of features underneath -->
 				<ul class="text-secondary space-y-[10px] pt-5 text-left font-sans text-lg md:mt-6 md:pt-0">
 					<li class="block md:hidden">Personalizações</li>

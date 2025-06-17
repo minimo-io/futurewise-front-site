@@ -11,13 +11,15 @@
 	}
 </script>
 
-<div class="max-w-fw mx-(--fw-app-margin) mb-10 md:mx-auto">
-	<TitleSection titleLeft="Perguntas" titleRight="Frequentes" forceFlexRow={true} />
+<div class="max-w-fw relative -top-10 mx-(--fw-app-margin) mb-10 md:mx-auto md:mt-36">
+	<div class="relative -left-2 scale-75 md:scale-100">
+		<TitleSection titleLeft="Perguntas" titleRight="Frequentes" forceFlexRow={true} />
+	</div>
 
 	<div class="mt-7">
 		<div class="faq-item border-base-300 my-4 rounded-xl border bg-[#121212]">
 			<button
-				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-[22px]"
+				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left"
 				on:click={() => toggleAccordion(0)}
 			>
 				<span>Does the number of end users affect pricing?</span>
@@ -40,7 +42,7 @@
 
 		<div class="faq-item border-base-300 my-4 rounded-xl border bg-[#121212]">
 			<button
-				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-[22px]"
+				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left"
 				on:click={() => toggleAccordion(1)}
 			>
 				<span>I forgot my password. What should I do?</span>
@@ -64,7 +66,7 @@
 
 		<div class="faq-item border-base-300 my-4 rounded-xl border bg-[#121212]">
 			<button
-				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-[22px]"
+				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left"
 				on:click={() => toggleAccordion(2)}
 			>
 				<span>How do I update my profile information?</span>
@@ -87,7 +89,7 @@
 
 		<div class="faq-item border-base-300 my-4 rounded-xl border bg-[#121212]">
 			<button
-				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left text-xl md:text-[22px]"
+				class="collapse-title text-secondary flex w-full items-center justify-between p-4 text-left"
 				on:click={() => toggleAccordion(3)}
 			>
 				<span>What's the difference between Staging and Production?</span>
@@ -116,7 +118,10 @@
 	.faq-item {
 		@apply my-4 bg-[#121212] md:rounded-xl;
 	}
+	.faq-item > button {
+		@apply text-base md:text-lg;
+	}
 	.faq-item div {
-		@apply text-base opacity-100 md:text-lg;
+		@apply text-[14px] opacity-100 md:text-[15px];
 	}
 </style>
