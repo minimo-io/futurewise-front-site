@@ -15,7 +15,8 @@ const allowedRoutes = [
 	'/caresync',
 	'/login',
 	'/lab',
-	'/dashboard'
+	'/dashboard',
+	'/bagity'
 ];
 
 // Auth middleware

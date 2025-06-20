@@ -51,6 +51,14 @@ export default defineConfig({
 						['en', '/en/dashboard']
 					]
 				},
+				{
+					pattern: '/bagity',
+					localized: [
+						['pt', '/bagity'],
+						['es', '/es/bagity'],
+						['en', '/en/bagity']
+					]
+				},
 
 				{
 					pattern: '/lab',

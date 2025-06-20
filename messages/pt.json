@@ -33,6 +33,8 @@
 
 	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Manutenção Preditiva</span> e Gestão Inteligente de Ativos de TI (ITOM + ITMS)— com IA Aplicada ao Monitoramento em Tempo Real de Ativos, Compra e Aluguel de Equipamentos e <span class='text-base-content opacity-80'>Assistência Técnica sob Demanda</span>.",
 
+	"heroContentBagity": "Impulsione seu e-commerce com Bagity: personalize design, UX e funcionalidades sob medida, com IA integrada, segurança escalável e checkout rápido via FinXPay. Planos a partir de R$99/mês ou Bagity Pro sem custos iniciais e suporte dedicado.",
+
 	"learnMore": "Saiba mais",
 	"scheduleMeeting": "Agende uma demo",
 
@@ -101,5 +103,67 @@
 
 	"startNow": "Começar agora",
 
-	"allSystemsWorking": "Todos os sistemas funcionando"
+	"allSystemsWorking": "Todos os sistemas funcionando",
+
+	"careSyncAuto": "Auto-gestão",
+	"careSyncManaged": "Gerenciado",
+	"careSyncIdealFor": "IDEAL PARA",
+	"careSyncAutoDesc": "Empresas que querem controle direto sobre seus ativos de TI e uma plataforma para otimizar suas operações (Pay-Per-Use).",
+	"careSyncManagedDesc": "Empresas que querem focar no seu negócio, deixando toda a gestão e manutenção da TI nas mãos de especialistas.",
+
+	"careSyncAutoItem0Title": "Relatórios e Dashboard completo:",
+	"careSyncAutoItem0Desc": "Tenha a visão geral dos seus ativos de TI. Tendências históricas de uso, serviços e custos de TI.",
+	"careSyncAutoItem1Title": "Ordens de Serviço:",
+	"careSyncAutoItem1Desc": "Crie e acompanhe solicitações de manutenção.",
+	"careSyncAutoItem2Title": "Manutenção Preventiva:",
+	"careSyncAutoItem2Desc": "Agende e configure as manutenções da sua frota.",
+	"careSyncAutoItem3Title": "Pay-Per-Use:",
+	"careSyncAutoItem3Desc": "Contrate apenas pelos serviços que precisar, por equipamento, contratados diretamente pela plataforma, como o Seguro de Continuidade, Monitoramento preditivo, e todos os serviços da CareSync by Futurewise.",
+	"careSyncAutoItem4Title": "Tagging:",
+	"careSyncAutoItem4Desc": "Gerar e imprimir QR-codes ou barcodes diretamente da plataforma. Use-os para identificar cada equipamento fisicamente e compartilhar seu histórico de serviços.",
+	"careSyncAutoItem5Title": "Monitoramento Preditivo sob Demanda:",
+	"careSyncAutoItem5Desc": "Detecção de anomalias e previsão de falhas com nossa IA treinada pela Futurewise.",
+	"careSyncAutoItem6Title": "Suporte Remoto sob Demanda:",
+	"careSyncAutoItem6Desc": "Assistência técnica online, manutenção preventiva e solução de problemas.",
+	"careSyncAutoItem7Title": "Compras e Aluguel:",
+	"careSyncAutoItem7Desc": "Acesse equipamentos certificados sob demanda, contrate pela plataforma.",
+
+	"careSyncManagedItem0Title": "Gestão 360°:",
+	"careSyncManagedItem0Desc": "Gerenciamos, monitoramos e mantemos sua frota de TI proativamente.",
+	"careSyncManagedItem1Title": "Previsibilidade:",
+	"careSyncManagedItem1Desc": "Planos de contrato anual ou taxa fixa por hora, com tudo incluído.",
+	"careSyncManagedItem2Title": "Suporte Total:",
+	"careSyncManagedItem2Desc": "Assistência técnica online, manutenção preventiva e solução de problemas.",
+	"careSyncManagedItem3Title": "Tagging:",
+	"careSyncManagedItem3Desc": "Faremos a identificação física de cada equipamento com QR-codes/barcodes, registrando todas as ações de manutenção preventiva, corretiva, upgrades e baixas. Use-os para identificar cada equipamento fisicamente e compartilhar seu histórico de serviços.",
+	"careSyncManagedItem4Title": "Monitoramento Preditivo:",
+	"careSyncManagedItem4Desc": "Detecção de anomalias e previsão de falhas com nossa IA treinada pela Futurewise.",
+	"careSyncManagedItem5Title": "Seguro de Continuidade:",
+	"careSyncManagedItem5Desc": "Receba um equipamento substituto imediatamente enquanto o seu está em manutenção, garantindo que suas operações nunca parem (em cidades selecionadas).",
+	"careSyncManagedItem6Title": "Relatórios e Dashboards:",
+	"careSyncManagedItem6Desc": "Mantenha acesso a relatórios, reporte eventos e acompanhe nossa gestão.",
+	"careSyncManagedItem7Title": "Foco no seu Negócio:",
+	"careSyncManagedItem7Desc": "Sua equipe livre para focar no que realmente importa, sem se preocupar com a TI.",
+	"careSyncManagedItem8Title": "Compras e Aluguel:",
+	"careSyncManagedItem8Desc": "Alugue e compre equipamentos certificados com descontos especiais para clientes do plano Gerenciado.",
+
+	"careSyncYouControl": "Você no controle",
+	"careSyncWeTakeCare": "Nós cuidamos de tudo",
+	"careSyncToggleMore": "Ver mais",
+	"careSyncToggleLess": "Ver menos",
+
+	"payPerUseTitle": "PAY-PER-USE",
+	"payPerUseDescription": "Monitore seus ativos físicos de TI em tempo real, acompanhe dados históricos na ficha de cada equipamento, detecte problemas preditivamente com nossa IA, acompanhe tendências de custos, e <span class='text-base-content'>quando tiver falhas contrate ordens de serviço de manutenção sob demanda</span>.",
+	"payPerUsePriceCurrency": "R$",
+	"payPerUsePriceAmount": "50",
+	"payPerUsePriceUnit": "/hora",
+
+	"payPerUseFeatureTransparent": "Taxas transparentes",
+	"payPerUseFeatureCustom": "Personalizações",
+	"payPerUseFeatureVolume": "Descontos por volume",
+	"payPerUseFeatureOnline": "Acompanhamento online",
+
+	"payPerUseFeatureTransparentDashboard": "Taxas transparentes <br />Controladas pelo Dashboard",
+	"payPerUseFeatureRemoteEmergency": "Resolução de emergências remota para evitar interrupção do serviço",
+	"payPerUseFeatureCostControl": "Controle de custos e tendências históricas"
 }

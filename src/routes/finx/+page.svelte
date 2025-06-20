@@ -34,7 +34,7 @@
 				<a href={localizeHref('/sign-up')} class="fw-cmp-box-button">
 					<span
 						class=" text-center !font-sans !text-base font-bold tracking-wider uppercase md:!text-base"
-						>{m.continue()}</span
+						>{m.startNow()}</span
 					>
 				</a>
 			</div>
@@ -51,13 +51,15 @@
 				<a href={localizeHref('/sign-up')} class="fw-cmp-box-button">
 					<span
 						class=" text-center !font-sans !text-base font-bold tracking-wider uppercase md:!text-base"
-						>{m.continue()}</span
+						>{m.startNow()}</span
 					>
 				</a>
 			</div>
 		</div>
 		<div class="fw-cmp-box border-r-0">
-			<div class="fw-cmp-box-title">E-Commerce</div>
+			<div class="fw-cmp-box-title">
+				<a href={localizeHref('/baity')} class="text-primary hover:opacity-50">E-Commerce</a>
+			</div>
 			<div class="fw-cmp-box-content">
 				<p>
 					Aumente sua taxa de conversão, simplifique sua conciliação, tenha split de pagamentos,
@@ -67,7 +69,7 @@
 				<a href={localizeHref('/sign-up')} class="fw-cmp-box-button">
 					<span
 						class=" text-center !font-sans !text-base font-bold tracking-wider uppercase md:!text-base"
-						>{m.continue()}</span
+						>{m.startNow()}</span
 					>
 				</a>
 			</div>

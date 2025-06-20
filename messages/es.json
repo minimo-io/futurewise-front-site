@@ -106,5 +106,67 @@
 
 	"startNow": "Comenzar ahora",
 
-	"allSystemsWorking": "Todos los sistemas funcionando"
+	"allSystemsWorking": "Todos los sistemas funcionando",
+
+	"careSyncAuto": "Autogestión",
+	"careSyncManaged": "Gestionado",
+	"careSyncIdealFor": "IDEAL PARA",
+	"careSyncAutoDesc": "Empresas que desean control directo sobre sus activos de TI y una plataforma para optimizar sus operaciones (Pay-Per-Use).",
+	"careSyncManagedDesc": "Empresas que quieren centrarse en su negocio, dejando toda la gestión y mantenimiento de TI en manos de especialistas.",
+
+	"careSyncAutoItem0Title": "Informes y Paneles completos:",
+	"careSyncAutoItem0Desc": "Obtén una visión general de tus activos de TI. Tendencias históricas de uso, servicios y costos de TI.",
+	"careSyncAutoItem1Title": "Órdenes de Servicio:",
+	"careSyncAutoItem1Desc": "Crea y realiza seguimiento de solicitudes de mantenimiento.",
+	"careSyncAutoItem2Title": "Mantenimiento Preventivo:",
+	"careSyncAutoItem2Desc": "Programa y configura las mantenimientos de tu flota.",
+	"careSyncAutoItem3Title": "Pay-Per-Use:",
+	"careSyncAutoItem3Desc": "Contrata solo los servicios que necesites, por equipo, directamente desde la plataforma—como Seguro de Continuidad, Monitoreo predictivo y todos los servicios de CareSync by Futurewise.",
+	"careSyncAutoItem4Title": "Tagging:",
+	"careSyncAutoItem4Desc": "Genera e imprime códigos QR o códigos de barras directamente desde la plataforma para identificar físicamente cada dispositivo y compartir su historial de servicios.",
+	"careSyncAutoItem5Title": "Monitoreo Predictivo On‑Demand:",
+	"careSyncAutoItem5Desc": "Detección de anomalías y predicción de fallas con nuestra IA entrenada por Futurewise.",
+	"careSyncAutoItem6Title": "Soporte Remoto On‑Demand:",
+	"careSyncAutoItem6Desc": "Asistencia técnica en línea, mantenimiento preventivo y resolución de problemas.",
+	"careSyncAutoItem7Title": "Compras y Alquiler:",
+	"careSyncAutoItem7Desc": "Accede a equipos certificados a pedido, contratados a través de la plataforma.",
+
+	"careSyncManagedItem0Title": "Gestión 360°:",
+	"careSyncManagedItem0Desc": "Gestionamos, monitoreamos y mantenemos proactivamente tu flota de TI.",
+	"careSyncManagedItem1Title": "Predictibilidad:",
+	"careSyncManagedItem1Desc": "Planes anuales de contrato o tarifas fijas por hora, todo incluido.",
+	"careSyncManagedItem2Title": "Soporte Total:",
+	"careSyncManagedItem2Desc": "Asistencia técnica en línea, mantenimiento preventivo y resolución de problemas.",
+	"careSyncManagedItem3Title": "Tagging:",
+	"careSyncManagedItem3Desc": "Etiquetamos físicamente cada dispositivo con códigos QR/códigos de barras, registrando cada acción de mantenimiento preventivo, correctivo, actualización y baja. Úsalos para identificar cada dispositivo y compartir su historial de servicios.",
+	"careSyncManagedItem4Title": "Monitoreo Predictivo:",
+	"careSyncManagedItem4Desc": "Detección de anomalías y predicción de fallas con nuestra IA entrenada por Futurewise.",
+	"careSyncManagedItem5Title": "Seguro de Continuidad:",
+	"careSyncManagedItem5Desc": "Recibe un dispositivo de reemplazo inmediatamente mientras el tuyo está en mantenimiento, garantizando que tus operaciones nunca se detengan (en ciudades seleccionadas).",
+	"careSyncManagedItem6Title": "Informes y Paneles:",
+	"careSyncManagedItem6Desc": "Mantente al tanto de los informes, registra eventos y sigue nuestra gestión.",
+	"careSyncManagedItem7Title": "Enfoque en tu Negocio:",
+	"careSyncManagedItem7Desc": "Libera a tu equipo para centrarse en lo que realmente importa, sin preocuparse por la TI.",
+	"careSyncManagedItem8Title": "Compras y Alquiler:",
+	"careSyncManagedItem8Desc": "Alquila o compra equipos certificados con descuentos especiales para clientes del plan Gestionado.",
+
+	"careSyncYouControl": "Tú al control",
+	"careSyncWeTakeCare": "Nosotros nos encargamos de todo",
+	"careSyncToggleMore": "Ver más",
+	"careSyncToggleLess": "Ver menos",
+
+	"payPerUseTitle": "PAY-PER-USE",
+	"payPerUseDescription": "Monitorea tus activos físicos de TI en tiempo real, revisa datos históricos en la ficha de cada equipo, detecta problemas predictivamente con nuestra IA, sigue tendencias de costos, y <span class='text-base-content'>cuando haya fallas, contrata órdenes de servicio de mantenimiento bajo demanda</span>.",
+	"payPerUsePriceCurrency": "R$",
+	"payPerUsePriceAmount": "50",
+	"payPerUsePriceUnit": "/hora",
+
+	"payPerUseFeatureTransparent": "Tarifas transparentes",
+	"payPerUseFeatureCustom": "Personalizaciones",
+	"payPerUseFeatureVolume": "Descuentos por volumen",
+	"payPerUseFeatureOnline": "Monitoreo en línea",
+
+	"payPerUseFeatureTransparentDashboard": "Tarifas transparentes <br />Controladas desde el Dashboard",
+	"payPerUseFeatureRemoteEmergency": "Resolución remota de emergencias para evitar interrupción del servicio",
+	"payPerUseFeatureCostControl": "Control de costos y tendencias históricas"
 }

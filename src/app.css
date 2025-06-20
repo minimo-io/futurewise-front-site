@@ -218,6 +218,10 @@ body {
 	.fw-bg-astronaut {
 		@apply bg-[url('/bgs/header-caresync.png')];
 	}
+	.fw-bg-bagity {
+		@apply bg-[url('/bgs/header-underconstruction.jpeg')] opacity-20;
+		/* @apply bg-[url('/bgs/Rectangle13.png')] bg-cover opacity-30; */
+	}
 	.fw-bg-construction {
 		@apply bg-[url('/bgs/header-underconstruction.jpeg')];
 		/* @apply bg-[url('/bgs/ngc-2899.jpg')]; */
