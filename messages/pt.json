@@ -111,8 +111,8 @@
 	"careSyncAutoDesc": "Empresas que querem controle direto sobre seus ativos de TI e uma plataforma para otimizar suas operações (Pay-Per-Use).",
 	"careSyncManagedDesc": "Empresas que querem focar no seu negócio, deixando toda a gestão e manutenção da TI nas mãos de especialistas.",
 
-	"careSyncAutoItem0Title": "Relatórios e Dashboard completo:",
-	"careSyncAutoItem0Desc": "Tenha a visão geral dos seus ativos de TI. Tendências históricas de uso, serviços e custos de TI.",
+	"careSyncAutoItem0Title": "Relatórios e Dashboards completos:",
+	"careSyncAutoItem0Desc": "Tenha a visão geral dos seus ativos de TI. Tendências históricas de uso, serviços e custos.",
 	"careSyncAutoItem1Title": "Ordens de Serviço:",
 	"careSyncAutoItem1Desc": "Crie e acompanhe solicitações de manutenção.",
 	"careSyncAutoItem2Title": "Manutenção Preventiva:",
@@ -125,7 +125,7 @@
 	"careSyncAutoItem5Desc": "Detecção de anomalias e previsão de falhas com nossa IA treinada pela Futurewise.",
 	"careSyncAutoItem6Title": "Suporte Remoto sob Demanda:",
 	"careSyncAutoItem6Desc": "Assistência técnica online, manutenção preventiva e solução de problemas.",
-	"careSyncAutoItem7Title": "Compras e Aluguel:",
+	"careSyncAutoItem7Title": "Compras e Aluguéis:",
 	"careSyncAutoItem7Desc": "Acesse equipamentos certificados sob demanda, contrate pela plataforma.",
 
 	"careSyncManagedItem0Title": "Gestão 360°:",
@@ -144,7 +144,7 @@
 	"careSyncManagedItem6Desc": "Mantenha acesso a relatórios, reporte eventos e acompanhe nossa gestão.",
 	"careSyncManagedItem7Title": "Foco no seu Negócio:",
 	"careSyncManagedItem7Desc": "Sua equipe livre para focar no que realmente importa, sem se preocupar com a TI.",
-	"careSyncManagedItem8Title": "Compras e Aluguel:",
+	"careSyncManagedItem8Title": "Compras e Aluguéis:",
 	"careSyncManagedItem8Desc": "Alugue e compre equipamentos certificados com descontos especiais para clientes do plano Gerenciado.",
 
 	"careSyncYouControl": "Você no controle",

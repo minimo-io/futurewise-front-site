@@ -67,7 +67,9 @@
 					</div>
 					<div class="border-base-200 text-primary border-t pt-2 font-sans text-lg font-bold">
 						{m.careSyncIdealFor()}
-						<div class="text-base-content px-2 text-base font-normal md:px-20 md:text-lg">
+						<div
+							class="text-base-content text-shadow-accent px-2 text-base font-normal md:px-20 md:text-base"
+						>
 							{m.careSyncAutoDesc()}
 						</div>
 					</div>
@@ -83,7 +85,7 @@
 					</div>
 					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold">
 						{m.careSyncIdealFor()}
-						<div class="text-base-content px-20 text-lg font-normal">
+						<div class="text-base-content text-shadow-accent px-20 text-base font-normal">
 							{m.careSyncManagedDesc()}
 						</div>
 					</div>

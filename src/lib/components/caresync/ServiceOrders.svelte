@@ -28,7 +28,7 @@
 >
 	<Hr bottom={false} />
 
-	<div class="relative scale-110 md:scale-100 lg:top-7 lg:-right-32">
+	<div class="relative scale-110 md:scale-100 lg:top-7 2xl:-right-32">
 		<DashboardImages />
 	</div>
 

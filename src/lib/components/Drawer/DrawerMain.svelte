@@ -19,7 +19,9 @@
 	let drawerDataForLang = $state(drawerData[locale]);
 </script>
 
-<div class="border-base-300 flex flex-1 flex-col overflow-y-auto border-t px-0 text-xs">
+<div
+	class="border-base-300 flex flex-1 flex-col overflow-x-hidden overflow-y-auto border-t px-0 text-xs"
+>
 	<!-- Item with submenu -->
 	<button
 		onclick={() => openSubmenu('fw_menu_languages', 'Idiomas')}
@@ -68,7 +70,7 @@
 						{drawer.name}
 					</div>
 					{#if drawer.slogan}
-						<div class="text-secondary ml-1">— {drawer.sloganSimple}</div>
+						<div class="text-secondary ml-1 truncate">— {drawer.sloganSimple}</div>
 					{/if}
 				</div>
 				<div class="text-grey-medium flex flex-row self-center align-middle">
@@ -83,21 +85,23 @@
 					i == 0 ? 'border-t' : ''
 				]}
 			>
-				<div class="flex justify-center self-center text-left align-middle">
+				<div class="flex min-w-0 flex-1 items-center">
 					{#if drawer.logo}
 						<img
 							src={drawer.logo}
 							alt={`${drawer.name} logo`}
-							class="relative -left-[1px] mr-1 w-6 max-w-5"
+							class="relative -left-[1px] mr-1 w-6 max-w-5 flex-shrink-0"
 						/>
 					{:else if drawer.icon}
-						<drawer.icon class="mr-2 h-4 w-4 self-center" />
+						<drawer.icon class="mr-2 h-4 w-4 flex-shrink-0 self-center" />
 					{/if}
-					<div class={['self-center', drawer.isBold ? 'font-bold' : 'font-semibold']}>
+					<div class={['flex-shrink-0 self-center', drawer.isBold ? 'font-bold' : 'font-semibold']}>
 						{drawer.name}
 					</div>
 					{#if drawer.slogan}
-						<div class="text-secondary ml-1">— {drawer.slogan}</div>
+						<div class="text-secondary ml-1 min-w-0 flex-1 truncate">
+							— {drawer.slogan}
+						</div>
 					{/if}
 				</div>
 			</a>

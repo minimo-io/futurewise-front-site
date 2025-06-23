@@ -115,7 +115,7 @@
 	"careSyncManagedDesc": "Empresas que quieren centrarse en su negocio, dejando toda la gestión y mantenimiento de TI en manos de especialistas.",
 
 	"careSyncAutoItem0Title": "Informes y Paneles completos:",
-	"careSyncAutoItem0Desc": "Obtén una visión general de tus activos de TI. Tendencias históricas de uso, servicios y costos de TI.",
+	"careSyncAutoItem0Desc": "Obtén una visión general de tus activos de TI. Tendencias históricas de uso, servicios y costos.",
 	"careSyncAutoItem1Title": "Órdenes de Servicio:",
 	"careSyncAutoItem1Desc": "Crea y realiza seguimiento de solicitudes de mantenimiento.",
 	"careSyncAutoItem2Title": "Mantenimiento Preventivo:",
@@ -128,7 +128,7 @@
 	"careSyncAutoItem5Desc": "Detección de anomalías y predicción de fallas con nuestra IA entrenada por Futurewise.",
 	"careSyncAutoItem6Title": "Soporte Remoto On‑Demand:",
 	"careSyncAutoItem6Desc": "Asistencia técnica en línea, mantenimiento preventivo y resolución de problemas.",
-	"careSyncAutoItem7Title": "Compras y Alquiler:",
+	"careSyncAutoItem7Title": "Compras y Alquileres:",
 	"careSyncAutoItem7Desc": "Accede a equipos certificados a pedido, contratados a través de la plataforma.",
 
 	"careSyncManagedItem0Title": "Gestión 360°:",
@@ -147,7 +147,7 @@
 	"careSyncManagedItem6Desc": "Mantente al tanto de los informes, registra eventos y sigue nuestra gestión.",
 	"careSyncManagedItem7Title": "Enfoque en tu Negocio:",
 	"careSyncManagedItem7Desc": "Libera a tu equipo para centrarse en lo que realmente importa, sin preocuparse por la TI.",
-	"careSyncManagedItem8Title": "Compras y Alquiler:",
+	"careSyncManagedItem8Title": "Compras y Alquileres:",
 	"careSyncManagedItem8Desc": "Alquila o compra equipos certificados con descuentos especiales para clientes del plan Gestionado.",
 
 	"careSyncYouControl": "Tú al control",
