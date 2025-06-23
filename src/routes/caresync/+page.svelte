@@ -66,9 +66,10 @@
 						</span>
 					</div>
 					<div class="border-base-200 text-primary border-t pt-2 font-sans text-lg font-bold">
-						{m.careSyncIdealFor()}
+						<!-- {m.careSyncIdealFor()} -->
+						{m.careSyncYouControl()}
 						<div
-							class="text-base-content text-shadow-accent px-2 text-base font-normal md:px-20 md:text-base"
+							class="text-base-content text-shadow-accent px-0 text-base font-normal md:px-20 md:text-base"
 						>
 							{m.careSyncAutoDesc()}
 						</div>
@@ -84,7 +85,8 @@
 						</span>
 					</div>
 					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold">
-						{m.careSyncIdealFor()}
+						<!-- {m.careSyncIdealFor()} -->
+						{m.careSyncWeTakeCare()}
 						<div class="text-base-content text-shadow-accent px-20 text-base font-normal">
 							{m.careSyncManagedDesc()}
 						</div>
@@ -98,17 +100,20 @@
 			<div
 				class="border-r-base-200 flex w-full flex-col py-5 text-center md:w-1/2 md:border-r md:px-20 md:py-10"
 			>
-				<div class="text-primary font-sans text-lg font-bold uppercase">
-					{m.careSyncYouControl()}
-				</div>
 				<div class="flex flex-grow flex-col">
 					<ul class="flex-grow">
 						{#each autoGestaoItems.slice(0, autoGestaoInitialItems) as item}
-							<li><span class="font-bold">{item.title}</span> {item.description}</li>
+							<li class="!text-base md:!text-lg">
+								<span class="font-bold">{item.title}</span>
+								{item.description}
+							</li>
 						{/each}
 						{#if isExpanded}
 							{#each autoGestaoItems.slice(autoGestaoInitialItems) as item}
-								<li><span class="font-bold">{item.title}</span> {item.description}</li>
+								<li class="!text-base md:!text-lg">
+									<span class="font-bold">{item.title}</span>
+									{item.description}
+								</li>
 							{/each}
 						{/if}
 					</ul>
@@ -136,17 +141,44 @@
 
 			<!-- Nós cuidamos de tudo -->
 			<div class="mb-7 flex w-full flex-col items-start md:mb-0 md:w-1/2 md:px-20 md:py-10">
-				<div class="text-primary self-center text-center font-sans text-lg font-bold uppercase">
-					{m.careSyncWeTakeCare()}
+				<!-- Mobile second option -->
+				<div class="border-base-200 w-full border-t border-b py-3 text-xl md:hidden md:w-1/2">
+					<div class="mb-2 text-2xl">
+						CareSync <span
+							class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl"
+						>
+							{m.careSyncManaged()}
+						</span>
+					</div>
+					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold">
+						<!-- {m.careSyncIdealFor()} -->
+						{m.careSyncWeTakeCare()}
+						<div class="text-base-content text-shadow-accent px-0 text-base font-normal">
+							{m.careSyncManagedDesc()}
+						</div>
+					</div>
 				</div>
+
+				<!-- <div
+					class="text-primary self-center pt-5 text-center font-sans text-lg font-bold uppercase md:pt-0"
+				>
+					{m.careSyncWeTakeCare()}
+				</div> -->
+
 				<div class="flex w-full flex-grow flex-col">
 					<ul class="flex-grow">
 						{#each gerenciadoItems.slice(0, gerenciadoInitialItems) as item}
-							<li><span class="font-bold">{item.title}</span> {item.description}</li>
+							<li class="!text-base md:!text-lg">
+								<span class="font-bold">{item.title}</span>
+								{item.description}
+							</li>
 						{/each}
 						{#if isExpanded}
 							{#each gerenciadoItems.slice(gerenciadoInitialItems) as item}
-								<li><span class="font-bold">{item.title}</span> {item.description}</li>
+								<li class="!text-base md:!text-lg">
+									<span class="font-bold">{item.title}</span>
+									{item.description}
+								</li>
 							{/each}
 						{/if}
 					</ul>
