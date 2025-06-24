@@ -47,17 +47,6 @@
 			</div>
 		</div>
 
-		<!-- Integrações sob medida -->
-		<div class="feature-item">
-			<div class="flex-shrink-0">
-				<img src="/feature-2.svg" alt="feature-2" />
-			</div>
-			<div class="feature-item-desc">
-				<h3 class="text-base-content">{m.bagityFeature3Title()}</h3>
-				<p class="text-secondary">{@html m.bagityFeature3Desc()}</p>
-			</div>
-		</div>
-
 		<!-- Foco em atendimento premium -->
 		<div class="feature-item">
 			<div class="flex-shrink-0">
@@ -66,6 +55,19 @@
 			<div class="feature-item-desc">
 				<h3 class="text-base-content">{m.bagityFeature5Title()}</h3>
 				<p class="text-secondary">{@html m.bagityFeature5Desc()}</p>
+			</div>
+		</div>
+
+		<!-- Headless -->
+		<div class="feature-item">
+			<div class="flex-shrink-0">
+				<img src="/feature-7.svg" alt="feature-7" />
+			</div>
+			<div class="feature-item-desc">
+				<h3 class="text-base-content">{m.bagityFeature7Title()}</h3>
+				<p class="text-secondary">
+					{@html m.bagityFeature7Desc()}
+				</p>
 			</div>
 		</div>
 
@@ -80,16 +82,14 @@
 			</div>
 		</div>
 
-		<!-- Headless -->
+		<!-- Integrações sob medida -->
 		<div class="feature-item">
 			<div class="flex-shrink-0">
-				<img src="/feature-7.svg" alt="feature-7" />
+				<img src="/feature-2.svg" alt="feature-2" />
 			</div>
 			<div class="feature-item-desc">
-				<h3 class="text-base-content">{m.bagityFeature7Title()}</h3>
-				<p class="text-secondary">
-					{@html m.bagityFeature7Desc()}
-				</p>
+				<h3 class="text-base-content">{m.bagityFeature3Title()}</h3>
+				<p class="text-secondary">{@html m.bagityFeature3Desc()}</p>
 			</div>
 		</div>
 
