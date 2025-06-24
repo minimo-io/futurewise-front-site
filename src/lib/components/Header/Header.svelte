@@ -33,7 +33,7 @@
 
 <header
 	in:fade={{ duration: 150 }}
-	class="border-primary-content relative px-(--fw-app-margin) md:px-0"
+	class="border-primary-content fw-border-b-divider-dot fw-border-b-divider-dot-center md:fw-border-b-divider-dot-none relative px-(--fw-app-margin) md:px-0"
 >
 	<!-- Bg image -->
 	<div

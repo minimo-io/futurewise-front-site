@@ -6,6 +6,7 @@
 	import PillFlower from '../PillFlower.svelte';
 	import { m } from '$paraglide/messages';
 	import Hr from '../Hr.svelte';
+	import Dot from '../Dot.svelte';
 
 	const locale = $state(getLocale());
 	let drawerDataForLang = $state(drawerData[locale]);
@@ -14,6 +15,10 @@
 <!-- Products Slider Section -->
 <section class="relative mt-7 px-0 pb-5 md:-top-[23px] md:mt-0 md:px-12 lg:px-16">
 	<Hr halfWidth={true} />
+
+	<!-- <div
+		class="absolute -top-[40px] left-1/2 h-[15px] w-[15px] -translate-x-1/2 bg-[url('/bgs/square.svg')] bg-contain bg-no-repeat"
+	></div> -->
 
 	<div class="md:pb-5">
 		<div class="relative -top-1 hidden text-center md:block">
@@ -41,5 +46,12 @@
 				<img src="/bgs/cross.svg" alt="cross" />
 			</div>
 		</div>
+	</div>
+
+	<div class="relative mb-12 block md:hidden">
+		<Hr />
+		<div
+			class="absolute bottom-[-7px] left-1/2 h-[15px] w-[15px] -translate-x-1/2 bg-[url('/bgs/square.svg')] bg-contain bg-no-repeat"
+		></div>
 	</div>
 </section>

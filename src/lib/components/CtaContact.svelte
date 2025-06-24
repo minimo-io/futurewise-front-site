@@ -16,7 +16,7 @@
 		href={AppConfig.calendar}
 		target="_blank"
 		rel="nofollow noreferrer"
-		class="inline-block rounded-full bg-white px-6 py-2 text-black uppercase transition hover:bg-gray-200"
+		class="font-pixel inline-block rounded-full bg-white px-6 py-2 text-black uppercase transition hover:bg-gray-200"
 	>
 		{m.scheduleMeeting()}
 	</a>

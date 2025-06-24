@@ -8,7 +8,7 @@
 	import Faq from '$lib/components/finx/Faq.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import TransparentButton from '$lib/components/Buttons/TransparentButton.svelte';
-	import StandardButton from '$lib/components/Buttons/StandardButton.svelte';
+	// import StandardButton from '$lib/components/Buttons/StandardButton.svelte';
 	// import Hr from '$lib/components/Hr.svelte';
 </script>
 
@@ -47,9 +47,9 @@
 					> são chaves. Nossa API é de simples integração, permitindo que seu time foque no crescimento
 					do seu negócio.
 				</p>
-				<StandardButton class="!mt-6" href={localizeHref('/sign-up')}>
+				<TransparentButton class="!mt-6" href={localizeHref('/sign-up')}>
 					{m.startNow()}
-				</StandardButton>
+				</TransparentButton>
 			</div>
 		</div>
 		<div class="fw-cmp-box border-r-0">

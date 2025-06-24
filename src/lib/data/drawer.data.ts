@@ -50,7 +50,7 @@ export const drawerData = {
 			name: 'Bagity',
 			slogan: 'Headless E-commerce with Superpowers',
 			sloganSimple: 'E-commerce with Superpowers',
-			details: 'Headless Backends<br />Modern UX + MCP Servers',
+			details: 'Headless Front-End<br />Modern UX + MCP Servers',
 			icon: ShoppingBag,
 			subMenu: false,
 			isBold: true,
@@ -97,18 +97,6 @@ export const drawerData = {
 		// } as DrawerData
 	],
 	pt: [
-		{
-			id: 'caresync',
-			name: 'CareSync',
-			slogan: 'Manutenção TI Preditiva + ITMS',
-			sloganSimple: '',
-			details: 'Gestão de ativos TI + Serviços <br />Potenciados por IA',
-			icon: Activity,
-			subMenu: false,
-			isBold: true,
-			url: localizeHref('/caresync')
-		} as DrawerData,
-
 		// {
 		// 	id: 'braaay',
 		// 	name: 'Braaay',
@@ -124,11 +112,24 @@ export const drawerData = {
 		// } as DrawerData,
 
 		{
+			id: 'bagity',
+			name: 'Bagity',
+			slogan: 'Headless E-commerce com Superpoderes',
+			sloganSimple: 'E-commerce com Superpoderes',
+			details: 'Headless Front-End<br />UX moderno + MCP Servers',
+			icon: ShoppingBag,
+			// underDevelopment: true,
+			subMenu: false,
+			isBold: true,
+			url: localizeHref('/bagity')
+		} as DrawerData,
+
+		{
 			id: 'finx',
 			name: 'FinXPay',
 			slogan: 'Pagamentos X-Border em Tempo Real',
 			sloganSimple: 'Pagamentos X-Border Instantâneos',
-			details: 'Transparentes & Real-Time<br />Fiat, Stablecins & Bitcoin',
+			details: 'Transparentes & Real-Time<br />Fiat, Stablecoins & Bitcoin',
 			icon: Bird,
 			logo: '/products/finx/finx-logo-2.svg',
 			subMenu: false,
@@ -138,17 +139,17 @@ export const drawerData = {
 		} as DrawerData,
 
 		{
-			id: 'bagity',
-			name: 'Bagity',
-			slogan: 'Headless E-commerce com Superpoderes',
-			sloganSimple: 'E-commerce com Superpoderes',
-			details: 'Headless Backends<br />UX moderno + MCP Servers',
-			icon: ShoppingBag,
-			underDevelopment: true,
+			id: 'caresync',
+			name: 'CareSync',
+			slogan: 'Manutenção TI Preditiva + ITMS',
+			sloganSimple: '',
+			details: 'Gestão de ativos TI + Serviços <br />Potenciados por IA',
+			icon: Activity,
 			subMenu: false,
 			isBold: true,
 			primary: true,
-			url: localizeHref('/bagity')
+			underDevelopment: true,
+			url: localizeHref('/caresync')
 		} as DrawerData,
 
 		// {
@@ -233,7 +234,7 @@ export const drawerData = {
 			name: 'Bagity',
 			slogan: 'E-commerce Headless con Superpoderes',
 			sloganSimple: 'E-commerce con Superpoderes',
-			details: 'Backends Headless<br />UX moderno + Servidores MCP',
+			details: 'Headless Front-End <br />UX moderno + Servidores MCP',
 			icon: ShoppingBag,
 			underDevelopment: true,
 			subMenu: false,

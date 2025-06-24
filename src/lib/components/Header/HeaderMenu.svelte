@@ -55,7 +55,7 @@
 	</div>
 	<a class="uppercase" href={localizeHref('/precos')}>{m.menuPrices()}</a>
 
-	<a href={localizeHref('/lab')} class="flex items-center uppercase">
+	<a href={localizeHref('/soon')} class="flex items-center uppercase">
 		<!-- <FlaskConical class="h-4" /> -->
 		{m.menuLab()}
 	</a>

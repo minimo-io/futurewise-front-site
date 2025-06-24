@@ -112,6 +112,12 @@ body {
 		bottom: -7px;
 		width: 15px;
 		height: 15px;
+		z-index: 100;
+	}
+}
+@utility fw-border-b-divider-dot-none {
+	&::after {
+		content: none;
 	}
 }
 @utility fw-border-t-divider-dot {
@@ -174,7 +180,8 @@ body {
 
 	.fw-border-b-divider-dot-center::after,
 	.fw-border-t-divider-dot-center::after {
-		right: 50%;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
 	}
 	.fw-button {
 		@apply text-base-200 bg-base-content rounded-full px-6 py-2 text-sm md:text-base;

@@ -55,7 +55,7 @@
 			>
 				<div class="flex flex-grow flex-col">
 					<div class="fw-cmp-box-content !px-7 !py-2 !pb-3 md:!pb-10">
-						{m.bagityBasicDescription()}
+						{@html m.bagityBasicDescription()}
 					</div>
 					<TransparentButton href={localizeHref('/sign-up')}>{m.startNow()}</TransparentButton>
 				</div>
@@ -77,7 +77,7 @@
 
 				<div class="flex w-full flex-grow flex-col">
 					<div class="fw-cmp-box-content !px-7 !py-2">
-						{m.bagityProDescription()}
+						{@html m.bagityProDescription()}
 					</div>
 
 					<TransparentButton href={localizeHref('/sign-up')}>{m.startNow()}</TransparentButton>

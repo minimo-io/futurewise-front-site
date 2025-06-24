@@ -174,12 +174,12 @@
 
 	"bagityPro": "Bagity <span class='bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl'>PRO+</span>",
 	"bagityProPrice": "5–10% por venda",
-	"bagityProDescription": "Modelo comissionado de 5% a 10% por venda (dependendo do faturamento), pensado <span class='text-base-content'>para quem quer um e-commerce premium</span>, sem se preocupar com tecnologia. <span class='text-base-content'>Cuidamos de tudo</span> — Design, Desenvolvimento e Hospedagem — E todas personalizações incluídas.",
+	"bagityProDescription": "Modelo comissionado por venda (dependendo do faturamento), pensado <span class='text-base-content'>para quem quer um e-commerce premium</span>, sem se preocupar com tecnologia. <span class='text-base-content'>Cuidamos de tudo</span> — Design, Desenvolvimento e Hospedagem — E todas personalizações incluídas.",
 
 	"bagityDifferentials": "Diferenciais",
 
-	"bagityFeature1Title": "Tecnologia front-end de ponta",
-	"bagityFeature1Desc": "Geração de conteúdo com IA, MCP Server para comunicação com LLMs, frontless front-end de alta performance (SvelteKit) e mais.",
+	"bagityFeature1Title": "Tecnologia do futuro",
+	"bagityFeature1Desc": "Geração de conteúdo com IA, MCP Server para comunicação com LLMs, headless front-ends de alta performance, atendimento automatizado, e mais.",
 
 	"bagityFeature2Title": "Soluções por segmento",
 	"bagityFeature2Desc": "Estudamos a concorrência para criar soluções específicas para seu segmento. Alinhamos estratégias em reuniões de onboarding.",
@@ -190,9 +190,15 @@
 	"bagityFeature4Title": "Alta indexação no Google e LLMs",
 	"bagityFeature4Desc": "Tecnologia própria e infraestrutura especializada na nuvem potencializa a indexação no Google, ChatGPT e outras IA.",
 
-	"bagityFeature5Title": "Foco em atendimento premium",
-	"bagityFeature5Desc": "Queremos construir lojas únicas, preparadas para o futuro, com foco no fator humano. Por isso acompanhamos a evolução de todos os nossos clientes por vídeo-chamadas.",
+	"bagityFeature5Title": "Um parceiro tecnológico",
+	"bagityFeature5Desc": "Queremos construir lojas únicas, preparadas para o futuro, mas com foco no fator humano. Por isso acompanhamos a evolução de todos os nossos clientes por vídeo-chamadas mensais.",
 
 	"bagityFeature6Title": "Checkout express",
-	"bagityFeature6Desc": "Nossa solução própria de pagamento (FinXPay) nos permite simplificar o checkout, alcançando altas taxas de conversão e reduzindo custos operacionais."
+	"bagityFeature6Desc": "Nossa solução própria de pagamentos — <a href='/finx' class='text-primary hover:opacity-40'>FinXPay</a> — nos permite simplificar o checkout, alcançando altas taxas de conversão e reduzindo custos operacionais.",
+
+	"bagityFeature7Title": "Front-ends Componíveis",
+	"bagityFeature7Desc": "Nossa tecnologia headless permite conectar sua loja a qualquer backend ou API — WooCommerce, Ghost e mais — resultando em interfaces rápidas e modulares.",
+
+	"bagityFeature8Title": "Atendimentos inteligentes",
+	"bagityFeature8Desc": "Integração com <a href='/autocrm' class='text-primary hover:opacity-40'>AutoCRM</a>, nosso chatbot de primeiro contato, treinado com IA para representar sua marca, respondendo dúvidas, qualificando leads e integrando-se ao seu CRM automáticamente."
 }
