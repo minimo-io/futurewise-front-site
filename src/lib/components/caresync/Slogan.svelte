@@ -1,13 +1,14 @@
-<script>
+<script lang="ts">
 	import { m } from '$paraglide/messages';
 	import { onMount } from 'svelte';
 
-	let displayText = '';
-	let currentIndex = 0;
-	let isVisible = false;
+	let displayText = $state('');
+	let currentIndex = $state(0);
+	let isVisible = $state(false);
 
-	// const fullText = 'Cuide da sua empresa, \na gente cuida da sua TI';
-	const fullText = m.careSyncSlogan();
+	let { text } = $props();
+
+	const fullText = text;
 	const typingSpeed = 50; // milliseconds per character
 
 	onMount(() => {
@@ -41,7 +42,7 @@
 		<h2 class="font-pixel text-2xl font-bold tracking-wider md:text-4xl md:leading-[45px]">
 			<span class="text-primary font-black" class:animate-pulse={isVisible}>></span>
 			<span class="typewriter-text">
-				{#each displayText.split('\n') as line, i}
+				{#each displayText.split('\n') as line, i (i)}
 					{#if i > 0}<br />{/if}
 					{line}
 				{/each}

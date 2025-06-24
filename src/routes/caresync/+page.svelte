@@ -206,7 +206,7 @@
 		</div>
 	</div>
 
-	<Slogan />
+	<Slogan text={m.careSyncSlogan()} />
 	<ServiceOrders />
 	<CtaContact />
 </main>

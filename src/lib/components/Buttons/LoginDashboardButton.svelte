@@ -4,11 +4,10 @@
 	import { page } from '$app/state';
 
 	let user = $derived(page.data.user);
-	console.log('USER', user);
 </script>
 
 <!-- Login/Dashboard Button -->
-{#if user}
+{#if $user}
 	<a
 		href={localizeHref('/dashboard')}
 		class="bg-base-200 hover:bg-base-100 flex items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:px-6 md:text-[15px]"

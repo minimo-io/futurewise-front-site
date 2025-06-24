@@ -5,7 +5,6 @@
 	import CommandPalette from '$lib/components/CommandPalette.svelte';
 	import { LoaderCircle } from '@lucide/svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import Meta from '$lib/components/Meta.svelte';
 	import { afterNavigate, goto } from '$app/navigation';
 	import { closeDrawer } from '$lib/stores/DrawerState.state.svelte';
 	import Drawer from '$lib/components/Drawer/Drawer.svelte';

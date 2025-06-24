@@ -33,7 +33,7 @@
 
 	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Manutenção Preditiva</span> e Gestão Inteligente de Ativos de TI (ITOM + ITMS)— com IA Aplicada ao Monitoramento em Tempo Real de Ativos, Compra e Aluguel de Equipamentos e <span class='text-base-content opacity-80'>Assistência Técnica sob Demanda</span>.",
 
-	"heroContentBagity": "Impulsione seu e-commerce com Bagity: personalize design, UX e funcionalidades sob medida, com IA integrada, segurança escalável e checkout rápido via FinXPay. Planos a partir de R$99/mês ou Bagity Pro sem custos iniciais e suporte dedicado.",
+	"heroContentBagity": "<span class='text-base-content opacity-80'>E-Commerce premium sob medida</span>: personalize design, UX e funcionalidades, com IA integrada, segurança escalável e <span class='text-base-content opacity-80'>checkout express</span> via <a href='/finx' class='text-primary'>FinXPay</a> (PIX, Boleto, Cartão e Bitcoin). <span class='text-base-content opacity-80'>Planos previsíveis</span> de R$49/mês ou <span class='text-base-content opacity-80'>Bagity Pro sem custos iniciais</span>.",
 
 	"learnMore": "Saiba mais",
 	"scheduleMeeting": "Agende uma demo",
@@ -118,7 +118,7 @@
 	"careSyncAutoItem2Title": "Manutenção Preventiva:",
 	"careSyncAutoItem2Desc": "Agende e configure as manutenções da sua frota.",
 	"careSyncAutoItem3Title": "Pay-Per-Use:",
-	"careSyncAutoItem3Desc": "Contrate apenas pelos serviços que precisar, por equipamento, contratados diretamente pela plataforma, como o Seguro de Continuidade, Monitoramento preditivo, e todos os serviços da CareSync by Futurewise.",
+	"careSyncAutoItem3Desc": "Contrate apenas pelos serviços que precisar, por equipamento, contratados diretamente pela plataforma, como o Seguro de Continuidade, Monitoramento preditivo, e todos os serviços da CareSync.",
 	"careSyncAutoItem4Title": "Tagging:",
 	"careSyncAutoItem4Desc": "Gerar e imprimir QR-codes ou barcodes diretamente da plataforma. Use-os para identificar cada equipamento fisicamente e compartilhar seu histórico de serviços.",
 	"careSyncAutoItem5Title": "Monitoramento Preditivo sob Demanda:",

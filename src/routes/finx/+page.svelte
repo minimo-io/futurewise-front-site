@@ -7,7 +7,7 @@
 	import Developers from '$lib/components/Home/Developers.svelte';
 	import Faq from '$lib/components/finx/Faq.svelte';
 	import Meta from '$lib/components/Meta.svelte';
-	import Hr from '$lib/components/Hr.svelte';
+	// import Hr from '$lib/components/Hr.svelte';
 </script>
 
 <Meta title={m.metaFinxTitle()} description={m.metaFinxDescription()} />
@@ -58,7 +58,7 @@
 		</div>
 		<div class="fw-cmp-box border-r-0">
 			<div class="fw-cmp-box-title">
-				<a href={localizeHref('/baity')} class="text-primary hover:opacity-50">E-Commerce</a>
+				<a href={localizeHref('/bagity')} class="text-primary hover:opacity-50">E-Commerce</a>
 			</div>
 			<div class="fw-cmp-box-content">
 				<p>
