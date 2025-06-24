@@ -1,6 +1,6 @@
 <script lang="ts">
 	interface Props {
-		color: 'light' | 'primary' | 'dark';
+		color: 'light' | 'primary' | 'dark' | 'primary-transparent';
 		text: string;
 		customCss?: string;
 	}
@@ -12,6 +12,7 @@
 		'fw-pill tracking-widest',
 		color == 'light' && 'fw-pill-light',
 		color == 'primary' && 'fw-pill-primary',
+		color == 'primary-transparent' && 'fw-pill-primary-transparent',
 		customCss
 	]}
 >

@@ -161,6 +161,9 @@ body {
 	.fw-pill-primary {
 		@apply bg-primary text-white;
 	}
+	.fw-pill-primary-transparent {
+		@apply bg-primary/10 hover:bg-primary hover:text-base-200 border-primary/30 text-primary border pb-[1px];
+	}
 
 	.fw-border-b-divider {
 		border-bottom: 0.5px solid var(--color-base-300);
@@ -219,7 +222,7 @@ body {
 		@apply bg-[url('/bgs/header-caresync.png')];
 	}
 	.fw-bg-bagity {
-		@apply bg-[url('/bgs/header-underconstruction.jpeg')] opacity-20;
+		@apply bg-[url('/bgs/header-underconstruction.jpeg')] opacity-30;
 		/* @apply bg-[url('/bgs/Rectangle13.png')] bg-cover opacity-30; */
 	}
 	.fw-bg-construction {
@@ -263,7 +266,7 @@ body {
 	footer {
 		@apply font-pixel;
 	}
-	footer a {
+	footer li > a {
 		@apply hover:!text-black;
 	}
 

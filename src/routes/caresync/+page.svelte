@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TransparentButton from '$lib/components/Buttons/TransparentButton.svelte';
 	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
 	import Slogan from '$lib/components/caresync/Slogan.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
@@ -130,12 +131,8 @@
 							/>
 						</button>
 					{/if}
-					<a
-						href={localizeHref('/sign-up')}
-						class="bg-primary text-base-200 mt-3 mb-2 flex w-[90%] items-center justify-center gap-2 self-center rounded-2xl border px-5 py-2 transition-all duration-300 hover:opacity-50 md:mt-auto md:mb-0"
-					>
-						{m.startNow()}
-					</a>
+
+					<TransparentButton href={localizeHref('/sign-up')}>{m.startNow()}</TransparentButton>
 				</div>
 			</div>
 
@@ -195,12 +192,7 @@
 							/>
 						</button>
 					{/if}
-					<a
-						href={localizeHref('/sign-up')}
-						class="bg-primary text-base-200 mt-4 flex w-[90%] items-center justify-center gap-2 self-center rounded-2xl border px-5 py-2 transition-all duration-300 hover:opacity-50 md:mt-auto"
-					>
-						{m.startNow()}
-					</a>
+					<TransparentButton href={localizeHref('/sign-up')}>{m.startNow()}</TransparentButton>
 				</div>
 			</div>
 		</div>

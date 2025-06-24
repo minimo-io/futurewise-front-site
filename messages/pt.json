@@ -33,7 +33,7 @@
 
 	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Manutenção Preditiva</span> e Gestão Inteligente de Ativos de TI (ITOM + ITMS)— com IA Aplicada ao Monitoramento em Tempo Real de Ativos, Compra e Aluguel de Equipamentos e <span class='text-base-content opacity-80'>Assistência Técnica sob Demanda</span>.",
 
-	"heroContentBagity": "<span class='text-base-content opacity-80'>E-Commerce premium sob medida</span>: personalize design, UX e funcionalidades, com IA integrada, segurança escalável e <span class='text-base-content opacity-80'>checkout express</span> via <a href='/finx' class='text-primary'>FinXPay</a> (PIX, Boleto, Cartão e Bitcoin). <span class='text-base-content opacity-80'>Planos previsíveis</span> de R$49/mês ou <span class='text-base-content opacity-80'>Bagity Pro sem custos iniciais</span>.",
+	"heroContentBagity": "<span class='text-base-content opacity-80'>E-Commerce premium sob medida</span>: Customizamos sem límites: Design, UX e Funcionalidades, com IA integrada, segurança escalável e <span class='text-base-content opacity-80'>checkout express</span> via <a href='/finx' class='text-primary font-medium'>FinXPay</a> (PIX, Boleto, Cartão e Bitcoin). <span class='text-base-content opacity-80'>Planos previsíveis</span> de R$49/mês ou <span class='text-base-content opacity-80'>Bagity Pro sem custos iniciais</span>.",
 
 	"learnMore": "Saiba mais",
 	"scheduleMeeting": "Agende uma demo",
@@ -87,7 +87,8 @@
 	"metaCareSyncTitle": "CareSync",
 	"metaCareSyncDescription": "Plataforma de Manutenção Preditiva e Gestão Inteligente de Ativos de TI — com IA, Automações, Monitoramento em Tempo Real, Compra e Aluguel de Equipamentos e Assistência Técnica sob Demanda.",
 
-	"careSyncSlogan": "Cuide da sua empresa, \na gente cuida da sua TI",
+	"careSyncSlogan": "Você cuide da sua empresa, \na gente cuida da sua TI",
+	"bagitySlogan": "Você cuide da seu faturamento, \na gente cuida de seu E-Commerce",
 
 	"loginYourEmail": "Seu email...",
 	"loginYourPassword": "Sua senha...",
@@ -165,5 +166,33 @@
 
 	"payPerUseFeatureTransparentDashboard": "Taxas transparentes <br />Controladas pelo Dashboard",
 	"payPerUseFeatureRemoteEmergency": "Resolução de emergências remota para evitar interrupção do serviço",
-	"payPerUseFeatureCostControl": "Controle de custos e tendências históricas"
+	"payPerUseFeatureCostControl": "Controle de custos e tendências históricas",
+
+	"bagityBasic": "Bagity básico",
+	"bagityBasicPrice": "R$49/mês fixo",
+	"bagityBasicDescription": "Plano que dá acesso completo à plataforma, com <span class='text-base-content'>loja pronta para vender</span>, integração de pagamentos via FinXPay + Todas as funcionalidades essenciais. A personalização é opcional, contratada por tarefa, ideal <span class='text-base-content'>para quem quer controle de custos e autonomia</span>.",
+
+	"bagityPro": "Bagity <span class='bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl'>PRO+</span>",
+	"bagityProPrice": "5–10% por venda",
+	"bagityProDescription": "Modelo comissionado de 5% a 10% por venda (dependendo do faturamento), pensado <span class='text-base-content'>para quem quer um e-commerce premium</span>, sem se preocupar com tecnologia. <span class='text-base-content'>Cuidamos de tudo</span> — Design, Desenvolvimento e Hospedagem — E todas personalizações incluídas.",
+
+	"bagityDifferentials": "Diferenciais",
+
+	"bagityFeature1Title": "Tecnologia front-end de ponta",
+	"bagityFeature1Desc": "Geração de conteúdo com IA, MCP Server para comunicação com LLMs, frontless front-end de alta performance (SvelteKit) e mais.",
+
+	"bagityFeature2Title": "Soluções por segmento",
+	"bagityFeature2Desc": "Estudamos a concorrência para criar soluções específicas para seu segmento. Alinhamos estratégias em reuniões de onboarding.",
+
+	"bagityFeature3Title": "Integrações sob medida",
+	"bagityFeature3Desc": "Integrações de qualidade via API e Webhooks com os principais ERPs e desenvolvimentos sob medida no Plano PRO.",
+
+	"bagityFeature4Title": "Alta indexação no Google e LLMs",
+	"bagityFeature4Desc": "Tecnologia própria e infraestrutura especializada na nuvem potencializa a indexação no Google, ChatGPT e outras IA.",
+
+	"bagityFeature5Title": "Foco em atendimento premium",
+	"bagityFeature5Desc": "Queremos construir lojas únicas, preparadas para o futuro, com foco no fator humano. Por isso acompanhamos a evolução de todos os nossos clientes por vídeo-chamadas.",
+
+	"bagityFeature6Title": "Checkout express",
+	"bagityFeature6Desc": "Nossa solução própria de pagamento (FinXPay) nos permite simplificar o checkout, alcançando altas taxas de conversão e reduzindo custos operacionais."
 }

@@ -7,6 +7,8 @@
 	import Developers from '$lib/components/Home/Developers.svelte';
 	import Faq from '$lib/components/finx/Faq.svelte';
 	import Meta from '$lib/components/Meta.svelte';
+	import TransparentButton from '$lib/components/Buttons/TransparentButton.svelte';
+	import StandardButton from '$lib/components/Buttons/StandardButton.svelte';
 	// import Hr from '$lib/components/Hr.svelte';
 </script>
 
@@ -31,12 +33,9 @@
 					> e precisa de conciliação ágil e eficiente, com altas taxas de conversão e integração entre
 					sistemas. Tudo isso 24/7, simples e 100% compliant!
 				</p>
-				<a href={localizeHref('/sign-up')} class="fw-cmp-box-button">
-					<span
-						class=" text-center !font-sans !text-base font-bold tracking-wider uppercase md:!text-base"
-						>{m.startNow()}</span
-					>
-				</a>
+				<TransparentButton class="!mt-6" href={localizeHref('/sign-up')}>
+					{m.startNow()}
+				</TransparentButton>
 			</div>
 		</div>
 		<div class="fw-cmp-box fw-border-t-divider-dot md:fw-cmp-box-with-dot">
@@ -48,30 +47,23 @@
 					> são chaves. Nossa API é de simples integração, permitindo que seu time foque no crescimento
 					do seu negócio.
 				</p>
-				<a href={localizeHref('/sign-up')} class="fw-cmp-box-button">
-					<span
-						class=" text-center !font-sans !text-base font-bold tracking-wider uppercase md:!text-base"
-						>{m.startNow()}</span
-					>
-				</a>
+				<StandardButton class="!mt-6" href={localizeHref('/sign-up')}>
+					{m.startNow()}
+				</StandardButton>
 			</div>
 		</div>
 		<div class="fw-cmp-box border-r-0">
-			<div class="fw-cmp-box-title">
-				<a href={localizeHref('/bagity')} class="text-primary hover:opacity-50">E-Commerce</a>
-			</div>
+			<div class="fw-cmp-box-title">E-Commerce</div>
 			<div class="fw-cmp-box-content">
 				<p>
 					Aumente sua taxa de conversão, simplifique sua conciliação, tenha split de pagamentos,
 					<span class="text-base-content">checkout transparente</span>, link de pagamentos, Pix
 					recorrente e estorno parcial ou total de transações.
 				</p>
-				<a href={localizeHref('/sign-up')} class="fw-cmp-box-button">
-					<span
-						class=" text-center !font-sans !text-base font-bold tracking-wider uppercase md:!text-base"
-						>{m.startNow()}</span
-					>
-				</a>
+
+				<TransparentButton class="!mt-6" href={localizeHref('/sign-up')}>
+					{m.startNow()}
+				</TransparentButton>
 			</div>
 		</div>
 		<!-- Decorations -->

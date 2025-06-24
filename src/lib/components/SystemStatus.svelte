@@ -8,10 +8,12 @@
 	href={AppConfig.status}
 	target="_blank"
 	rel="nofollow noreferrer"
-	class="text-primary mt-2 flex items-center text-sm text-[15px] leading-5"
+	class="text-primary group mt-2 flex items-center text-sm text-[15px] leading-5"
 >
 	<div>
-		<Circle class="h-3" fill="#ff4016" />
+		<Circle class="group-hover:text-base-100 h-3 fill-current" />
 	</div>
-	<div class="font-sans">{m.allSystemsWorking()}</div>
+	<div class="group-hover:text-base-100 font-sans">{m.allSystemsWorking()}</div>
 </a>
+
+<!-- fill="#ff4016" -->

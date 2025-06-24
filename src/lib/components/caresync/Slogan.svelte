@@ -60,7 +60,7 @@
 	.cursor {
 		animation: blink 1s infinite;
 		color: #ff4016;
-		font-weight: 900;
+		/* font-weight: 900; */
 	}
 
 	@keyframes blink {

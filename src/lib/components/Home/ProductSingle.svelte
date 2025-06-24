@@ -88,7 +88,7 @@
 			</div>
 			{#if brand.underDevelopment}
 				<div class="absolute top-3 -right-0 scale-80 md:-top-8 md:-right-10">
-					<Pill color="primary" text={m.prototyping()} customCss="!px-3" />
+					<Pill color="primary-transparent" text={m.prototyping()} customCss="!px-3" />
 				</div>
 			{/if}
 		</div>

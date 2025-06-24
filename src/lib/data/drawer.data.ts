@@ -55,6 +55,7 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			underDevelopment: true,
+			primary: true,
 			url: localizeHref('/bagity')
 		} as DrawerData,
 
@@ -146,6 +147,7 @@ export const drawerData = {
 			underDevelopment: true,
 			subMenu: false,
 			isBold: true,
+			primary: true,
 			url: localizeHref('/bagity')
 		} as DrawerData,
 
@@ -236,6 +238,7 @@ export const drawerData = {
 			underDevelopment: true,
 			subMenu: false,
 			isBold: true,
+			primary: true,
 			url: localizeHref('/bagity')
 		} as DrawerData,
 

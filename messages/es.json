@@ -168,5 +168,33 @@
 
 	"payPerUseFeatureTransparentDashboard": "Tarifas transparentes <br />Controladas desde el Dashboard",
 	"payPerUseFeatureRemoteEmergency": "Resolución remota de emergencias para evitar interrupción del servicio",
-	"payPerUseFeatureCostControl": "Control de costos y tendencias históricas"
+	"payPerUseFeatureCostControl": "Control de costos y tendencias históricas",
+
+	"bagityBasic": "Bagity básico",
+	"bagityBasicPrice": "R$49/mes fijo",
+	"bagityBasicDescription": "Plan que ofrece acceso completo a la plataforma, con <span class='text-base-content'>tienda lista para vender</span>, integración de pagos vía FinXPay + todas las funcionalidades esenciales. La personalización es opcional, contratada por tarea, ideal <span class='text-base-content'>para quienes buscan control de costos y autonomía</span>.",
+
+	"bagityPro": "Bagity <span class='bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl'>PRO+</span>",
+	"bagityProPrice": "5–10% por venta",
+	"bagityProDescription": "Modelo comisionado del 5% al 10% por venta (dependiendo de la facturación), pensado <span class='text-base-content'>para quienes buscan un e-commerce premium</span>, sin preocuparse por la tecnología. <span class='text-base-content'>Nos encargamos de todo</span> — Diseño, Desarrollo y Hosting — y todas las personalizaciones incluidas.",
+
+	"bagityDifferentials": "Diferenciales",
+
+	"bagityFeature1Title": "Tecnología front-end de vanguardia",
+	"bagityFeature1Desc": "Generación de contenido con IA, MCP Server para comunicación con LLMs, frontless front-end de alto rendimiento (SvelteKit) y más.",
+
+	"bagityFeature2Title": "Soluciones por segmento",
+	"bagityFeature2Desc": "Estudiamos la competencia para crear soluciones específicas para tu segmento. Alineamos estrategias en reuniones de onboarding.",
+
+	"bagityFeature3Title": "Integraciones a medida",
+	"bagityFeature3Desc": "Integraciones de calidad vía API y Webhooks con los principales ERPs y desarrollos a medida en el Plan PRO.",
+
+	"bagityFeature4Title": "Alta indexación en Google y LLMs",
+	"bagityFeature4Desc": "Tecnología propia e infraestructura especializada en la nube potencia la indexación en Google, ChatGPT y otras IA.",
+
+	"bagityFeature5Title": "Enfoque en atención premium",
+	"bagityFeature5Desc": "Buscamos construir tiendas únicas, preparadas para el futuro, con énfasis en el factor humano. Por eso acompañamos la evolución de todos nuestros clientes mediante videollamadas.",
+
+	"bagityFeature6Title": "Checkout express",
+	"bagityFeature6Desc": "Nuestra solución de pago propia (FinXPay) nos permite simplificar el checkout, alcanzando altas tasas de conversión y reduciendo costes operativos."
 }
