@@ -22,7 +22,7 @@
 		</div>
 
 		<div
-			class="relative -top-5 mx-auto mt-10 mb-1 flex flex-col items-center justify-center gap-0 md:top-0 md:-left-2 md:flex-row"
+			class="relative -top-5 mx-auto mt-10 mb-1 flex flex-col items-center justify-center gap-0 md:top-0 md:-left-4 md:flex-row"
 		>
 			{#each drawerDataForLang as product, i (product.name)}
 				{@const align = i === 0 ? 'start' : i === drawerDataForLang.length - 1 ? 'end' : 'center'}

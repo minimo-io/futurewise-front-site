@@ -8,6 +8,7 @@
 	import Faq from '$lib/components/finx/Faq.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import TransparentButton from '$lib/components/Buttons/TransparentButton.svelte';
+	import Hr from '$lib/components/Hr.svelte';
 	// import StandardButton from '$lib/components/Buttons/StandardButton.svelte';
 	// import Hr from '$lib/components/Hr.svelte';
 </script>
@@ -22,8 +23,8 @@
 	heroContent={m.heroContentFinX()}
 />
 
-<main class="max-w-fw mx-auto">
-	<div class="relative mx-auto flex flex-col gap-0 md:flex-row">
+<main class="max-w-fw border-x-base-200 mx-auto md:border-x">
+	<div class=" relative mx-auto flex flex-col gap-0 md:flex-row">
 		<div class="fw-cmp-box">
 			<div class="fw-cmp-box-title">Enterprise</div>
 			<div class="fw-cmp-box-content">
@@ -79,7 +80,8 @@
 
 	<Promo />
 </main>
-<div class="mx-(--fw-app-margin) mt-18">
+<div class="relative mx-(--fw-app-margin) mt-18 mb-20 md:mb-0">
+	<Hr bottom={true} />
 	<Developers />
 </div>
 

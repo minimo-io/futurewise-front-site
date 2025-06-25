@@ -11,8 +11,8 @@
 	}
 </script>
 
-<div class="max-w-fw relative -top-10 mx-(--fw-app-margin) mb-10 md:mx-auto md:mt-36">
-	<div class="relative -left-2 scale-75 md:scale-100">
+<div class="max-w-fw relative -top-10 mx-(--fw-app-margin) mb-10 md:mx-auto md:mt-28">
+	<div class="relative">
 		<TitleSection titleLeft="Perguntas" titleRight="Frequentes" forceFlexRow={true} />
 	</div>
 
