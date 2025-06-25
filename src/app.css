@@ -198,7 +198,7 @@ body {
 		@apply text-base-content border-base-content border bg-transparent;
 	}
 	.fw-home-about {
-		@apply font-pixel text-secondary text-[20px] md:text-[22px];
+		@apply font-pixel text-secondary text-[18px] md:text-[22px];
 	}
 	.fw-home-about a {
 		@apply text-base-content font-pixel no-underline;

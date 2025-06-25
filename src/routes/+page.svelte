@@ -10,6 +10,7 @@
 	import { m } from '$paraglide/messages';
 	import CtaContact from '$lib/components/CtaContact.svelte';
 	import Meta from '$lib/components/Meta.svelte';
+	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
 </script>
 
 <Meta title={m.metaHomeTitle()} description={m.metaHomeDescription()} />
@@ -22,12 +23,17 @@
 	<Developers />
 </main>
 
+<div class="border-base-200 mx-(--fw-app-margin) mb-12 border-b md:mx-0">
+	<ServiceOrders />
+</div>
+
 <!-- Lab Section Title -->
 <TitleFullWidth
 	breadcrumb={m.aboutUs()}
 	titleLeft={m.aboutUsTitleLeft()}
 	titleRight={m.aboutUsTitleRight()}
 />
+
 <div class="2xl:px-[10%]">
 	<!-- Quote Section -->
 	<Quote />

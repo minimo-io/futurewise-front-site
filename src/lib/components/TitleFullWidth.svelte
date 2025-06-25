@@ -11,22 +11,10 @@
 	let { breadcrumb, titleLeft, titleRight }: Props = $props();
 </script>
 
-<!-- <section
-	class="relative -top-5 flex min-h-[230px] flex-col items-center justify-center px-6 pb-5 md:top-0 md:mt-10 md:px-12 lg:px-16"
-	style="background-image:url('/bgs/lab.png')"
-> -->
 <section
-	class="relative -top-5 flex scale-70 flex-col items-center justify-center px-6 md:-top-0 md:mt-26 md:scale-90 md:px-12 lg:px-16"
+	id="know-more"
+	class="relative -top-5 flex scale-65 flex-col items-center justify-center px-6 md:-top-0 md:mt-26 md:scale-90 md:px-12 lg:px-16"
 >
-	<!-- <Hr bottom={false} /> -->
-	<!-- <Dot /> -->
-	<!-- Background -->
-	<!-- <div class="bg-primary glass absolute top-0 right-0 h-full w-full opacity-10"></div> -->
-	<!-- Title -->
-	<!-- <div class="relative -top-[18px] z-10 text-center md:-top-[50px]">
-		<PillFlower title={breadcrumb} />
-	</div> -->
-	<!-- Content -->
 	<div class="relative z-10 md:min-w-[500px]">
 		<div class=" mx-auto w-full bg-black px-1 text-center">
 			<h2 class=" text-6xl font-bold tracking-wider">

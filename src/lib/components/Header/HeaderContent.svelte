@@ -22,17 +22,16 @@
 </script>
 
 <!-- Hero Section -->
-<div class="relative mt-15 mb-10 max-w-4xl md:my-20">
+<div class="relative mt-8 mb-10 max-w-4xl md:my-20">
 	<!-- Section title -->
 	<TitleSection {titleLeft} {titleRight} />
 
 	<p
-		class="text-secondary font-regular my-6 font-sans text-[20px] leading-[130%] font-normal tracking-wide md:text-[25px] md:leading-[118%]"
+		class="text-secondary font-regular my-4 font-sans text-[18px] leading-[120%] font-normal tracking-wide md:my-6 md:text-[25px] md:leading-[118%]"
 	>
 		{@html heroContent}
-
-		<!-- a platform of digital products and a development lab focused on innovation in LATAM -->
 	</p>
+
 	{#if buttons}
 		<div class="mt-7 flex flex-wrap gap-2 md:mt-8 md:gap-3">
 			<a href={url} use:conditionalSmoothScroll class="fw-button fw-button-lg">

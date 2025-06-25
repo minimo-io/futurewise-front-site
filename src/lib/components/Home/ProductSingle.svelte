@@ -25,11 +25,11 @@
 <a
 	href={brand.url}
 	class={[
-		'relative scale-90 rounded-sm opacity-90 hover:opacity-100 md:scale-90',
+		'relative scale-95 rounded-sm opacity-90 hover:opacity-100 md:scale-90',
 		minWidth ? minWidth : 'min-w-full md:min-w-[250px]'
 	]}
 >
-	<div class="mb-4 flex flex-col">
+	<div class="my-2 mb-4 flex flex-col">
 		<div
 			class={[
 				'Xborder-t flex items-center md:border-none md:pt-0 ',
@@ -45,11 +45,6 @@
 
 			<div class="flex flex-col">
 				<div class="flex items-center justify-center">
-					<!-- {#if brand.logo} -->
-					<!-- <div class="flex h-[60px] items-center">
-							<img src={brand.logo} alt={`${brand.name} logo`} class="¡ w-[145px] min-w-[150px]" />
-						</div> -->
-					<!-- {:else} -->
 					<div class={[!brand.logo && 'mr-2']}>
 						{#if brand.logo}
 							<img
@@ -62,14 +57,17 @@
 							<Icon strokeWidth="3" class="text-base-content mr-1" />
 						{/if}
 					</div>
-					<span class="font-pixel text-base-content text-4xl font-bold tracking-wider opacity-90">
+					<span
+						class="font-pixel text-base-content text-3xl font-bold tracking-wider opacity-90 md:text-4xl"
+					>
 						{brand.name}
 					</span>
-					<!-- {/if} -->
 				</div>
+
+				<!-- Details -->
 				<div
 					class={[
-						'flex flex-col items-center justify-self-center',
+						'flex scale-90 flex-col items-center justify-self-center md:scale-100',
 						align == 'start' && 'justify-start',
 						align == 'end' && 'justify-end',
 						align != 'start' && align != 'end' && 'justify-center'
@@ -86,8 +84,9 @@
 					</div>
 				</div>
 			</div>
+			<!-- Prorotiping -->
 			{#if brand.underDevelopment}
-				<div class="absolute top-3 -right-0 scale-80 md:-top-8 md:-right-10">
+				<div class="absolute top-3 -right-0 scale-80 md:-top-6 md:-right-10">
 					<Pill color="primary-transparent" text={m.prototyping()} customCss="!px-3" />
 				</div>
 			{/if}

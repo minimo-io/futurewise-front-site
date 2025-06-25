@@ -9,7 +9,7 @@
 		<PillFlower title="Dashboards" />
 	</div>
 	<div class="relative mt-5">
-		<div class="absolute bottom-0 left-0" id="know-more">&nbsp;</div>
+		<div class="absolute bottom-0 left-0">&nbsp;</div>
 		<a href={localizeHref('/login')} class="dashboard-link">
 			<img
 				src="/pulse-dashboard-2.png"

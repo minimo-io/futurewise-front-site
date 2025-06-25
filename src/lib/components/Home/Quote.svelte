@@ -7,14 +7,14 @@
 	<Hr />
 
 	<section class="mx-auto max-w-full px-6 md:max-w-[65%] md:px-12 lg:px-16">
-		<blockquote class="mt-14 mb-8 md:mt-10 md:mb-5">
+		<blockquote class="mt-10 mb-8 md:mt-10 md:mb-5">
 			<div class="relative mb-2">
 				<!-- Quote start -->
 				<span class="absolute -top-7 -left-3 md:-top-1 md:-left-12">
 					<img src="/quote-start.svg" alt="Quote start" />
 				</span>
 				<!-- Content -->
-				<p class="font-sans text-[20px] font-light tracking-wide text-white md:text-[22px]">
+				<p class="font-sans text-[18px] font-light tracking-wide text-white md:text-[22px]">
 					{@html m.quote()}
 				</p>
 				<!-- Quote end

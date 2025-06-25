@@ -110,7 +110,7 @@ const profile = await futurewise.getProfileAndToken({
 		</div>
 	</div>
 
-	<DashboardImages />
+	<!-- <DashboardImages /> -->
 
 	<div class="absolute -top-[10%] -left-[12%] scale-75 opacity-30 md:-top-[15%]">
 		<img src="/bgs/cross.svg" alt="cross" />

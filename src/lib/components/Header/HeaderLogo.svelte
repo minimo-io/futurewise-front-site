@@ -8,7 +8,7 @@
 			<img
 				src="/logos/futurewise-logo-header.svg"
 				alt="futurewise-logo"
-				class="h-[50px] md:h-[55px]"
+				class="h-[47px] md:h-[55px]"
 			/>
 		</div>
 	</a>

@@ -41,7 +41,7 @@
 			<h2 class="font-sans text-2xl font-bold uppercase md:text-3xl">
 				{m.payPerUseTitle()}
 			</h2>
-			<p class="text-secondary mx-auto mt-3 w-full font-sans text-xl md:w-[70%]">
+			<p class="text-secondary mx-auto mt-3 w-full font-sans text-lg md:w-[70%] md:text-xl">
 				{@html m.payPerUseDescription()}
 			</p>
 		</div>

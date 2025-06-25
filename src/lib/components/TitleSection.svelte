@@ -35,24 +35,27 @@
 	<div>
 		<h1
 			class={[
-				'flex gap-0 text-3xl font-extralight tracking-wide md:flex-row md:gap-3 md:text-4xl',
+				'flex gap-0 text-[28px] font-extralight tracking-wide md:flex-row md:gap-3 md:text-4xl',
 				forceFlexRow ? 'gap-3 ' : 'flex-col'
 			]}
 		>
 			<span>{titleLeft}</span>
 
 			<div
-				class={['text-primary-content relative z-10 inline-block', forceFlexRow ? '-top-1' : '']}
+				class={[
+					'text-primary-content relative z-10 inline-block',
+					forceFlexRow ? '-top-1' : '-top-2 md:-top-1'
+				]}
 			>
 				<span
-					class="font-pixel text-primary-content relative z-10 ml-2 bg-bottom text-[35px] tracking-widest md:text-[40px]"
+					class="font-pixel text-primary-content relative z-10 ml-2 bg-bottom text-[28px] tracking-widest md:text-[40px]"
 				>
 					{titleRight}
 				</span>
 				<!-- Text Right Colored Background with Animation -->
 				<span
-					class="bg-primary absolute -top-[2px] -left-[2px] z-0 h-[90%] translate-y-1"
-					style="width: {backgroundWidth.current}%;"
+					class="bg-primary absolute top-[0px] -left-[1px] z-0 h-[80%] translate-y-1 md:-top-[2px] md:h-[90%]"
+					style="width: {backgroundWidth.current + 2}%;"
 				></span>
 			</div>
 		</h1>
