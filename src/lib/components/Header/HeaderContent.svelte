@@ -27,7 +27,7 @@
 	<TitleSection {titleLeft} {titleRight} />
 
 	<p
-		class="text-secondary font-regular my-4 font-sans text-[18px] leading-[120%] font-normal tracking-wide md:my-6 md:text-[25px] md:leading-[118%]"
+		class="text-secondary font-regular my-4 font-sans text-[20px] leading-[120%] font-normal tracking-wide md:my-6 md:text-[25px] md:leading-[118%]"
 	>
 		{@html heroContent}
 	</p>

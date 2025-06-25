@@ -110,6 +110,19 @@ export const drawerData = {
 		// 	logo: '/clients/braaay-logo.png',
 		// 	url: 'https://braaay.com/'
 		// } as DrawerData,
+		{
+			id: 'caresync',
+			name: 'CareSync',
+			slogan: 'Manutenção TI Preditiva + ITMS',
+			sloganSimple: '',
+			details: 'Gestão de ativos TI + Serviços <br />Potenciados por IA',
+			icon: Activity,
+			subMenu: false,
+			isBold: true,
+			primary: false,
+			underDevelopment: true,
+			url: localizeHref('/caresync')
+		} as DrawerData,
 
 		{
 			id: 'bagity',
@@ -136,20 +149,6 @@ export const drawerData = {
 			isBold: true,
 			primary: true,
 			url: localizeHref('/finx')
-		} as DrawerData,
-
-		{
-			id: 'caresync',
-			name: 'CareSync',
-			slogan: 'Manutenção TI Preditiva + ITMS',
-			sloganSimple: '',
-			details: 'Gestão de ativos TI + Serviços <br />Potenciados por IA',
-			icon: Activity,
-			subMenu: false,
-			isBold: true,
-			primary: true,
-			underDevelopment: true,
-			url: localizeHref('/caresync')
 		} as DrawerData,
 
 		// {

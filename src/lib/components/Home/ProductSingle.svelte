@@ -32,8 +32,8 @@
 	<div class="my-2 mb-4 flex flex-col">
 		<div
 			class={[
-				'Xborder-t flex items-center md:border-none md:pt-0 ',
-				count == 0 ? 'fw-border-t-none pt-2' : 'fw-border-tX pt-8',
+				'flex items-center md:border-none md:pt-0 ',
+				count == 0 ? 'fw-border-t-none pt-2' : 'pt-5',
 				align == 'start' && 'justify-center md:justify-start',
 				align == 'end' && 'justify-center md:justify-end',
 				align != 'start' && align != 'end' && 'justify-center'
@@ -58,7 +58,7 @@
 						{/if}
 					</div>
 					<span
-						class="font-pixel text-base-content text-3xl font-bold tracking-wider opacity-90 md:text-4xl"
+						class="font-pixel text-base-content text-[35px] font-bold tracking-wider opacity-90 md:text-4xl"
 					>
 						{brand.name}
 					</span>
@@ -67,7 +67,7 @@
 				<!-- Details -->
 				<div
 					class={[
-						'flex scale-90 flex-col items-center justify-self-center md:scale-100',
+						'flex scale-100 flex-col items-center justify-self-center md:scale-100',
 						align == 'start' && 'justify-start',
 						align == 'end' && 'justify-end',
 						align != 'start' && align != 'end' && 'justify-center'
@@ -86,7 +86,7 @@
 			</div>
 			<!-- Prorotiping -->
 			{#if brand.underDevelopment}
-				<div class="absolute top-3 -right-0 scale-80 md:-top-6 md:-right-10">
+				<div class="absolute top-1 -right-0 scale-80 md:-top-5 md:-right-10">
 					<Pill color="primary-transparent" text={m.prototyping()} customCss="!px-3" />
 				</div>
 			{/if}

@@ -35,20 +35,21 @@
 	<div>
 		<h1
 			class={[
-				'flex gap-0 text-[28px] font-extralight tracking-wide md:flex-row md:gap-3 md:text-4xl',
+				'flex gap-0 text-[30px] font-extralight tracking-wide md:flex-row md:gap-3 md:text-4xl',
 				forceFlexRow ? 'gap-3 ' : 'flex-col'
 			]}
 		>
 			<span>{titleLeft}</span>
 
+			<!-- Right -->
 			<div
 				class={[
 					'text-primary-content relative z-10 inline-block',
-					forceFlexRow ? '-top-1' : '-top-2 md:-top-1'
+					forceFlexRow ? '-top-1' : '-top-2 left-5 md:-top-1 md:left-0'
 				]}
 			>
 				<span
-					class="font-pixel text-primary-content relative z-10 ml-2 bg-bottom text-[28px] tracking-widest md:text-[40px]"
+					class="font-pixel text-primary-content relative z-10 ml-2 bg-bottom text-[30px] tracking-widest md:text-[40px]"
 				>
 					{titleRight}
 				</span>
