@@ -81,7 +81,8 @@ body {
 
 	/* Status colors (lighter variants) */
 	--color-info: #3abff8;
-	--color-success: #36d399;
+	/* --color-success: #36d399; */
+	--color-success: #03a86b;
 	--color-warning: #fbbd23;
 	--color-error: #f87272;
 

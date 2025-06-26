@@ -1,6 +1,8 @@
 <script>
 	import { Home, Target, Zap } from '@lucide/svelte';
 	import HeaderLogo from '../Header/HeaderLogo.svelte';
+	import { toggleLoader } from '$stores/Loader.state.svelte';
+	import { enhance } from '$app/forms';
 </script>
 
 <div class="border-base-200 w-60 border-r">
@@ -30,6 +32,22 @@
 				<Zap class="aspect-1 h-4" />
 				Ações Urgentes
 			</a>
+		</li>
+		<li>
+			<form
+				method="POST"
+				use:enhance={() => {
+					// isSubmitting = true;
+					toggleLoader();
+					return async ({ update }) => {
+						toggleLoader();
+						// isSubmitting = false;
+						update();
+					};
+				}}
+			>
+				<button type="submit">Logout</button>
+			</form>
 		</li>
 	</ul>
 </div>
