@@ -111,7 +111,7 @@
 	"allSystemsWorking": "Todos los sistemas funcionando",
 
 	"careSyncAuto": "Autogestión",
-	"careSyncManaged": "Gestionado",
+	"careSyncManaged": "Gestionado (MSP)",
 	"careSyncIdealFor": "IDEAL PARA",
 	"careSyncAutoDesc": "Para empresas que desean control directo sobre sus activos de TI y una plataforma para optimizar sus operaciones (Pay-Per-Use).",
 	"careSyncManagedDesc": "Para empresas que quieren centrarse en su negocio, dejando toda la gestión y mantenimiento de TI en manos de especialistas.",
@@ -204,5 +204,7 @@
 	"bagityFeature7Desc": "Nuestra tecnología headless permite conectar tu tienda a cualquier backend o API — WooCommerce, Ghost y más — resultando en interfaces rápidas y modulares.",
 
 	"bagityFeature8Title": "Atendimientos inteligentes",
-	"bagityFeature8Desc": "Integración con <a href='/es/autocrm' class='text-primary hover:opacity-40'>AutoCRM</a>, nuestro chatbot de primer contacto, entrenado con IA para representar su marca, responder dudas, cualificar leads e integrarse automáticamente a su CRM."
+	"bagityFeature8Desc": "Integración con <a href='/es/autocrm' class='text-primary hover:opacity-40'>AutoCRM</a>, nuestro chatbot de primer contacto, entrenado con IA para representar su marca, responder dudas, cualificar leads e integrarse automáticamente a su CRM.",
+
+	"product": "Producto"
 }

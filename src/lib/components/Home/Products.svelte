@@ -1,19 +1,18 @@
 <!-- src/lib/components/Home/Products.svelte -->
 <script lang="ts">
 	import ProductSingle from '$lib/components/Home/ProductSingle.svelte';
-	import { getLocale, localizeHref } from '$paraglide/runtime';
+	import { getLocale } from '$paraglide/runtime';
 	import { drawerData } from '$lib/data/drawer.data';
 	import PillFlower from '../PillFlower.svelte';
 	import { m } from '$paraglide/messages';
 	import Hr from '../Hr.svelte';
-	import Dot from '../Dot.svelte';
 
 	const locale = $state(getLocale());
 	let drawerDataForLang = $state(drawerData[locale]);
 </script>
 
 <!-- Products Slider Section -->
-<section class="relative mt-7 px-0 pb-5 md:-top-[23px] md:mt-0 md:px-12 lg:px-16">
+<section class=" relative mt-7 px-0 pb-5 md:-top-[23px] md:mt-0 md:px-12 lg:px-16">
 	<Hr halfWidth={true} />
 
 	<div class="md:pb-7">

@@ -3,6 +3,7 @@
 	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
 	import Slogan from '$lib/components/caresync/Slogan.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
+	import Faq from '$lib/components/finx/Faq.svelte';
 	import Header from '$lib/components/Header/Header.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import { m } from '$paraglide/messages';
@@ -201,6 +202,10 @@
 	<Slogan text={m.careSyncSlogan()} />
 	<ServiceOrders />
 	<CtaContact />
+
+	<div class="border-base-200 border-t">
+		<Faq />
+	</div>
 </main>
 
 <style lang="postcss">

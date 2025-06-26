@@ -3,16 +3,16 @@
 	import { toggleLoader } from '$stores/Loader.state.svelte';
 	import BarRight from '$lib/components/Dashboard/BarRight.svelte';
 	import ContentDashboard from '$lib/components/Dashboard/ContentDashboard.svelte';
-	import HeaderDashboard from '$lib/components/Dashboard/HeaderDashboard.svelte';
 </script>
 
 <!-- <Header titleLeft="Our" titleRight="Dashboard" heroContent="" /> -->
-<HeaderDashboard />
+<!-- <HeaderDashboard /> -->
 
-<div class="max-w-fw mx-auto my-20">
-	<BarRight />
-
-	<ContentDashboard />
+<div class=" mx-auto w-full gap-10">
+	<div class="mx-auto flex flex-row">
+		<BarRight />
+		<ContentDashboard />
+	</div>
 </div>
 
 <div class="py-10 text-center">

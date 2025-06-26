@@ -88,6 +88,3 @@
 <Faq />
 
 <CtaContact />
-
-<style>
-</style>
