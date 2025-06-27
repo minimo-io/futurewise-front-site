@@ -1,7 +1,7 @@
 <!-- src/lib/components/Home/ProductSingle.svelte -->
 <script lang="ts">
 	// import type { Brand } from '$lib/types/brands.types';
-	import type { DrawerData } from '$lib/type/drawer.types';
+	import type { ProductDrawerData } from '$lib/type/products.types';
 	import { m } from '$paraglide/messages';
 	import Hr from '../Hr.svelte';
 	import Pill from '../Pill.svelte';
@@ -9,7 +9,7 @@
 
 	interface Props {
 		// brand: Brand;
-		brand: DrawerData;
+		brand: ProductDrawerData;
 		align: 'start' | 'center' | 'end';
 		icon?: typeof IconType;
 		minWidth?: string;

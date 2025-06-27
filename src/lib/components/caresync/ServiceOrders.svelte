@@ -3,6 +3,8 @@
 	import Hr from '../Hr.svelte';
 	import { m } from '$paraglide/messages';
 
+	let { image } = $props<{ image?: string }>();
+
 	const simpleFeatures = [
 		m.payPerUseFeatureTransparent(),
 		m.payPerUseFeatureCustom(),
@@ -24,12 +26,12 @@
 </script>
 
 <div
-	class="border-base-200 relative mx-(--fw-app-margin) flex flex-1 flex-col items-center justify-center md:flex-row"
+	class="border-base-200 relative mx-(--fw-app-margin) mt-7 flex flex-1 flex-col items-center justify-center md:mt-0 md:flex-row"
 >
 	<Hr bottom={false} />
 
 	<div class="relative scale-110 md:scale-100 lg:top-7 2xl:-right-32">
-		<DashboardImages />
+		<DashboardImages {image} />
 	</div>
 
 	<div
@@ -41,7 +43,7 @@
 			<h2 class="font-sans text-2xl font-bold uppercase md:text-3xl">
 				{m.payPerUseTitle()}
 			</h2>
-			<p class="text-secondary mx-auto mt-3 w-full font-sans text-lg md:w-[70%] md:text-xl">
+			<p class="text-secondary mx-auto mt-3 w-full font-sans text-base md:w-[70%] md:text-xl">
 				{@html m.payPerUseDescription()}
 			</p>
 		</div>
@@ -89,7 +91,7 @@
 
 		<div
 			class="border-r-base-200 absolute -bottom-[1px] left-1/2 hidden
-			       h-[130px] w-[1px] -translate-x-1/2 transform border-r md:block"
+			       h-[100px] w-[1px] -translate-x-1/2 transform border-r md:block"
 		></div>
 	</div>
 </div>

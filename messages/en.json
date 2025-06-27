@@ -4,6 +4,8 @@
 	"login": "Login",
 	"continue": "Continue",
 	"loggingIn": "Logging in...",
+	"yes": "Yes",
+	"no": "No",
 	"loginEmailRequired": "Email is required",
 	"loginPasswordRequired": "Password is required",
 	"loginInvalidCredentials": "Invalid credentials",
@@ -15,6 +17,7 @@
 	"soon": "Soon",
 	"getInTouch": "Get in touch!",
 	"project": "Project",
+	"help": "Help",
 
 	"and": "and",
 
@@ -33,7 +36,7 @@
 
 	"heroContentCareSync": "Platform for <span class='text-base-content opacity-80'>Predictive Maintenance</span> and Smart IT Asset Management (ITOM + ITSM)— with AI applied to Real-Time Asset Monitoring, Equipment Rental, and <span class='text-base-content opacity-80'>On-Demand Technical Support</span>.",
 
-	"heroContentBagity": "<span class='text-base-content opacity-80'>Tailored Premium E-Commerce</span>: We customize without limits — Design, UX, and Features — with integrated AI, scalable security, and <span class='text-base-content opacity-80'>express checkout</span> via <a href='/finx' class='text-primary font-medium'>FinXPay</a> (PIX, Boleto, Card, and Bitcoin). <span class='text-base-content opacity-80'>Predictable plans</span> from R$49/month or <span class='text-base-content opacity-80'>Bagity Pro with no upfront costs</span>.",
+	"heroContentBagity": "<span class='text-base-content opacity-80'>Tailored Premium E-Commerce</span>: We customize without limits — Design, UX, and Features — with integrated AI, scalable security, and <span class='text-base-content opacity-80'>express checkout</span> via <a href='/finx' class='text-primary font-medium'>FinXPay</a> (PIX, Boleto, Card, and Bitcoin). <span class='text-base-content opacity-80'>Predictable plans</span> from $20/month or <span class='text-base-content opacity-80'>Bagity Pro with no upfront costs</span>.",
 
 	"learnMore": "Learn more",
 	"scheduleMeeting": "Book a demo",
@@ -152,7 +155,7 @@
 	"careSyncToggleLess": "See less",
 
 	"payPerUseTitle": "PAY-PER-USE",
-	"payPerUseDescription": "Monitor your physical IT assets in real time, review historical data on each device’s profile, predict issues with our AI, track cost trends, and <span class='text-base-content'>when failures occur, contract on‑demand maintenance service orders</span>.",
+	"payPerUseDescription": "Monitor your physical IT assets in real time and <span class='text-base-content'>when failures occur, contract on‑demand maintenance service orders</span>.",
 	"payPerUsePriceCurrency": "R$",
 	"payPerUsePriceAmount": "50",
 	"payPerUsePriceUnit": "/h",
@@ -167,7 +170,7 @@
 	"payPerUseFeatureCostControl": "Cost control and historical trends",
 
 	"bagityBasic": "Bagity Basic",
-	"bagityBasicPrice": "R$49/mo fixed",
+	"bagityBasicPrice": "$u999/mo fixed",
 	"bagityBasicDescription": "Plan that provides full access to the platform, with a <span class='text-base-content'>store ready to sell</span>, payment integration via FinXPay + all essential features. Customization is optional, task-based, ideal <span class='text-base-content'>for those who want cost control and autonomy</span>.",
 
 	"bagityPro": "Bagity <span class='bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl'>PRO+</span>",

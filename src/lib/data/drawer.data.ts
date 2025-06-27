@@ -1,5 +1,5 @@
 import { Activity, Bird, BotMessageSquare, ShoppingBag } from '@lucide/svelte';
-import type { DrawerData } from '$lib/type/drawer.types';
+import type { ProductDrawerData } from '$lib/type/products.types';
 import { localizeHref } from '$paraglide/runtime';
 
 // pre-fetched data
@@ -15,7 +15,7 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			url: localizeHref('/caresync')
-		} as DrawerData,
+		} as ProductDrawerData,
 
 		// {
 		// 	id: 'braaay',
@@ -43,7 +43,7 @@ export const drawerData = {
 			isBold: true,
 			primary: true,
 			url: localizeHref('/finx')
-		} as DrawerData,
+		} as ProductDrawerData,
 
 		{
 			id: 'bagity',
@@ -57,7 +57,7 @@ export const drawerData = {
 			underDevelopment: true,
 			primary: true,
 			url: localizeHref('/bagity')
-		} as DrawerData,
+		} as ProductDrawerData,
 
 		// {
 		// 	id: 'delibra',
@@ -82,7 +82,7 @@ export const drawerData = {
 			isBold: true,
 			underDevelopment: true,
 			url: localizeHref('/soon')
-		} as DrawerData
+		} as ProductDrawerData
 
 		// {
 		// 	id: 'nostradamus',
@@ -122,7 +122,7 @@ export const drawerData = {
 			primary: false,
 			underDevelopment: true,
 			url: localizeHref('/caresync')
-		} as DrawerData,
+		} as ProductDrawerData,
 
 		{
 			id: 'bagity',
@@ -135,7 +135,7 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			url: localizeHref('/bagity')
-		} as DrawerData,
+		} as ProductDrawerData,
 
 		{
 			id: 'finx',
@@ -149,7 +149,7 @@ export const drawerData = {
 			isBold: true,
 			primary: true,
 			url: localizeHref('/finx')
-		} as DrawerData,
+		} as ProductDrawerData,
 
 		// {
 		// 	id: 'delibra',
@@ -185,7 +185,7 @@ export const drawerData = {
 			isBold: true,
 			underDevelopment: true,
 			url: localizeHref('/soon')
-		} as DrawerData
+		} as ProductDrawerData
 	],
 	es: [
 		{
@@ -198,7 +198,7 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			url: localizeHref('/caresync')
-		} as DrawerData,
+		} as ProductDrawerData,
 
 		// {
 		// 	id: 'braaay',
@@ -226,7 +226,7 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			url: localizeHref('/finx')
-		} as DrawerData,
+		} as ProductDrawerData,
 
 		{
 			id: 'bagity',
@@ -240,7 +240,7 @@ export const drawerData = {
 			isBold: true,
 			primary: true,
 			url: localizeHref('/bagity')
-		} as DrawerData,
+		} as ProductDrawerData,
 
 		// {
 		// 	id: 'delibra',
@@ -277,6 +277,6 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			url: localizeHref('/soon')
-		} as DrawerData
+		} as ProductDrawerData
 	]
 };

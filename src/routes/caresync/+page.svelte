@@ -200,7 +200,7 @@
 	</div>
 
 	<Slogan text={m.careSyncSlogan()} />
-	<ServiceOrders />
+	<ServiceOrders image="/caresync-dashboard-2.png" />
 	<CtaContact />
 
 	<div class="border-base-200 border-t">

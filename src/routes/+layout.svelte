@@ -9,10 +9,10 @@
 	import { closeDrawer } from '$lib/stores/DrawerState.state.svelte';
 	import Drawer from '$lib/components/Drawer/Drawer.svelte';
 	import { onMount } from 'svelte';
-	import { localizeHref } from '$paraglide/runtime';
+	import { deLocalizeHref, localizeHref } from '$paraglide/runtime';
 	import { browser } from '$app/environment';
 	import BackToTop from '$lib/components/BackToTop.svelte';
-	import { navigating } from '$app/state';
+	import { navigating, page } from '$app/state';
 	import { loader } from '$stores/Loader.state.svelte';
 
 	let { children } = $props();
@@ -102,7 +102,9 @@
 <Drawer />
 
 <!-- Footer -->
-<Footer />
+{#if deLocalizeHref(page.route.id || '') != '/dashboard'}
+	<Footer />
+{/if}
 
 <!-- Back To Top -->
 <BackToTop />

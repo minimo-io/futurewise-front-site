@@ -8,7 +8,6 @@
 	import { toggleDrawer, drawerState } from '$stores/DrawerState.state.svelte';
 	import { getLocale, locales, localizeHref } from '$paraglide/runtime';
 	import { getLocaleName, redirectLocale } from '$utils';
-	import HeaderMenuDashboard from './HeaderMenuDashboard.svelte';
 	import LanguageButton from '../Buttons/LanguageButton.svelte';
 	import LoginDashboardButton from '../Buttons/LoginDashboardButton.svelte';
 	import NotificationsButton from '../Buttons/NotificationsButton.svelte';
@@ -34,9 +33,7 @@
 </script>
 
 <div class="flex items-center gap-10 md:gap-16">
-	{#if isDashboard}
-		<HeaderMenuDashboard />
-	{:else}
+	{#if !isDashboard}
 		<HeaderMenu />
 	{/if}
 

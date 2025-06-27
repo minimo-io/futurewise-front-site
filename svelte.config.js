@@ -17,7 +17,8 @@ const config = {
 			$utils: path.resolve('src/lib/utils'),
 			$stores: path.resolve('src/lib/stores'),
 			$databases: path.resolve('src/lib/databases'),
-			$paraglide: path.resolve('src/paraglide')
+			$paraglide: path.resolve('src/paraglide'),
+			$dashboards: path.resolve('src/lib/components/Dashboard/products')
 
 			// $stores: path.resolve('src/lib/stores'),
 			// $data: path.resolve('src/lib/data'),

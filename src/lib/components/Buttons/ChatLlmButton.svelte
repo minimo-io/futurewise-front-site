@@ -37,6 +37,11 @@
 	</button>
 
 	<ul class="menu dropdown-content bg-base-200 rounded-box z-1 mt-4 w-[300px] p-2 shadow-sm">
+		<ul>
+			<div class="chat chat-end">
+				<div class="chat-bubble">Olá, me pergunta tudo sobre computadores :)</div>
+			</div>
+		</ul>
 		<li class="p-2 font-sans">
 			<input
 				bind:this={inputRef}

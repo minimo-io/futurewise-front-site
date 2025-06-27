@@ -16,7 +16,7 @@
 	</div>
 
 	<div class="flex flex-row items-center gap-1 hover:opacity-50">
-		<span class="text-primary text-base font-medium">CareSync</span>
+		<span class="text-primary text-[18px] font-medium">CareSync</span>
 		<ChevronDown class="text-primary h-5 w-5" />
 	</div>
 </button>
