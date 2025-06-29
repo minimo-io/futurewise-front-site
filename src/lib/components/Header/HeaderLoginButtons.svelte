@@ -51,6 +51,20 @@
 				{/each}
 			</ul>
 		</div>
+		<!-- Help -->
+		<a
+			href={localizeHref('/help')}
+			class="bg-base-200 hover:bg-base-100 flex hidden items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:inline-block md:px-6 md:text-[15px]"
+		>
+			<span class="relative top-[1px] flex items-center"> Ajuda </span>
+		</a>
+		<!-- Sign-up -->
+		<a
+			href={localizeHref('/signup')}
+			class="bg-base-200 hover:bg-base-100 flex items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:px-6 md:text-[15px]"
+		>
+			<span class="relative top-[1px] flex items-center"> Cadastro </span>
+		</a>
 
 		<!-- Mobile -->
 		<button
@@ -83,19 +97,5 @@
 				<kbd class="kbd kbd-sm relative -top-[2px] hidden md:inline-block">L</kbd>
 			</span>
 		</a> -->
-		<!-- Help -->
-		<a
-			href={localizeHref('/help')}
-			class="bg-base-200 hover:bg-base-100 flex hidden items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:inline-block md:px-6 md:text-[15px]"
-		>
-			<span class="relative top-[1px] flex items-center"> Ajuda </span>
-		</a>
-		<!-- Sign-up -->
-		<a
-			href={localizeHref('/signup')}
-			class="bg-base-200 hover:bg-base-100 flex items-center rounded-full px-5 py-3 text-[13px] font-light uppercase md:px-6 md:text-[15px]"
-		>
-			<span class="relative top-[1px] flex items-center"> Cadastro </span>
-		</a>
 	</div>
 </div>
