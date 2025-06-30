@@ -17,7 +17,11 @@
 	"soon": "Em breve",
 	"getInTouch": "Entre em contato",
 	"project": "Projeto",
-	"help": "Ajuda",
+	"help": "Atendimento",
+	"documentation": "Documentação",
+	"apiStatus": "Status API",
+	"lab": "Laboratório",
+	"others": "Outros",
 
 	"and": "e",
 
@@ -28,9 +32,9 @@
 	"construction": "construção",
 	"constructionContent": "Estamos construindo uma plataforma unificada de <span class='text-base-content opacity-80'>E-Commerce</span>, <span class='text-base-content opacity-80'>Pagamentos X-Border</span> e <span class='text-base-content opacity-80'>Monitoramento de Ativos de TI</span>. Entre em contato em quanto finalizamos esta página.",
 
-	"heroContentHome": "Somos uma <span class='text-base-content opacity-80'>Plataforma Unificada de Produtos Digitais</span> e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos X-Border e Manutenção Preditiva de TI</span>.",
+	"heroContentHome": "Somos uma <span class='text-base-content opacity-80'>Plataforma Unificada de Produtos Digitais</span> Impulsionados por IA e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos X-Border e Manutenção Preditiva de TI</span>.",
 
-	"heroContentHomeOLD": "Somos uma <span class='text-base-content opacity-80'>Plataforma Unificada de Produtos Digitais</span> e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos X-Border em Tempo Real, e IA Aplicada ao Monitoramento de Ativos de TI</span>.",
+	"heroContentHomeOLD": "Somos uma <span class='text-base-content opacity-80'>Plataforma de Produtos Digitais</span> Impulsionados por IA e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos X-Border em Tempo Real, e IA Aplicada ao Monitoramento de Ativos de TI</span>.",
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagamentos em tempo real com <span class='text-base-content opacity-80'>Settlements Globais Instantâneos</span> em Moeda Local, Stablecoins ou Bitcoin, via Lightning. Ex.: <span class='text-base-content'>Receba via PIX no Brasil e liquide no exterior</span>, no instante, com 100% de compliance.</div>",
 
@@ -43,14 +47,13 @@
 
 	"menuClients": "Parceiros / Clientes",
 	"menuProducts": "Produtos",
-	"menuHelp": "Ajuda",
+	"menuHelp": "Recursos",
 	"menuLab": "Lab",
 	"menuPrices": "Preços",
 
 	"devSlogan": "Plataforma unificada,<br />APIs modernas.",
 	"devText": "<p>Além de nossos dashboards, Futurewise fornece uma interface única e elegante que abstrai toda a complexidade das integrações empresariais.</p><p>Com APIs prontas para integrar cada um de nossos produtos no seu próprio sistema.</p>",
 
-	"documentation": "Documentação",
 	"getYourAPIKey": "Obtenha sua API key",
 
 	"devConfira": "Confira também nossos temas de editor para",
@@ -70,7 +73,9 @@
 	"metaBaseTitle": "Futurewise",
 
 	"metaHomeTitle": "Plataforma digital & Development Lab de Inovação",
-	"metaHomeDescription": "Somos uma Plataforma de Produtos Digitais e um DevLab  focado na Inovação em E-Commerce, Pagamentos X-Border, e Monitoramento de Ativos de TI.",
+
+	"metaHomeDescriptionX": "Somos uma Plataforma de Produtos Digitais e um DevLab  focado na Inovação em E-Commerce, Pagamentos X-Border, e Monitoramento de Ativos de TI.",
+	"metaHomeDescription": "Plataforma de Produtos Digitais Impulsionada por IA e DevLab focado na Inovação em E-commerce, Pagamentos X-Border e Monitoramento de Ativos de TI.",
 
 	"metaUnderDevelopmentTitle": "Em desenvolvimento",
 	"metaUnderDevelopmentDescription": "Estamos construindo uma plataforma unificada de Comércio Eletrônico, Pagamentos Transfronteiriços e Monitoramento de Ativos de TI. Contate-nos!",

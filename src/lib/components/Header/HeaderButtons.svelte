@@ -17,8 +17,9 @@
 
 	interface Props {
 		isDashboard?: boolean;
+		showToolsShortcuts?: boolean;
 	}
-	let { isDashboard = false }: Props = $props();
+	let { isDashboard = false, showToolsShortcuts = true }: Props = $props();
 
 	let isMac = $state<boolean | null>(null);
 	let locale = $state(getLocale());
@@ -57,16 +58,18 @@
 					<!-- <Hammer class="h-5" strokeWidth="1" /> -->
 					<Search class="h-5" strokeWidth="1" />
 				</button>
-				<div
-					class="absolute left-1/2 mt-1 flex -translate-x-1/2 scale-90 items-center justify-center pr-2 opacity-70"
-				>
-					{#if isMac}
-						<Command class="h-[14px]" />
-					{:else}
-						<span>CTRL+</span>
-					{/if}
-					<span>K</span>
-				</div>
+				{#if showToolsShortcuts}
+					<div
+						class="absolute left-1/2 mt-1 flex -translate-x-1/2 scale-90 items-center justify-center pr-2 opacity-70"
+					>
+						{#if isMac}
+							<Command class="h-[14px]" />
+						{:else}
+							<span>CTRL+</span>
+						{/if}
+						<span>K</span>
+					</div>
+				{/if}
 			</div>
 
 			<LanguageButton />

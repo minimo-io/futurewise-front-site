@@ -55,6 +55,9 @@
 						<li>
 							<a href={localizeHref('/status#changelog')} class="text-secondary">Changelog</a>
 						</li>
+						<li>
+							<a href={localizeHref('/blog')} class="text-secondary">Blog</a>
+						</li>
 					</ul>
 				</div>
 
@@ -62,7 +65,7 @@
 					<h3 class="font-pixel text-base-100 mb-4 text-xl">Futurewise</h3>
 					<ul class="space-y-2">
 						<li><a href="/" class="text-secondary">{m.aboutUs()}</a></li>
-						<li><a href="/" class="text-secondary">Experimentos</a></li>
+						<li><a href={localizeHref('/lab')} class="text-secondary">Laboratório</a></li>
 						<li><a href={localizeHref('/one-pager')} class="text-secondary">One Pager</a></li>
 						<li><a href="/" class="text-secondary">Contato</a></li>
 					</ul>

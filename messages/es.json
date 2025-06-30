@@ -19,6 +19,9 @@
 	"getInTouch": "Entrar en contacto",
 	"project": "Proyecto",
 	"help": "Ayuda",
+	"apiStatus": "Status API",
+	"lab": "Laboratorio",
+	"others": "Otros",
 
 	"and": "y",
 
@@ -29,7 +32,7 @@
 	"construction": "construcción",
 	"constructionContent": "Estamos construyendo una plataforma unificada de <span class='text-base-content opacity-80'>Comercio Electrónico</span>, <span class='text-base-content opacity-80'>Pagos Transfronterizos</span> y <span class='text-base-content opacity-80'>Monitoreo de Activos de TI</span>. Contáctanos mientras finalizamos esta página.",
 
-	"heroContentHome": "Somos una <span class='text-base-content opacity-80'>Plataforma Unificada de Productos Digitales</span> y un Laboratorio de Desarrollo enfocado en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border, y Mantenimiento Predictivo de TI</span>.",
+	"heroContentHome": "Somos una <span class='text-base-content opacity-80'>Plataforma Unificada de Productos Digitales</span> Impulsada por IA y un Laboratorio de Desarrollo enfocado en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border, y Mantenimiento Predictivo de TI</span>.",
 
 	"heroContentHomeOLD": "Somos una <span class='text-base-content opacity-80'>Plataforma Unificada de Productos Digitales</span> y un Laboratorio de Desarrollo enfocado en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border en Tiempo Real, e IA Aplicada al Monitoreo de Activos de TI</span>.",
 
@@ -46,7 +49,7 @@
 
 	"menuClients": "Socios / Clientes",
 	"menuProducts": "Productos",
-	"menuHelp": "Ayuda",
+	"menuHelp": "Recursos",
 	"menuLab": "Lab",
 	"menuPrices": "Precios",
 
@@ -74,7 +77,7 @@
 	"metaBaseTitle": "Futurewise",
 
 	"metaHomeTitle": "Plataforma Digital y Laboratorio de Innovación en Desarrollo",
-	"metaHomeDescription": "Somos una Plataforma de Productos Digitales y DevLab enfocados en E-Commerce, Pagos X-Border y Monitoreo de Activos de TI para LATAM.",
+	"metaHomeDescription": "Plataforma de Productos Digitales Impulsada por IA y un DevLab enfocado en la Innovación en las áreas de E-Commerce, Pagos X-Border y Monitoreo de Activos de TI.",
 
 	"metaUnderDevelopmentTitle": "En desarrollo",
 	"metaUnderDevelopmentDescription": "Estamos construyendo una plataforma unificada de Comercio Electrónico, Pagos X-Border y Monitoreo de Activos de TI ¡Contáctanos!",

@@ -14,7 +14,7 @@ export interface ProductDrawerData {
 	sloganSimple?: string;
 	icon: typeof IconType;
 	details: string;
-	subMenu: boolean;
+	// subMenu: boolean;
 	url?: string;
 	isBold?: boolean;
 	primary?: boolean;

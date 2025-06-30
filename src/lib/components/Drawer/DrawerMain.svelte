@@ -7,7 +7,11 @@
 		FlaskConical,
 		PencilLine,
 		Rss,
-		FileCode
+		FileCode,
+		Book,
+		HeartPlus,
+		FileClock,
+		PenLine
 	} from '@lucide/svelte';
 	import { openSubmenu } from '$stores/DrawerState.state.svelte';
 	import { drawerData } from '$lib/data/drawer.data';
@@ -47,69 +51,42 @@
 	<!-- Item with submenu -->
 	<!-- <h2 class="my-5 px-[30px] text-base font-extrabold uppercase">PRODUTOS</h2> -->
 	{#each drawerDataForLang as drawer, i}
-		{#if drawer.subMenu}
-			<!-- With Submenues -->
-			<button
-				onclick={() => openSubmenu(drawer.id, drawer.name)}
-				class={[
-					'border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm',
-					i == 0 ? 'border-t' : ''
-				]}
-			>
-				<div class="flex justify-center self-center text-left align-middle">
-					<!-- <Wine class="w-4 h-4 self-center mr-2" /> -->
-					{#if drawer.logo}
-						<img src={drawer.logo} alt={`${drawer.name} logo`} class="mr-0 w-12 max-w-12" />
-					{:else if drawer.icon}
-						<drawer.icon class="mr-2 h-4 w-4 self-center" />
-					{/if}
-					<!-- {#if drawer.icon}
-						
-					{/if} -->
-					<div class={['self-center', drawer.isBold ? 'font-bold' : 'font-semibold']}>
-						{drawer.name}
+		<a
+			href={drawer.url}
+			class={[
+				'border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-b px-[30px] py-3 text-left align-middle text-sm',
+				i == 0 ? 'border-t' : ''
+			]}
+		>
+			<div class="flex min-w-0 flex-1 items-center">
+				{#if drawer.logo}
+					<img
+						src={drawer.logo}
+						alt={`${drawer.name} logo`}
+						class="relative -left-[1px] mr-1 w-6 max-w-5 flex-shrink-0"
+					/>
+				{:else if drawer.icon}
+					<drawer.icon class="mr-2 h-4 w-4 flex-shrink-0 self-center" />
+				{/if}
+				<div
+					class={[
+						'font-pixel flex-shrink-0 self-center tracking-wider',
+						drawer.isBold ? 'font-bold' : 'font-semibold'
+					]}
+				>
+					{drawer.name}
+				</div>
+				{#if drawer.slogan}
+					<div class="text-secondary ml-1 min-w-0 flex-1 truncate">
+						— {drawer.slogan}
 					</div>
-					{#if drawer.slogan}
-						<div class="text-secondary ml-1 truncate">— {drawer.sloganSimple}</div>
-					{/if}
-				</div>
-				<div class="text-grey-medium flex flex-row self-center align-middle">
-					<ChevronRight class="aspect-1 text-grey-dark w-4" />
-				</div>
-			</button>
-		{:else}
-			<a
-				href={drawer.url}
-				class={[
-					'border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-b px-[30px] py-3 text-left align-middle text-sm',
-					i == 0 ? 'border-t' : ''
-				]}
-			>
-				<div class="flex min-w-0 flex-1 items-center">
-					{#if drawer.logo}
-						<img
-							src={drawer.logo}
-							alt={`${drawer.name} logo`}
-							class="relative -left-[1px] mr-1 w-6 max-w-5 flex-shrink-0"
-						/>
-					{:else if drawer.icon}
-						<drawer.icon class="mr-2 h-4 w-4 flex-shrink-0 self-center" />
-					{/if}
-					<div class={['flex-shrink-0 self-center', drawer.isBold ? 'font-bold' : 'font-semibold']}>
-						{drawer.name}
-					</div>
-					{#if drawer.slogan}
-						<div class="text-secondary ml-1 min-w-0 flex-1 truncate">
-							— {drawer.slogan}
-						</div>
-					{/if}
-				</div>
-			</a>
-		{/if}
+				{/if}
+			</div>
+		</a>
 	{/each}
 
 	<!-- Fixed Extra Menu -->
-	<h2 class="font-pixel my-4 px-[30px] text-base font-extrabold tracking-wider uppercase">
+	<!-- <h2 class="font-pixel my-4 px-[30px] text-base font-extrabold tracking-wider uppercase">
 		{m.developers()}
 	</h2>
 	<a
@@ -121,7 +98,6 @@
 			<span class="self-center font-semibold">{m.documentation()}</span>
 		</div>
 		<div class="text-grey-medium flex flex-row self-center align-middle">
-			<!-- <ChevronRight class="aspect-1 text-grey-dark w-4" /> -->
 		</div>
 	</a>
 
@@ -134,55 +110,86 @@
 			<span class="self-center font-semibold">API Status / Changelog</span>
 		</div>
 		<div class="text-grey-medium flex flex-row self-center align-middle">
-			<!-- <ChevronRight class="aspect-1 text-grey-dark w-4" /> -->
 		</div>
-	</a>
+	</a> -->
 
 	<!-- Fixed Extra Menu -->
 	<h2 class="font-pixel my-4 px-[30px] text-base font-extrabold tracking-wider uppercase">
 		{m.resources()}
 	</h2>
 
+	<!-- Help desk -->
 	<a
-		href={localizeHref('/precios/')}
+		href={localizeHref('/help')}
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
-			<Tag class="text-sun mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">{m.menuPrices()}</span>
+			<Headset class="text-sun mr-2 h-4 w-4 self-center" />
+			<span class="self-center font-semibold">{m.help()}</span>
 		</div>
-		<!-- <div class="text-grey-medium flex flex-row self-center align-middle">
-			<ChevronRight class="aspect-1 text-grey-dark w-4" />
-		</div> -->
 	</a>
+
+	<!-- Docs -->
+	<a
+		href={localizeHref('/docs')}
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
+	>
+		<div class="flex justify-center self-center text-left align-middle">
+			<Book class="text-sun mr-2 h-4 w-4 self-center" />
+			<span class="self-center font-semibold">{m.documentation()}</span>
+		</div>
+	</a>
+
+	<!-- API Status -->
+	<a
+		href={localizeHref('/docs')}
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
+	>
+		<div class="flex justify-center self-center text-left align-middle">
+			<HeartPlus class="text-sun mr-2 h-4 w-4 self-center" />
+			<span class="self-center font-semibold">{m.apiStatus()}</span>
+		</div>
+	</a>
+
+	<!-- Changelog -->
+	<a
+		href={localizeHref('/docs#changelog')}
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
+	>
+		<div class="flex justify-center self-center text-left align-middle">
+			<FileClock class="text-sun mr-2 h-4 w-4 self-center" />
+			<span class="self-center font-semibold">Changelog</span>
+		</div>
+	</a>
+
+	<!-- Blog -->
+	<a
+		href={localizeHref('/blog')}
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
+	>
+		<div class="flex justify-center self-center text-left align-middle">
+			<PenLine class="text-sun mr-2 h-4 w-4 self-center" />
+			<span class="self-center font-semibold">Blog</span>
+		</div>
+	</a>
+
+	<h2 class="font-pixel my-4 px-[30px] text-base font-extrabold tracking-wider uppercase">
+		{m.others()}
+	</h2>
 
 	<!-- Item with submenu -->
 	<a
 		href={localizeHref('/login')}
-		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
+		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<FlaskConical class="mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">{m.aboutUs()}</span>
+			<span class="self-center font-semibold">{m.lab()}</span>
 		</div>
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<!-- <ChevronRight class="aspect-1 text-grey-dark w-4" /> -->
 		</div>
 	</a>
-
-	<!-- Item with submenu -->
-	<button
-		onclick={() => openSubmenu('account_loggedin', 'Minha conta')}
-		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
-	>
-		<div class="flex justify-center self-center text-left align-middle">
-			<PencilLine class="mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">Blog</span>
-		</div>
-		<div class="text-grey-medium flex flex-row self-center align-middle">
-			<!-- <ChevronRight class="aspect-1 text-grey-dark w-4" /> -->
-		</div>
-	</button>
 
 	<!-- Item with submenu -->
 	<div

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HeaderLogin from '$lib/components/Header/HeaderLogin.svelte';
+	import HeaderDefined from '$lib/components/Header/HeaderDefined.svelte';
 	import Login from '$lib/components/Login/Login.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import { m } from '$paraglide/messages';
@@ -10,5 +10,5 @@
 </script>
 
 <Meta title={m.metaLoginTitle()} description={m.metaLoginDescription()} />
-<HeaderLogin />
+<HeaderDefined headerButtons="login" />
 <Login {form} />

@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { ChevronDown, Headset } from '@lucide/svelte';
+	import { Book, ChevronDown, FileClock, Headset, HeartPlus, PenLine, Zap } from '@lucide/svelte';
 	import { getLocale, localizeHref } from '$paraglide/runtime';
 	import { drawerData } from '$lib/data/drawer.data';
 	import { m } from '$paraglide/messages';
+	import { AppConfig } from '$lib/configs';
 
 	const locale = $state(getLocale());
 	let drawerDataForLang = $state(drawerData[locale]);
@@ -11,12 +12,13 @@
 <div class="fw-header-fs z-50 hidden items-center justify-center gap-12 md:flex">
 	<div class="dropdown relative">
 		<div class="cursor-fw flex items-center uppercase" tabindex="0" role="button">
+			<Zap fill="#fff" class="mr-[5px] h-4" />
 			{m.menuProducts()}
 			<span><ChevronDown class="ml-1 h-5" /></span>
 		</div>
 		<!-- Main menu -->
 		<ul
-			class="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[440px] px-5 py-3 shadow-md"
+			class="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[450px] px-5 py-3 shadow-md"
 		>
 			{#each drawerDataForLang as drawer, i}
 				<li>
@@ -40,7 +42,10 @@
 							{/if}
 
 							<div
-								class={['self-center text-[16px]', drawer.isBold ? 'font-bold' : 'font-semibold']}
+								class={[
+									'self-center text-[16px] tracking-wider',
+									drawer.isBold ? 'font-bold' : 'font-semibold'
+								]}
 							>
 								{drawer.name}
 							</div>
@@ -53,14 +58,81 @@
 			{/each}
 		</ul>
 	</div>
+
+	<div class="dropdown relative">
+		<div class="cursor-fw flex items-center uppercase" tabindex="0" role="button">
+			{m.menuHelp()}
+			<span><ChevronDown class="ml-1 h-5" /></span>
+		</div>
+		<ul class="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-fit px-5 py-3 shadow-md">
+			<li>
+				<a
+					href={localizeHref('/clientes')}
+					class={[
+						'flex py-3 align-middle text-[16px] tracking-wider',
+						'border-b border-b-gray-700'
+					]}
+				>
+					<Headset class="h-4" />
+					{m.help()}
+				</a>
+			</li>
+			<li>
+				<a
+					href={localizeHref('/docs')}
+					class={[
+						'flex py-3 align-middle text-[16px] tracking-wider',
+						'border-b border-b-gray-700'
+					]}
+				>
+					<Book class="h-4" />
+					{m.documentation()}
+				</a>
+			</li>
+			<li>
+				<a
+					href={AppConfig.status}
+					rel="nofollow noopener"
+					target="_blank"
+					class={[
+						'flex py-3 align-middle text-[16px] tracking-wider',
+						'border-b border-b-gray-700'
+					]}
+				>
+					<HeartPlus class="h-4" />
+					{m.apiStatus()}
+				</a>
+			</li>
+			<li>
+				<a
+					href={localizeHref('/clientes')}
+					class={[
+						'flex py-3 align-middle text-[16px] tracking-wider',
+						'border-b border-b-gray-700'
+					]}
+				>
+					<FileClock class="h-4" />
+					Changelog
+				</a>
+			</li>
+
+			<li>
+				<a
+					href={localizeHref('/blog')}
+					class={['flex py-3 align-middle text-[16px] tracking-wider']}
+				>
+					<PenLine class="h-4" />
+					Blog
+				</a>
+			</li>
+		</ul>
+	</div>
+
 	<a class="uppercase" href={localizeHref('/precos')}>{m.menuPrices()}</a>
+	<!-- <a class="uppercase" href={localizeHref('/blog')}>Blog</a> -->
 
 	<a href={localizeHref('/soon')} class="flex items-center uppercase">
 		<!-- <FlaskConical class="h-4" /> -->
 		{m.menuLab()}
-	</a>
-	<a href={localizeHref('/clientes')} class="flex items-center gap-1 uppercase">
-		<Headset class="h-4" />
-		{m.menuHelp()}
 	</a>
 </div>

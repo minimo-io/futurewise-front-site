@@ -18,6 +18,9 @@
 	"getInTouch": "Get in touch!",
 	"project": "Project",
 	"help": "Help",
+	"apiStatus": "API Status",
+	"lab": "DevLab",
+	"others": "Others",
 
 	"and": "and",
 
@@ -28,7 +31,7 @@
 	"construction": "construction",
 	"constructionContent": "We are building a unified platform for <span class='text-base-content opacity-80'>E-Commerce</span>, <span class='text-base-content opacity-80'>Cross-Border Payments</span>, and <span class='text-base-content opacity-80'>IT Asset Monitoring</span>. Contact us while we finish this page.",
 
-	"heroContentHome": "We are a <span class='text-base-content opacity-80'>Unified Digital Products Platform</span> and a Development Lab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, Real-Time Cross-Border Payments, and AI Applied to IT Assets Monitoring</span> for LATAM.",
+	"heroContentHome": "We are a IA-Powered <span class='text-base-content opacity-80'>Unified Digital Products Platform</span> and a DevLab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, Real-Time Cross-Border Payments, and AI Applied to IT Assets Monitoring</span> for LATAM.",
 
 	"heroContentHomeOLD": "We are a <span class='text-base-content opacity-80'>Unified Digital Products Platform</span> and a Development Lab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, Real-Time Cross-Border Payments, and AI Applied to IT Assets Monitoring</span> for LATAM.",
 
@@ -43,7 +46,7 @@
 
 	"menuClients": "Partners / Clients",
 	"menuProducts": "Products",
-	"menuHelp": "Help",
+	"menuHelp": "Resources",
 	"menuLab": "Lab",
 	"menuPrices": "Prices",
 
@@ -70,7 +73,7 @@
 	"metaBaseTitle": "Futurewise",
 
 	"metaHomeTitle": "Digital Platform & Innovation DevLab",
-	"metaHomeDescription": "We’re a Digital Products Platform and DevLab focused on E-Commerce, X-Border Payments, and IT Asset Monitoring for LATAM.",
+	"metaHomeDescription": "AI Driven Digital Products Platform and DevLab focused on E-Commerce, X-Border Payments, and IT Asset Monitoring for LATAM.",
 
 	"metaUnderDevelopmentTitle": "Under Development",
 	"metaUnderDevelopmentDescription": "We're building a unified platform for E-Commerce, X-Border Payments, and IT Asset Monitoring. Get in touch!",

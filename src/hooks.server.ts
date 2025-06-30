@@ -16,7 +16,8 @@ const allowedRoutes = [
 	'/login',
 	'/lab',
 	'/dashboard',
-	'/bagity'
+	'/bagity',
+	'/blog'
 ];
 
 // Auth middleware
