@@ -67,7 +67,7 @@
 		<ul class="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-fit px-5 py-3 shadow-md">
 			<li>
 				<a
-					href={localizeHref('/clientes')}
+					href={localizeHref('/soon')}
 					class={[
 						'flex py-3 align-middle text-[16px] tracking-wider',
 						'border-b border-b-gray-700'
@@ -79,7 +79,7 @@
 			</li>
 			<li>
 				<a
-					href={localizeHref('/docs')}
+					href={localizeHref('/soon')}
 					class={[
 						'flex py-3 align-middle text-[16px] tracking-wider',
 						'border-b border-b-gray-700'
@@ -105,7 +105,7 @@
 			</li>
 			<li>
 				<a
-					href={localizeHref('/clientes')}
+					href={localizeHref('/soon')}
 					class={[
 						'flex py-3 align-middle text-[16px] tracking-wider',
 						'border-b border-b-gray-700'
@@ -128,7 +128,7 @@
 		</ul>
 	</div>
 
-	<a class="uppercase" href={localizeHref('/precos')}>{m.menuPrices()}</a>
+	<a class="uppercase" href={localizeHref('/soon')}>{m.menuPrices()}</a>
 	<!-- <a class="uppercase" href={localizeHref('/blog')}>Blog</a> -->
 
 	<a href={localizeHref('/soon')} class="flex items-center uppercase">

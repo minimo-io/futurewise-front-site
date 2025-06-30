@@ -90,7 +90,7 @@
 		{m.developers()}
 	</h2>
 	<a
-		href={localizeHref('/docs')}
+		href={localizeHref('/soon')}
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex w-full justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
@@ -131,7 +131,7 @@
 
 	<!-- Docs -->
 	<a
-		href={localizeHref('/docs')}
+		href={localizeHref('/soon')}
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
@@ -142,7 +142,7 @@
 
 	<!-- API Status -->
 	<a
-		href={localizeHref('/docs')}
+		href={localizeHref('/soon')}
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
@@ -153,7 +153,7 @@
 
 	<!-- Changelog -->
 	<a
-		href={localizeHref('/docs#changelog')}
+		href={localizeHref('/soon#changelog')}
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">

@@ -43,7 +43,7 @@
 					<h3 class="font-pixel text-base-100 mb-4 text-xl">Developers</h3>
 					<ul class="space-y-2">
 						<!-- <li><a href="/" class="text-secondary">ViiVPay</a></li> -->
-						<li><a href={localizeHref('/docs')} class="text-secondary">{m.documentation()}</a></li>
+						<li><a href={localizeHref('/soon')} class="text-secondary">{m.documentation()}</a></li>
 						<li>
 							<a
 								href={AppConfig.status}

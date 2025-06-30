@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { Post, PostAuthor } from '$lib/type/blog.types';
 	import { localizeHref } from '$paraglide/runtime';
-	import { Sparkles } from '@lucide/svelte';
 
 	interface Props {
 		article: Post;

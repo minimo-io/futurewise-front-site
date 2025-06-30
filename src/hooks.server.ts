@@ -2,23 +2,9 @@
 import type { Handle } from '@sveltejs/kit';
 import { paraglideMiddleware } from './paraglide/server';
 import { sequence } from '@sveltejs/kit/hooks';
-import { deLocalizeUrl, localizeHref } from '$paraglide/runtime';
-import { redirect } from '@sveltejs/kit';
-import { getLocale } from '$paraglide/runtime';
-
-const allowedRoutes = [
-	'/soon', // The target route itself
-	'/', // Home route
-	'/es', // Spanish locale route
-	'/en', // English locale route
-	'/finx',
-	'/caresync',
-	'/login',
-	'/lab',
-	'/dashboard',
-	'/bagity',
-	'/blog'
-];
+// import { deLocalizeUrl, localizeHref } from '$paraglide/runtime';
+// import { redirect } from '@sveltejs/kit';
+// import { getLocale } from '$paraglide/runtime';
 
 // Auth middleware
 const authHandle: Handle = async ({ event, resolve }) => {
@@ -40,13 +26,12 @@ const authHandle: Handle = async ({ event, resolve }) => {
 	// }
 
 	// Check if the route requires authentication and redirect if needed
-	const delocalizedPath = deLocalizeUrl(event.url).pathname;
+	// const delocalizedPath = deLocalizeUrl(event.url).pathname;
 
 	// Redirect logged-in users away from auth pages
-	// if (isAuthRoute(pathDelocalized.pathname) && event.locals.authToken) {
-	if (!allowedRoutes.includes(delocalizedPath)) {
-		throw redirect(303, localizeHref('/soon', { locale: getLocale() }));
-	}
+	// if (!allowedRoutes.includes(delocalizedPath)) {
+	// 	throw redirect(303, localizeHref('/soon', { locale: getLocale() }));
+	// }
 
 	// if (requiresAuth(pathDelocalized.pathname) && !event.locals.authToken) {
 	// 	// Redirect to login page with return URL as a query parameter
