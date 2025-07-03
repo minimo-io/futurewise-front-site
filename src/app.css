@@ -230,7 +230,8 @@ body {
 		@apply bg-[url('/bgs/header-caresync.png')];
 	}
 	.fw-bg-bagity {
-		@apply bg-[url('/bgs/header-underconstruction.jpeg')] opacity-30;
+		/* @apply bg-[url('/bgs/header-underconstruction.jpeg')] opacity-30; */
+		@apply bg-conic bg-[url('/bgs/header-bagity-4.png')] opacity-100;
 		/* @apply bg-[url('/bgs/Rectangle13.png')] bg-cover opacity-30; */
 	}
 	.fw-bg-construction {
