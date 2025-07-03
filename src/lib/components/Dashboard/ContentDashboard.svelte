@@ -9,7 +9,7 @@
 	let { product }: Props = $props();
 </script>
 
-<div class="flex w-full flex-col">
+<div class="flex h-full w-full flex-col">
 	<div class="border-base-200 flex h-25 items-center justify-between border-b">
 		<!-- Dashboard title -->
 		<div class="text-primary pl-5 text-lg font-black uppercase">Dashboard</div>

@@ -5,7 +5,7 @@
 </script>
 
 <!-- Actual dashboard -->
-<div class=" mx-auto w-full gap-10">
+<div class="mx-auto h-screen w-full gap-10">
 	<div class="mx-auto flex flex-row">
 		<BarRight />
 		<ContentDashboard product={Product.CARESYNC} />

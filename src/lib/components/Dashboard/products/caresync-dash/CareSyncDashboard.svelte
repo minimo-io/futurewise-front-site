@@ -5,8 +5,10 @@
 	const loadAction = 'caresync_devices';
 </script>
 
-<!-- All different Caresync menu option components here -->
+<div class="h-full w-full">
+	<!-- All different Caresync menu option components here -->
 
-{#if loadAction == 'caresync_devices'}
-	<CareSyncDashboardDevices />
-{/if}
+	{#if loadAction == 'caresync_devices'}
+		<CareSyncDashboardDevices />
+	{/if}
+</div>
