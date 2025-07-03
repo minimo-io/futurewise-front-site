@@ -19,7 +19,7 @@
 				name: 'Erika Bezerra',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '11966090457'
@@ -44,7 +44,7 @@
 				name: 'Robson Caires',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '2414441241'
@@ -69,7 +69,7 @@
 				name: 'Erika Bezerra',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '11966090457'
@@ -120,7 +120,7 @@
 				name: 'Erika Bezerra',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '11966090457'
@@ -146,7 +146,7 @@
 				name: 'Erika Bezerra',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '11966090457'
@@ -171,7 +171,7 @@
 				name: 'Pepe Gonzáles',
 				state: 'RS',
 				city: 'Port Alegre',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '11966090457'
@@ -196,7 +196,7 @@
 				name: 'Erika Bezerra',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '11966090457'
@@ -222,7 +222,7 @@
 				name: 'Robson Caires',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '2414441241'
@@ -248,7 +248,7 @@
 				name: 'Erika Bezerra',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '11966090457'
@@ -274,7 +274,7 @@
 				name: 'Erika Bezerra',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '11966090457'
@@ -299,7 +299,7 @@
 				name: 'Erika Bezerra',
 				state: 'SP',
 				city: 'São Paulo',
-				image: 'https://img.daisyui.com/images/profile/demo/2@94.webp',
+				image: '',
 				contact: {
 					type: 'whatsapp',
 					value: '11966090457'
@@ -320,12 +320,13 @@
 	<thead>
 		<tr>
 			<th>ID</th>
+			<th>Contato</th>
 			<th>Tipo</th>
 			<th>A. Remoto</th>
 			<th>Online</th>
 			<th>Status</th>
 			<!-- <th>Org</th> -->
-			<th>Contato</th>
+
 			<!-- <th>Última/Próxima Manutenção</th> -->
 			<th>Tempo Ativo</th>
 			<th>Nro Série</th>
@@ -350,6 +351,21 @@
 						</a>
 
 						<!-- Online/Offline status -->
+					</div>
+				</td>
+				<td>
+					<div class="flex items-center gap-3">
+						{#if machine.user.image}
+							<div class="avatar">
+								<div class="mask mask-squircle aspect-square h-8">
+									<img src={machine.user.image} alt="user" />
+								</div>
+							</div>
+						{/if}
+						<div>
+							<div class="font-bold">{machine.user.name}</div>
+							<div class=" text-xs opacity-50">{machine.user.state}, {machine.user.city}</div>
+						</div>
 					</div>
 				</td>
 				<td>
@@ -420,19 +436,7 @@
 					</div>
 				</td>
 				<!-- <td>{machine.organization}</td> -->
-				<td>
-					<div class="flex items-center gap-3">
-						<div class="avatar">
-							<div class="mask mask-squircle aspect-square h-8">
-								<img src={machine.user.image} alt="user" />
-							</div>
-						</div>
-						<div>
-							<div class="font-bold">{machine.user.name}</div>
-							<div class=" text-xs opacity-50">{machine.user.state}, {machine.user.city}</div>
-						</div>
-					</div>
-				</td>
+
 				<!-- <td>
 					<span class="text-neutral">
 						{machine.lastService}

@@ -6,17 +6,14 @@
 	// let locale = $state(getLocale());
 </script>
 
-<button
-	class="bg-base-200 relative hidden rounded-full px-6 py-2 font-sans text-[19px] font-normal hover:opacity-100 md:block"
->
-	<div
-		class="badge badge-primary absolute -top-[12px] left-1/2 h-[18px] -translate-x-1/2 text-center font-sans text-[10px] font-bold tracking-widest uppercase"
-	>
+<div class="relative my-2 flex flex-col items-center justify-center">
+	<div class="badge badge-xs absolute -top-[16px] px-3 font-bold tracking-widest uppercase">
 		{m.product()}
 	</div>
-
-	<div class="flex flex-row items-center gap-1 hover:opacity-50">
-		<span class="text-primary text-[18px] font-medium">CareSync</span>
-		<ChevronDown class="text-primary h-5 w-5" />
-	</div>
-</button>
+	<button class="my-2 flex w-full justify-center hover:opacity-100">
+		<div class="flex flex-row items-center gap-1 hover:opacity-50">
+			<span class="text-primary text-[18px] font-bold">CareSync</span>
+			<ChevronDown class="text-primary h-5 w-5" />
+		</div>
+	</button>
+</div>

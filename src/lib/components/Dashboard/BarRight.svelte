@@ -16,11 +16,15 @@
 	import HeaderLogo from '../Header/HeaderLogo.svelte';
 	import { toggleLoader } from '$stores/Loader.state.svelte';
 	import { enhance } from '$app/forms';
+	import ProductSwitchButton from '../Buttons/ProductSwitchButton.svelte';
 </script>
 
 <div class="border-base-200 w-60 border-r">
 	<div class="border-base-200 flex h-25 items-center border-b p-5">
 		<HeaderLogo />
+	</div>
+	<div>
+		<ProductSwitchButton />
 	</div>
 	<ul class="menu bg-grey-light h-full w-60">
 		<li>

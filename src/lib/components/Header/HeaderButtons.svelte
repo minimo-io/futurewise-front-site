@@ -12,7 +12,6 @@
 	import LoginDashboardButton from '../Buttons/LoginDashboardButton.svelte';
 	import NotificationsButton from '../Buttons/NotificationsButton.svelte';
 	import HelpButton from '../Buttons/HelpButton.svelte';
-	import ProductSwitchButton from '../Buttons/ProductSwitchButton.svelte';
 	import ChatLlmButton from '../Buttons/ChatLlmButton.svelte';
 
 	interface Props {
@@ -46,7 +45,6 @@
 			<NotificationsButton />
 			<ChatLlmButton />
 			<HelpButton />
-			<ProductSwitchButton />
 			<!-- End Dashboard -->
 		{:else}
 			<!-- Resto of the site -->
