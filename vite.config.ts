@@ -89,7 +89,16 @@ export default defineConfig({
 		}),
 		tailwindcss(),
 		sveltekit()
-	]
+	],
+	server: {
+		proxy: {
+			'/api': {
+				target: 'http://127.0.0.1:8080',
+				changeOrigin: true,
+				rewrite: (path) => path.replace(/^\/api/, '')
+			}
+		}
+	}
 });
 
 // import { paraglideVitePlugin } from '@inlang/paraglide-js';

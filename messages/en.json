@@ -4,8 +4,11 @@
 	"login": "Login",
 	"continue": "Continue",
 	"loggingIn": "Logging in...",
+	"refresh": "Refresh",
+	"refreshingIn": "Refreshing in {seconds}s",
 	"yes": "Yes",
 	"no": "No",
+
 	"loginEmailRequired": "Email is required",
 	"loginPasswordRequired": "Password is required",
 	"loginInvalidCredentials": "Invalid credentials",

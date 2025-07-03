@@ -4,6 +4,9 @@
 	"login": "Entrar",
 	"continue": "Continuar",
 	"loggingIn": "Entrando...",
+	"refresh": "Actualizar",
+	"refreshingIn": "Refreshing in {seconds}s",
+
 	"yes": "Sí",
 	"no": "No",
 	"loginEmailRequired": "Se requiere un email",

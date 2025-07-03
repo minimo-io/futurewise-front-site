@@ -1,6 +1,10 @@
 export const AppConfig = {
+	apiUrl: import.meta.env.DEV ? '/api' : 'https://api.futurewise.lat',
 	calendar: 'https://calendar.app.google/oDbeDazTLXApijoR8',
 	status: 'https://stats.uptimerobot.com/pPaLEt4eBM',
+	caresync: {
+		deviceRefreshIntervalSeconds: 30
+	},
 	fw: {
 		founded: '2025-05-02',
 		socials: {
