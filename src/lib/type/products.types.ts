@@ -2,7 +2,7 @@ import { type Icon as IconType } from '@lucide/svelte';
 
 export enum Product {
 	CARESYNC = 'CARESYNC',
-	FINX = 'FINX',
+	FINX = 'FINXPAY',
 	BAGITY = 'BAGITY',
 	AUTOCRM = 'AUTOCRM'
 }

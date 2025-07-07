@@ -3,7 +3,7 @@
 	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
 	import Slogan from '$lib/components/caresync/Slogan.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
-	import Faq from '$lib/components/finx/Faq.svelte';
+	import Faq from '$lib/components/Faq.svelte';
 	import Header from '$lib/components/Header/Header.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import { m } from '$paraglide/messages';
@@ -23,7 +23,8 @@
 		{ title: m.careSyncAutoItem4Title(), description: m.careSyncAutoItem4Desc() },
 		{ title: m.careSyncAutoItem5Title(), description: m.careSyncAutoItem5Desc() },
 		{ title: m.careSyncAutoItem6Title(), description: m.careSyncAutoItem6Desc() },
-		{ title: m.careSyncAutoItem7Title(), description: m.careSyncAutoItem7Desc() }
+		{ title: m.careSyncAutoItem7Title(), description: m.careSyncAutoItem7Desc() },
+		{ title: m.careSyncAutoItem8Title(), description: m.careSyncAutoItem8Desc() }
 	];
 
 	const gerenciadoItems = [
@@ -53,7 +54,7 @@
 	<div
 		class="max-w-fw border-x-base-200 relative container my-0 text-center md:mx-auto md:border-x"
 	>
-		<div id="know-more" class="flex flex-1 items-center justify-center">
+		<div class="flex flex-1 items-center justify-center">
 			<div
 				class="border-base-200 fw-border-b-divider md:fw-border-t-divider-dot flex w-full flex-col border-b
 			            after:absolute after:right-[48%] md:flex-row md:after:top-12 md:after:right-[49.4%] md:after:content-['']"
@@ -201,11 +202,12 @@
 
 	<Slogan text={m.careSyncSlogan()} />
 	<ServiceOrders image="/caresync-dashboard-3.png" />
-	<CtaContact />
 
-	<div class="border-base-200 border-t">
-		<Faq />
+	<div id="know-more" class="border-base-200 mt-10 font-sans md:border-t">
+		<Faq project="caresync" />
 	</div>
+
+	<CtaContact />
 </main>
 
 <style lang="postcss">

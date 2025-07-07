@@ -43,7 +43,7 @@
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagos en tiempo real con <span class='text-base-content opacity-80'>Settlements Globales Instantáneas</span> en Moneda Local, Stablecoins o Bitcoin, vía Lightning. Ej.: <span class='text-base-content'>Recibí por transferencia CBU/CVU en Argentina y liquidá en el exterior</span>, al instante, con 100% de compliance.</div>",
 
-	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Mantenimiento Predictivo</span> y Gestión Inteligente de Activos de TI (ITOM + ITSM)— con IA aplicada al Monitoreo en Tiempo Real de Activos, Compra y Alquiler de Equipos y <span class='text-base-content opacity-80'>Soporte Técnico bajo Demanda</span>.",
+	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Mantenimiento Predictivo</span> y Gestión Inteligente de Activos de TI (ITSM + ITAM) — con IA aplicada al Monitoreo en Tiempo Real de Activos, Compra y Alquiler de Equipos y <span class='text-base-content opacity-80'>Soporte Técnico bajo Demanda</span>.",
 
 	"heroContentBagity": "<span class='text-base-content opacity-80'>E-Commerce Premium a Medida</span>: Personalizamos sin límites — Diseño, UX y Funcionalidades — con IA integrada, seguridad escalable y <span class='text-base-content opacity-80'>checkout exprés</span> (PIX, Boleto, Tarjeta y Bitcoin). <span class='text-base-content opacity-80'>Planes previsibles</span> desde $u999/mes o <span class='text-base-content opacity-80'>Bagity Pro sin costos iniciales</span>.",
 
@@ -141,6 +141,8 @@
 	"careSyncAutoItem6Desc": "Asistencia técnica en línea, mantenimiento preventivo y resolución de problemas.",
 	"careSyncAutoItem7Title": "Compras y Alquileres:",
 	"careSyncAutoItem7Desc": "Accede a equipos certificados a pedido, contratados a través de la plataforma.",
+	"careSyncAutoItem8Title": "API Abierta:",
+	"careSyncAutoItem8Desc": "Puedes conectar CareSync a otros sistemas que tu empresa ya utiliza.",
 
 	"careSyncManagedItem0Title": "Gestión 360°:",
 	"careSyncManagedItem0Desc": "Gestionamos, monitoreamos y mantenemos proactivamente tu flota de TI.",

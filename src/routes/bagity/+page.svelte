@@ -4,6 +4,7 @@
 	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
 	import Slogan from '$lib/components/caresync/Slogan.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
+	import Faq from '$lib/components/Faq.svelte';
 	import Header from '$lib/components/Header/Header.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import { m } from '$paraglide/messages';
@@ -102,5 +103,8 @@
 
 	<Slogan text={m.bagitySlogan()} />
 	<ServiceOrders />
+	<div id="know-more" class="border-base-200 mt-10 font-sans md:border-t">
+		<Faq project="bagity" />
+	</div>
 	<CtaContact />
 </main>

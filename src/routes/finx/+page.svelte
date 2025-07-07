@@ -5,7 +5,7 @@
 	import Promo from '$lib/components/finx/Promo.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
 	import Developers from '$lib/components/Home/Developers.svelte';
-	import Faq from '$lib/components/finx/Faq.svelte';
+	import Faq from '$lib/components/Faq.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import TransparentButton from '$lib/components/Buttons/TransparentButton.svelte';
 	import Hr from '$lib/components/Hr.svelte';
@@ -85,6 +85,8 @@
 	<Developers />
 </div>
 
-<Faq />
+<div class="mx-(--fw-app-margin)">
+	<Faq project="finx" />
+</div>
 
 <CtaContact />

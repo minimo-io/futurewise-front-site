@@ -6,6 +6,7 @@
 	import apiClient from '$lib/api';
 	import CareSyncDashboardDevicesActions from './CareSyncDashboardDevicesActions.svelte';
 	import { AppConfig } from '$lib/configs';
+	import { localizeHref } from '$paraglide/runtime';
 
 	let machines: Machine[] = $state([]);
 	let isLoading = $state(true);
@@ -50,6 +51,7 @@
 
 				return {
 					id: device.id,
+					device_id: device.deviceId,
 					online: device.status === 'active',
 					status: getStatus(device.metrics),
 					type: device.type === 'NOTEBOOK' ? MachineType.NOTEBOOK : MachineType.DESKTOP,
@@ -148,16 +150,17 @@
 				</tr>
 			{:else}
 				{#each machines as machine, i (i)}
+					{@const deviceUrl = localizeHref(`/dashboard/caresync/device/${machine.id}`)}
 					<tr class={{ '': i == 0 }}>
 						<td>
 							<div class="flex items-center">
-								<a href="/#" class="text-primary">
+								<a href={deviceUrl} class="text-primary">
 									{#if machine.type == 'NOTEBOOK'}
 										NT
 									{:else}
 										DT
 									{/if}
-									-{machine.id}
+									-{machine.device_id}
 								</a>
 
 								<!-- Online/Offline status -->
@@ -262,9 +265,9 @@
 							{machine.model}
 						</td>
 						<th>
-							<label for="my-drawer-4" class="drawer-button btn btn-sm btn-primary rounded-full"
-								>Detalhes</label
-							>
+							<a href={deviceUrl} class="drawer-button btn btn-sm btn-primary rounded-full">
+								Detalhes
+							</a>
 							<!-- <button
 							class="btn btn-primary btn-sm rounded-full"
 							onclick={() => {

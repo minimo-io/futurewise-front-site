@@ -40,7 +40,7 @@
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Real-time payments with <span class='text-base-content opacity-80'>Instant Global Settlements</span> in Local Currency, Stablecoins, or Bitcoin via Lightning. Eg. <span class='text-base-content'>Receive via PIX in Brazil and settle abroad</span>, instantly, with 100% compliance.</div>",
 
-	"heroContentCareSync": "Platform for <span class='text-base-content opacity-80'>Predictive Maintenance</span> and Smart IT Asset Management (ITOM + ITSM)— with AI applied to Real-Time Asset Monitoring, Equipment Rental, and <span class='text-base-content opacity-80'>On-Demand Technical Support</span>.",
+	"heroContentCareSync": "Platform for <span class='text-base-content opacity-80'>Predictive Maintenance</span> and Smart IT Asset Management (ITSM + ITAM) — with AI applied to Real-Time Asset Monitoring, Equipment Rental, and <span class='text-base-content opacity-80'>On-Demand Technical Support</span>.",
 
 	"heroContentBagity": "<span class='text-base-content opacity-80'>Tailored Premium E-Commerce</span>: We customize without limits — Design, UX, and Features — with integrated AI, scalable security, and <span class='text-base-content opacity-80'>express checkout</span> via <a href='/finx' class='text-primary font-medium'>FinXPay</a> (PIX, Boleto, Card, and Bitcoin). <span class='text-base-content opacity-80'>Predictable plans</span> from $20/month or <span class='text-base-content opacity-80'>Bagity Pro with no upfront costs</span>.",
 
@@ -135,6 +135,8 @@
 	"careSyncAutoItem6Desc": "Online technical assistance, preventive maintenance, and troubleshooting.",
 	"careSyncAutoItem7Title": "Procurement & Rentals:",
 	"careSyncAutoItem7Desc": "Access certified equipment on demand, contracted through the platform.",
+	"careSyncAutoItem8Title": "Open API:",
+	"careSyncAutoItem8Desc": "You can connect CareSync to other systems your company already uses.",
 
 	"careSyncManagedItem0Title": "360° Management:",
 	"careSyncManagedItem0Desc": "We proactively manage, monitor, and maintain your IT fleet.",

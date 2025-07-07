@@ -1,5 +1,6 @@
 export interface Machine {
 	id: string;
+	device_id: string;
 	online: boolean;
 	status: MachineStatus;
 	type: MachineType;

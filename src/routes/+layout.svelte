@@ -102,7 +102,7 @@
 <Drawer />
 
 <!-- Footer -->
-{#if deLocalizeHref(page.route.id || '') != '/dashboard'}
+{#if !deLocalizeHref(page.route.id || '').startsWith('/dashboard')}
 	<Footer />
 {/if}
 

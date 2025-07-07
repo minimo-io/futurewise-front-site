@@ -8,6 +8,7 @@
 		LifeBuoy,
 		Puzzle,
 		ReceiptText,
+		Recycle,
 		Target,
 		TriangleAlert,
 		UsersRound,
@@ -49,7 +50,7 @@
 		<li>
 			<a href="/">
 				<LifeBuoy class="aspect-1 h-4" />
-				Tickets
+				Serviços
 			</a>
 		</li>
 		<li>
@@ -78,8 +79,8 @@
 		</li>
 		<li>
 			<a href="/">
-				<Puzzle class="aspect-1 h-4" />
-				Add-ons
+				<Recycle class="aspect-1 h-4" />
+				Reciclagem
 			</a>
 		</li>
 
@@ -100,6 +101,7 @@
 				<li>
 					<form
 						method="POST"
+						action="?/logout"
 						use:enhance={() => {
 							// isSubmitting = true;
 							toggleLoader();
