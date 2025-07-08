@@ -3,6 +3,11 @@ import type { Faq } from '$lib/type/faq.types';
 export const bagityFaqs: Record<string, Faq[]> = {
 	en: [
 		{
+			question: 'How does the pricing work for Bagity Basic and Bagity Pro?',
+			answer:
+				'Bagity Basic is a fixed $99/month plan, it includes our basic modules: Payments, Shippings, Reporting and Themes modules, plus unlimited products. Bagity PRO+ has no upfront costs and charges 5–10% per sale. Ideal for premium e-commerce sites with full platform access, advanced features (like MCP Server and AutoCRM), and unlimited customizations defined at monthly meetings.'
+		},
+		{
 			question: 'What is an MCP server?',
 			answer:
 				'An MCP server (Model Context Protocol) is a communication protocol designed to connect generative AI applications with data and AI tools. It acts as an interface layer that allows language models (LLMs) to access data from databases, files, and APIs in real time.'
@@ -16,11 +21,6 @@ export const bagityFaqs: Record<string, Faq[]> = {
 			question: 'What payment methods does Bagity support in the checkout?',
 			answer:
 				'Bagity offers an express checkout supporting PIX, Boleto, credit/debit cards, and Bitcoin via FinXPay, ensuring fast and secure transactions with high conversion rates.'
-		},
-		{
-			question: 'How does the pricing work for Bagity Basic and Bagity Pro?',
-			answer:
-				'Bagity Basic is a fixed R$99/month plan. Bagity PRO+ has no upfront costs and charges 5–10% per sale, ideal for premium e-commerce with full platform access and optional customizations by task.'
 		},
 		{
 			question: 'Can I customize the design and UX of my store?',
@@ -45,6 +45,11 @@ export const bagityFaqs: Record<string, Faq[]> = {
 	],
 	es: [
 		{
+			question: '¿Cómo funciona la estructura de precios de Bagity Basic y Bagity Pro?',
+			answer:
+				'Bagity Basic es un plan fijo de $500/mes, que incluye nuestros módulos básicos: Pagos, Envíos, Templates e Informes, además de productos ilimitados. Bagity PRO+ no tiene costos iniciales, comisiones entre 5% y el 10% por venta — Ideal para sitios premium, con acceso completo a la plataforma, funciones avanzadas (como MCP Server y AutoCRM) y customizaciones ilimitadas definidas en reuniones mensuales.'
+		},
+		{
 			question: '¿Qué es un servidor MCP?',
 			answer:
 				'Un servidor MCP (Model Context Protocol) es un protocolo de comunicación diseñado para conectar aplicaciones de IA generativa con datos y herramientas de IA. Actúa como una capa de interfaz que permite a los modelos de lenguaje (LLMs) acceder en tiempo real a datos de bases de datos, archivos y APIs.'
@@ -59,11 +64,7 @@ export const bagityFaqs: Record<string, Faq[]> = {
 			answer:
 				'Bagity ofrece un checkout exprés con PIX, Boleto, tarjetas de crédito/débito y Bitcoin vía FinXPay, garantizando transacciones rápidas y seguras con altas tasas de conversión.'
 		},
-		{
-			question: '¿Cómo funciona la estructura de precios de Bagity Basic y Bagity Pro?',
-			answer:
-				'Bagity Basic cuesta R$99/mes fijo. Bagity PRO+ no tiene costo inicial y cobra entre 5–10% por venta, ideal para e-commerce premium con acceso completo y personalizaciones opcionales por tarea.'
-		},
+
 		{
 			question: '¿Puedo personalizar el diseño y la UX de mi tienda?',
 			answer:
@@ -87,6 +88,11 @@ export const bagityFaqs: Record<string, Faq[]> = {
 	],
 	pt: [
 		{
+			question: 'Como funciona a precificação do Bagity Basic e do Bagity PRO+?',
+			answer:
+				'Bagity Basic é um plano fixo de R$99/mês, que inclui nossos módulos básicos: Pagamentos, Envios, Relatórios, Temas, além de produtos ilimitados. Bagity PRO+ não tem custos iniciais, com comissões 5 até 10% por venda — Ideal para e-commerces premium ou de alto tráfego, com acesso completo à plataforma, funções avanzadas (como MCP Server e AutoCRM) e personalizações ilimitadas definidas em reuniões mensais.'
+		},
+		{
 			question: 'O que é um servidor MCP?',
 			answer:
 				'Um servidor MCP (Model Context Protocol) é um protocolo de comunicação criado para conectar aplicações de IA generativa a dados e ferramentas de IA. Atua como uma camada de interface que permite que LLMs acessem, em tempo real, dados de bancos de dados, arquivos e APIs.'
@@ -100,11 +106,6 @@ export const bagityFaqs: Record<string, Faq[]> = {
 			question: 'Quais métodos de pagamento o Bagity suporta no checkout?',
 			answer:
 				'O Bagity oferece checkout expresso com PIX, Boleto, cartão de crédito/débito e Bitcoin via FinXPay, garantindo transações rápidas e seguras com altas taxas de conversão.'
-		},
-		{
-			question: 'Como funciona a precificação do Bagity Basic e do Bagity PRO+?',
-			answer:
-				'O Bagity Basic custa R$99/mês fixo. O Bagity PRO+ não tem custo inicial e cobra 5–10% por venda, ideal para e-commerce premium com acesso completo à plataforma e personalizações opcionais por tarefa.'
 		},
 		{
 			question: 'Posso customizar o design e a UX da minha loja?',

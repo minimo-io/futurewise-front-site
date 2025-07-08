@@ -19,6 +19,7 @@
 	import WhatsappButton from '../WhatsappButton.svelte';
 	import { getLocaleName } from '$utils';
 	import { m } from '$paraglide/messages';
+	import { AppConfig } from '$lib/configs';
 	const locale = $state(getLocale());
 	let drawerDataForLang = $state(drawerData[locale]);
 </script>
@@ -142,7 +143,7 @@
 
 	<!-- API Status -->
 	<a
-		href={localizeHref('/soon')}
+		href={AppConfig.status}
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">

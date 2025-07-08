@@ -7,12 +7,15 @@
 
 	import type { ActionData } from '../../../routes/login/$types';
 	import { toggleLoader } from '$stores/Loader.state.svelte';
+	import { Eye, EyeOff } from '@lucide/svelte';
 	interface Props {
 		form: ActionData;
 	}
 	let { form }: Props = $props();
 
 	let isSubmitting = $state(false);
+	let showPassword = $state(false);
+	let password = $state('');
 
 	// Nostr login handler
 	// async function handleNostrLogin() {
@@ -58,7 +61,7 @@
 					}}
 				>
 					<!-- Email input -->
-					<div class="mt-5 mb-3">
+					<fieldset class="mt-5 mb-3">
 						<label for="email" class="mb-2 ml-2 block text-left text-sm font-medium">Email</label>
 						<input
 							type="email"
@@ -70,23 +73,36 @@
 							placeholder={m.loginYourEmail()}
 							class="focus:ring-primary w-full rounded-md border border-white bg-transparent px-4 py-2 text-white focus:ring-2 focus:outline-none"
 						/>
-					</div>
+					</fieldset>
 
-					<!-- Password input -->
-					<div class="mb-4">
+					<fieldset class="mb-4">
 						<label for="password" class="mb-2 ml-2 block text-left text-sm font-medium"
 							>{m.loginPassword()}</label
 						>
-						<input
-							id="password"
-							name="password"
-							placeholder={m.loginYourPassword()}
-							type="password"
-							required
-							disabled={isSubmitting}
-							class="focus:ring-primary w-full rounded-md border border-white bg-transparent px-4 py-2 text-white focus:ring-2 focus:outline-none"
-						/>
-					</div>
+						<div class="relative mt-1">
+							<input
+								id="password"
+								name="password"
+								type={showPassword ? 'text' : 'password'}
+								bind:value={password}
+								disabled={isSubmitting}
+								required
+								class="focus:ring-primary w-full rounded-md border border-white bg-transparent px-4 py-2 text-white focus:ring-2 focus:outline-none"
+								placeholder={m.loginYourPassword()}
+							/>
+							<button
+								type="button"
+								class="absolute top-1/2 right-3 -translate-y-1/2 transform text-gray-500 hover:text-gray-700 focus:outline-none"
+								onclick={() => (showPassword = !showPassword)}
+							>
+								{#if showPassword}
+									<EyeOff class="h-5" />
+								{:else}
+									<Eye class="h-5" />
+								{/if}
+							</button>
+						</div>
+					</fieldset>
 
 					<!-- Continue button -->
 					<button

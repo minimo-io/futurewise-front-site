@@ -16,6 +16,7 @@ const config = {
 		alias: {
 			$utils: path.resolve('src/lib/utils'),
 			$stores: path.resolve('src/lib/stores'),
+			$types: path.resolve('src/lib/type'),
 			$databases: path.resolve('src/lib/databases'),
 			$paraglide: path.resolve('src/paraglide'),
 			$dashboards: path.resolve('src/lib/components/Dashboard/products')

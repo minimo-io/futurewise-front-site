@@ -11,6 +11,13 @@ export interface User {
 	email_verified: boolean;
 }
 
+const protectedRoutes = ['/dashboard/'];
+
+// Define if a path route required authentication
+export function isProtectedRoute(path: string): boolean {
+	return protectedRoutes.some((route) => path.startsWith(route));
+}
+
 export async function createEmailUser(email: string, password: string) {
 	const hashedPassword = await bcrypt.hash(password, 10);
 

@@ -1,6 +1,3 @@
-import type { Actions } from '@sveltejs/kit';
-import { logoutAction } from '..';
+import { dashboardCommonActions } from '..';
 
-export const actions = {
-	logout: logoutAction
-} satisfies Actions;
+export const actions = dashboardCommonActions;
