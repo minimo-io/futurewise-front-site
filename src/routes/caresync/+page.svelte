@@ -212,7 +212,7 @@
 				<div
 					class="bg-primary animate__animated animate__flash animate__infinite relative left-1 mr-4 block h-[20px] w-[5px] md:-top-1 md:h-[30px] md:w-[8px]"
 				></div>
-				<h2 class="font-pixel text-2xl tracking-wider md:text-4xl">Alugar?</h2>
+				<h2 class="font-pixel text-2xl tracking-wider md:text-4xl">Por que alugar?</h2>
 			</div>
 		</section>
 	</div>
