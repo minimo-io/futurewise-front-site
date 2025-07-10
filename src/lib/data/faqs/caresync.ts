@@ -3,9 +3,9 @@ import type { Faq } from '$lib/type/faq.types';
 export const caresyncFaqs: Record<string, Faq[]> = {
 	en: [
 		{
-			question: 'What does ITAM (IT Asset Management) mean?',
+			question: 'How do I calculate my price?',
 			answer:
-				'ITAM, which stands for Information Technology Asset Management, is a set of practices and processes that an organization uses to monitor, control, and optimize the entire lifecycle of its IT assets.'
+				'The <strong>Self-Managed</strong> mode costs R$10/month per equipment, and service and repair orders are quoted and charged on-demand directly through the platform. With detailed real-time reports of work being done and total transparency, monitoring is done via the Service Dashboard. The <strong>Managed</strong> mode is available by annual or monthly contract, and rental plans are quoted case by case. Contact us!'
 		},
 		{
 			question: 'What does ITSM (IT Service Management) mean?',
@@ -13,10 +13,11 @@ export const caresyncFaqs: Record<string, Faq[]> = {
 				'ITSM (Information Technology Service Management), or IT Service Management, is a set of processes and practices focused on designing, creating, delivering, supporting, and improving the IT services an organization offers to its end-users (internal or external clients). This includes Incident Management and Service Request Management.'
 		},
 		{
-			question: 'How do I calculate my price?',
+			question: 'What does ITAM (IT Asset Management) mean?',
 			answer:
-				'At CareSync, we have two modalities: <strong>Self-management</strong> and the <strong>Managed/MSP mode</strong>. The Self-management mode has a cost per device of R$10/month, and Service Orders are charged per hour of technician work, R$50, on-demand, with detailed real-time reports of the work being performed and full transparency, with tracking via the Service Dashboard. The MSP mode is by monthly contract.'
+				'ITAM, which stands for Information Technology Asset Management, is a set of practices and processes that an organization uses to monitor, control, and optimize the entire lifecycle of its IT assets.'
 		},
+
 		{
 			question: 'Is there a limit on users?',
 			answer:
@@ -31,6 +32,11 @@ export const caresyncFaqs: Record<string, Faq[]> = {
 
 	es: [
 		{
+			question: '¿Cómo calculo mi precio?',
+			answer:
+				'El modo <strong>Autogestión</strong> tiene un costo por equipo de R$10/mes y las órdenes de servicio y reparación se cotizan y cobran bajo demanda directamente desde la plataforma. Con informes detallados en tiempo real del trabajo realizado y transparencia total. El seguimiento se realiza a través del Dashboard de Servicios. El modo <strong>Gestionado</strong> es por contrato anual o mensual, y los planes de alquiler se cotizan caso por caso. ¡Contáctenos!'
+		},
+		{
 			question: '¿Qué significa ITAM (Gestión de Activos de TI)?',
 			answer:
 				'ITAM, que significa Gestión de Activos de TI (Information Technology Asset Management), es un conjunto de prácticas y procesos que una organización utiliza para monitorear, controlar y optimizar el ciclo de vida completo de sus activos de TI.'
@@ -40,11 +46,7 @@ export const caresyncFaqs: Record<string, Faq[]> = {
 			answer:
 				'ITSM (Information Technology Service Management), o Gestión de Servicios de TI, es un conjunto de procesos y prácticas enfocadas en diseñar, crear, entregar, soportar y mejorar los servicios de TI que una organización ofrece a sus usuarios finales (clientes internos o externos). Esto incluye la Gestión de Incidentes y la Gestión de Solicitudes de Servicio.'
 		},
-		{
-			question: '¿Cómo calculo mi precio?',
-			answer:
-				'En CareSync, tenemos dos modalidades: <strong>Autogestión</strong> y el modo <strong>Gestionado/MSP</strong>. El modo Autogestión tiene un costo por equipo de R$10/mes y las Órdenes de Servicio se cobran por hora de trabajo de los técnicos, R$50, bajo demanda, con informes detallados en tiempo real del trabajo realizado y total transparencia, con seguimiento a través del Panel de Servicios. El modo MSP es por contrato mensual.'
-		},
+
 		{
 			question: '¿Existe un límite de usuarios?',
 			answer:
@@ -60,9 +62,9 @@ export const caresyncFaqs: Record<string, Faq[]> = {
 
 	pt: [
 		{
-			question: 'O que significa ITAM? (Gerenciamento de Ativos de TI)',
+			question: 'Como eu calculo o meu preço?',
 			answer:
-				'ITAM, que significa Gerenciamento de Ativos de TI (Information Technology Asset Management), é um conjunto de práticas e processos que uma organização utiliza para monitorar, controlar e otimizar o ciclo de vida completo de seus ativos de TI.'
+				'O modo <strong>Autogestão</strong> tem um custo por equipamento de R$10/mês e as ordens de serviço e reparo são orçadas e cobradas sob demanda diretamente pela plataforma. Com relatórios detalhados em tempo real do trabalho sendo realizado e transparência total. O acompanhamento é via o Dashboard de Serviços. Já o modo <strong>Gerenciado</strong> é por contrato anual ou mensal, e os planos de aluguel são orçados caso a caso. Entre em contato!'
 		},
 		{
 			question: 'O que significa ITSM? (Gerenciamento de Serviços de TI)',
@@ -70,10 +72,11 @@ export const caresyncFaqs: Record<string, Faq[]> = {
 				'ITSM (Information Technology Service Management), ou Gerenciamento de Serviços de TI, é um conjunto de processos e práticas focadas em projetar, criar, entregar, suportar e melhorar os serviços de TI que uma organização oferece aos seus usuários finais (clientes internos ou externos). Inclui Gerenciamento de Incidentes e Gerenciamento de Requisições de Serviço.'
 		},
 		{
-			question: 'Como eu calculo o meu preço?',
+			question: 'O que significa ITAM? (Gerenciamento de Ativos de TI)',
 			answer:
-				'Na CareSync, temos duas modalidades: <strong>Auto-gestão</strong> e o modo <strong>Gerenciado/MSP</strong>. O modo Auto-gestão tem um custo por equipamento de R$10/Mês e as Ordens de Serviço são cobradas por hora de trabalho dos técnicos, R$50, sob demanda, com relatórios detalhados em tempo real do trabalho sendo realizado e transparência total. O acompanhamento é via o Dashboard de Serviços. O modo MSP é por contrato mensal.'
+				'ITAM, que significa Gerenciamento de Ativos de TI (Information Technology Asset Management), é um conjunto de práticas e processos que uma organização utiliza para monitorar, controlar e otimizar o ciclo de vida completo de seus ativos de TI.'
 		},
+
 		{
 			question: 'Existe um limite de usuários?',
 			answer:

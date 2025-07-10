@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Features from '$lib/components/Bagity/Features.svelte';
 	import TransparentButton from '$lib/components/Buttons/TransparentButton.svelte';
 	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
 	import Slogan from '$lib/components/caresync/Slogan.svelte';
@@ -8,18 +9,19 @@
 	import Meta from '$lib/components/Meta.svelte';
 	import { m } from '$paraglide/messages';
 	import { localizeHref } from '$paraglide/runtime';
+	import { Product } from '$types/products.types';
 	import { ChevronDown } from '@lucide/svelte';
 
 	let isExpanded = $state(false);
-	const autoGestaoInitialItems = 4;
-	const gerenciadoInitialItems = 4;
+	const autoGestaoInitialItems = 3;
+	const gerenciadoInitialItems = 3;
 
 	// Monta os arrays diretamente com chamadas m.chave()
 	const autoGestaoItems = [
 		{ title: m.careSyncAutoItem0Title(), description: m.careSyncAutoItem0Desc() },
-		{ title: m.careSyncAutoItem1Title(), description: m.careSyncAutoItem1Desc() },
 		{ title: m.careSyncAutoItem2Title(), description: m.careSyncAutoItem2Desc() },
 		{ title: m.careSyncAutoItem3Title(), description: m.careSyncAutoItem3Desc() },
+		{ title: m.careSyncAutoItem1Title(), description: m.careSyncAutoItem1Desc() },
 		{ title: m.careSyncAutoItem4Title(), description: m.careSyncAutoItem4Desc() },
 		{ title: m.careSyncAutoItem5Title(), description: m.careSyncAutoItem5Desc() },
 		{ title: m.careSyncAutoItem6Title(), description: m.careSyncAutoItem6Desc() },
@@ -32,11 +34,10 @@
 		{ title: m.careSyncManagedItem1Title(), description: m.careSyncManagedItem1Desc() },
 		{ title: m.careSyncManagedItem2Title(), description: m.careSyncManagedItem2Desc() },
 		{ title: m.careSyncManagedItem3Title(), description: m.careSyncManagedItem3Desc() },
-		{ title: m.careSyncManagedItem4Title(), description: m.careSyncManagedItem4Desc() },
-		{ title: m.careSyncManagedItem5Title(), description: m.careSyncManagedItem5Desc() },
 		{ title: m.careSyncManagedItem6Title(), description: m.careSyncManagedItem6Desc() },
-		{ title: m.careSyncManagedItem7Title(), description: m.careSyncManagedItem7Desc() },
-		{ title: m.careSyncManagedItem8Title(), description: m.careSyncManagedItem8Desc() }
+		{ title: m.careSyncManagedItem5Title(), description: m.careSyncManagedItem5Desc() },
+		{ title: m.careSyncManagedItem4Title(), description: m.careSyncManagedItem4Desc() },
+		{ title: m.careSyncManagedItem7Title(), description: m.careSyncManagedItem7Desc() }
 	];
 </script>
 
@@ -72,9 +73,9 @@
 						<!-- {m.careSyncIdealFor()} -->
 						{m.careSyncYouControl()}
 						<div
-							class="text-base-content text-shadow-accent px-0 text-base font-normal md:px-20 md:text-base"
+							class="text-secondary px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
 						>
-							{m.careSyncAutoDesc()}
+							{@html m.careSyncAutoDesc()}
 						</div>
 					</div>
 				</div>
@@ -90,8 +91,10 @@
 					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold">
 						<!-- {m.careSyncIdealFor()} -->
 						{m.careSyncWeTakeCare()}
-						<div class="text-base-content text-shadow-accent px-20 text-base font-normal">
-							{m.careSyncManagedDesc()}
+						<div
+							class="text-secondary px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
+						>
+							{@html m.careSyncManagedDesc()}
 						</div>
 					</div>
 				</div>
@@ -106,14 +109,14 @@
 				<div class="flex flex-grow flex-col">
 					<ul class="flex-grow">
 						{#each autoGestaoItems.slice(0, autoGestaoInitialItems) as item}
-							<li class="!text-base md:!text-lg">
+							<li class="!text-base md:!text-base">
 								<span class="font-bold">{item.title}</span>
 								{item.description}
 							</li>
 						{/each}
 						{#if isExpanded}
 							{#each autoGestaoItems.slice(autoGestaoInitialItems) as item}
-								<li class="!text-base md:!text-lg">
+								<li class="!text-base md:!text-base">
 									<span class="font-bold">{item.title}</span>
 									{item.description}
 								</li>
@@ -152,8 +155,10 @@
 					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold">
 						<!-- {m.careSyncIdealFor()} -->
 						{m.careSyncWeTakeCare()}
-						<div class="text-base-content text-shadow-accent px-0 text-base font-normal">
-							{m.careSyncManagedDesc()}
+						<div
+							class="text-secondary px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
+						>
+							{@html m.careSyncManagedDesc()}
 						</div>
 					</div>
 				</div>
@@ -167,14 +172,14 @@
 				<div class="flex w-full flex-grow flex-col">
 					<ul class="flex-grow">
 						{#each gerenciadoItems.slice(0, gerenciadoInitialItems) as item}
-							<li class="!text-base md:!text-lg">
+							<li class="!text-base md:!text-base">
 								<span class="font-bold">{item.title}</span>
 								{item.description}
 							</li>
 						{/each}
 						{#if isExpanded}
 							{#each gerenciadoItems.slice(gerenciadoInitialItems) as item}
-								<li class="!text-base md:!text-lg">
+								<li class="!text-base md:!text-base">
 									<span class="font-bold">{item.title}</span>
 									{item.description}
 								</li>
@@ -200,10 +205,25 @@
 		</div>
 	</div>
 
-	<Slogan text={m.careSyncSlogan()} />
+	<!-- Diferentials -->
+	<div class="border-base-200 border-t border-b">
+		<section class="max-w-fw mx-auto">
+			<div class="border-base-200 mt-5 mb-4 flex justify-center">
+				<div
+					class="bg-primary animate__animated animate__flash animate__infinite relative left-1 mr-4 block h-[20px] w-[5px] md:-top-1 md:h-[30px] md:w-[8px]"
+				></div>
+				<h2 class="font-pixel text-2xl tracking-wider md:text-4xl">Alugar?</h2>
+			</div>
+		</section>
+	</div>
+
+	<Features product={Product.CARESYNC} />
+
 	<ServiceOrders image="/caresync-dashboard-3.png" />
 
-	<div id="know-more" class="border-base-200 mt-10 font-sans md:border-t">
+	<Slogan text={m.careSyncSlogan()} />
+
+	<div id="know-more" class="border-base-200 mt-0 font-sans md:border-t">
 		<Faq project="caresync" />
 	</div>
 

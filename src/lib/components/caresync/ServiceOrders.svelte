@@ -3,7 +3,8 @@
 	import Hr from '../Hr.svelte';
 	import { m } from '$paraglide/messages';
 
-	let { image } = $props<{ image?: string }>();
+	let { image, title, description }: { image?: string; title?: string; description?: string } =
+		$props();
 
 	const simpleFeatures = [
 		m.payPerUseFeatureTransparent(),
@@ -41,10 +42,18 @@
 	>
 		<div class="max-w-fw mx-auto w-full pb-1 md:pt-10">
 			<h2 class="font-sans text-2xl font-bold uppercase md:text-3xl">
-				{m.payPerUseTitle()}
+				{#if !title}
+					{m.payPerUseTitle()}
+				{:else}
+					{title}
+				{/if}
 			</h2>
 			<p class="text-secondary mx-auto mt-3 w-full font-sans text-base md:w-[70%] md:text-xl">
-				{@html m.payPerUseDescription()}
+				{#if !description}
+					{@html m.payPerUseDescription()}
+				{:else}
+					{description}
+				{/if}
 			</p>
 		</div>
 
@@ -54,7 +63,7 @@
 		>
 			<!-- Container escuro -->
 			<div class="max-w-xs flex-1">
-				<div
+				<!-- <div
 					class="mt-3 mb-5 flex items-baseline justify-center space-x-2
 					       md:my-5 md:justify-start"
 				>
@@ -67,8 +76,8 @@
 					<span class="text-secondary self-center font-sans text-3xl font-medium">
 						{m.payPerUsePriceUnit()}
 					</span>
-				</div>
-				<ul class="text-base-content mt-4 ml-7 hidden font-sans text-base md:block">
+				</div> -->
+				<ul class="text-base-content mt-9 ml-7 hidden font-sans text-base md:block">
 					{#each simpleFeatures as feat}
 						<li>{feat}</li>
 					{/each}
