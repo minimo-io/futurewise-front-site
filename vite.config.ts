@@ -43,6 +43,8 @@ export default defineConfig({
 						['en', '/en/sign-up']
 					]
 				},
+
+				// Dashboards
 				{
 					pattern: '/dashboard',
 					localized: [
@@ -51,6 +53,15 @@ export default defineConfig({
 						['en', '/en/dashboard']
 					]
 				},
+				{
+					pattern: '/dashboard/caresync',
+					localized: [
+						['pt', '/dashboard/caresync'],
+						['es', '/es/dashboard/caresync'],
+						['en', '/en/dashboard/caresync']
+					]
+				},
+
 				{
 					pattern: '/bagity',
 					localized: [

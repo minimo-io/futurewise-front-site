@@ -18,6 +18,7 @@
 	import { toggleLoader } from '$stores/Loader.state.svelte';
 	import { enhance } from '$app/forms';
 	import ProductSwitchButton from '../Buttons/ProductSwitchButton.svelte';
+	import { localizeHref } from '$paraglide/runtime';
 </script>
 
 <div class="border-base-200 w-60 border-r">
@@ -35,13 +36,13 @@
 			</a>
 		</li>
 		<li>
-			<a href="/">
+			<a href={localizeHref('/dashboard/caresync')}>
 				<Laptop class="aspect-1 h-4" />
 				Dispositivos
 			</a>
 			<ul class="pb-2">
 				<li>
-					<a href="/">Todos os ativos</a>
+					<a href={localizeHref('/dashboard/caresync')}>Todos os ativos</a>
 				</li>
 				<li><a href="/">Notebooks</a></li>
 				<li><a href="/">Desktops</a></li>

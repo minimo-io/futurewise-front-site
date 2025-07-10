@@ -23,17 +23,23 @@
 
 			machines = apiData.map((device: any): Machine => {
 				const getStatus = (metrics: any): MachineStatus => {
+					if (!metrics || Object.keys(metrics).length === 0 || !metrics.basic) {
+						return MachineStatus.NO_DATA; // Default status if no metrics or basic metrics are available
+					}
+
+					const { cpu, memory, disk } = metrics.basic;
+
 					if (
-						metrics.basic.cpu.current > 90 ||
-						metrics.basic.memory.current_percent > 90 ||
-						metrics.basic.disk.percent > 95
+						(cpu && cpu.current > 90) ||
+						(memory && memory.current_percent > 90) ||
+						(disk && disk.percent > 95)
 					) {
 						return MachineStatus.ALERT;
 					}
 					if (
-						metrics.basic.cpu.current > 75 ||
-						metrics.basic.memory.current_percent > 75 ||
-						metrics.basic.disk.percent > 85
+						(cpu && cpu.current > 75) ||
+						(memory && memory.current_percent > 75) ||
+						(disk && disk.percent > 85)
 					) {
 						return MachineStatus.PROBLEMS;
 					}
@@ -56,23 +62,23 @@
 					status: getStatus(device.metrics),
 					type: device.type === 'NOTEBOOK' ? MachineType.NOTEBOOK : MachineType.DESKTOP,
 					remoteAccess: device.remoteAccess,
-					organization: device.company.name,
+					organization: device.company?.name || 'N/A',
 					user: {
-						name: device.contact.name,
-						state: device.contact.state,
-						city: device.contact.city,
-						image: device.contact.image || '',
+						name: device.contact?.name || 'N/A',
+						state: device.contact?.state || 'N/A',
+						city: device.contact?.city || 'N/A',
+						image: device.contact?.image || '',
 						contact: {
 							type: 'whatsapp',
-							value: device.contact.phone
+							value: device.contact?.phone || 'N/A'
 						}
 					},
 					lastService: 'N/A',
 					nextService: 'N/A',
-					timeActive: getMonthsActive(device.deviceMetadata.installation_date),
-					serialNumber: device.deviceMetadata.serial_number,
-					brand: device.deviceMetadata.model.split(' ')[0],
-					model: device.deviceMetadata.model
+					timeActive: device.deviceMetadata?.installation_date ? getMonthsActive(device.deviceMetadata.installation_date) : 0,
+					serialNumber: device.deviceMetadata?.serial_number || 'N/A',
+					brand: device.deviceMetadata?.model ? device.deviceMetadata.model.split(' ')[0] : 'N/A',
+					model: device.deviceMetadata?.model || 'N/A'
 				};
 			});
 		} catch (err: any) {
@@ -241,7 +247,8 @@
 											'badge-error animate__animated animate__pulse animate__infinite infinite bg-red-500',
 										machine.status == 'FINE' && 'badge-success',
 										machine.status == 'PROBLEMS' && 'badge-warning',
-										machine.status == 'MONITORING' && 'badge-neutral'
+										machine.status == 'MONITORING' && 'badge-neutral',
+										machine.status == 'NO_DATA' && 'badge-info'
 									]}
 								>
 									{machine.status}

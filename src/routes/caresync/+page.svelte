@@ -221,9 +221,11 @@
 
 	<ServiceOrders image="/caresync-dashboard-3.png" />
 
-	<Slogan text={m.careSyncSlogan()} />
+	<div class="border-base-200 mb-10 border-b pb-5 md:mb-0 md:border-0 md:pb-0">
+		<Slogan text={m.careSyncSlogan()} />
+	</div>
 
-	<div id="know-more" class="border-base-200 mt-0 font-sans md:border-t">
+	<div id="know-more" class="border-base-200 mt-20 font-sans md:mt-0 md:border-t">
 		<Faq project="caresync" />
 	</div>
 

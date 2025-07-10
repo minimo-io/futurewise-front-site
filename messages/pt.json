@@ -5,8 +5,11 @@
 	"continue": "Continuar",
 	"loggingIn": "Entrando...",
 	"refresh": "Atualizar",
-	"refreshingIn": "Refreshing in {seconds}s",
-
+	"refreshingIn": "Atualizando em {seconds}s",
+	"deviceAddedSuccess": "Dispositivo adicionado com sucesso!",
+	"deviceAddedError": "Falha ao adicionar dispositivo.",
+	"deviceAddedFailure": "Falha ao adicionar dispositivo devido a um erro do servidor.",
+	"addDevice": "Adicionar Dispositivo",
 	"yes": "Sim",
 	"no": "Não",
 	"loginEmailRequired": "E-mail é obrigatório",

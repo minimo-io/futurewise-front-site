@@ -6,6 +6,10 @@
 	"loggingIn": "Logging in...",
 	"refresh": "Refresh",
 	"refreshingIn": "Refreshing in {seconds}s",
+	"deviceAddedSuccess": "Device added successfully!",
+	"deviceAddedError": "Failed to add device.",
+	"deviceAddedFailure": "Failed to add device due to a server error.",
+	"addDevice": "Add Device",
 	"yes": "Yes",
 	"no": "No",
 

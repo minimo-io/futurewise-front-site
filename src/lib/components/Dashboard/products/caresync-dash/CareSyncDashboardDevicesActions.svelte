@@ -11,6 +11,9 @@
 
 <div>
 	<div class="flex items-center justify-end p-4">
+		<a href="/dashboard/caresync/add-device" class="btn btn-secondary mr-2">
+			{m.addDevice()}
+		</a>
 		<button class="btn btn-primary" onclick={handleRefresh} disabled={isRefreshing}>
 			<RefreshCw class="h-4 w-4 {isRefreshing ? 'animate-spin' : ''}" />
 			{m.refresh()}

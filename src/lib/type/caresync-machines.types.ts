@@ -19,7 +19,8 @@ export enum MachineStatus {
 	ALERT = 'ALERT',
 	BOM = 'FINE',
 	PROBLEMS = 'PROBLEMS',
-	MONITORING = 'MONITORING'
+	MONITORING = 'MONITORING',
+	NO_DATA = 'NO_DATA'
 }
 
 export enum MachineType {
