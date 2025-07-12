@@ -19,6 +19,24 @@ export default defineConfig({
 						['es', '/es']
 					]
 				},
+				// Blog
+				{
+					pattern: '/blog/:id',
+					localized: [
+						['pt', '/blog/:id'],
+						['en', '/en/blog/:id'],
+						['es', '/es/blog/:id']
+					]
+				},
+				{
+					pattern: '/blog',
+					localized: [
+						['pt', '/blog'],
+						['es', '/es/blog'],
+						['en', '/en/blog']
+					]
+				},
+
 				{
 					pattern: '/soon',
 					localized: [

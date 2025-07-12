@@ -36,7 +36,7 @@
 
 <!-- Blog Card -->
 <a
-	href={localizeHref(`/blog/${article.slug}`)}
+	href={localizeHref(`${article.slug}`)}
 	class="group border-base-200 hover:text-secondary relative flex flex-col justify-start border-b p-(--fw-app-margin) pb-10 text-white transition-colors hover:bg-white md:border-r md:border-b-0 md:p-12 md:pb-12"
 >
 	<!-- Header -->

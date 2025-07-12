@@ -216,7 +216,7 @@
 	"bagityFeature7Desc": "Nuestra tecnología headless permite conectar tu tienda a cualquier backend o API — WooCommerce, Ghost y más — resultando en interfaces rápidas y modulares.",
 
 	"bagityFeature8Title": "Atendimientos inteligentes",
-	"bagityFeature8Desc": "Integración con <a href='/es/autocrm' class='text-primary hover:opacity-40'>AutoCRM</a>, nuestro chatbot de primer contacto, entrenado con IA para representar su marca, responder dudas, cualificar leads e integrarse automáticamente a su CRM.",
+	"bagityFeature8Desc": "Integración con <a href='/es/proximamente' class='text-primary hover:opacity-40'>AutoCRM</a>, nuestro chatbot de primer contacto, entrenado con IA para representar su marca, responder dudas, cualificar leads e integrarse automáticamente a su CRM.",
 
 	"product": "Producto"
 }

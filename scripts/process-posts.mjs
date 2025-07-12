@@ -8,16 +8,41 @@ const outputDir = path.resolve(process.cwd(), 'src/lib/data');
 const outputFile = path.join(outputDir, 'posts.ts');
 
 // Function to format date as "Month Day"
-function formatDate(dateString) {
+function formatDate(dateString, locale) {
 	const date = new Date(dateString);
 	const options = { month: 'long', day: 'numeric' };
-	return date.toLocaleDateString('en-US', options);
+	return date.toLocaleDateString(locale, options);
 }
 
-const posts = fs
-	.readdirSync(postsDir)
+const languages = ['en', 'es', 'pt'];
+const postsByLanguage = {};
+languages.forEach((lang) => {
+	postsByLanguage[lang] = [];
+});
+
+const allPosts = [];
+
+fs.readdirSync(postsDir)
 	.filter((file) => file.endsWith('.md'))
-	.map((file) => {
+	.forEach((file) => {
+		const match = file.match(/^(.*)-([a-z]{2})\.md$/);
+		if (!match) {
+			console.warn(`Skipping file with invalid name format: ${file}. Expected format: slug-lang.md`);
+			return;
+		}
+
+		const slug = match[1];
+		const lang = match[2];
+
+		if (!languages.includes(lang)) {
+			console.warn(
+				`Skipping file with unknown language: ${file}. Supported languages are: ${languages.join(
+					', '
+				)}`
+			);
+			return;
+		}
+
 		const filePath = path.join(postsDir, file);
 		const content = fs.readFileSync(filePath, 'utf-8');
 		const { data, content: body } = matter(content);
@@ -31,21 +56,29 @@ const posts = fs
 				}))
 			: [];
 
-		return {
+		const post = {
 			title: data.title,
 			excerpt: data.excerpt,
 			content: htmlContent,
-			date: data.date ? formatDate(data.date) : data.date,
-			slug: file.replace(/\.md$/, ''),
+			date: data.date, // Store raw date for sorting
+			slug: lang === 'pt' ? `/blog/${slug}` : `/${lang}/blog/${slug}`,
 			isMain: data.isMain || false,
 			iconName: data.icon || null, // Store as iconName for now
 			authors: authors
 		};
+
+				postsByLanguage[lang].push(post);
+		allPosts.push(post);
 	});
+
+// Sort posts by date in descending order (newest first)
+languages.forEach((lang) => {
+	postsByLanguage[lang].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+});
 
 // Collect all unique icons used
 const iconsUsed = new Set();
-posts.forEach((post) => {
+allPosts.forEach((post) => {
 	if (post.iconName && typeof post.iconName === 'string') {
 		iconsUsed.add(post.iconName);
 	}
@@ -54,41 +87,56 @@ posts.forEach((post) => {
 // Generate imports
 const iconImports =
 	Array.from(iconsUsed).length > 0
-		? `import { ${Array.from(iconsUsed).join(', ')} } from '@lucide/svelte';\n\n`
-		: `import { type Icon as IconType } from '@lucide/svelte';\n\n`;
+		? `import { ${Array.from(iconsUsed).join(', ')} } from '@lucide/svelte';
 
-// Build the posts array manually to include proper icon references
-let postsArray = 'export const posts = [\n';
-posts.forEach((post, index) => {
-	const iconRef = post.iconName ? post.iconName : 'undefined';
+`
+		: `import { type Icon as IconType } from '@lucide/svelte';
 
-	postsArray += '\t{\n';
-	postsArray += `\t\ttitle: ${JSON.stringify(post.title)},\n`;
-	postsArray += `\t\texcerpt: ${JSON.stringify(post.excerpt)},\n`;
-	postsArray += `\t\tcontent: ${JSON.stringify(post.content)},\n`;
-	postsArray += `\t\tdate: ${JSON.stringify(post.date)},\n`;
-	postsArray += `\t\tslug: ${JSON.stringify(post.slug)},\n`;
-	postsArray += `\t\tisMain: ${post.isMain},\n`;
-	postsArray += `\t\ticon: ${iconRef},\n`;
-	postsArray += '\t\tauthors: [\n';
+`;
 
-	post.authors.forEach((author, authorIndex) => {
-		postsArray += '\t\t\t{\n';
-		postsArray += `\t\t\t\tfullName: ${JSON.stringify(author.fullName)},\n`;
-		postsArray += `\t\t\t\tavatar: ${JSON.stringify(author.avatar)}\n`;
-		postsArray += '\t\t\t}';
-		if (authorIndex < post.authors.length - 1) postsArray += ',';
-		postsArray += '\n';
+// Build the posts object manually to include proper icon references
+let postsObject = 'export const posts = {\n';
+for (const lang of languages) {
+	postsObject += `\t${lang}: [\n`;
+	const posts = postsByLanguage[lang];
+	posts.forEach((post, index) => {
+		const iconRef = post.iconName ? post.iconName : 'undefined';
+
+		postsObject += '\t\t{\n';
+		postsObject += `\t\t\ttitle: ${JSON.stringify(post.title)},\n`;
+		postsObject += `\t\t\texcerpt: ${JSON.stringify(post.excerpt)},\n`;
+		postsObject += `\t\t\tcontent: ${JSON.stringify(post.content)},\n`;
+		postsObject += `			date: ${JSON.stringify(formatDate(post.date, lang))},
+`;
+		postsObject += `\t\t\tslug: ${JSON.stringify(post.slug)},\n`;
+		postsObject += `\t\t\tisMain: ${post.isMain},\n`;
+		postsObject += `\t\t\ticon: ${iconRef},\n`;
+		postsObject += '\t\t\tauthors: [\n';
+
+		post.authors.forEach((author, authorIndex) => {
+			postsObject += '\t\t\t\t{\n';
+			postsObject += `\t\t\t\t\tfullName: ${JSON.stringify(author.fullName)},\n`;
+			postsObject += `\t\t\t\t\tavatar: ${JSON.stringify(author.avatar)}\n`;
+			postsObject += '\t\t\t\t}';
+			if (authorIndex < post.authors.length - 1) postsObject += ',';
+			postsObject += '\n';
+		});
+
+		postsObject += '\t\t\t]\n';
+		postsObject += '\t\t}';
+		if (index < posts.length - 1) postsObject += ',';
+		postsObject += '\n';
 	});
+	postsObject += `\t]`;
+	if (languages.indexOf(lang) < languages.length - 1) {
+		postsObject += ',\n';
+	} else {
+		postsObject += '\n';
+	}
+}
+postsObject += '};';
 
-	postsArray += '\t\t]\n';
-	postsArray += '\t}';
-	if (index < posts.length - 1) postsArray += ',';
-	postsArray += '\n';
-});
-postsArray += '];';
-
-const fileContent = `${iconImports}${postsArray}`;
+const fileContent = `${iconImports}${postsObject}`;
 
 fs.writeFileSync(outputFile, fileContent);
 

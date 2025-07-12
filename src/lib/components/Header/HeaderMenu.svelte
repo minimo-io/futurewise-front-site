@@ -128,7 +128,8 @@
 		</ul>
 	</div>
 
-	<a class="uppercase" href={localizeHref('/soon')}>{m.menuPrices()}</a>
+	<!-- <a class="uppercase" href={localizeHref('/soon')}>{m.menuPrices()}</a> -->
+	<a class="uppercase" href={localizeHref('/blog')}>Blog</a>
 	<!-- <a class="uppercase" href={localizeHref('/blog')}>Blog</a> -->
 
 	<a href={localizeHref('/soon')} class="flex items-center uppercase">

@@ -27,7 +27,7 @@
 						<li><a href={localizeHref('/caresync')} class="text-secondary">CareSync</a></li>
 						<li><a href={localizeHref('/finx')} class="text-secondary">FinXPay</a></li>
 						<li><a href={localizeHref('/bagity')} class="text-secondary">Bagity</a></li>
-						<li><a href={localizeHref('/autocrm')} class="text-secondary">AutoCRM</a></li>
+						<li><a href={localizeHref('/soon')} class="text-secondary">AutoCRM</a></li>
 						<!-- <li>
 							<a
 								href="https://braaay.com"
@@ -53,7 +53,7 @@
 							>
 						</li>
 						<li>
-							<a href={localizeHref('/status#changelog')} class="text-secondary">Changelog</a>
+							<a href={AppConfig.status} class="text-secondary">Changelog</a>
 						</li>
 						<li>
 							<a href={localizeHref('/blog')} class="text-secondary">Blog</a>
@@ -66,7 +66,7 @@
 					<ul class="space-y-2">
 						<li><a href="/" class="text-secondary">{m.aboutUs()}</a></li>
 						<li><a href={localizeHref('/lab')} class="text-secondary">Laboratório</a></li>
-						<li><a href={localizeHref('/one-pager')} class="text-secondary">One Pager</a></li>
+						<li><a href={localizeHref('/soon')} class="text-secondary">One Pager</a></li>
 						<li><a href="/" class="text-secondary">Contato</a></li>
 					</ul>
 				</div>
