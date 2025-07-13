@@ -12,6 +12,7 @@ export interface Post {
 	date: string;
 	slug: string;
 	isMain?: boolean;
+	featured?: boolean;
 	icon?: typeof IconType;
 	authors: PostAuthor[];
 }

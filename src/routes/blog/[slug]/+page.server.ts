@@ -3,6 +3,7 @@ import { error } from '@sveltejs/kit';
 import { getLocale, localizeHref } from '$paraglide/runtime';
 import type { PageServerLoad } from './$types';
 import { posts } from '$lib/data/posts';
+import { featuredPosts } from '$lib/data/featuredPosts';
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { slug } = params;
@@ -14,10 +15,13 @@ export const load: PageServerLoad = async ({ params }) => {
 	// console.log('FINAL_SLUG', finalSlug);
 	// console.log('SLUG', slug);
 
-	const post = posts[lang]?.find((p) => p.slug === finalSlug);
+	let post = posts[lang]?.find((p) => p.slug === finalSlug);
 
 	if (!post) {
-		throw error(404, 'Post not found');
+		post = featuredPosts[lang]?.find((p) => p.slug === finalSlug);
+		if (!post) {
+			throw error(404, 'Post not found');
+		}
 	}
 
 	// Exclude the icon from serialization

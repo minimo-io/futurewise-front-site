@@ -33,19 +33,11 @@
 <!-- Blog Card -->
 <a
 	href={localizeHref(`${article.slug}`)}
-	class="group border-base-200 hover:text-secondary relative flex flex-col justify-start border-b p-(--fw-app-margin) pb-10 text-white transition-colors hover:bg-white md:border-r md:border-b-0 md:p-12 md:pb-12"
+	class="group border-base-200 hover:text-secondary relative flex flex-col justify-start border-b p-(--fw-app-margin) pb-10 text-white transition-colors hover:bg-white md:border-r md:border-b-0 md:p-10 md:pb-10"
 >
 	<!-- Header -->
 	<div class="mt-2 flex items-center justify-between">
-		<div class="text-2xl font-bold group-hover:text-black">
-			{#if article.icon}
-				{@const Icon = article.icon}
-				<Icon
-					strokeWidth={article.isMain ? '2' : '1'}
-					class={['text-primary', article.isMain ? 'h-12 w-12' : 'h-9 w-9']}
-				/>
-			{/if}
-		</div>
+		<div class="text-secondary font-sans text-sm group-hover:text-black">Notícias</div>
 
 		<div class="text-secondary font-sans text-sm group-hover:text-black">{article.date}</div>
 	</div>

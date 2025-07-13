@@ -1,7 +1,8 @@
 ---
 title: Introducing the Futurewise Platform
 excerpt: This is the excerpt for my first post and it will an awesome project, and nowone will believe it, not even me, a somehow svelte coder, turned into a Futurist.
-date: 2025-06-30
+date: 2025-09-01
+featured: true
 isMain: true
 icon: Star
 authors:

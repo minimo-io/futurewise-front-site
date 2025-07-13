@@ -1,7 +1,8 @@
 ---
-title: Presentamos la Plataforma Futurewise
+title: Presentando la Plataforma Futurewise
 excerpt: Este es el extracto de mi primera publicación y será un proyecto increíble, y nadie lo creerá, ni siquiera yo, un programador de svelte, convertido en un Futurista.
-date: 2025-06-30
+date: 2025-09-01
+featured: true
 isMain: true
 icon: Star
 authors:

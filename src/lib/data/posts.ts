@@ -1,179 +1,65 @@
-import { Star, Braces, Globe } from '@lucide/svelte';
+import { Brain } from '@lucide/svelte';
 
 export const posts = {
 	en: [
 		{
-			title: "Puppeteer & EasyOCR for Slots Automation",
-			excerpt: "This post shows how we can use Puppeteer to control slot games while EasyOCR extracts data in real-time, connecting spin results to local Ollama models for suggestions.",
-			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
-			date: "August 29",
-			slug: "/en/blog/puppeteer-and-easyocr-for-igaming-automation",
-			isMain: true,
-			icon: Braces,
+			title: "Neuro-Integrated Devices: The Next Frontier of Human-Computer Interaction",
+			excerpt: "In a world increasingly shaped by digital experiences, the ultimate integration of technology with human consciousness is no longer science fiction. We're on the cusp of a revolution where thought becomes interface and reality intertwines with the virtual.",
+			content: "<h2>The Dawn of Thought-Controlled Technology</h2>\n<p>The future of technology isn&#39;t just about faster processors or sleeker designs; it&#39;s about dissolving the barrier between human and machine. For decades, our primary interaction with computers has been through external devices – keyboards, mice, touchscreens. But what if your thoughts could directly command a device, or if digital information could be seamlessly integrated with your perception of the world? This is the promise of <strong>neuro-integrated devices</strong>, a groundbreaking field poised to redefine human-computer interaction.</p>\n<p>Imagine a world where you can compose an email simply by thinking it, navigate a complex virtual environment with a flick of your mental wrist, or even share sensory experiences with others. These aren&#39;t far-off dreams; prototypes and early-stage research are already laying the groundwork for such capabilities.</p>\n<h2>How Neuro-Integration Will Work</h2>\n<p>At its core, neuro-integrated technology relies on <strong>Brain-Computer Interfaces (BCIs)</strong>. While BCIs have been around for a while, primarily in medical applications for individuals with severe motor impairments, the next generation will be far more sophisticated and accessible.</p>\n<p>Advances in <strong>nanotechnology</strong> and <strong>miniaturization</strong> will lead to non-invasive or minimally invasive devices that can precisely read and interpret neural signals. Think of tiny, biocompatible sensors that reside just beneath the scalp, or even microscopic implants that work in harmony with the brain&#39;s natural processes without causing interference.</p>\n<p>Furthermore, these devices won&#39;t just be about output (controlling a computer). They&#39;ll also be capable of <strong>input</strong>, feeding digital information directly into the brain&#39;s sensory cortices. This could enable:</p>\n<ul>\n<li><strong>Augmented Reality (AR) without screens:</strong> Visual information could be projected directly onto your retina or even interpreted by your visual cortex, creating truly immersive AR experiences that blend seamlessly with your natural sight.</li>\n<li><strong>Enhanced Senses:</strong> Imagine being able to &quot;see&quot; in infrared, &quot;hear&quot; frequencies beyond human range, or even gain new senses through direct neural input.</li>\n<li><strong>Direct Knowledge Transfer:</strong> Potentially, complex information or skills could be &quot;downloaded&quot; directly into your mind, accelerating learning and expertise.</li>\n</ul>\n<h2>Challenges and Ethical Considerations</h2>\n<p>As with any transformative technology, neuro-integration presents significant challenges and ethical dilemmas.</p>\n<ul>\n<li><strong>Privacy and Security:</strong> Our thoughts and neural data are the ultimate private information. Ensuring the security and privacy of this data will be paramount. Who owns your neural patterns? How do we prevent malicious actors from accessing or manipulating them?</li>\n<li><strong>Digital Divide:</strong> Will this technology create a new form of digital divide, separating those with enhanced cognitive abilities from those without?</li>\n<li><strong>Human Identity:</strong> As our minds become more integrated with technology, how will this impact our sense of self and what it means to be human? Will we lose aspects of our organic nature?</li>\n<li><strong>Regulation and Governance:</strong> Establishing clear ethical guidelines and regulatory frameworks will be crucial to ensure responsible development and and deployment of neuro-integrated devices.</li>\n</ul>\n<h2>The Future is Thought-Provoking</h2>\n<p>Despite the hurdles, the potential benefits of neuro-integrated devices are immense. They could revolutionize communication, education, entertainment, healthcare, and countless other aspects of our lives. The ability to directly interface with technology, to extend our cognitive and sensory capabilities, promises a future where the line between human and machine blur, creating an unprecedented era of innovation and connection. The journey has just begun, and the implications are as boundless as the human mind itself.</p>\n",
+			date: "November 14",
+			slug: "/en/blog/some-random-posts",
+			isMain: false,
+			icon: Brain,
 			authors: [
 				{
 					fullName: "Nicolas Erramuspe",
 					avatar: "/me.jpeg"
 				},
 				{
-					fullName: "Gemini",
+					fullName: "Gemini AI",
 					avatar: "/gemini-logo.png"
-				}
-			]
-		},
-		{
-			title: "The future of programming",
-			excerpt: "Andrej Karpathy's \"Software Is Changing (Again)\" introduces Software 3.0, LLMs, programmable with natural language, democratize coding. He sees LLMs as powerful, yet fallible, new operating systems driving \"partial autonomy apps\" and requiring software built for direct AI interaction.",
-			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
-			date: "July 11",
-			slug: "/en/blog/the-future-of-programming",
-			isMain: true,
-			icon: Globe,
-			authors: [
-				{
-					fullName: "ChatGPT",
-					avatar: "/chatgpt-logo.png"
-				},
-				{
-					fullName: "Nicolas Erramuspe",
-					avatar: "/me.jpeg"
-				}
-			]
-		},
-		{
-			title: "Introducing the Futurewise Platform",
-			excerpt: "This is the excerpt for my first post and it will an awesome project, and nowone will believe it, not even me, a somehow svelte coder, turned into a Futurist.",
-			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
-			date: "June 29",
-			slug: "/en/blog/introducing-the-futurewise-platform",
-			isMain: true,
-			icon: Star,
-			authors: [
-				{
-					fullName: "Nicolas Erramuspe",
-					avatar: "/me.jpeg"
-				},
-				{
-					fullName: "Claude AI",
-					avatar: "/claude-logo.png"
 				}
 			]
 		}
 	],
 	es: [
 		{
-			title: "Puppeteer y EasyOCR para la Automatización de Slots",
-			excerpt: "Este post muestra cómo podemos usar Puppeteer para controlar juegos de tragamonedas mientras EasyOCR extrae datos en tiempo real, conectando los resultados de los giros a modelos locales de Ollama para sugerencias.",
-			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
-			date: "29 de agosto",
-			slug: "/es/blog/puppeteer-and-easyocr-for-igaming-automation",
-			isMain: true,
-			icon: Braces,
+			title: "Dispositivos Neurointegrados: La Próxima Frontera de la Interacción Humano-Computadora",
+			excerpt: "En un mundo cada vez más moldeado por las experiencias digitales, la integración definitiva de la tecnología con la conciencia humana ya no es ciencia ficción. Estamos al borde de una revolución donde el pensamiento se convierte en interfaz y la realidad se entrelaza con lo virtual.",
+			content: "<h2>El Amanecer de la Tecnología Controlada por el Pensamiento</h2>\n<p>El futuro de la tecnología no se trata solo de procesadores más rápidos o diseños más elegantes; se trata de disolver la barrera entre el ser humano y la máquina. Durante décadas, nuestra interacción principal con las computadoras ha sido a través de dispositivos externos: teclados, ratones, pantallas táctiles. Pero, ¿qué pasaría si tus pensamientos pudieran comandar directamente un dispositivo, o si la información digital pudiera integrarse perfectamente con tu percepción del mundo? Esta es la promesa de los <strong>dispositivos neurointegrados</strong>, un campo innovador a punto de redefinir la interacción humano-computadora.</p>\n<p>Imagina un mundo donde puedes redactar un correo electrónico simplemente pensándolo, navegar por un entorno virtual complejo con un simple movimiento mental de la muñeca, o incluso compartir experiencias sensoriales con otros. Estos no son sueños lejanos; prototipos e investigaciones en etapa temprana ya están sentando las bases para tales capacidades.</p>\n<h2>Cómo Funcionará la Neurointegración</h2>\n<p>En su esencia, la tecnología neurointegrada se basa en las <strong>Interfaces Cerebro-Computadora (BCI)</strong>. Si bien las BCI han existido durante un tiempo, principalmente en aplicaciones médicas para personas con discapacidades motoras graves, la próxima generación será mucho más sofisticada y accesible.</p>\n<p>Los avances en <strong>nanotecnología</strong> y <strong>miniaturización</strong> darán lugar a dispositivos no invasivos o mínimamente invasivos que puedan leer e interpretar con precisión las señales neuronales. Piensa en pequeños sensores biocompatibles que residen justo debajo del cuero cabelludo, o incluso implantes microscópicos que funcionan en armonía con los procesos naturales del cerebro sin causar interferencias.</p>\n<p>Además, estos dispositivos no solo se tratarán de la salida (controlar una computadora). También serán capaces de <strong>entrada</strong>, alimentando información digital directamente en las cortezas sensoriales del cerebro. Esto podría permitir:</p>\n<ul>\n<li><strong>Realidad Aumentada (RA) sin pantallas:</strong> La información visual podría proyectarse directamente en tu retina o incluso ser interpretada por tu corteza visual, creando experiencias de RA verdaderamente inmersivas que se mezclan a la perfección con tu vista natural.</li>\n<li><strong>Sentidos Mejorados:</strong> Imagina poder &quot;ver&quot; en infrarrojos, &quot;escuchar&quot; frecuencias más allá del alcance humano, o incluso obtener nuevos sentidos a través de la entrada neural directa.</li>\n<li><strong>Transferencia Directa de Conocimiento:</strong> Potencialmente, información compleja o habilidades podrían ser &quot;descargadas&quot; directamente en tu mente, acelerando el aprendizaje y la experiencia.</li>\n</ul>\n<h2>Desafíos y Consideraciones Éticas</h2>\n<p>Como ocurre con cualquier tecnología transformadora, la neurointegración presenta desafíos y dilemas éticos significativos.</p>\n<ul>\n<li><strong>Privacidad y Seguridad:</strong> Nuestros pensamientos y datos neuronales son la información privada más importante. Garantizar la seguridad y privacidad de estos datos será primordial. ¿Quién es dueño de tus patrones neuronales? ¿Cómo evitamos que actores maliciosos los accedan o manipulen?</li>\n<li><strong>Brecha Digital:</strong> ¿Esta tecnología creará una nueva forma de brecha digital, separando a aquellos con capacidades cognitivas mejoradas de aquellos que no las tienen?</li>\n<li><strong>Identidad Humana:</strong> A medida que nuestras mentes se integren más con la tecnología, ¿cómo afectará esto nuestro sentido de identidad y lo que significa ser humano? ¿Perderemos aspectos de nuestra naturaleza orgánica?</li>\n<li><strong>Regulación y Gobernanza:</strong> Establecer directrices éticas claras y marcos regulatorios será crucial para garantizar el desarrollo y la implementación responsables de los dispositivos neurointegrados.</li>\n</ul>\n<h2>El Futuro es Provocador de Pensamientos</h2>\n<p>A pesar de los obstáculos, los beneficios potenciales de los dispositivos neurointegrados son inmensos. Podrían revolucionar la comunicación, la educación, el entretenimiento, la atención médica y muchos otros aspectos de nuestras vidas. La capacidad de interactuar directamente con la tecnología, de extender nuestras capacidades cognitivas y sensoriales, promete un futuro donde la línea entre el ser humano y la máquina se desdibuja, creando una era sin precedentes de innovación y conexión. El viaje acaba de comenzar y las implicaciones son tan ilimitadas como la mente humana misma.</p>\n",
+			date: "14 de noviembre",
+			slug: "/es/blog/some-random-posts",
+			isMain: false,
+			icon: Brain,
 			authors: [
 				{
 					fullName: "Nicolas Erramuspe",
 					avatar: "/me.jpeg"
 				},
 				{
-					fullName: "Gemini",
+					fullName: "Gemini AI",
 					avatar: "/gemini-logo.png"
-				}
-			]
-		},
-		{
-			title: "El futuro de la programación",
-			excerpt: "Andrej Karpathy destaca Software 3.0, LLMs programables con lenguaje natural democratizan la codificación. Los ve como sistemas operativos nuevos, potentes y falibles, impulsando \"apps de autonomía parcial\" y software para IA directa.",
-			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
-			date: "11 de julio",
-			slug: "/es/blog/the-future-of-programming",
-			isMain: true,
-			icon: Globe,
-			authors: [
-				{
-					fullName: "ChatGPT",
-					avatar: "/chatgpt-logo.png"
-				},
-				{
-					fullName: "Nicolas Erramuspe",
-					avatar: "/me.jpeg"
-				}
-			]
-		},
-		{
-			title: "Presentamos la Plataforma Futurewise",
-			excerpt: "Este es el extracto de mi primera publicación y será un proyecto increíble, y nadie lo creerá, ni siquiera yo, un programador de svelte, convertido en un Futurista.",
-			content: "<p>Este es el contenido de mi primera publicación. Está escrito in Markdown.</p>\n",
-			date: "29 de junio",
-			slug: "/es/blog/introducing-the-futurewise-platform",
-			isMain: true,
-			icon: Star,
-			authors: [
-				{
-					fullName: "Nicolas Erramuspe",
-					avatar: "/me.jpeg"
-				},
-				{
-					fullName: "Claude AI",
-					avatar: "/claude-logo.png"
 				}
 			]
 		}
 	],
 	pt: [
 		{
-			title: "Puppeteer e EasyOCR para Automação de Slots",
-			excerpt: "Este post mostra como podemos usar o Puppeteer para controlar jogos de slot enquanto o EasyOCR extrai dados em tempo real, conectando os resultados das rodadas a modelos locais do Ollama para sugestões.",
-			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
-			date: "29 de agosto",
-			slug: "/blog/puppeteer-and-easyocr-for-igaming-automation",
-			isMain: true,
-			icon: Braces,
+			title: "Dispositivos Neurointegrados: A Próxima Fronteira da Interação Humano-Computador",
+			excerpt: "Em um mundo cada vez mais moldado por experiências digitais, a integração definitiva da tecnologia com a consciência humana não é mais ficção científica. Estamos na cúspide de uma revolução onde o pensamento se torna interface e a realidade se entrelaça com o virtual.",
+			content: "<h2>O Amanhecer da Tecnologia Controlada Pelo Pensamento</h2>\n<p>O futuro da tecnologia não se trata apenas de processadores mais rápidos ou designs mais elegantes; trata-se de dissolver a barreira entre o ser humano e a máquina. Por décadas, nossa principal interação com computadores tem sido através de dispositivos externos – teclados, mouses, telas sensíveis ao toque. Mas e se seus pensamentos pudessem comandar diretamente um dispositivo, ou se a informação digital pudesse ser perfeitamente integrada à sua percepção do mundo? Esta é a promessa dos <strong>dispositivos neurointegrados</strong>, um campo inovador prestes a redefinir a interação humano-computador.</p>\n<p>Imagine um mundo onde você pode compor um e-mail simplesmente pensando nele, navegar por um ambiente virtual complexo com um movimento mental do pulso, ou até mesmo compartilhar experiências sensoriais com outras pessoas. Estes não são sonhos distantes; protótipos e pesquisas em estágio inicial já estão lançando as bases para tais capacidades.</p>\n<h2>Como a Neurointegração Funcionará</h2>\n<p>Em sua essência, a tecnologia neurointegrada depende das <strong>Interfaces Cérebro-Computador (BCIs)</strong>. Embora as BCIs existam há algum tempo, principalmente em aplicações médicas para indivíduos com deficiências motoras graves, a próxima geração será muito mais sofisticada e acessível.</p>\n<p>Avanços em <strong>nanotecnologia</strong> e <strong>miniaturização</strong> levarão a dispositivos não invasivos ou minimamente invasivos que podem ler e interpretar com precisão os sinais neurais. Pense em pequenos sensores biocompatíveis que residem logo abaixo do couro cabeludo, ou até mesmo implantes microscópicos que funcionam em harmonia com os processos naturais do cérebro sem causar interferência.</p>\n<p>Além disso, esses dispositivos não se tratarão apenas de saída (controlar um computador). Eles também serão capazes de <strong>entrada</strong>, alimentando informações digitais diretamente nos córtices sensoriais do cérebro. Isso poderia permitir:</p>\n<ul>\n<li><strong>Realidade Aumentada (RA) sem telas:</strong> A informação visual poderia ser projetada diretamente em sua retina ou até mesmo interpretada por seu córtex visual, criando experiências de RA verdadeiramente imersivas que se misturam perfeitamente com sua visão natural.</li>\n<li><strong>Sentidos Aprimorados:</strong> Imagine ser capaz de &quot;ver&quot; em infravermelho, &quot;ouvir&quot; frequências além do alcance humano, ou até mesmo ganhar novos sentidos através de entrada neural direta.</li>\n<li><strong>Transferência Direta de Conhecimento:</strong> Potencialmente, informações ou habilidades complexas poderiam ser &quot;baixadas&quot; diretamente para sua mente, acelerando o aprendizado e a experiência.</li>\n</ul>\n<h2>Desafios e Considerações Éticas</h2>\n<p>Assim como qualquer tecnologia transformadora, a neurointegração apresenta desafios e dilemas éticos significativos.</p>\n<ul>\n<li><strong>Privacidade e Segurança:</strong> Nossos pensamentos e dados neurais são a informação privada máxima. Garantir a segurança e a privacidade desses dados será primordial. Quem possui seus padrões neurais? Como evitamos que agentes maliciosos os acessem ou manipulem?</li>\n<li><strong>Divisão Digital:</strong> Essa tecnologia criará uma nova forma de divisão digital, separando aqueles com habilidades cognitivas aprimoradas daqueles sem elas?</li>\n<li><strong>Identidade Humana:</strong> À medida que nossas mentes se integrarem mais com a tecnologia, como isso impactará nosso senso de identidade e o que significa ser humano? Perderemos aspectos de nossa natureza orgânica?</li>\n<li><strong>Regulamentação e Governança:</strong> O estabelecimento de diretrizes éticas claras e estruturas regulatórias será crucial para garantir o desenvolvimento e a implantação responsáveis de dispositivos neurointegrados.</li>\n</ul>\n<h2>O Futuro é Provocador de Pensamentos</h2>\n<p>Apesar dos obstáculos, os benefícios potenciais dos dispositivos neurointegrados são imensos. Eles poderiam revolucionar a comunicação, a educação, o entretenimento, a saúde e inúmeros outros aspectos de nossas vidas. A capacidade de interagir diretamente com a tecnologia, de estender nossas capacidades cognitivas e sensoriais, promete um futuro onde a linha entre o humano e a máquina se confunde, criando uma era sem precedentes de inovação e conexão. A jornada apenas começou, e as implicações são tão ilimitadas quanto a própria mente humana.</p>\n",
+			date: "14 de novembro",
+			slug: "/blog/some-random-posts",
+			isMain: false,
+			icon: Brain,
 			authors: [
 				{
 					fullName: "Nicolas Erramuspe",
 					avatar: "/me.jpeg"
 				},
 				{
-					fullName: "Gemini",
+					fullName: "Gemini AI",
 					avatar: "/gemini-logo.png"
-				}
-			]
-		},
-		{
-			title: "O futuro da programação",
-			excerpt: "Andrej Karpathy em \"O Software Está Mudando (De Novo)\" destaca o Software 3.0, LLMs programáveis por linguagem natural democratizam a codificação. Ele os vê como novos OS, potentes e falíveis, impulsionando \"apps de autonomia parcial\" e software para IA.",
-			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
-			date: "11 de julho",
-			slug: "/blog/the-future-of-programming",
-			isMain: true,
-			icon: Globe,
-			authors: [
-				{
-					fullName: "ChatGPT",
-					avatar: "/chatgpt-logo.png"
-				},
-				{
-					fullName: "Nicolas Erramuspe",
-					avatar: "/me.jpeg"
-				}
-			]
-		},
-		{
-			title: "Apresentando a Plataforma Futurewise",
-			excerpt: "Este é o trecho do meu primeiro post e será um projeto incrível, e ninguém vai acreditar, nem mesmo eu, um programador svelte, que se tornou um Futurista.",
-			content: "<p>Este é o conteúdo do meu primeiro post. Está escrito em Markdown.</p>\n",
-			date: "29 de junho",
-			slug: "/blog/introducing-the-futurewise-platform",
-			isMain: true,
-			icon: Star,
-			authors: [
-				{
-					fullName: "Nicolas Erramuspe",
-					avatar: "/me.jpeg"
-				},
-				{
-					fullName: "Claude AI",
-					avatar: "/claude-logo.png"
 				}
 			]
 		}

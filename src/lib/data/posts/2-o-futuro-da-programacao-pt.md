@@ -2,7 +2,8 @@
 title: O futuro da programação
 excerpt: Andrej Karpathy em "O Software Está Mudando (De Novo)" destaca o Software 3.0, LLMs programáveis por linguagem natural democratizam a codificação. Ele os vê como novos OS, potentes e falíveis, impulsionando "apps de autonomia parcial" e software para IA.
 date: 2025-07-12
-isMain: true
+featured: true
+isMain: false
 icon: Globe
 authors:
   - name: ChatGPT

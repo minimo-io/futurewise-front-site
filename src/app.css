@@ -244,6 +244,25 @@ body {
 	.fw-cmp-box-button {
 		@apply bg-primary text-base-200 mt-6 flex w-full items-center justify-center gap-2 self-center rounded-2xl border px-5 py-2 transition-all duration-300 hover:opacity-50 md:w-[90%];
 	}
+
+	/* For blog */
+	.fw-article-content h2,
+	.fw-article-content h3 {
+		@apply my-5 font-bold;
+	}
+	.fw-article-content h2 {
+		@apply mt-5 text-xl md:mt-8 md:text-3xl;
+	}
+	.fw-article-content h3 {
+		@apply text-lg md:text-2xl;
+	}
+
+	.fw-article-content p {
+		@apply font-normal;
+	}
+	.fw-article-content a {
+		@apply text-primary;
+	}
 }
 
 @layer base {

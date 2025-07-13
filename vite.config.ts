@@ -3,6 +3,7 @@ import { paraglideVitePlugin } from '@inlang/paraglide-js';
 import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import { blogPosts } from './src/lib/data/blogPostsForVite';
 
 export default defineConfig({
 	plugins: [
@@ -20,6 +21,9 @@ export default defineConfig({
 					]
 				},
 				// Blog
+
+				...blogPosts,
+
 				{
 					pattern: '/blog/:id',
 					localized: [

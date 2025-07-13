@@ -1,4 +1,5 @@
 <script lang="ts">
+	import RegularPosts from '$lib/components/blog/regularPosts.svelte';
 	import TopPosts from '$lib/components/blog/topPosts.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
 	import HeaderDefined from '$lib/components/Header/HeaderDefined.svelte';
@@ -17,12 +18,8 @@
 		class="max-w-fw border-x-base-200 relative container my-0 text-center md:mx-auto md:border-0 md:border-x"
 	>
 		<TopPosts />
-		<div class="mx-(--fw-app-margin) flex h-[calc(100vh-90px)] flex-1 items-center justify-center">
-			<div class="relative -top-8 w-[400px]">
-				<h2 class="text-base-content font-sans text-3xl font-black">{m.login()}</h2>
-				<div class="mx-auto"></div>
-			</div>
-		</div>
+
+		<RegularPosts />
 
 		<CtaContact />
 
