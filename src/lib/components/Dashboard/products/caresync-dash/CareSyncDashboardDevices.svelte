@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Check, Laptop, PcCase, RefreshCw } from '@lucide/svelte';
+	import { Check, Laptop, PcCase } from '@lucide/svelte';
 	import { MachineStatus, MachineType, type Machine } from '$lib/type/caresync-machines.types';
 	import { onMount, onDestroy } from 'svelte';
 	import { m } from '$paraglide/messages';
@@ -7,6 +7,7 @@
 	import CareSyncDashboardDevicesActions from './CareSyncDashboardDevicesActions.svelte';
 	import { AppConfig } from '$lib/configs';
 	import { localizeHref } from '$paraglide/runtime';
+	import { machineTypeCode } from '$utils';
 
 	let machines: Machine[] = $state([]);
 	let isLoading = $state(true);
@@ -22,28 +23,27 @@
 			const apiData = response.data.data;
 
 			machines = apiData.map((device: any): Machine => {
-				const getStatus = (metrics: any): MachineStatus => {
-					if (!metrics || Object.keys(metrics).length === 0 || !metrics.basic) {
-						return MachineStatus.NO_DATA; // Default status if no metrics or basic metrics are available
-					}
-
-					const { cpu, memory, disk } = metrics.basic;
-
-					if (
-						(cpu && cpu.current > 90) ||
-						(memory && memory.current_percent > 90) ||
-						(disk && disk.percent > 95)
-					) {
-						return MachineStatus.ALERT;
-					}
-					if (
-						(cpu && cpu.current > 75) ||
-						(memory && memory.current_percent > 75) ||
-						(disk && disk.percent > 85)
-					) {
-						return MachineStatus.PROBLEMS;
-					}
-					return MachineStatus.BOM;
+				const getStatus = (metrics: any, deviceStatus: MachineStatus): MachineStatus | string => {
+					// if (!metrics || Object.keys(metrics).length === 0 || !metrics.basic) {
+					// 	return MachineStatus.NO_DATA; // Default status if no metrics or basic metrics are available
+					// }
+					// const { cpu, memory, disk } = metrics.basic;
+					// if (
+					// 	(cpu && cpu.current > 90) ||
+					// 	(memory && memory.current_percent > 90) ||
+					// 	(disk && disk.percent > 95)
+					// ) {
+					// 	return MachineStatus.ALERT;
+					// }
+					// if (
+					// 	(cpu && cpu.current > 75) ||
+					// 	(memory && memory.current_percent > 75) ||
+					// 	(disk && disk.percent > 85)
+					// ) {
+					// 	return MachineStatus.PROBLEMS;
+					// }
+					// return MachineStatus.BOM;
+					return deviceStatus;
 				};
 
 				const getMonthsActive = (installationDate: string): number => {
@@ -59,7 +59,7 @@
 					id: device.id,
 					device_id: device.deviceId,
 					online: device.status === 'active',
-					status: getStatus(device.metrics),
+					status: getStatus(device.metrics, device.status),
 					type: device.type === 'NOTEBOOK' ? MachineType.NOTEBOOK : MachineType.DESKTOP,
 					remoteAccess: device.remoteAccess,
 					organization: device.company?.name || 'N/A',
@@ -75,7 +75,9 @@
 					},
 					lastService: 'N/A',
 					nextService: 'N/A',
-					timeActive: device.deviceMetadata?.installation_date ? getMonthsActive(device.deviceMetadata.installation_date) : 0,
+					timeActive: device.deviceMetadata?.installation_date
+						? getMonthsActive(device.deviceMetadata.installation_date)
+						: 0,
 					serialNumber: device.deviceMetadata?.serial_number || 'N/A',
 					brand: device.deviceMetadata?.model ? device.deviceMetadata.model.split(' ')[0] : 'N/A',
 					model: device.deviceMetadata?.model || 'N/A'
@@ -121,9 +123,7 @@
 </script>
 
 <div class="flex w-full flex-col">
-	<div class="border-base-200 flex justify-start border-b">
-		<CareSyncDashboardDevicesActions {handleRefresh} {isRefreshing} {countdown} />
-	</div>
+	<CareSyncDashboardDevicesActions {handleRefresh} {isRefreshing} {countdown} />
 
 	<!-- <div class="overflow-x-auto"> -->
 	<table class="table w-full border border-t-0">
@@ -161,12 +161,7 @@
 						<td>
 							<div class="flex items-center">
 								<a href={deviceUrl} class="text-primary">
-									{#if machine.type == 'NOTEBOOK'}
-										NT
-									{:else}
-										DT
-									{/if}
-									-{machine.device_id}
+									{machineTypeCode(machine.type)}-{machine.device_id}
 								</a>
 
 								<!-- Online/Offline status -->
@@ -272,15 +267,7 @@
 							{machine.model}
 						</td>
 						<th>
-							<a href={deviceUrl} class="drawer-button btn btn-sm btn-primary rounded-full">
-								Detalhes
-							</a>
-							<!-- <button
-							class="btn btn-primary btn-sm rounded-full"
-							onclick={() => {
-								alert('EM BREVE!');
-							}}>Detalhes</button
-						> -->
+							<a href={deviceUrl} class="btn btn-sm btn-primary rounded-full"> Detalhes </a>
 						</th>
 					</tr>
 				{/each}

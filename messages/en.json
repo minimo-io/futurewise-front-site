@@ -215,5 +215,7 @@
 	"bagityFeature8Title": "Intelligent Support",
 	"bagityFeature8Desc": "Integration with <a href='/soon' class='text-primary hover:opacity-40'>AutoCRM</a>, our first-contact chatbot trained with AI to represent your brand, answer questions, qualify leads, and automatically connect to your CRM.",
 
-	"product": "Product"
+	"product": "Product",
+
+	"addService": "Add service"
 }

@@ -218,5 +218,7 @@
 	"bagityFeature8Title": "Atendimentos inteligentes",
 	"bagityFeature8Desc": "Integração com <a href='/em-breve' class='text-primary hover:opacity-40'>AutoCRM</a>, nosso chatbot de primeiro contato, treinado com IA para representar sua marca, respondendo dúvidas, qualificando leads e integrando-se ao seu CRM automáticamente.",
 
-	"product": "Produto"
+	"product": "Produto",
+
+	"addService": "Adicionar serviço"
 }
