@@ -13,6 +13,8 @@
 	"yes": "Yes",
 	"no": "No",
 
+	"knowledgeBase": "Knowledge base",
+
 	"loginEmailRequired": "Email is required",
 	"loginPasswordRequired": "Password is required",
 	"loginInvalidCredentials": "Invalid credentials",

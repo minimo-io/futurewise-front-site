@@ -6,19 +6,17 @@
 		Home,
 		Laptop,
 		LifeBuoy,
-		Puzzle,
 		ReceiptText,
 		Recycle,
-		Target,
 		TriangleAlert,
-		UsersRound,
-		Zap
+		UsersRound
 	} from '@lucide/svelte';
 	import HeaderLogo from '../Header/HeaderLogo.svelte';
 	import { toggleLoader } from '$stores/Loader.state.svelte';
 	import { enhance } from '$app/forms';
 	import ProductSwitchButton from '../Buttons/ProductSwitchButton.svelte';
 	import { localizeHref } from '$paraglide/runtime';
+	import { m } from '$paraglide/messages';
 </script>
 
 <div class="border-base-200 w-60 border-r">
@@ -117,6 +115,16 @@
 					</form>
 				</li>
 			</ul>
+		</li>
+		<li class="border-base-200 border-b py-2">
+			<a
+				href="https://any.coop/AAgC1MK4YpFsTa9gfi822CM4eHbm83ovkrQQYDFnTvyDw2hN/tools-and-technologies"
+				target="_blank"
+				rel="nofollow"
+			>
+				<BookOpen class="aspect-1 h-4" />
+				{m.knowledgeBase()}
+			</a>
 		</li>
 		<li class="border-base-200 border-b py-2">
 			<a href="/">
