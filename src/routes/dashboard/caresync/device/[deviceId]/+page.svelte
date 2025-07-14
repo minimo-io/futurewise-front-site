@@ -2,7 +2,7 @@
 	import CareSyncDashboardDevicesActions from '$dashboards/caresync-dash/CareSyncDashboardDevicesActions.svelte';
 	import type { Device } from '$types/caresync-machines.types';
 	import { machineTypeCode } from '$utils';
-	import { Laptop, PcCase } from '@lucide/svelte';
+	import { Eye, Image, Laptop, PcCase } from '@lucide/svelte';
 	import type { PageProps } from './$types';
 	import Actions from './components/Actions.svelte';
 
@@ -12,10 +12,19 @@
 	let deviceName = $derived(`${machineTypeCode(device.device_type)}-${device.device_id}`);
 
 	let modal = $state<HTMLDialogElement>();
+	let imageModal = $state<HTMLDialogElement>();
+	let selectedImage = $state<{ src: string; alt: string } | null>(null);
 
 	function openModal() {
 		if (modal) {
 			modal.showModal();
+		}
+	}
+
+	function openImageModal(src: string, alt: string) {
+		selectedImage = { src, alt };
+		if (imageModal) {
+			imageModal.showModal();
 		}
 	}
 </script>
@@ -57,16 +66,88 @@
 	<!-- Main Box -->
 	<div class="flex">
 		<!-- Left -->
-		<div class="border-base-200 w-1/3 border-r p-5">
-			<div class="text-secondary text-left">
-				<p><strong>Marca:</strong> {device.device_metadata.model ?? 'N/A'}</p>
-				<p><strong>Serial:</strong> {device.device_metadata.serial_number ?? 'N/A'}</p>
-				<p><strong>Device Type:</strong> {data.device.device_type}</p>
-				<p>
-					<strong>Remote Access:</strong>
-					{data.device.remote_access ? 'Enabled' : 'Disabled'}
-				</p>
-				<img src="/devices/dell-vostro-3681.jpg" class="my-5 w-full rounded-xl" alt="dell-vostro" />
+		<div class="border-base-200 w-1/3 border-r">
+			<div class="text-secondary flex flex-col justify-between text-left">
+				<div class="fw-device-details flex-1">
+					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
+						<div class="mr-3">Modelo:</div>
+						<strong>{device.device_metadata.model ?? 'N/A'} / {data.device.device_type}</strong>
+					</div>
+					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
+						<div class="mr-3">Nro Série:</div>
+						<strong>{device.device_metadata.serial_number ?? 'N/A'}</strong>
+					</div>
+					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
+						<div class="mr-3">Procesador:</div>
+						<strong>{data.device.device_metadata.processor}</strong>
+					</div>
+					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
+						<div class="mr-3">HDD:</div>
+						<strong>{data.device.device_metadata.hdd}</strong>
+					</div>
+					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
+						<div class="mr-3">RAM:</div>
+						<strong>{data.device.device_metadata.ram}</strong>
+					</div>
+					<!-- <div class="border-base-200 border-b p-4">
+						<strong>Remote Access:</strong>
+						{data.device.remote_access ? 'Enabled' : 'Disabled'}
+					</div> -->
+				</div>
+
+				<!-- Gallery -->
+				<div class="border-base-200 border-b p-4">
+					<h2 class="text-base-content mr-2 flex items-center text-left text-lg font-bold">
+						<Image class="mr-[1px] aspect-square h-4" />
+						Imagens
+					</h2>
+				</div>
+
+				<div class="fw-gallery">
+					<button
+						class="group fw-gallery-item h-[100px] w-[100px]"
+						onclick={() => openImageModal('/devices/dell-vostro-3681.jpg', 'Dell Vostro 3681')}
+					>
+						<img
+							src="/devices/dell-vostro-3681.jpg"
+							class="h-full w-full object-cover"
+							alt="dell-vostro"
+						/>
+						<div class="fw-gallery-overlay">
+							<Eye class="h-6 w-6 text-white" />
+						</div>
+					</button>
+					<button
+						class="group fw-gallery-item h-[100px] w-[100px]"
+						onclick={() => openImageModal('/devices/vostro-2.jpg', 'Dell Vostro 2')}
+					>
+						<img src="/devices/vostro-2.jpg" class="h-full w-full object-cover" alt="dell-vostro" />
+						<div class="fw-gallery-overlay">
+							<Eye class="text-base-content h-6 w-6" />
+						</div>
+					</button>
+				</div>
+
+				<!-- Image Modal -->
+				<dialog bind:this={imageModal} class="modal">
+					<form method="dialog">
+						<button class="btn btn-sm btn-circle btn-ghost absolute top-2 right-2 z-10 text-white"
+							>✕</button
+						>
+					</form>
+					<div class="modal-box border-base-300 max-h-[90%] w-11/12 max-w-4xl border p-0">
+						{#if selectedImage}
+							<img
+								src={selectedImage.src}
+								alt={selectedImage.alt}
+								class="h-auto w-full object-contain"
+							/>
+						{/if}
+					</div>
+					<form method="dialog" class="modal-backdrop">
+						<button>close</button>
+					</form>
+				</dialog>
 			</div>
 		</div>
 		<!-- Right -->
@@ -133,3 +214,37 @@
 		</div>
 	</div>
 </div>
+
+<style lang="postcss">
+	@reference "tailwindcss";
+	.fw-device-details {
+		@apply text-sm;
+	}
+	/* Styles for each gallery item */
+	.fw-gallery {
+		@apply flex flex-wrap gap-1;
+	}
+	.fw-gallery-item {
+		@apply relative overflow-hidden border-0 bg-transparent p-0;
+	}
+
+	.fw-gallery-item img {
+		@apply transition-all duration-300;
+	}
+
+	/* This rule applies directly to the item when hovered */
+	.fw-gallery-item:hover img {
+		@apply scale-110;
+	}
+
+	/* Styles for the overlay (default hidden state) */
+	.fw-gallery-overlay {
+		/* CORRECTED: Changed bg-black bg-opacity-40 to bg-black/40 */
+		@apply pointer-events-none absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300;
+	}
+
+	/* Styles for the overlay when the parent item is hovered */
+	.fw-gallery-item:hover .fw-gallery-overlay {
+		@apply pointer-events-auto opacity-100;
+	}
+</style>
