@@ -35,7 +35,7 @@
 
 				<!-- Title -->
 				<h1
-					class="text-base-content mb-7 px-3 font-sans text-3xl text-[28px] font-black md:mb-10 md:px-22 md:text-[55px] md:leading-15 md:font-bold"
+					class="text-base-content mb-7 px-3 font-sans text-3xl text-[32px] font-black md:mb-10 md:px-22 md:text-[55px] md:leading-15 md:font-bold"
 				>
 					{data.post.title}
 				</h1>

@@ -19,6 +19,18 @@
 	>
 		<TopPosts />
 
+		<div class="border-base-200 flex items-center justify-between border-b px-6 py-8 md:px-12">
+			<div
+				class="text-left font-sans text-[25px] leading-tight font-black md:text-[36px] md:leading-normal"
+			>
+				Últimas notícias
+			</div>
+			<div class="text-right font-sans text-sm md:text-base">
+				Subscribe via <a href="/#" class="text-primary font-bold">RSS</a> or
+				<a href="/#" class="text-primary font-bold">Email</a>
+			</div>
+		</div>
+
 		<RegularPosts />
 
 		<CtaContact />
