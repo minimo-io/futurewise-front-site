@@ -27,19 +27,19 @@
 	<div>
 		<ProductSwitchButton />
 	</div>
-	<ul class="menu bg-grey-light h-full w-60">
+	<ul class="menu bg-grey-light h-full md:w-60">
 		<li>
 			<a href="/" class="active text-primary">
 				<Home class="aspect-1 h-4" />
-				Dashboard
+				<span class="hidden lg:inline">Dashboard</span>
 			</a>
 		</li>
 		<li>
 			<a href={localizeHref('/dashboard/caresync')}>
 				<Laptop class="aspect-1 h-4" />
-				Dispositivos
+				<span class="hidden lg:inline">Dispositivos</span>
 			</a>
-			<ul class="pb-2">
+			<ul class="hidden pb-2 lg:block lg:pl-4">
 				<li>
 					<a href={localizeHref('/dashboard/caresync')}>Todos os ativos</a>
 				</li>
@@ -50,27 +50,33 @@
 		<li>
 			<a href="/">
 				<LifeBuoy class="aspect-1 h-4" />
-				Serviços
+				<span class="hidden lg:inline">Serviços</span>
+			</a>
+		</li>
+		<li>
+			<a href="/">
+				<Coins class="aspect-1 h-4" />
+				<span class="hidden lg:inline">Compras</span>
 			</a>
 		</li>
 		<li>
 			<a href="/">
 				<TriangleAlert class="aspect-1 h-4" />
-				Alertas
+				<span class="hidden lg:inline">Alertas</span>
 			</a>
 		</li>
 		<li>
 			<a href="/">
 				<ClipboardMinus class="aspect-1 h-4" />
-				Relatórios
+				<span class="hidden lg:inline">Relatórios</span>
 			</a>
 		</li>
 		<li>
 			<a href="/">
 				<UsersRound class="aspect-1 h-4" />
-				Organizações
+				<span class="hidden lg:inline">Organizações</span>
 			</a>
-			<ul class="pb-2">
+			<ul class="hidden pb-2 pl-8 lg:block lg:pl-4">
 				<li>
 					<a href="/">Usuários</a>
 				</li>
@@ -79,14 +85,8 @@
 		</li>
 		<li>
 			<a href="/">
-				<Coins class="aspect-1 h-4" />
-				Compras
-			</a>
-		</li>
-		<li>
-			<a href="/">
 				<Recycle class="aspect-1 h-4" />
-				Reciclagem
+				<span class="hidden lg:inline">Reciclagem</span>
 			</a>
 		</li>
 
@@ -94,15 +94,15 @@
 		<li class="border-base-200 mt-3 border-t border-b py-2">
 			<a href="/">
 				<ReceiptText class="aspect-1 h-4" />
-				Faturamento
+				<span class="hidden lg:inline">Faturamento</span>
 			</a>
 		</li>
 		<li class="border-base-200 border-b py-2">
 			<a href="/">
 				<Bolt class="aspect-1 h-4" />
-				Minha conta
+				<span class="hidden lg:inline">Minha conta</span>
 			</a>
-			<ul class="pb-2">
+			<ul class="pb-2pl-8 hidden lg:block lg:pl-4">
 				<li><a href="/">Configurações</a></li>
 				<li>
 					<form
@@ -130,13 +130,13 @@
 				rel="nofollow"
 			>
 				<BookOpen class="aspect-1 h-4" />
-				{m.knowledgeBase()}
+				<span class="hidden lg:inline">{m.knowledgeBase()}</span>
 			</a>
 		</li>
 		<li class="border-base-200 border-b py-2">
 			<a href="/">
 				<BookOpen class="aspect-1 h-4" />
-				Docs
+				<span class="hidden lg:inline">Docs</span>
 			</a>
 		</li>
 	</ul>
