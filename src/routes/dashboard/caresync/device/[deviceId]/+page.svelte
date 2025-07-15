@@ -311,11 +311,11 @@
 							}}
 						>
 							<input type="hidden" name="historyId" value={selectedEvent?.id} />
-							<div class="py-4">
+							<div class="border-base-300 flex h-full border py-4">
 								<textarea
 									name="description"
 									bind:value={editingDescription}
-									class="textarea textarea-bordered text-base-content bg-base-100 h-32 w-full font-mono text-xs"
+									class="textarea textarea-bordered text-base-content bg-base-100 h-80 w-full font-mono text-xs md:h-96"
 									placeholder="Enter service description..."
 									required
 								></textarea>
