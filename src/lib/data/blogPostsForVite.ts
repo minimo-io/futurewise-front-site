@@ -3,11 +3,11 @@ const blogPosts: Array<{
 	localized: [string, string][];
 }> = [
 	{
-		pattern: '/blog/puppeteer-and-easyocr-for-igaming-automation',
+		pattern: '/blog/playwright-e-easyocr-para-automacoes-em-igaming',
 		localized: [
-			['pt', '/blog/puppeteer-and-easyocr-for-igaming-automation'],
-			['en', '/en/blog/puppeteer-and-easyocr-for-igaming-automation'],
-			['es', '/es/blog/puppeteer-and-easyocr-for-igaming-automation']
+			['pt', '/blog/playwright-e-easyocr-para-automacoes-em-igaming'],
+			['en', '/en/blog/playwright-and-easyocr-for-igaming-automation'],
+			['es', '/es/blog/playwright-y-easyocr-para-automatizaciones-en-igaming']
 		]
 	},
 	{

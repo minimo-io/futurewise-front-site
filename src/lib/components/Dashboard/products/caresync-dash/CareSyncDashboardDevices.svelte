@@ -64,13 +64,13 @@
 					remoteAccess: device.remoteAccess,
 					organization: device.company?.name || 'N/A',
 					user: {
-						name: device.contact?.name || 'N/A',
-						state: device.contact?.state || 'N/A',
-						city: device.contact?.city || 'N/A',
-						image: device.contact?.image || '',
+						name: device.contact?.name || undefined,
+						state: device.contact?.state || undefined,
+						city: device.contact?.city || undefined,
+						image: device.contact?.image || undefined,
 						contact: {
 							type: 'whatsapp',
-							value: device.contact?.phone || 'N/A'
+							value: device.contact?.phone || undefined
 						}
 					},
 					lastService: 'N/A',
@@ -169,17 +169,27 @@
 						</td>
 						<td>
 							<div class="flex items-center gap-3">
-								{#if machine.user.image}
-									<div class="avatar">
-										<div class="mask mask-squircle aspect-square h-8">
-											<img src={machine.user.image} alt="user" />
+								{#if machine.user && machine.user.name}
+									{#if machine.user.image}
+										<div class="avatar">
+											<div class="mask mask-squircle aspect-square h-8">
+												<img src={machine.user.image} alt="user" />
+											</div>
 										</div>
+									{/if}
+									<div>
+										<div class="font-bold">{machine.user.name}</div>
+										<div class=" text-xs opacity-50">{machine.user.state}, {machine.user.city}</div>
+									</div>
+								{:else}
+									<div
+										class={[
+											'badge text-base-100 badge-success border-0 text-xs font-bold uppercase'
+										]}
+									>
+										Disponível
 									</div>
 								{/if}
-								<div>
-									<div class="font-bold">{machine.user.name}</div>
-									<div class=" text-xs opacity-50">{machine.user.state}, {machine.user.city}</div>
-								</div>
 							</div>
 						</td>
 						<td>

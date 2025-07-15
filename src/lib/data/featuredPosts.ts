@@ -24,9 +24,9 @@ export const featuredPosts = {
 		{
 			title: "Puppeteer & EasyOCR for Slots Automation",
 			excerpt: "This post explores how we can automate slot games using Puppeteer to control the game's interface and EasyOCR for real-time data extraction. Puppeteer acts as our programmatic \"player,\" navigating the game, initiating spins, and interacting with elements just like a human would. Meanwhile, EasyOCR provides the critical visual intelligence, reading key information directly from the screen, such as spin results, credit balances, and bonus indicators.",
-			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
+			content: "<p>This was an experiment inspired by <a href=\"https://www.youtube.com/watch?v=iz9lUMSQBfY\">this John Carmack talk</a>, on Upper Bound 2025, about &quot;a robot that plays a real Atari console using a camera and a robotic joystick.&quot;</p>\n<p>The goal of this experiment was to proove that with the appropiate AI API access it is possible to:</p>\n<ol>\n<li>Automate the gameplay for slots games at (fun) iGaming (using <a href=\"https://github.com/microsoft/playwright-python\">Playwright for Python</a>).</li>\n<li>Extract jackpots, scores, and balances (using <a href=\"https://github.com/JaidedAI/EasyOCR\">EasyOCR</a>.)</li>\n<li>Send those captured values to an AI Ollama model for gameplay suggestions (using censored models like <a href=\"https://ollama.com/library/gemma3n\">gemma3n</a> or uncensored models at HuggingFace).</li>\n</ol>\n",
 			date: "August 29",
-			slug: "/en/blog/puppeteer-and-easyocr-for-igaming-automation",
+			slug: "/en/blog/playwright-and-easyocr-for-igaming-automation",
 			isMain: false,
 			icon: Braces,
 			authors: [
@@ -85,7 +85,7 @@ export const featuredPosts = {
 			excerpt: "Este post muestra cómo podemos usar Puppeteer para controlar juegos de tragamonedas mientras EasyOCR extrae datos en tiempo real, conectando los resultados de los giros a modelos locales de Ollama para sugerencias.",
 			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
 			date: "29 de agosto",
-			slug: "/es/blog/puppeteer-and-easyocr-for-igaming-automation",
+			slug: "/es/blog/playwright-y-easyocr-para-automatizaciones-en-igaming",
 			isMain: false,
 			icon: Braces,
 			authors: [
@@ -144,7 +144,7 @@ export const featuredPosts = {
 			excerpt: "Este post mostra como podemos usar o Puppeteer para controlar jogos de slot enquanto o EasyOCR extrai dados em tempo real, conectando os resultados das rodadas a modelos locais do Ollama para sugestões.",
 			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
 			date: "29 de agosto",
-			slug: "/blog/puppeteer-and-easyocr-for-igaming-automation",
+			slug: "/blog/playwright-e-easyocr-para-automacoes-em-igaming",
 			isMain: false,
 			icon: Braces,
 			authors: [
