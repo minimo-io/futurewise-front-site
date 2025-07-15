@@ -130,7 +130,7 @@
 		<thead>
 			<tr>
 				<th>ID</th>
-				<th>Contato</th>
+				<th>Usuário</th>
 				<th>Tipo</th>
 				<th>A. Remoto</th>
 				<th>Online</th>
@@ -277,7 +277,7 @@
 							{machine.model}
 						</td>
 						<th>
-							<a href={deviceUrl} class="btn btn-sm btn-primary rounded-full">Abrir</a>
+							<a href={deviceUrl} class="btn btn-sm btn-primary">Abrir</a>
 						</th>
 					</tr>
 				{/each}

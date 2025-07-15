@@ -3,6 +3,7 @@
 		Bolt,
 		BookOpen,
 		ClipboardMinus,
+		Coins,
 		Home,
 		Laptop,
 		LifeBuoy,
@@ -75,6 +76,12 @@
 				</li>
 				<li><a href="/">Empresas</a></li>
 			</ul>
+		</li>
+		<li>
+			<a href="/">
+				<Coins class="aspect-1 h-4" />
+				Compras
+			</a>
 		</li>
 		<li>
 			<a href="/">

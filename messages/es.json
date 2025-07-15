@@ -222,5 +222,6 @@
 
 	"product": "Producto",
 
-	"addService": "Adicionar servicio"
+	"addService": "Adicionar servicio",
+	"servicesHistory": "Historico de servicios"
 }

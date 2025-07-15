@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BarRight from '$lib/components/Dashboard/BarRight.svelte';
+	import MenuLeft from '$lib/components/Dashboard/MenuLeft.svelte';
 	import HeaderButtons from '$lib/components/Header/HeaderButtons.svelte';
 
 	// interface Props {
@@ -15,7 +15,7 @@
 <!-- Actual dashboard -->
 <div class="mx-auto h-screen w-full gap-10">
 	<div class="mx-auto flex flex-row">
-		<BarRight />
+		<MenuLeft />
 		<!-- <ContentDashboard /> -->
 
 		<div class="flex h-full w-full flex-col">
