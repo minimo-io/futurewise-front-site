@@ -267,7 +267,7 @@
 							{machine.model}
 						</td>
 						<th>
-							<a href={deviceUrl} class="btn btn-sm btn-primary rounded-full"> Detalhes </a>
+							<a href={deviceUrl} class="btn btn-sm btn-primary rounded-full">Abrir</a>
 						</th>
 					</tr>
 				{/each}
