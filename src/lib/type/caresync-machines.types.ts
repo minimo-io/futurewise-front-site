@@ -52,6 +52,9 @@ export interface Device {
 	created_at: Date;
 	updated_at: Date;
 	report_timestamp: Date;
+	contact_name: string;
+	contact_email: string;
+	contact_phone: string;
 	device_metadata: {
 		os: string;
 		hdd: string;

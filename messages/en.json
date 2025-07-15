@@ -218,5 +218,8 @@
 	"product": "Product",
 
 	"addService": "Add service",
-	"servicesHistory": "Services History"
+	"servicesHistory": "Services History",
+	"today": "Today",
+	"yesterday": "Yesterday",
+	"days_ago": "{count} days ago"
 }

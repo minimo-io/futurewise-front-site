@@ -7,6 +7,9 @@
 	import { enhance } from '$app/forms';
 	import Toast from '$lib/components/Toast.svelte';
 	import { invalidateAll } from '$app/navigation';
+	import { formatPhoneNumberForWhatsapp } from '$lib/utils/phone.utils';
+	import { formatEventTime } from '$lib/utils/date.utils';
+	import { m } from '$paraglide/messages';
 
 	let { data }: PageProps = $props();
 
@@ -90,7 +93,7 @@
 		</div>
 
 		<div class="w-2/3 p-5">
-			<h2 class="text-base-content text-xl font-bold">Service History</h2>
+			<h2 class="text-base-content text-xl font-bold">{m.servicesHistory()}</h2>
 		</div>
 	</div>
 
@@ -103,6 +106,30 @@
 					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
 						<div class="mr-3">Modelo:</div>
 						<strong>{device.device_metadata.model ?? 'N/A'} / {data.device.device_type}</strong>
+					</div>
+					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
+						<div class="mr-3">Contato:</div>
+						<div class="text-right">
+							<strong>{device.contact_name ?? 'N/A'}</strong>
+							{#if device.contact_email}
+								<br />
+								{device.contact_email}
+							{/if}
+							{#if device.contact_phone}
+								<br />
+								{#if formatPhoneNumberForWhatsapp(device.contact_phone)}
+									<a
+										href="https://wa.me/{formatPhoneNumberForWhatsapp(device.contact_phone)}"
+										target="_blank"
+										class="link-primary link"
+									>
+										{device.contact_phone}
+									</a>
+								{:else}
+									{device.contact_phone}
+								{/if}
+							{/if}
+						</div>
 					</div>
 
 					<!-- <div class="border-base-200 flex flex-wrap justify-between border-b p-3">
@@ -204,7 +231,7 @@
 						{#if data.deviceHistory && data.deviceHistory.length > 0}
 							{#each data.deviceHistory as event, i (i)}
 								<tr>
-									<td>{new Date(event.event_time).toLocaleString()}</td>
+									<td>{formatEventTime(event.event_time)}</td>
 									<td>{event.event_type}</td>
 									<td>{event.technician_name}</td>
 									<td>

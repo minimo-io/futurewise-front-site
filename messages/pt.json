@@ -221,5 +221,8 @@
 	"product": "Produto",
 
 	"addService": "Adicionar serviço",
-	"servicesHistory": "Histórico de serviços"
+	"servicesHistory": "Histórico de serviços",
+	"today": "Hoje",
+	"yesterday": "Ontem",
+	"days_ago": "Há {count} dias"
 }
