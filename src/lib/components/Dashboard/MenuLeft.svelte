@@ -61,12 +61,6 @@
 				<span class="hidden lg:inline">Alertas</span>
 			</a>
 		</li>
-		<li>
-			<a href="/">
-				<Coins class="aspect-1 h-4" />
-				<span class="hidden lg:inline">Compras</span>
-			</a>
-		</li>
 
 		<li>
 			<a href="/">
@@ -86,6 +80,14 @@
 				<li><a href="/">Empresas / Clientes</a></li>
 				<li><a href="/">Técnicos</a></li>
 			</ul>
+		</li>
+
+		<!-- Marketplaces & Recycling -->
+		<li class="border-base-200 mt-3 border-t pt-2">
+			<a href="/">
+				<Coins class="aspect-1 h-4" />
+				<span class="hidden lg:inline">Compras</span>
+			</a>
 		</li>
 		<li>
 			<a href="/">
