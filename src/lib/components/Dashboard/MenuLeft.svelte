@@ -43,8 +43,10 @@
 				<li>
 					<a href={localizeHref('/dashboard/caresync')}>Todos os ativos</a>
 				</li>
-				<li><a href="/">Notebooks</a></li>
-				<li><a href="/">Desktops</a></li>
+				<li><a href={localizeHref('/dashboard/caresync')}>Notebooks</a></li>
+				<li><a href={localizeHref('/dashboard/caresync')}>Desktops</a></li>
+				<hr class="text-base-200 relative -right-3 mt-2 mb-1 h-[1px] w-1/2" />
+				<li><a href={localizeHref('/dashboard/caresync')}>Peças</a></li>
 			</ul>
 		</li>
 		<li>
@@ -55,16 +57,17 @@
 		</li>
 		<li>
 			<a href="/">
-				<Coins class="aspect-1 h-4" />
-				<span class="hidden lg:inline">Compras</span>
-			</a>
-		</li>
-		<li>
-			<a href="/">
 				<TriangleAlert class="aspect-1 h-4" />
 				<span class="hidden lg:inline">Alertas</span>
 			</a>
 		</li>
+		<li>
+			<a href="/">
+				<Coins class="aspect-1 h-4" />
+				<span class="hidden lg:inline">Compras</span>
+			</a>
+		</li>
+
 		<li>
 			<a href="/">
 				<ClipboardMinus class="aspect-1 h-4" />
@@ -74,13 +77,14 @@
 		<li>
 			<a href="/">
 				<UsersRound class="aspect-1 h-4" />
-				<span class="hidden lg:inline">Organizações</span>
+				<span class="hidden lg:inline">Organização</span>
 			</a>
 			<ul class="hidden pb-2 pl-8 lg:block lg:pl-4">
 				<li>
 					<a href="/">Usuários</a>
 				</li>
-				<li><a href="/">Empresas</a></li>
+				<li><a href="/">Empresas / Clientes</a></li>
+				<li><a href="/">Técnicos</a></li>
 			</ul>
 		</li>
 		<li>
