@@ -14,7 +14,11 @@
 	let { data }: PageProps = $props();
 
 	let device: Device = $state(data.device);
-	let deviceName = $derived(`${machineTypeCode(device.device_type)}-${device.device_id}`);
+	let deviceName = $derived(
+		`${machineTypeCode(device.device_type)}-${device.device_id}${
+			device.is_owned_by_contact ? '-CP' : ''
+		}`
+	);
 
 	let modal = $state<HTMLDialogElement>();
 	let imageModal = $state<HTMLDialogElement>();
@@ -105,12 +109,14 @@
 				<div class="fw-device-details flex-1">
 					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
 						<div class="mr-3">Modelo:</div>
-						<strong>{device.device_metadata.model ?? 'N/A'} / {data.device.device_type}</strong>
+						<span class="text-base-content text-base font-black">
+							{device.device_metadata.model ?? 'N/A'} / {data.device.device_type}
+						</span>
 					</div>
 					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
 						<div class="mr-3">Contato:</div>
 						<div class="text-right">
-							<strong>{device.contact_name ?? 'N/A'}</strong>
+							{device.contact_name ?? 'N/A'}
 							{#if device.contact_email}
 								<br />
 								{device.contact_email}
@@ -139,19 +145,19 @@
 
 					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
 						<div class="mr-3">Nro Série:</div>
-						<strong>{device.device_metadata.serial_number ?? 'N/A'}</strong>
+						{device.device_metadata.serial_number ?? 'N/A'}
 					</div>
 					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
 						<div class="mr-3">Procesador:</div>
-						<strong>{data.device.device_metadata.processor}</strong>
+						{data.device.device_metadata.processor}
 					</div>
 					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
 						<div class="mr-3">HDD:</div>
-						<strong>{data.device.device_metadata.hdd}</strong>
+						{data.device.device_metadata.hdd}
 					</div>
 					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
 						<div class="mr-3">RAM:</div>
-						<strong>{data.device.device_metadata.ram}</strong>
+						{data.device.device_metadata.ram}
 					</div>
 					<!-- <div class="border-base-200 border-b p-4">
 						<strong>Remote Access:</strong>
@@ -287,6 +293,12 @@
 					{#if !isEditing}
 						<!-- View Mode -->
 						<div class="py-4">
+							<div
+								class="text-secondary border-base-200 mb-5 border-b pb-4 text-left font-mono text-xs"
+							>
+								{formatEventTime(selectedEvent?.event_time)} -
+								{selectedEvent?.technician_name}
+							</div>
 							<p class="text-base-content mb-4 text-left font-mono text-xs whitespace-pre-wrap">
 								{selectedEvent?.description || 'No description available'}
 							</p>

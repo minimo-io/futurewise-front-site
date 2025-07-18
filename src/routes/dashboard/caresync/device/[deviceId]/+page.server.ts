@@ -61,7 +61,13 @@ export const load: PageServerLoad = async ({ params }) => {
 	try {
 		const device: Device = await postgreService.execute<Device>(async (knex) => {
 			return knex('CareSync_Reports as r')
-				.select('r.*', 'c.name as contact_name', 'c.email as contact_email', 'c.phone as contact_phone')
+				.select(
+					'r.*',
+					'r.is_owned_by_contact',
+					'c.name as contact_name',
+					'c.email as contact_email',
+					'c.phone as contact_phone'
+				)
 				.leftJoin('CareSync_Device_Contacts as c', 'r.contact_id', 'c.id')
 				.where('r.id', deviceId)
 				.first();

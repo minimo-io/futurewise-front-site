@@ -7,6 +7,7 @@ export interface Machine {
 	remoteAccess: boolean;
 	organization: string;
 	user: MachineContact;
+	isOwnedByContact: boolean;
 	lastService: string;
 	nextService: string;
 	timeActive: number;
@@ -44,6 +45,7 @@ export interface Device {
 	id: string;
 	device_id: string;
 	hostname: string;
+	is_owned_by_contact: boolean;
 	device_type: string;
 	status: string;
 	remote_access: boolean;

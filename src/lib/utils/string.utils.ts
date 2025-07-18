@@ -11,6 +11,8 @@ export function machineTypeCode(type: MachineType | string) {
 		return 'NT';
 	} else if (type == 'DESKTOP') {
 		return 'DT';
+	} else if (type == 'ALLINONE') {
+		return 'DT';
 	} else {
 		return 'N/A';
 	}

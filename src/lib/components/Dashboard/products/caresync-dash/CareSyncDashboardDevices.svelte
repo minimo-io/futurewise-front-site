@@ -60,7 +60,8 @@
 					device_id: device.deviceId,
 					online: device.status === 'active',
 					status: getStatus(device.metrics, device.status),
-					type: device.type === 'NOTEBOOK' ? MachineType.NOTEBOOK : MachineType.DESKTOP,
+					type: device.type,
+					isOwnedByContact: device.is_owned_by_contact,
 					remoteAccess: device.remoteAccess,
 					organization: device.company?.name || 'N/A',
 					user: {
@@ -161,7 +162,9 @@
 						<td>
 							<div class="flex items-center">
 								<a href={deviceUrl} class="text-primary">
-									{machineTypeCode(machine.type)}-{machine.device_id}
+									{machineTypeCode(machine.type)}-{machine.device_id}{machine.isOwnedByContact
+										? '-CP'
+										: ''}
 								</a>
 
 								<!-- Online/Offline status -->
