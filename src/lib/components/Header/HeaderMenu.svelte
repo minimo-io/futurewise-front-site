@@ -12,7 +12,10 @@
 <div class="fw-header-fs z-50 hidden items-center justify-center gap-12 md:flex">
 	<div class="dropdown relative">
 		<div class="cursor-fw flex items-center uppercase" tabindex="0" role="button">
-			<Zap fill="#fff" class="mr-[5px] h-4" />
+			<Zap
+				fill="#fff"
+				class="animate__animated animate__jello animate__repeat-3 animate__delay-1s mr-[5px] h-4"
+			/>
 			{m.menuProducts()}
 			<span><ChevronDown class="ml-1 h-5" /></span>
 		</div>
