@@ -7,6 +7,7 @@
 	import HeaderLogo from './HeaderLogo.svelte';
 	import { fade } from 'svelte/transition';
 	import { deLocalizeUrl } from '$paraglide/runtime';
+	import HeaderMenu from './HeaderMenu.svelte';
 
 	// let currentPath = $derived(page.url.pathname);
 	const delocalizedPath = deLocalizeUrl(page.url).pathname;
@@ -57,7 +58,9 @@
 			<HeaderLogo />
 
 			<!-- Menus -->
+			<HeaderMenu />
 
+			<!-- Buttons -->
 			<HeaderButtons />
 		</nav>
 
