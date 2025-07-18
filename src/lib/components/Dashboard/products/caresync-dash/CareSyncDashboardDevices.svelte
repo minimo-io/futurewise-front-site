@@ -181,7 +181,7 @@
 										</div>
 									{/if}
 									<div>
-										<div class="font-bold">{machine.user.name}</div>
+										<div class="text-base font-bold">{machine.user.name}</div>
 										<div class=" text-xs opacity-50">{machine.user.state}, {machine.user.city}</div>
 									</div>
 								{:else}

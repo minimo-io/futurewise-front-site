@@ -116,7 +116,7 @@
 					<div class="border-base-200 flex flex-wrap justify-between border-b p-3">
 						<div class="mr-3">Contato:</div>
 						<div class="text-right">
-							{device.contact_name ?? 'N/A'}
+							<span class="text-base">{device.contact_name ?? 'N/A'}</span>
 							{#if device.contact_email}
 								<br />
 								{device.contact_email}
