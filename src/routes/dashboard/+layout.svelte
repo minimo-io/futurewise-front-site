@@ -6,7 +6,7 @@
 </script>
 
 <!-- Actual dashboard -->
-<div class="mx-auto h-screen w-full gap-10 overflow-x-auto">
+<div class="mx-auto h-full w-full gap-10 overflow-x-auto">
 	<div class="mx-auto flex h-full flex-row">
 		<MenuLeft />
 		<!-- <ContentDashboard /> -->

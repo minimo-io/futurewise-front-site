@@ -165,14 +165,20 @@
 					</div> -->
 				</div>
 
-				<!-- Gallery -->
-				<div class="border-base-200 border-b p-4">
+				<!-- Qr code -->
+				<div class="my-10 flex justify-center">
+					<img src="/qr-code.png" alt="device-qr-code" class="w-[80%]" />
+				</div>
+
+				<!-- Gallery title -->
+				<div class="border-base-200 border-t border-b p-4">
 					<h2 class="text-base-content mr-2 flex items-center text-left text-lg font-bold">
 						<Image class="mr-[1px] aspect-square h-4" />
 						Imagens
 					</h2>
 				</div>
 
+				<!-- Gallery images -->
 				<div class="fw-gallery">
 					<button
 						class="group fw-gallery-item h-[100px] w-[100px]"
