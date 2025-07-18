@@ -308,6 +308,10 @@ body {
 	.fw-cmp-box-content {
 		@apply flex-1 py-30 text-center;
 	}
+
+	.fw-dashboard-left-menu-icon {
+		@apply aspect-square h-7 md:!h-4;
+	}
 }
 
 /* ——— Light Theme ——— */

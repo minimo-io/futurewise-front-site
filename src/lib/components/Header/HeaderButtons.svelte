@@ -15,10 +15,9 @@
 	import ChatLlmButton from '../Buttons/ChatLlmButton.svelte';
 
 	interface Props {
-		isDashboard?: boolean;
 		showToolsShortcuts?: boolean;
 	}
-	let { isDashboard = false, showToolsShortcuts = true }: Props = $props();
+	let { showToolsShortcuts = true }: Props = $props();
 
 	let isMac = $state<boolean | null>(null);
 	let locale = $state(getLocale());
@@ -33,46 +32,32 @@
 </script>
 
 <div class="flex items-center gap-10 md:gap-16">
-	{#if !isDashboard}
-		<HeaderMenu />
-	{/if}
-
 	<div class="flex items-center gap-[10px] md:gap-4">
-		<!-- Left header buttons -->
-		{#if isDashboard}
-			<!-- Dashboard -->
-			<LanguageButton />
-			<NotificationsButton />
-			<ChatLlmButton />
-			<HelpButton />
-			<!-- End Dashboard -->
-		{:else}
-			<!-- Resto of the site -->
-			<div class="relative hidden md:block">
-				<button
-					class="bg-base-200 hover:bg-base-100 fw-header-fs rounded-full p-3"
-					onclick={handleHammerClick}
+		<!-- Resto of the site -->
+		<div class="relative hidden md:block">
+			<button
+				class="bg-base-200 hover:bg-base-100 fw-header-fs rounded-full p-3"
+				onclick={handleHammerClick}
+			>
+				<!-- <Hammer class="h-5" strokeWidth="1" /> -->
+				<Search class="h-5" strokeWidth="1" />
+			</button>
+			{#if showToolsShortcuts}
+				<div
+					class="absolute left-1/2 mt-1 flex -translate-x-1/2 scale-90 items-center justify-center pr-2 opacity-70"
 				>
-					<!-- <Hammer class="h-5" strokeWidth="1" /> -->
-					<Search class="h-5" strokeWidth="1" />
-				</button>
-				{#if showToolsShortcuts}
-					<div
-						class="absolute left-1/2 mt-1 flex -translate-x-1/2 scale-90 items-center justify-center pr-2 opacity-70"
-					>
-						{#if isMac}
-							<Command class="h-[14px]" />
-						{:else}
-							<span>CTRL+</span>
-						{/if}
-						<span>K</span>
-					</div>
-				{/if}
-			</div>
+					{#if isMac}
+						<Command class="h-[14px]" />
+					{:else}
+						<span>CTRL+</span>
+					{/if}
+					<span>K</span>
+				</div>
+			{/if}
+		</div>
 
-			<LanguageButton />
-			<LoginDashboardButton />
-		{/if}
+		<LanguageButton />
+		<LoginDashboardButton />
 
 		<!-- Mobile Menu Trigger Button -->
 		<button
