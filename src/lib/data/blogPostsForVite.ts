@@ -27,11 +27,11 @@ const blogPosts: Array<{
 		]
 	},
 	{
-		pattern: '/blog/some-random-posts',
+		pattern: '/blog/o-cofre-definitivo-de-comandos-cli',
 		localized: [
-			['pt', '/blog/some-random-posts'],
-			['en', '/en/blog/some-random-posts'],
-			['es', '/es/blog/some-random-posts']
+			['pt', '/blog/o-cofre-definitivo-de-comandos-cli'],
+			['en', '/en/blog/ultimate-cli-commands-valut'],
+			['es', '/es/blog/el-cofre-definitivo-de-comandos-cli']
 		]
 	}
 ];
