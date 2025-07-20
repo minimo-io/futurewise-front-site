@@ -16,7 +16,7 @@ export const posts = {
 					avatar: "/me.jpeg"
 				},
 				{
-					fullName: "Gemini AI",
+					fullName: "ChatGPT",
 					avatar: "/chatgpt-logo.png"
 				}
 			]
@@ -37,7 +37,7 @@ export const posts = {
 					avatar: "/me.jpeg"
 				},
 				{
-					fullName: "Gemini AI",
+					fullName: "ChatGPT",
 					avatar: "/chatgpt-logo.png"
 				}
 			]
@@ -58,7 +58,7 @@ export const posts = {
 					avatar: "/me.jpeg"
 				},
 				{
-					fullName: "Gemini AI",
+					fullName: "ChatGPT",
 					avatar: "/chatgpt-logo.png"
 				}
 			]

@@ -263,6 +263,15 @@ body {
 	.fw-article-content a {
 		@apply text-primary;
 	}
+	.fw-article-content ol {
+		@apply border-base-200 border-0;
+	}
+	.fw-article-content hr {
+		@apply border-0;
+	}
+	.fw-article-content pre {
+		@apply border-base-200 my-5 rounded-lg border p-3 text-xs break-words whitespace-pre-wrap;
+	}
 }
 
 @layer base {
