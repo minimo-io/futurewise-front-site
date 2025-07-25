@@ -117,10 +117,10 @@
 			<!-- Blur overlays -->
 			<div class="pointer-events-none absolute inset-0 z-10">
 				<div
-					class="absolute top-0 bottom-0 left-0 w-12 bg-gradient-to-r from-black via-black/80 to-transparent md:w-62"
+					class="absolute top-0 bottom-0 left-0 w-12 bg-gradient-to-r from-black via-black/80 to-transparent md:w-80"
 				></div>
 				<div
-					class="absolute top-0 right-0 bottom-0 w-12 bg-gradient-to-l from-black via-black/80 to-transparent md:w-62"
+					class="absolute top-0 right-0 bottom-0 w-12 bg-gradient-to-l from-black via-black/80 to-transparent md:w-80"
 				></div>
 			</div>
 		</div>
