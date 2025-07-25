@@ -11,10 +11,16 @@
 	import { localizeHref } from '$paraglide/runtime';
 	import { Product } from '$types/products.types';
 	import { ChevronDown } from '@lucide/svelte';
+	import { slide } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
 	let isExpanded = $state(false);
-	const autoGestaoInitialItems = 3;
-	const gerenciadoInitialItems = 3;
+	const autoGestaoInitialItems = 0;
+	const gerenciadoInitialItems = 0;
+
+	// References to title elements for scrolling
+	let autoGestaoTitle: HTMLDivElement;
+	let gerenciadoTitle: HTMLDivElement;
 
 	// Monta os arrays diretamente com chamadas m.chave()
 	const autoGestaoItems = [
@@ -39,6 +45,21 @@
 		{ title: m.careSyncManagedItem4Title(), description: m.careSyncManagedItem4Desc() },
 		{ title: m.careSyncManagedItem7Title(), description: m.careSyncManagedItem7Desc() }
 	];
+
+	// Function to handle toggle with smooth scrolling
+	function toggleExpand() {
+		const wasExpanded = isExpanded;
+		isExpanded = !isExpanded;
+
+		// If we're collapsing, scroll back to the title
+		if (wasExpanded && !isExpanded) {
+			// Scroll to the auto-gestão title (you might want to adjust which title to scroll to)
+			autoGestaoTitle?.scrollIntoView({
+				behavior: 'smooth',
+				block: 'center'
+			});
+		}
+	}
 </script>
 
 <Meta title={m.metaCareSyncTitle()} description={m.metaCareSyncDescription()} />
@@ -58,10 +79,14 @@
 		<div class="flex flex-1 items-center justify-center">
 			<div
 				class="border-base-200 fw-border-b-divider md:fw-border-t-divider-dot flex w-full flex-col border-b
-			            after:absolute after:right-[48%] md:flex-row md:after:top-12 md:after:right-[49.4%] md:after:content-['']"
+                        after:absolute after:right-[48%] md:flex-row md:after:top-12 md:after:right-[49.4%] md:after:content-['']"
 			>
 				<!-- Auto-gestão -->
-				<div class="border-r-base-200 w-full py-3 text-xl md:w-1/2 md:border-r">
+				<div
+					class="border-r-base-200 mt-1 w-full py-3 text-xl md:mt-0 md:w-1/2 md:border-r"
+					bind:this={autoGestaoTitle}
+				>
+					<!-- Title -->
 					<div class="mb-3 text-2xl">
 						CareSync <span
 							class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl"
@@ -69,8 +94,8 @@
 							{m.careSyncAuto()}
 						</span>
 					</div>
-					<div class="border-base-200 text-primary border-t pt-2 font-sans text-lg font-bold">
-						<!-- {m.careSyncIdealFor()} -->
+					<!-- Content -->
+					<div class="border-base-200 text-primary border-t p-5 font-sans text-lg font-bold md:p-8">
 						{m.careSyncYouControl()}
 						<div
 							class="text-secondary px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
@@ -80,16 +105,20 @@
 					</div>
 				</div>
 				<!-- Gerenciado -->
-				<div class="hidden w-full py-3 text-xl md:inline-block md:w-1/2">
+				<div
+					class="hidden w-full py-3 text-xl md:inline-block md:w-1/2"
+					bind:this={gerenciadoTitle}
+				>
 					<div class="mb-3 text-2xl">
 						CareSync <span
-							class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl"
+							class="bg-primary r relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl font-normal"
 						>
 							{m.careSyncManaged()}
 						</span>
 					</div>
-					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold">
-						<!-- {m.careSyncIdealFor()} -->
+					<div
+						class="border-base-200 text-primary mt-1 border-t font-sans text-lg font-bold md:p-8"
+					>
 						{m.careSyncWeTakeCare()}
 						<div
 							class="text-secondary px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
@@ -104,7 +133,7 @@
 		<div class="flex flex-col justify-center md:flex-1 md:flex-row md:items-stretch">
 			<!-- Você no controle -->
 			<div
-				class="border-r-base-200 flex w-full flex-col py-5 text-center md:w-1/2 md:border-r md:px-20 md:py-10"
+				class="border-r-base-200 flex w-full flex-col py-5 text-center md:w-1/2 md:border-r md:px-20 md:py-10 md:pt-5"
 			>
 				<div class="flex flex-grow flex-col">
 					<ul class="flex-grow">
@@ -114,26 +143,32 @@
 								{item.description}
 							</li>
 						{/each}
-						{#if isExpanded}
-							{#each autoGestaoItems.slice(autoGestaoInitialItems) as item}
-								<li class="!text-base md:!text-base">
+						{#each autoGestaoItems.slice(autoGestaoInitialItems) as item, i (item.title)}
+							{#if isExpanded}
+								<li
+									class="!text-base md:!text-base"
+									in:slide={{ delay: i * 30, duration: 300, easing: quintOut }}
+									out:slide={{ duration: 300, easing: quintOut }}
+								>
 									<span class="font-bold">{item.title}</span>
 									{item.description}
 								</li>
-							{/each}
-						{/if}
+							{/if}
+						{/each}
 					</ul>
 					{#if autoGestaoItems.length > autoGestaoInitialItems}
 						<button
-							onclick={() => (isExpanded = !isExpanded)}
-							class="text-primary hover:text-primary/70 mt-2 mb-3 flex items-center justify-center gap-2 transition-colors duration-200"
+							onclick={toggleExpand}
+							class="text-primary hover:text-primary/70 flex items-center justify-center gap-2 transition-colors duration-200 md:mt-2 md:mb-3"
 						>
 							<span class="text-base font-medium">
 								{isExpanded ? m.careSyncToggleLess() : m.careSyncToggleMore()}
 							</span>
-							<ChevronDown
+							<div
 								class="h-4 w-4 transition-transform duration-200 {isExpanded ? 'rotate-180' : ''}"
-							/>
+							>
+								<ChevronDown class="h-4" />
+							</div>
 						</button>
 					{/if}
 
@@ -142,7 +177,7 @@
 			</div>
 
 			<!-- Nós cuidamos de tudo -->
-			<div class="mb-7 flex w-full flex-col items-start md:mb-0 md:w-1/2 md:px-20 md:py-10">
+			<div class="mb-7 flex w-full flex-col items-start md:mb-0 md:w-1/2 md:px-20 md:py-10 md:pt-5">
 				<!-- Mobile second option -->
 				<div class="border-base-200 w-full border-t border-b py-3 text-xl md:hidden md:w-1/2">
 					<div class="mb-2 text-2xl">
@@ -153,7 +188,6 @@
 						</span>
 					</div>
 					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold">
-						<!-- {m.careSyncIdealFor()} -->
 						{m.careSyncWeTakeCare()}
 						<div
 							class="text-secondary px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
@@ -163,12 +197,6 @@
 					</div>
 				</div>
 
-				<!-- <div
-					class="text-primary self-center pt-5 text-center font-sans text-lg font-bold uppercase md:pt-0"
-				>
-					{m.careSyncWeTakeCare()}
-				</div> -->
-
 				<div class="flex w-full flex-grow flex-col">
 					<ul class="flex-grow">
 						{#each gerenciadoItems.slice(0, gerenciadoInitialItems) as item}
@@ -177,26 +205,32 @@
 								{item.description}
 							</li>
 						{/each}
-						{#if isExpanded}
-							{#each gerenciadoItems.slice(gerenciadoInitialItems) as item}
-								<li class="!text-base md:!text-base">
+						{#each gerenciadoItems.slice(gerenciadoInitialItems) as item, i (item.title)}
+							{#if isExpanded}
+								<li
+									class="!text-base md:!text-base"
+									in:slide={{ delay: i * 30, duration: 300, easing: quintOut }}
+									out:slide={{ duration: 300, easing: quintOut }}
+								>
 									<span class="font-bold">{item.title}</span>
 									{item.description}
 								</li>
-							{/each}
-						{/if}
+							{/if}
+						{/each}
 					</ul>
 					{#if gerenciadoItems.length > gerenciadoInitialItems}
 						<button
-							onclick={() => (isExpanded = !isExpanded)}
-							class="text-primary hover:text-primary/70 mt-2 mb-3 flex items-center justify-center gap-2 self-center transition-colors duration-200"
+							onclick={toggleExpand}
+							class="text-primary hover:text-primary/70 mt-4 flex items-center justify-center gap-2 transition-colors duration-200 md:mt-2 md:mb-3"
 						>
 							<span class="text-base font-medium">
 								{isExpanded ? m.careSyncToggleLess() : m.careSyncToggleMore()}
 							</span>
-							<ChevronDown
+							<div
 								class="h-4 w-4 transition-transform duration-200 {isExpanded ? 'rotate-180' : ''}"
-							/>
+							>
+								<ChevronDown class="h-4" />
+							</div>
 						</button>
 					{/if}
 					<TransparentButton href={localizeHref('/sign-up')}>{m.startNow()}</TransparentButton>
@@ -212,7 +246,7 @@
 				<div
 					class="bg-primary animate__animated animate__flash animate__infinite relative left-1 mr-4 block h-[20px] w-[5px] md:-top-1 md:h-[30px] md:w-[8px]"
 				></div>
-				<h2 class="font-pixel text-2xl tracking-wider md:text-4xl">Por que alugar?</h2>
+				<h2 class="font-pixel text-2xl tracking-wider md:text-3xl">Por que alugar?</h2>
 			</div>
 		</section>
 	</div>

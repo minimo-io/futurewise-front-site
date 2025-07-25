@@ -125,8 +125,8 @@
 	"careSyncAuto": "Auto-gestão",
 	"careSyncManaged": "Gerenciado",
 	"careSyncIdealFor": "IDEAL PARA",
-	"careSyncAutoDesc": "Para empresas que querem <span class='text-base-content opacity-80'>controle direto</span> sobre seus ativos utilizando nossa <span class='text-base-content opacity-80'>plataforma ITSM Pay-Per-Use</span> para otimizar suas operações de TI.",
-	"careSyncManagedDesc": "Para empresas que querem focar no seu negócio, <span class='text-base-content opacity-80'>deixando toda a gestão e manutenção da TI nas mãos de especialistas</span>.",
+	"careSyncAutoDesc": "Para empresas que fornecem serviços de TI ou querem <span class='text-base-content opacity-80'>controle iterno</span> de seus ativos. Uma <span class='text-base-content opacity-80'>plataforma ITSM + <a class='text-primary' href='/marketplace/'>Marketplace</a></span> para otimizar suas operações. Módulos de Faturamento, Compras, Gestão de Ativos, Aletas, e mais.",
+	"careSyncManagedDesc": "Para empresas que querem focar no seu negócio, <span class='text-base-content opacity-80'>deixando toda a gestão e manutenção da TI nas mãos de especialistas</span>. Incluindo a opção de aluguel de equipamentos e <a href='#know-more' class='text-primary'>Seguro de Continuidade</a>. Contratos mensais e anuais.",
 
 	"careSyncAutoItem0Title": "Relatórios e Dashboards completos:",
 	"careSyncAutoItem0Desc": "Tenha a visão geral dos seus ativos de TI. Tendências históricas de uso, serviços e custos.",

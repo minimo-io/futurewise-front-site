@@ -1,17 +1,13 @@
 <script lang="ts">
 	import { m } from '$paraglide/messages';
 	import TitleSection from '../TitleSection.svelte';
-	import { smoothScroll } from '$utils';
+	import { conditionalSmoothScroll, smoothScroll } from '$utils';
 	// import { localizeHref } from '$paraglide/runtime';
 	import { AppConfig } from '$lib/configs';
 
-	let url = $state('#know-more');
+	const smoothAction = [conditionalSmoothScroll, '#know-more'] as const;
 
-	function conditionalSmoothScroll(node: HTMLElement) {
-		if (url === '#know-more') {
-			return smoothScroll(node);
-		}
-	}
+	let url = '#know-more';
 	interface Props {
 		titleRight: string;
 		titleLeft: string;
@@ -34,7 +30,7 @@
 
 	{#if buttons}
 		<div class="mt-7 flex flex-wrap gap-2 md:mt-8 md:gap-3">
-			<a href={url} use:conditionalSmoothScroll class="fw-button fw-button-lg">
+			<a href={url} use:conditionalSmoothScroll={url} class="fw-button fw-button-lg">
 				<span>{m.learnMore()}</span>
 			</a>
 			<a

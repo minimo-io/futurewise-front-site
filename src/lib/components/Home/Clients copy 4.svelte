@@ -2,10 +2,11 @@
 	import PillFlower from '../PillFlower.svelte';
 	import { m } from '$paraglide/messages';
 	import Hr from '../Hr.svelte';
+	import Dot from '../Dot.svelte';
 	import { onMount } from 'svelte';
 
 	// Configurable animation speeds (in seconds)
-	export let desktopSpeed = 30;
+	export let desktopSpeed = 40;
 	export let mobileSpeed = 20;
 
 	let marqueeContainer: HTMLDivElement;
@@ -15,22 +16,22 @@
 			href: 'https://media.toxtren.com/redirect.aspx?pid=101348&bid=2036&redirectURL=https://natregs.com',
 			src: '/clients/national-logo.svg',
 			alt: 'National Casino',
-			height: 'h-[53px] pb-1',
+			height: 'h-[53px]',
 			opacity: 'opacity-50'
 		},
 		{
 			href: 'https://agentefaz.net',
-			src: '/clients/agf-color.png',
+			src: '/clients/agf-logo.png',
 			alt: 'AGF',
-			height: 'h-[40px]',
-			opacity: 'opacity-55'
+			height: 'h-[50px]',
+			opacity: ''
 		},
 		{
 			href: 'https://braaay.com',
-			src: '/clients/braaay-logo-new.svg',
+			src: '/clients/braaay-logo.png',
 			alt: 'Braaay',
-			height: 'h-[32px] mt-1',
-			opacity: 'opacity-90'
+			height: 'h-[32px]',
+			opacity: ''
 		},
 		{
 			href: 'https://dribbble.com/shots/19431388-Hops-v2-Craft-Beer-Marketplace',
@@ -43,19 +44,12 @@
 			href: 'https://betizen.org',
 			src: '/clients/betizen-logo.svg',
 			alt: 'Betizen',
-			height: 'h-[45px] pb-1',
-			opacity: 'opacity-40'
-		},
-		{
-			href: 'https://www.figma.com/design/3OLTGWFRbMPiQb9Pvv5MgM/Futurewise?node-id=0-1&t=0ev7UA7IBHZytkOk-1',
-			src: '/clients/viivpay-logo.png',
-			alt: 'ViivPay',
-			height: 'h-[35px] mt-2',
+			height: 'h-[45px]',
 			opacity: 'opacity-40'
 		}
 	];
 
-	let duplicateCount = 4; // Start with 2 sets
+	let duplicateCount = 2; // Start with 2 sets
 
 	onMount(() => {
 		if (!marqueeContainer) return;
@@ -82,7 +76,7 @@
 	});
 </script>
 
-<section class="relative -top-12 mt-7 pb-5 md:-top-[45px] md:mt-0 md:px-12 lg:px-16">
+<section class="relative -top-12 mt-7 px-6 pb-5 md:-top-[45px] md:mt-0 md:px-12 lg:px-16">
 	<!-- Decorative dot -->
 	<Hr />
 
@@ -102,11 +96,7 @@
 						{#each clients as client}
 							<a href={client.href} rel="nofollow noopener" target="_blank" class="marquee-item">
 								<div class="flex flex-col justify-center">
-									<img
-										src={client.src}
-										class="{client.height} {client.opacity} grayscale-100 hover:grayscale-0"
-										alt={client.alt}
-									/>
+									<img src={client.src} class="{client.height} {client.opacity}" alt={client.alt} />
 								</div>
 							</a>
 						{/each}
@@ -117,10 +107,10 @@
 			<!-- Blur overlays -->
 			<div class="pointer-events-none absolute inset-0 z-10">
 				<div
-					class="absolute top-0 bottom-0 left-0 w-12 bg-gradient-to-r from-black via-black/80 to-transparent md:w-62"
+					class="absolute top-0 bottom-0 left-0 w-16 bg-gradient-to-r from-black via-black/80 to-transparent md:w-32"
 				></div>
 				<div
-					class="absolute top-0 right-0 bottom-0 w-12 bg-gradient-to-l from-black via-black/80 to-transparent md:w-62"
+					class="absolute top-0 right-0 bottom-0 w-16 bg-gradient-to-l from-black via-black/80 to-transparent md:w-32"
 				></div>
 			</div>
 		</div>

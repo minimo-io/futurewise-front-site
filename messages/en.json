@@ -122,8 +122,8 @@
 	"careSyncAuto": "Self‑service",
 	"careSyncManaged": "Managed",
 	"careSyncIdealFor": "IDEAL FOR",
-	"careSyncAutoDesc": "For companies that want <span class='text-base-content opacity-80'>direct control</span> over their assets using our <span class='text-base-content opacity-80'>Pay-Per-Use ITSM platform</span> to optimize their IT operations.",
-	"careSyncManagedDesc": "For companies that want to focus on their business, leaving all IT management and maintenance in the hands of specialists.",
+	"careSyncAutoDesc": "For companies that provide IT services or want <span class='text-base-content opacity-80'>internal control</span> of their assets. An <span class='text-base-content opacity-80'>ITSM platform + <a class='text-primary' href='/marketplace/'>Marketplace</a></span> to optimize your operations. Billing, Purchasing, Asset Management, Alerts, and more modules.",
+	"careSyncManagedDesc": "For companies that want to focus on their business, <span class='text-base-content opacity-80'>leaving all IT management and maintenance in the hands of specialists</span>. Including the option of equipment rental and <a href='#know-more' class='text-primary'>Continuity Insurance</a>.",
 
 	"careSyncAutoItem0Title": "Full Reports & Dashboards:",
 	"careSyncAutoItem0Desc": "Get an overview of your IT assets. Historical trends in usage, services, and costs.",

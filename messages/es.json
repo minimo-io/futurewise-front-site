@@ -127,8 +127,8 @@
 	"careSyncAuto": "Autogestión",
 	"careSyncManaged": "Gestionado",
 	"careSyncIdealFor": "IDEAL PARA",
-	"careSyncAutoDesc": "Para empresas que desean <span class='text-base-content opacity-80'>control directo</span> sobre sus activos utilizando nuestra <span class='text-base-content opacity-80'>plataforma ITSM de Pago-por-Uso</span> para optimizar sus operaciones de TI.",
-	"careSyncManagedDesc": "Para empresas que quieren enfocarse en su negocio, dejando toda la gestión y el mantenimiento de TI en manos de especialistas.",
+	"careSyncAutoDesc": "Para empresas que brindan servicios de TI o desean <span class='text-base-content opacity-80'>control interno</span> de sus activos. Una <span class='text-base-content opacity-80'>plataforma ITSM + <a class='text-primary' href='/marketplace/'>Marketplace</a></span> para optimizar sus operaciones. Módulos de Facturación, Compras, Gestión de Activos, Alertas y más.",
+	"careSyncManagedDesc": "Para empresas que quieren centrarse en su negocio, <span class='text-base-content opacity-80'>dejando toda la gestión y mantenimiento de TI en manos de especialistas</span>. Incluyendo la opción de alquiler de equipos y <a href='#know-more' class='text-primary'>Seguro de Continuidad</a>. Contratos por mes o año.",
 
 	"careSyncAutoItem0Title": "Informes y Paneles completos:",
 	"careSyncAutoItem0Desc": "Obtén una visión general de tus activos de TI. Tendencias históricas de uso, servicios y costos.",
@@ -167,7 +167,7 @@
 	"careSyncManagedItem7Desc": "Alquila o compra equipos certificados con descuentos especiales para clientes del plan Gestionado.",
 
 	"careSyncYouControl": "Tú al control",
-	"careSyncWeTakeCare": "Nosotros nos encargamos de todo",
+	"careSyncWeTakeCare": "Nos encargamos de todo",
 	"careSyncToggleMore": "Ver más",
 	"careSyncToggleLess": "Ver menos",
 

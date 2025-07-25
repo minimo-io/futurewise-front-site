@@ -1,18 +1,12 @@
 <script lang="ts">
-	import { Command, Globe, Menu, Search, X } from '@lucide/svelte';
-	import { page } from '$app/state';
-	import HeaderMenu from './HeaderMenu.svelte';
-	import { onMount } from 'svelte';
 	import { openCommandPalette } from '$lib/stores/CommandPallete.state.svelte';
-	import { m } from '$paraglide/messages';
-	import { toggleDrawer, drawerState } from '$stores/DrawerState.state.svelte';
-	import { getLocale, locales, localizeHref } from '$paraglide/runtime';
-	import { getLocaleName, redirectLocale } from '$utils';
+	import { getLocale } from '$paraglide/runtime';
+	import { drawerState, toggleDrawer } from '$stores/DrawerState.state.svelte';
+	import { Command, Menu, Search, X } from '@lucide/svelte';
+	import { onMount } from 'svelte';
+	import ChatLlmButton from '../Buttons/ChatLlmButton.svelte';
 	import LanguageButton from '../Buttons/LanguageButton.svelte';
 	import LoginDashboardButton from '../Buttons/LoginDashboardButton.svelte';
-	import NotificationsButton from '../Buttons/NotificationsButton.svelte';
-	import HelpButton from '../Buttons/HelpButton.svelte';
-	import ChatLlmButton from '../Buttons/ChatLlmButton.svelte';
 
 	interface Props {
 		showToolsShortcuts?: boolean;

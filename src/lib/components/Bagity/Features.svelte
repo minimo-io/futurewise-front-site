@@ -174,15 +174,15 @@
 	});
 </script>
 
-<div class="max-w-fw mx-auto py-10 md:px-10 md:py-16">
+<div class="max-w-fw mx-auto py-10 !pb-5 md:px-10 md:py-16 md:!pb-10">
 	<!-- Carousel container -->
 	<div
-		class="relative overflow-hidden"
+		class="relative"
 		ontouchstart={isMobile ? handleTouchStart : undefined}
 		ontouchend={isMobile ? handleTouchEnd : undefined}
 	>
 		<!-- Features container with animation -->
-		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+		<div class="grid grid-cols-1 gap-12 overflow-hidden lg:grid-cols-2">
 			{#each currentPageFeatures as feature, i (feature.img)}
 				<div class="feature-item" in:fly={{ x: direction * 100, opacity: 0, duration: 150 }}>
 					<div class="flex-shrink-0">
@@ -209,53 +209,31 @@
 
 		<!-- Navigation controls for desktop - hidden on mobile -->
 		{#if !isMobile}
-			<div class="absolute inset-y-0 left-0 flex items-center">
+			<div class="absolute inset-y-0 -top-10 -left-18 flex items-center">
 				<button
-					class="btn btn-circle btn-outline btn-sm md:btn-md opacity-70 transition-opacity hover:opacity-100"
+					class="btn border-primary text-primary btn-circle btn-outline btn-sm md:btn-md hover:bg-primary hover:text-white hover:opacity-100"
 					class:hidden={!canGoPrev}
 					onclick={goToPrev}
 					aria-label="Previous features"
 				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="h-5 w-5"
-						viewBox="0 0 20 20"
-						fill="currentColor"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-							clip-rule="evenodd"
-						/>
-					</svg>
+					{'<'}
 				</button>
 			</div>
 
-			<div class="absolute inset-y-0 right-0 flex items-center">
+			<div class="absolute inset-y-0 -top-10 -right-18 z-50 flex items-center">
 				<button
-					class="btn btn-circle btn-outline btn-sm md:btn-md opacity-70 transition-opacity hover:opacity-100"
+					class="btn border-primary text-primary btn-circle btn-outline btn-sm md:btn-md hover:bg-primary pt-[1px] pl-[1px] hover:text-white hover:opacity-100"
 					class:hidden={!canGoNext}
 					onclick={goToNext}
 					aria-label="Next features"
 				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="h-5 w-5"
-						viewBox="0 0 20 20"
-						fill="currentColor"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-							clip-rule="evenodd"
-						/>
-					</svg>
+					{'>'}
 				</button>
 			</div>
 		{/if}
 
 		<!-- Pagination dots -->
-		<div class="mt-6 flex justify-center space-x-2">
+		<div class="mt-12 flex justify-center space-x-2">
 			{#each Array(totalPages) as _, i}
 				<button
 					class="h-3 w-3 rounded-full transition-all duration-300"
