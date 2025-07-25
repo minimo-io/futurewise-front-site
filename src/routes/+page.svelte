@@ -18,8 +18,10 @@
 <Header titleLeft={m.welcome()} titleRight={m.theFuture()} heroContent={m.heroContentHome()} />
 
 <main class="font-sans-pro bg-base-100 text-base-content relative mx-(--fw-app-margin)">
+	<div class="mb-[8px]">
+		<Clients />
+	</div>
 	<Products />
-	<Clients />
 	<Developers />
 </main>
 

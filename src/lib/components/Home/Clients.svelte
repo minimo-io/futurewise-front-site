@@ -82,13 +82,13 @@
 	});
 </script>
 
-<section class="relative -top-12 mt-7 pb-5 md:-top-[45px] md:mt-0 md:px-12 lg:px-16">
+<section class="relative mt-7 pb-5 md:mt-0 md:px-12 lg:px-16">
 	<!-- Decorative dot -->
 	<Hr />
 
-	<div class="relative scale-110 text-center md:scale-100">
+	<!-- <div class="relative scale-110 text-center md:scale-100">
 		<PillFlower title={m.menuClients()} />
-	</div>
+	</div> -->
 
 	<div class="relative mt-8 mb-1 md:mx-auto">
 		<!-- Marquee container -->
@@ -149,11 +149,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		grayscale: 100%;
-	}
-
-	.marquee-item:hover {
-		grayscale: 0%;
 	}
 
 	@keyframes marquee {
