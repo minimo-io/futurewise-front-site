@@ -231,7 +231,7 @@ body {
 	}
 	.fw-bg-bagity {
 		/* @apply bg-[url('/bgs/header-underconstruction.jpeg')] opacity-30; */
-		@apply bg-conic bg-[url('/bgs/header-bagity-4.png')] opacity-100;
+		@apply bg-conic bg-[url('/bgs/header-bagity-4.png')] opacity-50;
 		/* @apply bg-[url('/bgs/Rectangle13.png')] bg-cover opacity-30; */
 	}
 	.fw-bg-construction {
@@ -239,7 +239,7 @@ body {
 		/* @apply bg-[url('/bgs/ngc-2899.jpg')]; */
 	}
 	.fw-cmp-box-content {
-		@apply text-secondary px-14 py-10 text-left font-sans text-lg leading-6 tracking-wide md:py-12;
+		@apply text-secondary px-14 py-10 text-left font-sans text-[16px] leading-6 tracking-wide md:py-12;
 	}
 	.fw-cmp-box-button {
 		@apply bg-primary text-base-200 mt-6 flex w-full items-center justify-center gap-2 self-center rounded-2xl border px-5 py-2 transition-all duration-300 hover:opacity-50 md:w-[90%];

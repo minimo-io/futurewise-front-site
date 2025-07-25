@@ -2,6 +2,8 @@
 	import { BotMessageSquare } from '@lucide/svelte';
 	import { getLocale } from '$paraglide/runtime';
 
+	let { showCheck = true }: { showCheck?: boolean } = $props();
+
 	const locale = $state(getLocale());
 	let inputRef: HTMLInputElement | null = null;
 
@@ -28,11 +30,13 @@
 		use:autofocusOnClick
 		class="bg-base-200 hover:bg-base-100 fw-header-fs relative hidden rounded-full px-3 py-3 md:block"
 	>
-		<div
-			class="badge badge-success absolute -top-2 -right-1 h-[22px] w-[22px] text-center font-sans text-xs font-bold text-white"
-		>
-			✔
-		</div>
+		{#if showCheck}
+			<div
+				class="badge badge-success absolute -top-2 -right-1 h-[22px] w-[22px] text-center font-sans text-xs font-bold text-white"
+			>
+				✔
+			</div>
+		{/if}
 		<BotMessageSquare class="h-5" strokeWidth="1" />
 	</button>
 

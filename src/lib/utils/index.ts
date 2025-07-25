@@ -5,7 +5,7 @@ export * from './string.utils';
 // export * from './auth.utils';
 
 export function getLocaleName(uiLocale: string) {
-	// create a DisplayNames instance for language‐type codes
-	const languageNames = new Intl.DisplayNames([uiLocale], { type: 'language' });
-	return languageNames.of(uiLocale) || uiLocale;
+  // create a DisplayNames instance for language‐type codes
+  const languageNames = new Intl.DisplayNames([uiLocale], { type: 'language' });
+  return languageNames.of(uiLocale) || uiLocale;
 }

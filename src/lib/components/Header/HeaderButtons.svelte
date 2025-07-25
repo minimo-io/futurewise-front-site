@@ -56,6 +56,7 @@
 			{/if}
 		</div>
 
+		<ChatLlmButton showCheck={false} />
 		<LanguageButton />
 		<LoginDashboardButton />
 
