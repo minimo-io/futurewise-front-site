@@ -185,7 +185,7 @@
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<FlaskConical class="mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">{m.lab()}</span>
+			<span class="self-center font-semibold">{m.menuLab()}</span>
 		</div>
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 			<!-- <ChevronRight class="aspect-1 text-grey-dark w-4" /> -->
