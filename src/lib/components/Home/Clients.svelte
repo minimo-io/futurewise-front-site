@@ -86,7 +86,7 @@
 	<!-- Decorative dot -->
 	<Hr />
 
-	<!-- <div class="relative scale-110 text-center md:scale-100">
+	<!-- <div class="-top-3 scale-110 text-center md:scale-90">
 		<PillFlower title={m.menuClients()} />
 	</div> -->
 
@@ -126,7 +126,7 @@
 		</div>
 
 		<!-- Decorative element -->
-		<div class="absolute -top-[50%] right-[10%] scale-40 opacity-70">
+		<div class="absolute -top-[50%] right-[10%] hidden scale-40 opacity-70 md:block">
 			<img src="/bgs/cross.svg" alt="cross" />
 		</div>
 	</div>

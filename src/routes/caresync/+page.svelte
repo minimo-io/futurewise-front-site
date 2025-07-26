@@ -13,6 +13,7 @@
 	import { ChevronDown } from '@lucide/svelte';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import Clients from '$lib/components/Home/Clients.svelte';
 
 	let isExpanded = $state(false);
 	const autoGestaoInitialItems = 0;
@@ -71,6 +72,10 @@
 	titleRight="CareSync"
 	heroContent={m.heroContentCareSync()}
 />
+
+<div>
+	<Clients />
+</div>
 
 <main>
 	<div
