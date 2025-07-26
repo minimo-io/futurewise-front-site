@@ -6,6 +6,7 @@
 	import CtaContact from '$lib/components/CtaContact.svelte';
 	import Faq from '$lib/components/Faq.svelte';
 	import Header from '$lib/components/Header/Header.svelte';
+	import Clients from '$lib/components/Home/Clients.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import { m } from '$paraglide/messages';
 	import { localizeHref } from '$paraglide/runtime';
@@ -20,6 +21,10 @@
 	titleRight="Bagity"
 	heroContent={m.heroContentBagity()}
 />
+
+<div>
+	<Clients />
+</div>
 
 <main>
 	<div

@@ -9,6 +9,7 @@
 	import Meta from '$lib/components/Meta.svelte';
 	import TransparentButton from '$lib/components/Buttons/TransparentButton.svelte';
 	import Hr from '$lib/components/Hr.svelte';
+	import Clients from '$lib/components/Home/Clients.svelte';
 	// import StandardButton from '$lib/components/Buttons/StandardButton.svelte';
 	// import Hr from '$lib/components/Hr.svelte';
 </script>
@@ -22,6 +23,9 @@
 	titleRight="FinXPay"
 	heroContent={m.heroContentFinX()}
 />
+<div>
+	<Clients />
+</div>
 
 <main class="max-w-fw border-x-base-200 mx-auto md:border-x">
 	<div class=" relative mx-auto flex flex-col gap-0 md:flex-row">
