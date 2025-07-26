@@ -58,7 +58,10 @@
 		<li>
 			<a href="/">
 				<TriangleAlert class="fw-dashboard-left-menu-icon" />
-				<span class="hidden lg:inline">Alertas</span>
+				<div class="indicator">
+					<span class="indicator-item badge badge-primary">32</span>
+					<span class="hidden lg:inline">Alertas</span>
+				</div>
 			</a>
 		</li>
 
