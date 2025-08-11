@@ -171,6 +171,24 @@ body {
 	.fw-pill-primary-transparent {
 		@apply bg-primary/10 hover:bg-primary hover:text-base-200 border-primary/30 text-primary border pb-[1px];
 	}
+	.fw-pill-accent {
+		@apply hover:text-base-200 border-accent/30 border bg-green-500/30 pb-[1px] text-white hover:bg-green-500;
+	}
+	/* Pulsing accent pill variations */
+	.fw-pill-accent-pulse {
+		@apply hover:text-base-200 border-accent/30 border bg-green-500/30 pb-[1px] text-white hover:bg-green-500;
+		animation: fw-colorPulse 2s ease-in-out infinite;
+	}
+
+	.fw-pill-accent-pulse-vibrant {
+		@apply hover:text-base-200 border-accent/30 border bg-green-500/30 pb-[1px] text-white hover:bg-green-500;
+		animation: fw-colorPulseVibrant 2s ease-in-out infinite;
+	}
+
+	.fw-pill-accent-pulse-brightness {
+		@apply hover:text-base-200 border-accent/30 border bg-green-500/30 pb-[1px] text-white hover:bg-green-500;
+		animation: fw-brightnessPulse 2s ease-in-out infinite;
+	}
 
 	.fw-border-b-divider {
 		border-bottom: 0.5px solid var(--color-base-300);
@@ -320,6 +338,36 @@ body {
 
 	.fw-dashboard-left-menu-icon {
 		@apply aspect-square h-7 md:!h-4;
+	}
+}
+
+@keyframes fw-colorPulse {
+	0%,
+	100% {
+		background-color: rgb(34 197 94 / 0.3); /* bg-green-500/30 */
+	}
+	50% {
+		background-color: rgb(34 197 94 / 0.8); /* More opaque green-500 */
+	}
+}
+
+@keyframes fw-colorPulseVibrant {
+	0%,
+	100% {
+		background-color: rgb(34 197 94 / 0.3); /* bg-green-500/30 */
+	}
+	50% {
+		background-color: rgb(34 197 94 / 0.8); /* Full green-500 like hover */
+	}
+}
+
+@keyframes fw-brightnessPulse {
+	0%,
+	100% {
+		filter: brightness(1) saturate(1);
+	}
+	50% {
+		filter: brightness(1.3) saturate(1.5);
 	}
 }
 

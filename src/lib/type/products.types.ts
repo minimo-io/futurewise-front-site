@@ -20,4 +20,5 @@ export interface ProductDrawerData {
 	primary?: boolean;
 	logo?: string;
 	underDevelopment?: boolean;
+	online?: boolean;
 }

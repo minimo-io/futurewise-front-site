@@ -84,10 +84,17 @@
 					</div>
 				</div>
 			</div>
-			<!-- Prorotiping -->
+			<!-- Prototyping -->
 			{#if brand.underDevelopment}
 				<div class="absolute top-1 -right-0 scale-80 md:-top-5 md:-right-10">
 					<Pill color="primary-transparent" text={m.prototyping()} customCss="!px-3" />
+				</div>
+			{/if}
+
+			<!-- Online -->
+			{#if brand.online}
+				<div class="absolute top-5 right-8 scale-80 md:-top-5 md:-right-1">
+					<Pill color="accent" text={'Online'} customCss="!px-3" pulseColor={true} />
 				</div>
 			{/if}
 		</div>

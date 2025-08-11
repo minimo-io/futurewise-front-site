@@ -42,6 +42,7 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			primary: true,
+			underDevelopment: true,
 			url: localizeHref('/finx')
 		} as ProductDrawerData,
 
@@ -56,6 +57,7 @@ export const drawerData = {
 			isBold: true,
 			underDevelopment: true,
 			primary: true,
+			online: true,
 			url: localizeHref('/bagity')
 		} as ProductDrawerData,
 
@@ -134,6 +136,7 @@ export const drawerData = {
 			// underDevelopment: true,
 			subMenu: false,
 			isBold: true,
+			online: true,
 			url: localizeHref('/bagity')
 		} as ProductDrawerData,
 
@@ -148,6 +151,7 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			primary: true,
+			underDevelopment: true,
 			url: localizeHref('/finx')
 		} as ProductDrawerData,
 
@@ -225,6 +229,7 @@ export const drawerData = {
 			primary: true,
 			subMenu: false,
 			isBold: true,
+			underDevelopment: true,
 			url: localizeHref('/finx')
 		} as ProductDrawerData,
 
@@ -239,6 +244,7 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			primary: true,
+			online: true,
 			url: localizeHref('/bagity')
 		} as ProductDrawerData,
 
