@@ -32,10 +32,16 @@ _Una referencia viva de comandos esenciales para Linux y CLI, totalmente documen
 **Etiquetas**: `encryption` `security` `openssl` `aes` `symmetric`
 
 ```bash
-# Encriptar un archivo con AES-256-CBC (clave de 256 bits) usando una salt aleatoria para la derivación de claves PBKDF2
+# Encrypt
 openssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 \
-  -in rose-wine.jpg \
-  -out rose-wine.jpg.enc
+  -in large-file.dat \
+  -out large-file.dat.enc
+
+# Decrypt (same iter value)
+openssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 \
+  -in large-file.dat.enc \
+  -out large-file-decrypted.dat \
+  -d
 ```
 
 **Uso y Explicación**

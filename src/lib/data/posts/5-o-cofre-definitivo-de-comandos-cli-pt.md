@@ -32,10 +32,16 @@ _Uma referência viva de comandos essenciais para Linux e CLI, totalmente docume
 **Tags**: `encryption` `security` `openssl` `aes` `symmetric`
 
 ```bash
-# Criptografar um arquivo com AES-256-CBC (chave de 256 bits) usando salt aleatório para derivação de chave PBKDF2
+# Criptografar
 openssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 \
-  -in rose-wine.jpg \
-  -out rose-wine.jpg.enc
+  -in large-file.dat \
+  -out large-file.dat.enc
+
+# Decifrar (mesmo valor iter)
+openssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 \
+  -in large-file.dat.enc \
+  -out large-file-decrypted.dat \
+  -d
 ```
 
 **Uso e Explicação**
