@@ -44,27 +44,7 @@ openssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 \
   -d
 ```
 
-**Uso y Explicación**
-
-- `-aes-256-cbc`: Elige el algoritmo AES en modo CBC (seguro y ampliamente soportado).
-- `-salt`: Añade una salt aleatoria al proceso de derivación de la clave, evitando ataques de rainbow tables.
-- Se te pedirá una frase de contraseña; asegúrate de que sea fuerte y fácil de recordar.
-
 **Referencia**: [Documentación de OpenSSL enc](https://www.openssl.org/docs/man1.1.1/man1/openssl-enc.html)
-
-```bash
-# Desencriptar un archivo previamente encriptado usando la misma frase de contraseña
-openssl enc -d -aes-256-cbc \
-  -in yourfile.txt.enc \
-  -out yourfile-decrypted.txt
-```
-
-**Uso y Explicación**
-
-- `-d`: Modo decrypt (desencriptar).
-- La herramienta detecta automáticamente la salt y solicita la misma frase usada en la encriptación.
-
----
 
 ## 2. Archivado y Compresión de Archivos
 
