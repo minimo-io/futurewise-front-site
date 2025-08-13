@@ -9,7 +9,7 @@
 	let drawerDataForLang = $state(drawerData[locale]);
 </script>
 
-<div class="fw-header-fs z-50 hidden items-center justify-center gap-12 md:flex">
+<div class="fw-header-fs z-50 hidden items-center justify-center gap-10 md:flex">
 	<div class="dropdown relative">
 		<div class="cursor-fw flex items-center uppercase" tabindex="0" role="button">
 			<!-- <Zap
@@ -139,4 +139,6 @@
 		<!-- <FlaskConical class="h-4" /> -->
 		{m.menuLab()}
 	</a>
+
+	<a class="uppercase" href={localizeHref('/blog')}>Blog</a>
 </div>
