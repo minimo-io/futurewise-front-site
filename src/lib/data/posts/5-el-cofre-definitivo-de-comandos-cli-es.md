@@ -33,9 +33,9 @@ _A living reference of essential Linux and CLI commands—fully documented, tagg
 
 ```bash
 # Encrypt a file with AES-256-CBC (256-bit key) using a random salt for PBKDF2 key derivation
-openssl enc -aes-256-cbc -salt \
-  -in yourfile.txt \
-  -out yourfile.txt.enc
+openssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 \
+  -in rose-wine.jpg \
+  -out rose-wine.jpg.enc
 ```
 
 **Usage & Explanation**

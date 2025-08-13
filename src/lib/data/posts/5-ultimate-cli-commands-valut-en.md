@@ -33,9 +33,9 @@ _Una referencia viva de comandos esenciales para Linux y CLI, totalmente documen
 
 ```bash
 # Encriptar un archivo con AES-256-CBC (clave de 256 bits) usando una salt aleatoria para la derivación de claves PBKDF2
-openssl enc -aes-256-cbc -salt \
-  -in yourfile.txt \
-  -out yourfile.txt.enc
+openssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 \
+  -in rose-wine.jpg \
+  -out rose-wine.jpg.enc
 ```
 
 **Uso y Explicación**
