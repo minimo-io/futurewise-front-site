@@ -32,14 +32,3 @@ export const load: PageServerLoad = async ({ params }) => {
 		iconName: typeof icon === 'function' ? icon.name : null // Pass icon name if available
 	};
 };
-
-// export const entries: EntryGenerator = () => {
-// 	const allPosts = Object.values(posts).flat();
-// 	const slugs = allPosts.map((post) => post.slug.split('/').pop() as string);
-// 	const uniqueSlugs = [...new Set(slugs)];
-// 	const allSlugs = uniqueSlugs.map((slug) => ({ slug }));
-// 	console.log(allSlugs);
-// 	return allSlugs;
-// };
-
-// export const prerender = true;

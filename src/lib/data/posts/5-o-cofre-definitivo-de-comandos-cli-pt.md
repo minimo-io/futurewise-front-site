@@ -12,21 +12,6 @@ authors:
     avatar: /chatgpt-logo.png
 ---
 
-# O Cofre Definitivo de Comandos CLI
-
-_Uma referência viva de comandos essenciais para Linux e CLI, totalmente documentados, etiquetados e prontos para pesquisa ou inclusão na sua base de conhecimento Futurewise._
-
-## Índice
-
-1. [OpenSSL (Criptografia Simétrica)](#1-openssl-criptografia-simétrica)
-2. [Arquivamento e Compressão de Arquivos](#2-arquivamento-e-compressão-de-arquivos)
-3. [Processamento de Texto e Busca](#3-processamento-de-texto-e-busca)
-4. [Fundamentos do Docker](#4-fundamentos-do-docker)
-5. [Fundamentos do Tailscale](#5-fundamentos-do-tailscale)
-6. [Produtividade com TMUX](#6-produtividade-com-tmux)
-
----
-
 ## 1. OpenSSL (Criptografia Simétrica)
 
 **Tags**: `encryption` `security` `openssl` `aes` `symmetric`

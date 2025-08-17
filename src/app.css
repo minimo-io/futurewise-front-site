@@ -288,7 +288,7 @@ body {
 		@apply border-0;
 	}
 	.fw-article-content pre {
-		@apply border-base-200 my-5 rounded-lg border p-3 text-xs break-words whitespace-pre-wrap;
+		@apply border-base-200 my-5 rounded-lg border bg-black p-3 text-xs break-words whitespace-pre-wrap;
 	}
 }
 

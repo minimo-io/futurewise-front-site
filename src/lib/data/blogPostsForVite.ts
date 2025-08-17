@@ -11,14 +11,6 @@ const blogPosts: Array<{
 		]
 	},
 	{
-		pattern: '/blog/o-futuro-da-programacao',
-		localized: [
-			['pt', '/blog/o-futuro-da-programacao'],
-			['en', '/en/blog/the-future-of-programming'],
-			['es', '/es/blog/el-futuro-de-la-programacion']
-		]
-	},
-	{
 		pattern: '/blog/apresentando-a-plataforma-futurewise',
 		localized: [
 			['pt', '/blog/apresentando-a-plataforma-futurewise'],
@@ -32,6 +24,14 @@ const blogPosts: Array<{
 			['pt', '/blog/o-cofre-definitivo-de-comandos-cli'],
 			['en', '/en/blog/ultimate-cli-commands-valut'],
 			['es', '/es/blog/el-cofre-definitivo-de-comandos-cli']
+		]
+	},
+	{
+		pattern: '/blog/domando-google-pagespeed-com-sveltekit-para-ecommerce',
+		localized: [
+			['pt', '/blog/domando-google-pagespeed-com-sveltekit-para-ecommerce'],
+			['en', '/en/blog/beating-google-pagespeed-with-sveltekit'],
+			['es', '/es/blog/domando-pagespeed-de-google-con-sveltekit-para-ecommerce']
 		]
 	}
 ];

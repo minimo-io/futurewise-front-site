@@ -23,7 +23,7 @@
 		class="max-w-fw border-x-base-200 relative container my-0 text-center md:mx-auto md:border-0 md:border-x"
 	>
 		<!-- Article -->
-		<article class="z-10 !w-full min-w-full py-8 md:px-38 md:py-16">
+		<article class="!z-10 !w-full min-w-full py-8 md:px-38 md:py-16">
 			<div class="mb-12 md:mb-18">
 				<!-- Back button -->
 				<div class="text-secondary relative -left-1 mx-auto mb-5 w-fit text-sm font-medium md:mb-8">
@@ -85,19 +85,23 @@
 
 			<!-- Excerpt -->
 			<p
-				class="text-secondary my-8 text-left font-sans text-lg leading-tight font-semibold tracking-wide md:my-12 md:text-2xl"
+				class="text-secondary my-8 text-left font-sans text-lg leading-tight font-semibold tracking-wide md:my-8 md:text-2xl"
 			>
 				{data.post.excerpt}
 			</p>
 
 			<!-- Content -->
-			<div class="fw-article-content text-left font-sans text-base text-[#ededed] md:text-lg">
+			<!-- <div class="fw-article-content text-left font-sans text-base text-[#ededed] md:text-lg"> -->
+			<div
+				class="fw-article-content prose min-w-full text-left font-sans text-base text-[#ededed] md:text-lg"
+			>
 				{@html data.post.content}
 			</div>
 		</article>
+
 		<!-- Decoration -->
 		<div
-			class="absolute top-[0%] right-[10%] scale-50 opacity-50 md:top-[5%] md:left-[20%] md:scale-90"
+			class="absolute top-[0%] right-[10%] !z-0 w-fit scale-50 opacity-50 md:top-[5%] md:left-[20%] md:scale-90"
 		>
 			<img src="/bgs/cross.svg" alt="cross" />
 		</div>

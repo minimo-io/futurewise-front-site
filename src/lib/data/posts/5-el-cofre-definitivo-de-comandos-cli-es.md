@@ -12,21 +12,6 @@ authors:
     avatar: /chatgpt-logo.png
 ---
 
-# Ultimate CLI Command Vault
-
-_A living reference of essential Linux and CLI commands—fully documented, tagged, and ready for search or inclusion in your Futurewise knowledge base._
-
-## Index
-
-1. [OpenSSL (Symmetric Encryption)](#1-openssl-symmetric-encryption)
-2. [File Archiving & Compression](#2-file-archiving--compression)
-3. [Text Processing & Search](#3-text-processing--search)
-4. [Docker Essentials](#4-docker-essentials)
-5. [Tailscale Essentials](#5-tailscale-essentials)
-6. [TMUX Productivity](#6-tmux-productivity)
-
----
-
 ## 1. OpenSSL (Symmetric Encryption)
 
 **Tags**: `encryption` `security` `openssl` `aes` `symmetric`

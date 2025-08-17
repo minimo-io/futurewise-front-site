@@ -12,21 +12,6 @@ authors:
     avatar: /chatgpt-logo.png
 ---
 
-# La Bóveda Definitiva de Comandos CLI
-
-_Una referencia viva de comandos esenciales para Linux y CLI, totalmente documentados, etiquetados y listos para buscar o para su inclusión en tu base de conocimientos Futurewise._
-
-## Índice
-
-1. [OpenSSL (Encriptación Simétrica)](#1-openssl-encriptación-simétrica)
-2. [Archivado y Compresión de Archivos](#2-archivado-y-compresión-de-archivos)
-3. [Procesamiento de Texto y Búsqueda](#3-procesamiento-de-texto-y-búsqueda)
-4. [Conceptos Básicos de Docker](#4-conceptos-básicos-de-docker)
-5. [Conceptos Básicos de Tailscale](#5-conceptos-básicos-de-tailscale)
-6. [Productividad con TMUX](#6-productividad-con-tmux)
-
----
-
 ## 1. OpenSSL (Encriptación Simétrica)
 
 **Etiquetas**: `encryption` `security` `openssl` `aes` `symmetric`
