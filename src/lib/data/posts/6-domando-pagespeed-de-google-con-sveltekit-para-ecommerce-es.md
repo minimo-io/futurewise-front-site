@@ -21,10 +21,6 @@ El front-end en SvelteKit corre en Vercel.
 <br />
 Para hablar con WordPress, usamos [WPGraphQL](https://www.wpgraphql.com/) — convirtiendo el WP en un servidor GraphQL puro — y [WooGraphQL](https://woographql.com/) para sacar todo del WooCommerce: productos, pedidos, cupones, el paquete completo, con queries y mutations.
 
-👉 GraphQL es el futuro, hermano. Nada de múltiples endpoints, nada de JSON pesado del REST. Solo lo que necesitas, como lo necesitas.  
-👉 Con Relay y paginación por cursor, solo cargamos lo justo — cero bloat, cero pérdida de tiempo.  
-👉 Y lo mejor: ¿front-end junior? Tranquilo. Entra al GraphiQL, ve los datos frente a él, y ya está construyendo UI como si nada. Ni que fuera un master de REST.
-
 👋 _En el futuro, vamos a soltar algunos plugins que hicimos. La comunidad GraphQL + WordPress va a sentir el impacto._
 
 _(Continúa... porque después vamos a subir al nivel Pro con WooGraphQL y vamos a destripar con Bundles, Subscriptions y todo lo que se mueva.)_
