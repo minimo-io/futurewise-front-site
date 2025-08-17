@@ -63,7 +63,7 @@ const profile = await futurewise.getProfileAndToken({
 			</div>
 
 			<code
-				class="block overflow-x-auto rounded-lg p-4 font-mono text-xs whitespace-pre md:text-base"
+				class="block overflow-x-auto rounded-lg p-4 font-mono text-xs whitespace-pre md:text-sm"
 			>
 				<span class="text-[#717AA8]">
 					// Get a user’s access token and
