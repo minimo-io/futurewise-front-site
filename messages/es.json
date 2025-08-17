@@ -5,6 +5,8 @@
 	"continue": "Continuar",
 	"loggingIn": "Entrando...",
 	"refresh": "Actualizar",
+	"searchPlaceholder": "Buscar herramientas y comandos...",
+
 	"refreshingIn": "Actualizando en {seconds}s",
 	"deviceAddedSuccess": "¡Dispositivo añadido con éxito!",
 	"deviceAddedError": "Error al añadir el dispositivo.",
@@ -25,7 +27,7 @@
 	"or": "ó",
 	"soon": "En breve",
 	"getInTouch": "Entrar en contacto",
-	"project": "Proyecto",
+	"project": "¡Hola!",
 	"help": "Ayuda",
 	"apiStatus": "Status API",
 	"lab": "Laboratorio",

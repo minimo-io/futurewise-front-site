@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { BotMessageSquare } from '@lucide/svelte';
 	import { getLocale } from '$paraglide/runtime';
-	import { scale, fade } from 'svelte/transition';
+	import { scale, fade, fly } from 'svelte/transition';
 
 	let { showCheck = true }: { showCheck?: boolean } = $props();
 
@@ -50,7 +50,7 @@
 {#if isChatOpen}
 	<div
 		class="bg-base-100 fixed inset-0 z-50"
-		in:scale={{ start: 0, opacity: 0, duration: 300 }}
+		in:scale={{ duration: 150 }}
 		out:fade={{ duration: 150 }}
 	>
 		<!-- Chat header -->

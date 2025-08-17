@@ -5,6 +5,7 @@
 		closeCommandPalette,
 		openCommandPalette
 	} from '$lib/stores/CommandPallete.state.svelte';
+	import { m } from '$paraglide/messages';
 
 	let searchQuery = $state('');
 	let selectedIndex = $state(0);
@@ -123,13 +124,13 @@
 
 {#if commandPaletteState.open}
 	<div class="modal modal-open">
-		<div class="modal-box w-11/12 max-w-lg">
+		<div class="modal-box border-base-content/30 w-11/12 max-w-lg border">
 			<div class="form-control">
 				<div class="input-group">
 					<input
 						id="command-input"
 						type="text"
-						placeholder="Procurar ferramentas e comandos..."
+						placeholder={m.searchPlaceholder()}
 						class="input input-bordered w-full"
 						bind:value={searchQuery}
 						onkeydown={handleKeydown}

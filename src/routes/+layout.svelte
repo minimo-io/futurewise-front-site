@@ -28,10 +28,10 @@
 
 	function globalKeyHandler(event: KeyboardEvent) {
 		// Only fire “L” when neither ⌘ (meta) nor Ctrl is held down
-		if ((event.key === 'l' || event.key === 'L') && (event.metaKey || event.ctrlKey)) {
-			event.preventDefault();
-			goto(localizeHref('/login'));
-		}
+		// if ((event.key === 'l' || event.key === 'L') && (event.metaKey || event.ctrlKey)) {
+		// 	event.preventDefault();
+		// 	goto(localizeHref('/login'));
+		// }
 
 		// “B” always goes back one page
 		if ((event.key === 'b' || event.key === 'B') && (event.metaKey || event.ctrlKey)) {

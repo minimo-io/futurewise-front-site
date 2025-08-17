@@ -5,6 +5,8 @@
 	"continue": "Continue",
 	"loggingIn": "Logging in...",
 	"refresh": "Refresh",
+	"searchPlaceholder": "Search for tools and commands...",
+
 	"refreshingIn": "Refreshing in {seconds}s",
 	"deviceAddedSuccess": "Device added successfully!",
 	"deviceAddedError": "Failed to add device.",
@@ -25,7 +27,7 @@
 	"or": "or",
 	"soon": "Soon",
 	"getInTouch": "Get in touch!",
-	"project": "Project",
+	"project": "Hello!",
 	"help": "Help",
 	"apiStatus": "API Status",
 	"lab": "DevLab",
