@@ -4,6 +4,8 @@
 	"login": "Entrar",
 	"continue": "Continuar",
 	"loggingIn": "Entrando...",
+	"latestNews": "Últimas notícias",
+	"subscriveVia": "Inscrever-se via",
 	"searchPlaceholder": "Procurar ferramentas e comandos...",
 	"refresh": "Atualizar",
 	"refreshingIn": "Atualizando em {seconds}s",

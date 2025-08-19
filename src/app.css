@@ -172,21 +172,21 @@ body {
 		@apply bg-primary/10 hover:bg-primary hover:text-base-200 border-primary/30 text-primary border pb-[1px];
 	}
 	.fw-pill-accent {
-		@apply hover:text-base-200 border-accent/30 border bg-green-500/30 pb-[1px] text-white hover:bg-green-500;
+		@apply hover:text-base-200 border-accent/30 border bg-green-500/20 pb-[1px] text-white hover:bg-green-500/90;
 	}
 	/* Pulsing accent pill variations */
 	.fw-pill-accent-pulse {
-		@apply hover:text-base-200 border-accent/30 border bg-green-500/30 pb-[1px] text-white hover:bg-green-500;
+		@apply hover:text-base-200 border-accent/30 border bg-green-500/30 pb-[1px] text-white hover:bg-green-500/90;
 		animation: fw-colorPulse 2s ease-in-out infinite;
 	}
 
 	.fw-pill-accent-pulse-vibrant {
-		@apply hover:text-base-200 border-accent/30 border bg-green-500/30 pb-[1px] text-white hover:bg-green-500;
+		@apply hover:text-base-200 border-accent/30 border bg-green-500/20 pb-[1px] text-white hover:bg-green-500/90;
 		animation: fw-colorPulseVibrant 2s ease-in-out infinite;
 	}
 
 	.fw-pill-accent-pulse-brightness {
-		@apply hover:text-base-200 border-accent/30 border bg-green-500/30 pb-[1px] text-white hover:bg-green-500;
+		@apply hover:text-base-200 border-accent/30 border bg-green-500/20 pb-[1px] text-white hover:bg-green-500/90;
 		animation: fw-brightnessPulse 2s ease-in-out infinite;
 	}
 

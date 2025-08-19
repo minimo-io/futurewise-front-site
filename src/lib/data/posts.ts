@@ -1,7 +1,26 @@
-import { Terminal } from '@lucide/svelte';
+import { Braces, Terminal } from '@lucide/svelte';
 
 export const posts = {
 	en: [
+		{
+			title: "Puppeteer & EasyOCR for Slots Automation",
+			excerpt: "This post explores how we can automate slot games using Puppeteer to control the game's interface and EasyOCR for real-time data extraction. Puppeteer acts as our programmatic \"player,\" navigating the game, initiating spins, and interacting with elements just like a human would. Meanwhile, EasyOCR provides the critical visual intelligence, reading key information directly from the screen, such as spin results, credit balances, and bonus indicators.",
+			content: "<p>This was an experiment inspired by <a href=\"https://www.youtube.com/watch?v=iz9lUMSQBfY\">this John Carmack talk</a>, on Upper Bound 2025, about &quot;a robot that plays a real Atari console using a camera and a robotic joystick.&quot;</p>\n<p>The goal of this experiment was to proove that with the appropiate AI API access it is possible to:</p>\n<ol>\n<li>Automate the gameplay for slots games at (fun) iGaming (using <a href=\"https://github.com/microsoft/playwright-python\">Playwright for Python</a>).</li>\n<li>Extract jackpots, scores, and balances (using <a href=\"https://github.com/JaidedAI/EasyOCR\">EasyOCR</a>.)</li>\n<li>Send those captured values to an AI Ollama model for gameplay suggestions (using censored models like <a href=\"https://ollama.com/library/gemma3n\">gemma3n</a> or uncensored models at HuggingFace).</li>\n</ol>\n",
+			date: "August 29",
+			slug: "/en/blog/playwright-and-easyocr-for-igaming-automation",
+			isMain: false,
+			icon: Braces,
+			authors: [
+				{
+					fullName: "Nicolas Erramuspe",
+					avatar: "/me.jpeg"
+				},
+				{
+					fullName: "Gemini",
+					avatar: "/gemini-logo.png"
+				}
+			]
+		},
 		{
 			title: "El Cofre Definitivo de Comandos CLI",
 			excerpt: "Sumérgete en un arsenal curado de comandos esenciales para Linux y MacOS, cada uno documentado, etiquetado y listo para potenciar tu flujo de trabajo, desde la encriptación con OpenSSL hasta la productividad con tmux.",
@@ -24,6 +43,25 @@ export const posts = {
 	],
 	es: [
 		{
+			title: "Puppeteer y EasyOCR para la Automatización de Slots",
+			excerpt: "Este post muestra cómo podemos usar Puppeteer para controlar juegos de tragamonedas mientras EasyOCR extrae datos en tiempo real, conectando los resultados de los giros a modelos locales de Ollama para sugerencias.",
+			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
+			date: "29 de agosto",
+			slug: "/es/blog/playwright-y-easyocr-para-automatizaciones-en-igaming",
+			isMain: false,
+			icon: Braces,
+			authors: [
+				{
+					fullName: "Nicolas Erramuspe",
+					avatar: "/me.jpeg"
+				},
+				{
+					fullName: "Gemini",
+					avatar: "/gemini-logo.png"
+				}
+			]
+		},
+		{
 			title: "The Ultimate CLI Command Vault",
 			excerpt: "Dive into a curated arsenal of essential Linux and MacOS commands—each documented, tagged, and ready to supercharge your workflow, from OpenSSL encryption to tmux productivity.",
 			content: "<h2>1. OpenSSL (Symmetric Encryption)</h2>\n<p><strong>Tags</strong>: <code>encryption</code> <code>security</code> <code>openssl</code> <code>aes</code> <code>symmetric</code></p>\n<pre><code class=\"language-bash\"># Encriptar\nopenssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 \\\n  -in large-file.dat \\\n  -out large-file.dat.enc\n\n# Desencriptar (mismo valor iter)\nopenssl enc -aes-256-cbc -salt -pbkdf2 -iter 10000 \\\n  -in large-file.dat.enc \\\n  -out large-file-decrypted.dat \\\n  -d\n</code></pre>\n<p><strong>Reference</strong>: <a href=\"https://www.openssl.org/docs/man1.1.1/man1/openssl-enc.html\">OpenSSL enc documentation</a></p>\n<h2>2. File Archiving &amp; Compression</h2>\n<p><strong>Tags</strong>: <code>archive</code> <code>compression</code> <code>tar</code> <code>gzip</code> <code>zip</code> <code>rsync</code></p>\n<pre><code class=\"language-bash\"># Create a gzipped tarball of a directory, preserving permissions and symlinks\n# -c: create, -z: gzip, -v: verbose, -f: file\ntar -czvf archive.tar.gz /path/to/dir\n</code></pre>\n<p><strong>Explanation</strong></p>\n<ul>\n<li>Ideal for backups or bundling multiple files.</li>\n<li>Use <code>-p</code> with <code>tar</code> to preserve ownership on restoration as root.</li>\n</ul>\n<p><strong>Reference</strong>: <a href=\"https://www.gnu.org/software/tar/manual/\">GNU tar manual</a></p>\n<pre><code class=\"language-bash\"># Extract a tar.gz archive into the current directory\n# -x: extract, -z: gzip, -v: verbose, -f: file\ntar -xzvf archive.tar.gz\n</code></pre>\n<pre><code class=\"language-bash\"># Zip a directory recursively (faster on small files)\n# -r: recursive\nzip -r archive.zip /path/to/dir\n</code></pre>\n<pre><code class=\"language-bash\"># Unzip an archive into the current directory\nunzip archive.zip\n</code></pre>\n<pre><code class=\"language-bash\"># Efficiently synchronize two directories over SSH\n# -a: archive mode, -v: verbose, -z: compress during transfer\nrsync -avz /local/dir/ user@host:/remote/dir/\n</code></pre>\n<p><strong>Usage Tips</strong></p>\n<ul>\n<li><code>rsync --dry-run</code> to preview changes before executing.</li>\n<li>Add <code>--delete</code> to remove extraneous files on target.</li>\n</ul>\n<hr>\n<h2>3. Text Processing &amp; Search</h2>\n<p><strong>Tags</strong>: <code>grep</code> <code>awk</code> <code>sed</code> <code>find</code> <code>xargs</code> <code>text</code></p>\n<pre><code class=\"language-bash\"># Recursively search for the string “TODO” in all files under the current directory, ignoring binary files\ngrep -R --exclude-dir={.git,node_modules} &quot;TODO&quot; .\n</code></pre>\n<ul>\n<li><code>-R</code> or <code>-r</code>: recursive.</li>\n<li><code>--exclude-dir</code>: skip large folders.</li>\n</ul>\n<pre><code class=\"language-bash\"># Print the second column of a space-delimited file\nawk &#39;{print $2}&#39; file.txt\n</code></pre>\n<ul>\n<li>Useful for quick column extraction.</li>\n<li>Adjust field separator with <code>-F&quot;,&quot;</code> for CSV files.</li>\n</ul>\n<pre><code class=\"language-bash\"># In-place replacement of “foo” with “bar” across all lines\nsed -i &#39;s/foo/bar/g&#39; file.txt\n</code></pre>\n<ul>\n<li><code>-i</code>: edit file in place.</li>\n<li>Use <code>-i.bak</code> to save a backup (e.g. <code>sed -i.bak …</code>).</li>\n</ul>\n<pre><code class=\"language-bash\"># Find all .log files larger than 10 megabytes\nfind /var/log -type f -name &quot;*.log&quot; -size +10M\n</code></pre>\n<pre><code class=\"language-bash\"># Delete files older than 7 days in /tmp\nfind /tmp -type f -mtime +7 -print0 | xargs -0 rm -f\n</code></pre>\n<p><strong>Reference</strong>: <a href=\"https://www.gnu.org/software/grep/manual/\">GNU grep</a>, <a href=\"https://www.gnu.org/software/sed/manual/\">GNU sed</a></p>\n<hr>\n<h2>4. Docker Essentials</h2>\n<p><strong>Tags</strong>: <code>docker</code> <code>container</code> <code>images</code> <code>compose</code></p>\n<pre><code class=\"language-bash\"># List all running Docker containers (ID, image, command, uptime)\ndocker ps --format &#39;table {{.ID}}\\t{{.Image}}\\t{{.Command}}\\t{{.RunningFor}}&#39;\n</code></pre>\n<pre><code class=\"language-bash\"># Pull the latest Nginx image from Docker Hub\ndocker pull nginx:latest\n</code></pre>\n<pre><code class=\"language-bash\"># Run a container in detached mode, mapping host port 80 to container port 80\ndocker run -d --name web -p 80:80 nginx:latest\n</code></pre>\n<pre><code class=\"language-bash\"># Follow logs of the “web” container (live streaming)\ndocker logs -f web\n</code></pre>\n<pre><code class=\"language-bash\"># Execute an interactive shell inside a running container\ndocker exec -it web /bin/bash\n</code></pre>\n<pre><code class=\"language-bash\"># Remove unused containers, networks, images, and cache\ndocker system prune -af\n</code></pre>\n<pre><code class=\"language-bash\"># Start services defined in docker-compose.yml in detached mode\ndocker-compose up -d --build\n</code></pre>\n<p><strong>Tips</strong></p>\n<ul>\n<li>Tag your images (e.g. <code>myimage:1.0</code>) for better version control.</li>\n<li>Use <code>--rm</code> in <code>docker run</code> for auto-cleanup when container exits.</li>\n</ul>\n<hr>\n<h2>5. Tailscale Essentials</h2>\n<p><strong>Tags</strong>: <code>tailscale</code> <code>vpn</code> <code>ssh</code> <code>networking</code></p>\n<pre><code class=\"language-bash\"># Install Tailscale on Debian/Ubuntu\ncurl -fsSL https://tailscale.com/install.sh | sh\n\n# Authenticate and bring up your Tailscale interface with subnet routes enabled\n# --accept-routes: use routes advertised by other nodes\n# --ssh: enable built-in SSH feature (Tailscale SSH)\ntailscale up --accept-routes --ssh\n</code></pre>\n<p><strong>Explanation</strong></p>\n<ul>\n<li><code>tailscale up</code>: connects your machine to your Tailnet.</li>\n<li><code>--ssh</code>: activates Tailscale’s zero-config SSH server on this node.</li>\n<li><code>--accept-routes</code>: allows your node to use subnet routes advertised by peers.</li>\n</ul>\n<pre><code class=\"language-bash\"># List devices and SSH availability on your Tailnet\ntailscale status --ssh\n</code></pre>\n<pre><code class=\"language-bash\"># SSH over Tailscale to another device by its Tailnet hostname\ntailscale ssh user@device-name\n</code></pre>\n<pre><code class=\"language-bash\"># Disable Tailscale SSH on this node\ntailscale down --ssh\n</code></pre>\n<p><strong>Tips</strong></p>\n<ul>\n<li>Tailscale SSH uses your existing user accounts and SSH keys.</li>\n<li>ACLs can be configured in your Tailscale admin console to restrict SSH access.</li>\n</ul>\n<p><strong>Reference</strong>: <a href=\"https://tailscale.com/kb/ssh\">Tailscale SSH documentation</a></p>\n<hr>\n<h2>6. TMUX Productivity</h2>\n<p><strong>Tags</strong>: <code>tmux</code> <code>terminal</code> <code>multiplexing</code> <code>session</code></p>\n<pre><code class=\"language-bash\"># Start a new tmux session named &quot;work&quot;\ntmux new -s work\n</code></pre>\n<pre><code class=\"language-bash\"># List all tmux sessions\ntmux ls\n</code></pre>\n<pre><code class=\"language-bash\"># Attach to an existing session named &quot;work&quot;\ntmux attach -t work\n</code></pre>\n<pre><code class=\"language-bash\"># Detach from current session (inside tmux)\n# &lt;prefix&gt; defaults to Ctrl+b\n&lt;Ctrl+b&gt; d\n</code></pre>\n<pre><code class=\"language-bash\"># Create a new window within a session\n&lt;Ctrl+b&gt; c\n</code></pre>\n<pre><code class=\"language-bash\"># Split current pane horizontally\n&lt;Ctrl+b&gt; &quot;\n</code></pre>\n<pre><code class=\"language-bash\"># Split current pane vertically\n&lt;Ctrl+b&gt; %\n</code></pre>\n<pre><code class=\"language-bash\"># Switch pane (hold prefix then press arrow key)\n&lt;Ctrl+b&gt; ←/→/↑/↓\n</code></pre>\n<pre><code class=\"language-bash\"># Resize pane\n&lt;Ctrl+b&gt; : resize-pane -L 10\n</code></pre>\n<pre><code class=\"language-bash\"># Kill current pane\n&lt;Ctrl+b&gt; x\n</code></pre>\n<p><strong>Tips</strong></p>\n<ul>\n<li>Customize your <code>&lt;prefix&gt;</code> in <code>~/.tmux.conf</code> (e.g., set <code>unbind C-b; set -g prefix C-a</code>).</li>\n<li>Use plugins like <code>tmux-resurrect</code> for session persistence.</li>\n</ul>\n<p><strong>Reference</strong>: <a href=\"https://github.com/tmux/tmux\">tmux GitHub</a></p>\n",
@@ -44,6 +82,25 @@ export const posts = {
 		}
 	],
 	pt: [
+		{
+			title: "Puppeteer e EasyOCR para Automação de Slots",
+			excerpt: "Este post mostra como podemos usar o Puppeteer para controlar jogos de slot enquanto o EasyOCR extrai dados em tempo real, conectando os resultados das rodadas a modelos locais do Ollama para sugestões.",
+			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
+			date: "29 de agosto",
+			slug: "/blog/playwright-e-easyocr-para-automacoes-em-igaming",
+			isMain: false,
+			icon: Braces,
+			authors: [
+				{
+					fullName: "Nicolas Erramuspe",
+					avatar: "/me.jpeg"
+				},
+				{
+					fullName: "Gemini",
+					avatar: "/gemini-logo.png"
+				}
+			]
+		},
 		{
 			title: "O Cofre Definitivo de Comandos CLI",
 			excerpt: "Mergulhe em um arsenal curado de comandos essenciais para Linux e MacOS, cada um documentado, etiquetado e pronto para potencializar seu fluxo de trabalho, desde criptografia com OpenSSL até produtividade com tmux.",

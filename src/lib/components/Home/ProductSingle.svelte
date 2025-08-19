@@ -94,7 +94,7 @@
 			<!-- Online -->
 			{#if brand.online}
 				<div class="absolute top-5 right-8 scale-80 md:-top-5 md:-right-1">
-					<Pill color="accent" text={'Online'} customCss="!px-3" pulseColor={true} />
+					<Pill color="accent" text={'Online'} customCss="!px-3" />
 				</div>
 			{/if}
 		</div>

@@ -23,10 +23,11 @@
 			<div
 				class="text-left font-sans text-[25px] leading-tight font-black md:text-[36px] md:leading-normal"
 			>
-				Últimas notícias
+				{m.latestNews()}
 			</div>
 			<div class="text-right font-sans text-sm md:text-base">
-				Subscribe via <a href="/#" class="text-primary font-bold">RSS</a> or
+				{m.subscriveVia()} <a href="/#" class="text-primary font-bold">RSS</a>
+				{m.or()}
 				<a href="/#" class="text-primary font-bold">Email</a>
 			</div>
 		</div>

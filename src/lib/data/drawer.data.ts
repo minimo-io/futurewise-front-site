@@ -32,6 +32,21 @@ export const drawerData = {
 		// } as DrawerData,
 
 		{
+			id: 'bagity',
+			name: 'Bagity',
+			slogan: 'Headless E-commerce with Superpowers',
+			sloganSimple: 'E-commerce with Superpowers',
+			details: 'Headless Front-End<br />Modern UX + MCP Servers',
+			icon: ShoppingBag,
+			subMenu: false,
+			isBold: true,
+			underDevelopment: false,
+			primary: true,
+			online: true,
+			url: localizeHref('/bagity')
+		} as ProductDrawerData,
+
+		{
 			id: 'finx',
 			name: 'FinXPay',
 			slogan: 'Real-time Cross-Border Payments',
@@ -44,21 +59,6 @@ export const drawerData = {
 			primary: true,
 			underDevelopment: true,
 			url: localizeHref('/finx')
-		} as ProductDrawerData,
-
-		{
-			id: 'bagity',
-			name: 'Bagity',
-			slogan: 'Headless E-commerce with Superpowers',
-			sloganSimple: 'E-commerce with Superpowers',
-			details: 'Headless Front-End<br />Modern UX + MCP Servers',
-			icon: ShoppingBag,
-			subMenu: false,
-			isBold: true,
-			underDevelopment: true,
-			primary: true,
-			online: true,
-			url: localizeHref('/bagity')
 		} as ProductDrawerData,
 
 		// {
@@ -134,6 +134,7 @@ export const drawerData = {
 			details: 'Headless Front-End<br />UX moderno + MCP Servers',
 			icon: ShoppingBag,
 			// underDevelopment: true,
+			primary: true,
 			subMenu: false,
 			isBold: true,
 			online: true,
@@ -219,6 +220,21 @@ export const drawerData = {
 		// } as DrawerData,
 
 		{
+			id: 'bagity',
+			name: 'Bagity',
+			slogan: 'E-commerce Headless con Superpoderes',
+			sloganSimple: 'E-commerce con Superpoderes',
+			details: 'Headless Front-End <br />UX moderno + Servidores MCP',
+			icon: ShoppingBag,
+			underDevelopment: false,
+			subMenu: false,
+			isBold: true,
+			primary: true,
+			online: true,
+			url: localizeHref('/bagity')
+		} as ProductDrawerData,
+
+		{
 			id: 'finx',
 			name: 'FinXPay',
 			slogan: 'Pagos X-Border en Tiempo Real',
@@ -231,21 +247,6 @@ export const drawerData = {
 			isBold: true,
 			underDevelopment: true,
 			url: localizeHref('/finx')
-		} as ProductDrawerData,
-
-		{
-			id: 'bagity',
-			name: 'Bagity',
-			slogan: 'E-commerce Headless con Superpoderes',
-			sloganSimple: 'E-commerce con Superpoderes',
-			details: 'Headless Front-End <br />UX moderno + Servidores MCP',
-			icon: ShoppingBag,
-			underDevelopment: true,
-			subMenu: false,
-			isBold: true,
-			primary: true,
-			online: true,
-			url: localizeHref('/bagity')
 		} as ProductDrawerData,
 
 		// {

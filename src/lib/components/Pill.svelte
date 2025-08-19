@@ -16,7 +16,7 @@
 		color == 'primary' && 'fw-pill-primary',
 		color == 'primary-transparent' && 'fw-pill-primary-transparent',
 		color == 'accent' && !pulseColor && 'fw-pill-accent',
-		color == 'accent' && pulseColor && 'fw-pill-accent-pulse',
+		// color == 'accent' && pulseColor && 'fw-pill-accent-pulse',
 		customCss
 	]}
 >

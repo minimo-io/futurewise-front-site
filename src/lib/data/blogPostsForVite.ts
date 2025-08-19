@@ -33,6 +33,14 @@ const blogPosts: Array<{
 			['en', '/en/blog/beating-google-pagespeed-with-sveltekit'],
 			['es', '/es/blog/domando-pagespeed-de-google-con-sveltekit-para-ecommerce']
 		]
+	},
+	{
+		pattern: '/blog/sqlite',
+		localized: [
+			['pt', '/blog/sqlite'],
+			['en', '/en/blog/sqlite'],
+			['es', '/es/blog/sqlite']
+		]
 	}
 ];
 
