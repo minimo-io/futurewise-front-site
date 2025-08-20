@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { RefreshCw } from '@lucide/svelte';
 	import { m } from '$paraglide/messages';
+	import { localizeHref } from '$paraglide/runtime';
 
 	const { handleRefresh, isRefreshing, countdown } = $props<{
 		handleRefresh: () => unknown;
@@ -11,7 +12,10 @@
 
 <div class="border-base-200 flex justify-start border-b">
 	<div class="flex items-center justify-end p-4">
-		<a href="/dashboard/caresync/add-device" class="btn btn-sm btn-secondary mr-2 tracking-wide">
+		<a
+			href={localizeHref('/dashboard/caresync/add-device')}
+			class="btn btn-sm btn-secondary mr-2 tracking-wide"
+		>
 			{m.addDevice()}
 		</a>
 		<button

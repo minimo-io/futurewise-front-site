@@ -80,7 +80,7 @@
 				<li>
 					<a href="/">Usuários</a>
 				</li>
-				<li><a href="/">Empresas / Clientes</a></li>
+				<li><a href={localizeHref('/dashboard/caresync/add-agent')}>Empresas / Funcionários</a></li>
 				<li><a href="/">Técnicos</a></li>
 			</ul>
 		</li>

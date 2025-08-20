@@ -3,15 +3,21 @@
 	import { m } from '$paraglide/messages';
 	import { MachineType } from '$lib/type/caresync-machines.types';
 
-	export let data;
+	// export let data;
 
-	let formMessage: string | null = null;
-	let isSuccess: boolean = false;
+	let { data } = $props();
+
+	let formMessage: string | null = $state(null);
+	let isSuccess: boolean = $state(false);
 
 	let selectedCompanyId: string | undefined;
-	$: filteredContacts = selectedCompanyId
-		? data.contacts.filter((contact: { company_id: string }) => contact.company_id === selectedCompanyId)
-		: [];
+	let filteredContacts = $derived(
+		selectedCompanyId
+			? data.contacts.filter(
+					(contact: { company_id: string }) => contact.company_id === selectedCompanyId
+				)
+			: []
+	);
 </script>
 
 <div class="container mx-auto p-4 text-white">
@@ -44,7 +50,7 @@
 				name="company_id"
 				required
 				class="select select-bordered w-full"
-				on:change={(e) => (selectedCompanyId = (e.target as HTMLSelectElement).value)}
+				onchange={(e) => (selectedCompanyId = (e.target as HTMLSelectElement).value)}
 			>
 				<option value="">Select a company</option>
 				{#each data.companies as company}
@@ -132,28 +138,52 @@
 			<label for="os" class="label">
 				<span class="label-text text-gray-300">Operating System</span>
 			</label>
-			<input type="text" id="os" name="os" placeholder="e.g., Windows 10 Pro" class="input input-bordered w-full" />
+			<input
+				type="text"
+				id="os"
+				name="os"
+				placeholder="e.g., Windows 10 Pro"
+				class="input input-bordered w-full"
+			/>
 		</div>
 
 		<div class="form-control mb-4">
 			<label for="hdd" class="label">
 				<span class="label-text text-gray-300">HDD/SSD</span>
 			</label>
-			<input type="text" id="hdd" name="hdd" placeholder="e.g., 512 GB SSD" class="input input-bordered w-full" />
+			<input
+				type="text"
+				id="hdd"
+				name="hdd"
+				placeholder="e.g., 512 GB SSD"
+				class="input input-bordered w-full"
+			/>
 		</div>
 
 		<div class="form-control mb-4">
 			<label for="ram" class="label">
 				<span class="label-text text-gray-300">RAM</span>
 			</label>
-			<input type="text" id="ram" name="ram" placeholder="e.g., 12GB" class="input input-bordered w-full" />
+			<input
+				type="text"
+				id="ram"
+				name="ram"
+				placeholder="e.g., 12GB"
+				class="input input-bordered w-full"
+			/>
 		</div>
 
 		<div class="form-control mb-4">
 			<label for="model" class="label">
 				<span class="label-text text-gray-300">Model</span>
 			</label>
-			<input type="text" id="model" name="model" placeholder="e.g., MacBookX Air 16" class="input input-bordered w-full" />
+			<input
+				type="text"
+				id="model"
+				name="model"
+				placeholder="e.g., MacBookX Air 16"
+				class="input input-bordered w-full"
+			/>
 		</div>
 
 		<div class="form-control mb-4">
@@ -167,21 +197,38 @@
 			<label for="processor" class="label">
 				<span class="label-text text-gray-300">Processor</span>
 			</label>
-			<input type="text" id="processor" name="processor" placeholder="e.g., Intel Core i7-8650U" class="input input-bordered w-full" />
+			<input
+				type="text"
+				id="processor"
+				name="processor"
+				placeholder="e.g., Intel Core i7-8650U"
+				class="input input-bordered w-full"
+			/>
 		</div>
 
 		<div class="form-control mb-4">
 			<label for="serial_number" class="label">
 				<span class="label-text text-gray-300">Serial Number</span>
 			</label>
-			<input type="text" id="serial_number" name="serial_number" placeholder="e.g., ABC123456" class="input input-bordered w-full" />
+			<input
+				type="text"
+				id="serial_number"
+				name="serial_number"
+				placeholder="e.g., ABC123456"
+				class="input input-bordered w-full"
+			/>
 		</div>
 
 		<div class="form-control mb-4">
 			<label for="installation_date" class="label">
 				<span class="label-text text-gray-300">Installation Date</span>
 			</label>
-			<input type="date" id="installation_date" name="installation_date" class="input input-bordered w-full" />
+			<input
+				type="date"
+				id="installation_date"
+				name="installation_date"
+				class="input input-bordered w-full"
+			/>
 		</div>
 
 		<button type="submit" class="btn btn-primary mt-4"> Add Device </button>
