@@ -51,7 +51,7 @@
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Real-time payments with <span class='text-base-content opacity-80'>Instant Global Settlements</span> in Local Currency, Stablecoins, or Bitcoin via Lightning. Eg. <span class='text-base-content'>Receive via PIX in Brazil and settle abroad</span>, instantly, with 100% compliance.</div>",
 
-	"heroContentCareSync": "Platform for <span class='text-base-content opacity-80'>Predictive Maintenance</span> and  IT Asset Management (ITSM + ITAM) — with AI applied to Real-Time Monitoring, Equipment Rental, and <span class='text-base-content opacity-80'>On-Demand Technical Support</span>.",
+	"heroContentCareSync": "Platform for <span class='text-base-content opacity-80'>Predictive Maintenance</span> and Asset Management (ITSM + ITAM) <span class='text-base-content opacity-80'>for IT professionals and SMEs</span> — with AI applied to Real-Time Monitoring, Knowledge-Base and the Purchase of Equipment & Parts.",
 
 	"heroContentBagity": "<span class='text-base-content opacity-80'>Tailored Premium E-Commerce</span>: We customize without limits — Design, UX, and Features — with integrated AI, scalable security, and <span class='text-base-content opacity-80'>express checkout</span> via <a href='/finx' class='text-primary font-medium'>FinXPay</a> (PIX, Boleto, Card, and Bitcoin). <span class='text-base-content opacity-80'>Predictable plans</span> from $20/month or <span class='text-base-content opacity-80'>Bagity Pro with no upfront costs</span>.",
 
