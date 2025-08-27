@@ -10,7 +10,7 @@
 </script>
 
 <div class="fw-header-fs z-50 hidden items-center justify-center gap-10 md:flex">
-	<div class="dropdown relative">
+	<div class="dropdown Xdropdown-hover relative">
 		<div class="cursor-fw flex items-center uppercase" tabindex="0" role="button">
 			<!-- <Zap
 				fill="#fff"

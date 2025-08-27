@@ -29,7 +29,7 @@
 	</div>
 	<ul class="menu bg-grey-light h-full md:w-60">
 		<li>
-			<a href="/" class="active text-primary">
+			<a href={localizeHref('/dashboard/caresync')} class="active text-primary">
 				<Home class="fw-dashboard-left-menu-icon" />
 				<span class="hidden lg:inline">Dashboard</span>
 			</a>
@@ -56,7 +56,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="/">
+			<a href={localizeHref('/dashboard/caresync/alerts')}>
 				<TriangleAlert class="fw-dashboard-left-menu-icon" />
 				<div class="indicator">
 					<span class="indicator-item badge badge-primary">32</span>
