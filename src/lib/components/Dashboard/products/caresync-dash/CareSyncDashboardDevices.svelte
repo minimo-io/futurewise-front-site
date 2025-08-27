@@ -139,7 +139,7 @@
 				<!-- <th>Org</th> -->
 
 				<!-- <th>Última/Próxima Manutenção</th> -->
-				<th>Tempo Ativo</th>
+				<!-- <th>Tempo Ativo</th> -->
 				<th>Nro Série</th>
 				<th>Marca</th>
 				<th>Acções</th>
@@ -272,7 +272,7 @@
 						<span class="mx-2"> › </span>
 						{machine.nextService}
 					</td> -->
-						<td>{machine.timeActive} meses</td>
+						<!-- <td>{machine.timeActive} meses</td> -->
 						<td>
 							<span class="badge badge-ghost badge-sm uppercase">{machine.serialNumber}</span>
 						</td>

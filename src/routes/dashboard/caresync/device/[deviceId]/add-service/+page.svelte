@@ -81,6 +81,7 @@
 			<select id="event_type" name="event_type" class="select select-bordered w-full" required>
 				<option value="" disabled selected>Select an event type</option>
 				<option value="OS_RESET">OS Reset</option>
+				<option value="OS_ERROR">OS Error</option>
 				<option value="PERFORMANCE_ALERT">Performance Alert</option>
 				<option value="CLEANUP">Cleanup</option>
 				<option value="SCHEDULED_MAINTENANCE">Scheduled Maintenance</option>
