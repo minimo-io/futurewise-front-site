@@ -5,25 +5,22 @@
 	let { children } = $props();
 </script>
 
-<!-- Actual dashboard -->
-<div class="mx-auto h-full w-full gap-10 overflow-x-auto">
-	<div class="mx-auto flex h-full flex-row">
-		<MenuLeft />
-		<!-- <ContentDashboard /> -->
+<div class="mx-auto flex flex-row">
+	<!-- Left menu -->
+	<MenuLeft />
 
-		<div class="flex h-full w-full flex-col">
-			<div class="border-base-200 flex h-[65px] items-center justify-between border-b md:h-25">
-				<!-- Dashboard title -->
-				<div class="text-primary pl-5 text-lg font-black uppercase">Dashboard</div>
-				<!-- Dashboard buttons -->
-				<nav class="relative z-20 flex items-center justify-between pr-10">
-					<HeaderButtonsDashboard />
-				</nav>
-			</div>
-			<div class="text-base-200 flex text-center">
-				{@render children()}
-			</div>
+	<!-- Dashboard content -->
+	<div class="flex min-h-dvh flex-1 flex-col overflow-x-auto">
+		<div class="border-base-200 flex h-[65px] items-center justify-between border-b md:h-25">
+			<!-- Dashboard title -->
+			<div class="text-primary pl-5 text-lg font-black uppercase">Dashboard</div>
+			<!-- Dashboard buttons -->
+			<nav class="relative z-20 flex items-center justify-between pr-10">
+				<HeaderButtonsDashboard />
+			</nav>
+		</div>
+		<div class="text-base-200 flex min-h-dvh overflow-x-auto text-center">
+			{@render children()}
 		</div>
 	</div>
 </div>
-<!-- End Actual Dashboard -->

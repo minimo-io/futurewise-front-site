@@ -1,10 +1,10 @@
 import { type Icon as IconType } from '@lucide/svelte';
 
 export enum Product {
-	CARESYNC = 'CARESYNC',
-	FINX = 'FINXPAY',
-	BAGITY = 'BAGITY',
-	AUTOCRM = 'AUTOCRM'
+	CARE = 'CARE',
+	PAY = 'PAY',
+	STORE = 'STORE',
+	API = 'APIS'
 }
 
 export interface ProductDrawerData {
@@ -17,7 +17,7 @@ export interface ProductDrawerData {
 	// subMenu: boolean;
 	url?: string;
 	isBold?: boolean;
-	primary?: boolean;
+	primary: boolean;
 	logo?: string;
 	underDevelopment?: boolean;
 	online?: boolean;

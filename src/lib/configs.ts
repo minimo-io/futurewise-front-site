@@ -3,7 +3,7 @@ export const AppConfig = {
 	apiUrl: import.meta.env.DEV ? 'https://api.futurewise.lat' : 'https://api.futurewise.lat',
 	calendar: 'https://calendar.app.google/oDbeDazTLXApijoR8',
 	status: 'https://stats.uptimerobot.com/pPaLEt4eBM',
-	caresync: {
+	care: {
 		deviceRefreshIntervalSeconds: 30
 	},
 	fw: {
@@ -14,6 +14,19 @@ export const AppConfig = {
 			npm: 'https://npmjs.com',
 			linkedin: 'https://www.linkedin.com/in/nicolas-erramuspe/',
 			nostr: 'https://primal.net/p/npub1wujhdsytm3w6g0mpsqh8v7ezx83jcm64dlkwuqgm5v8lv0pds55ssudkw0'
+		}
+	},
+
+	dashboards: {
+		care: {
+			base: '/dashboard/care',
+			alerts: '/dashboard/care/alerts',
+			services: '/dashboard/care/services',
+			device: '/dashboard/care/device/',
+			actions: {
+				addAgent: '/dashboard/care/add-agent',
+				addDevice: '/dashboard/care/add-device'
+			}
 		}
 	}
 };

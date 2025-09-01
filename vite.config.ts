@@ -76,20 +76,44 @@ export default defineConfig({
 					]
 				},
 				{
-					pattern: '/dashboard/caresync',
+					pattern: '/dashboard/care',
 					localized: [
-						['pt', '/dashboard/caresync'],
-						['es', '/es/dashboard/caresync'],
-						['en', '/en/dashboard/caresync']
+						['pt', '/dashboard/care'],
+						['es', '/es/dashboard/care'],
+						['en', '/en/dashboard/care']
+					]
+				},
+				{
+					pattern: '/dashboard/pay',
+					localized: [
+						['pt', '/dashboard/pay'],
+						['es', '/es/dashboard/pay'],
+						['en', '/en/dashboard/pay']
+					]
+				},
+				{
+					pattern: '/dashboard/store',
+					localized: [
+						['pt', '/dashboard/store'],
+						['es', '/es/dashboard/store'],
+						['en', '/en/dashboard/store']
+					]
+				},
+				{
+					pattern: '/dashboard/apis',
+					localized: [
+						['pt', '/dashboard/apis'],
+						['es', '/es/dashboard/apis'],
+						['en', '/en/dashboard/apis']
 					]
 				},
 
 				{
-					pattern: '/bagity',
+					pattern: '/store',
 					localized: [
-						['pt', '/bagity'],
-						['es', '/es/bagity'],
-						['en', '/en/bagity']
+						['pt', '/store'],
+						['es', '/es/store'],
+						['en', '/en/store']
 					]
 				},
 
@@ -103,19 +127,19 @@ export default defineConfig({
 				},
 				// Products
 				{
-					pattern: '/finx',
+					pattern: '/pay',
 					localized: [
-						['pt', '/finx'],
-						['es', '/es/finx'],
-						['en', '/en/finx']
+						['pt', '/pay'],
+						['es', '/es/pay'],
+						['en', '/en/pay']
 					]
 				},
 				{
-					pattern: '/caresync',
+					pattern: '/care',
 					localized: [
-						['pt', '/caresync'],
-						['es', '/es/caresync'],
-						['en', '/en/caresync']
+						['pt', '/care'],
+						['es', '/es/care'],
+						['en', '/en/care']
 					]
 				}
 			]

@@ -3,6 +3,8 @@
 	import { machineTypeCode } from '$utils/string.utils';
 	import { localizeHref } from '$paraglide/runtime';
 	import { formatEventTime } from '$utils/date.utils';
+	import { AppConfig } from '$lib';
+	import { m } from '$paraglide/messages';
 
 	export let data: PageData;
 
@@ -24,11 +26,11 @@
 </script>
 
 <div class="container mx-auto">
-	<div class="border-base-200 border-b py-4">
+	<!-- <div class="border-base-200 border-b py-4">
 		<h1 class="text-base-content text-2xl font-bold">CareSync Device Alerts</h1>
-	</div>
+	</div> -->
 
-	<div class="overflow-x-auto">
+	<div class="min-h-dvh overflow-x-auto">
 		<table class="table w-full">
 			<thead>
 				<tr>
@@ -45,11 +47,15 @@
 			<tbody>
 				{#if data.alerts && data.alerts.length > 0}
 					{#each data.alerts as alert}
-						{@const deviceUrl = localizeHref(`/dashboard/caresync/device/${alert.device_id}`)}
+						{@const deviceUrl = localizeHref(
+							`${AppConfig.dashboards.care.device}${alert.device_id}`
+						)}
 						<tr>
 							<td class="text-base-content">
 								<a href={deviceUrl} class="text-primary">
-									{machineTypeCode(alert.device_type)}-{alert.device_report_id}{alert.is_owned_by_contact ? '-CP' : ''}
+									{machineTypeCode(
+										alert.device_type
+									)}-{alert.device_report_id}{alert.is_owned_by_contact ? '-CP' : ''}
 								</a>
 							</td>
 							<td class="text-base-content">{formatEventTime(alert.created_at)}</td>
@@ -67,8 +73,11 @@
 								</div>
 							</td>
 							<td>
-								<button class="btn btn-sm btn-primary" on:click={() => openDescriptionModal(alert.description)}>
-									Details
+								<button
+									class="btn btn-sm btn-primary"
+									on:click={() => openDescriptionModal(alert.description)}
+								>
+									{m.details()}
 								</button>
 							</td>
 						</tr>
@@ -85,12 +94,14 @@
 
 <dialog bind:this={descriptionModal} class="modal">
 	<form method="dialog">
-		<button class="btn btn-sm btn-circle btn-ghost absolute top-2 right-2 z-10 text-base-content">✕</button>
+		<button class="btn btn-sm btn-circle btn-ghost text-base-content absolute top-2 right-2 z-10"
+			>✕</button
+		>
 	</form>
 	<div class="modal-box border-base-300 w-11/12 max-w-4xl border p-0">
 		<div class="p-4 text-left">
-			<h3 class="font-bold text-lg text-base-content">Alert Description</h3>
-			<p class="py-4 text-base-content font-mono text-xs">{selectedAlertDescription}</p>
+			<h3 class="text-base-content text-lg font-bold">Alert Description</h3>
+			<p class="text-base-content py-4 font-mono text-xs">{selectedAlertDescription}</p>
 		</div>
 	</div>
 	<form method="dialog" class="modal-backdrop">

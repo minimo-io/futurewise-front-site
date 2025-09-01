@@ -1,4 +1,4 @@
-<!-- src/routes/dashboard/caresync/device/[deviceId]/+layout.svelte -->
+<!-- src/routes/dashboard/care/device/[deviceId]/+layout.svelte -->
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import type { LayoutData } from './$types';

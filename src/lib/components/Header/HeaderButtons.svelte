@@ -4,9 +4,10 @@
 	import { drawerState, toggleDrawer } from '$stores/DrawerState.state.svelte';
 	import { Command, Menu, Search, X } from '@lucide/svelte';
 	import { onMount } from 'svelte';
-	import ChatLlmButton from '../Buttons/ChatLlmButton.svelte';
 	import LanguageButton from '../Buttons/LanguageButton.svelte';
 	import LoginDashboardButton from '../Buttons/LoginDashboardButton.svelte';
+	import UserButton from '../Buttons/UserButton.svelte';
+	import { page } from '$app/state';
 
 	interface Props {
 		showToolsShortcuts?: boolean;
@@ -15,6 +16,7 @@
 
 	let isMac = $state<boolean | null>(null);
 	let locale = $state(getLocale());
+	let user = $derived(page.data.user);
 
 	onMount(() => {
 		isMac = /Mac/i.test(navigator.userAgent);
@@ -50,8 +52,12 @@
 			{/if}
 		</div>
 
-		<ChatLlmButton showCheck={false} />
+		<!-- <ChatLlmButton showCheck={false} /> -->
+
 		<LanguageButton />
+		{#if user}
+			<UserButton />
+		{/if}
 		<LoginDashboardButton />
 
 		<!-- Mobile Menu Trigger Button -->

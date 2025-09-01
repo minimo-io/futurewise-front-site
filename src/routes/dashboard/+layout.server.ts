@@ -4,8 +4,8 @@ import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async () => {
 	if (!productState.active) {
-		productState.active = Product.CARESYNC;
-		// redirect(302, localizeHref(`/dashboard/${Product.CARESYNC.toLowerCase()}`));
+		productState.active = Product.CARE;
+		// redirect(302, localizeHref(`/dashboard/${Product.CARE.toLowerCase()}`));
 	}
 
 	// error(404, 'Not found');

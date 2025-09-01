@@ -3,7 +3,7 @@
 	import { localizeHref } from '$paraglide/runtime';
 	import { page } from '$app/state';
 
-	let user = $derived(page.data.user);
+	let user = $state(page.data.user);
 </script>
 
 <!-- Login/Dashboard Button -->

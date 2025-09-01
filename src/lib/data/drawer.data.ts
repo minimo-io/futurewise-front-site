@@ -1,4 +1,4 @@
-import { Activity, Bird, BotMessageSquare, ShoppingBag } from '@lucide/svelte';
+import { Activity, Cable, ShoppingBag, Zap } from '@lucide/svelte';
 import type { ProductDrawerData } from '$lib/type/products.types';
 import { localizeHref } from '$paraglide/runtime';
 
@@ -6,34 +6,21 @@ import { localizeHref } from '$paraglide/runtime';
 export const drawerData = {
 	en: [
 		{
-			id: 'caresync',
-			name: 'CareSync',
+			id: 'care',
+			name: 'Care',
 			slogan: 'Predictive IT Maintenance + ITMS',
 			sloganSimple: '',
 			details: 'IT Asset Management + Services <br />AI-Powered',
 			icon: Activity,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/caresync')
+			primary: false,
+			url: localizeHref('/care')
 		} as ProductDrawerData,
 
-		// {
-		// 	id: 'braaay',
-		// 	name: 'Braaay',
-		// 	slogan: 'Boutique wine club + MCP Server',
-		// 	sloganSimple: 'Boutique wine club',
-		// 	details: '+Special Beers and Olive Oils<br/>+MCP Server',
-		// 	icon: Wine,
-		// 	isBold: true,
-		// 	subMenu: false,
-		// 	primary: true,
-		// 	logo: '/clients/braaay-logo.png',
-		// 	url: 'https://braaay.com/'
-		// } as DrawerData,
-
 		{
-			id: 'bagity',
-			name: 'Bagity',
+			id: 'store',
+			name: 'Store',
 			slogan: 'Headless E-commerce with Superpowers',
 			sloganSimple: 'E-commerce with Superpowers',
 			details: 'Headless Front-End<br />Modern UX + MCP Servers',
@@ -41,24 +28,23 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			underDevelopment: false,
-			primary: true,
+			primary: false,
 			online: true,
-			url: localizeHref('/bagity')
+			url: localizeHref('/store')
 		} as ProductDrawerData,
 
 		{
-			id: 'finx',
-			name: 'FinXPay',
-			slogan: 'Real-time Cross-Border Payments',
-			sloganSimple: 'X-Border Real-Time Payments',
-			details: 'Global and transparent<br />Fiat, Stablecoins & Bitcoin',
-			icon: Bird,
-			logo: '/products/finx/finx-logo-2.svg',
+			id: 'pay',
+			name: 'Pay',
+			slogan: 'Real-time X-Border Payments',
+			sloganSimple: 'X-Border BTC/USDT Payments',
+			details: 'Transparent, Realtime<br /> & Cross-border',
+			icon: Zap,
 			subMenu: false,
 			isBold: true,
-			primary: true,
+			primary: false,
 			underDevelopment: true,
-			url: localizeHref('/finx')
+			url: localizeHref('/pay')
 		} as ProductDrawerData,
 
 		// {
@@ -74,16 +60,17 @@ export const drawerData = {
 		// } as DrawerData,
 
 		{
-			id: 'autocrm',
-			name: 'AutoCRM',
-			slogan: 'HelpDesk Automation with AI',
-			sloganSimple: 'HelpDesk Automation',
-			details: 'IA ChatBot <br />That Syncs with your CRM',
-			icon: BotMessageSquare,
+			id: 'apis',
+			name: 'APIs',
+			slogan: 'Tools for Fast App development',
+			sloganSimple: 'Tools for Fast App development',
+			details: 'Enterprise ready APIs<br /> Integrate in a few lines of code',
+			icon: Cable,
 			subMenu: false,
 			isBold: true,
+			primary: true,
 			underDevelopment: true,
-			url: localizeHref('/soon')
+			url: localizeHref('/docs')
 		} as ProductDrawerData
 
 		// {
@@ -99,22 +86,9 @@ export const drawerData = {
 		// } as DrawerData
 	],
 	pt: [
-		// {
-		// 	id: 'braaay',
-		// 	name: 'Braaay',
-		// 	slogan: 'Clube vinhos boutique + MCP Server',
-		// 	sloganSimple: 'Clube vinhos boutique',
-		// 	details: '+Cervejas e Azeites especiais<br/>+MCP Server',
-		// 	icon: Wine,
-		// 	isBold: true,
-		// 	subMenu: false,
-		// 	primary: true,
-		// 	logo: '/clients/braaay-logo.png',
-		// 	url: 'https://braaay.com/'
-		// } as DrawerData,
 		{
-			id: 'caresync',
-			name: 'CareSync',
+			id: 'care',
+			name: 'Care',
 			slogan: 'Manutenção TI Preditiva + ITMS',
 			sloganSimple: '',
 			details: 'Gestão de ativos TI + Serviços <br />Potenciados por IA',
@@ -123,37 +97,36 @@ export const drawerData = {
 			isBold: true,
 			primary: false,
 			underDevelopment: true,
-			url: localizeHref('/caresync')
+			url: localizeHref('/care')
 		} as ProductDrawerData,
 
 		{
-			id: 'bagity',
-			name: 'Bagity',
+			id: 'store',
+			name: 'Store',
 			slogan: 'Headless E-commerce com Superpoderes',
 			sloganSimple: 'E-commerce com Superpoderes',
 			details: 'Headless Front-End<br />UX moderno + MCP Servers',
 			icon: ShoppingBag,
 			// underDevelopment: true,
-			primary: true,
+			primary: false,
 			subMenu: false,
 			isBold: true,
 			online: true,
-			url: localizeHref('/bagity')
+			url: localizeHref('/store')
 		} as ProductDrawerData,
 
 		{
-			id: 'finx',
-			name: 'FinXPay',
+			id: 'pay',
+			name: 'Pay',
 			slogan: 'Pagamentos X-Border em Tempo Real',
-			sloganSimple: 'Pagamentos X-Border Instantâneos',
-			details: 'Transparentes & Real-Time<br />Fiat, Stablecoins & Bitcoin',
-			icon: Bird,
-			logo: '/products/finx/finx-logo-2.svg',
+			sloganSimple: 'Pagamentos X-Border BTC/USDT',
+			details: 'Transparentes, Real-Time<br /> & Cross-Border',
+			icon: Zap,
 			subMenu: false,
 			isBold: true,
-			primary: true,
+			primary: false,
 			underDevelopment: true,
-			url: localizeHref('/finx')
+			url: localizeHref('/pay')
 		} as ProductDrawerData,
 
 		// {
@@ -180,12 +153,13 @@ export const drawerData = {
 		// 	url: localizeHref('/nostradamus')
 		// } as DrawerData
 		{
-			id: 'autocrm',
-			name: 'AutoCRM',
-			slogan: 'Automatização de Atendimentos',
-			sloganSimple: 'Automatização de Atendimentos',
-			details: 'Chatbot de IA <br />Que sincroniza com seu CRM',
-			icon: BotMessageSquare,
+			id: 'apis',
+			name: 'APIs',
+			slogan: 'Ferramentas para Desenvolvimento',
+			sloganSimple: 'Ferramentas para Desenvolvimento',
+			details: 'APIs prontas para empresas<br /> Integre em poucas linhas de código',
+			icon: Cable,
+			primary: true,
 			subMenu: false,
 			isBold: true,
 			underDevelopment: true,
@@ -194,34 +168,21 @@ export const drawerData = {
 	],
 	es: [
 		{
-			id: 'caresync',
-			name: 'CareSync',
+			id: 'care',
+			name: 'Care',
 			slogan: 'Mantenimiento TI Predictivo + ITMS',
 			sloganSimple: '',
 			details: 'Gestión de activos TI + Servicios <br />Potenciados por IA',
 			icon: Activity,
 			subMenu: false,
 			isBold: true,
-			url: localizeHref('/caresync')
+			primary: false,
+			url: localizeHref('/care')
 		} as ProductDrawerData,
 
-		// {
-		// 	id: 'braaay',
-		// 	name: 'Braaay',
-		// 	slogan: 'Club de vinos boutique + MCP Server',
-		// 	sloganSimple: 'Club de vinos boutique',
-		// 	details: '+Cervezas y Aceites especiales<br/>+MCP Server',
-		// 	icon: Wine,
-		// 	isBold: true,
-		// 	subMenu: false,
-		// 	primary: true,
-		// 	logo: '/clients/braaay-logo.png',
-		// 	url: 'https://braaay.com/'
-		// } as DrawerData,
-
 		{
-			id: 'bagity',
-			name: 'Bagity',
+			id: 'store',
+			name: 'Store',
 			slogan: 'E-commerce Headless con Superpoderes',
 			sloganSimple: 'E-commerce con Superpoderes',
 			details: 'Headless Front-End <br />UX moderno + Servidores MCP',
@@ -229,24 +190,28 @@ export const drawerData = {
 			underDevelopment: false,
 			subMenu: false,
 			isBold: true,
-			primary: true,
+			primary: false,
 			online: true,
-			url: localizeHref('/bagity')
+			url: localizeHref('/store')
 		} as ProductDrawerData,
 
+		// slogan: 'Real-time X-Border Payments',
+		// sloganSimple: 'X-Border BTC/USDT Payments',
+		// details: 'Transparent, Realtime<br /> & Cross-border',
+
 		{
-			id: 'finx',
-			name: 'FinXPay',
+			id: 'pay',
+			name: 'Pay',
+
 			slogan: 'Pagos X-Border en Tiempo Real',
-			sloganSimple: 'Pagos Globales Instantáneos',
-			details: 'Transparentes & Real-Time<br />Fiat, Stablecoins y Bitcoin',
-			icon: Bird,
-			logo: '/products/finx/finx-logo-2.svg',
-			primary: true,
+			sloganSimple: 'Pagos BTC/USDT X-Border',
+			details: 'Transparentes, en Tiempo Real<br /> y Cross-Border',
+			icon: Zap,
+			primary: false,
 			subMenu: false,
 			isBold: true,
 			underDevelopment: true,
-			url: localizeHref('/finx')
+			url: localizeHref('/pay')
 		} as ProductDrawerData,
 
 		// {
@@ -274,12 +239,13 @@ export const drawerData = {
 		// } as DrawerData
 
 		{
-			id: 'autocrm',
-			name: 'AutoCRM',
-			slogan: 'Automatización de Asistencia con IA',
-			sloganSimple: 'Automatización de Asistencia',
-			details: 'Chatbot de IA <br />Que se sincroniza con tu CRM',
-			icon: BotMessageSquare,
+			id: 'apis',
+			name: 'APIs',
+			slogan: 'Herramientas para Desarrollo Ágil',
+			sloganSimple: 'Herramientas para desarrollo',
+			details: 'APIs listas para empresas<br /> Integre en pocas líneas de código',
+			icon: Cable,
+			primary: true,
 			underDevelopment: true,
 			subMenu: false,
 			isBold: true,

@@ -4,7 +4,7 @@
 	import { Product } from '$types/products.types';
 	import Pill from '../Pill.svelte';
 
-	let { product = Product.BAGITY }: { product?: Product } = $props();
+	let { product = Product.STORE }: { product?: Product } = $props();
 
 	// Reactive state for carousel
 	let currentIndex = $state(0);
@@ -112,7 +112,7 @@
 	];
 
 	// Computed properties using $derived
-	let features = $derived(product === Product.BAGITY ? bagityFeatures : caresyncFeatures);
+	let features = $derived(product === Product.STORE ? bagityFeatures : caresyncFeatures);
 	let isMobile = $state(false);
 	let itemsPerPage = $derived(isMobile ? 3 : 4);
 	let totalPages = $derived(Math.ceil(features.length / itemsPerPage));

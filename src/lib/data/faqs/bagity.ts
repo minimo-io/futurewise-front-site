@@ -3,9 +3,9 @@ import type { Faq } from '$lib/type/faq.types';
 export const bagityFaqs: Record<string, Faq[]> = {
 	en: [
 		{
-			question: 'How does the pricing work for Bagity Basic and Bagity Pro?',
+			question: 'How does the pricing work for Bagity Basic and Store Pro?',
 			answer:
-				'Bagity Basic is a fixed $99/month plan, it includes our basic modules: Payments, Shippings, Reporting and Themes modules, plus unlimited products. Bagity PRO+ has no upfront costs and charges 5–10% per sale. Ideal for premium e-commerce sites with full platform access, advanced features (like MCP Server and AutoCRM), and unlimited customizations defined at monthly meetings.'
+				'Bagity Basic is a fixed $99/month plan, it includes our basic modules: Payments, Shippings, Reporting and Themes modules, plus unlimited products. Store PRO+ has no upfront costs and charges 5–10% per sale. Ideal for premium e-commerce sites with full platform access, advanced features (like MCP Server and AutoCRM), and unlimited customizations defined at monthly meetings.'
 		},
 		{
 			question: 'What is an MCP server?',
@@ -45,9 +45,9 @@ export const bagityFaqs: Record<string, Faq[]> = {
 	],
 	es: [
 		{
-			question: '¿Cómo funciona la estructura de precios de Bagity Basic y Bagity Pro?',
+			question: '¿Cómo funciona la estructura de precios de Bagity Basic y Store Pro?',
 			answer:
-				'Bagity Basic es un plan fijo de $500/mes, que incluye nuestros módulos básicos: Pagos, Envíos, Templates e Informes, además de productos ilimitados. Bagity PRO+ no tiene costos iniciales, comisiones entre 5% y el 10% por venta — Ideal para sitios premium, con acceso completo a la plataforma, funciones avanzadas (como MCP Server y AutoCRM) y customizaciones ilimitadas definidas en reuniones mensuales.'
+				'Bagity Basic es un plan fijo de $500/mes, que incluye nuestros módulos básicos: Pagos, Envíos, Templates e Informes, además de productos ilimitados. Store PRO+ no tiene costos iniciales, comisiones entre 5% y el 10% por venta — Ideal para sitios premium, con acceso completo a la plataforma, funciones avanzadas (como MCP Server y AutoCRM) y customizaciones ilimitadas definidas en reuniones mensuales.'
 		},
 		{
 			question: '¿Qué es un servidor MCP?',
@@ -88,9 +88,9 @@ export const bagityFaqs: Record<string, Faq[]> = {
 	],
 	pt: [
 		{
-			question: 'Como funciona a precificação do Bagity Basic e do Bagity PRO+?',
+			question: 'Como funciona a precificação do Bagity Basic e do Store PRO+?',
 			answer:
-				'Bagity Basic é um plano fixo de R$99/mês, que inclui nossos módulos básicos: Pagamentos, Envios, Relatórios, Temas, além de produtos ilimitados. Bagity PRO+ não tem custos iniciais, com comissões 5 até 10% por venda — Ideal para e-commerces premium ou de alto tráfego, com acesso completo à plataforma, funções avanzadas (como MCP Server e AutoCRM) e personalizações ilimitadas definidas em reuniões mensais.'
+				'Bagity Basic é um plano fixo de R$99/mês, que inclui nossos módulos básicos: Pagamentos, Envios, Relatórios, Temas, além de produtos ilimitados. Store PRO+ não tem custos iniciais, com comissões 5 até 10% por venda — Ideal para e-commerces premium ou de alto tráfego, com acesso completo à plataforma, funções avanzadas (como MCP Server e AutoCRM) e personalizações ilimitadas definidas em reuniões mensais.'
 		},
 		{
 			question: 'O que é um servidor MCP?',

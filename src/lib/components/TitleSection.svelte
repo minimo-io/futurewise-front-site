@@ -28,6 +28,7 @@
 	});
 </script>
 
+<!-- <i>{backgroundWidth.current}</i> -->
 <div class="relative flex items-center md:-left-10">
 	<div class="mr-5 hidden md:block">
 		<img src="/bgs/square.svg" alt="square-decorator" class="h-4" />
@@ -44,7 +45,7 @@
 			<!-- Right -->
 			<div
 				class={[
-					'text-primary-content relative z-10 inline-block',
+					'text-primary-content relative z-10 inline-block w-fit',
 					forceFlexRow ? '-top-1' : '-top-2 left-5 md:-top-1 md:left-0'
 				]}
 			>

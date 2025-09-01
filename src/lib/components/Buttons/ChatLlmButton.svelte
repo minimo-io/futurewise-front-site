@@ -55,7 +55,7 @@
 	>
 		<!-- Chat header -->
 		<div class="border-base-300 flex items-center justify-between border-b p-4">
-			<h2 class="font-sans text-xl font-bold">CareSync AI Assistant</h2>
+			<h2 class="font-sans text-xl font-bold">AI Assistant</h2>
 			<button class="btn btn-circle btn-ghost btn-sm" onclick={closeChat} aria-label="Close chat">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -86,11 +86,7 @@
 		<!-- Chat input -->
 		<div class="border-base-300 border-t p-4">
 			<div class="flex gap-2">
-				<input
-					type="text"
-					placeholder="Pergunte para IA da CareSync"
-					class="input input-bordered flex-1"
-				/>
+				<input type="text" placeholder="Pergunte para IA" class="input input-bordered flex-1" />
 				<button class="btn btn-primary"> Enviar </button>
 			</div>
 		</div>

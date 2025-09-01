@@ -27,7 +27,7 @@
 	"or": "ou",
 	"soon": "Em breve",
 	"getInTouch": "Entre em contato",
-	"project": "Olá!",
+	"project": "Futurewise",
 	"help": "Atendimento",
 	"documentation": "Documentação",
 	"apiStatus": "Status API",
@@ -51,7 +51,7 @@
 
 	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Manutenção Preditiva</span> e Gestão de Ativos (ITSM + ITAM) <span class='text-base-content opacity-80'>para profissionais de TI e PMEs</span> — com IA aplicada ao Monitoramento em Tempo Real, Base de Conhecimento e Compra de Equipamentos e Peças.",
 
-	"heroContentBagity": "<span class='text-base-content opacity-80'>E-Commerce Premium sob Medida</span>: Customizamos sem límites: Design, UX e Funcionalidades, com IA integrada + Cloud escalável e <span class='text-base-content opacity-80'>checkout express</span> (PIX, Boleto, Cartão e Bitcoin). <span class='text-base-content opacity-80'>Planos fixos previsíveis</span> ou <span class='text-base-content opacity-80'>Bagity Pro sem custos iniciais</span>.",
+	"heroContentBagity": "<span class='text-base-content opacity-80'>E-Commerce Premium sob Medida</span>: Customizamos sem límites: Design, UX e Funcionalidades, com IA integrada + Cloud escalável e <span class='text-base-content opacity-80'>checkout express</span> (PIX, Boleto, Cartão e Bitcoin). <span class='text-base-content opacity-80'>Planos fixos previsíveis</span> ou <span class='text-base-content opacity-80'>Store Pro sem custos iniciais</span>.",
 
 	"learnMore": "Saiba mais",
 	"scheduleMeeting": "Agende uma demo",
@@ -85,7 +85,6 @@
 
 	"metaHomeTitle": "Plataforma digital & Development Lab de Inovação",
 
-	"metaHomeDescriptionX": "Somos uma Plataforma de Produtos Digitais e um DevLab  focado na Inovação em E-Commerce, Pagamentos X-Border, e Monitoramento de Ativos de TI.",
 	"metaHomeDescription": "Plataforma de Produtos Digitais Impulsionada por IA e DevLab focado na Inovação em E-commerce, Pagamentos X-Border e Monitoramento de Ativos de TI.",
 
 	"metaUnderDevelopmentTitle": "Em desenvolvimento",
@@ -100,11 +99,14 @@
 	"metaLabTitle": "Lab",
 	"metaLabDescription": "Um espaço para prototipar, explorar e expandir os limites do que é possível com a tecnologia",
 
-	"metaFinxTitle": "FinXPay",
+	"metaFinxTitle": "Pay",
 	"metaFinxDescription": "Pagamentos em tempo real com Settlements Globais Instantâneos em Moeda Local, Stablecoins ou Bitcoin, via Lightning. Ex.: Receba via PIX no Brasil e liquide no exterior, no instante, com 100% de compliance",
 
-	"metaCareSyncTitle": "CareSync",
+	"metaCareSyncTitle": "Care",
 	"metaCareSyncDescription": "Plataforma de Manutenção Preditiva e Gestão Inteligente de Ativos de TI — com IA, Automações, Monitoramento em Tempo Real, Compra e Aluguel de Equipamentos e Assistência Técnica sob Demanda.",
+
+	"metaStoreTitle": "Store",
+	"metaStoreDescription": "",
 
 	"careSyncSlogan": "Você cuide da sua empresa, \na gente cuida da sua TI",
 	"bagitySlogan": "Você cuide da seu faturamento, \na gente cuida de seu E-Commerce",
@@ -128,7 +130,7 @@
 	"careSyncAuto": "Auto-gestão",
 	"careSyncManaged": "Gerenciado",
 	"careSyncIdealFor": "IDEAL PARA",
-	"careSyncAutoDesc": "Para empresas que fornecem serviços de TI ou querem <span class='text-base-content opacity-80'>controle iterno</span> de seus ativos. Uma <span class='text-base-content opacity-80'>plataforma ITSM + <a class='text-primary' href='/marketplace/'>Marketplace</a></span> para otimizar suas operações. Módulos de Faturamento, Compras, Gestão de Ativos, Aletas, e mais.",
+	"careSyncAutoDesc": "Para empresas que fornecem serviços de TI ou querem <span class='text-base-content opacity-80'>controle iterno</span> de seus ativos. Uma <span class='text-base-content opacity-80'>plataforma ITSM + <a class='text-primary' href='#'>Loja</a></span> para otimizar suas operações. Módulos de Faturamento, Compras, Gestão de Ativos e Serviços, Aletas, e mais.",
 	"careSyncManagedDesc": "Para empresas que querem focar no seu negócio, <span class='text-base-content opacity-80'>deixando toda a gestão e manutenção da TI nas mãos de especialistas</span>. Incluindo a opção de aluguel de equipamentos e <a href='#know-more' class='text-primary'>Seguro de Continuidade</a>. Contratos mensais e anuais.",
 
 	"careSyncAutoItem0Title": "Relatórios e Dashboards completos:",
@@ -187,11 +189,11 @@
 	"payPerUseFeatureRemoteEmergency": "Resolução de emergências remota para evitar interrupção do serviço",
 	"payPerUseFeatureCostControl": "Controle de custos e tendências históricas",
 
-	"bagityBasic": "Bagity básico",
+	"bagityBasic": "Store básico",
 	"bagityBasicPrice": "R$99/mês fixo",
 	"bagityBasicDescription": "Plano que dá acesso completo à plataforma, com <span class='text-base-content'>loja pronta para vender</span>, integração de pagamentos via FinXPay + Todas as funcionalidades essenciais. A personalização é opcional, contratada por tarefa, ideal <span class='text-base-content'>para quem quer controle de custos e autonomia</span>.",
 
-	"bagityPro": "Bagity <span class='bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl'>PRO+</span>",
+	"bagityPro": "Store <span class='bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl'>PRO+</span>",
 	"bagityProPrice": "5–10% por venda",
 	"bagityProDescription": "Modelo comissionado por venda (dependendo do faturamento), pensado <span class='text-base-content'>para quem quer um e-commerce premium</span>, sem se preocupar com tecnologia. <span class='text-base-content'>Cuidamos de tudo</span> — Design, Desenvolvimento e Hospedagem — E todas personalizações incluídas.",
 
@@ -219,7 +221,7 @@
 	"bagityFeature7Desc": "Nossa tecnologia headless permite conectar sua loja a qualquer backend ou API — WooCommerce, Ghost e mais — resultando em interfaces rápidas e modulares.",
 
 	"bagityFeature8Title": "Atendimentos inteligentes",
-	"bagityFeature8Desc": "Integração com <a href='/em-breve' class='text-primary hover:opacity-40'>AutoCRM</a>, nosso chatbot de primeiro contato, treinado com IA para representar sua marca, respondendo dúvidas, qualificando leads e integrando-se ao seu CRM automáticamente.",
+	"bagityFeature8Desc": "Integração com nosso chatbot de primeiro contato, treinado com IA para representar sua marca, respondendo dúvidas, qualificando leads e integrando-se ao seu CRM automáticamente.",
 
 	"product": "Produto",
 
@@ -227,5 +229,7 @@
 	"servicesHistory": "Histórico de serviços",
 	"today": "Hoje",
 	"yesterday": "Ontem",
-	"days_ago": "Há {count} dias"
+	"days_ago": "Há {count} dias",
+
+	"details": "Detalhes"
 }

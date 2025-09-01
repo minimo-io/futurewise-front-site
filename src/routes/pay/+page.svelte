@@ -2,7 +2,7 @@
 	import Header from '$lib/components/Header/Header.svelte';
 	import { localizeHref } from '$paraglide/runtime';
 	import { m } from '$paraglide/messages';
-	import Promo from '$lib/components/finx/Promo.svelte';
+	import Promo from '$lib/components/Pay/Promo.svelte';
 	import CtaContact from '$lib/components/CtaContact.svelte';
 	import Developers from '$lib/components/Home/Developers.svelte';
 	import Faq from '$lib/components/Faq.svelte';
@@ -10,6 +10,7 @@
 	import TransparentButton from '$lib/components/Buttons/TransparentButton.svelte';
 	import Hr from '$lib/components/Hr.svelte';
 	import Clients from '$lib/components/Home/Clients.svelte';
+	import { Product } from '$types/products.types';
 	// import StandardButton from '$lib/components/Buttons/StandardButton.svelte';
 	// import Hr from '$lib/components/Hr.svelte';
 </script>
@@ -20,7 +21,7 @@
 	background="rocket"
 	opacity="0"
 	titleLeft={m.project()}
-	titleRight="FinXPay"
+	titleRight={Product.PAY}
 	heroContent={m.heroContentFinX()}
 />
 <div>

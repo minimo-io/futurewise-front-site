@@ -1,4 +1,4 @@
-// src/routes/dashboard/caresync/device/[deviceId]/+layout.server.ts
+// src/routes/dashboard/care/device/[deviceId]/+layout.server.ts
 
 import type { LayoutServerLoad } from './$types';
 import { postgreService } from '$lib/databases/postgre.service';

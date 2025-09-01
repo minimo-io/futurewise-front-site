@@ -24,10 +24,10 @@
 				<div>
 					<h3 class="font-pixel text-base-100 mb-4 text-xl">{m.menuProducts()}</h3>
 					<ul class="space-y-2">
-						<li><a href={localizeHref('/caresync')} class="text-secondary">CareSync</a></li>
-						<li><a href={localizeHref('/finx')} class="text-secondary">FinXPay</a></li>
-						<li><a href={localizeHref('/bagity')} class="text-secondary">Bagity</a></li>
-						<li><a href={localizeHref('/soon')} class="text-secondary">AutoCRM</a></li>
+						<li><a href={localizeHref('/care')} class="text-secondary">Care</a></li>
+						<li><a href={localizeHref('/finx')} class="text-secondary">Pay</a></li>
+						<li><a href={localizeHref('/bagity')} class="text-secondary">Store</a></li>
+						<li><a href={localizeHref('/soon')} class="text-secondary">APIs</a></li>
 						<!-- <li>
 							<a
 								href="https://braaay.com"

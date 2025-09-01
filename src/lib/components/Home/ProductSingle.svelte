@@ -86,17 +86,17 @@
 			</div>
 			<!-- Prototyping -->
 			{#if brand.underDevelopment}
-				<div class="absolute top-1 -right-0 scale-80 md:-top-5 md:-right-10">
+				<div class="absolute top-2 right-2 scale-80 md:-top-5 md:-right-2">
 					<Pill color="primary-transparent" text={m.prototyping()} customCss="!px-3" />
 				</div>
 			{/if}
 
 			<!-- Online -->
-			{#if brand.online}
-				<div class="absolute top-5 right-8 scale-80 md:-top-5 md:-right-1">
+			<!-- {#if brand.online}
+				<div class="absolute top-5 right-12 scale-80 md:-top-5 md:-right-1">
 					<Pill color="accent" text={'Online'} customCss="!px-3" />
 				</div>
-			{/if}
+			{/if} -->
 		</div>
 	</div>
 </a>

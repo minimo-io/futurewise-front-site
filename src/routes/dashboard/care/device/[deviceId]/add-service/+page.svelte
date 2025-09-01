@@ -4,6 +4,7 @@
 	import { goto } from '$app/navigation';
 	import Toast from '$lib/components/Toast.svelte';
 	import type { ToastType } from '$lib/type/toast.types';
+	import { AppConfig } from '$lib';
 
 	console.log('Client-side script loaded.');
 
@@ -27,7 +28,7 @@
 			toastType = 'success';
 			showToast = true;
 			setTimeout(() => {
-				goto(`/dashboard/caresync/device/${data.deviceId}`);
+				goto(`${AppConfig.dashboards.care.device}${data.deviceId}`);
 			}, 1000); // Redirect after 1 second
 		} else if (form?.error) {
 			toastMessage = form.error;
@@ -108,7 +109,7 @@
 			<button
 				type="button"
 				class="btn btn-ghost"
-				onclick={() => goto(`/dashboard/caresync/device/${data.deviceId}`)}
+				onclick={() => goto(`${AppConfig.dashboards.care.device}${data.deviceId}`)}
 			>
 				Cancel
 			</button>

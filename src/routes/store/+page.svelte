@@ -10,15 +10,16 @@
 	import Meta from '$lib/components/Meta.svelte';
 	import { m } from '$paraglide/messages';
 	import { localizeHref } from '$paraglide/runtime';
+	import { Product } from '$types/products.types';
 </script>
 
-<Meta title={m.metaFinxTitle()} description={m.metaFinxDescription()} />
+<Meta title={m.metaStoreTitle()} description={m.metaStoreDescription()} />
 
 <Header
 	background="commerce"
 	opacity="0"
 	titleLeft={m.project()}
-	titleRight="Bagity"
+	titleRight={Product.STORE}
 	heroContent={m.heroContentBagity()}
 />
 

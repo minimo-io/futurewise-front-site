@@ -69,7 +69,7 @@
 	background="astronaut"
 	opacity="0"
 	titleLeft={m.project()}
-	titleRight="CareSync"
+	titleRight={Product.CARE}
 	heroContent={m.heroContentCareSync()}
 />
 
@@ -256,7 +256,7 @@
 		</section>
 	</div>
 
-	<Features product={Product.CARESYNC} />
+	<Features product={Product.CARE} />
 
 	<ServiceOrders image="/caresync-dashboard-3.png" />
 

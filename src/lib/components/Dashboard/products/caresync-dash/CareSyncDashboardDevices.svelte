@@ -1,3 +1,4 @@
+<!-- src/lib/components/Dashboard/products/caresync-dash/CareSyncDashboardDevices.svelte -->
 <script lang="ts">
 	import { Check, Laptop, PcCase } from '@lucide/svelte';
 	import { MachineStatus, MachineType, type Machine } from '$lib/type/caresync-machines.types';
@@ -15,7 +16,7 @@
 	let error = $state<string | null>(null);
 	let refreshInterval: any;
 	let countdownInterval: any;
-	let countdown = $state(AppConfig.caresync.deviceRefreshIntervalSeconds);
+	let countdown = $state(AppConfig.care.deviceRefreshIntervalSeconds);
 
 	const fetchDevices = async () => {
 		try {
@@ -93,7 +94,7 @@
 		countdownInterval = setInterval(() => {
 			countdown--;
 			if (countdown === 0) {
-				countdown = AppConfig.caresync.deviceRefreshIntervalSeconds;
+				countdown = AppConfig.care.deviceRefreshIntervalSeconds;
 			}
 		}, 1000);
 	};
@@ -104,7 +105,7 @@
 
 		refreshInterval = setInterval(
 			handleRefresh,
-			AppConfig.caresync.deviceRefreshIntervalSeconds * 1000
+			AppConfig.care.deviceRefreshIntervalSeconds * 1000
 		);
 		startCountdown();
 	});
@@ -117,122 +118,124 @@
 	const handleRefresh = async () => {
 		isRefreshing = true;
 		error = null;
-		countdown = AppConfig.caresync.deviceRefreshIntervalSeconds;
+		countdown = AppConfig.care.deviceRefreshIntervalSeconds;
 		await fetchDevices();
 		isRefreshing = false;
 	};
 </script>
 
-<div class="flex w-full flex-col">
+<div class="flex flex-1 flex-col">
 	<CareSyncDashboardDevicesActions {handleRefresh} {isRefreshing} {countdown} />
 
-	<!-- <div class="overflow-x-auto"> -->
-	<table class="table w-full border border-t-0">
-		<thead>
-			<tr>
-				<th>ID</th>
-				<th>Usuário</th>
-				<th>Tipo</th>
-				<th>A. Remoto</th>
-				<th>Online</th>
-				<th>Status</th>
-				<!-- <th>Org</th> -->
-
-				<!-- <th>Última/Próxima Manutenção</th> -->
-				<!-- <th>Tempo Ativo</th> -->
-				<th>Nro Série</th>
-				<th>Marca</th>
-				<th>Acções</th>
-			</tr>
-		</thead>
-
-		<tbody>
-			{#if isLoading}
+	<div class="w-full min-w-0 overflow-x-auto">
+		<table class="table border border-t-0 border-l-0 md:w-full">
+			<thead>
 				<tr>
-					<td colspan="11" class="text-center">Loading...</td>
-				</tr>
-			{:else if error}
-				<tr>
-					<td colspan="11" class="text-error text-center">{error}</td>
-				</tr>
-			{:else}
-				{#each machines as machine, i (i)}
-					{@const deviceUrl = localizeHref(`/dashboard/caresync/device/${machine.id}`)}
-					<tr class={{ '': i == 0 }}>
-						<td>
-							<div class="flex items-center">
-								<a href={deviceUrl} class="text-primary">
-									{machineTypeCode(machine.type)}-{machine.device_id}{machine.isOwnedByContact
-										? '-CP'
-										: ''}
-								</a>
+					<th>ID</th>
+					<th>Usuário</th>
+					<th>Tipo</th>
+					<th>A. Remoto</th>
+					<th>Online</th>
+					<th>Status</th>
+					<!-- <th>Org</th> -->
 
-								<!-- Online/Offline status -->
-							</div>
-						</td>
-						<td>
-							<div class="flex items-center gap-3">
-								{#if machine.user && machine.user.name}
-									{#if machine.user.image}
-										<div class="avatar">
-											<div class="mask mask-squircle aspect-square h-8">
-												<img src={machine.user.image} alt="user" />
+					<!-- <th>Última/Próxima Manutenção</th> -->
+					<!-- <th>Tempo Ativo</th> -->
+					<th>Nro Série</th>
+					<th>Marca</th>
+					<th>Acções</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				{#if isLoading}
+					<tr>
+						<td colspan="11" class="text-center">Loading...</td>
+					</tr>
+				{:else if error}
+					<tr>
+						<td colspan="11" class="text-error text-center">{error}</td>
+					</tr>
+				{:else}
+					{#each machines as machine, i (i)}
+						{@const deviceUrl = localizeHref(`/dashboard/care/device/${machine.id}`)}
+						<tr class={{ '': i == 0 }}>
+							<td>
+								<div class="flex items-center">
+									<a href={deviceUrl} class="text-primary">
+										{machineTypeCode(machine.type)}-{machine.device_id}{machine.isOwnedByContact
+											? '-CP'
+											: ''}
+									</a>
+
+									<!-- Online/Offline status -->
+								</div>
+							</td>
+							<td>
+								<div class="flex items-center gap-3">
+									{#if machine.user && machine.user.name}
+										{#if machine.user.image}
+											<div class="avatar">
+												<div class="mask mask-squircle aspect-square h-8">
+													<img src={machine.user.image} alt="user" />
+												</div>
+											</div>
+										{/if}
+										<div>
+											<div class="text-base font-bold">{machine.user.name}</div>
+											<div class=" text-xs opacity-50">
+												{machine.user.state}, {machine.user.city}
 											</div>
 										</div>
+									{:else}
+										<div
+											class={[
+												'badge text-base-100 badge-success border-0 text-xs font-bold uppercase'
+											]}
+										>
+											Disponível
+										</div>
 									{/if}
-									<div>
-										<div class="text-base font-bold">{machine.user.name}</div>
-										<div class=" text-xs opacity-50">{machine.user.state}, {machine.user.city}</div>
-									</div>
-								{:else}
+								</div>
+							</td>
+							<td>
+								<div class="flex items-center">
+									{#if machine.type == 'NOTEBOOK'}
+										<Laptop class="mr-[1px] aspect-square h-4" />
+									{:else}
+										<PcCase class="mr-[1px] aspect-square h-4" />
+									{/if}
+									{machine.type}
+								</div>
+							</td>
+							<td>
+								<div class="flex items-center">
+									<Check
+										class={[
+											'mr-[1px] aspect-square h-4 ',
+											machine.remoteAccess ? 'text-green-500' : 'text-red-500'
+										]}
+									/>
+									{#if machine.remoteAccess}
+										{m.yes()}
+									{:else}
+										{m.no()}
+									{/if}
+								</div>
+							</td>
+
+							<td>
+								<div class="flex items-center">
 									<div
 										class={[
-											'badge text-base-100 badge-success border-0 text-xs font-bold uppercase'
+											'badge badge-outline relative flex items-center text-xs',
+											machine.online ? 'badge-success' : 'badge-neutral'
 										]}
 									>
-										Disponível
+										{machine.online ? 'Online' : 'Offline'}
 									</div>
-								{/if}
-							</div>
-						</td>
-						<td>
-							<div class="flex items-center">
-								{#if machine.type == 'NOTEBOOK'}
-									<Laptop class="mr-[1px] aspect-square h-4" />
-								{:else}
-									<PcCase class="mr-[1px] aspect-square h-4" />
-								{/if}
-								{machine.type}
-							</div>
-						</td>
-						<td>
-							<div class="flex items-center">
-								<Check
-									class={[
-										'mr-[1px] aspect-square h-4 ',
-										machine.remoteAccess ? 'text-green-500' : 'text-red-500'
-									]}
-								/>
-								{#if machine.remoteAccess}
-									{m.yes()}
-								{:else}
-									{m.no()}
-								{/if}
-							</div>
-						</td>
 
-						<td>
-							<div class="flex items-center">
-								<div
-									class={[
-										'badge badge-outline relative flex items-center text-xs',
-										machine.online ? 'badge-success' : 'badge-neutral'
-									]}
-								>
-									{machine.online ? 'Online' : 'Offline'}
-								</div>
-
-								<!-- <div
+									<!-- <div
 								class={[
 									'badge text-base-100 border-0 text-xs font-bold uppercase',
 									machine.status == 'ALERT' &&
@@ -244,51 +247,50 @@
 							>
 								{machine.status}
 							</div> -->
-							</div>
-						</td>
-						<td>
-							<div class="flex items-center">
-								<div
-									class={[
-										'badge text-base-100 border-0 text-xs font-bold uppercase',
-										machine.status == 'ALERT' &&
-											'badge-error animate__animated animate__pulse animate__infinite infinite bg-red-500',
-										machine.status == 'FINE' && 'badge-success',
-										machine.status == 'PROBLEMS' && 'badge-warning',
-										machine.status == 'MONITORING' && 'badge-neutral',
-										machine.status == 'NO_DATA' && 'badge-info'
-									]}
-								>
-									{machine.status}
 								</div>
-							</div>
-						</td>
-						<!-- <td>{machine.organization}</td> -->
+							</td>
+							<td>
+								<div class="flex items-center">
+									<div
+										class={[
+											'badge text-base-100 border-0 text-xs font-bold uppercase',
+											machine.status == 'ALERT' &&
+												'badge-error animate__animated animate__pulse animate__infinite infinite bg-red-500',
+											machine.status == 'FINE' && 'badge-success',
+											machine.status == 'PROBLEMS' && 'badge-warning',
+											machine.status == 'MONITORING' && 'badge-neutral',
+											machine.status == 'NO_DATA' && 'badge-info'
+										]}
+									>
+										{machine.status}
+									</div>
+								</div>
+							</td>
+							<!-- <td>{machine.organization}</td> -->
 
-						<!-- <td>
+							<!-- <td>
 						<span class="text-neutral">
 							{machine.lastService}
 						</span>
 						<span class="mx-2"> › </span>
 						{machine.nextService}
 					</td> -->
-						<!-- <td>{machine.timeActive} meses</td> -->
-						<td>
-							<span class="badge badge-ghost badge-sm uppercase">{machine.serialNumber}</span>
-						</td>
-						<td class="uppercase">
-							{machine.model}
-						</td>
-						<th>
-							<a href={deviceUrl} class="btn btn-sm btn-primary">Abrir</a>
-						</th>
-					</tr>
-				{/each}
-			{/if}
-		</tbody>
-	</table>
-
-	<!-- </div> -->
+							<!-- <td>{machine.timeActive} meses</td> -->
+							<td>
+								<span class="badge badge-ghost badge-sm uppercase">{machine.serialNumber}</span>
+							</td>
+							<td class="uppercase">
+								{machine.model}
+							</td>
+							<th>
+								<a href={deviceUrl} class="btn btn-sm btn-primary">Abrir</a>
+							</th>
+						</tr>
+					{/each}
+				{/if}
+			</tbody>
+		</table>
+	</div>
 </div>
 
 <style lang="postcss">
