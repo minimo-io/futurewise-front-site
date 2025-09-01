@@ -65,7 +65,7 @@
 							<td class="text-base-content">{alert.alert_type_name}</td>
 							<td class="text-base-content">{alert.technician_name}</td>
 							<td>
-								<div class="badge badge-outline">{alert.status}</div>
+								<div class="badge badge-accent badge-outline">{alert.status}</div>
 							</td>
 							<td>
 								<div class={`badge ${severityClasses[alert.severity] || 'badge-ghost'}`}>

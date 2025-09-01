@@ -231,5 +231,7 @@
 	"yesterday": "Yesterday",
 	"days_ago": "{count} days ago",
 
-	"details": "Details"
+	"details": "Details",
+	"configurations": "Configurations",
+	"logout": "Log out"
 }

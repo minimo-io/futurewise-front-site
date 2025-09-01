@@ -1,6 +1,7 @@
 <script lang="ts">
 	import MenuLeft from '$lib/components/Dashboard/MenuLeft.svelte';
 	import HeaderButtonsDashboard from '$lib/components/Header/HeaderButtonsDashboard.svelte';
+	import { dashboardLeftMenuState } from '$stores/DashboardLeftMenu.state.svelte';
 
 	let { children } = $props();
 </script>
@@ -11,7 +12,11 @@
 
 	<!-- Dashboard content -->
 	<div class="flex min-h-dvh flex-1 flex-col overflow-x-auto">
-		<div class="border-base-200 flex h-[65px] items-center justify-between border-b md:h-25">
+		<div
+			class="border-base-200 flex h-[65px] {dashboardLeftMenuState.collapsed
+				? ''
+				: 'md:h-25'} items-center justify-between border-b"
+		>
 			<!-- Dashboard title -->
 			<div class="text-primary pl-5 text-lg font-black uppercase">Dashboard</div>
 			<!-- Dashboard buttons -->

@@ -19,12 +19,16 @@
 	import { localizeHref } from '$paraglide/runtime';
 	import { m } from '$paraglide/messages';
 	import { AppConfig } from '$lib/configs';
+	import {
+		toggleDashboardLeftMenuCollapse,
+		dashboardLeftMenuState
+	} from '$stores/DashboardLeftMenu.state.svelte';
 
 	// State to track if menu is collapsed
-	let isCollapsed = false;
+	let isCollapsed = $derived(dashboardLeftMenuState.collapsed);
 
 	function toggleMenu() {
-		isCollapsed = !isCollapsed;
+		toggleDashboardLeftMenuCollapse();
 	}
 </script>
 
@@ -35,13 +39,12 @@
 >
 	<!-- Logo -->
 	<div
-		class="border-base-200 flex items-center border-b {isCollapsed ? '' : 'md:h-[113px] md:p-5'}"
+		class="border-base-200 flex items-center border-b {isCollapsed ? '' : 'md:h-[108px] md:p-5'}"
 	>
 		<HeaderLogo isDashboard={true} {isCollapsed} />
 	</div>
 	<!-- Switch button -->
-	<div class="border-base-200 relative {isCollapsed ? '' : 'h-[80px]'} border-b">
-		<!-- Small menu left -->
+	<div class="border-base-200 relative {isCollapsed ? '' : 'h-[73px]'} hidden border-b md:block">
 		<button
 			onclick={toggleMenu}
 			class="border-base-200 absolute -top-3 -right-3 hidden h-[23px] w-[23px] items-center justify-center rounded-full border bg-black transition-all duration-200 hover:scale-110 md:flex"
@@ -61,13 +64,13 @@
 	<ul class="menu bg-grey-light h-full gap-3 {isCollapsed ? '' : 'md:w-60 md:gap-0'}">
 		<li>
 			<a href={localizeHref(AppConfig.dashboards.care.base)} class="active text-primary">
-				<Home class="fw-dashboard-left-menu-icon" />
+				<Home class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">Dashboard</span>
 			</a>
 		</li>
 		<li>
 			<a href={localizeHref(AppConfig.dashboards.care.base)}>
-				<Laptop class="fw-dashboard-left-menu-icon" />
+				<Laptop class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">Inventário</span>
 			</a>
 			<ul class="hidden {isCollapsed ? '' : 'md:block'} pb-2 md:pl-4">
@@ -76,19 +79,19 @@
 				</li>
 				<li><a href={localizeHref(AppConfig.dashboards.care.base)}>Notebooks</a></li>
 				<li><a href={localizeHref(AppConfig.dashboards.care.base)}>Desktops</a></li>
-				<hr class="text-base-200 relative -right-3 mt-2 mb-1 h-[1px] w-1/2" />
-				<li><a href={localizeHref(AppConfig.dashboards.care.base)}>Peças</a></li>
+				<!-- <hr class="text-base-200 relative -right-3 mt-2 mb-1 h-[1px] w-1/2" />
+				<li><a href={localizeHref(AppConfig.dashboards.care.base)}>Peças</a></li> -->
 			</ul>
 		</li>
 		<li>
 			<a href={localizeHref(AppConfig.dashboards.care.services)}>
-				<LifeBuoy class="fw-dashboard-left-menu-icon" />
+				<LifeBuoy class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">Serviços</span>
 			</a>
 		</li>
 		<li>
 			<a href={localizeHref(AppConfig.dashboards.care.alerts)}>
-				<TriangleAlert class="fw-dashboard-left-menu-icon" />
+				<TriangleAlert class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<div class="indicator">
 					<span class="indicator-item indicator-end indicator-middle badge badge-xs badge-primary">
 						32
@@ -100,13 +103,13 @@
 
 		<li>
 			<a href="/">
-				<ClipboardMinus class="fw-dashboard-left-menu-icon" />
+				<ClipboardMinus class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">Relatórios</span>
 			</a>
 		</li>
 		<li>
 			<a href="/">
-				<UsersRound class="fw-dashboard-left-menu-icon" />
+				<UsersRound class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">Organização</span>
 			</a>
 			<ul class="hidden {isCollapsed ? '' : 'md:block'} pb-2 pl-8 md:pl-4">
@@ -125,13 +128,13 @@
 		<!-- Marketplaces & Recycling -->
 		<li class="border-base-200 mt-3 border-t pt-2">
 			<a href="/">
-				<Coins class="fw-dashboard-left-menu-icon" />
+				<Coins class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">Compras</span>
 			</a>
 		</li>
 		<li>
 			<a href="/">
-				<Recycle class="fw-dashboard-left-menu-icon" />
+				<Recycle class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">Reciclagem</span>
 			</a>
 		</li>
@@ -139,7 +142,7 @@
 		<!-- <li class="mt-2 mb-0"><hr class="border-base-200 h-[1px] border-t" /></li> -->
 		<li class="border-base-200 mt-3 border-t border-b py-2">
 			<a href="/">
-				<ReceiptText class="fw-dashboard-left-menu-icon" />
+				<ReceiptText class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">Faturamento</span>
 			</a>
 		</li>
@@ -149,13 +152,13 @@
 				target="_blank"
 				rel="nofollow"
 			>
-				<BookOpen class="fw-dashboard-left-menu-icon" />
+				<BookOpen class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">{m.knowledgeBase()}</span>
 			</a>
 		</li>
 		<li class="border-base-200 border-b py-2">
 			<a href="/">
-				<BookOpen class="fw-dashboard-left-menu-icon" />
+				<BookOpen class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
 				<span class="hidden {isCollapsed ? '' : 'md:inline'}">Docs</span>
 			</a>
 		</li>

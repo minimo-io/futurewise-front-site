@@ -236,5 +236,7 @@
 	"yesterday": "Ayer",
 	"days_ago": "Hace {count} días",
 
-	"details": "Detalles"
+	"details": "Detalles",
+	"configurations": "Configuraciones",
+	"logout": "Cerrar sesión"
 }

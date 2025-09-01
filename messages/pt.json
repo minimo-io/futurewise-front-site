@@ -231,5 +231,7 @@
 	"yesterday": "Ontem",
 	"days_ago": "Há {count} dias",
 
-	"details": "Detalhes"
+	"details": "Detalhes",
+	"configurations": "Configurações",
+	"logout": "Saír da conta"
 }

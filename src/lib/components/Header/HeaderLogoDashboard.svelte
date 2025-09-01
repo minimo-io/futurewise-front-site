@@ -8,7 +8,7 @@
 	let { isCollapsed = false }: Props = $props();
 </script>
 
-<div class="flex items-start">
+<div class="flex items-center">
 	<a href={localizeHref('/')}>
 		<!-- Desktop -->
 		<div class="{isCollapsed ? 'hidden' : 'hidden md:flex'} flex-row">

@@ -337,7 +337,7 @@ body {
 	}
 
 	.fw-dashboard-left-menu-icon {
-		@apply aspect-square h-7 md:!h-4;
+		@apply aspect-square h-7 md:h-4;
 	}
 }
 
