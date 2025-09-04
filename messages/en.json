@@ -51,7 +51,7 @@
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Real-time payments with <span class='text-base-content opacity-80'>Instant Global Settlements</span> in Local Currency, Stablecoins, or Bitcoin via Lightning. Eg. <span class='text-base-content'>Receive via PIX in Brazil and settle abroad</span>, instantly, with 100% compliance.</div>",
 
-	"heroContentCareSync": "Platform for <span class='text-base-content opacity-80'>Predictive Maintenance</span> and Asset Management (ITSM + ITAM) <span class='text-base-content opacity-80'>for IT professionals and SMEs</span> — with AI applied to Real-Time Monitoring, Knowledge-Base and the Purchase of Equipment & Parts.",
+	"heroContentCareSync": "Platform for <span class='text-base-content opacity-80'>Predictive Maintenance</span> and Asset Management (ITSM + ITAM) <span class='text-base-content opacity-80'>for IT professionals and SMEs</span> — with AI applied to Real-Time Monitoring, Knowledge-Base and Client Marketplace.",
 
 	"heroContentBagity": "<span class='text-base-content opacity-80'>Tailored Premium E-Commerce</span>: We customize without limits — Design, UX, and Features — with integrated AI, scalable security, and <span class='text-base-content opacity-80'>express checkout</span> via <a href='/finx' class='text-primary font-medium'>FinXPay</a> (PIX, Boleto, Card, and Bitcoin). <span class='text-base-content opacity-80'>Predictable plans</span> from $20/month or <span class='text-base-content opacity-80'>Store Pro with no upfront costs</span>.",
 
@@ -105,7 +105,7 @@
 	"metaFinxDescription": "Real-time payments with Instant Global Settlements in Local Currency, Stablecoins, or Bitcoin via Lightning. Eg. Receive via PIX in Brazil and settle abroad, instantly, with 100% compliance.",
 
 	"metaCareSyncTitle": "Care",
-	"metaCareSyncDescription": "Platform for Predictive Maintenance and Intelligent IT Asset Management — with AI, Automations, Real-Time Monitoring, Equipment Purchase and Rental, and On-Demand Technical Support.",
+	"metaCareSyncDescription": "Everything you need to provide your IT services. Everything clients need to hire the best IT professionals. ITSM + Marketplace.",
 
 	"metaStoreTitle": "Store",
 	"metaStoreDescription": "",
@@ -127,11 +127,13 @@
 	"startNow": "Start now",
 	"allSystemsWorking": "All systems operational",
 
-	"careSyncAuto": "Self‑service",
-	"careSyncManaged": "Managed",
+	"careSyncAuto": "For businesses",
+	"careSyncManaged": "For clients",
 	"careSyncIdealFor": "IDEAL FOR",
-	"careSyncAutoDesc": "For companies that provide IT services or want <span class='text-base-content opacity-80'>internal control</span> of their assets. An <span class='text-base-content opacity-80'>ITSM platform + <a class='text-primary' href='#'>Marketplace</a></span> to optimize your operations. Billing, Purchasing, Asset Management, Alerts, and more modules.",
-	"careSyncManagedDesc": "For companies that want to focus on their business, <span class='text-base-content opacity-80'>leaving all IT management and maintenance in the hands of specialists</span>. Including the option of equipment rental and <a href='#know-more' class='text-primary'>Continuity Insurance</a>.",
+
+	"careSyncAutoDesc": "We offer an <span class='text-base-content opacity-80'>ITSM + Client Marketplace platform</span> for companies that provide IT services or want internal control of their assets. Modules include Asset, Service, and Client Management, Billing, Alerts, and more.",
+
+	"careSyncManagedDesc": "Find IT professionals validated by the <span class='text-base-content opacity-80'>Futurewise Care</span> platform. Register for free, find your trusted professional, and request repair or maintenance services on-demand, with tracking, from the bests!",
 
 	"careSyncAutoItem0Title": "Full Reports & Dashboards:",
 	"careSyncAutoItem0Desc": "Get an overview of your IT assets. Historical trends in usage, services, and costs.",
@@ -233,5 +235,10 @@
 
 	"details": "Details",
 	"configurations": "Configurations",
-	"logout": "Log out"
+	"logout": "Log out",
+
+	"needTIService": "Hire IT services",
+
+	"top10TI": "Top 10 IT Professionals",
+	"whyUseCare": "Why use the platform"
 }

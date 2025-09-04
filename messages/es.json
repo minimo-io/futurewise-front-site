@@ -53,7 +53,7 @@
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagos en tiempo real con <span class='text-base-content opacity-80'>Settlements Globales Instantáneas</span> en Moneda Local, Stablecoins o Bitcoin, vía Lightning. Ej.: <span class='text-base-content'>Recibí por transferencia CBU/CVU en Argentina y liquidá en el exterior</span>, al instante, con 100% de compliance.</div>",
 
-	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Mantenimiento Predictivo</span> y Gestión de Activos (ITSM + ITAM) <span class='text-base-content opacity-80'>para profesionales de TI y PyMEs</span> — con IA aplicada al Monitoreo en Tiempo Real, Base de Conocimiento y Compra de Equipos y Repuestos.",
+	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Mantenimiento Predictivo</span> y Gestión de Activos (ITSM + ITAM) <span class='text-base-content opacity-80'>para profesionales de TI y PyMEs</span> — con IA aplicada al Monitoreo en Tiempo Real, Base de Conocimiento y Marketplace de Clientes.",
 
 	"heroContentBagity": "<span class='text-base-content opacity-80'>E-Commerce Premium a Medida</span>: Personalizamos sin límites — Diseño, UX y Funcionalidades — con IA integrada, seguridad escalable y <span class='text-base-content opacity-80'>checkout exprés</span> (PIX, Boleto, Tarjeta y Bitcoin). <span class='text-base-content opacity-80'>Planes previsibles</span> desde $u999/mes o <span class='text-base-content opacity-80'>Store Pro sin costos iniciales</span>.",
 
@@ -108,7 +108,7 @@
 	"metaFinxDescription": "Pagos en tiempo real con Settlements Globales Instantáneas en Moneda Local, Stablecoins o Bitcoin, vía Lightning. Ej.: Recibí por transferencia CBU/CVU en Argentina y liquidá en el exterior, al instante, con 100% de compliance.",
 
 	"metaCareSyncTitle": "Care",
-	"metaCareSyncDescription": "Plataforma de Mantenimiento Predictivo y Gestión Inteligente de Activos de TI — con IA, Automatizaciones, Monitoreo en Tiempo Real, Compra y Alquiler de Equipos, y Soporte Técnico a Demanda.",
+	"metaCareSyncDescription": "Todo lo que necesitas para ofrecer tus servicios de TI. Todo lo que los clientes necesitan para contratar a los mejores profesionales de TI. ITSM + Marketplace.",
 
 	"metaStoreTitle": "Store",
 	"metaStoreDescription": "",
@@ -132,11 +132,13 @@
 
 	"allSystemsWorking": "Todos los sistemas funcionando",
 
-	"careSyncAuto": "Autogestión",
-	"careSyncManaged": "Gestionado",
+	"careSyncAuto": "Para empresas",
+	"careSyncManaged": "Para clientes",
 	"careSyncIdealFor": "IDEAL PARA",
-	"careSyncAutoDesc": "Para empresas que brindan servicios de TI o desean <span class='text-base-content opacity-80'>control interno</span> de sus activos. Una <span class='text-base-content opacity-80'>plataforma ITSM + <a class='text-primary' href='#'>Marketplace</a></span> para optimizar sus operaciones. Módulos de Facturación, Compras, Gestión de Activos, Alertas y más.",
-	"careSyncManagedDesc": "Para empresas que quieren centrarse en su negocio, <span class='text-base-content opacity-80'>dejando toda la gestión y mantenimiento de TI en manos de especialistas</span>. Incluyendo la opción de alquiler de equipos y <a href='#know-more' class='text-primary'>Seguro de Continuidad</a>. Contratos por mes o año.",
+
+	"careSyncAutoDesc": "Ofrecemos una <span class='text-base-content opacity-80'>plataforma ITSM + Marketplace de clientes</span> para empresas que bridan servicios de TI o desean control interno de sus activos. Módulos de Gestión de Activos, Servicios y Clientes, Facturación, Alertas y más.",
+
+	"careSyncManagedDesc": "Encontrá profesionales de TI validados por la plataforma <span class='text-base-content opacity-80'>Futurewise Care</span>. Registrarte grátis, encontrá tu profesional de confianza y encargá servicios de reparación o mantenimiento, a-demanda, con seguimiento, ¡y de los mejores!",
 
 	"careSyncAutoItem0Title": "Informes y Paneles completos:",
 	"careSyncAutoItem0Desc": "Obtén una visión general de tus activos de TI. Tendencias históricas de uso, servicios y costos.",
@@ -174,8 +176,8 @@
 	"careSyncManagedItem7Title": "Compras y Alquileres:",
 	"careSyncManagedItem7Desc": "Alquila o compra equipos certificados con descuentos especiales para clientes del plan Gestionado.",
 
-	"careSyncYouControl": "Tú al control",
-	"careSyncWeTakeCare": "Nos encargamos de todo",
+	"careSyncYouControl": "Gestión de TI para PyMes",
+	"careSyncWeTakeCare": "¿Tenés un problem con tu Laptop/PC?",
 	"careSyncToggleMore": "Ver más",
 	"careSyncToggleLess": "Ver menos",
 
@@ -238,5 +240,9 @@
 
 	"details": "Detalles",
 	"configurations": "Configuraciones",
-	"logout": "Cerrar sesión"
+	"logout": "Cerrar sesión",
+
+	"needTIService": "Contratar servicio de TI",
+	"top10TI": "Top 10 Profesionales de TI<br/>de 🇺🇾 Uruguay",
+	"whyUseCare": "Porqué utilizar la plataforma"
 }

@@ -14,6 +14,7 @@
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import Clients from '$lib/components/Home/Clients.svelte';
+	import { AppConfig } from '$lib';
 
 	let isExpanded = $state(false);
 	const autoGestaoInitialItems = 0;
@@ -71,7 +72,21 @@
 	titleLeft={m.project()}
 	titleRight={Product.CARE}
 	heroContent={m.heroContentCareSync()}
-/>
+>
+	<div class="mt-7 flex flex-wrap gap-2 md:mt-8 md:gap-3">
+		<a
+			href={AppConfig.calendar}
+			target="_blank"
+			rel="nofollow noopener	"
+			class="fw-button fw-button-lg"
+		>
+			<span>{m.careSyncAuto()}</span>
+		</a>
+		<a href={localizeHref('/soon')} class="fw-button fw-button-lg fw-button-outline">
+			<span>{m.careSyncManaged()}</span>
+		</a>
+	</div>
+</Header>
 
 <div>
 	<Clients />
@@ -93,17 +108,15 @@
 				>
 					<!-- Title -->
 					<div class="mb-3 text-2xl">
-						CareSync <span
-							class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl"
-						>
+						Care <span class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl">
 							{m.careSyncAuto()}
 						</span>
 					</div>
 					<!-- Content -->
-					<div class="border-base-200 text-primary border-t p-5 font-sans text-lg font-bold md:p-8">
-						{m.careSyncYouControl()}
+					<div class="border-base-200 text-primary border-t p-4 font-sans text-lg font-bold md:p-8">
+						<!-- {m.careSyncYouControl()} -->
 						<div
-							class="text-secondary px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
+							class="text-secondary mt-2 px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
 						>
 							{@html m.careSyncAutoDesc()}
 						</div>
@@ -115,7 +128,7 @@
 					bind:this={gerenciadoTitle}
 				>
 					<div class="mb-3 text-2xl">
-						CareSync <span
+						Care <span
 							class="bg-primary r relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl font-normal"
 						>
 							{m.careSyncManaged()}
@@ -124,9 +137,9 @@
 					<div
 						class="border-base-200 text-primary mt-1 border-t font-sans text-lg font-bold md:p-8"
 					>
-						{m.careSyncWeTakeCare()}
+						<!-- {m.careSyncWeTakeCare()} -->
 						<div
-							class="text-secondary px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
+							class="text-secondary mt-2 px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
 						>
 							{@html m.careSyncManagedDesc()}
 						</div>
@@ -136,56 +149,10 @@
 		</div>
 
 		<div class="flex flex-col justify-center md:flex-1 md:flex-row md:items-stretch">
-			<!-- Você no controle -->
-			<div
-				class="border-r-base-200 flex w-full flex-col py-5 text-center md:w-1/2 md:border-r md:px-20 md:py-10 md:pt-5"
-			>
-				<div class="flex flex-grow flex-col">
-					<ul class="flex-grow">
-						{#each autoGestaoItems.slice(0, autoGestaoInitialItems) as item}
-							<li class="!text-base md:!text-base">
-								<span class="font-bold">{item.title}</span>
-								{item.description}
-							</li>
-						{/each}
-						{#each autoGestaoItems.slice(autoGestaoInitialItems) as item, i (item.title)}
-							{#if isExpanded}
-								<li
-									class="!text-base md:!text-base"
-									in:slide={{ delay: i * 30, duration: 300, easing: quintOut }}
-									out:slide={{ duration: 300, easing: quintOut }}
-								>
-									<span class="font-bold">{item.title}</span>
-									{item.description}
-								</li>
-							{/if}
-						{/each}
-					</ul>
-					{#if autoGestaoItems.length > autoGestaoInitialItems}
-						<button
-							onclick={toggleExpand}
-							class="text-primary hover:text-primary/70 flex items-center justify-center gap-2 transition-colors duration-200 md:mt-2 md:mb-3"
-						>
-							<span class="text-base font-medium">
-								{isExpanded ? m.careSyncToggleLess() : m.careSyncToggleMore()}
-							</span>
-							<div
-								class="h-4 w-4 transition-transform duration-200 {isExpanded ? 'rotate-180' : ''}"
-							>
-								<ChevronDown class="h-4" />
-							</div>
-						</button>
-					{/if}
-
-					<TransparentButton href={localizeHref('/sign-up')}>{m.startNow()}</TransparentButton>
-				</div>
-			</div>
-
 			<!-- Nós cuidamos de tudo -->
-			<div class="mb-7 flex w-full flex-col items-start md:mb-0 md:w-1/2 md:px-20 md:py-10 md:pt-5">
-				<!-- Mobile second option -->
-				<div class="border-base-200 w-full border-t border-b py-3 text-xl md:hidden md:w-1/2">
-					<div class="mb-2 text-2xl">
+			<div class="mb-2 flex w-full flex-col items-start md:mb-0 md:w-1/2 md:px-20 md:py-5">
+				<div class="border-base-200 w-full border-t border-b py-5 pt-4 text-xl md:hidden md:w-1/2">
+					<div class="mb-4 text-2xl">
 						CareSync <span
 							class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl"
 						>
@@ -193,70 +160,189 @@
 						</span>
 					</div>
 					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold">
-						{m.careSyncWeTakeCare()}
+						<!-- {m.careSyncWeTakeCare()} -->
 						<div
-							class="text-secondary px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
+							class="text-secondary p-4 px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
 						>
 							{@html m.careSyncManagedDesc()}
 						</div>
 					</div>
 				</div>
 
-				<div class="flex w-full flex-grow flex-col">
-					<ul class="flex-grow">
-						{#each gerenciadoItems.slice(0, gerenciadoInitialItems) as item}
-							<li class="!text-base md:!text-base">
-								<span class="font-bold">{item.title}</span>
-								{item.description}
-							</li>
-						{/each}
-						{#each gerenciadoItems.slice(gerenciadoInitialItems) as item, i (item.title)}
-							{#if isExpanded}
-								<li
-									class="!text-base md:!text-base"
-									in:slide={{ delay: i * 30, duration: 300, easing: quintOut }}
-									out:slide={{ duration: 300, easing: quintOut }}
-								>
-									<span class="font-bold">{item.title}</span>
-									{item.description}
-								</li>
-							{/if}
-						{/each}
-					</ul>
-					{#if gerenciadoItems.length > gerenciadoInitialItems}
-						<button
-							onclick={toggleExpand}
-							class="text-primary hover:text-primary/70 mt-4 flex items-center justify-center gap-2 transition-colors duration-200 md:mt-2 md:mb-3"
-						>
-							<span class="text-base font-medium">
-								{isExpanded ? m.careSyncToggleLess() : m.careSyncToggleMore()}
-							</span>
-							<div
-								class="h-4 w-4 transition-transform duration-200 {isExpanded ? 'rotate-180' : ''}"
-							>
-								<ChevronDown class="h-4" />
-							</div>
-						</button>
-					{/if}
-					<TransparentButton href={localizeHref('/sign-up')}>{m.startNow()}</TransparentButton>
+				<!-- CTA Button  -->
+				<div class="mt-5 flex w-full scale-110 justify-center md:scale-130">
+					<TransparentButton href={localizeHref('/soon')}>{m.startNow()}</TransparentButton>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Diferentials -->
+	<!-- <div class="border-base-200 border-t border-b">
+		<section class="max-w-fw mx-auto">
+			<div class="border-base-200 mt-5 mb-4 flex justify-center">
+				<div
+					class="bg-primary animate__animated animate__flash animate__infinite relative left-1 mr-4 block h-[20px] w-[5px] md:-top-1 md:h-[30px] md:w-[8px]"
+				></div>
+				<h2 class="font-pixel text-2xl tracking-wider md:text-3xl">{m.whyUseCare()}</h2>
+			</div>
+		</section>
+	</div> -->
+
+	<Features product={Product.CARE} />
+
+	<!-- Top 10 -->
 	<div class="border-base-200 border-t border-b">
 		<section class="max-w-fw mx-auto">
 			<div class="border-base-200 mt-5 mb-4 flex justify-center">
 				<div
 					class="bg-primary animate__animated animate__flash animate__infinite relative left-1 mr-4 block h-[20px] w-[5px] md:-top-1 md:h-[30px] md:w-[8px]"
 				></div>
-				<h2 class="font-pixel text-2xl tracking-wider md:text-3xl">Por que alugar?</h2>
+				<h2 class="font-pixel text-center text-2xl tracking-wider md:text-3xl">
+					{@html m.top10TI()}
+				</h2>
 			</div>
 		</section>
 	</div>
 
-	<Features product={Product.CARE} />
+	<div class="md:mx-auto md:max-w-[1200px]">
+		<div class="overflow-x-auto">
+			<table class="table-lg table">
+				<!-- head -->
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Job</th>
+						<th>Favorite Color</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- row 1 -->
+					<tr>
+						<td class="md:pl-auto pl-0">
+							<div class="flex items-center gap-3">
+								<div class="avatar">
+									<div class="mask mask-squircle h-12 w-12">
+										<img
+											src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+											alt="Avatar Tailwind CSS Component"
+										/>
+									</div>
+								</div>
+								<div>
+									<div class="font-sans font-bold md:text-lg">Hart Hagerty</div>
+									<div class="text-sm opacity-50">United States</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							Zemlak, Daniel and Leannon
+							<br />
+							<span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
+						</td>
+						<td>Purple</td>
+						<th>
+							<button class="btn btn-primary btn-sm">details</button>
+						</th>
+					</tr>
+					<!-- row 2 -->
+					<tr>
+						<td class="md:pl-auto pl-0">
+							<div class="flex items-center gap-3">
+								<div class="avatar">
+									<div class="mask mask-squircle h-12 w-12">
+										<img
+											src="https://img.daisyui.com/images/profile/demo/3@94.webp"
+											alt="Avatar Tailwind CSS Component"
+										/>
+									</div>
+								</div>
+								<div>
+									<div class="font-sans font-bold">Brice Swyre</div>
+									<div class="text-sm opacity-50">China</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							Carroll Group
+							<br />
+							<span class="badge badge-ghost badge-sm">Tax Accountant</span>
+						</td>
+						<td>Red</td>
+						<th>
+							<button class="btn btn-primary btn-sm">details</button>
+						</th>
+					</tr>
+					<!-- row 3 -->
+					<tr>
+						<td class="md:pl-auto pl-0">
+							<div class="flex items-center gap-3">
+								<div class="avatar">
+									<div class="mask mask-squircle h-12 w-12">
+										<img
+											src="https://img.daisyui.com/images/profile/demo/4@94.webp"
+											alt="Avatar Tailwind CSS Component"
+										/>
+									</div>
+								</div>
+								<div>
+									<div class="font-sans font-bold">Marjy Ferencz</div>
+									<div class="text-sm opacity-50">Russia</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							Rowe-Schoen
+							<br />
+							<span class="badge badge-ghost badge-sm">Office Assistant I</span>
+						</td>
+						<td>Crimson</td>
+						<th>
+							<button class="btn btn-primary btn-sm">details</button>
+						</th>
+					</tr>
+					<!-- row 4 -->
+					<tr>
+						<td class="md:pl-auto pl-0">
+							<div class="flex items-center gap-3">
+								<div class="avatar">
+									<div class="mask mask-squircle h-12 w-12">
+										<img
+											src="https://img.daisyui.com/images/profile/demo/5@94.webp"
+											alt="Avatar Tailwind CSS Component"
+										/>
+									</div>
+								</div>
+								<div>
+									<div class="font-sans font-bold">Yancy Tear</div>
+									<div class="text-sm opacity-50">Brazil</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							Wyman-Ledner
+							<br />
+							<span class="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+						</td>
+						<td>Indigo</td>
+						<th>
+							<button class="btn btn-primary btn-sm">details</button>
+						</th>
+					</tr>
+				</tbody>
+				<!-- foot -->
+				<tfoot>
+					<tr>
+						<th>Name</th>
+						<th>Job</th>
+						<th>Favorite Color</th>
+						<th></th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
 
 	<ServiceOrders image="/caresync-dashboard-3.png" />
 

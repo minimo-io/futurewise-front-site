@@ -49,7 +49,7 @@
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagamentos em tempo real com <span class='text-base-content opacity-80'>Settlements Globais Instantâneos</span> em Moeda Local, Stablecoins ou Bitcoin, via Lightning. Ex.: <span class='text-base-content'>Receba via PIX no Brasil e liquide no exterior</span>, no instante, com 100% de compliance.</div>",
 
-	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Manutenção Preditiva</span> e Gestão de Ativos (ITSM + ITAM) <span class='text-base-content opacity-80'>para profissionais de TI e PMEs</span> — com IA aplicada ao Monitoramento em Tempo Real, Base de Conhecimento e Compra de Equipamentos e Peças.",
+	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Manutenção Preditiva</span> e Gestão de Ativos (ITSM + ITAM) <span class='text-base-content opacity-80'>para profissionais de TI e PMEs</span> — com IA aplicada ao Monitoramento em Tempo Real, Base de Conhecimento e Marketplace de Clientes.",
 
 	"heroContentBagity": "<span class='text-base-content opacity-80'>E-Commerce Premium sob Medida</span>: Customizamos sem límites: Design, UX e Funcionalidades, com IA integrada + Cloud escalável e <span class='text-base-content opacity-80'>checkout express</span> (PIX, Boleto, Cartão e Bitcoin). <span class='text-base-content opacity-80'>Planos fixos previsíveis</span> ou <span class='text-base-content opacity-80'>Store Pro sem custos iniciais</span>.",
 
@@ -103,7 +103,7 @@
 	"metaFinxDescription": "Pagamentos em tempo real com Settlements Globais Instantâneos em Moeda Local, Stablecoins ou Bitcoin, via Lightning. Ex.: Receba via PIX no Brasil e liquide no exterior, no instante, com 100% de compliance",
 
 	"metaCareSyncTitle": "Care",
-	"metaCareSyncDescription": "Plataforma de Manutenção Preditiva e Gestão Inteligente de Ativos de TI — com IA, Automações, Monitoramento em Tempo Real, Compra e Aluguel de Equipamentos e Assistência Técnica sob Demanda.",
+	"metaCareSyncDescription": "Tudo o que você precisa para fornecer seus serviços de TI. Tudo o que os clientes precisam para contratar os melhores profissionais de TI. ITSM + Marketplace.",
 
 	"metaStoreTitle": "Store",
 	"metaStoreDescription": "",
@@ -127,11 +127,13 @@
 
 	"allSystemsWorking": "Todos os sistemas funcionando",
 
-	"careSyncAuto": "Auto-gestão",
-	"careSyncManaged": "Gerenciado",
+	"careSyncAuto": "Para empresas",
+	"careSyncManaged": "Para clientes",
 	"careSyncIdealFor": "IDEAL PARA",
-	"careSyncAutoDesc": "Para empresas que fornecem serviços de TI ou querem <span class='text-base-content opacity-80'>controle iterno</span> de seus ativos. Uma <span class='text-base-content opacity-80'>plataforma ITSM + <a class='text-primary' href='#'>Loja</a></span> para otimizar suas operações. Módulos de Faturamento, Compras, Gestão de Ativos e Serviços, Aletas, e mais.",
-	"careSyncManagedDesc": "Para empresas que querem focar no seu negócio, <span class='text-base-content opacity-80'>deixando toda a gestão e manutenção da TI nas mãos de especialistas</span>. Incluindo a opção de aluguel de equipamentos e <a href='#know-more' class='text-primary'>Seguro de Continuidade</a>. Contratos mensais e anuais.",
+
+	"careSyncAutoDesc": "Oferecemos uma <span class='text-base-content opacity-80'>plataforma ITSM + Marketplace de clientes</span> para empresas que prestam serviços de TI ou desejam controle interno de seus ativos. Módulos de Gestão de Ativos, Serviços e Clientes, Faturamento, Alertas e mais.",
+
+	"careSyncManagedDesc": "Encontre profissionais de TI validados pela plataforma <span class='text-base-content opacity-80'>Futurewise Care</span>. Cadastre-se grátis, encontre seu profissional de confiança e solicite serviços de reparo ou manutenção sob demanda, dos melhores e com acompanhamento!",
 
 	"careSyncAutoItem0Title": "Relatórios e Dashboards completos:",
 	"careSyncAutoItem0Desc": "Tenha a visão geral dos seus ativos de TI. Tendências históricas de uso, serviços e custos.",
@@ -233,5 +235,9 @@
 
 	"details": "Detalhes",
 	"configurations": "Configurações",
-	"logout": "Saír da conta"
+	"logout": "Saír da conta",
+
+	"needTIService": "Contrate serviços de TI",
+	"top10TI": "Top 10 Profissionais de TI<br/>do🇧🇷 Brasil",
+	"whyUseCare": "Por que utilizar a plataforma"
 }

@@ -8,7 +8,6 @@
 	import { fade } from 'svelte/transition';
 	import { deLocalizeUrl } from '$paraglide/runtime';
 	import HeaderMenu from './HeaderMenu.svelte';
-	import type { Snippet } from 'svelte';
 
 	// let currentPath = $derived(page.url.pathname);
 	const delocalizedPath = deLocalizeUrl(page.url).pathname;
@@ -21,8 +20,6 @@
 		titleLeft: string;
 		heroContent: string;
 		buttons?: boolean;
-
-		children?: Snippet;
 	}
 
 	let {
@@ -31,8 +28,7 @@
 		titleLeft,
 		titleRight,
 		heroContent,
-		buttons = true,
-		children
+		buttons = true
 	}: Props = $props();
 </script>
 
@@ -68,7 +64,7 @@
 			<HeaderButtons />
 		</nav>
 
-		<HeaderContent {titleLeft} {titleRight} {heroContent} {buttons} buttonsSnippet={children} />
+		<HeaderContent {titleLeft} {titleRight} {heroContent} {buttons} />
 	</div>
 	<!-- Navigation Dots -->
 	<HeaderDots />

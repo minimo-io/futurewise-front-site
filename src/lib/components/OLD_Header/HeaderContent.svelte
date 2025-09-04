@@ -4,7 +4,6 @@
 	import { conditionalSmoothScroll, smoothScroll } from '$utils';
 	// import { localizeHref } from '$paraglide/runtime';
 	import { AppConfig } from '$lib/configs';
-	import type { Snippet } from 'svelte';
 
 	const smoothAction = [conditionalSmoothScroll, '#know-more'] as const;
 
@@ -14,15 +13,8 @@
 		titleLeft: string;
 		heroContent: string;
 		buttons: boolean;
-		buttonsSnippet?: Snippet;
 	}
-	let {
-		titleRight,
-		titleLeft,
-		heroContent,
-		buttons = true,
-		buttonsSnippet = undefined
-	}: Props = $props();
+	let { titleRight, titleLeft, heroContent, buttons = true }: Props = $props();
 </script>
 
 <!-- Hero Section -->
@@ -36,23 +28,19 @@
 		{@html heroContent}
 	</p>
 
-	{#if !buttonsSnippet}
-		{#if buttons}
-			<div class="mt-7 flex flex-wrap gap-2 md:mt-8 md:gap-3">
-				<a href={url} use:conditionalSmoothScroll={url} class="fw-button fw-button-lg">
-					<span>{m.learnMore()}</span>
-				</a>
-				<a
-					href={AppConfig.calendar}
-					target="_blank"
-					rel="nofollow noopener	"
-					class="fw-button fw-button-lg fw-button-outline"
-				>
-					<span>{m.scheduleMeeting()}</span>
-				</a>
-			</div>
-		{/if}
-	{:else}
-		{@render buttonsSnippet()}
+	{#if buttons}
+		<div class="mt-7 flex flex-wrap gap-2 md:mt-8 md:gap-3">
+			<a href={url} use:conditionalSmoothScroll={url} class="fw-button fw-button-lg">
+				<span>{m.learnMore()}</span>
+			</a>
+			<a
+				href={AppConfig.calendar}
+				target="_blank"
+				rel="nofollow noopener	"
+				class="fw-button fw-button-lg fw-button-outline"
+			>
+				<span>{m.scheduleMeeting()}</span>
+			</a>
+		</div>
 	{/if}
 </div>
