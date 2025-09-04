@@ -170,7 +170,7 @@
 					<p class="text-center text-sm">
 						{m.loginDontHaveAccount()}
 						<a
-							href={localizeHref('/sign-up')}
+							href={localizeHref('/soon')}
 							class="text-primary ml-1 font-bold uppercase hover:underline">{m.loginStartNow()}</a
 						>
 					</p>

@@ -39,7 +39,7 @@
 					> e precisa de conciliação ágil e eficiente, com altas taxas de conversão e integração entre
 					sistemas. Tudo isso 24/7, simples e 100% compliant!
 				</p>
-				<TransparentButton class="!mt-6" href={localizeHref('/sign-up')}>
+				<TransparentButton class="!mt-6" href={localizeHref('/soon')}>
 					{m.startNow()}
 				</TransparentButton>
 			</div>
@@ -53,7 +53,7 @@
 					> são chaves. Nossa API é de simples integração, permitindo que seu time foque no crescimento
 					do seu negócio.
 				</p>
-				<TransparentButton class="!mt-6" href={localizeHref('/sign-up')}>
+				<TransparentButton class="!mt-6" href={localizeHref('/soon')}>
 					{m.startNow()}
 				</TransparentButton>
 			</div>
@@ -67,7 +67,7 @@
 					recorrente e estorno parcial ou total de transações.
 				</p>
 
-				<TransparentButton class="!mt-6" href={localizeHref('/sign-up')}>
+				<TransparentButton class="!mt-6" href={localizeHref('/soon')}>
 					{m.startNow()}
 				</TransparentButton>
 			</div>
