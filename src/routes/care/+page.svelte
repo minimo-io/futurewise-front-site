@@ -237,13 +237,15 @@
 							</div>
 						</td>
 						<td>
-							Zemlak, Daniel and Leannon
-							<br />
-							<span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
+							<span>Zemlak, Daniel and Leannon</span>
+
+							<span class="badge badge-ghost badge-sm hidden md:block"
+								>Desktop Support Technician</span
+							>
 						</td>
 						<td>Purple</td>
 						<th>
-							<button class="btn btn-primary btn-sm">details</button>
+							<a class="btn btn-primary btn-sm" href={localizeHref('/soon')}>details</a>
 						</th>
 					</tr>
 					<!-- row 2 -->
@@ -266,12 +268,11 @@
 						</td>
 						<td>
 							Carroll Group
-							<br />
-							<span class="badge badge-ghost badge-sm">Tax Accountant</span>
+							<span class="badge badge-ghost badge-sm hidden md:block">Tax Accountant</span>
 						</td>
 						<td>Red</td>
 						<th>
-							<button class="btn btn-primary btn-sm">details</button>
+							<a class="btn btn-primary btn-sm" href={localizeHref('/soon')}>details</a>
 						</th>
 					</tr>
 					<!-- row 3 -->
@@ -294,12 +295,11 @@
 						</td>
 						<td>
 							Rowe-Schoen
-							<br />
-							<span class="badge badge-ghost badge-sm">Office Assistant I</span>
+							<span class="badge badge-ghost badge-sm hidden md:block">Office Assistant I</span>
 						</td>
 						<td>Crimson</td>
 						<th>
-							<button class="btn btn-primary btn-sm">details</button>
+							<a class="btn btn-primary btn-sm" href={localizeHref('/soon')}>details</a>
 						</th>
 					</tr>
 					<!-- row 4 -->
@@ -322,12 +322,13 @@
 						</td>
 						<td>
 							Wyman-Ledner
-							<br />
-							<span class="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+							<span class="badge badge-ghost badge-sm hidden md:block"
+								>Community Outreach Specialist</span
+							>
 						</td>
 						<td>Indigo</td>
 						<th>
-							<button class="btn btn-primary btn-sm">details</button>
+							<a class="btn btn-primary btn-sm" href={localizeHref('/soon')}>details</a>
 						</th>
 					</tr>
 				</tbody>
@@ -359,8 +360,8 @@
 
 <style lang="postcss">
 	@reference "tailwindcss";
-	li {
+	/* li {
 		@apply text-lg;
 		@apply relative my-3 pl-6 text-left font-sans text-[#8a8a8a] before:absolute before:left-0 before:text-xl before:text-green-500 before:content-['✓'];
-	}
+	} */
 </style>

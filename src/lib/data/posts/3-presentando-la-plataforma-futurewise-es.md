@@ -1,6 +1,6 @@
 ---
 title: Presentando la Plataforma Futurewise
-excerpt: Este es el extracto de mi primera publicación y será un proyecto increíble, y nadie lo creerá, ni siquiera yo, un programador de svelte, convertido en un Futurista.
+excerpt: Una plataforma unificada de productos digitales, creada para transformar la forma en que los negocios de América Latina gestionan el comercio electrónico, los pagos y la TI.
 date: 2025-09-01
 featured: true
 isMain: true
@@ -12,4 +12,7 @@ authors:
     avatar: /claude-logo.png
 ---
 
-Este es el contenido de mi primera publicación. Está escrito in Markdown.
+Futurewise es más que una simple colección de herramientas. Es un [ecosistema integrado](https://futurewise.lat), diseñado para ofrecer soluciones accesibles, modulares e inteligentes para empresas en crecimiento, con un enfoque especial en los mercados emergentes de LATAM.
+
+**Futurewise**  
+_Una Plataforma Unificada de Productos Digitales para América Latina._

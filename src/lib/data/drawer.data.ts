@@ -96,7 +96,7 @@ export const drawerData = {
 			subMenu: false,
 			isBold: true,
 			primary: false,
-			underDevelopment: true,
+			underDevelopment: false,
 			url: localizeHref('/care')
 		} as ProductDrawerData,
 

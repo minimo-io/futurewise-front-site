@@ -16,9 +16,13 @@
 		<ChevronDown strokeWidth="1" class="h-4" />
 	</button>
 
-	<ul class="menu dropdown-content bg-base-200 rounded-box z-1 mt-4 w-fit p-2 shadow-md">
+	<ul
+		class="menu dropdown-content bg-base-200 rounded-box z-1 mt-4 w-fit p-2 font-bold tracking-widest shadow-md"
+	>
 		<li><a href="/">{m.configurations()}</a></li>
+
 		<div class="my-1 border-b border-b-gray-700"></div>
+
 		<li>
 			<form
 				method="POST"

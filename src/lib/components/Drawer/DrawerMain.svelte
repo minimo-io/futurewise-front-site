@@ -197,7 +197,6 @@
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
-			<!-- <img class="w-4 h-4 self-center mr-2" src="/images/flags/uruguay.png" alt="uruguay-flag" /> -->
 			<Headset class="mr-2 h-4 w-4 self-center" />
 			<span class="self-center font-semibold">Atendimento</span>
 		</div>

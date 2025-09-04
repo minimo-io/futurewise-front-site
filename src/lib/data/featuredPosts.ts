@@ -4,8 +4,8 @@ export const featuredPosts = {
 	en: [
 		{
 			title: "Introducing the Futurewise Platform",
-			excerpt: "This is the excerpt for my first post and it will an awesome project, and nowone will believe it, not even me, a somehow svelte coder, turned into a Futurist.",
-			content: "<p>This is the content of my first post. It&#39;s written in Markdown.</p>\n",
+			excerpt: "A unified digital products platform, designed to transform the way businesses in Latin America handle e-commerce, payments, and IT.",
+			content: "<p>Futurewise is more than just a collection of tools. It’s an <a href=\"https://futurewise.lat\">integrated ecosystem</a>, designed to provide accessible, modular, and intelligent solutions for growing businesses — with a special focus on emerging markets in LATAM.</p>\n<p><strong>Futurewise</strong><br><em>A Unified Digital Products Platform for Latin America.</em></p>\n",
 			date: "August 31",
 			slug: "/en/blog/introducing-the-futurewise-platform",
 			isMain: true,
@@ -63,8 +63,8 @@ export const featuredPosts = {
 	es: [
 		{
 			title: "Presentando la Plataforma Futurewise",
-			excerpt: "Este es el extracto de mi primera publicación y será un proyecto increíble, y nadie lo creerá, ni siquiera yo, un programador de svelte, convertido en un Futurista.",
-			content: "<p>Este es el contenido de mi primera publicación. Está escrito in Markdown.</p>\n",
+			excerpt: "Una plataforma unificada de productos digitales, creada para transformar la forma en que los negocios de América Latina gestionan el comercio electrónico, los pagos y la TI.",
+			content: "<p>Futurewise es más que una simple colección de herramientas. Es un <a href=\"https://futurewise.lat\">ecosistema integrado</a>, diseñado para ofrecer soluciones accesibles, modulares e inteligentes para empresas en crecimiento, con un enfoque especial en los mercados emergentes de LATAM.</p>\n<p><strong>Futurewise</strong><br><em>Una Plataforma Unificada de Productos Digitales para América Latina.</em></p>\n",
 			date: "31 de agosto",
 			slug: "/es/blog/presentando-la-plataforma-futurewise",
 			isMain: true,
@@ -122,8 +122,8 @@ export const featuredPosts = {
 	pt: [
 		{
 			title: "Apresentando a Plataforma Futurewise",
-			excerpt: "A Futurewise é a nossa plataforma unificada de produtos digitais, criada para transformar a forma como negócios da América Latina lidam com e-commerce, pagamentos e ativos de TI.",
-			content: "<p>A Futurewise é mais do que uma simples coleção de ferramentas. É um <a href=\"https://futurewise.lat\">ecossistema</a> integrado, desenvolvido para oferecer soluções acessíveis, modulares e inteligentes para empresas em crescimento — com foco especial nos mercados emergentes da LATAM.</p>\n<h2>Nossos Produtos</h2>\n<h3>Bagity — E-commerce Headless com WordPress + SvelteKit</h3>\n<p>Crie lojas modernas e rápidas com <strong>tecnologia headless</strong>, integrando a flexibilidade do WordPress com o poder do SvelteKit. Ideal para negócios que querem vender com performance, liberdade criativa e baixo custo.</p>\n<h3>FinX — Pagamentos Lightning, Cripto e Fiat</h3>\n<p>Envie e receba valores em <strong>tempo real</strong>, local ou internacionalmente. O <strong>FinX</strong> conecta diferentes métodos de pagamento, incluindo a rede Lightning, com foco em <strong>velocidade</strong>, <strong>baixo custo</strong> e <strong>compliance local</strong>.</p>\n<h3>CareSync — Monitoramento Inteligente de Ativos de TI</h3>\n<p>Uma plataforma de <strong>manutenção proativa e emergencial</strong> para notebooks e PCs, voltada para MSPs, escolas e pequenas empresas. Inclui alertas, relatórios e até substituição emergencial de máquinas.</p>\n<h2>Nosso Compromisso</h2>\n<ul>\n<li><strong>Inovação com propósito</strong>: Soluções pensadas para as necessidades reais da região.</li>\n<li><strong>Baixo custo operacional</strong>: Planos acessíveis e gratuitos para quem está começando.</li>\n<li><strong>Crescimento sustentável</strong>: Ferramentas escaláveis para acompanhar sua jornada.</li>\n</ul>\n<h2>Fale com a Gente</h2>\n<p>Estamos em constante evolução e abertos à colaboração. Tem uma ideia? Quer testar um dos nossos produtos? Fale conosco:</p>\n<p>👉 <a href=\"https://futurewise.lat\">futurewise.lat</a></p>\n<p><strong>Futurewise</strong><br><em>Plataforma Unificada de Produtos Digitais para a América Latina.</em></p>\n",
+			excerpt: "Uma plataforma unificada de produtos digitais, criada para transformar a forma como negócios da América Latina lidam com e-commerce, pagamentos e TI.",
+			content: "<p>A Futurewise é mais do que uma simples coleção de ferramentas. É um <a href=\"https://futurewise.lat\">ecossistema</a> integrado, desenvolvido para oferecer soluções acessíveis, modulares e inteligentes para empresas em crescimento — com foco especial nos mercados emergentes da LATAM.</p>\n<p><strong>Futurewise</strong><br><em>Plataforma Unificada de Produtos Digitais para a América Latina.</em></p>\n",
 			date: "31 de agosto",
 			slug: "/blog/apresentando-a-plataforma-futurewise",
 			isMain: true,

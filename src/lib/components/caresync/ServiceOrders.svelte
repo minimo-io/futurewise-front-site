@@ -2,6 +2,8 @@
 	import DashboardImages from '../DashboardImages.svelte';
 	import Hr from '../Hr.svelte';
 	import { m } from '$paraglide/messages';
+	import TransparentButton from '../Buttons/TransparentButton.svelte';
+	import { localizeHref } from '$paraglide/runtime';
 
 	let { image, title, description }: { image?: string; title?: string; description?: string } =
 		$props();
@@ -31,7 +33,7 @@
 >
 	<Hr bottom={false} />
 
-	<div class="relative scale-110 md:scale-100 lg:top-7 2xl:-right-32">
+	<div class="relative scale-110 md:scale-90 lg:top-7 2xl:-right-32">
 		<DashboardImages {image} />
 	</div>
 
@@ -63,9 +65,9 @@
 		>
 			<!-- Container escuro -->
 			<div class="max-w-xs flex-1">
-				<!-- <div
-					class="mt-3 mb-5 flex items-baseline justify-center space-x-2
-					       md:my-5 md:justify-start"
+				<div
+					class="mt-3 mb-5 flex scale-80 items-baseline justify-center space-x-2 md:my-5
+					       md:scale-90 md:justify-start"
 				>
 					<span class="self-start font-sans text-xl font-medium">
 						{m.payPerUsePriceCurrency()}
@@ -76,12 +78,13 @@
 					<span class="text-secondary self-center font-sans text-3xl font-medium">
 						{m.payPerUsePriceUnit()}
 					</span>
-				</div> -->
+				</div>
 				<ul class="text-base-content mt-9 ml-7 hidden font-sans text-base md:block">
 					{#each simpleFeatures as feat}
 						<li>{feat}</li>
 					{/each}
 				</ul>
+				<!-- <TransparentButton href={localizeHref('/soon')}>{m.startNow()}</TransparentButton> -->
 			</div>
 
 			<!-- Container claro -->
