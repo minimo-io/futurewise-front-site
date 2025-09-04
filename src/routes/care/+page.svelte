@@ -10,11 +10,12 @@
 	import { m } from '$paraglide/messages';
 	import { localizeHref } from '$paraglide/runtime';
 	import { Product } from '$types/products.types';
-	import { ChevronDown } from '@lucide/svelte';
+	import { ChevronDown, Quote } from '@lucide/svelte';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import Clients from '$lib/components/Home/Clients.svelte';
 	import { AppConfig } from '$lib';
+	import TitleFullWidth from '$lib/components/TitleFullWidth.svelte';
 
 	let isExpanded = $state(false);
 	const autoGestaoInitialItems = 0;
@@ -202,7 +203,7 @@
 		class="max-w-fw relative mx-auto mt-4 h-[100px] w-full overflow-hidden md:h-[300px] md:rounded-t-xl"
 	>
 		<img
-			src="/gemini-care.png"
+			src="/coding-ai-agents.webp"
 			alt="care-img"
 			class="absolute top-0 left-0 w-full -translate-y-[90px] md:-translate-y-[300px] md:rounded-none"
 		/>
@@ -365,7 +366,52 @@
 	<ServiceOrders image="/caresync-dashboard-3.png" />
 
 	<div class="border-base-200 mb-10 border-b pb-5 md:mb-0 md:border-0 md:pb-0">
-		<Slogan text={m.careSyncSlogan()} />
+		<!-- <Slogan text={m.careSyncSlogan()} /> -->
+		<!-- <TitleFullWidth
+			breadcrumb={m.aboutUs()}
+			titleLeft={m.aboutUsTitleLeft()}
+			titleRight={'FUTUREWISE CARE'}
+		/> -->
+		<!-- <div class="relative">
+			<section
+				class="fw-home-about z-10 mx-(--fw-app-margin) mb-12 max-w-full pt-10 md:mx-auto md:max-w-[60%]"
+			>
+				<div class="relative">
+					<div
+						class="space-y-0 transition-all duration-500 {isExpanded
+							? ''
+							: 'max-h-[29rem] overflow-hidden md:max-h-[29rem]'}"
+					>
+						<p>
+							Nossa missão é impulsionar o crescimento dos profissionais de TI, enquanto construímos
+							uma comunidade de excelentes técnicos preparados para atender às demandas dos clientes
+							da plataforma.
+						</p>
+					</div>
+
+					{#if !isExpanded}
+						<div
+							class="pointer-events-none absolute right-0 bottom-0 left-0 h-32 bg-gradient-to-t from-black via-black/70 to-transparent"
+						></div>
+					{/if}
+				</div>
+
+				<div
+					class={[
+						'relative -top-2 mt-0 flex justify-center md:top-0 md:mt-3',
+						isExpanded && 'mt-10'
+					]}
+				>
+					<button
+						class="bg-primary/10 hover:bg-primary/20 border-primary/30 text-primary flex items-center gap-2 rounded-full border px-5 py-2 transition-all duration-300"
+					>
+						<span class="!font-sans !text-base tracking-wider uppercase md:!text-lg"
+							>{isExpanded ? m.readLess() : m.readMore()}</span
+						>
+					</button>
+				</div>
+			</section>
+		</div> -->
 	</div>
 
 	<div id="know-more" class="border-base-200 mt-20 font-sans md:mt-0 md:border-t">
