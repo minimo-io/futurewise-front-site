@@ -175,6 +175,13 @@
 				</div>
 			</div>
 		</div>
+		<!-- <div class="max-w-fw mx-auto mt-4 h-[300px] overflow-hidden">
+			<img
+				src="/Gemini_Generated_Image_mxozmdmxozmdmxoz.png"
+				alt="care-img"
+				class="h-full w-full object-cover"
+			/>
+		</div> -->
 	</div>
 
 	<!-- Diferentials -->
@@ -190,6 +197,16 @@
 	</div> -->
 
 	<Features product={Product.CARE} />
+
+	<div
+		class="max-w-fw relative mx-auto mt-4 h-[100px] w-full overflow-hidden md:h-[300px] md:rounded-t-xl"
+	>
+		<img
+			src="/gemini-care.png"
+			alt="care-img"
+			class="absolute top-0 left-0 w-full -translate-y-[90px] md:-translate-y-[300px] md:rounded-none"
+		/>
+	</div>
 
 	<!-- Top 10 -->
 	<div class="border-base-200 border-t border-b">
