@@ -10,7 +10,7 @@ export const drawerData = {
 			name: 'Care',
 			slogan: 'Predictive IT Maintenance + ITMS',
 			sloganSimple: '',
-			details: 'IT Asset Management + Services <br />AI-Powered',
+			details: 'IT Asset Management + Marketplace <br />AI-Powered',
 			icon: Activity,
 			subMenu: false,
 			isBold: true,
@@ -70,7 +70,7 @@ export const drawerData = {
 			isBold: true,
 			primary: true,
 			underDevelopment: true,
-			url: localizeHref('/docs')
+			url: localizeHref('/soon')
 		} as ProductDrawerData
 
 		// {
@@ -91,7 +91,7 @@ export const drawerData = {
 			name: 'Care',
 			slogan: 'Manutenção TI Preditiva + ITMS',
 			sloganSimple: '',
-			details: 'Gestão de ativos TI + Serviços <br />Potenciados por IA',
+			details: 'Gestão de ativos TI + Marketplace <br />	',
 			icon: Activity,
 			subMenu: false,
 			isBold: true,
@@ -172,7 +172,7 @@ export const drawerData = {
 			name: 'Care',
 			slogan: 'Mantenimiento TI Predictivo + ITMS',
 			sloganSimple: '',
-			details: 'Gestión de activos TI + Servicios <br />Potenciados por IA',
+			details: 'Gestión de activos TI + Marketplace <br />Potenciados por IA',
 			icon: Activity,
 			subMenu: false,
 			isBold: true,

@@ -14,4 +14,4 @@ authors:
 
 SQLite é um dos bancos de dados mais populares hoje, e [você pode tê-lo ignorado](https://www.youtube.com/watch?v=qf0GqRz-c74).
 
-Então, decidimos experimentá-lo para entregar posts de blog com alta demanda de leitura em nossa [solução de e-Commerce](https://www.futurewise.lat/bagity)... via [Turso](https://turso.tech/).
+Então, decidimos experimentá-lo para entregar posts de blog com alta demanda de leitura em nossa [solução de e-Commerce](https://www.futurewise.lat/store)... via [Turso](https://turso.tech/).

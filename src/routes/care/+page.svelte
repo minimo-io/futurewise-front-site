@@ -10,7 +10,6 @@
 	import { m } from '$paraglide/messages';
 	import { localizeHref } from '$paraglide/runtime';
 	import { Product } from '$types/products.types';
-	import { ChevronDown, Quote } from '@lucide/svelte';
 	import { fly, slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import Clients from '$lib/components/Home/Clients.svelte';
@@ -248,12 +247,12 @@
 	<Features product={Product.CARE} />
 
 	<div
-		class="max-w-fw relative mx-auto mt-4 h-[100px] w-full overflow-hidden md:h-[300px] md:rounded-t-xl"
+		class="max-w-fw relative top-[8px] mx-auto mt-4 h-[100px] w-full overflow-hidden rounded-t-xl md:top-auto md:h-[150px]"
 	>
 		<img
-			src="/coding-ai-agents.webp"
+			src="/stars.png"
 			alt="care-img"
-			class="absolute top-0 left-0 w-full -translate-y-[90px] md:-translate-y-[300px] md:rounded-none"
+			class="absolute top-0 left-0 w-full -translate-y-[0px] md:-translate-y-[0]"
 		/>
 	</div>
 

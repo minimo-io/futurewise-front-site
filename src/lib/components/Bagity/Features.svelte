@@ -80,41 +80,51 @@
 
 	const caresyncFeatures: Feature[] = [
 		{
+			img: '/feature-dashboard.svg',
+			title: m.caresyncFeature1Title(),
+			desc: m.caresyncFeature1Desc()
+		},
+		{
 			img: '/feature-5.svg',
-			title: 'Zero investimento inicial',
-			desc: 'Sem grande desembolso inicial. Sem consumo de linha de crédito. Ao alugar você recebe muito além dos equipamentos!'
+			title: m.caresyncFeature2Title(),
+			desc: m.caresyncFeature2Desc()
 		},
 		{
-			img: '/feature-tool.svg',
-			title: 'Manutenção inclusa',
-			desc: 'Esqueça de gastos de manutenção, perda de produto ou acionamento de garantia. Nós fazemos tudo e disponibilizamos um equipamento sempre pronto.'
-		},
-		{
-			img: '/feature-headset.svg',
-			title: 'Atendimento especializado',
-			desc: 'Suporte especializado sem custo. Resolução de problemas na empresa ou em home office, remoto ou presencial.'
+			img: '/feature-community.svg',
+			title: m.caresyncFeature3Title(),
+			desc: m.caresyncFeature3Desc()
 		},
 		{
 			img: '/feature-health.svg',
-			title: 'Monitoramento 24hrs',
-			desc: 'Monitoramento, detecção de anomalias e previsão de falhas com nossa IA treinada pela Futurewise para evitar interrupções e gerar alertas preventivas.'
-		},
-		{
-			img: '/feature-dashboard.svg',
-			title: 'Dashboards de acompanhamento',
-			desc: 'Acompanhe nossa gestão através de nossos dashboards, gere relatórios de custos, serviços e performance. Gostamos da transparência total!'
+			title: m.caresyncFeature4Title(),
+			desc: m.caresyncFeature4Desc()
 		},
 		{
 			img: '/feature-8.svg',
-			title: 'Continuidade inteligente',
-			desc: 'Receba um equipamento substituto imediatamente enquanto o outro estiver em manutenção, garantindo que suas operações nunca parem!'
+			title: m.caresyncFeature5Title(),
+			desc: m.caresyncFeature5Desc()
+		},
+		{
+			img: '/feature-book.svg',
+			title: m.caresyncFeature6Title(),
+			desc: m.caresyncFeature6Desc()
+		},
+		{
+			img: '/feature-invoice.svg',
+			title: m.caresyncFeature7Title(),
+			desc: m.caresyncFeature7Desc()
+		},
+		{
+			img: '/feature-6.svg',
+			title: m.caresyncFeature8Title(),
+			desc: m.caresyncFeature8Desc()
 		}
 	];
 
 	// Computed properties using $derived
 	let features = $derived(product === Product.STORE ? bagityFeatures : caresyncFeatures);
 	let isMobile = $state(false);
-	let itemsPerPage = $derived(isMobile ? 3 : 4);
+	let itemsPerPage = $derived(isMobile ? 3 : 6);
 	let totalPages = $derived(Math.ceil(features.length / itemsPerPage));
 	let canGoPrev = $derived(currentIndex > 0);
 	let canGoNext = $derived(currentIndex < totalPages - 1);

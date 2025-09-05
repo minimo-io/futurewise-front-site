@@ -14,4 +14,4 @@ authors:
 
 SQLite es una de las bases de datos más populares en la actualidad, y [quizás la hayas pasado por alto](https://www.youtube.com/watch?v=qf0GqRz-c74).
 
-Por ello, decidimos probarla para entregar posts de blog con gran cantidad de lecturas en nuestra [solución de e-Commerce](https://www.futurewise.lat/es/bagity)... a través de [Turso](https://turso.tech/).
+Por ello, decidimos probarla para entregar posts de blog con gran cantidad de lecturas en nuestra [solución de e-Commerce](https://www.futurewise.lat/es/store)... a través de [Turso](https://turso.tech/).

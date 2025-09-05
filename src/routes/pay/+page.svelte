@@ -34,10 +34,7 @@
 			<div class="fw-cmp-box-title">Enterprise</div>
 			<div class="fw-cmp-box-content">
 				<p>
-					Soluções financeiras customizadas para quem tem <span class="text-base-content"
-						>alto volume de transações</span
-					> e precisa de conciliação ágil e eficiente, com altas taxas de conversão e integração entre
-					sistemas. Tudo isso 24/7, simples e 100% compliant!
+					{@html m.finxEnterpriseText()}
 				</p>
 				<TransparentButton class="!mt-6" href={localizeHref('/soon')}>
 					{m.startNow()}
@@ -48,10 +45,7 @@
 			<div class="fw-cmp-box-title">Startups</div>
 			<div class="fw-cmp-box-content">
 				<p>
-					Como uma empresa de tecnologia, entendemos que <span class="text-base-content"
-						>velocidade e boa documentação</span
-					> são chaves. Nossa API é de simples integração, permitindo que seu time foque no crescimento
-					do seu negócio.
+					{@html m.finxStartupsText()}
 				</p>
 				<TransparentButton class="!mt-6" href={localizeHref('/soon')}>
 					{m.startNow()}
@@ -62,9 +56,7 @@
 			<div class="fw-cmp-box-title">E-Commerce</div>
 			<div class="fw-cmp-box-content">
 				<p>
-					Aumente sua taxa de conversão, simplifique sua conciliação, tenha split de pagamentos,
-					<span class="text-base-content">checkout transparente</span>, link de pagamentos, Pix
-					recorrente e estorno parcial ou total de transações.
+					{@html m.finxEcommerce()}
 				</p>
 
 				<TransparentButton class="!mt-6" href={localizeHref('/soon')}>

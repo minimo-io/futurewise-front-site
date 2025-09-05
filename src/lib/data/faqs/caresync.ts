@@ -2,30 +2,35 @@ import type { Faq } from '$lib/type/faq.types';
 
 export const caresyncFaqs: Record<string, Faq[]> = {
 	en: [
+		// {
+		// 	question: 'What is the Continuity Service?',
+		// 	answer:
+		// 		"It's Futurewise's service to guarantee your operation. As soon as you report a problem with a device covered by Continuity Insurance, we provide you with a working replacement while yours is in our workshop, ensuring your operation's continuity."
+		// },
+		// {
+		// 	question: 'Do rented devices come with Continuity Insurance?',
+		// 	answer: 'Yes'
+		// },
 		{
-			question: 'What is the Continuity Service?',
+			question: 'How do I calculate my cost?',
 			answer:
-				"It's Futurewise's service to guarantee your operation. As soon as you report a problem with a device covered by Continuity Insurance, we provide you with a working replacement while yours is in our workshop, ensuring your operation's continuity."
+				"It's very simple. If you are an IT professional, the cost is and will always be fixed and predictable. Each user account has a predefined cost and allows unlimited equipment registration. If you are a client, hire any IT professional directly through the platform, with a service cost that is also fixed, applied only when the order is completed (see the price tables)."
 		},
 		{
-			question: 'Do rented devices come with Continuity Insurance?',
-			answer: 'Yes'
-		},
-		{
-			question: 'How do I calculate my costs?',
+			question: 'What is the Marketplace?',
 			answer:
-				'The <strong>Self-Managed</strong> mode has a per-user cost, with detailed real-time reports of the work being performed. Monitoring is done via the Services Dashboard. The <strong>Managed</strong> mode is by annual or monthly contract, and rental plans are quoted on a case-by-case basis. Contact us!'
+				'Futurewise Care is more than an ITSM system. Our mission is to help IT professionals grow and to help clients who need services find the best technicians in their region or online.'
 		},
 		{
-			question: 'What is the marketplace?',
+			question: 'Can I buy equipment through the platform?',
 			answer:
-				"It's CareSync/Futurewise’s parts and equipment store. Through it, platform clients can purchase notebooks, RAM, boards, monitors, modules, and more — with fixed discounts, promotional prices, and extended warranties."
+				'We noticed that both technicians and clients need a common reference point for purchasing equipment and parts, so we are developing a store with exclusive prices for Futurewise Care participants. As soon as it’s available, we will notify all our clients.'
 		},
-		{
-			question: 'One of CareSync’s engagement models is "Managed/MSP"—but what exactly is an MSP?',
-			answer:
-				'In IT, an MSP (Managed Service Provider) is an outsourced company that takes responsibility for managing and supporting part or all of another organization’s IT infrastructure. Unlike the reactive "break‑fix" model—where support is called only after something fails—an MSP delivers proactive, ongoing monitoring, maintenance, and management under a monthly subscription contract. With CareSync’s MSP mode, we handle preventive and predictive maintenance on your devices, ensuring maximum uptime and freeing your team to focus on core business.'
-		},
+		// {
+		// 	question: 'One of CareSync’s engagement models is "Managed/MSP"—but what exactly is an MSP?',
+		// 	answer:
+		// 		'In IT, an MSP (Managed Service Provider) is an outsourced company that takes responsibility for managing and supporting part or all of another organization’s IT infrastructure. Unlike the reactive "break‑fix" model—where support is called only after something fails—an MSP delivers proactive, ongoing monitoring, maintenance, and management under a monthly subscription contract. With CareSync’s MSP mode, we handle preventive and predictive maintenance on your devices, ensuring maximum uptime and freeing your team to focus on core business.'
+		// },
 		{
 			question: 'What does ITSM mean?',
 			answer:
@@ -39,31 +44,37 @@ export const caresyncFaqs: Record<string, Faq[]> = {
 	],
 
 	es: [
-		{
-			question: '¿Qué es el Servicio de Continuidad?',
-			answer:
-				'Es el servicio de Futurewise para garantizar tu operación. En cuanto reportas un problema en uno de los equipos que tenga el Seguro de continuidad, te entregamos un equipamiento funcionando en cuanto el tuyo entra en nuestro taller, garantizando la continuidad de tu operación.'
-		},
-		{
-			question: '¿Los equipos alquilados vienen con el seguro de continuidad?',
-			answer: 'Sí'
-		},
+		// {
+		// 	question: '¿Qué es el Servicio de Continuidad?',
+		// 	answer:
+		// 		'Es el servicio de Futurewise para garantizar tu operación. En cuanto reportas un problema en uno de los equipos que tenga el Seguro de continuidad, te entregamos un equipamiento funcionando en cuanto el tuyo entra en nuestro taller, garantizando la continuidad de tu operación.'
+		// },
+		// {
+		// 	question: '¿Los equipos alquilados vienen con el seguro de continuidad?',
+		// 	answer: 'Sí'
+		// },
 		{
 			question: '¿Cómo calculo mi costo?',
 			answer:
-				'El modo <strong>Autogestión</strong> tiene un costo por usuario. Con informes detallados en tiempo real del trabajo realizado. El seguimiento se realiza a través del Dashboard de Servicios. Por su parte, el modo <strong>Gestionado</strong> es por contrato anual o mensual, y los planes de alquiler se cotizan caso por caso. ¡Contáctenos!'
+				'Es muy simple. Si eres un profesional de TI, el costo es y siempre será fijo y predecible. Cada cuenta de usuario tiene un costo predefinido y permite el registro ilimitado de equipos. Si eres un cliente, contrata a cualquier profesional de TI directamente a través de la plataforma, con un costo de servicio también fijo, que se aplica solo cuando se completa la orden (consulta las tablas de precios).'
 		},
 		{
-			question: '¿Qué es el marketplace?',
+			question: '¿Qué es el Marketplace?',
 			answer:
-				'Es la tienda de piezas y equipamientos de Caresync/Futurewise. A través de ella los clientes de la plataforma pueden comprar notebooks, memorias RAM, placas, monitores, módulos y más, con descuentos fijos, precios promocionales y garantía extendida.'
+				'Futurewise Care es más que un sistema ITSM. Nuestra misión es ayudar a los profesionales de TI a crecer y a los clientes que necesitan servicios a encontrar a los mejores técnicos en su región o en línea.'
 		},
 		{
-			question:
-				'Uno de los modelos de contratación de CareSync es "Gestionado/MSP", ¿pero qué es exactamente un MSP?',
+			question: '¿Puedo comprar equipos a través de la plataforma?',
 			answer:
-				'En TI, un MSP (Managed Service Provider) es una empresa externa que asume la responsabilidad de gestionar y soportar parte o toda la infraestructura de TI de otra organización. A diferencia del modelo reactivo "rompe‑arregla", donde se solicita soporte solo cuando algo falla, un MSP ofrece monitoreo continuo, mantenimiento proactivo y gestión bajo un contrato de suscripción mensual. Con el modo MSP de CareSync, nos encargamos del mantenimiento preventivo e predictivo de sus equipos, garantizando máxima disponibilidad y liberando a su equipo para enfocarse en el negocio.'
+				'Detectamos que tanto los técnicos como los clientes necesitan un punto de referencia común para la compra de equipos y piezas, por lo que estamos desarrollando una tienda con precios exclusivos para los participantes de Futurewise Care. Tan pronto como esté disponible, notificaremos a todos nuestros clientes.'
 		},
+
+		// {
+		// 	question:
+		// 		'Uno de los modelos de contratación de CareSync es "Gestionado/MSP", ¿pero qué es exactamente un MSP?',
+		// 	answer:
+		// 		'En TI, un MSP (Managed Service Provider) es una empresa externa que asume la responsabilidad de gestionar y soportar parte o toda la infraestructura de TI de otra organización. A diferencia del modelo reactivo "rompe‑arregla", donde se solicita soporte solo cuando algo falla, un MSP ofrece monitoreo continuo, mantenimiento proactivo y gestión bajo un contrato de suscripción mensual. Con el modo MSP de CareSync, nos encargamos del mantenimiento preventivo e predictivo de sus equipos, garantizando máxima disponibilidad y liberando a su equipo para enfocarse en el negocio.'
+		// },
 		{
 			question: '¿Qué significa ITAM?',
 			answer:
@@ -77,30 +88,36 @@ export const caresyncFaqs: Record<string, Faq[]> = {
 	],
 
 	pt: [
-		{
-			question: 'O que é o Serviço de Continuidade?',
-			answer:
-				'É o serviço da Futurewise para garantir a sua operação. Assim que você reporta um problema em um dos equipamentos com Seguro de Continuidade pela plataforma, nós entregamos um equipamento funcional enquanto o seu está em nossa oficina, garantindo a continuidade da sua operação.'
-		},
-		{
-			question: 'Os equipamentos alugados vêm com o Seguro de Continuidade?',
-			answer: 'Sim'
-		},
-		{
-			question: 'O que é o marketplace?',
-			answer:
-				'É a loja de peças e equipamentos da CareSync/Futurewise. Por meio dela, os clientes da plataforma podem comprar notebooks, memórias RAM, placas, monitores, módulos e mais — com descontos fixos, preços promocionais e garantia estendida.'
-		},
+		// {
+		// 	question: 'O que é o Serviço de Continuidade?',
+		// 	answer:
+		// 		'É o serviço da Futurewise para garantir a sua operação. Assim que você reporta um problema em um dos equipamentos com Seguro de Continuidade pela plataforma, nós entregamos um equipamento funcional enquanto o seu está em nossa oficina, garantindo a continuidade da sua operação.'
+		// },
+		// {
+		// 	question: 'Os equipamentos alugados vêm com o Seguro de Continuidade?',
+		// 	answer: 'Sim'
+		// },
+
 		{
 			question: 'Como eu calculo o meu custo?',
 			answer:
-				'O modo <strong>Autogestão</strong> tem um custo por usuário. Com relatórios detalhados em tempo real do trabalho sendo realizado. O acompanhamento é via o Dashboard de Serviços. Já o modo <strong>Gerenciado</strong> é por contrato anual ou mensal, e os planos de aluguel são orçados caso a caso. Entre em contato!'
+				'Bem simples. Se você é um profissional de TI, o custo é e sempre será fixo e previsível. Cada conta de usuário tem um custo predefinido e permite cadastro ilimitado de equipamentos. Se você é um cliente, contrate qualquer um dos profissionais de TI diretamente pela plataforma, com um custo de serviço também fixo só quando a ordem seja finalizada (veja as tabelas de preços).'
 		},
 		{
-			question: 'Um dos modelos de contratação é "Gerenciado/MSP", mas o que exatamente é um MSP?',
+			question: 'O que é o Marketplace?',
 			answer:
-				'Em TI, um MSP (Managed Service Provider) é uma empresa terceirizada que assume a responsabilidade pela gestão e suporte de parte ou de toda a infraestrutura de TI de outra organização. Em vez de um modelo reativo de "quebra‑conserta", onde o cliente chama suporte apenas após uma falha, o MSP oferece monitoramento contínuo, manutenção proativa e gerenciamento sob contrato mensal. No modo MSP da CareSync, cuidamos da manutenção preventiva e preditiva dos seus equipamentos, garantindo máxima disponibilidade e liberando sua equipe para focar no negócio.'
+				'Futurewise Care é mais que um sistema ITSM; nossa missão é ajudar os profissionais de TI a crescer e os clientes que precisam de serviços a encontrar os melhores técnicos na sua região ou online.'
 		},
+		{
+			question: 'Posso comprar equipamentos pela plataforma?',
+			answer:
+				'Detectamos a necessidade dos técnicos e dos clientes de ter um ponto comum e de referência para a compra de equipamentos e peças, então estamos desenvolvendo uma loja com preços exclusivos para participantes do Futurewise Care. Assim que estiver disponível, notificaremos todos os nossos clientes.'
+		},
+		// {
+		// 	question: 'Um dos modelos de contratação é "Gerenciado/MSP", mas o que exatamente é um MSP?',
+		// 	answer:
+		// 		'Em TI, um MSP (Managed Service Provider) é uma empresa terceirizada que assume a responsabilidade pela gestão e suporte de parte ou de toda a infraestrutura de TI de outra organização. Em vez de um modelo reativo de "quebra‑conserta", onde o cliente chama suporte apenas após uma falha, o MSP oferece monitoramento contínuo, manutenção proativa e gerenciamento sob contrato mensal. No modo MSP da CareSync, cuidamos da manutenção preventiva e preditiva dos seus equipamentos, garantindo máxima disponibilidade e liberando sua equipe para focar no negócio.'
+		// },
 		{
 			question: 'O que significa ITSM?',
 			answer:

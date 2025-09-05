@@ -92,7 +92,7 @@ export const finxFaqs: Record<string, Faq[]> = {
 		{
 			question: 'O que é o FinXPay e como funciona?',
 			answer:
-				'O FinXPay oferece liquidações globais instantâneas em moeda local, stablecoins ou Bitcoin via Lightning. Ex.: receba via PIX no Brasil e liquide no exterior imediatamente, com compliance total.'
+				'O FinXPay oferece liquidações globais instantâneas em moeda local, stablecoins ou Bitcoin via Lightning. Ex.: receba USDT/BTC no Brasil e liquide no exterior imediatamente, com compliance total.'
 		},
 		{
 			question: 'Quais moedas e métodos de pagamento são suportados?',

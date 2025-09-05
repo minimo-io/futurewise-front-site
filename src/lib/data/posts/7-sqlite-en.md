@@ -14,4 +14,4 @@ authors:
 
 SQLite is one of the most popular databases today, and [you might have miss it](https://www.youtube.com/watch?v=qf0GqRz-c74).
 
-So we decided to give it a try for delivering ready-heavy blog posts in our [e-Commerce solution](https://www.futurewise.lat/en/bagity)... via [Turso](https://turso.tech/).
+So we decided to give it a try for delivering ready-heavy blog posts in our [e-Commerce solution](https://www.futurewise.lat/en/store)... via [Turso](https://turso.tech/).
