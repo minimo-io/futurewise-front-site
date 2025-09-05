@@ -11,13 +11,19 @@
 	import { localizeHref } from '$paraglide/runtime';
 	import { Product } from '$types/products.types';
 	import { ChevronDown, Quote } from '@lucide/svelte';
-	import { slide } from 'svelte/transition';
+	import { fly, slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import Clients from '$lib/components/Home/Clients.svelte';
 	import { AppConfig } from '$lib';
 	import TitleFullWidth from '$lib/components/TitleFullWidth.svelte';
+	import Switcher from '$lib/components/Switcher.svelte';
 
 	let isExpanded = $state(false);
+	let currentSwitcherSelection = $state(m.careSyncAuto());
+
+	function handleSwitcherChange(option) {
+		console.log('Selected:', option);
+	}
 	const autoGestaoInitialItems = 0;
 	const gerenciadoInitialItems = 0;
 
@@ -74,7 +80,7 @@
 	titleRight={Product.CARE}
 	heroContent={m.heroContentCareSync()}
 >
-	<div class="mt-7 flex flex-wrap gap-2 md:mt-8 md:gap-3">
+	<div class="mt-7 hidden flex-wrap gap-2 md:mt-8 md:gap-3">
 		<a
 			href={AppConfig.calendar}
 			target="_blank"
@@ -97,83 +103,116 @@
 	<div
 		class="max-w-fw border-x-base-200 relative container my-0 text-center md:mx-auto md:border-x"
 	>
-		<div class="flex flex-1 items-center justify-center">
-			<div
-				class="border-base-200 fw-border-b-divider md:fw-border-t-divider-dot flex w-full flex-col border-b
-                        after:absolute after:right-[48%] md:flex-row md:after:top-12 md:after:right-[49.4%] md:after:content-['']"
-			>
-				<!-- Auto-gestão -->
+		<div class="hidden md:block">
+			<div class="flex flex-1 items-center justify-center">
 				<div
-					class="border-r-base-200 mt-1 w-full py-3 text-xl md:mt-0 md:w-1/2 md:border-r"
-					bind:this={autoGestaoTitle}
+					class="border-base-200 fw-border-b-divider md:fw-border-t-divider-dot flex w-full flex-col border-b
+                        after:absolute after:right-[48%] md:flex-row md:after:top-12 md:after:right-[49.4%] md:after:content-['']"
 				>
-					<!-- Title -->
-					<div class="mb-3 text-2xl">
-						Care <span class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl">
-							{m.careSyncAuto()}
-						</span>
-					</div>
-					<!-- Content -->
-					<div class="border-base-200 text-primary border-t p-4 font-sans text-lg font-bold md:p-8">
-						<!-- {m.careSyncYouControl()} -->
+					<!-- Auto-gestão -->
+					<div
+						class="border-r-base-200 mt-1 w-full py-3 text-xl md:mt-0 md:w-1/2 md:border-r"
+						bind:this={autoGestaoTitle}
+					>
+						<!-- Title -->
+						<div class="mb-3 text-2xl">
+							Care <span
+								class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl"
+							>
+								{m.careSyncAuto()}
+							</span>
+						</div>
+						<!-- Content -->
 						<div
-							class="text-secondary mt-2 px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
+							class="border-base-200 text-primary border-t p-4 font-sans text-lg font-bold md:p-8"
 						>
-							{@html m.careSyncAutoDesc()}
+							<!-- {m.careSyncYouControl()} -->
+							<div
+								class="text-secondary mt-2 px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
+							>
+								{@html m.careSyncAutoDesc()}
+							</div>
+						</div>
+					</div>
+					<!-- Gerenciado -->
+					<div
+						class="hidden w-full py-3 text-xl md:inline-block md:w-1/2"
+						bind:this={gerenciadoTitle}
+					>
+						<div class="mb-3 text-2xl">
+							Care <span
+								class="bg-primary r relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl font-normal"
+							>
+								{m.careSyncManaged()}
+							</span>
+						</div>
+						<div
+							class="border-base-200 text-primary mt-1 border-t font-sans text-lg font-bold md:p-8"
+						>
+							<!-- {m.careSyncWeTakeCare()} -->
+							<div
+								class="text-secondary mt-2 px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
+							>
+								{@html m.careSyncManagedDesc()}
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Gerenciado -->
-				<div
-					class="hidden w-full py-3 text-xl md:inline-block md:w-1/2"
-					bind:this={gerenciadoTitle}
-				>
-					<div class="mb-3 text-2xl">
-						Care <span
-							class="bg-primary r relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl font-normal"
-						>
-							{m.careSyncManaged()}
-						</span>
-					</div>
+			</div>
+
+			<div class="flex flex-col justify-center md:flex-1 md:flex-row md:items-stretch">
+				<div class="mb-2 flex w-full flex-col items-start md:mb-0 md:w-1/2 md:px-20 md:py-5">
 					<div
-						class="border-base-200 text-primary mt-1 border-t font-sans text-lg font-bold md:p-8"
+						class="border-base-200 w-full border-t border-b py-5 pt-4 text-xl md:hidden md:w-1/2"
 					>
-						<!-- {m.careSyncWeTakeCare()} -->
-						<div
-							class="text-secondary mt-2 px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
-						>
-							{@html m.careSyncManagedDesc()}
+						<div class="mb-4 text-2xl">
+							CareSync <span
+								class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl"
+							>
+								{m.careSyncManaged()}
+							</span>
 						</div>
+						<div
+							class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold"
+						>
+							<!-- {m.careSyncWeTakeCare()} -->
+							<div
+								class="text-secondary p-4 px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
+							>
+								{@html m.careSyncManagedDesc()}
+							</div>
+						</div>
+					</div>
+
+					<div class="flex w-full scale-110 justify-center md:mt-5 md:scale-130">
+						<TransparentButton href={localizeHref('/soon')}>{m.startNow()}</TransparentButton>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="flex flex-col justify-center md:flex-1 md:flex-row md:items-stretch">
-			<!-- Nós cuidamos de tudo -->
-			<div class="mb-2 flex w-full flex-col items-start md:mb-0 md:w-1/2 md:px-20 md:py-5">
-				<div class="border-base-200 w-full border-t border-b py-5 pt-4 text-xl md:hidden md:w-1/2">
-					<div class="mb-4 text-2xl">
-						CareSync <span
-							class="bg-primary relative -top-[2px] ml-1 rounded-lg px-3 py-[2px] text-xl"
-						>
-							{m.careSyncManaged()}
-						</span>
-					</div>
-					<div class="border-base-200 text-primary mt-1 border-t pt-2 font-sans text-lg font-bold">
-						<!-- {m.careSyncWeTakeCare()} -->
-						<div
-							class="text-secondary p-4 px-0 text-base leading-6 font-semibold tracking-wide md:px-20"
-						>
+		<!-- Switcher -->
+		<div class="max-w-fw relative -top-6 mx-auto pt-4 md:top-0 md:hidden">
+			<Switcher
+				options={[m.careSyncAuto(), m.careSyncManaged()]}
+				bind:selected={currentSwitcherSelection}
+				onChange={handleSwitcherChange}
+			/>
+			{#key currentSwitcherSelection}
+				<div class="mt-5 space-y-6 text-center" in:fly={{ y: -20, duration: 100, delay: 100 }}>
+					<span class="text-secondary py-4 font-sans text-base font-semibold tracking-wide">
+						{#if currentSwitcherSelection == m.careSyncAuto()}
+							{@html m.careSyncAutoDesc()}
+						{/if}
+						{#if currentSwitcherSelection == m.careSyncManaged()}
 							{@html m.careSyncManagedDesc()}
-						</div>
-					</div>
+						{/if}
+					</span>
 				</div>
+			{/key}
 
-				<!-- CTA Button  -->
-				<div class="mt-5 flex w-full scale-110 justify-center md:scale-130">
-					<TransparentButton href={localizeHref('/soon')}>{m.startNow()}</TransparentButton>
-				</div>
+			<div class="mx-auto mt-5 flex w-full max-w-[80%] scale-110 justify-center md:scale-100">
+				<TransparentButton href={localizeHref('/soon')}>{m.startNow()}</TransparentButton>
 			</div>
 		</div>
 		<!-- <div class="max-w-fw mx-auto mt-4 h-[300px] overflow-hidden">
