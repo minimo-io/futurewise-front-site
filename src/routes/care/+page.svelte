@@ -191,7 +191,7 @@
 			</div>
 		</div>
 
-		<!-- Switcher -->
+		<!-- Switcher mobile -->
 		<div class="max-w-fw relative -top-6 mx-auto pt-4 md:top-0 md:hidden">
 			<Switcher
 				options={[m.careSyncAuto(), m.careSyncManaged()]}
@@ -203,17 +203,26 @@
 					<span class="text-secondary py-4 font-sans text-base font-semibold tracking-wide">
 						{#if currentSwitcherSelection == m.careSyncAuto()}
 							{@html m.careSyncAutoDesc()}
+
+							<div
+								class="mx-auto mt-5 flex w-full max-w-[80%] scale-110 justify-center md:scale-100"
+							>
+								<TransparentButton href={localizeHref('/soon')}>{m.startNow()}</TransparentButton>
+							</div>
 						{/if}
 						{#if currentSwitcherSelection == m.careSyncManaged()}
 							{@html m.careSyncManagedDesc()}
+							<div
+								class="mx-auto mt-5 flex w-full max-w-[80%] scale-110 justify-center md:scale-100"
+							>
+								<TransparentButton href={localizeHref('/soon')}
+									>{m.findTechnician()}</TransparentButton
+								>
+							</div>
 						{/if}
 					</span>
 				</div>
 			{/key}
-
-			<div class="mx-auto mt-5 flex w-full max-w-[80%] scale-110 justify-center md:scale-100">
-				<TransparentButton href={localizeHref('/soon')}>{m.startNow()}</TransparentButton>
-			</div>
 		</div>
 		<!-- <div class="max-w-fw mx-auto mt-4 h-[300px] overflow-hidden">
 			<img
