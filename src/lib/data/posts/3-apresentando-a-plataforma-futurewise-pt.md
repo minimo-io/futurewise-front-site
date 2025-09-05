@@ -1,7 +1,7 @@
 ---
 title: Apresentando a Plataforma Futurewise
 excerpt: Uma plataforma unificada de produtos digitais, criada para transformar a forma como negócios da América Latina lidam com e-commerce, pagamentos e TI.
-date: 2025-09-01
+date: 2025-09-06
 featured: true
 isMain: true
 icon: Star

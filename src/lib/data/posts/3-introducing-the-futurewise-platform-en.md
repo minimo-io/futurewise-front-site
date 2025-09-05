@@ -1,7 +1,7 @@
 ---
 title: Introducing the Futurewise Platform
 excerpt: A unified digital products platform, designed to transform the way businesses in Latin America handle e-commerce, payments, and IT.
-date: 2025-09-01
+date: 2025-09-06
 featured: true
 isMain: true
 icon: Star

@@ -41,6 +41,14 @@ const blogPosts: Array<{
 			['en', '/en/blog/sqlite'],
 			['es', '/es/blog/sqlite']
 		]
+	},
+	{
+		pattern: '/blog/transformers-js-experimento-ecommerce',
+		localized: [
+			['pt', '/blog/transformers-js-experimento-ecommerce'],
+			['en', '/en/blog/transformers-js-ecommerce-experiment'],
+			['es', '/es/blog/transformers-js-experimento-ecommerce']
+		]
 	}
 ];
 

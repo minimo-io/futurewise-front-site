@@ -13,5 +13,12 @@
 				}
 			]
 		}
+	],
+	"redirects": [
+		{
+			"source": "/nicolas/qr",
+			"destination": "https://www.futurewise.lat/",
+			"permanent": false
+		}
 	]
 }

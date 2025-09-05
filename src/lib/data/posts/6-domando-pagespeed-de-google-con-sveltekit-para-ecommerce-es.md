@@ -2,8 +2,8 @@
 title: Domando Google PageSpeed con SvelteKit para e-Commerce
 excerpt: 'Bueno, le ganamos al monstruo. Creamos un valor brutal para nuestro cliente. Su e-commerce ahora es una cosa brillante, rápida como un rayo, que pasa los test tiránicos del PageSpeed de Google con sobra — y deja en visto a cualquier competidor con presupuesto gordo. Echa un ojo a esto.'
 date: 2025-08-31
-featured: true
-isMain: true
+featured: false
+isMain: false
 icon: ChartNoAxesCombined
 authors:
   - name: Nicolas Erramuspe

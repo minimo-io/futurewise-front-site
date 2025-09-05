@@ -3,7 +3,7 @@ title: Uso de SQLite para Entregar Operaciones de Lectura Intensiva Increíbleme
 excerpt: 'Un enfoque estratégico para optimizar la entrega de datos, mejorar el rendimiento y reducir significativamente los costos en la nube para contenido popular.'
 date: 2025-08-31
 featured: true
-isMain: true
+isMain: false
 icon: Database
 authors:
   - name: Nicolas Erramuspe

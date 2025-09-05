@@ -2,8 +2,8 @@
 title: Beating Google's Pagespeed with SvelteKit on e-Commerce
 excerpt: 'So we beat the Thing, and we created a lot of value for our client. Their e-commerce is now shiny, efficient, thing that load fast, passing Google’s PageSpeed tyranny tests, much better than any of their big-budgeted competitors. Check this out!'
 date: 2025-08-31
-featured: true
-isMain: true
+featured: false
+isMain: false
 icon: ChartNoAxesCombined
 authors:
   - name: Nicolas Erramuspe
