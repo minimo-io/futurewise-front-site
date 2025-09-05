@@ -91,7 +91,7 @@ export const drawerData = {
 			name: 'Care',
 			slogan: 'Manutenção TI Preditiva + ITMS',
 			sloganSimple: '',
-			details: 'Gestão de ativos TI + Marketplace <br />	',
+			details: 'Gestão de ativos TI + Marketplace <br /> Impulsionado por IA',
 			icon: Activity,
 			subMenu: false,
 			isBold: true,
