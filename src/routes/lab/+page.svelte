@@ -15,7 +15,7 @@
 		Experimentação, Lançamento(beta) e Maturidade.
 	</p>
 
-	<h2 class="text-primary font-pixel mt-5 text-2xl font-bold">O IdeaLab.</h2>
+	<!-- <h2 class="text-primary font-pixel mt-5 text-2xl font-bold">O IdeaLab.</h2>
 	<ul class="mt-2">
 		<li class="text-lg">
 			<span class="font-pixel text-primary text-lg">AutoCRM</span> - Automação de HelpDesk com IA - Chatbot
@@ -25,5 +25,5 @@
 			<span class="font-pixel text-primary text-lg">Delibra</span> - Fluxo Integrado de Envíos - Automação,
 			rastreio e melhor preço
 		</li>
-	</ul>
+	</ul> -->
 </div>

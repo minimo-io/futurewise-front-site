@@ -25,10 +25,6 @@
 	<Developers />
 </main>
 
-<div class="border-base-200 mx-(--fw-app-margin) mb-12 border-b md:mx-0">
-	<ServiceOrders />
-</div>
-
 <!-- Lab Section Title -->
 <TitleFullWidth
 	breadcrumb={m.aboutUs()}
@@ -43,6 +39,11 @@
 	<!-- About Section -->
 	<About />
 </div>
+
+<!-- <div class="border-base-200 mx-(--fw-app-margin) mb-12 md:mx-0">
+	<ServiceOrders />
+</div> -->
+
 <div class="relative">
 	<div
 		class="absolute -right-[18%] bottom-[25%] z-0 hidden scale-80 opacity-30 md:-right-[5%] md:block"

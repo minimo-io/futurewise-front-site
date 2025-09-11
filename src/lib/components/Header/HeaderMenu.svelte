@@ -68,7 +68,7 @@
 			<span><ChevronDown class="ml-1 h-5" /></span>
 		</div>
 		<ul class="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-fit px-5 py-3 shadow-md">
-			<li>
+			<!-- <li>
 				<a
 					href={localizeHref('/soon')}
 					class={[
@@ -79,7 +79,7 @@
 					<Headset class="h-4" />
 					{m.help()}
 				</a>
-			</li>
+			</li> -->
 			<li>
 				<a
 					href={localizeHref('/soon')}

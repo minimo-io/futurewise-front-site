@@ -120,7 +120,7 @@
 	</h2>
 
 	<!-- Help desk -->
-	<a
+	<!-- <a
 		href={localizeHref('/help')}
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
@@ -128,7 +128,7 @@
 			<Headset class="text-sun mr-2 h-4 w-4 self-center" />
 			<span class="self-center font-semibold">{m.help()}</span>
 		</div>
-	</a>
+	</a> -->
 
 	<!-- Docs -->
 	<a
