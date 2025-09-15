@@ -58,7 +58,7 @@
 						{/if}
 					</div>
 					<span
-						class="font-pixel text-base-content text-[35px] font-bold tracking-wider opacity-90 md:text-5xl"
+						class="font-pixel text-base-content text-4xl font-bold tracking-wider opacity-90 md:text-5xl"
 					>
 						{brand.name}
 					</span>

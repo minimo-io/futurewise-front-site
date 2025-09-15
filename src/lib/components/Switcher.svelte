@@ -33,12 +33,12 @@
 
 <div class="relative -top-8 mt-4 w-full px-4 md:-top-0 md:hidden">
 	<select
-		class="select select-lg bg-primary select-primary w-full justify-center rounded-xl text-center font-sans text-[18px] font-black"
+		class="select select-lg bg-primary select-primary flex w-full justify-center rounded-xl text-center font-sans text-[18px] font-black"
 		bind:value={selected}
 		onchange={() => onChange?.(selected)}
 	>
 		{#each options as option}
-			<option value={option} class="font-normal">{option}</option>
+			<option value={option} class="justify-center text-center font-normal">{option}</option>
 		{/each}
 	</select>
 </div>
