@@ -4,11 +4,14 @@
 	"login": "Login",
 	"continue": "Continue",
 	"loggingIn": "Logging in...",
+	"platform": "The Platform",
+
 	"latestNews": "Latest news",
 	"subscriveVia": "Subscribe via",
 
 	"refresh": "Refresh",
 	"searchPlaceholder": "Search for tools and commands...",
+	"searchSimplePlaceholder": "Search...",
 
 	"refreshingIn": "Refreshing in {seconds}s",
 	"deviceAddedSuccess": "Device added successfully!",
@@ -45,7 +48,7 @@
 	"construction": "construction",
 	"constructionContent": "We are building a unified platform for <span class='text-base-content opacity-80'>E-Commerce</span>, <span class='text-base-content opacity-80'>Cross-Border Payments</span>, and <span class='text-base-content opacity-80'>IT Asset Monitoring</span>. Contact us while we finish this page.",
 
-	"heroContentHome": "We are a <span class='text-base-content opacity-80'>Unified Digital Products Platform</span> powered by AI and a Development Lab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, Real-Time Payments, and AI Applied to IT Assets Monitoring</span>.",
+	"heroContentHome": "We are a <span class='text-base-content opacity-80'>B2B Digital Products Platform</span> powered by AI and a Development Lab focused on Innovation in the areas of <span class='text-base-content opacity-80'>E-Commerce, USDT/BTC Payments, and AI Applied to IT Assets Monitoring</span>.",
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Real-time payments with <span class='text-base-content opacity-80'>Instant Global Settlements</span> in USDT/BTC via Lightning Network. Eg. <span class='text-base-content'>Receive in Argentina and settle abroad</span>, instantly, with 100% compliance and verifiable transparency.</div>",
 
@@ -125,8 +128,13 @@
 	"startNow": "Start now",
 	"allSystemsWorking": "All systems operational",
 
+	"careSyncAssetManagment": "Asset Management",
+	"careSyncLearning": "Learning",
+	"careSyncMarketplace": "Marketplace",
+	"careSyncPredictiveSoftware": "Predictive software",
 	"careSyncAuto": "For businesses",
 	"careSyncManaged": "For clients",
+
 	"careSyncIdealFor": "IDEAL FOR",
 
 	"careSyncAutoDesc": "We offer an <span class='text-base-content opacity-80'>ITSM + Client Marketplace platform</span> for companies that provide IT services or want internal control of their assets. Modules include Asset, Service, and Client Management, Billing, Alerts, and more.",
@@ -238,7 +246,7 @@
 	"needTIService": "Hire IT services",
 
 	"top10TI": "Top 10 IT Professionals",
-	"whyUseCare": "Why use the platform",
+	"whyUseCare": "Platform features",
 
 	"findTechnician": "Find Technician",
 
@@ -288,5 +296,10 @@
 
 	"finxEnterpriseText": "Custom financial solutions for those with <span class='text-base-content'>high transaction volumes</span> who need fast and efficient reconciliation, with high conversion rates and system integration. All of this 24/7, simple and 100% compliant!",
 	"finxStartupsText": "As a tech company, we understand that <span class='text-base-content'>speed and good documentation</span> are key. Our API is easy to integrate, allowing your team to focus on growing your business.",
-	"finxEcommerce": "Increase your conversion rate, simplify reconciliation, enable payment splits, <span class='text-base-content'>transparent checkout</span>, payment links, recurring Pix, and partial or full transaction reversals."
+	"finxEcommerce": "Increase your conversion rate, simplify reconciliation, enable payment splits, <span class='text-base-content'>transparent checkout</span>, payment links, recurring Pix, and partial or full transaction reversals.",
+
+	"allCourses": "All Courses",
+	"allCoursesSlogan": "Grow your TI career with foundational specializations and skill-specific short courses taught by leaders in the field.",
+	"allCoursesMostPopular": "Most popular",
+	"allCoursesTopRated": "Top rated"
 }

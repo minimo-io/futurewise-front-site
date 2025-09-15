@@ -5,8 +5,9 @@
 	import { onMount } from 'svelte';
 
 	// Configurable animation speeds (in seconds)
-	export let desktopSpeed = 30;
-	export let mobileSpeed = 20;
+	let desktopSpeed = $state(30);
+	let mobileSpeed = $state(20);
+	let { addDesktopPadding = false }: { addDesktopPadding?: boolean } = $props();
 
 	let marqueeContainer: HTMLDivElement;
 
@@ -55,7 +56,7 @@
 		}
 	];
 
-	let duplicateCount = 4; // Start with 2 sets
+	let duplicateCount = $state(4); // Start with 2 sets
 
 	onMount(() => {
 		if (!marqueeContainer) return;
@@ -90,7 +91,7 @@
 		<PillFlower title={m.menuClients()} />
 	</div> -->
 
-	<div class="relative mt-8 mb-1 md:mx-auto">
+	<div class="relative mt-8 mb-1 md:mx-auto {addDesktopPadding ? '-top-[5px]' : ''}">
 		<!-- Marquee container -->
 		<div class="relative scale-90 overflow-hidden md:scale-100" bind:this={marqueeContainer}>
 			<div

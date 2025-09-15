@@ -4,11 +4,14 @@
 	"login": "Entrar",
 	"continue": "Continuar",
 	"loggingIn": "Entrando...",
+	"platform": "Plataforma",
+
 	"latestNews": "Últimas notícias",
 	"subscriveVia": "Suscribirse vía",
 
 	"refresh": "Actualizar",
 	"searchPlaceholder": "Buscar herramientas y comandos...",
+	"searchSimplePlaceholder": "Buscar...",
 
 	"refreshingIn": "Actualizando en {seconds}s",
 	"deviceAddedSuccess": "¡Dispositivo añadido con éxito!",
@@ -45,7 +48,7 @@
 	"construction": "construcción",
 	"constructionContent": "Estamos construyendo una plataforma unificada de <span class='text-base-content opacity-80'>Comercio Electrónico</span>, <span class='text-base-content opacity-80'>Pagos Transfronterizos</span> y <span class='text-base-content opacity-80'>Monitoreo de Activos de TI</span>. Contáctanos mientras finalizamos esta página.",
 
-	"heroContentHome": "Somos una <span class='text-base-content opacity-80'>Plataforma Unificada de Productos Digitales</span> Impulsada por IA y un Laboratorio de Desarrollo enfocado en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos Instantáneos y Mantenimiento Predictivo de TI</span>.",
+	"heroContentHome": "Somos una <span class='text-base-content opacity-80'>Plataforma B2B de Productos Digitales</span> Impulsada por IA y un Laboratorio de Desarrollo enfocado en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos USDT/BTC y Mantenimiento Predictivo de TI</span>.",
 
 	"heroContentHome1": "Somos una <span class='text-base-content opacity-80'>Plataforma de Productos Digitales</span> y un Laboratorio de Desarrollo enfocados en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border en Tiempo Real, IA y Máquinas (IoT)</span>.",
 
@@ -130,8 +133,13 @@
 
 	"allSystemsWorking": "Todos los sistemas funcionando",
 
+	"careSyncAssetManagment": "Gestión de Activos",
+	"careSyncLearning": "Cursos online",
+	"careSyncMarketplace": "Marketplace",
+	"careSyncPredictiveSoftware": "Software predictivo",
 	"careSyncAuto": "Para empresas",
 	"careSyncManaged": "Para clientes",
+
 	"careSyncIdealFor": "IDEAL PARA",
 
 	"careSyncAutoDesc": "Ofrecemos una <span class='text-base-content opacity-80'>plataforma ITSM + Marketplace de clientes</span> para empresas que bridan servicios de TI o desean control interno de sus activos. Módulos de Gestión de Activos, Servicios y Clientes, Facturación, Alertas y más.",
@@ -242,7 +250,7 @@
 
 	"needTIService": "Contratar servicio de TI",
 	"top10TI": "Top 10 Profesionales de TI<br/>de 🇦🇷 Argentina",
-	"whyUseCare": "Porqué utilizar la plataforma",
+	"whyUseCare": "Recursos de la Plataforma",
 	"findTechnician": "Encontrar Técnico",
 
 	"caresyncFeature1Title": "Dashboards de seguimiento",
@@ -291,5 +299,10 @@
 
 	"finxEnterpriseText": "Soluciones financieras personalizadas para quienes tienen <span class='text-base-content'>alto volumen de transacciones</span> y necesitan conciliación ágil y eficiente, con altas tasas de conversión e integración entre sistemas. ¡Todo esto 24/7, simple y 100% compliant!",
 	"finxStartupsText": "Como empresa de tecnología, entendemos que <span class='text-base-content'>velocidad y buena documentación</span> son clave. Nuestra API es de integración sencilla, permitiendo que tu equipo se concentre en el crecimiento de tu negocio.",
-	"finxEcommerce": "Aumenta tu tasa de conversión, simplifica tu conciliación, ten split de pagos, <span class='text-base-content'>checkout transparente</span>, link de pagos, Pix recurrente y reversión parcial o total de transacciones."
+	"finxEcommerce": "Aumenta tu tasa de conversión, simplifica tu conciliación, ten split de pagos, <span class='text-base-content'>checkout transparente</span>, link de pagos, Pix recurrente y reversión parcial o total de transacciones.",
+
+	"allCourses": "Todos los cursos",
+	"allCoursesSlogan": "Desarrolla tu carrera en TI con especializaciones fundamentales y cursos cortos específicos de habilidades, impartidos por líderes en el campo.",
+	"allCoursesMostPopular": "Mas populares",
+	"allCoursesTopRated": "Mejor valorados"
 }

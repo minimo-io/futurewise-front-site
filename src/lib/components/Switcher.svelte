@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { fly } from 'svelte/transition';
 
 	let { options = ['Autopilot', 'Copilot'], selected = $bindable(), onChange } = $props();
@@ -9,8 +9,7 @@
 	}
 </script>
 
-<div class="bg-base-200 relative inline-flex gap-0 rounded-full p-1">
-	<!-- Option buttons -->
+<div class="bg-base-200 relative hidden items-center gap-0 rounded-full p-1 md:inline-flex">
 	{#each options as option, index}
 		<button
 			class="relative z-10 rounded-full px-6 py-2 text-sm font-medium transition-colors duration-200 hover:opacity-100
@@ -30,4 +29,16 @@
 			</span>
 		</button>
 	{/each}
+</div>
+
+<div class="relative -top-8 mt-4 w-full px-4 md:-top-0 md:hidden">
+	<select
+		class="select select-xl bg-primary select-primary w-full justify-center rounded-xl text-center font-sans text-[18px] font-black"
+		bind:value={selected}
+		onchange={() => onChange?.(selected)}
+	>
+		{#each options as option}
+			<option value={option} class="font-normal">{option}</option>
+		{/each}
+	</select>
 </div>

@@ -4,7 +4,10 @@
 	import { Product } from '$types/products.types';
 	import Pill from '../Pill.svelte';
 
-	let { product = Product.STORE }: { product?: Product } = $props();
+	let {
+		product = Product.STORE,
+		noPaddingMobile = false
+	}: { product?: Product; noPaddingMobile?: boolean } = $props();
 
 	// Reactive state for carousel
 	let currentIndex = $state(0);
@@ -184,7 +187,7 @@
 	});
 </script>
 
-<div class="max-w-fw mx-auto py-10 !pb-5 md:px-10 md:py-16 md:!pb-10">
+<div class={['max-w-fw mx-auto !pb-5 md:px-10 md:py-16 md:!pb-10', noPaddingMobile ? '' : 'py-10']}>
 	<!-- Carousel container -->
 	<div
 		class="relative"
@@ -198,7 +201,7 @@
 					<div class="flex-shrink-0">
 						<img src={feature.img} alt={`feature-${i + 1}`} />
 					</div>
-					<div class="feature-item-desc">
+					<div class="feature-item-desc text-left">
 						<h3 class="text-base-content relative">
 							{#if feature.pill}
 								<div class="absolute -top-6 -right-1 scale-80 md:-top-3 md:right-5">
@@ -211,36 +214,36 @@
 							{/if}
 							{@html feature.title}
 						</h3>
-						<p class="text-secondary">{@html feature.desc}</p>
+						<p class="text-secondary leading-tight font-normal">{@html feature.desc}</p>
 					</div>
 				</div>
 			{/each}
 		</div>
 
 		<!-- Navigation controls for desktop - hidden on mobile -->
-		{#if !isMobile}
-			<div class="absolute inset-y-0 -top-10 -left-18 flex items-center">
-				<button
-					class="btn border-primary text-primary btn-circle btn-outline btn-sm md:btn-md hover:bg-primary hover:text-white hover:opacity-100"
-					class:hidden={!canGoPrev}
-					onclick={goToPrev}
-					aria-label="Previous features"
-				>
-					{'<'}
-				</button>
-			</div>
+		<!-- {#if !isMobile} -->
+		<div class="absolute inset-y-0 -top-10 -left-18 flex items-center">
+			<button
+				class="btn border-primary text-primary btn-circle btn-outline btn-sm md:btn-md hover:bg-primary hover:text-white hover:opacity-100"
+				class:hidden={!canGoPrev}
+				onclick={goToPrev}
+				aria-label="Previous features"
+			>
+				{'<'}
+			</button>
+		</div>
 
-			<div class="absolute inset-y-0 -top-10 -right-18 z-50 flex items-center">
-				<button
-					class="btn border-primary text-primary btn-circle btn-outline btn-sm md:btn-md hover:bg-primary pt-[1px] pl-[1px] hover:text-white hover:opacity-100"
-					class:hidden={!canGoNext}
-					onclick={goToNext}
-					aria-label="Next features"
-				>
-					{'>'}
-				</button>
-			</div>
-		{/if}
+		<div class="absolute inset-y-0 -top-10 -right-18 z-50 flex items-center">
+			<button
+				class="btn border-primary text-primary btn-circle btn-outline btn-sm md:btn-md hover:bg-primary pt-[1px] pl-[1px] hover:text-white hover:opacity-100"
+				class:hidden={!canGoNext}
+				onclick={goToNext}
+				aria-label="Next features"
+			>
+				{'>'}
+			</button>
+		</div>
+		<!-- {/if} -->
 
 		<!-- Pagination dots -->
 		<div class="mt-12 flex justify-center space-x-2">

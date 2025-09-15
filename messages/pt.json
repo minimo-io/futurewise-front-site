@@ -4,9 +4,11 @@
 	"login": "Entrar",
 	"continue": "Continuar",
 	"loggingIn": "Entrando...",
+	"platform": "Plataforma",
 	"latestNews": "Últimas notícias",
 	"subscriveVia": "Inscrever-se via",
 	"searchPlaceholder": "Procurar ferramentas e comandos...",
+	"searchSimplePlaceholder": "Procurar...",
 	"refresh": "Atualizar",
 	"refreshingIn": "Atualizando em {seconds}s",
 	"deviceAddedSuccess": "Dispositivo adicionado com sucesso!",
@@ -43,11 +45,13 @@
 	"construction": "construção",
 	"constructionContent": "Estamos construindo uma plataforma unificada de <span class='text-base-content opacity-80'>E-Commerce</span>, <span class='text-base-content opacity-80'>Pagamentos X-Border</span> e <span class='text-base-content opacity-80'>Monitoramento de Ativos de TI</span>. Entre em contato em quanto finalizamos esta página.",
 
-	"heroContentHome": "Somos uma <span class='text-base-content opacity-80'>Plataforma Unificada de Produtos Digitais</span> Impulsionados por IA e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos Instantâneos e Manutenção Preditiva de TI</span>.",
+	"heroContentHome": "Somos uma <span class='text-base-content opacity-80'>Plataforma B2B de Produtos Digitais</span> Impulsionados por IA e um Laboratório de Desenvolvimento focado na Inovação nas áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagamentos USDT/BTC e Manutenção Preditiva de TI</span>.",
 
 	"heroContentFinX": "<div class='text-[#AEAEAE]'>Pagamentos em tempo real com <span class='text-base-content opacity-80'>Settlements Globais Instantâneos</span> em USDT/BTC, via Lightning Network. Ex.: <span class='text-base-content'>Receba no Brasil e liquide no exterior</span>, no instante, com 100% de compliance e transparência verificável.</div>",
 
-	"heroContentCareSync": "Plataforma de <span class='text-base-content opacity-80'>Manutenção Preditiva</span> e Gestão de Ativos (ITSM + ITAM) <span class='text-base-content opacity-80'>para profissionais de TI e PMEs</span> — com IA aplicada ao Monitoramento em Tempo Real, Base de Conhecimento e Marketplace de Clientes.",
+	"heroContentCareSyncOLD": "Plataforma de <span class='text-base-content opacity-80'>Manutenção Preditiva</span> e Gestão de Ativos (ITSM + ITAM) <span class='text-base-content opacity-80'>para profissionais de TI e PMEs</span> — com IA aplicada ao Monitoramento em Tempo Real, Base de Conhecimento e Marketplace de Clientes.",
+
+	"heroContentCareSync": "Plataforma completa para profissionais de TI e PMEs: Gestão de ativos, Ordens de Serviço e Alertas, Manutenção Preditiva e Monitoramento, Cursos online e Marketplace de insumos. <span class='text-base-content opacity-80'>Junte-se a comunidade que impulsiona o crescimento do profissional de TI.</span>",
 
 	"heroContentBagity": "<span class='text-base-content opacity-80'>E-Commerce Premium sob Medida</span>: Customizamos sem límites: Design, UX e Funcionalidades, com IA integrada + Cloud escalável e <span class='text-base-content opacity-80'>checkout express</span> (PIX, Boleto, Cartão e Bitcoin). <span class='text-base-content opacity-80'>Planos fixos previsíveis</span> ou <span class='text-base-content opacity-80'>Store Pro sem custos iniciais</span>.",
 
@@ -125,8 +129,13 @@
 
 	"allSystemsWorking": "Todos os sistemas funcionando",
 
+	"careSyncAssetManagment": "Gestão de Ativos",
+	"careSyncLearning": "Cursos online",
+	"careSyncMarketplace": "Marketplace",
+	"careSyncPredictiveSoftware": "Software preditivo",
 	"careSyncAuto": "Para empresas",
 	"careSyncManaged": "Para clientes",
+
 	"careSyncIdealFor": "IDEAL PARA",
 
 	"careSyncAutoDesc": "Oferecemos uma <span class='text-base-content opacity-80'>plataforma ITSM + Marketplace de clientes</span> para empresas que prestam serviços de TI ou desejam controle interno de seus ativos. Módulos de Gestão de Ativos, Serviços e Clientes, Faturamento, Alertas e mais.",
@@ -237,12 +246,12 @@
 
 	"needTIService": "Contrate serviços de TI",
 	"top10TI": "Top 10 Profissionais de TI<br/>do🇧🇷 Brasil",
-	"whyUseCare": "Por que utilizar a plataforma",
+	"whyUseCare": "Recursos da plataforma",
 
 	"findTechnician": "Encontrar Técnico",
 
 	"caresyncFeature1Title": "Dashboards de acompanhamento",
-	"caresyncFeature1Desc": "Se você contratou um profissional de TI, acompanhe a sua gestão através de nossos dashboards. E, se você é um fornecedor, gere relatórios de custos, serviços e performance para seus clientes!",
+	"caresyncFeature1Desc": "Acompanhe a sua gestão através de nossos dashboards. Gere relatórios de custos, serviços e performance para seus clientes!",
 
 	"caresyncFeature2Title": "Custos fixos e previsíveis",
 	"caresyncFeature2Desc": "Não cobramos comissões, nem dos profissionais nem dos clientes do Marketplace. Nosso modelo é simples: custos fixos e acessíveis, alinhados com nossa missão de melhorar o mundo de TI!",
@@ -287,5 +296,10 @@
 
 	"finxEnterpriseText": "Soluções financeiras customizadas para quem tem <span class='text-base-content'>alto volume de transações</span> e precisa de conciliação ágil e eficiente, com altas taxas de conversão e integração entre sistemas. Tudo isso 24/7, simples e 100% compliant!",
 	"finxStartupsText": "Como uma empresa de tecnologia, entendemos que <span class='text-base-content'>velocidade e boa documentação</span> são chaves. Nossa API é de simples integração, permitindo que seu time foque no crescimento do seu negócio.",
-	"finxEcommerce": "Aumente sua taxa de conversão, simplifique sua conciliação, tenha split de pagamentos, <span class='text-base-content'>checkout transparente</span>, link de pagamentos, Pix recorrente e estorno parcial ou total de transações."
+	"finxEcommerce": "Aumente sua taxa de conversão, simplifique sua conciliação, tenha split de pagamentos, <span class='text-base-content'>checkout transparente</span>, link de pagamentos, Pix recorrente e estorno parcial ou total de transações.",
+
+	"allCourses": "Todos os cursos",
+	"allCoursesSlogan": "Desenvolva sua carreira em TI com especializações fundamentais e cursos curtos focados em habilidades específicas, ministrados por líderes da área.",
+	"allCoursesMostPopular": "Mais populares",
+	"allCoursesTopRated": "Melhor avaliados"
 }
