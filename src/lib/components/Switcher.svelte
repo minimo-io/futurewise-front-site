@@ -33,7 +33,7 @@
 
 <div class="relative -top-8 mt-4 w-full px-4 md:-top-0 md:hidden">
 	<select
-		class="select select-xl bg-primary select-primary w-full justify-center rounded-xl text-center font-sans text-[18px] font-black"
+		class="select select-lg bg-primary select-primary w-full justify-center rounded-xl text-center font-sans text-[18px] font-black"
 		bind:value={selected}
 		onchange={() => onChange?.(selected)}
 	>
