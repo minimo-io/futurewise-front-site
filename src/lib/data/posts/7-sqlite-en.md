@@ -2,7 +2,7 @@
 title: Using SQLite for Delivering Blazingly Fast Read-Heavy Operations
 excerpt: 'A strategic approach to optimize data delivery, improve performance, and significantly reduce cloud costs for popular content.'
 date: 2025-08-31
-featured: true
+featured: false
 isMain: false
 icon: Database
 authors:

@@ -2,7 +2,7 @@
 title: Usando SQLite para Entregar Operações de Leitura Intensiva Incrivelmente Rápidas
 excerpt: 'Uma abordagem estratégica para otimizar a entrega de dados, melhorar o desempenho e reduzir significativamente os custos de nuvem para conteúdo popular.'
 date: 2025-08-31
-featured: true
+featured: false
 isMain: false
 icon: Database
 authors:

@@ -1,4 +1,4 @@
-import { Star, Database, BrainCircuit } from '@lucide/svelte';
+import { Star, Terminal, BrainCircuit } from '@lucide/svelte';
 
 export const featuredPosts = {
 	en: [
@@ -41,21 +41,21 @@ export const featuredPosts = {
 			]
 		},
 		{
-			title: "Using SQLite for Delivering Blazingly Fast Read-Heavy Operations",
-			excerpt: "A strategic approach to optimize data delivery, improve performance, and significantly reduce cloud costs for popular content.",
-			content: "<p>SQLite is one of the most popular databases today, and <a href=\"https://www.youtube.com/watch?v=qf0GqRz-c74\">you might have miss it</a>.</p>\n<p>So we decided to give it a try for delivering ready-heavy blog posts in our <a href=\"https://www.futurewise.lat/en/store\">e-Commerce solution</a>... via <a href=\"https://turso.tech/\">Turso</a>.</p>\n",
-			date: "August 30",
-			slug: "/en/blog/sqlite",
+			title: "Headless Authentication and Voting using Futurewise’s APIs",
+			excerpt: "Our Betizen project just got re-written and relaunched, aiming to create a fairness community for iGaming, Forex, and Binary listings, and we used our Users/Voting API to build it.",
+			content: "<p>En breve...</p>\n",
+			date: "July 17",
+			slug: "/en/blog/auth-and-voting-using-futurewise-apis",
 			isMain: false,
-			icon: Database,
+			icon: Terminal,
 			authors: [
 				{
 					fullName: "Nicolas Erramuspe",
 					avatar: "/me.jpeg"
 				},
 				{
-					fullName: "Gemini",
-					avatar: "/gemini-logo.png"
+					fullName: "ChatGPT",
+					avatar: "/chatgpt-logo.png"
 				}
 			]
 		}
@@ -100,21 +100,21 @@ export const featuredPosts = {
 			]
 		},
 		{
-			title: "Uso de SQLite para Entregar Operaciones de Lectura Intensiva Increíblemente Rápidas",
-			excerpt: "Un enfoque estratégico para optimizar la entrega de datos, mejorar el rendimiento y reducir significativamente los costos en la nube para contenido popular.",
-			content: "<p>SQLite es una de las bases de datos más populares en la actualidad, y <a href=\"https://www.youtube.com/watch?v=qf0GqRz-c74\">quizás la hayas pasado por alto</a>.</p>\n<p>Por ello, decidimos probarla para entregar posts de blog con gran cantidad de lecturas en nuestra <a href=\"https://www.futurewise.lat/es/store\">solución de e-Commerce</a>... a través de <a href=\"https://turso.tech/\">Turso</a>.</p>\n",
-			date: "30 de agosto",
-			slug: "/es/blog/sqlite",
+			title: "Autenticación y Votación Headless usando APIs de Futurewise",
+			excerpt: "Nuestro proyecto Betizen acaba de ser reescrito y relanzado, con el objetivo de crear una comunidad de transparencia para listados de iGaming, Forex y Binarias, y utilizamos nuestra API de Usuarios/Votación para construirlo.",
+			content: "<p>Soon.</p>\n",
+			date: "31 de agosto",
+			slug: "/es/blog/autenticacion-y-votacion-usando-apis-de-futurewise",
 			isMain: false,
-			icon: Database,
+			icon: Terminal,
 			authors: [
 				{
 					fullName: "Nicolas Erramuspe",
 					avatar: "/me.jpeg"
 				},
 				{
-					fullName: "Gemini",
-					avatar: "/gemini-logo.png"
+					fullName: "ChatGPT",
+					avatar: "/chatgpt-logo.png"
 				}
 			]
 		}
@@ -159,21 +159,21 @@ export const featuredPosts = {
 			]
 		},
 		{
-			title: "Usando SQLite para Entregar Operações de Leitura Intensiva Incrivelmente Rápidas",
-			excerpt: "Uma abordagem estratégica para otimizar a entrega de dados, melhorar o desempenho e reduzir significativamente os custos de nuvem para conteúdo popular.",
-			content: "<p>SQLite é um dos bancos de dados mais populares hoje, e <a href=\"https://www.youtube.com/watch?v=qf0GqRz-c74\">você pode tê-lo ignorado</a>.</p>\n<p>Então, decidimos experimentá-lo para entregar posts de blog com alta demanda de leitura em nossa <a href=\"https://www.futurewise.lat/store\">solução de e-Commerce</a>... via <a href=\"https://turso.tech/\">Turso</a>.</p>\n",
-			date: "30 de agosto",
-			slug: "/blog/sqlite",
+			title: "Autenticação e Votação Headless usando as APIs de Futurewise",
+			excerpt: "Nosso projeto Betizen acabou de ser reescrito e relançado, com o objetivo de criar uma comunidade de transparência para listagens de iGaming, Forex e Binárias, e usamos nossa API de Usuários/Votação para construí-lo.",
+			content: "<p>Em breve...</p>\n",
+			date: "31 de agosto",
+			slug: "/blog/autenticacao-e-votacao-headless-usando-apis-da-futurewise",
 			isMain: false,
-			icon: Database,
+			icon: Terminal,
 			authors: [
 				{
 					fullName: "Nicolas Erramuspe",
 					avatar: "/me.jpeg"
 				},
 				{
-					fullName: "Gemini",
-					avatar: "/gemini-logo.png"
+					fullName: "ChatGPT",
+					avatar: "/chatgpt-logo.png"
 				}
 			]
 		}

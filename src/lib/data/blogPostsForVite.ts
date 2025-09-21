@@ -19,11 +19,11 @@ const blogPosts: Array<{
 		]
 	},
 	{
-		pattern: '/blog/o-cofre-definitivo-de-comandos-cli',
+		pattern: '/blog/autenticacao-e-votacao-headless-usando-apis-da-futurewise',
 		localized: [
-			['pt', '/blog/o-cofre-definitivo-de-comandos-cli'],
-			['en', '/en/blog/ultimate-cli-commands-valut'],
-			['es', '/es/blog/el-cofre-definitivo-de-comandos-cli']
+			['pt', '/blog/autenticacao-e-votacao-headless-usando-apis-da-futurewise'],
+			['en', '/en/blog/auth-and-voting-using-futurewise-apis'],
+			['es', '/es/blog/autenticacion-y-votacion-usando-apis-de-futurewise']
 		]
 	},
 	{
