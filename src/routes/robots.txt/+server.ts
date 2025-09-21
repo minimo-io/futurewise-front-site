@@ -2,6 +2,11 @@
 export const prerender = true;
 
 export async function GET({ url }) {
+	// Use actual production domain instead of prerender URL
+	const baseUrl = url.origin.includes('sveltekit-prerender')
+		? 'https://www.futurewise.lat'
+		: url.origin;
+
 	const robotsTxt = `User-agent: *
 Allow: /
 
@@ -14,7 +19,7 @@ Disallow: /api/
 Disallow: /*/api/
 
 # Reference sitemap
-Sitemap: ${url.origin}/sitemap.xml`;
+Sitemap: ${baseUrl}/sitemap.xml`;
 
 	return new Response(robotsTxt, {
 		headers: {

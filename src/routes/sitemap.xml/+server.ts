@@ -6,6 +6,11 @@ import { posts } from '$lib/data/posts';
 export const prerender = true;
 
 export async function GET({ url }) {
+	// Use actual production domain instead of prerender URL
+	const baseUrl = url.origin.includes('sveltekit-prerender')
+		? 'https://www.futurewise.lat'
+		: url.origin;
+
 	const routes = await getRoutes();
 
 	// Get all blog post slugs directly
@@ -25,11 +30,11 @@ export async function GET({ url }) {
 			} else {
 				path = isDefault ? route : `/${lang}${route}`;
 			}
-			staticUrls.push(`${url.origin}${path}`);
+			staticUrls.push(`${baseUrl}${path}`);
 		});
 	});
 
-	const allUrls: string[] = [...staticUrls, ...blogUrls.map((slug) => `${url.origin}${slug}`)];
+	const allUrls: string[] = [...staticUrls, ...blogUrls.map((slug) => `${baseUrl}${slug}`)];
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
