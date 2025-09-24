@@ -13,7 +13,7 @@ export const AppConfig = {
 			huggingface: 'https://huggingface.co/futurewise',
 			npm: 'https://npmjs.com',
 			linkedin: 'https://www.linkedin.com/in/nicolas-erramuspe/',
-			nostr: 'https://primal.net/p/npub1wujhdsytm3w6g0mpsqh8v7ezx83jcm64dlkwuqgm5v8lv0pds55ssudkw0'
+			nostr: 'https://primal.net/p/npub1jnmckwadeqv4es7r4nug37xur04rasnmv8h35m0la4ukfxfj42cq4un095'
 		}
 	},
 
