@@ -19,6 +19,11 @@
 			"source": "/nicolas/qr",
 			"destination": "https://www.futurewise.lat/",
 			"permanent": false
+		},
+		{
+			"source": "/bagity",
+			"destination": "https://www.futurewise.lat/store",
+			"permanent": true
 		}
 	]
 }
