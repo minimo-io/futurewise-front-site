@@ -1,6 +1,6 @@
 export const AppConfig = {
 	// apiUrl: import.meta.env.DEV ? '/api' : 'https://api.futurewise.lat',
-	apiUrl: import.meta.env.DEV ? 'https://api.futurewise.lat' : 'https://api.futurewise.lat',
+	apiUrl: import.meta.env.DEV ? 'http://127.0.0.1:8085' : 'https://api.futurewise.lat',
 	calendar: 'https://calendar.app.google/oDbeDazTLXApijoR8',
 	status: 'https://stats.uptimerobot.com/pPaLEt4eBM',
 	care: {
@@ -13,8 +13,9 @@ export const AppConfig = {
 			huggingface: 'https://huggingface.co/futurewise',
 			npm: 'https://npmjs.com',
 			linkedin: 'https://www.linkedin.com/in/nicolas-erramuspe/',
-			nostr: 'https://primal.net/p/npub1jnmckwadeqv4es7r4nug37xur04rasnmv8h35m0la4ukfxfj42cq4un095'
-		}
+			nostr: 'https://primal.net/p/npub1wujhdsytm3w6g0mpsqh8v7ezx83jcm64dlkwuqgm5v8lv0pds55ssudkw0'
+		},
+		docs: 'https://api.futurewise.lat/docs'
 	},
 
 	dashboards: {

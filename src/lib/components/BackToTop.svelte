@@ -1,4 +1,6 @@
 <script>
+	import { goto } from '$app/navigation';
+	import { page } from '$app/state';
 	import { ChevronUp } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import { scale, fly } from 'svelte/transition';
@@ -25,6 +27,13 @@
 			top: 0,
 			behavior: 'smooth'
 		});
+		if (page.route.id === '/') {
+			const scrollEndListener = () => {
+				goto('.');
+				window.removeEventListener('scrollend', scrollEndListener);
+			};
+			window.addEventListener('scrollend', scrollEndListener);
+		}
 	}
 </script>
 

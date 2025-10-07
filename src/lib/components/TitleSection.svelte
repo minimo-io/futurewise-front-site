@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Tween } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
+	import { capitalizeFirstLetter } from '$utils';
 
 	interface Props {
 		titleRight: string;
@@ -9,6 +10,8 @@
 	}
 
 	let { titleRight, titleLeft, forceFlexRow = false }: Props = $props();
+
+	const capitalizedTitleRight = $derived(capitalizeFirstLetter(titleRight));
 
 	// Create a Tween instance for the width animation
 	const backgroundWidth = new Tween(0, {
@@ -52,7 +55,7 @@
 				<span
 					class="font-pixel text-primary-content relative z-10 ml-2 bg-bottom text-[30px] tracking-widest md:text-[40px]"
 				>
-					{titleRight}
+					{capitalizedTitleRight}
 				</span>
 				<!-- Text Right Colored Background with Animation -->
 				<span

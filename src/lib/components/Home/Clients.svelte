@@ -20,12 +20,20 @@
 			opacity: 'opacity-50'
 		},
 		{
+			href: '#',
+			src: '/clients/vientosur-logo.svg',
+			alt: 'VientoSur',
+			height: 'h-[38px] mt-0',
+			opacity: 'opacity-100'
+		},
+		{
 			href: 'https://agentefaz.net',
 			src: '/clients/agf-color.png',
 			alt: 'AGF',
 			height: 'h-[40px]',
 			opacity: 'opacity-55'
 		},
+
 		{
 			href: 'https://braaay.com',
 			src: '/clients/braaay-logo-new.svg',
@@ -33,6 +41,7 @@
 			height: 'h-[32px] mt-1',
 			opacity: 'opacity-90'
 		},
+
 		{
 			href: 'https://dribbble.com/shots/19431388-Hops-v2-Craft-Beer-Marketplace',
 			src: '/clients/hops-logo.svg',

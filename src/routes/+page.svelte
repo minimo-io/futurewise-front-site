@@ -11,6 +11,22 @@
 	import CtaContact from '$lib/components/CtaContact.svelte';
 	import Meta from '$lib/components/Meta.svelte';
 	import ServiceOrders from '$lib/components/caresync/ServiceOrders.svelte';
+	import { afterNavigate } from '$app/navigation';
+	import { page } from '$app/state';
+	import { smoothScroll } from '$utils';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		const pageHash = page.url.hash ?? false;
+		if (pageHash && pageHash === '#know-more') {
+			setTimeout(() => {
+				smoothScroll(pageHash);
+			}, 200);
+		}
+		// Close drawer if active
+		// closeDrawer();
+	});
+	afterNavigate(() => {});
 </script>
 
 <Meta title={m.metaHomeTitle()} description={m.metaHomeDescription()} />

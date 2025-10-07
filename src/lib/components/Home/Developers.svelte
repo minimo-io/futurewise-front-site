@@ -5,6 +5,7 @@
 	import { m } from '$paraglide/messages';
 	import PillFlower from '../PillFlower.svelte';
 	import DashboardImages from '../DashboardImages.svelte';
+	import { AppConfig } from '$lib/configs';
 
 	// backticks preserve newlines and braces
 	const snippet = `// Get a user’s access token and profile data
@@ -31,15 +32,21 @@ const profile = await futurewise.getProfileAndToken({
 				{@html m.devText()}
 			</div>
 			<div class="mt-8 flex flex-row items-center md:mt-0">
-				<a href={localizeHref('/soon')} class="fw-button !my-1 mr-4">{m.documentation()}</a>
-				<button
+				<a
+					href={localizeHref(AppConfig.fw.docs)}
+					target="_blank"
+					rel="nofollow"
+					class="fw-button !my-1 mr-4">{m.documentation()}</a
+				>
+				<a
+					href={localizeHref('/login#signup')}
 					class="text-primary border-base-content !my-1 flex flex-row items-center font-sans text-sm hover:!opacity-50 md:text-base"
 				>
 					<!-- <div class="hidden md:block">
 						<KeySquare class="h-4" />
 					</div> -->
 					<div>{m.getYourAPIKey()}</div>
-				</button>
+				</a>
 			</div>
 		</div>
 

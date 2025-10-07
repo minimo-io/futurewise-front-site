@@ -1,3 +1,5 @@
+import type { Action } from 'svelte/action';
+
 // export function smoothScroll(node: HTMLElement) {
 // 	node.addEventListener('click', (event) => {
 // 		event.preventDefault();
@@ -17,12 +19,18 @@
 // 	};
 // }
 
-export function smoothScroll(node: HTMLElement, offset = 40) {
-	// Store the handler so we can remove it later
-	function onClick(event: MouseEvent) {
-		event.preventDefault();
+export const conditionalSmoothScroll: Action<HTMLElement, string> = (node, url) => {
+	if (url === '#know-more') {
+		return smoothScroll(node); // must return { destroy } or nothing
+	}
+};
 
-		const href = node.getAttribute('href');
+export function smoothScroll(node: HTMLElement | string, offset = 40) {
+	// Store the handler so we can remove it later
+	function onClick(event: MouseEvent | undefined) {
+		if (event) event.preventDefault();
+
+		const href = typeof node === 'string' ? node : node.getAttribute('href');
 		if (!href?.startsWith('#')) return;
 
 		const targetId = href.slice(1);
@@ -37,14 +45,30 @@ export function smoothScroll(node: HTMLElement, offset = 40) {
 			top: scrollToY,
 			behavior: 'smooth'
 		});
-	}
 
-	node.addEventListener('click', onClick);
+		// Listen for scroll end event and set hash again
+		let hasScrolled = false;
+		function onScrollEnd() {
+			if (!hasScrolled) {
+				hasScrolled = true;
+				// pushState(href || '', '');
+				history.pushState(null, '', href);
+			}
+		}
+
+		window.addEventListener('scrollend', onScrollEnd);
+		// setTimeout(() => (document.location.hash = href), 1000);
+	}
+	if (typeof node === 'string') {
+		onClick(undefined);
+	} else {
+		node.addEventListener('click', onClick);
+	}
 
 	return {
 		// Clean up listener correctly
 		destroy() {
-			node.removeEventListener('click', onClick);
+			if (typeof node !== 'string') node.removeEventListener('click', onClick);
 		}
 	};
 }

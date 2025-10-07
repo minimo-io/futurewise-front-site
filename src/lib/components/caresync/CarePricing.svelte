@@ -359,7 +359,7 @@
 									/>
 								</svg>
 								<span class="text-base-content font-sans text-sm md:text-base"
-									>Advanced batch processing</span
+									>Múltiplos usuários e acessos</span
 								>
 							</div>
 							<div class="flex items-start gap-3">

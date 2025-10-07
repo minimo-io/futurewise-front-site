@@ -1,6 +1,10 @@
 import type { PostAuthor } from '$types/blog.types';
 import type { MachineType } from '$types/caresync-machines.types';
 
+export function capitalizeFirstLetter(string) {
+	return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
 export function authorsComposeName(authors: PostAuthor[]): string {
 	const firstNames = authors.map((author) => author.fullName.trim().split(' ')[0]);
 	return firstNames.join(' & ');
