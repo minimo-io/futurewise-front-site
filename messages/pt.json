@@ -3,10 +3,15 @@
 	"exit": "Saír",
 	"login": "Entrar",
 	"continue": "Continuar",
+	"back": "Voltar",
+	"select": "Selecionar",
+
 	"loggingIn": "Entrando...",
 	"platform": "Plataforma",
 	"latestNews": "Últimas notícias",
 	"subscriveVia": "Inscrever-se via",
+	"contactSupport": "Entre em contato",
+
 	"searchPlaceholder": "Procurar ferramentas e comandos...",
 	"searchSimplePlaceholder": "Procurar...",
 	"refresh": "Atualizar",
@@ -97,6 +102,9 @@
 
 	"metaLoginTitle": "Entrar",
 	"metaLoginDescription": "Acesse a Futurewise—Seu próximo passo rumo ao futuro começa aqui.",
+
+	"metaErrorTitle": "Error",
+	"metaErrorDescription": "",
 
 	"metaLabTitle": "Lab",
 	"metaLabDescription": "Um espaço para prototipar, explorar e expandir os limites do que é possível com a tecnologia",
@@ -301,5 +309,24 @@
 	"allCourses": "Todos os cursos",
 	"allCoursesSlogan": "Desenvolva sua carreira em TI com especializações fundamentais e cursos curtos focados em habilidades específicas, ministrados por líderes da área.",
 	"allCoursesMostPopular": "Mais populares",
-	"allCoursesTopRated": "Melhor avaliados"
+	"allCoursesTopRated": "Melhor avaliados",
+
+	"error404Title": "Página não encontrada",
+	"error500Title": "A página que você procura não existe.",
+
+	"productCareSlogan": "Manutenção TI Preditiva + ITMS",
+	"productCareSloganSimple": "",
+	"productCareDetails": "Gestão de ativos TI + Marketplace <br /> Impulsionado por IA",
+	"productStoreSlogan": "Headless E-commerce com Superpoderes",
+	"productStoreSloganSimple": "E-commerce com Superpoderes",
+	"productStoreDetails": "Headless Front-End<br />UX moderno + Pagamentos BTC",
+	"productPaySlogan": "Pagamentos X-Border em Tempo Real",
+	"productPaySloganSimple": "Pagamentos X-Border BTC/USDT",
+	"productPayDetails": "Transparentes, Real-Time<br /> & Cross-Border",
+	"productAPISlogan": "Ferramentas para Desenvolvimento",
+	"productAPISloganSimple": "Ferramentas para Desenvolvimento",
+	"productAPIDetails": "APIs prontas para empresas<br /> Integre em poucas linhas de código",
+	"productNotesSlogan": "Notas locais, escriptadas",
+	"productNotesSloganSimple": "Notas locais, escriptadas no navegador",
+	"productNotesDetails": "Notas locais, escriptadas e sincronizáveis<br /> no navegador"
 }

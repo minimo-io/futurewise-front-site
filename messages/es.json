@@ -5,9 +5,12 @@
 	"continue": "Continuar",
 	"loggingIn": "Entrando...",
 	"platform": "Plataforma",
+	"back": "Volver",
+	"select": "Seleccionar",
 
 	"latestNews": "Últimas notícias",
 	"subscriveVia": "Suscribirse vía",
+	"contactSupport": "Entre en contacto",
 
 	"refresh": "Actualizar",
 	"searchPlaceholder": "Buscar herramientas y comandos...",
@@ -48,7 +51,7 @@
 	"construction": "construcción",
 	"constructionContent": "Estamos construyendo una plataforma unificada de <span class='text-base-content opacity-80'>Comercio Electrónico</span>, <span class='text-base-content opacity-80'>Pagos Transfronterizos</span> y <span class='text-base-content opacity-80'>Monitoreo de Activos de TI</span>. Contáctanos mientras finalizamos esta página.",
 
-	"heroContentHome": "Somos una <span class='text-base-content opacity-80'>Plataforma B2B de Productos Digitales</span> Impulsada por IA y un Laboratorio de Desarrollo enfocado en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos USDT/BTC Instantáneos y Mantenimiento Predictivo de TI</span>.",
+	"heroContentHome": "Somos una <span class='text-base-content opacity-80'>Plataforma B2B de Productos Digitales</span> Impulsada por IA y un Laboratorio de Desarrollo enfocado en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos BTC/USDT Instantáneos y Mantenimiento Predictivo de TI</span>.",
 
 	"heroContentHome1": "Somos una <span class='text-base-content opacity-80'>Plataforma de Productos Digitales</span> y un Laboratorio de Desarrollo enfocados en la Innovación en las áreas de <span class='text-base-content opacity-80'>E-Commerce, Pagos X-Border en Tiempo Real, IA y Máquinas (IoT)</span>.",
 
@@ -101,6 +104,9 @@
 
 	"metaLoginTitle": "Entrar",
 	"metaLoginDescription": "Accede a Futurewise: Tu próximo paso hacia el futuro comienza aquí.",
+
+	"metaErrorTitle": "Error",
+	"metaErrorDescription": "",
 
 	"metaLabTitle": "Lab",
 	"metaLabDescription": "Un espacio para prototipar, explorar y llevar al límite lo posible con la tecnología",
@@ -304,5 +310,24 @@
 	"allCourses": "Todos los cursos",
 	"allCoursesSlogan": "Desarrolla tu carrera en TI con especializaciones fundamentales y cursos cortos específicos de habilidades, impartidos por líderes en el campo.",
 	"allCoursesMostPopular": "Mas populares",
-	"allCoursesTopRated": "Mejor valorados"
+	"allCoursesTopRated": "Mejor valorados",
+
+	"error404Title": "Página no encontrada",
+	"error500Title": "La página que buscas no existe.",
+
+	"productCareSlogan": "Mantenimiento TI Predictivo + ITMS",
+	"productCareSloganSimple": "",
+	"productCareDetails": "Gestión de activos TI + Marketplace <br />Potenciados por IA",
+	"productStoreSlogan": "E-commerce Headless con Superpoderes",
+	"productStoreSloganSimple": "E-commerce con Superpoderes",
+	"productStoreDetails": "Headless Front-End <br />UX moderno + Servidores MCP",
+	"productPaySlogan": "Pagos Instantáneos en Tiempo Real",
+	"productPaySloganSimple": "Pagos BTC/USDT Instantáneas",
+	"productPayDetails": "Transparentes, en Tiempo Real<br /> y Cross-Border",
+	"productAPISlogan": "Soluciones para Desarrollo Ágil",
+	"productAPISloganSimple": "Herramientas para desarrollo",
+	"productAPIDetails": "APIs listas para empresas<br /> Integre en pocas líneas de código",
+	"productNotesSlogan": "Notas locales, encripatdas en el navegador",
+	"productNotesSloganSimple": "Notas locales y encriptadas",
+	"productNotesDetails": "Notas locales, encriptadas y sincronizables<br /> en el navegador"
 }

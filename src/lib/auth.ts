@@ -41,9 +41,6 @@ export async function verifyEmailLogin(email: string, password: string) {
 			.first();
 	});
 
-	console.log('USER');
-	console.log(user);
-
 	if (!user || !user.password_hash) {
 		console.error('NOT USER OR HASH');
 		return null;

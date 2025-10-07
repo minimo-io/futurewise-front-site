@@ -14,14 +14,15 @@
 		PenLine
 	} from '@lucide/svelte';
 	import { openSubmenu } from '$stores/DrawerState.state.svelte';
-	import { drawerData } from '$lib/data/drawer.data';
+	import { PRODUCTS } from '$lib/data/products.data';
 	import { localizeHref, getLocale } from '$paraglide/runtime';
 	import WhatsappButton from '../WhatsappButton.svelte';
 	import { getLocaleName } from '$utils';
-	import { m } from '$paraglide/messages';
+	import { m, product } from '$paraglide/messages';
 	import { AppConfig } from '$lib/configs';
+	import type { ProductData } from '$types/products.types';
 	const locale = $state(getLocale());
-	let drawerDataForLang = $state(drawerData[locale]);
+	const drawerProductsForLang = $state(PRODUCTS.filter((prod: ProductData) => prod.isMain));
 </script>
 
 <div
@@ -51,7 +52,7 @@
 	</h2>
 	<!-- Item with submenu -->
 	<!-- <h2 class="my-5 px-[30px] text-base font-extrabold uppercase">PRODUTOS</h2> -->
-	{#each drawerDataForLang as drawer, i}
+	{#each drawerProductsForLang as drawer, i}
 		<a
 			href={drawer.url}
 			class={[

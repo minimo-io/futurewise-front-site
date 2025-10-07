@@ -1,9 +1,8 @@
 import type { LayoutServerLoad } from './$types';
-// import { getAuthenticatedUser } from '$utils';
-import { getAuthenticatedUser } from '$utils/auth.utils';
+import { AuthService } from '$services';
 
 export const load: LayoutServerLoad = async ({ cookies }) => {
-	const user = await getAuthenticatedUser(cookies);
+	const user = await AuthService.getAuthenticatedUser(cookies);
 
 	return {
 		user

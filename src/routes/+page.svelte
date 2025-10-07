@@ -15,6 +15,7 @@
 	import { page } from '$app/state';
 	import { smoothScroll } from '$utils';
 	import { onMount } from 'svelte';
+	import CirclesDecorations from '$lib/components/decorations/CirclesDecorations.svelte';
 
 	onMount(async () => {
 		const pageHash = page.url.hash ?? false;
@@ -60,13 +61,7 @@
 	<ServiceOrders />
 </div> -->
 
-<div class="relative">
-	<div
-		class="absolute -right-[18%] bottom-[25%] z-0 hidden scale-80 opacity-30 md:-right-[5%] md:block"
-	>
-		<img src="/bgs/circles.svg" alt="circles" />
-	</div>
-</div>
+<CirclesDecorations />
 
 <!-- Cta -->
 <CtaContact />

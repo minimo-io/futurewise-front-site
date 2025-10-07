@@ -2,8 +2,12 @@
 	import MenuLeft from '$lib/components/Dashboard/MenuLeft.svelte';
 	import HeaderButtonsDashboard from '$lib/components/Header/HeaderButtonsDashboard.svelte';
 	import { dashboardLeftMenuState } from '$stores/DashboardLeftMenu.state.svelte';
+	import { productState } from '$stores/Product.state.svelte';
+	import type { Product } from '$types/products.types.js';
 
-	let { children } = $props();
+	let { children, data } = $props();
+	productState.active = data.selectedProduct as Product;
+	console.log('data', data);
 </script>
 
 <div class="mx-auto flex flex-row">
@@ -18,7 +22,9 @@
 				: 'md:h-25'} items-center justify-between border-b"
 		>
 			<!-- Dashboard title -->
-			<div class="text-primary pl-5 text-lg font-black uppercase">Dashboard</div>
+			<div class="text-primary pl-5 text-lg font-black uppercase">
+				{productState.active} DASHBOARD
+			</div>
 			<!-- Dashboard buttons -->
 			<nav class="relative z-20 flex items-center justify-between pr-10">
 				<HeaderButtonsDashboard />

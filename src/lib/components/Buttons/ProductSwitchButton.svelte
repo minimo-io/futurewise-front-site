@@ -11,7 +11,6 @@
 			return product.toLowerCase().replace(/^./, (char) => char.toUpperCase());
 		}
 	}
-	if (!productState.active) productState.active = Product.CARE;
 	let formattedActiveProduct = $derived(formatProductName(productState.active));
 
 	const products = Object.values(Product);
@@ -32,7 +31,7 @@
 		<button class="my-2 flex w-full justify-center hover:opacity-100">
 			<div class="flex flex-row items-center gap-1 hover:opacity-50">
 				<span class="text-primary font-pixel text-[20px] font-bold uppercase">
-					{formattedActiveProduct}
+					{formattedActiveProduct || m.select()}
 				</span>
 				<ChevronDown class="text-primary h-4 w-4" />
 			</div>

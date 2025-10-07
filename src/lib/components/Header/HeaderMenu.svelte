@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { Book, ChevronDown, FileClock, Headset, HeartPlus, PenLine, Zap } from '@lucide/svelte';
 	import { getLocale, localizeHref } from '$paraglide/runtime';
-	import { drawerData } from '$lib/data/drawer.data';
+	import { PRODUCTS } from '$lib/data/products.data';
 	import { m } from '$paraglide/messages';
 	import { AppConfig } from '$lib/configs';
+	import type { ProductData } from '$types/products.types';
 
 	const locale = $state(getLocale());
-	let drawerDataForLang = $state(drawerData[locale]);
+	let productsForLang = $state(PRODUCTS.filter((prod: ProductData) => prod.isMain));
 </script>
 
 <div class="fw-header-fs z-50 hidden items-center justify-center gap-10 md:flex">
@@ -23,16 +24,16 @@
 		<ul
 			class="menu dropdown-content bg-base-100 rounded-box z-1 mt-4 w-[450px] px-5 py-3 shadow-md"
 		>
-			{#each drawerDataForLang as drawer, i}
+			{#each productsForLang as drawer, i}
 				<li>
 					<a
 						href={localizeHref(drawer.url || '/')}
 						class={[
 							'flex justify-between py-3 text-left align-middle text-sm',
-							i + 1 == drawerDataForLang.length ? '' : 'border-b border-b-gray-700'
+							i + 1 == productsForLang.length ? '' : 'border-b border-b-gray-700'
 						]}
 					>
-						<!-- {i} - {drawerDataForLang.length} -->
+						<!-- {i} - {productsForLang.length} -->
 						<div class="flex justify-center self-center text-left align-middle">
 							{#if drawer.logo}
 								<img

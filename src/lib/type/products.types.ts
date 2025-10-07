@@ -1,14 +1,18 @@
 import { type Icon as IconType } from '@lucide/svelte';
 
+export type ProductsList = ProductData[];
+
 export enum Product {
 	CARE = 'CARE',
 	PAY = 'PAY',
 	STORE = 'STORE',
-	API = 'APIS'
+	APIS = 'APIS',
+	NOTES = 'NOTES'
 }
 
-export interface ProductDrawerData {
+export interface ProductData {
 	id: string;
+	isMain: boolean;
 	name: string;
 	slogan?: string;
 	sloganSimple?: string;

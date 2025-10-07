@@ -2,13 +2,17 @@
 <script lang="ts">
 	import ProductSingle from '$lib/components/Home/ProductSingle.svelte';
 	import { getLocale } from '$paraglide/runtime';
-	import { drawerData } from '$lib/data/drawer.data';
+	import { PRODUCTS } from '$lib/data/products.data';
 	import PillFlower from '../PillFlower.svelte';
 	import { m } from '$paraglide/messages';
 	import Hr from '../Hr.svelte';
+	import type { ProductData } from '$types/products.types';
 
 	const locale = $state(getLocale());
-	let drawerDataForLang = $state(drawerData[locale]);
+	let drawerDataForLang = $state(PRODUCTS);
+	let primaryProductsForLang = $derived.by(() => {
+		return drawerDataForLang.filter((prod: ProductData) => prod.isMain);
+	});
 </script>
 
 <!-- Products Slider Section -->
@@ -23,7 +27,7 @@
 		<div
 			class="relative -top-5 mx-auto mt-5 mb-1 flex flex-col items-center justify-center gap-0 md:top-0 md:-left-4 md:flex-row"
 		>
-			{#each drawerDataForLang as product, i (product.name)}
+			{#each primaryProductsForLang as product, i (product.name)}
 				{@const align = i === 0 ? 'start' : i === drawerDataForLang.length - 1 ? 'end' : 'center'}
 
 				<ProductSingle

@@ -5,9 +5,12 @@
 	"continue": "Continue",
 	"loggingIn": "Logging in...",
 	"platform": "The Platform",
+	"back": "Back",
+	"select": "Select",
 
 	"latestNews": "Latest news",
 	"subscriveVia": "Subscribe via",
+	"contactSupport": "Contact Support",
 
 	"refresh": "Refresh",
 	"searchPlaceholder": "Search for tools and commands...",
@@ -98,6 +101,9 @@
 
 	"metaLoginTitle": "Login",
 	"metaLoginDescription": "Access Futurewise—Your next move toward tomorrow.",
+
+	"metaErrorTitle": "Error",
+	"metaErrorDescription": "",
 
 	"metaLabTitle": "Lab",
 	"metaLabDescription": "A space to prototype, play, and push the edge of what's possible with technology",
@@ -301,5 +307,24 @@
 	"allCourses": "All Courses",
 	"allCoursesSlogan": "Grow your TI career with foundational specializations and skill-specific short courses taught by leaders in the field.",
 	"allCoursesMostPopular": "Most popular",
-	"allCoursesTopRated": "Top rated"
+	"allCoursesTopRated": "Top rated",
+
+	"error404Title": "Page not found",
+	"error500Title": "The page you're looking for doesn't exist.",
+
+	"productCareSlogan": "Predictive IT Maintenance + ITMS",
+	"productCareSloganSimple": "",
+	"productCareDetails": "IT Asset Management + Marketplace <br />AI-Powered",
+	"productStoreSlogan": "Headless E-commerce with Superpowers",
+	"productStoreSloganSimple": "E-commerce with Superpowers",
+	"productStoreDetails": "Headless Front-End<br />Modern UX + Bitcoin payments",
+	"productPaySlogan": "Real-time X-Border Payments",
+	"productPaySloganSimple": "X-Border BTC/USDT Payments",
+	"productPayDetails": "Transparent, Realtime<br /> & Cross-border",
+	"productAPISlogan": "Tools for Agile App Development",
+	"productAPISloganSimple": "Tools for Agile App Development",
+	"productAPIDetails": "Enterprise ready APIs<br /> Integrate in a few lines of code",
+	"productNotesSlogan": "Local, encrypted notes on the browser",
+	"productNotesSloganSimple": "Local, encrypted notes",
+	"productNotesDetails": "Local encrypted & syncronizable notes<br /> on the browser"
 }

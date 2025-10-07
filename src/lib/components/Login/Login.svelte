@@ -17,28 +17,6 @@
 	let showPassword = $state(false);
 	let password = $state('');
 
-	// Nostr login handler
-	// async function handleNostrLogin() {
-	// 	try {
-	// 		if (!window.nostr) {
-	// 			alert(
-	// 				'Nostr extension not found. Please install a Nostr browser extension like Alby, nos2x, or Flamingo.'
-	// 			);
-	// 			return;
-	// 		}
-
-	// 		// Get public key from Nostr extension
-	// 		const pubKey = await window.nostr.getPublicKey();
-	// 		console.log('Nostr public key:', pubKey);
-
-	// 		// TODO: Send pubKey to your backend for authentication
-	// 		// Example: await fetch('/api/auth/nostr', { method: 'POST', body: JSON.stringify({ pubKey }) });
-	// 	} catch (error) {
-	// 		console.error('Nostr login failed:', error);
-	// 		alert('Nostr login failed. Please try again.');
-	// 	}
-	// }
-
 	async function createUser() {}
 </script>
 
@@ -164,6 +142,17 @@
 							/></svg
 						>
 						Continuar com Nostr (NIP-07)
+					</button>
+					<!-- Google login -->
+					<button
+						onclick={() => {
+							createUser();
+							alert(`${m.soon()}`);
+						}}
+						type="button"
+						class="mb-3 flex w-full items-center justify-center gap-2 rounded-md bg-white py-2 font-medium text-black shadow-sm transition hover:shadow-md"
+					>
+						Continuar com Google
 					</button>
 
 					<!-- Register prompt -->
