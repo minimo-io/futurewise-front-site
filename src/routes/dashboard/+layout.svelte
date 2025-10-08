@@ -30,6 +30,8 @@
 				<HeaderButtonsDashboard />
 			</nav>
 		</div>
+
+		<!-- Actual content -->
 		<div class="text-base-200 flex min-h-dvh overflow-x-auto text-center">
 			{@render children()}
 		</div>

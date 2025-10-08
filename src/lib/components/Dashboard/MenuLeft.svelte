@@ -1,33 +1,16 @@
 <!-- src/lib/components/Dashboard/MenuLeft.svelte -->
 <script lang="ts">
-	import {
-		BookOpen,
-		ChevronLeft,
-		ChevronRight,
-		ClipboardMinus,
-		Coins,
-		Home,
-		Laptop,
-		LifeBuoy,
-		ReceiptText,
-		Recycle,
-		TriangleAlert,
-		UsersRound
-	} from '@lucide/svelte';
+	import { ChevronLeft, ChevronRight } from '@lucide/svelte';
 	import HeaderLogo from '../Header/HeaderLogo.svelte';
 	import ProductSwitchButton from '../Buttons/ProductSwitchButton.svelte';
-	import { localizeHref } from '$paraglide/runtime';
-	import { m } from '$paraglide/messages';
-	import { AppConfig } from '$lib/configs';
 	import {
 		toggleDashboardLeftMenuCollapse,
 		dashboardLeftMenuState
 	} from '$stores/DashboardLeftMenu.state.svelte';
 	import { productState } from '$stores/Product.state.svelte';
 	import { Product } from '$types/products.types';
-	import Menu from '../../../routes/dashboard/care/MenuCare.svelte';
-	import MenuCare from '../../../routes/dashboard/care/MenuCare.svelte';
-	import MenuNotes from '../../../routes/dashboard/notes/MenuNotes.svelte';
+	import MenuCare from '../../../routes/dashboard/care/components/MenuCare.svelte';
+	import MenuNotes from '../../../routes/dashboard/notes/components/MenuNotes.svelte';
 
 	// State to track if menu is collapsed
 	let isCollapsed = $derived(dashboardLeftMenuState.collapsed);

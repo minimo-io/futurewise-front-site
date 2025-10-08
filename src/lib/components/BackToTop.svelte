@@ -42,7 +42,7 @@
 {#if showButton}
 	<button
 		onclick={scrollToTop}
-		class="bg-primary hover:bg-primary-700 active:bg-primary-800 fixed right-(--fw-app-margin) bottom-8 z-50 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border-none text-white shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl active:translate-y-0 sm:bottom-4 sm:h-10 sm:w-10 md:right-8 md:bottom-8 md:h-12 md:w-12"
+		class="bg-primary hover:bg-primary-700 active:bg-primary-800 fixed right-(--fw-app-margin) bottom-18 z-50 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border-none text-white shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl active:translate-y-0 sm:bottom-4 sm:h-10 sm:w-10 md:right-8 md:bottom-22 md:h-12 md:w-12"
 		aria-label="Back to top"
 		title="Back to top"
 		in:fly={{ y: 100, duration: 300 }}

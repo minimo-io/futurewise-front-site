@@ -14,6 +14,7 @@
 	import BackToTop from '$lib/components/BackToTop.svelte';
 	import { navigating, page } from '$app/state';
 	import { loader } from '$stores/Loader.state.svelte';
+	import Tools from '$lib/components/Tools.svelte';
 
 	let { children } = $props();
 
@@ -107,7 +108,10 @@
 {/if}
 
 <!-- Back To Top -->
-<BackToTop />
+<div>
+	<BackToTop />
+	<Tools />
+</div>
 
 <style global>
 	/* Loader styles: a fixed top progress bar */

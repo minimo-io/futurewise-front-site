@@ -7,6 +7,7 @@
 	"platform": "Plataforma",
 	"back": "Volver",
 	"select": "Seleccionar",
+	"share": "Compartir",
 
 	"latestNews": "Últimas notícias",
 	"subscriveVia": "Suscribirse vía",
@@ -329,5 +330,7 @@
 	"productAPIDetails": "APIs listas para empresas<br /> Integre en pocas líneas de código",
 	"productNotesSlogan": "Notas locales, encripatdas en el navegador",
 	"productNotesSloganSimple": "Notas locales y encriptadas",
-	"productNotesDetails": "Notas locales, encriptadas y sincronizables<br /> en el navegador"
+	"productNotesDetails": "Notas locales, encriptadas y sincronizables<br /> en el navegador",
+
+	"addNote": "Nueva nota"
 }

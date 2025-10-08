@@ -7,6 +7,7 @@
 	"platform": "The Platform",
 	"back": "Back",
 	"select": "Select",
+	"share": "Share",
 
 	"latestNews": "Latest news",
 	"subscriveVia": "Subscribe via",
@@ -326,5 +327,7 @@
 	"productAPIDetails": "Enterprise ready APIs<br /> Integrate in a few lines of code",
 	"productNotesSlogan": "Local, encrypted notes on the browser",
 	"productNotesSloganSimple": "Local, encrypted notes",
-	"productNotesDetails": "Local encrypted & syncronizable notes<br /> on the browser"
+	"productNotesDetails": "Local encrypted & syncronizable notes<br /> on the browser",
+
+	"addNote": "New note"
 }

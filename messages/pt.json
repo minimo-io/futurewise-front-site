@@ -5,6 +5,7 @@
 	"continue": "Continuar",
 	"back": "Voltar",
 	"select": "Selecionar",
+	"share": "Compartilhar",
 
 	"loggingIn": "Entrando...",
 	"platform": "Plataforma",
@@ -328,5 +329,7 @@
 	"productAPIDetails": "APIs prontas para empresas<br /> Integre em poucas linhas de código",
 	"productNotesSlogan": "Notas locais, escriptadas",
 	"productNotesSloganSimple": "Notas locais, escriptadas no navegador",
-	"productNotesDetails": "Notas locais, escriptadas e sincronizáveis<br /> no navegador"
+	"productNotesDetails": "Notas locais, escriptadas e sincronizáveis<br /> no navegador",
+
+	"addNote": "Nova nota"
 }
