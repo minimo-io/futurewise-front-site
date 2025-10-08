@@ -3,6 +3,7 @@
 	import { m } from '$paraglide/messages';
 	import { localizeHref } from '$paraglide/runtime';
 	import { AppConfig } from '$lib/configs';
+	import DashboardButton from '$lib/components/Buttons/DashboardButton.svelte';
 
 	const { handleRefresh, isRefreshing, countdown } = $props<{
 		handleRefresh: () => unknown;
@@ -12,21 +13,18 @@
 </script>
 
 <div class="border-base-200 flex justify-start border-b">
-	<div class="flex items-center justify-end p-4">
-		<a
-			href={localizeHref(AppConfig.dashboards.care.actions.addDevice)}
-			class="btn btn-sm btn-secondary mr-2 tracking-wide"
-		>
+	<div class="flex items-center justify-end gap-2 p-4">
+		<!-- Add new device -->
+		<DashboardButton href={localizeHref(AppConfig.dashboards.care.actions.addDevice)}>
 			{m.addDevice()}
-		</a>
-		<button
-			class="btn btn-sm btn-primary tracking-wide"
-			onclick={handleRefresh}
-			disabled={isRefreshing}
-		>
+		</DashboardButton>
+
+		<!-- Refresh -->
+		<DashboardButton type="primary" onclick={handleRefresh} disabled={isRefreshing}>
 			<RefreshCw class="h-4 w-4 {isRefreshing ? 'animate-spin' : ''}" />
 			{m.refresh()}
-		</button>
+		</DashboardButton>
+
 		<div class="ml-4 text-sm text-gray-500">
 			{m.refreshingIn({ seconds: countdown })}
 		</div>

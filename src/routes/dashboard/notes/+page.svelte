@@ -16,8 +16,15 @@
 	<ActionsNotes />
 	<div class="relative flex h-full justify-start">
 		<button
-			onclick={() => {
-				alert(m.soon());
+			onclick={async () => {
+				const elem = document.getElementById('note');
+				if (elem?.requestFullscreen) {
+					await elem.requestFullscreen();
+					elem.focus();
+				} else {
+					// Show toast in the future
+					alert('Sorry, your browser does not support full-screen');
+				}
 			}}
 			class="absolute top-5 right-5 z-50"
 		>
@@ -26,7 +33,7 @@
 		<textarea
 			bind:this={noteTextarea}
 			bind:value={noteContent}
-			placeholder="So write your note here..."
+			placeholder={m.addNotePlaceholder()}
 			id="note"
 			name="note"
 			spellcheck="false"

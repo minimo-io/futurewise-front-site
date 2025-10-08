@@ -1,8 +1,6 @@
 <script>
-	import { goto } from '$app/navigation';
-	import { page } from '$app/state';
 	import { m } from '$paraglide/messages';
-	import { ChevronUp, ToolCase, ToolCaseIcon, Wrench } from '@lucide/svelte';
+	import { Wrench } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import { scale, fly } from 'svelte/transition';
 

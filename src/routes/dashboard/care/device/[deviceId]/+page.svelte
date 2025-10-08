@@ -5,6 +5,8 @@
 	import { formatEventTime } from '$utils';
 	import Toast from '$lib/components/Toast.svelte';
 	import { PencilLine } from '@lucide/svelte';
+	import { m } from '$paraglide/messages';
+	import DashboardButton from '$lib/components/Buttons/DashboardButton.svelte';
 
 	let selectedEvent = $state<any>(null);
 	let isEditing = $state(false);
@@ -64,9 +66,9 @@
 						<td>{event.event_type}</td>
 						<td>{event.technician_name}</td>
 						<td>
-							<button class="btn btn-sm btn-primary btn-outline" onclick={() => openModal(event)}>
-								Detalhes
-							</button>
+							<DashboardButton type="primary" onclick={() => openModal(event)}>
+								{m.details()}
+							</DashboardButton>
 						</td>
 					</tr>
 				{/each}
@@ -88,20 +90,27 @@
 	</form>
 	<div class="modal-box border-base-300 max-h-[90%] w-11/12 max-w-5xl border">
 		<div class="border-base-200 flex items-center justify-between border-b pb-3">
-			<h3 class="text-base-content text-left text-lg font-bold uppercase">Detalhes do Serviço</h3>
+			<h3 class="text-base-content text-left text-lg font-bold uppercase">{m.serviceDetails()}</h3>
 			{#if !isEditing}
-				<button class="btn btn-sm btn-secondary btn-outline" onclick={startEditing}>
+				<DashboardButton onclick={startEditing} type="gray">
 					<PencilLine class="mr-1 h-4 w-4" />
-					Edit
-				</button>
+					{m.edit()}
+				</DashboardButton>
 			{:else}
 				<div class="flex items-center gap-2">
-					<button type="button" class="btn btn-sm btn-ghost" onclick={cancelEditing}>
-						Cancel
-					</button>
-					<button type="submit" form="edit-service-form" class="btn btn-sm btn-primary">
-						Save Changes
-					</button>
+					<!-- Cancel -->
+					<DashboardButton onclick={cancelEditing} type="gray">
+						{m.cancel()}
+					</DashboardButton>
+
+					<!-- Save Changes -->
+					<DashboardButton type="primary" isSubmit={true} submitForm={'edit-service-form'}>
+						{m.saveChanges()}
+					</DashboardButton>
+
+					<!-- <button type="submit" form="edit-service-form" class="btn btn-sm btn-primary">
+						{m.saveChanges()}
+					</button> -->
 				</div>
 			{/if}
 		</div>
@@ -151,6 +160,6 @@
 	</div>
 
 	<form method="dialog">
-		<button>close</button>
+		<button>{m.close()}</button>
 	</form>
 </dialog>

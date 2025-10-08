@@ -5,6 +5,8 @@
 	import Toast from '$lib/components/Toast.svelte';
 	import type { ToastType } from '$lib/type/toast.types';
 	import { AppConfig } from '$lib';
+	import DashboardButton from '$lib/components/Buttons/DashboardButton.svelte';
+	import { m } from '$paraglide/messages';
 
 	console.log('Client-side script loaded.');
 
@@ -105,14 +107,15 @@
 		</div>
 
 		<div class="flex justify-between gap-4">
-			<button type="submit" class="btn btn-primary flex-1">Add Service</button>
-			<button
-				type="button"
-				class="btn btn-ghost"
+			<DashboardButton type="primary" class="flex-1" isSubmit={true}>
+				{m.addService()}
+			</DashboardButton>
+			<DashboardButton
+				type="gray"
 				onclick={() => goto(`${AppConfig.dashboards.care.device}${data.deviceId}`)}
 			>
-				Cancel
-			</button>
+				{m.cancel()}
+			</DashboardButton>
 		</div>
 	</form>
 </div>

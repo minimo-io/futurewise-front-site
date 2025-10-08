@@ -8,10 +8,19 @@
 	"back": "Volver",
 	"select": "Seleccionar",
 	"share": "Compartir",
+	"encrypt": "Encriptar",
+	"delete": "Eliminar",
+	"import": "Importar",
+	"export": "Exportar",
+	"sync": "Sincronizar",
+	"open": "Abrir",
+	"edit": "Editar",
+	"close": "Cerrar",
 
 	"latestNews": "Últimas notícias",
 	"subscriveVia": "Suscribirse vía",
 	"contactSupport": "Entre en contacto",
+	"saveChanges": "Guardar cambios",
 
 	"refresh": "Actualizar",
 	"searchPlaceholder": "Buscar herramientas y comandos...",
@@ -250,6 +259,7 @@
 	"today": "Hoy",
 	"yesterday": "Ayer",
 	"days_ago": "Hace {count} días",
+	"serviceDetails": "Detalles del servicio",
 
 	"details": "Detalles",
 	"configurations": "Configuraciones",
@@ -332,5 +342,8 @@
 	"productNotesSloganSimple": "Notas locales y encriptadas",
 	"productNotesDetails": "Notas locales, encriptadas y sincronizables<br /> en el navegador",
 
-	"addNote": "Nueva nota"
+	"addNote": "Nueva nota",
+	"addNotePlaceholder": "Entonces, escribe tu nota aquí...",
+
+	"notSynced": "No sincronizada"
 }

@@ -9,6 +9,7 @@
 	import { AppConfig } from '$lib/configs';
 	import { localizeHref } from '$paraglide/runtime';
 	import { machineTypeCode } from '$utils';
+	import DashboardButton from '$lib/components/Buttons/DashboardButton.svelte';
 
 	let machines: Machine[] = $state([]);
 	let isLoading = $state(true);
@@ -283,7 +284,11 @@
 								{machine.model}
 							</td>
 							<th>
-								<a href={deviceUrl} class="btn btn-sm btn-primary">Abrir</a>
+								<DashboardButton type="primary" href={deviceUrl}>
+									{m.open()}
+								</DashboardButton>
+
+								<!-- <a href={deviceUrl} class="btn btn-sm btn-primary">Abrir</a> -->
 							</th>
 						</tr>
 					{/each}
