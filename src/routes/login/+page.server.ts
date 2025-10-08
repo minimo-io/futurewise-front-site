@@ -1,12 +1,13 @@
 // src/routes/login/+page.server.ts
 import type { Actions, PageServerLoad } from './$types';
 import { fail, redirect } from '@sveltejs/kit';
-import { verifyEmailLogin, createSession } from '$lib/auth';
 import { localizeHref } from '$paraglide/runtime';
+import { AuthService } from '$services';
 // import bcrypt from 'bcrypt';
 
 export const load: PageServerLoad = async ({ cookies }) => {
 	// If user is already logged in, redirect to dashboard
+	// away from this login page
 	const sessionToken = cookies.get('session');
 	if (sessionToken) {
 		// You could verify the session here
@@ -31,13 +32,13 @@ export const actions = {
 			return fail(400, { email, missing: 'password' });
 		}
 
-		const user = await verifyEmailLogin(email, password);
+		const user = await AuthService.verifyEmailLogin(email, password);
 
 		if (!user) {
 			return fail(400, { email, incorrect: true });
 		}
 
-		const sessionToken = await createSession(user.id);
+		const sessionToken = await AuthService.createUserSession(user.id);
 
 		cookies.set('session', sessionToken, {
 			path: '/',

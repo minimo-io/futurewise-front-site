@@ -12,6 +12,7 @@
 	} from '@lucide/svelte';
 	import { m } from '$paraglide/messages';
 	import DashboardButton from '$lib/components/Buttons/DashboardButton.svelte';
+	import { FwToast } from '$stores/Toast.state.svelte';
 </script>
 
 <div class="border-base-200 flex justify-start border-b">
@@ -20,7 +21,7 @@
 		<DashboardButton
 			type="primary"
 			onclick={() => {
-				alert('soon');
+				FwToast.launch('What a fucking beautiful dat!', 'success', 'bottom');
 			}}
 		>
 			<Share class="h-3 w-3" />
@@ -33,11 +34,6 @@
 				alert('soon');
 			}}
 		>
-			<Plus class="h-3 w-3" />
-			{m.addNote()}
-		</DashboardButton>
-
-		<DashboardButton href="#">
 			<Plus class="h-3 w-3" />
 			{m.addNote()}
 		</DashboardButton>

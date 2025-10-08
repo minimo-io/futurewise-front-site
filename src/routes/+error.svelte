@@ -34,7 +34,10 @@
 	<div class="mx-(--fw-app-margin) flex h-[calc(80vh-90px)] flex-1 items-center justify-center">
 		<div class="relative -top-8 w-[400px]">
 			<h1 class="text-base-content font-sans text-7xl font-black md:text-8xl">{page.status}</h1>
-			<h2 class="mb-4 text-2xl font-semibold text-gray-300 md:text-3xl">{errorTitle}</h2>
+			<h2 class="mb-4 text-2xl font-semibold text-gray-300 md:text-3xl">
+				{page.error?.message || errorTitle}
+			</h2>
+
 			<!-- Buttons -->
 			<div class="mt-5 flex flex-wrap justify-center gap-4">
 				<a

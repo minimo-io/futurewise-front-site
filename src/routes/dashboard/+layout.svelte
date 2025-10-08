@@ -7,12 +7,13 @@
 
 	let { children, data } = $props();
 	productState.active = data.selectedProduct as Product;
-	console.log('data', data);
+
+	const productsPermissionList: string[] = data.permissionList;
 </script>
 
 <div class="mx-auto flex flex-row">
 	<!-- Left menu -->
-	<MenuLeft />
+	<MenuLeft products={productsPermissionList} />
 
 	<!-- Dashboard content -->
 	<div class="flex min-h-dvh flex-1 flex-col overflow-x-auto">

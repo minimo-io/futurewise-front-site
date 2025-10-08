@@ -15,6 +15,8 @@
 	import { navigating, page } from '$app/state';
 	import { loader } from '$stores/Loader.state.svelte';
 	import Tools from '$lib/components/Tools.svelte';
+	import Toast from '$lib/components/Toast.svelte';
+	import { FwToastState } from '$stores/Toast.state.svelte';
 
 	let { children } = $props();
 
@@ -101,6 +103,14 @@
 
 <!-- Used as a mobile menu -->
 <Drawer />
+
+<!-- Global toast -->
+<Toast
+	bind:show={FwToastState.active}
+	message={FwToastState.message}
+	type={FwToastState.type}
+	position={FwToastState.position}
+/>
 
 <!-- Footer -->
 {#if !deLocalizeHref(page.route.id || '').startsWith('/dashboard')}

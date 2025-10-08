@@ -3,7 +3,7 @@ import { redirect, type Handle } from '@sveltejs/kit';
 import { paraglideMiddleware } from './paraglide/server';
 import { sequence } from '@sveltejs/kit/hooks';
 import { deLocalizeUrl, localizeHref } from '$paraglide/runtime';
-import { isProtectedRoute } from '$lib/auth';
+import { AuthService } from '$services';
 // import { deLocalizeUrl, localizeHref } from '$paraglide/runtime';
 // import { redirect } from '@sveltejs/kit';
 // import { getLocale } from '$paraglide/runtime';
@@ -31,7 +31,7 @@ const authHandle: Handle = async ({ event, resolve }) => {
 	// Check if the route requires authentication and redirect if needed
 	const pathDelocalized = deLocalizeUrl(event.url.href);
 
-	if (isProtectedRoute(pathDelocalized.pathname) && !event.locals.session) {
+	if (AuthService.isProtectedRoute(pathDelocalized.pathname) && !event.locals.session) {
 		// 	// Redirect to login page with return URL as a query parameter
 		throw redirect(
 			303,

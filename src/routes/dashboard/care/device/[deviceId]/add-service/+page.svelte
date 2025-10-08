@@ -2,11 +2,10 @@
 	import type { PageProps } from './$types';
 	import { enhance } from '$app/forms';
 	import { goto } from '$app/navigation';
-	import Toast from '$lib/components/Toast.svelte';
-	import type { ToastType } from '$lib/type/toast.types';
 	import { AppConfig } from '$lib';
 	import DashboardButton from '$lib/components/Buttons/DashboardButton.svelte';
 	import { m } from '$paraglide/messages';
+	import { FwToast } from '$stores/Toast.state.svelte';
 
 	console.log('Client-side script loaded.');
 
@@ -20,22 +19,15 @@
 	const minutes = now.getMinutes().toString().padStart(2, '0');
 	let eventTime = $state(`${year}-${month}-${day}T${hours}:${minutes}`);
 
-	let showToast = $state(false);
-	let toastMessage = $state('');
-	let toastType: ToastType = $state('success');
-
 	$effect(() => {
 		if (form?.success) {
-			toastMessage = 'Service added successfully!';
-			toastType = 'success';
-			showToast = true;
+			FwToast.launch('Service added successfully!', 'success');
+
 			setTimeout(() => {
 				goto(`${AppConfig.dashboards.care.device}${data.deviceId}`);
-			}, 1000); // Redirect after 1 second
+			}, 1);
 		} else if (form?.error) {
-			toastMessage = form.error;
-			toastType = 'error';
-			showToast = true;
+			FwToast.launch(form.error, 'error');
 		}
 	});
 </script>
@@ -119,5 +111,3 @@
 		</div>
 	</form>
 </div>
-
-<Toast message={toastMessage} type={toastType} bind:show={showToast} />

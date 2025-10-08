@@ -15,6 +15,8 @@
 	// State to track if menu is collapsed
 	let isCollapsed = $derived(dashboardLeftMenuState.collapsed);
 
+	let { products }: { products: string[] } = $props();
+
 	function toggleMenu() {
 		toggleDashboardLeftMenuCollapse();
 	}
@@ -44,7 +46,7 @@
 			{/if}
 		</button>
 		<div class="{isCollapsed ? 'hidden' : 'hidden md:block'} ">
-			<ProductSwitchButton />
+			<ProductSwitchButton productsWithPermission={products} />
 		</div>
 	</div>
 
@@ -58,17 +60,7 @@
 	</ul>
 </div>
 
+<!-- 
 <style lang="postcss">
 	@reference "tailwindcss";
-
-	ul > li > a {
-		@apply text-[16px] font-bold;
-	}
-	.menu ul > li > a {
-		@apply py-1 text-sm font-normal;
-		@apply leading-5;
-	}
-	ul.menu > li > a.active {
-		/* @apply font-bold; */
-	}
-</style>
+</style> -->

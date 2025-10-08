@@ -6,10 +6,13 @@ export const AppConfig = {
 	care: {
 		deviceRefreshIntervalSeconds: 30
 	},
+	toast: {
+		duration: 2500
+	},
 	fw: {
 		founded: '2025-05-02',
 		socials: {
-			email: 'nicolas@futurewise.lat',
+			// Used for error pages
 			support: 'nicolas@futurwise.lat',
 			github: 'https://github.com/futurewise-lat',
 			huggingface: 'https://huggingface.co/futurewise',
@@ -30,6 +33,9 @@ export const AppConfig = {
 				addAgent: '/dashboard/care/add-agent',
 				addDevice: '/dashboard/care/add-device'
 			}
+		},
+		notes: {
+			base: '/dashboard/notes'
 		}
 	}
 };

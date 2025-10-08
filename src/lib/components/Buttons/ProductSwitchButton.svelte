@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { m } from '$paraglide/messages';
-	import { ChevronDown, ChevronLeft } from '@lucide/svelte';
+	import { ChevronDown } from '@lucide/svelte';
 	import { productState } from '$stores/Product.state.svelte';
 	import { Product } from '$lib/type/products.types';
 	import { goto } from '$app/navigation';
@@ -12,8 +12,9 @@
 		}
 	}
 	let formattedActiveProduct = $derived(formatProductName(productState.active));
-
-	const products = Object.values(Product);
+	let { productsWithPermission }: { productsWithPermission: string[] } = $props();
+	// All products on the system
+	const systemProducts = Object.values(Product);
 
 	function setProduct(product: Product) {
 		productState.active = product;
@@ -41,8 +42,8 @@
 			role="menu"
 			class="dropdown-content menu bg-base-100 rounded-box z-[1] mt-2 w-36 p-2 shadow"
 		>
-			{#each products as product}
-				{#if product !== productState.active}
+			{#each systemProducts as product}
+				{#if product !== productState.active && productsWithPermission.includes(product)}
 					<li role="presentation">
 						<button
 							role="menuitem"

@@ -3,18 +3,15 @@
 	import { enhance } from '$app/forms';
 	import { invalidateAll } from '$app/navigation';
 	import { formatEventTime } from '$utils';
-	import Toast from '$lib/components/Toast.svelte';
 	import { PencilLine } from '@lucide/svelte';
 	import { m } from '$paraglide/messages';
 	import DashboardButton from '$lib/components/Buttons/DashboardButton.svelte';
+	import { FwToast } from '$stores/Toast.state.svelte';
 
 	let selectedEvent = $state<any>(null);
 	let isEditing = $state(false);
 	let editingDescription = $state('');
 	let modal = $state<HTMLDialogElement>();
-	let showToast = $state(false);
-	let toastMessage = $state('');
-	let toastType: 'success' | 'error' = $state('success');
 
 	let { data } = $props();
 
@@ -35,18 +32,8 @@
 		isEditing = false;
 		editingDescription = '';
 	}
-
-	function triggerToast(message: string, type: 'success' | 'error') {
-		toastMessage = message;
-		toastType = type;
-		showToast = true;
-		setTimeout(() => {
-			showToast = false;
-		}, 3000);
-	}
 </script>
 
-<Toast bind:show={showToast} message={toastMessage} type={toastType} />
 <Actions countdown={10} handleRefresh={() => {}} isRefreshing={false} />
 <div class="overflow-x-auto">
 	<table class="table w-full">
@@ -137,10 +124,10 @@
 						if (result.type === 'success') {
 							isEditing = false;
 							modal?.close();
-							triggerToast('Service history updated successfully!', 'success');
+							FwToast.launch('Service history updated successfully!', 'success', 'top', 2500);
 							invalidateAll();
 						} else if (result.type === 'error') {
-							triggerToast('Failed to update service history.', 'error');
+							FwToast.launch('Failed to update service history.', 'error', 'top', 2500);
 						}
 					};
 				}}
