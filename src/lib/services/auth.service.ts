@@ -47,7 +47,7 @@ export const AuthService = {
 			);
 
 			userPermissions = dbPermissions?.permissions;
-			console.log('USER_PERMISSIONS_FROM_DB', userPermissions);
+			// console.log('USER_PERMISSIONS_FROM_DB', userPermissions);
 		}
 
 		return userPermissions;

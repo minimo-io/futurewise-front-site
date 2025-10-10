@@ -1,3 +1,4 @@
+<!-- src/routes/dashboard/notes/components/ActionsNotes.svelte -->
 <script lang="ts">
 	import {
 		ChevronDown,
@@ -13,6 +14,23 @@
 	import { m } from '$paraglide/messages';
 	import DashboardButton from '$lib/components/Buttons/DashboardButton.svelte';
 	import { FwToast } from '$stores/Toast.state.svelte';
+	import { localizeHref } from '$paraglide/runtime';
+	import { goto } from '$app/navigation';
+	import { NotesService } from '$services/notes.service';
+	import { page } from '$app/state';
+	import type { Note } from '$types/notes.types';
+
+	let noteUuid = $derived(page.params.noteUuid!);
+	let note = $derived(NotesService.get(noteUuid));
+
+	$effect(() => {
+		note = NotesService.get(noteUuid);
+	});
+
+	// $effect(() => {
+	// 	const newUuid = page.params.noteUuid;
+
+	// });
 </script>
 
 <div class="border-base-200 flex justify-start border-b">
@@ -31,11 +49,26 @@
 		<!-- New note -->
 		<DashboardButton
 			onclick={() => {
-				alert('soon');
+				goto(localizeHref('/dashboard/notes'));
 			}}
 		>
 			<Plus class="h-3 w-3" />
 			{m.addNote()}
+		</DashboardButton>
+
+		<!-- Delete -->
+
+		<DashboardButton
+			onclick={() => {
+				if (confirm('Are you sure you want to delete this note?')) {
+					if (note?.id) NotesService.delete(note!.id);
+					FwToast.launch('Note deleted', 'success', 'bottom');
+					goto(localizeHref('/dashboard/notes'));
+				}
+			}}
+		>
+			<Delete class="h-3 w-3" />
+			{m.delete()}
 		</DashboardButton>
 
 		<!-- Encrypt -->
@@ -46,16 +79,6 @@
 		>
 			<Code class="h-3 w-3" />
 			{m.encrypt()}
-		</DashboardButton>
-
-		<!-- Delete -->
-		<DashboardButton
-			onclick={() => {
-				alert('soon');
-			}}
-		>
-			<Delete class="h-3 w-3" />
-			{m.delete()}
 		</DashboardButton>
 
 		<button
