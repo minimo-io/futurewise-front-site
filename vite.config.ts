@@ -32,6 +32,16 @@ export default defineConfig({
 						['es', '/es/blog/:id']
 					]
 				},
+
+				{
+					pattern: '/dashboard/notes/:id',
+					localized: [
+						['pt', '/dashboard/notes/:id'],
+						['es', '/es/dashboard/notes/:id'],
+						['en', '/en/dashboard/notes/:id']
+					]
+				},
+
 				{
 					pattern: '/blog',
 					localized: [
@@ -105,6 +115,15 @@ export default defineConfig({
 						['pt', '/dashboard/apis'],
 						['es', '/es/dashboard/apis'],
 						['en', '/en/dashboard/apis']
+					]
+				},
+
+				{
+					pattern: '/dashboard/notes',
+					localized: [
+						['pt', '/dashboard/notes'],
+						['es', '/es/dashboard/notes'],
+						['en', '/en/dashboard/notes']
 					]
 				},
 

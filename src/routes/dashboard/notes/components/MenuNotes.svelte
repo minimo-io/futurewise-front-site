@@ -83,7 +83,7 @@
 			{#each filteredNotes as note (note.id)}
 				<li class="group relative mb-1">
 					<button
-						onclick={() => goto(`/dashboard/notes/${note.id}`)}
+						onclick={() => goto(localizeHref(`/dashboard/notes/${note.id}`))}
 						class="hover:bg-base-200 flex w-full flex-col items-start gap-0 rounded px-3 py-2 pr-8 text-left transition-colors {currentNoteId ===
 						note.id
 							? 'bg-primary/20 text-primary-content'

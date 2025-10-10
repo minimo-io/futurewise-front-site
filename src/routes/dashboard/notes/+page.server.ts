@@ -7,6 +7,7 @@ export const load: PageServerLoad = () => {
 	const newUuIdV4 = uuidv4();
 	// create new note
 	if (newUuIdV4) {
+		// console.log('LOCALE', getLocale());
 		redirect(302, localizeHref(`/dashboard/notes/${newUuIdV4}`));
 	}
 

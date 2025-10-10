@@ -3,6 +3,7 @@ import { error, redirect } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
 import { Product } from '$types/products.types';
 import { AuthService } from '$services';
+import { localizeHref } from '$paraglide/runtime';
 
 export const load: LayoutServerLoad = async (params) => {
 	const { route } = params;
@@ -21,7 +22,7 @@ export const load: LayoutServerLoad = async (params) => {
 			error(403, 'No product/dashboard on user permission list.');
 		}
 
-		redirect(302, `/dashboard/${String(firstProductWithPermission).toLowerCase()}`);
+		redirect(302, localizeHref(`/dashboard/${String(firstProductWithPermission).toLowerCase()}`));
 	}
 
 	// STEP 2: Product selected
