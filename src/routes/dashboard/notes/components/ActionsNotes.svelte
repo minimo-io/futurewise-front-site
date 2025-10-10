@@ -19,6 +19,8 @@
 	import { NotesService } from '$services/notes.service';
 	import { page } from '$app/state';
 	import type { Note } from '$types/notes.types';
+	import { browser } from '$app/environment';
+	import { simpleShare } from '$utils';
 
 	let noteUuid = $derived(page.params.noteUuid!);
 	let note = $derived(NotesService.get(noteUuid));
@@ -26,11 +28,6 @@
 	$effect(() => {
 		note = NotesService.get(noteUuid);
 	});
-
-	// $effect(() => {
-	// 	const newUuid = page.params.noteUuid;
-
-	// });
 </script>
 
 <div class="border-base-200 flex justify-start border-b">
@@ -39,7 +36,11 @@
 		<DashboardButton
 			type="primary"
 			onclick={() => {
-				FwToast.launch('What a fucking beautiful dat!', 'success', 'bottom');
+				simpleShare({
+					url: page.url.href,
+					title: `${m.note()}: ${note?.title}`,
+					text: ''
+				});
 			}}
 		>
 			<Share class="h-3 w-3" />

@@ -6,6 +6,7 @@ export * from './redirect.utils';
 export * from './smoothScroll.utils';
 export * from './string.utils';
 export * from './smoothScroll.utils';
+export * from './share.utils';
 
 export function getLocaleName(uiLocale: string) {
 	// create a DisplayNames instance for language‐type codes
