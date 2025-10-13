@@ -1,5 +1,6 @@
 import { postgreService } from '$databases';
 import { localizeHref } from '$paraglide/runtime';
+import { AuthService } from '$services';
 import { redirect, type Actions, type RequestEvent } from '@sveltejs/kit';
 
 // Global logout action for dashboard
@@ -17,8 +18,8 @@ export const logoutAction = async ({ cookies }: RequestEvent) => {
 			console.error('Error removing session from database:', error);
 		}
 	}
-
-	cookies.delete('session', { path: '/' });
+	AuthService.userClearState(cookies);
+	// cookies.delete('session', { path: '/' });
 	redirect(303, localizeHref('/login'));
 };
 

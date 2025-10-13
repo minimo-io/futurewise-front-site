@@ -49,7 +49,7 @@
 
 <!-- Notes -->
 <!-- Search input -->
-<div class="relative mb-2">
+<div class="relative mb-2 w-full">
 	<Search
 		class="text-base-content absolute top-1/2 left-3 z-50 h-3 w-3 -translate-y-1/2 opacity-50 focus:outline-0"
 	/>

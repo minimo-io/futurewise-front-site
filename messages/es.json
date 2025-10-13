@@ -9,6 +9,7 @@
 	"select": "Seleccionar",
 	"share": "Compartir",
 	"encrypt": "Encriptar",
+	"copyToClipboard": "Copiar al portapapeles",
 	"delete": "Eliminar",
 	"import": "Importar",
 	"export": "Exportar",

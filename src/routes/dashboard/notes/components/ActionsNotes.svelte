@@ -3,6 +3,7 @@
 	import {
 		ChevronDown,
 		Circle,
+		Clipboard,
 		Code,
 		Delete,
 		Loader,
@@ -20,7 +21,7 @@
 	import { page } from '$app/state';
 	import type { Note } from '$types/notes.types';
 	import { browser } from '$app/environment';
-	import { simpleShare } from '$utils';
+	import { FwShare } from '$utils';
 
 	let noteUuid = $derived(page.params.noteUuid!);
 	let note = $derived(NotesService.get(noteUuid));
@@ -35,16 +36,29 @@
 		<!-- Share -->
 		<DashboardButton
 			type="primary"
-			onclick={() => {
-				simpleShare({
-					url: page.url.href,
-					title: `${m.note()}: ${note?.title}`,
-					text: ''
-				});
+			onclick={async () => {
+				if (FwShare.hasShareAPI) {
+					FwShare.share({
+						url: page.url.href,
+						title: `${m.note()}: ${note?.title}`,
+						text: ''
+					});
+				} else {
+					try {
+						await FwShare.copyToClipboard(page.url.href);
+						FwToast.launch('Note url copied to clipboard', 'success', 'bottom', 4000);
+					} catch (error) {
+						FwToast.launch('Error copying note to clipboard', 'error', 'bottom');
+					}
+				}
 			}}
 		>
 			<Share class="h-3 w-3" />
 			{m.share()}
+			<!-- {#if FwShare.hasShareAPI}{:else}
+				<Clipboard class="h-3 w-3" />
+				{m.copyToClipboard()}
+			{/if} -->
 		</DashboardButton>
 
 		<!-- New note -->
@@ -82,12 +96,12 @@
 			{m.encrypt()}
 		</DashboardButton>
 
-		<button
+		<!-- <button
 			class="bg-primary/10 hover:bg-primary/20 border-primary/30 text-primary flex items-center gap-2 rounded-lg border px-5 py-2 text-xs transition-all duration-300"
 		>
 			{`${m.import()}/${m.export()}`}
 			<ChevronDown class="mx-0 h-3 w-[10px] px-0" />
-		</button>
+		</button> -->
 
 		<!-- Sync -->
 		<DashboardButton

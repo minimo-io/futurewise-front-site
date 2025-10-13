@@ -10,24 +10,24 @@ import { AuthService } from '$services';
 
 // Auth middleware
 const authHandle: Handle = async ({ event, resolve }) => {
+	const userState = await AuthService.userGetState(event.cookies);
+
 	// Get auth token from cookies
-	const authToken = event.cookies.get('session');
+	// const authToken = event.cookies.get('session');
+	const authToken = userState.session;
 
 	// // Make it available to the rest of the application
 	if (authToken) {
 		event.locals.session = authToken;
-
-		// 	try {
-		// 		const userStr = event.cookies.get('auth_user');
-		// 		if (userStr) {
-		// 			event.locals.user = JSON.parse(userStr);
-		// 		}
-		// 	} catch (e) {
-		// 		console.error(`Failed to parse user data: ${e}`);
-		// 	}
-		// }
+		try {
+			if (userState.user) {
+				event.locals.user = userState.user;
+			}
+		} catch (e) {
+			console.error(`Failed to parse user data: ${e}`);
+		}
 	}
-
+	// console.log('USER_STATE_FROM_HOOKS', userState);
 	// Check if the route requires authentication and redirect if needed
 	const pathDelocalized = deLocalizeUrl(event.url.href);
 

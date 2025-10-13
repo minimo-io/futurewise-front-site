@@ -2,9 +2,10 @@
 import { browser } from '$app/environment';
 import { writable, get } from 'svelte/store';
 import type { Note } from '$types/notes.types';
+import type { User } from './auth.service';
 
-function createNotesService() {
-	const STORE_KEY = 'fw-notes';
+export function createNotesService(user?: User) {
+	const STORE_KEY = `fw-notes-${user?.id || '0'}`;
 	const MAX_TITLE_LENGTH = 18;
 	const notesStore = writable<Note[]>([]);
 

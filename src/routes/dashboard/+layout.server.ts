@@ -46,9 +46,13 @@ export const load: LayoutServerLoad = async (params) => {
 		// like payment due
 	}
 
+	// return user data
+	const userData = params.locals.user;
+
 	// Check for user permissions for the given product
 	return {
 		selectedProduct,
-		permissionList
+		permissionList,
+		userData
 	};
 };

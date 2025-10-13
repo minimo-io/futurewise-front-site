@@ -8,6 +8,7 @@
 	"back": "Back",
 	"select": "Select",
 	"share": "Share",
+	"copyToClipboard": "Copy to clipboard",
 	"encrypt": "Encrypt",
 	"delete": "Delete",
 	"import": "Import",

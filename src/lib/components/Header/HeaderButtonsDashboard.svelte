@@ -7,7 +7,9 @@
 	import NotificationsButton from '../Buttons/NotificationsButton.svelte';
 	import { getLocale } from '$paraglide/runtime';
 	import UserButton from '../Buttons/UserButton.svelte';
+	import { page } from '$app/state';
 
+	let user = $state(page.data.user);
 	let locale = $state(getLocale());
 </script>
 
@@ -15,7 +17,7 @@
 	<div class="flex items-center gap-[10px] md:gap-4">
 		<LanguageButton />
 		<NotificationsButton />
-		<UserButton />
+		<UserButton {user} />
 		<!-- <ChatLlmButton /> -->
 		<HelpButton />
 

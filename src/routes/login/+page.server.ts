@@ -38,15 +38,11 @@ export const actions = {
 			return fail(400, { email, incorrect: true });
 		}
 
+		// Creates the user session in the database
 		const sessionToken = await AuthService.createUserSession(user.id);
 
-		cookies.set('session', sessionToken, {
-			path: '/',
-			httpOnly: true,
-			secure: true,
-			sameSite: 'strict',
-			maxAge: 60 * 60 * 24 * 7 // 7 days
-		});
+		// Actually save the cookies for user: session and user data
+		await AuthService.userSetState(cookies, sessionToken, user);
 
 		redirect(303, localizeHref('/dashboard'));
 	}
