@@ -18,6 +18,7 @@
 	"edit": "Editar",
 	"close": "Cerrar",
 	"note": "Nota",
+	"notes": "Notas",
 
 	"latestNews": "Últimas notícias",
 	"subscriveVia": "Suscribirse vía",
@@ -347,5 +348,10 @@
 	"addNote": "Nueva nota",
 	"addNotePlaceholder": "Entonces, escribe tu nota aquí...",
 
-	"notSynced": "No sincronizada"
+	"notSynced": "No sincronizada",
+	"confirmDelete": "¿Estás seguro de que quieres eliminar esta nota?",
+	"noteDeleted": "Nota eliminada con éxito!",
+	"noteSaved": "¡Nota guardada!",
+	"searchNotes": "Buscar notas...",
+	"notesWarningUnencrypteed": "<strong>¡Advertencia!</strong> Las notas sin encriptar estarán disponibles en texto plano en el almacenamiento local del navegador incluso después de cerrar sesión!"
 }

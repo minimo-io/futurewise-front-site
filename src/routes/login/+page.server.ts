@@ -2,7 +2,7 @@
 import type { Actions, PageServerLoad } from './$types';
 import { fail, redirect } from '@sveltejs/kit';
 import { localizeHref } from '$paraglide/runtime';
-import { AuthService } from '$services';
+import { AuthService } from '$services/auth.service';
 // import bcrypt from 'bcrypt';
 
 export const load: PageServerLoad = async ({ cookies }) => {

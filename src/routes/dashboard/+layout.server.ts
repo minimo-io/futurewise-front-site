@@ -2,7 +2,7 @@
 import { error, redirect } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
 import { Product } from '$types/products.types';
-import { AuthService } from '$services';
+import { AuthService } from '$services/auth.service';
 import { localizeHref } from '$paraglide/runtime';
 
 export const load: LayoutServerLoad = async (params) => {

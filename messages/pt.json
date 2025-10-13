@@ -17,6 +17,7 @@
 	"cancel": "Cancelar",
 	"close": "Fechar",
 	"note": "Nota",
+	"notes": "Notas",
 
 	"loggingIn": "Entrando...",
 	"platform": "Plataforma",
@@ -347,5 +348,10 @@
 	"addNote": "Nova nota",
 	"addNotePlaceholder": "Então, escreva sua anotação aqui...",
 
-	"notSynced": "Não sincronizada"
+	"notSynced": "Não sincronizada",
+	"confirmDelete": "Tem certeza de que deseja excluir esta nota?",
+	"noteDeleted": "Nota excluída com sucesso!",
+	"noteSaved": "Nota salva!",
+	"searchNotes": "Procurar notas...",
+	"notesWarningUnencrypteed": "<strong>Atenção!</strong> Notas não encriptadas estarão disponíveis em texto simples no armazenamento local do navegador mesmo após o logout!"
 }

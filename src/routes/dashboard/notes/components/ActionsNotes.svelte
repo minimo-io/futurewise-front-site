@@ -17,12 +17,13 @@
 	import { FwToast } from '$stores/Toast.state.svelte';
 	import { localizeHref } from '$paraglide/runtime';
 	import { goto } from '$app/navigation';
-	import { NotesService } from '$services/notes.service';
+	import { createNotesService } from '$services/notes.service';
 	import { page } from '$app/state';
 	import type { Note } from '$types/notes.types';
 	import { browser } from '$app/environment';
 	import { FwShare } from '$utils';
 
+	let NotesService = createNotesService(page.data.user);
 	let noteUuid = $derived(page.params.noteUuid!);
 	let note = $derived(NotesService.get(noteUuid));
 
@@ -31,8 +32,8 @@
 	});
 </script>
 
-<div class="border-base-200 flex justify-start border-b">
-	<div class="flex items-center justify-end gap-2 p-4">
+<div class="border-base-200 flex flex-col justify-start border-b">
+	<div class="flex items-center justify-start gap-2 p-4">
 		<!-- Share -->
 		<DashboardButton
 			type="primary"
@@ -75,9 +76,9 @@
 
 		<DashboardButton
 			onclick={() => {
-				if (confirm('Are you sure you want to delete this note?')) {
+				if (confirm(`${m.confirmDelete()}`)) {
 					if (note?.id) NotesService.delete(note!.id);
-					FwToast.launch('Note deleted', 'success', 'bottom');
+					FwToast.launch(`${m.noteDeleted()}`, 'success', 'bottom');
 					goto(localizeHref('/dashboard/notes'));
 				}
 			}}
@@ -117,5 +118,12 @@
 			<X class="h-3" />
 			<span> {m.notSynced()} </span>
 		</div>
+	</div>
+</div>
+<div class="border-base-200 border-b">
+	<div role="alert" class="alert alert-error alert-soft">
+		<span>
+			{@html m.notesWarningUnencrypteed()}
+		</span>
 	</div>
 </div>

@@ -18,6 +18,7 @@
 	"edit": "Edit",
 	"close": "Close",
 	"note": "Note",
+	"notes": "Notes",
 
 	"latestNews": "Latest news",
 	"subscriveVia": "Subscribe via",
@@ -344,5 +345,10 @@
 	"addNote": "New note",
 	"addNotePlaceholder": "So, write your note here...",
 
-	"notSynced": "Not synced"
+	"notSynced": "Not synced",
+	"confirmDelete": "Are you sure you want to delete this note?",
+	"noteDeleted": "Note succesfully deleted!",
+	"noteSaved": "Note saved!",
+	"searchNotes": "Search notes...",
+	"notesWarningUnencrypteed": "<strong>Warning!</strong> Unencrypted notes will be plain text accessible on browser local storage even after logout!"
 }

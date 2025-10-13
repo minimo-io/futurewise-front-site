@@ -19,7 +19,7 @@
 		<User class="h-5" strokeWidth="1" />
 
 		{#if user}
-			<span class="px-1 text-sm">
+			<span class="px-1 font-sans text-sm">
 				{capitalize(user.name)}
 			</span>
 		{/if}

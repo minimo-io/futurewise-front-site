@@ -56,7 +56,7 @@
 
 		<LanguageButton />
 		{#if user}
-			<UserButton />
+			<UserButton {user} />
 		{/if}
 		<LoginDashboardButton />
 

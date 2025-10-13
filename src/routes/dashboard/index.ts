@@ -1,6 +1,6 @@
 import { postgreService } from '$databases';
 import { localizeHref } from '$paraglide/runtime';
-import { AuthService } from '$services';
+import { AuthService } from '$services/auth.service';
 import { redirect, type Actions, type RequestEvent } from '@sveltejs/kit';
 
 // Global logout action for dashboard

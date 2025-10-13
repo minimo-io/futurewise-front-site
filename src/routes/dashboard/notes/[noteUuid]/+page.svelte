@@ -5,9 +5,11 @@
 	import { m } from '$paraglide/messages';
 	import ActionsNotes from '../components/ActionsNotes.svelte';
 	import { page } from '$app/state';
-	import { NotesService } from '$lib/services/notes.service';
+	import { createNotesService } from '$lib/services/notes.service';
 	import { FwToast } from '$stores/Toast.state.svelte';
 
+	let NotesService = $state(createNotesService(page.data.user));
+	// alert(page.data.user);
 	let noteUuid = $state(page.params.noteUuid!);
 	let noteTextarea;
 	let noteContent = $state('');
@@ -25,6 +27,17 @@
 			noteContent = '';
 			originalContent = '';
 			noteExists = false;
+		}
+	}
+
+	async function triggerFullScreen(event) {
+		event?.preventDefault();
+		const elem = document.getElementById('note');
+		if (elem?.requestFullscreen) {
+			await elem.requestFullscreen();
+			elem.focus();
+		} else {
+			alert('Sorry, your browser does not support full-screen');
 		}
 	}
 
@@ -79,15 +92,21 @@
 		}
 	});
 
-	function handleKeyDown(event) {
+	async function handleKeyDown(event) {
 		// Check for CMD+S (Mac) or CTRL+S (Windows/Linux)
 		if ((event.metaKey || event.ctrlKey) && event.key === 's') {
 			event.preventDefault();
 			if (noteUuid && (noteContent.trim() !== '' || noteExists)) {
 				NotesService.update(noteUuid, noteContent);
-				FwToast.launch('Note saved!', 'success', 'bottom');
+				FwToast.launch(m.noteSaved(), 'success', 'bottom');
 			}
 
+			return;
+		}
+		// Check for CMD+F (Mac) or CTRL+F (Windows/Linux)
+		if ((event.metaKey || event.ctrlKey) && event.key === 'f') {
+			event.preventDefault();
+			triggerFullScreen(event);
 			return;
 		}
 
@@ -113,18 +132,7 @@
 	<ActionsNotes />
 
 	<div class="relative flex h-full justify-start">
-		<button
-			onclick={async () => {
-				const elem = document.getElementById('note');
-				if (elem?.requestFullscreen) {
-					await elem.requestFullscreen();
-					elem.focus();
-				} else {
-					alert('Sorry, your browser does not support full-screen');
-				}
-			}}
-			class="absolute top-5 right-5 z-50"
-		>
+		<button id="btn-fullscreen" onclick={triggerFullScreen} class="absolute top-5 right-5 z-50">
 			<Maximize class="text-neutral h-5" />
 		</button>
 		<textarea

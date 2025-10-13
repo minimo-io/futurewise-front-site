@@ -4,10 +4,12 @@
 	import { localizeHref } from '$paraglide/runtime';
 	import { dashboardLeftMenuState } from '$stores/DashboardLeftMenu.state.svelte';
 	import { NotebookTabs, Settings, Trash2, Search, X } from '@lucide/svelte';
-	import { NotesService } from '$lib/services/notes.service';
+	import { createNotesService } from '$lib/services/notes.service';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
+	import { m } from '$paraglide/messages';
 
+	let NotesService = createNotesService(page.data.user);
 	let isCollapsed = $derived(dashboardLeftMenuState.collapsed);
 	let currentNoteId = $derived(page.params.noteUuid);
 
@@ -37,7 +39,7 @@
 	function handleDelete(noteId: string, event: MouseEvent) {
 		event.stopPropagation();
 
-		if (confirm('Are you sure you want to delete this note?')) {
+		if (confirm(m.confirmDelete())) {
 			NotesService.delete(noteId);
 
 			if (currentNoteId === noteId) {
@@ -56,7 +58,7 @@
 	<input
 		type="text"
 		bind:value={searchQuery}
-		placeholder="Search notes..."
+		placeholder={m.searchNotes()}
 		class="input input-bordered input-sm w-full pl-9 text-xs"
 	/>
 	{#if searchQuery}
@@ -71,7 +73,7 @@
 <li>
 	<a href={localizeHref('/dashboard/notes')}>
 		<NotebookTabs class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
-		<span class="hidden {isCollapsed ? '' : 'md:inline'}">Notes</span>
+		<span class="hidden {isCollapsed ? '' : 'md:inline'}">{m.notes()}</span>
 	</a>
 	<!-- Actual notes -->
 	<ul class="hidden {isCollapsed ? '' : 'md:block'} pb-2 md:pl-4">
@@ -120,6 +122,6 @@
 <li class="border-base-200 mt-3 border-t border-b py-2">
 	<a href="/">
 		<Settings class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
-		<span class="hidden {isCollapsed ? '' : 'md:inline'}">Config</span>
+		<span class="hidden {isCollapsed ? '' : 'md:inline'}">{m.configurations()}</span>
 	</a>
 </li>

@@ -3,4 +3,5 @@ export type Note = {
 	title: string;
 	content: string;
 	lastUpdated: number;
+	encrypted?: boolean; // Add this
 };

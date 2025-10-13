@@ -3,7 +3,7 @@ import { redirect, type Handle } from '@sveltejs/kit';
 import { paraglideMiddleware } from './paraglide/server';
 import { sequence } from '@sveltejs/kit/hooks';
 import { deLocalizeUrl, localizeHref } from '$paraglide/runtime';
-import { AuthService } from '$services';
+import { AuthService } from '$services/auth.service';
 // import { deLocalizeUrl, localizeHref } from '$paraglide/runtime';
 // import { redirect } from '@sveltejs/kit';
 // import { getLocale } from '$paraglide/runtime';
