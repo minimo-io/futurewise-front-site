@@ -21,7 +21,6 @@ export default defineConfig({
 					]
 				},
 				// Blog
-
 				...blogPosts,
 
 				{
@@ -67,6 +66,16 @@ export default defineConfig({
 						['en', '/en/login']
 					]
 				},
+				// Roadmap
+				{
+					pattern: '/roadmap',
+					localized: [
+						['pt', '/roadmap'],
+						['es', '/es/roadmap'],
+						['en', '/en/roadmap']
+					]
+				},
+				// Sign-up
 				{
 					pattern: '/sign-up',
 					localized: [

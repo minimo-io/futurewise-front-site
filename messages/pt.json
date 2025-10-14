@@ -341,9 +341,11 @@
 	"productAPISlogan": "Ferramentas para Desenvolvimento",
 	"productAPISloganSimple": "Ferramentas para Desenvolvimento",
 	"productAPIDetails": "APIs prontas para empresas<br /> Integre em poucas linhas de código",
-	"productNotesSlogan": "Notas locais, escriptadas",
-	"productNotesSloganSimple": "Notas locais, escriptadas no navegador",
-	"productNotesDetails": "Notas locais, escriptadas e sincronizáveis<br /> no navegador",
+	"productNotesSlogan": "Notas locais, criptografadas",
+	"productNotesSloganSimple": "Notas locais, criptografadas no navegador",
+	"productNotesDetails": "Notas locais, criptografadas e sincronizáveis<br /> no navegador",
+
+	"heroContentRoadmap": "Aqui você encontra o resultado do nosso ciclo de desenvolvimento: <span class=\"text-base-content\">Projeção, Experimentação e Entrega</span>. Segue, então, a lista de lançamentos, marcos e Provas de Conceito (PoCs)  — o registro vivo das nossas criações mais recentes ⛵️🚀",
 
 	"addNote": "Nova nota",
 	"addNotePlaceholder": "Então, escreva sua anotação aqui...",

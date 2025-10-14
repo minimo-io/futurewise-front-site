@@ -12,7 +12,7 @@
 </script>
 
 <section
-	id="know-more"
+	id="more"
 	class="relative -top-5 flex scale-65 flex-col items-center justify-center px-6 md:-top-0 md:mt-26 md:scale-90 md:px-12 lg:px-16"
 >
 	<div class="relative z-10 md:min-w-[500px]">

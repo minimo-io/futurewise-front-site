@@ -109,14 +109,14 @@
 			</li>
 			<li>
 				<a
-					href={localizeHref('/soon')}
+					href={localizeHref('/roadmap')}
 					class={[
 						'flex py-3 align-middle text-[16px] tracking-wider',
 						'border-b border-b-gray-700'
 					]}
 				>
 					<FileClock class="h-4" />
-					Changelog
+					Roadmap
 				</a>
 			</li>
 

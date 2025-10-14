@@ -57,7 +57,7 @@
 							>
 						</li>
 						<li>
-							<a href={AppConfig.status} class="text-secondary">Changelog</a>
+							<a href={AppConfig.status} class="text-secondary">Roadmap</a>
 						</li>
 						<li>
 							<a href={localizeHref('/blog')} class="text-secondary">Blog</a>
@@ -68,7 +68,7 @@
 				<div>
 					<h3 class="font-pixel text-base-100 mb-4 text-xl">Futurewise</h3>
 					<ul class="space-y-2">
-						<li><a href={localizeHref('/#know-more')} class="text-secondary">{m.aboutUs()}</a></li>
+						<li><a href={localizeHref('/#more')} class="text-secondary">{m.aboutUs()}</a></li>
 						<li><a href={localizeHref('/lab')} class="text-secondary">Laboratório</a></li>
 						<li><a href={localizeHref('/soon')} class="text-secondary">One Pager</a></li>
 						<li><a href="/" class="text-secondary">Contato</a></li>

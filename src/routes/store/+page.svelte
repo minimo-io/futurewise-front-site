@@ -31,7 +31,7 @@
 	<div
 		class="max-w-fw border-x-base-200 relative container my-0 text-center md:mx-auto md:border-x"
 	>
-		<div id="know-more" class="flex flex-1 items-center justify-center">
+		<div id="more" class="flex flex-1 items-center justify-center">
 			<div
 				class="border-base-200 fw-border-b-divider md:fw-border-t-divider-dot flex w-full flex-col border-b
 			            after:absolute after:right-[48%] md:flex-row md:after:top-12 md:after:right-[49.4%] md:after:content-['']"
@@ -109,7 +109,7 @@
 
 	<Slogan text={m.bagitySlogan()} />
 	<ServiceOrders />
-	<div id="know-more" class="border-base-200 mt-10 font-sans md:border-t">
+	<div id="more" class="border-base-200 mt-10 font-sans md:border-t">
 		<Faq project="bagity" />
 	</div>
 	<CtaContact />

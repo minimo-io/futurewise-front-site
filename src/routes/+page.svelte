@@ -19,7 +19,7 @@
 
 	onMount(async () => {
 		const pageHash = page.url.hash ?? false;
-		if (pageHash && pageHash === '#know-more') {
+		if (pageHash && pageHash === '#more') {
 			setTimeout(() => {
 				smoothScroll(pageHash);
 			}, 200);

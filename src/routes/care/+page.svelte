@@ -230,7 +230,7 @@
 		</div>
 	</div>
 
-	<div id="know-more" class="border-base-200 mt-20 font-sans md:mt-0 md:border-t">
+	<div id="more" class="border-base-200 mt-20 font-sans md:mt-0 md:border-t">
 		<Faq project="caresync" />
 	</div>
 

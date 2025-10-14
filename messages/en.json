@@ -342,6 +342,8 @@
 	"productNotesSloganSimple": "Local, encrypted notes",
 	"productNotesDetails": "Local encrypted & syncronizable notes<br /> on the browser",
 
+	"heroContentRoadmap": "Here you can find the result of our development cycle: <span class=\"text-base-content\">Projection, Experimentation, and Delivery</span>. Below is the list of launches, milestones, and Proofs of Concept (PoCs) — the live record of our most recent creations ⛵️🚀",
+
 	"addNote": "New note",
 	"addNotePlaceholder": "So, write your note here...",
 

@@ -109,7 +109,7 @@
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<Rss class="mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">API Status / Changelog</span>
+			<span class="self-center font-semibold">API Status / Roadmap</span>
 		</div>
 		<div class="text-grey-medium flex flex-row self-center align-middle">
 		</div>
@@ -156,12 +156,12 @@
 
 	<!-- Changelog -->
 	<a
-		href={localizeHref('/soon#changelog')}
+		href={localizeHref('/roadmap')}
 		class="border-base-300 font-roboto text-grey-dark shine-effect flex justify-between border-t border-b px-[30px] py-3 text-left align-middle text-sm"
 	>
 		<div class="flex justify-center self-center text-left align-middle">
 			<FileClock class="text-sun mr-2 h-4 w-4 self-center" />
-			<span class="self-center font-semibold">Changelog</span>
+			<span class="self-center font-semibold">Roadmap</span>
 		</div>
 	</a>
 

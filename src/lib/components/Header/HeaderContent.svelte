@@ -6,9 +6,9 @@
 	import { AppConfig } from '$lib/configs';
 	import type { Snippet } from 'svelte';
 
-	const smoothAction = [conditionalSmoothScroll, '#know-more'] as const;
+	const smoothAction = [conditionalSmoothScroll, '#more'] as const;
 
-	let url = '#know-more';
+	let url = '#more';
 	interface Props {
 		titleRight: string;
 		titleLeft: string;
