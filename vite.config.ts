@@ -42,6 +42,15 @@ export default defineConfig({
 				},
 
 				{
+					pattern: '/invoice/:id',
+					localized: [
+						['pt', '/pt/fatura/:id'],
+						['es', '/es/factura/:id'],
+						['en', '/invoice/:id']
+					]
+				},
+
+				{
 					pattern: '/blog',
 					localized: [
 						['pt', '/blog'],
