@@ -1,33 +1,32 @@
-// src/routes/invoice/[id]/+server.ts
-import type { RequestHandler } from '@sveltejs/kit';
-import fs from 'fs/promises';
-import path from 'path';
+import { error } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
+import pdf1 from '$lib/data/invoices/123e4567-e89b-12d3-a456-426614174000.pdf?url';
 
-export const GET: RequestHandler = async ({ params }) => {
+const invoices: Record<string, string> = {
+	'123e4567-e89b-12d3-a456-426614174000': pdf1
+};
+
+export const GET: RequestHandler = async ({ params, fetch }) => {
 	const { id } = params;
-	// const password = url.searchParams.get('password');
 
-	// if (password !== 'secret123') {
-	// 	return new Response('Unauthorized', { status: 401 });
-	// }
+	const pdfUrl = invoices[id];
 
-	// Make path relative to project root, which is safer in dev and prod
-	const filePath = path.resolve(process.cwd(), `src/lib/data/invoices/${id}.pdf`);
+	if (!pdfUrl) {
+		error(404, 'Invoice not found');
+	}
 
 	try {
-		const pdfBuffer = await fs.readFile(filePath); // Node Buffer
+		const response = await fetch(pdfUrl);
+		const pdfBuffer = await response.arrayBuffer();
 
-		// Convert Buffer -> Uint8Array so TypeScript accepts it as BodyInit
-		const body = new Uint8Array(pdfBuffer);
-
-		return new Response(body, {
+		return new Response(pdfBuffer, {
 			headers: {
 				'Content-Type': 'application/pdf',
-				'Content-Disposition': `inline; filename="invoice-${id}.pdf"`
+				'Content-Disposition': `inline; filename="${id}.pdf"`
 			}
 		});
 	} catch (err) {
-		console.error(err);
-		return new Response('Invoice not found', { status: 404 });
+		console.error('Error fetching PDF:', err);
+		error(500, 'Error loading invoice');
 	}
 };
