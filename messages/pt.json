@@ -82,6 +82,7 @@
 	"menuHelp": "Recursos",
 	"menuLab": "Lab",
 	"menuPrices": "Preços",
+	"menuExperiments": "Laboratório",
 
 	"devSlogan": "Plataforma unificada,<br />APIs modernas.",
 	"devText": "<p>Além de nossos dashboards, Futurewise fornece uma interface única e elegante que abstrai toda a complexidade das integrações empresariais.</p><p>Com APIs prontas para integrar cada um de nossos produtos no seu próprio sistema.</p>",
@@ -344,6 +345,11 @@
 	"productNotesSlogan": "Notas locais, criptografadas",
 	"productNotesSloganSimple": "Notas locais, criptografadas no navegador",
 	"productNotesDetails": "Notas locais, criptografadas e sincronizáveis<br /> no navegador",
+
+	"productBetizenSlogan": "Rankings justos de cassino & forex",
+	"productBetizenDetails": "Movido a karma, mérito <br />e prova de trabalho",
+	"productLnBeerSlogan": "Cerveja artesanal via lightning",
+	"productLnBeerDetails": "Pague com Bitcoin pelas suas cervejas<br />via nossos parceiros locais",
 
 	"heroContentRoadmap": "Aqui você encontra o resultado do nosso ciclo de desenvolvimento: <span class=\"text-base-content\">Projeção, Experimentação e Entrega</span>. Segue, então, a lista de lançamentos, marcos e Provas de Conceito (PoCs)  — o registro vivo das nossas criações mais recentes ⛵️🚀",
 

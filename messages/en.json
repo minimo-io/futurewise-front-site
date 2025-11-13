@@ -80,6 +80,7 @@
 	"menuHelp": "Resources",
 	"menuLab": "Lab",
 	"menuPrices": "Prices",
+	"menuExperiments": "Laboratory",
 
 	"devSlogan": "Unified platform,<br />Modern APIs.",
 	"devText": "<p>In addition to our dashboards, Futurewise provides a single, elegant interface that abstracts away all the complexity of enterprise integrations.</p><p>With ready-made APIs to integrate each of our products into your own system.</p>",
@@ -341,6 +342,11 @@
 	"productNotesSlogan": "Local, encrypted notes on the browser",
 	"productNotesSloganSimple": "Local, encrypted notes",
 	"productNotesDetails": "Local encrypted & syncronizable notes<br /> on the browser",
+
+	"productBetizenSlogan": "fair casino, bo & forex listings",
+	"productBetizenDetails": "Powered with karma, merit <br />and proof-of-work",
+	"productLnBeerSlogan": "Craft beer over lightning",
+	"productLnBeerDetails": "Pay with Bitcoin for your beers<br /> via our local partners",
 
 	"heroContentRoadmap": "Here you can find the result of our development cycle: <span class=\"text-base-content\">Projection, Experimentation, and Delivery</span>. Below is the list of launches, milestones, and Proofs of Concept (PoCs) — the live record of our most recent creations ⛵️🚀",
 

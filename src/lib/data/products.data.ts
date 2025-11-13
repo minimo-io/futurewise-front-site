@@ -1,5 +1,5 @@
 import { Activity, Cable, ShoppingBag, Zap } from '@lucide/svelte';
-import { Product, type ProductsList } from '$lib/type/products.types';
+import { LabProduct, Product, type ProductsList } from '$lib/type/products.types';
 import { localizeHref } from '$paraglide/runtime';
 import { m } from '$paraglide/messages';
 
@@ -94,4 +94,33 @@ export const PRODUCTS: ProductsList = [
 	// 	isBold: true,
 	// 	url: localizeHref('/nostradamus')
 	// }
+];
+
+export const PRODUCTS_FROM_LAB: ProductsList = [
+	{
+		id: LabProduct.LNBEER,
+		name: LabProduct.LNBEER,
+		logo: '/products/lnbeer-logo.png',
+		isMain: true,
+		slogan: m.productLnBeerSlogan(),
+		sloganSimple: '',
+		details: m.productLnBeerDetails(),
+		isBold: true,
+		primary: true,
+		underDevelopment: true,
+		url: 'https://www.figma.com/design/A9ZpwzFjlfZSZlWIrNfztG/Lightning-Beer?node-id=2-3&t=XKNaVwyAoxWPFXNB-1'
+	},
+	{
+		id: LabProduct.BETIZEN,
+		name: LabProduct.BETIZEN,
+		logo: '/products/betizen-logo.png',
+		isMain: true,
+		slogan: m.productBetizenSlogan(),
+		sloganSimple: '',
+		details: m.productBetizenDetails(),
+		isBold: true,
+		primary: true,
+		underDevelopment: true,
+		url: 'https://www.betizen.org'
+	}
 ];

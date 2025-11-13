@@ -10,13 +10,18 @@ export enum Product {
 	NOTES = 'NOTES'
 }
 
+export enum LabProduct {
+	BETIZEN = 'BETIZEN',
+	LNBEER = 'LNBEER'
+}
+
 export interface ProductData {
 	id: string;
 	isMain: boolean;
 	name: string;
 	slogan?: string;
 	sloganSimple?: string;
-	icon: typeof IconType;
+	icon?: typeof IconType;
 	details: string;
 	// subMenu: boolean;
 	url?: string;

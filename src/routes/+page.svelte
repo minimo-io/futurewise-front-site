@@ -16,6 +16,7 @@
 	import { smoothScroll } from '$utils';
 	import { onMount } from 'svelte';
 	import CirclesDecorations from '$lib/components/decorations/CirclesDecorations.svelte';
+	import LabProducts from '$lib/components/LabProducts.svelte';
 
 	onMount(async () => {
 		const pageHash = page.url.hash ?? false;
@@ -39,6 +40,7 @@
 		<Clients />
 	</div>
 	<Products />
+	<LabProducts />
 	<Developers />
 </main>
 

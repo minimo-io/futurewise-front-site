@@ -1,7 +1,7 @@
 <!-- src/lib/components/Home/ProductSingle.svelte -->
 <script lang="ts">
 	// import type { Brand } from '$lib/types/brands.types';
-	import type { ProductDrawerData } from '$lib/type/products.types';
+	import type { ProductData } from '$lib/type/products.types';
 	import { m } from '$paraglide/messages';
 	import Hr from '../Hr.svelte';
 	import Pill from '../Pill.svelte';
@@ -9,23 +9,36 @@
 
 	interface Props {
 		// brand: Brand;
-		brand: ProductDrawerData;
+		brand: ProductData;
 		align: 'start' | 'center' | 'end';
 		icon?: typeof IconType;
 		minWidth?: string;
 		primary?: boolean;
 		count?: number;
+		hideDetails?: boolean;
+		openInNewWindow?: boolean;
 	}
 
-	let { brand, align, minWidth = '', primary = false, icon, count = 0 }: Props = $props();
+	let {
+		brand,
+		align,
+		minWidth = '',
+		primary = false,
+		icon,
+		count = 0,
+		hideDetails = false,
+		openInNewWindow = false
+	}: Props = $props();
 
 	// console.log(icon);
 </script>
 
 <a
 	href={brand.url}
+	target={openInNewWindow ? '_blank' : undefined}
+	rel={openInNewWindow ? 'noopener noreferrer' : undefined}
 	class={[
-		'relative scale-95 rounded-sm hover:opacity-100 md:scale-90',
+		'relative scale-95 rounded-sm transition duration-300 ease-in-out hover:opacity-100 md:scale-90 md:hover:scale-105',
 		minWidth ? minWidth : 'min-w-full md:min-w-[250px]'
 	]}
 >
@@ -47,24 +60,29 @@
 				<div class="flex items-center justify-center">
 					<div class={[!brand.logo && 'mr-2']}>
 						{#if brand.logo}
-							<img
-								src={brand.logo}
-								alt={`${brand.name} logo`}
-								class="mr-[9px] w-[30px] max-w-[30px]"
-							/>
+							<div class="flex items-center justify-center">
+								<img
+									src={brand.logo}
+									alt={`${brand.name} logo`}
+									class=" w-[75%] max-w-[75%] self-center"
+								/>
+							</div>
 						{:else if icon}
 							{@const Icon = icon}
 							<Icon strokeWidth="3" class="text-base-content mr-1" />
 						{/if}
 					</div>
-					<span
-						class="font-pixel text-base-content text-[42px] font-bold tracking-wider opacity-90 md:text-5xl"
-					>
-						{brand.name}
-					</span>
+					{#if !brand.logo}
+						<span
+							class="font-pixel text-base-content text-[42px] font-bold tracking-wider opacity-90 md:text-5xl"
+						>
+							{brand.name}
+						</span>
+					{/if}
 				</div>
 
 				<!-- Details -->
+
 				<div
 					class={[
 						'flex scale-100 flex-col items-center justify-self-center md:scale-100',
@@ -77,13 +95,16 @@
 						color={primary ? 'primary' : 'light'}
 						text={brand.sloganSimple || brand.slogan || ''}
 					/>
-					<div
-						class="text-primary mt-[10px] text-center text-[12px] tracking-wider uppercase opacity-70"
-					>
-						{@html brand.details}
-					</div>
+					{#if hideDetails === false}
+						<div
+							class="text-primary mt-[10px] text-center text-[12px] tracking-wider uppercase opacity-70"
+						>
+							{@html brand.details}
+						</div>
+					{/if}
 				</div>
 			</div>
+
 			<!-- Prototyping -->
 			{#if brand.underDevelopment}
 				<div class="absolute top-2 right-2 scale-80 md:-top-5 md:-right-2">
