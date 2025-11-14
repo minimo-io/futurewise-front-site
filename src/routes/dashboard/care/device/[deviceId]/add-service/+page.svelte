@@ -82,7 +82,8 @@
 				<option value="SCHEDULED_MAINTENANCE">Scheduled Maintenance</option>
 				<option value="SOFTWARE_INSTALL_OR_UPDATE">Software Install/Update</option>
 				<option value="HARDWARE_UPGRADE">Hardware Upgrade</option>
-				<option value="FIXING">Fixing</option>
+				<option value="SOUND_PROBLEM">Sound Problem</option>
+				<option value="FIXING">Other Fixing</option>
 			</select>
 		</div>
 

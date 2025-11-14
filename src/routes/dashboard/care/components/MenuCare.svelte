@@ -45,7 +45,7 @@
 <li>
 	<a href={localizeHref(AppConfig.dashboards.care.services)}>
 		<LifeBuoy class="fw-dashboard-left-menu-icon {isCollapsed ? '!h-5' : ''}" />
-		<span class="hidden {isCollapsed ? '' : 'md:inline'}">Serviços</span>
+		<span class="hidden {isCollapsed ? '' : 'md:inline'}">Ordens de Serviço</span>
 	</a>
 </li>
 <li>
